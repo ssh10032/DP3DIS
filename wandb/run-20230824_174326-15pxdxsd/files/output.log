@@ -1,0 +1,64 @@
+/home/songoh/miniconda3/envs/mask/lib/python3.10/site-packages/MinkowskiEngine/__init__.py:36: UserWarning: The environment variable `OMP_NUM_THREADS` not set. MinkowskiEngine will automatically set `OMP_NUM_THREADS=16`. If you want to set `OMP_NUM_THREADS` manually, please export it on the command line before running a python script. e.g. `export OMP_NUM_THREADS=12; python your_program.py`. It is recommended to set it below 24.
+  warnings.warn(
+/home/songoh/miniconda3/envs/mask/lib/python3.10/site-packages/pytorch_lightning/utilities/seed.py:55: UserWarning: No seed found, seed set to 408861920
+  rank_zero_warn(f"No seed found, seed set to {seed}")
+Global seed set to 408861920
+EXPERIMENT ALREADY EXIST
+{'_target_': 'pytorch_lightning.loggers.WandbLogger', 'project': '${general.project_name}', 'name': '${general.experiment_name}', 'save_dir': '${general.save_dir}', 'entity': 'schult', 'resume': 'allow', 'id': '${general.experiment_name}'}
+/home/songoh/miniconda3/envs/mask/lib/python3.10/site-packages/pytorch_lightning/loggers/wandb.py:352: UserWarning: There is a wandb run already in progress and newly created instances of `WandbLogger` will reuse this run. If this is not desired, call `wandb.finish()` before instantiating `WandbLogger`.
+  rank_zero_warn(
+/home/songoh/miniconda3/envs/mask/lib/python3.10/site-packages/pytorch_lightning/trainer/connectors/accelerator_connector.py:446: LightningDeprecationWarning: Setting `Trainer(gpus=1)` is deprecated in v1.7 and will be removed in v2.0. Please use `Trainer(accelerator='gpu', devices=1)` instead.
+  rank_zero_deprecation(
+/home/songoh/miniconda3/envs/mask/lib/python3.10/site-packages/pytorch_lightning/trainer/connectors/checkpoint_connector.py:52: LightningDeprecationWarning: Setting `Trainer(resume_from_checkpoint=)` is deprecated in v1.5 and will be removed in v1.7. Please pass `Trainer.fit(ckpt_path=)` directly instead.
+  rank_zero_deprecation(
+/home/songoh/miniconda3/envs/mask/lib/python3.10/site-packages/pytorch_lightning/trainer/connectors/callback_connector.py:57: LightningDeprecationWarning: Setting `Trainer(weights_save_path=)` has been deprecated in v1.6 and will be removed in v1.8. Please pass ``dirpath`` directly to the `ModelCheckpoint` callback
+  rank_zero_deprecation(
+GPU available: True (cuda), used: True
+TPU available: False, using: 0 TPU cores
+IPU available: False, using: 0 IPUs
+HPU available: False, using: 0 HPUs
+/home/songoh/miniconda3/envs/mask/lib/python3.10/site-packages/pytorch_lightning/trainer/trainer.py:733: LightningDeprecationWarning: `trainer.resume_from_checkpoint` is deprecated in v1.5 and will be removed in v2.0. Specify the fit checkpoint path with `trainer.fit(ckpt_path=)` instead.
+  ckpt_path = ckpt_path or self.resume_from_checkpoint
+/media/songoh/ssh3/songoh_ws/MaskDNtoBBox_GPU0/datasets/semseg.py:573: YAMLLoadWarning: calling yaml.load() without Loader=... is deprecated, as the default Loader is unsafe. Please read https://msg.pyyaml.org/load for full details.
+  file = yaml.load(f)
+Restoring states from the checkpoint path at saved/dn bbox_test_3dcoord/last-epoch.ckpt
+Traceback (most recent call last):
+  File "/home/songoh/miniconda3/envs/mask/lib/python3.10/site-packages/hydra/_internal/utils.py", line 198, in run_and_report
+    return func()
+  File "/home/songoh/miniconda3/envs/mask/lib/python3.10/site-packages/hydra/_internal/utils.py", line 347, in <lambda>
+    lambda: hydra.run(
+  File "/home/songoh/miniconda3/envs/mask/lib/python3.10/site-packages/hydra/_internal/hydra.py", line 107, in run
+    return run_job(
+  File "/home/songoh/miniconda3/envs/mask/lib/python3.10/site-packages/hydra/core/utils.py", line 128, in run_job
+    ret.return_value = task_function(task_cfg)
+  File "/media/songoh/ssh3/songoh_ws/MaskDNtoBBox_GPU0/main_instance_segmentation.py", line 112, in main
+    train(cfg)
+  File "/home/songoh/miniconda3/envs/mask/lib/python3.10/site-packages/hydra/main.py", line 27, in decorated_main
+    return task_function(cfg_passthrough)
+  File "/media/songoh/ssh3/songoh_ws/MaskDNtoBBox_GPU0/main_instance_segmentation.py", line 82, in train
+    runner.fit(model)
+  File "/home/songoh/miniconda3/envs/mask/lib/python3.10/site-packages/pytorch_lightning/trainer/trainer.py", line 696, in fit
+    self._call_and_handle_interrupt(
+  File "/home/songoh/miniconda3/envs/mask/lib/python3.10/site-packages/pytorch_lightning/trainer/trainer.py", line 650, in _call_and_handle_interrupt
+    return trainer_fn(*args, **kwargs)
+  File "/home/songoh/miniconda3/envs/mask/lib/python3.10/site-packages/pytorch_lightning/trainer/trainer.py", line 737, in _fit_impl
+    results = self._run(model, ckpt_path=self.ckpt_path)
+  File "/home/songoh/miniconda3/envs/mask/lib/python3.10/site-packages/pytorch_lightning/trainer/trainer.py", line 1112, in _run
+    self._restore_modules_and_callbacks(ckpt_path)
+  File "/home/songoh/miniconda3/envs/mask/lib/python3.10/site-packages/pytorch_lightning/trainer/trainer.py", line 1065, in _restore_modules_and_callbacks
+    self._checkpoint_connector.resume_start(checkpoint_path)
+  File "/home/songoh/miniconda3/envs/mask/lib/python3.10/site-packages/pytorch_lightning/trainer/connectors/checkpoint_connector.py", line 85, in resume_start
+    self._loaded_checkpoint = self._load_and_validate_checkpoint(checkpoint_path)
+  File "/home/songoh/miniconda3/envs/mask/lib/python3.10/site-packages/pytorch_lightning/trainer/connectors/checkpoint_connector.py", line 89, in _load_and_validate_checkpoint
+    loaded_checkpoint = self.trainer.strategy.load_checkpoint(checkpoint_path)
+  File "/home/songoh/miniconda3/envs/mask/lib/python3.10/site-packages/pytorch_lightning/strategies/strategy.py", line 339, in load_checkpoint
+    return self.checkpoint_io.load_checkpoint(checkpoint_path)
+  File "/home/songoh/miniconda3/envs/mask/lib/python3.10/site-packages/pytorch_lightning/plugins/io/torch_plugin.py", line 83, in load_checkpoint
+    raise FileNotFoundError(f"Checkpoint at {path} not found. Aborting training.")
+FileNotFoundError: Checkpoint at saved/dn bbox_test_3dcoord/last-epoch.ckpt not found. Aborting training.
+During handling of the above exception, another exception occurred:
+Traceback (most recent call last):
+  File "/home/songoh/miniconda3/envs/mask/lib/python3.10/site-packages/hydra/_internal/utils.py", line 346, in _run_hydra
+    run_and_report(
+  File "/home/songoh/miniconda3/envs/mask/lib/python3.10/site-packages/hydra/_internal/utils.py", line 267, in run_and_report
+    print_exception(etype=None, value=ex, tb=final_tb)  # type: ignore

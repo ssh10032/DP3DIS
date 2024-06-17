@@ -1,0 +1,8 @@
+2023-05-21 17:45:49,003 INFO    StreamThr :23247 [internal.py:wandb_internal():90] W&B internal server running at pid: 23247, started at: 2023-05-21 17:45:49.002436
+2023-05-21 17:45:49,007 DEBUG   HandlerThread:23247 [handler.py:handle_request():141] handle_request: status
+2023-05-21 17:45:49,009 DEBUG   SenderThread:23247 [sender.py:send_request():316] send_request: status
+2023-05-21 17:45:49,012 INFO    WriterThread:23247 [datastore.py:open_for_write():75] open: /media/songoh/ssh3/songoh_ws/DAB Mask3D-main/wandb/run-20230521_174548-ktx3wqiq/run-ktx3wqiq.wandb
+2023-05-21 17:45:49,013 DEBUG   SenderThread:23247 [sender.py:send():302] send: header
+2023-05-21 17:45:49,013 DEBUG   SenderThread:23247 [sender.py:send():302] send: run
+2023-05-21 17:45:49,576 INFO    SenderThread:23247 [dir_watcher.py:__init__():216] watching files in: /media/songoh/ssh3/songoh_ws/DAB Mask3D-main/wandb/run-20230521_174548-ktx3wqiq/files
+2023-05-21 17:45:49,577 INFO    SenderThread:23247 [sender.py:_start_run_threads():913] run started: ktx3wqiq with start time 1684658748.986685

@@ -1,0 +1,1275 @@
+2023-05-26 03:37:40,137 INFO    StreamThr :26529 [internal.py:wandb_internal():90] W&B internal server running at pid: 26529, started at: 2023-05-26 03:37:40.137365
+2023-05-26 03:37:40,141 DEBUG   HandlerThread:26529 [handler.py:handle_request():141] handle_request: status
+2023-05-26 03:37:40,142 DEBUG   SenderThread:26529 [sender.py:send_request():316] send_request: status
+2023-05-26 03:37:40,145 INFO    WriterThread:26529 [datastore.py:open_for_write():75] open: /media/songoh/ssh3/songoh_ws/DAB Mask3D-main/wandb/run-20230526_033740-3ij1pqzr/run-3ij1pqzr.wandb
+2023-05-26 03:37:40,145 DEBUG   SenderThread:26529 [sender.py:send():302] send: header
+2023-05-26 03:37:40,145 DEBUG   SenderThread:26529 [sender.py:send():302] send: run
+2023-05-26 03:37:40,885 DEBUG   HandlerThread:26529 [handler.py:handle_request():141] handle_request: check_version
+2023-05-26 03:37:40,891 INFO    SenderThread:26529 [dir_watcher.py:__init__():216] watching files in: /media/songoh/ssh3/songoh_ws/DAB Mask3D-main/wandb/run-20230526_033740-3ij1pqzr/files
+2023-05-26 03:37:40,891 INFO    SenderThread:26529 [sender.py:_start_run_threads():913] run started: 3ij1pqzr with start time 1685039860.087551
+2023-05-26 03:37:40,892 DEBUG   SenderThread:26529 [sender.py:send():302] send: summary
+2023-05-26 03:37:40,892 INFO    SenderThread:26529 [sender.py:_save_file():1156] saving file wandb-summary.json with policy end
+2023-05-26 03:37:40,892 DEBUG   SenderThread:26529 [sender.py:send_request():316] send_request: check_version
+2023-05-26 03:37:40,962 DEBUG   HandlerThread:26529 [handler.py:handle_request():141] handle_request: run_start
+2023-05-26 03:37:40,975 DEBUG   HandlerThread:26529 [meta.py:__init__():35] meta init
+2023-05-26 03:37:40,976 DEBUG   HandlerThread:26529 [meta.py:__init__():50] meta init done
+2023-05-26 03:37:40,976 DEBUG   HandlerThread:26529 [meta.py:probe():216] probe
+2023-05-26 03:37:40,982 DEBUG   HandlerThread:26529 [git.py:repo():40] git repository is invalid
+2023-05-26 03:37:40,983 DEBUG   HandlerThread:26529 [meta.py:_save_pip():54] save pip
+2023-05-26 03:37:40,983 DEBUG   HandlerThread:26529 [meta.py:_save_pip():68] save pip done
+2023-05-26 03:37:40,983 DEBUG   HandlerThread:26529 [meta.py:_save_conda():75] save conda
+2023-05-26 03:37:41,894 INFO    Thread-12 :26529 [dir_watcher.py:_on_file_created():275] file/dir created: /media/songoh/ssh3/songoh_ws/DAB Mask3D-main/wandb/run-20230526_033740-3ij1pqzr/files/requirements.txt
+2023-05-26 03:37:41,895 INFO    Thread-12 :26529 [dir_watcher.py:_on_file_created():275] file/dir created: /media/songoh/ssh3/songoh_ws/DAB Mask3D-main/wandb/run-20230526_033740-3ij1pqzr/files/conda-environment.yaml
+2023-05-26 03:37:41,895 INFO    Thread-12 :26529 [dir_watcher.py:_on_file_created():275] file/dir created: /media/songoh/ssh3/songoh_ws/DAB Mask3D-main/wandb/run-20230526_033740-3ij1pqzr/files/wandb-summary.json
+2023-05-26 03:37:43,842 DEBUG   HandlerThread:26529 [meta.py:_save_conda():85] save conda done
+2023-05-26 03:37:43,842 DEBUG   HandlerThread:26529 [meta.py:probe():254] probe done
+2023-05-26 03:37:43,890 DEBUG   SenderThread:26529 [sender.py:send():302] send: files
+2023-05-26 03:37:43,890 INFO    SenderThread:26529 [sender.py:_save_file():1156] saving file wandb-metadata.json with policy now
+2023-05-26 03:37:43,898 INFO    Thread-12 :26529 [dir_watcher.py:_on_file_modified():292] file/dir modified: /media/songoh/ssh3/songoh_ws/DAB Mask3D-main/wandb/run-20230526_033740-3ij1pqzr/files/conda-environment.yaml
+2023-05-26 03:37:43,898 INFO    Thread-12 :26529 [dir_watcher.py:_on_file_created():275] file/dir created: /media/songoh/ssh3/songoh_ws/DAB Mask3D-main/wandb/run-20230526_033740-3ij1pqzr/files/wandb-metadata.json
+2023-05-26 03:37:43,899 DEBUG   HandlerThread:26529 [handler.py:handle_request():141] handle_request: stop_status
+2023-05-26 03:37:43,899 DEBUG   SenderThread:26529 [sender.py:send_request():316] send_request: stop_status
+2023-05-26 03:37:44,137 DEBUG   SenderThread:26529 [sender.py:send():302] send: telemetry
+2023-05-26 03:37:44,137 DEBUG   SenderThread:26529 [sender.py:send():302] send: telemetry
+2023-05-26 03:37:44,341 DEBUG   SenderThread:26529 [sender.py:send():302] send: telemetry
+2023-05-26 03:37:44,597 INFO    Thread-16 :26529 [upload_job.py:push():138] Uploaded file /tmp/tmpbh7q_g1hwandb/440v3ltl-wandb-metadata.json
+2023-05-26 03:37:44,650 DEBUG   SenderThread:26529 [sender.py:send():302] send: telemetry
+2023-05-26 03:37:44,655 DEBUG   SenderThread:26529 [sender.py:send():302] send: telemetry
+2023-05-26 03:37:44,898 INFO    Thread-12 :26529 [dir_watcher.py:_on_file_created():275] file/dir created: /media/songoh/ssh3/songoh_ws/DAB Mask3D-main/wandb/run-20230526_033740-3ij1pqzr/files/output.log
+2023-05-26 03:37:45,039 DEBUG   SenderThread:26529 [sender.py:send():302] send: telemetry
+2023-05-26 03:37:45,335 DEBUG   SenderThread:26529 [sender.py:send():302] send: telemetry
+2023-05-26 03:37:45,874 DEBUG   SenderThread:26529 [sender.py:send():302] send: config
+2023-05-26 03:37:46,644 DEBUG   SenderThread:26529 [sender.py:send():302] send: telemetry
+2023-05-26 03:37:46,899 INFO    Thread-12 :26529 [dir_watcher.py:_on_file_modified():292] file/dir modified: /media/songoh/ssh3/songoh_ws/DAB Mask3D-main/wandb/run-20230526_033740-3ij1pqzr/files/output.log
+2023-05-26 03:37:47,900 INFO    Thread-12 :26529 [dir_watcher.py:_on_file_modified():292] file/dir modified: /media/songoh/ssh3/songoh_ws/DAB Mask3D-main/wandb/run-20230526_033740-3ij1pqzr/files/output.log
+2023-05-26 03:37:49,650 DEBUG   SenderThread:26529 [sender.py:send():302] send: telemetry
+2023-05-26 03:37:49,901 INFO    Thread-12 :26529 [dir_watcher.py:_on_file_modified():292] file/dir modified: /media/songoh/ssh3/songoh_ws/DAB Mask3D-main/wandb/run-20230526_033740-3ij1pqzr/files/output.log
+2023-05-26 03:37:50,901 INFO    Thread-12 :26529 [dir_watcher.py:_on_file_modified():292] file/dir modified: /media/songoh/ssh3/songoh_ws/DAB Mask3D-main/wandb/run-20230526_033740-3ij1pqzr/files/output.log
+2023-05-26 03:37:53,056 DEBUG   SenderThread:26529 [sender.py:send():302] send: config
+2023-05-26 03:37:53,902 INFO    Thread-12 :26529 [dir_watcher.py:_on_file_modified():292] file/dir modified: /media/songoh/ssh3/songoh_ws/DAB Mask3D-main/wandb/run-20230526_033740-3ij1pqzr/files/output.log
+2023-05-26 03:37:54,903 INFO    Thread-12 :26529 [dir_watcher.py:_on_file_modified():292] file/dir modified: /media/songoh/ssh3/songoh_ws/DAB Mask3D-main/wandb/run-20230526_033740-3ij1pqzr/files/output.log
+2023-05-26 03:37:56,903 INFO    Thread-12 :26529 [dir_watcher.py:_on_file_modified():292] file/dir modified: /media/songoh/ssh3/songoh_ws/DAB Mask3D-main/wandb/run-20230526_033740-3ij1pqzr/files/output.log
+2023-05-26 03:37:59,210 DEBUG   HandlerThread:26529 [handler.py:handle_request():141] handle_request: stop_status
+2023-05-26 03:37:59,211 DEBUG   SenderThread:26529 [sender.py:send_request():316] send_request: stop_status
+2023-05-26 03:38:07,908 INFO    Thread-12 :26529 [dir_watcher.py:_on_file_modified():292] file/dir modified: /media/songoh/ssh3/songoh_ws/DAB Mask3D-main/wandb/run-20230526_033740-3ij1pqzr/files/output.log
+2023-05-26 03:38:08,913 INFO    Thread-12 :26529 [dir_watcher.py:_on_file_modified():292] file/dir modified: /media/songoh/ssh3/songoh_ws/DAB Mask3D-main/wandb/run-20230526_033740-3ij1pqzr/files/output.log
+2023-05-26 03:38:09,562 DEBUG   SenderThread:26529 [sender.py:send():302] send: stats
+2023-05-26 03:38:11,975 INFO    Thread-12 :26529 [dir_watcher.py:_on_file_modified():292] file/dir modified: /media/songoh/ssh3/songoh_ws/DAB Mask3D-main/wandb/run-20230526_033740-3ij1pqzr/files/config.yaml
+2023-05-26 03:38:14,443 DEBUG   HandlerThread:26529 [handler.py:handle_request():141] handle_request: stop_status
+2023-05-26 03:38:14,443 DEBUG   SenderThread:26529 [sender.py:send_request():316] send_request: stop_status
+2023-05-26 03:38:22,979 INFO    Thread-12 :26529 [dir_watcher.py:_on_file_modified():292] file/dir modified: /media/songoh/ssh3/songoh_ws/DAB Mask3D-main/wandb/run-20230526_033740-3ij1pqzr/files/output.log
+2023-05-26 03:38:23,980 INFO    Thread-12 :26529 [dir_watcher.py:_on_file_modified():292] file/dir modified: /media/songoh/ssh3/songoh_ws/DAB Mask3D-main/wandb/run-20230526_033740-3ij1pqzr/files/output.log
+2023-05-26 03:38:24,980 INFO    Thread-12 :26529 [dir_watcher.py:_on_file_modified():292] file/dir modified: /media/songoh/ssh3/songoh_ws/DAB Mask3D-main/wandb/run-20230526_033740-3ij1pqzr/files/output.log
+2023-05-26 03:38:29,662 DEBUG   HandlerThread:26529 [handler.py:handle_request():141] handle_request: stop_status
+2023-05-26 03:38:29,662 DEBUG   SenderThread:26529 [sender.py:send_request():316] send_request: stop_status
+2023-05-26 03:38:32,983 INFO    Thread-12 :26529 [dir_watcher.py:_on_file_modified():292] file/dir modified: /media/songoh/ssh3/songoh_ws/DAB Mask3D-main/wandb/run-20230526_033740-3ij1pqzr/files/output.log
+2023-05-26 03:38:33,984 INFO    Thread-12 :26529 [dir_watcher.py:_on_file_modified():292] file/dir modified: /media/songoh/ssh3/songoh_ws/DAB Mask3D-main/wandb/run-20230526_033740-3ij1pqzr/files/output.log
+2023-05-26 03:38:34,984 INFO    Thread-12 :26529 [dir_watcher.py:_on_file_modified():292] file/dir modified: /media/songoh/ssh3/songoh_ws/DAB Mask3D-main/wandb/run-20230526_033740-3ij1pqzr/files/output.log
+2023-05-26 03:38:40,109 DEBUG   SenderThread:26529 [sender.py:send():302] send: stats
+2023-05-26 03:38:44,876 DEBUG   HandlerThread:26529 [handler.py:handle_request():141] handle_request: stop_status
+2023-05-26 03:38:44,876 DEBUG   SenderThread:26529 [sender.py:send_request():316] send_request: stop_status
+2023-05-26 03:38:48,990 INFO    Thread-12 :26529 [dir_watcher.py:_on_file_modified():292] file/dir modified: /media/songoh/ssh3/songoh_ws/DAB Mask3D-main/wandb/run-20230526_033740-3ij1pqzr/files/output.log
+2023-05-26 03:38:49,990 INFO    Thread-12 :26529 [dir_watcher.py:_on_file_modified():292] file/dir modified: /media/songoh/ssh3/songoh_ws/DAB Mask3D-main/wandb/run-20230526_033740-3ij1pqzr/files/output.log
+2023-05-26 03:39:00,119 DEBUG   HandlerThread:26529 [handler.py:handle_request():141] handle_request: stop_status
+2023-05-26 03:39:00,120 DEBUG   SenderThread:26529 [sender.py:send_request():316] send_request: stop_status
+2023-05-26 03:39:04,996 INFO    Thread-12 :26529 [dir_watcher.py:_on_file_modified():292] file/dir modified: /media/songoh/ssh3/songoh_ws/DAB Mask3D-main/wandb/run-20230526_033740-3ij1pqzr/files/output.log
+2023-05-26 03:39:05,997 INFO    Thread-12 :26529 [dir_watcher.py:_on_file_modified():292] file/dir modified: /media/songoh/ssh3/songoh_ws/DAB Mask3D-main/wandb/run-20230526_033740-3ij1pqzr/files/output.log
+2023-05-26 03:39:10,653 DEBUG   SenderThread:26529 [sender.py:send():302] send: stats
+2023-05-26 03:39:11,999 INFO    Thread-12 :26529 [dir_watcher.py:_on_file_modified():292] file/dir modified: /media/songoh/ssh3/songoh_ws/DAB Mask3D-main/wandb/run-20230526_033740-3ij1pqzr/files/output.log
+2023-05-26 03:39:14,000 INFO    Thread-12 :26529 [dir_watcher.py:_on_file_modified():292] file/dir modified: /media/songoh/ssh3/songoh_ws/DAB Mask3D-main/wandb/run-20230526_033740-3ij1pqzr/files/output.log
+2023-05-26 03:39:15,511 DEBUG   HandlerThread:26529 [handler.py:handle_request():141] handle_request: stop_status
+2023-05-26 03:39:15,512 DEBUG   SenderThread:26529 [sender.py:send_request():316] send_request: stop_status
+2023-05-26 03:39:20,003 INFO    Thread-12 :26529 [dir_watcher.py:_on_file_modified():292] file/dir modified: /media/songoh/ssh3/songoh_ws/DAB Mask3D-main/wandb/run-20230526_033740-3ij1pqzr/files/output.log
+2023-05-26 03:39:28,006 INFO    Thread-12 :26529 [dir_watcher.py:_on_file_modified():292] file/dir modified: /media/songoh/ssh3/songoh_ws/DAB Mask3D-main/wandb/run-20230526_033740-3ij1pqzr/files/output.log
+2023-05-26 03:39:30,986 DEBUG   HandlerThread:26529 [handler.py:handle_request():141] handle_request: stop_status
+2023-05-26 03:39:30,986 DEBUG   SenderThread:26529 [sender.py:send_request():316] send_request: stop_status
+2023-05-26 03:39:40,011 INFO    Thread-12 :26529 [dir_watcher.py:_on_file_modified():292] file/dir modified: /media/songoh/ssh3/songoh_ws/DAB Mask3D-main/wandb/run-20230526_033740-3ij1pqzr/files/output.log
+2023-05-26 03:39:41,159 DEBUG   SenderThread:26529 [sender.py:send():302] send: stats
+2023-05-26 03:39:42,012 INFO    Thread-12 :26529 [dir_watcher.py:_on_file_modified():292] file/dir modified: /media/songoh/ssh3/songoh_ws/DAB Mask3D-main/wandb/run-20230526_033740-3ij1pqzr/files/output.log
+2023-05-26 03:39:46,218 DEBUG   HandlerThread:26529 [handler.py:handle_request():141] handle_request: stop_status
+2023-05-26 03:39:46,218 DEBUG   SenderThread:26529 [sender.py:send_request():316] send_request: stop_status
+2023-05-26 03:39:52,016 INFO    Thread-12 :26529 [dir_watcher.py:_on_file_modified():292] file/dir modified: /media/songoh/ssh3/songoh_ws/DAB Mask3D-main/wandb/run-20230526_033740-3ij1pqzr/files/output.log
+2023-05-26 03:39:54,017 INFO    Thread-12 :26529 [dir_watcher.py:_on_file_modified():292] file/dir modified: /media/songoh/ssh3/songoh_ws/DAB Mask3D-main/wandb/run-20230526_033740-3ij1pqzr/files/output.log
+2023-05-26 03:40:01,448 DEBUG   HandlerThread:26529 [handler.py:handle_request():141] handle_request: stop_status
+2023-05-26 03:40:01,449 DEBUG   SenderThread:26529 [sender.py:send_request():316] send_request: stop_status
+2023-05-26 03:40:04,021 INFO    Thread-12 :26529 [dir_watcher.py:_on_file_modified():292] file/dir modified: /media/songoh/ssh3/songoh_ws/DAB Mask3D-main/wandb/run-20230526_033740-3ij1pqzr/files/output.log
+2023-05-26 03:40:06,021 INFO    Thread-12 :26529 [dir_watcher.py:_on_file_modified():292] file/dir modified: /media/songoh/ssh3/songoh_ws/DAB Mask3D-main/wandb/run-20230526_033740-3ij1pqzr/files/output.log
+2023-05-26 03:40:10,023 INFO    Thread-12 :26529 [dir_watcher.py:_on_file_modified():292] file/dir modified: /media/songoh/ssh3/songoh_ws/DAB Mask3D-main/wandb/run-20230526_033740-3ij1pqzr/files/output.log
+2023-05-26 03:40:11,727 DEBUG   SenderThread:26529 [sender.py:send():302] send: stats
+2023-05-26 03:40:12,024 INFO    Thread-12 :26529 [dir_watcher.py:_on_file_modified():292] file/dir modified: /media/songoh/ssh3/songoh_ws/DAB Mask3D-main/wandb/run-20230526_033740-3ij1pqzr/files/output.log
+2023-05-26 03:40:16,699 DEBUG   HandlerThread:26529 [handler.py:handle_request():141] handle_request: stop_status
+2023-05-26 03:40:16,700 DEBUG   SenderThread:26529 [sender.py:send_request():316] send_request: stop_status
+2023-05-26 03:40:18,027 INFO    Thread-12 :26529 [dir_watcher.py:_on_file_modified():292] file/dir modified: /media/songoh/ssh3/songoh_ws/DAB Mask3D-main/wandb/run-20230526_033740-3ij1pqzr/files/output.log
+2023-05-26 03:40:20,028 INFO    Thread-12 :26529 [dir_watcher.py:_on_file_modified():292] file/dir modified: /media/songoh/ssh3/songoh_ws/DAB Mask3D-main/wandb/run-20230526_033740-3ij1pqzr/files/output.log
+2023-05-26 03:40:26,031 INFO    Thread-12 :26529 [dir_watcher.py:_on_file_modified():292] file/dir modified: /media/songoh/ssh3/songoh_ws/DAB Mask3D-main/wandb/run-20230526_033740-3ij1pqzr/files/output.log
+2023-05-26 03:40:28,032 INFO    Thread-12 :26529 [dir_watcher.py:_on_file_modified():292] file/dir modified: /media/songoh/ssh3/songoh_ws/DAB Mask3D-main/wandb/run-20230526_033740-3ij1pqzr/files/output.log
+2023-05-26 03:40:31,928 DEBUG   HandlerThread:26529 [handler.py:handle_request():141] handle_request: stop_status
+2023-05-26 03:40:31,929 DEBUG   SenderThread:26529 [sender.py:send_request():316] send_request: stop_status
+2023-05-26 03:40:36,035 INFO    Thread-12 :26529 [dir_watcher.py:_on_file_modified():292] file/dir modified: /media/songoh/ssh3/songoh_ws/DAB Mask3D-main/wandb/run-20230526_033740-3ij1pqzr/files/output.log
+2023-05-26 03:40:42,296 DEBUG   SenderThread:26529 [sender.py:send():302] send: stats
+2023-05-26 03:40:44,039 INFO    Thread-12 :26529 [dir_watcher.py:_on_file_modified():292] file/dir modified: /media/songoh/ssh3/songoh_ws/DAB Mask3D-main/wandb/run-20230526_033740-3ij1pqzr/files/output.log
+2023-05-26 03:40:47,583 DEBUG   HandlerThread:26529 [handler.py:handle_request():141] handle_request: stop_status
+2023-05-26 03:40:47,583 DEBUG   SenderThread:26529 [sender.py:send_request():316] send_request: stop_status
+2023-05-26 03:40:52,042 INFO    Thread-12 :26529 [dir_watcher.py:_on_file_modified():292] file/dir modified: /media/songoh/ssh3/songoh_ws/DAB Mask3D-main/wandb/run-20230526_033740-3ij1pqzr/files/output.log
+2023-05-26 03:40:54,043 INFO    Thread-12 :26529 [dir_watcher.py:_on_file_modified():292] file/dir modified: /media/songoh/ssh3/songoh_ws/DAB Mask3D-main/wandb/run-20230526_033740-3ij1pqzr/files/output.log
+2023-05-26 03:41:00,046 INFO    Thread-12 :26529 [dir_watcher.py:_on_file_modified():292] file/dir modified: /media/songoh/ssh3/songoh_ws/DAB Mask3D-main/wandb/run-20230526_033740-3ij1pqzr/files/output.log
+2023-05-26 03:41:02,920 DEBUG   HandlerThread:26529 [handler.py:handle_request():141] handle_request: stop_status
+2023-05-26 03:41:02,921 DEBUG   SenderThread:26529 [sender.py:send_request():316] send_request: stop_status
+2023-05-26 03:41:12,857 DEBUG   SenderThread:26529 [sender.py:send():302] send: stats
+2023-05-26 03:41:16,052 INFO    Thread-12 :26529 [dir_watcher.py:_on_file_modified():292] file/dir modified: /media/songoh/ssh3/songoh_ws/DAB Mask3D-main/wandb/run-20230526_033740-3ij1pqzr/files/output.log
+2023-05-26 03:41:18,053 INFO    Thread-12 :26529 [dir_watcher.py:_on_file_modified():292] file/dir modified: /media/songoh/ssh3/songoh_ws/DAB Mask3D-main/wandb/run-20230526_033740-3ij1pqzr/files/output.log
+2023-05-26 03:41:18,314 DEBUG   HandlerThread:26529 [handler.py:handle_request():141] handle_request: stop_status
+2023-05-26 03:41:18,314 DEBUG   SenderThread:26529 [sender.py:send_request():316] send_request: stop_status
+2023-05-26 03:41:28,057 INFO    Thread-12 :26529 [dir_watcher.py:_on_file_modified():292] file/dir modified: /media/songoh/ssh3/songoh_ws/DAB Mask3D-main/wandb/run-20230526_033740-3ij1pqzr/files/output.log
+2023-05-26 03:41:30,058 INFO    Thread-12 :26529 [dir_watcher.py:_on_file_modified():292] file/dir modified: /media/songoh/ssh3/songoh_ws/DAB Mask3D-main/wandb/run-20230526_033740-3ij1pqzr/files/output.log
+2023-05-26 03:41:33,557 DEBUG   HandlerThread:26529 [handler.py:handle_request():141] handle_request: stop_status
+2023-05-26 03:41:33,557 DEBUG   SenderThread:26529 [sender.py:send_request():316] send_request: stop_status
+2023-05-26 03:41:36,061 INFO    Thread-12 :26529 [dir_watcher.py:_on_file_modified():292] file/dir modified: /media/songoh/ssh3/songoh_ws/DAB Mask3D-main/wandb/run-20230526_033740-3ij1pqzr/files/output.log
+2023-05-26 03:41:38,061 INFO    Thread-12 :26529 [dir_watcher.py:_on_file_modified():292] file/dir modified: /media/songoh/ssh3/songoh_ws/DAB Mask3D-main/wandb/run-20230526_033740-3ij1pqzr/files/output.log
+2023-05-26 03:41:43,412 DEBUG   SenderThread:26529 [sender.py:send():302] send: stats
+2023-05-26 03:41:44,064 INFO    Thread-12 :26529 [dir_watcher.py:_on_file_modified():292] file/dir modified: /media/songoh/ssh3/songoh_ws/DAB Mask3D-main/wandb/run-20230526_033740-3ij1pqzr/files/output.log
+2023-05-26 03:41:46,065 INFO    Thread-12 :26529 [dir_watcher.py:_on_file_modified():292] file/dir modified: /media/songoh/ssh3/songoh_ws/DAB Mask3D-main/wandb/run-20230526_033740-3ij1pqzr/files/output.log
+2023-05-26 03:41:48,796 DEBUG   HandlerThread:26529 [handler.py:handle_request():141] handle_request: stop_status
+2023-05-26 03:41:48,796 DEBUG   SenderThread:26529 [sender.py:send_request():316] send_request: stop_status
+2023-05-26 03:41:58,070 INFO    Thread-12 :26529 [dir_watcher.py:_on_file_modified():292] file/dir modified: /media/songoh/ssh3/songoh_ws/DAB Mask3D-main/wandb/run-20230526_033740-3ij1pqzr/files/output.log
+2023-05-26 03:42:00,071 INFO    Thread-12 :26529 [dir_watcher.py:_on_file_modified():292] file/dir modified: /media/songoh/ssh3/songoh_ws/DAB Mask3D-main/wandb/run-20230526_033740-3ij1pqzr/files/output.log
+2023-05-26 03:42:04,069 DEBUG   HandlerThread:26529 [handler.py:handle_request():141] handle_request: stop_status
+2023-05-26 03:42:04,069 DEBUG   SenderThread:26529 [sender.py:send_request():316] send_request: stop_status
+2023-05-26 03:42:06,074 INFO    Thread-12 :26529 [dir_watcher.py:_on_file_modified():292] file/dir modified: /media/songoh/ssh3/songoh_ws/DAB Mask3D-main/wandb/run-20230526_033740-3ij1pqzr/files/output.log
+2023-05-26 03:42:07,074 INFO    Thread-12 :26529 [dir_watcher.py:_on_file_modified():292] file/dir modified: /media/songoh/ssh3/songoh_ws/DAB Mask3D-main/wandb/run-20230526_033740-3ij1pqzr/files/output.log
+2023-05-26 03:42:08,075 INFO    Thread-12 :26529 [dir_watcher.py:_on_file_modified():292] file/dir modified: /media/songoh/ssh3/songoh_ws/DAB Mask3D-main/wandb/run-20230526_033740-3ij1pqzr/files/output.log
+2023-05-26 03:42:13,986 DEBUG   SenderThread:26529 [sender.py:send():302] send: stats
+2023-05-26 03:42:14,077 INFO    Thread-12 :26529 [dir_watcher.py:_on_file_modified():292] file/dir modified: /media/songoh/ssh3/songoh_ws/DAB Mask3D-main/wandb/run-20230526_033740-3ij1pqzr/files/output.log
+2023-05-26 03:42:15,078 INFO    Thread-12 :26529 [dir_watcher.py:_on_file_modified():292] file/dir modified: /media/songoh/ssh3/songoh_ws/DAB Mask3D-main/wandb/run-20230526_033740-3ij1pqzr/files/output.log
+2023-05-26 03:42:19,080 INFO    Thread-12 :26529 [dir_watcher.py:_on_file_modified():292] file/dir modified: /media/songoh/ssh3/songoh_ws/DAB Mask3D-main/wandb/run-20230526_033740-3ij1pqzr/files/output.log
+2023-05-26 03:42:19,292 DEBUG   HandlerThread:26529 [handler.py:handle_request():141] handle_request: stop_status
+2023-05-26 03:42:19,293 DEBUG   SenderThread:26529 [sender.py:send_request():316] send_request: stop_status
+2023-05-26 03:42:20,080 INFO    Thread-12 :26529 [dir_watcher.py:_on_file_modified():292] file/dir modified: /media/songoh/ssh3/songoh_ws/DAB Mask3D-main/wandb/run-20230526_033740-3ij1pqzr/files/output.log
+2023-05-26 03:42:24,082 INFO    Thread-12 :26529 [dir_watcher.py:_on_file_modified():292] file/dir modified: /media/songoh/ssh3/songoh_ws/DAB Mask3D-main/wandb/run-20230526_033740-3ij1pqzr/files/output.log
+2023-05-26 03:42:25,083 INFO    Thread-12 :26529 [dir_watcher.py:_on_file_modified():292] file/dir modified: /media/songoh/ssh3/songoh_ws/DAB Mask3D-main/wandb/run-20230526_033740-3ij1pqzr/files/output.log
+2023-05-26 03:42:26,083 INFO    Thread-12 :26529 [dir_watcher.py:_on_file_modified():292] file/dir modified: /media/songoh/ssh3/songoh_ws/DAB Mask3D-main/wandb/run-20230526_033740-3ij1pqzr/files/output.log
+2023-05-26 03:42:30,085 INFO    Thread-12 :26529 [dir_watcher.py:_on_file_modified():292] file/dir modified: /media/songoh/ssh3/songoh_ws/DAB Mask3D-main/wandb/run-20230526_033740-3ij1pqzr/files/output.log
+2023-05-26 03:42:31,085 INFO    Thread-12 :26529 [dir_watcher.py:_on_file_modified():292] file/dir modified: /media/songoh/ssh3/songoh_ws/DAB Mask3D-main/wandb/run-20230526_033740-3ij1pqzr/files/output.log
+2023-05-26 03:42:34,548 DEBUG   HandlerThread:26529 [handler.py:handle_request():141] handle_request: stop_status
+2023-05-26 03:42:34,548 DEBUG   SenderThread:26529 [sender.py:send_request():316] send_request: stop_status
+2023-05-26 03:42:39,088 INFO    Thread-12 :26529 [dir_watcher.py:_on_file_modified():292] file/dir modified: /media/songoh/ssh3/songoh_ws/DAB Mask3D-main/wandb/run-20230526_033740-3ij1pqzr/files/output.log
+2023-05-26 03:42:40,089 INFO    Thread-12 :26529 [dir_watcher.py:_on_file_modified():292] file/dir modified: /media/songoh/ssh3/songoh_ws/DAB Mask3D-main/wandb/run-20230526_033740-3ij1pqzr/files/output.log
+2023-05-26 03:42:44,528 DEBUG   SenderThread:26529 [sender.py:send():302] send: stats
+2023-05-26 03:42:48,092 INFO    Thread-12 :26529 [dir_watcher.py:_on_file_modified():292] file/dir modified: /media/songoh/ssh3/songoh_ws/DAB Mask3D-main/wandb/run-20230526_033740-3ij1pqzr/files/output.log
+2023-05-26 03:42:49,092 INFO    Thread-12 :26529 [dir_watcher.py:_on_file_modified():292] file/dir modified: /media/songoh/ssh3/songoh_ws/DAB Mask3D-main/wandb/run-20230526_033740-3ij1pqzr/files/output.log
+2023-05-26 03:42:49,782 DEBUG   HandlerThread:26529 [handler.py:handle_request():141] handle_request: stop_status
+2023-05-26 03:42:49,782 DEBUG   SenderThread:26529 [sender.py:send_request():316] send_request: stop_status
+2023-05-26 03:42:50,093 INFO    Thread-12 :26529 [dir_watcher.py:_on_file_modified():292] file/dir modified: /media/songoh/ssh3/songoh_ws/DAB Mask3D-main/wandb/run-20230526_033740-3ij1pqzr/files/output.log
+2023-05-26 03:42:58,096 INFO    Thread-12 :26529 [dir_watcher.py:_on_file_modified():292] file/dir modified: /media/songoh/ssh3/songoh_ws/DAB Mask3D-main/wandb/run-20230526_033740-3ij1pqzr/files/output.log
+2023-05-26 03:42:59,097 INFO    Thread-12 :26529 [dir_watcher.py:_on_file_modified():292] file/dir modified: /media/songoh/ssh3/songoh_ws/DAB Mask3D-main/wandb/run-20230526_033740-3ij1pqzr/files/output.log
+2023-05-26 03:43:05,028 DEBUG   HandlerThread:26529 [handler.py:handle_request():141] handle_request: stop_status
+2023-05-26 03:43:05,028 DEBUG   SenderThread:26529 [sender.py:send_request():316] send_request: stop_status
+2023-05-26 03:43:06,100 INFO    Thread-12 :26529 [dir_watcher.py:_on_file_modified():292] file/dir modified: /media/songoh/ssh3/songoh_ws/DAB Mask3D-main/wandb/run-20230526_033740-3ij1pqzr/files/output.log
+2023-05-26 03:43:07,100 INFO    Thread-12 :26529 [dir_watcher.py:_on_file_modified():292] file/dir modified: /media/songoh/ssh3/songoh_ws/DAB Mask3D-main/wandb/run-20230526_033740-3ij1pqzr/files/output.log
+2023-05-26 03:43:08,101 INFO    Thread-12 :26529 [dir_watcher.py:_on_file_modified():292] file/dir modified: /media/songoh/ssh3/songoh_ws/DAB Mask3D-main/wandb/run-20230526_033740-3ij1pqzr/files/output.log
+2023-05-26 03:43:15,104 DEBUG   SenderThread:26529 [sender.py:send():302] send: stats
+2023-05-26 03:43:18,107 INFO    Thread-12 :26529 [dir_watcher.py:_on_file_modified():292] file/dir modified: /media/songoh/ssh3/songoh_ws/DAB Mask3D-main/wandb/run-20230526_033740-3ij1pqzr/files/output.log
+2023-05-26 03:43:19,107 INFO    Thread-12 :26529 [dir_watcher.py:_on_file_modified():292] file/dir modified: /media/songoh/ssh3/songoh_ws/DAB Mask3D-main/wandb/run-20230526_033740-3ij1pqzr/files/output.log
+2023-05-26 03:43:20,108 INFO    Thread-12 :26529 [dir_watcher.py:_on_file_modified():292] file/dir modified: /media/songoh/ssh3/songoh_ws/DAB Mask3D-main/wandb/run-20230526_033740-3ij1pqzr/files/output.log
+2023-05-26 03:43:20,262 DEBUG   HandlerThread:26529 [handler.py:handle_request():141] handle_request: stop_status
+2023-05-26 03:43:20,263 DEBUG   SenderThread:26529 [sender.py:send_request():316] send_request: stop_status
+2023-05-26 03:43:27,110 INFO    Thread-12 :26529 [dir_watcher.py:_on_file_modified():292] file/dir modified: /media/songoh/ssh3/songoh_ws/DAB Mask3D-main/wandb/run-20230526_033740-3ij1pqzr/files/output.log
+2023-05-26 03:43:28,111 INFO    Thread-12 :26529 [dir_watcher.py:_on_file_modified():292] file/dir modified: /media/songoh/ssh3/songoh_ws/DAB Mask3D-main/wandb/run-20230526_033740-3ij1pqzr/files/output.log
+2023-05-26 03:43:35,493 DEBUG   HandlerThread:26529 [handler.py:handle_request():141] handle_request: stop_status
+2023-05-26 03:43:35,493 DEBUG   SenderThread:26529 [sender.py:send_request():316] send_request: stop_status
+2023-05-26 03:43:36,114 INFO    Thread-12 :26529 [dir_watcher.py:_on_file_modified():292] file/dir modified: /media/songoh/ssh3/songoh_ws/DAB Mask3D-main/wandb/run-20230526_033740-3ij1pqzr/files/output.log
+2023-05-26 03:43:37,115 INFO    Thread-12 :26529 [dir_watcher.py:_on_file_modified():292] file/dir modified: /media/songoh/ssh3/songoh_ws/DAB Mask3D-main/wandb/run-20230526_033740-3ij1pqzr/files/output.log
+2023-05-26 03:43:38,115 INFO    Thread-12 :26529 [dir_watcher.py:_on_file_modified():292] file/dir modified: /media/songoh/ssh3/songoh_ws/DAB Mask3D-main/wandb/run-20230526_033740-3ij1pqzr/files/output.log
+2023-05-26 03:43:45,707 DEBUG   SenderThread:26529 [sender.py:send():302] send: stats
+2023-05-26 03:43:46,119 INFO    Thread-12 :26529 [dir_watcher.py:_on_file_modified():292] file/dir modified: /media/songoh/ssh3/songoh_ws/DAB Mask3D-main/wandb/run-20230526_033740-3ij1pqzr/files/output.log
+2023-05-26 03:43:47,119 INFO    Thread-12 :26529 [dir_watcher.py:_on_file_modified():292] file/dir modified: /media/songoh/ssh3/songoh_ws/DAB Mask3D-main/wandb/run-20230526_033740-3ij1pqzr/files/output.log
+2023-05-26 03:43:50,717 DEBUG   HandlerThread:26529 [handler.py:handle_request():141] handle_request: stop_status
+2023-05-26 03:43:50,718 DEBUG   SenderThread:26529 [sender.py:send_request():316] send_request: stop_status
+2023-05-26 03:43:56,123 INFO    Thread-12 :26529 [dir_watcher.py:_on_file_modified():292] file/dir modified: /media/songoh/ssh3/songoh_ws/DAB Mask3D-main/wandb/run-20230526_033740-3ij1pqzr/files/output.log
+2023-05-26 03:43:57,124 INFO    Thread-12 :26529 [dir_watcher.py:_on_file_modified():292] file/dir modified: /media/songoh/ssh3/songoh_ws/DAB Mask3D-main/wandb/run-20230526_033740-3ij1pqzr/files/output.log
+2023-05-26 03:43:58,125 INFO    Thread-12 :26529 [dir_watcher.py:_on_file_modified():292] file/dir modified: /media/songoh/ssh3/songoh_ws/DAB Mask3D-main/wandb/run-20230526_033740-3ij1pqzr/files/output.log
+2023-05-26 03:44:01,126 INFO    Thread-12 :26529 [dir_watcher.py:_on_file_modified():292] file/dir modified: /media/songoh/ssh3/songoh_ws/DAB Mask3D-main/wandb/run-20230526_033740-3ij1pqzr/files/output.log
+2023-05-26 03:44:02,127 INFO    Thread-12 :26529 [dir_watcher.py:_on_file_modified():292] file/dir modified: /media/songoh/ssh3/songoh_ws/DAB Mask3D-main/wandb/run-20230526_033740-3ij1pqzr/files/output.log
+2023-05-26 03:44:05,947 DEBUG   HandlerThread:26529 [handler.py:handle_request():141] handle_request: stop_status
+2023-05-26 03:44:05,947 DEBUG   SenderThread:26529 [sender.py:send_request():316] send_request: stop_status
+2023-05-26 03:44:06,128 INFO    Thread-12 :26529 [dir_watcher.py:_on_file_modified():292] file/dir modified: /media/songoh/ssh3/songoh_ws/DAB Mask3D-main/wandb/run-20230526_033740-3ij1pqzr/files/output.log
+2023-05-26 03:44:07,129 INFO    Thread-12 :26529 [dir_watcher.py:_on_file_modified():292] file/dir modified: /media/songoh/ssh3/songoh_ws/DAB Mask3D-main/wandb/run-20230526_033740-3ij1pqzr/files/output.log
+2023-05-26 03:44:11,131 INFO    Thread-12 :26529 [dir_watcher.py:_on_file_modified():292] file/dir modified: /media/songoh/ssh3/songoh_ws/DAB Mask3D-main/wandb/run-20230526_033740-3ij1pqzr/files/output.log
+2023-05-26 03:44:12,132 INFO    Thread-12 :26529 [dir_watcher.py:_on_file_modified():292] file/dir modified: /media/songoh/ssh3/songoh_ws/DAB Mask3D-main/wandb/run-20230526_033740-3ij1pqzr/files/output.log
+2023-05-26 03:44:16,276 DEBUG   SenderThread:26529 [sender.py:send():302] send: stats
+2023-05-26 03:44:18,134 INFO    Thread-12 :26529 [dir_watcher.py:_on_file_modified():292] file/dir modified: /media/songoh/ssh3/songoh_ws/DAB Mask3D-main/wandb/run-20230526_033740-3ij1pqzr/files/output.log
+2023-05-26 03:44:19,135 INFO    Thread-12 :26529 [dir_watcher.py:_on_file_modified():292] file/dir modified: /media/songoh/ssh3/songoh_ws/DAB Mask3D-main/wandb/run-20230526_033740-3ij1pqzr/files/output.log
+2023-05-26 03:44:21,238 DEBUG   HandlerThread:26529 [handler.py:handle_request():141] handle_request: stop_status
+2023-05-26 03:44:21,239 DEBUG   SenderThread:26529 [sender.py:send_request():316] send_request: stop_status
+2023-05-26 03:44:25,137 INFO    Thread-12 :26529 [dir_watcher.py:_on_file_modified():292] file/dir modified: /media/songoh/ssh3/songoh_ws/DAB Mask3D-main/wandb/run-20230526_033740-3ij1pqzr/files/output.log
+2023-05-26 03:44:26,138 INFO    Thread-12 :26529 [dir_watcher.py:_on_file_modified():292] file/dir modified: /media/songoh/ssh3/songoh_ws/DAB Mask3D-main/wandb/run-20230526_033740-3ij1pqzr/files/output.log
+2023-05-26 03:44:32,141 INFO    Thread-12 :26529 [dir_watcher.py:_on_file_modified():292] file/dir modified: /media/songoh/ssh3/songoh_ws/DAB Mask3D-main/wandb/run-20230526_033740-3ij1pqzr/files/output.log
+2023-05-26 03:44:33,141 INFO    Thread-12 :26529 [dir_watcher.py:_on_file_modified():292] file/dir modified: /media/songoh/ssh3/songoh_ws/DAB Mask3D-main/wandb/run-20230526_033740-3ij1pqzr/files/output.log
+2023-05-26 03:44:36,492 DEBUG   HandlerThread:26529 [handler.py:handle_request():141] handle_request: stop_status
+2023-05-26 03:44:36,493 DEBUG   SenderThread:26529 [sender.py:send_request():316] send_request: stop_status
+2023-05-26 03:44:40,144 INFO    Thread-12 :26529 [dir_watcher.py:_on_file_modified():292] file/dir modified: /media/songoh/ssh3/songoh_ws/DAB Mask3D-main/wandb/run-20230526_033740-3ij1pqzr/files/output.log
+2023-05-26 03:44:41,144 INFO    Thread-12 :26529 [dir_watcher.py:_on_file_modified():292] file/dir modified: /media/songoh/ssh3/songoh_ws/DAB Mask3D-main/wandb/run-20230526_033740-3ij1pqzr/files/output.log
+2023-05-26 03:44:46,147 INFO    Thread-12 :26529 [dir_watcher.py:_on_file_modified():292] file/dir modified: /media/songoh/ssh3/songoh_ws/DAB Mask3D-main/wandb/run-20230526_033740-3ij1pqzr/files/output.log
+2023-05-26 03:44:46,844 DEBUG   SenderThread:26529 [sender.py:send():302] send: stats
+2023-05-26 03:44:47,147 INFO    Thread-12 :26529 [dir_watcher.py:_on_file_modified():292] file/dir modified: /media/songoh/ssh3/songoh_ws/DAB Mask3D-main/wandb/run-20230526_033740-3ij1pqzr/files/output.log
+2023-05-26 03:44:51,729 DEBUG   HandlerThread:26529 [handler.py:handle_request():141] handle_request: stop_status
+2023-05-26 03:44:51,729 DEBUG   SenderThread:26529 [sender.py:send_request():316] send_request: stop_status
+2023-05-26 03:44:52,149 INFO    Thread-12 :26529 [dir_watcher.py:_on_file_modified():292] file/dir modified: /media/songoh/ssh3/songoh_ws/DAB Mask3D-main/wandb/run-20230526_033740-3ij1pqzr/files/output.log
+2023-05-26 03:44:53,150 INFO    Thread-12 :26529 [dir_watcher.py:_on_file_modified():292] file/dir modified: /media/songoh/ssh3/songoh_ws/DAB Mask3D-main/wandb/run-20230526_033740-3ij1pqzr/files/output.log
+2023-05-26 03:44:58,152 INFO    Thread-12 :26529 [dir_watcher.py:_on_file_modified():292] file/dir modified: /media/songoh/ssh3/songoh_ws/DAB Mask3D-main/wandb/run-20230526_033740-3ij1pqzr/files/output.log
+2023-05-26 03:44:59,152 INFO    Thread-12 :26529 [dir_watcher.py:_on_file_modified():292] file/dir modified: /media/songoh/ssh3/songoh_ws/DAB Mask3D-main/wandb/run-20230526_033740-3ij1pqzr/files/output.log
+2023-05-26 03:45:04,155 INFO    Thread-12 :26529 [dir_watcher.py:_on_file_modified():292] file/dir modified: /media/songoh/ssh3/songoh_ws/DAB Mask3D-main/wandb/run-20230526_033740-3ij1pqzr/files/output.log
+2023-05-26 03:45:05,156 INFO    Thread-12 :26529 [dir_watcher.py:_on_file_modified():292] file/dir modified: /media/songoh/ssh3/songoh_ws/DAB Mask3D-main/wandb/run-20230526_033740-3ij1pqzr/files/output.log
+2023-05-26 03:45:06,953 DEBUG   HandlerThread:26529 [handler.py:handle_request():141] handle_request: stop_status
+2023-05-26 03:45:06,953 DEBUG   SenderThread:26529 [sender.py:send_request():316] send_request: stop_status
+2023-05-26 03:45:10,158 INFO    Thread-12 :26529 [dir_watcher.py:_on_file_modified():292] file/dir modified: /media/songoh/ssh3/songoh_ws/DAB Mask3D-main/wandb/run-20230526_033740-3ij1pqzr/files/output.log
+2023-05-26 03:45:11,159 INFO    Thread-12 :26529 [dir_watcher.py:_on_file_modified():292] file/dir modified: /media/songoh/ssh3/songoh_ws/DAB Mask3D-main/wandb/run-20230526_033740-3ij1pqzr/files/output.log
+2023-05-26 03:45:17,161 INFO    Thread-12 :26529 [dir_watcher.py:_on_file_modified():292] file/dir modified: /media/songoh/ssh3/songoh_ws/DAB Mask3D-main/wandb/run-20230526_033740-3ij1pqzr/files/output.log
+2023-05-26 03:45:17,476 DEBUG   SenderThread:26529 [sender.py:send():302] send: stats
+2023-05-26 03:45:18,162 INFO    Thread-12 :26529 [dir_watcher.py:_on_file_modified():292] file/dir modified: /media/songoh/ssh3/songoh_ws/DAB Mask3D-main/wandb/run-20230526_033740-3ij1pqzr/files/output.log
+2023-05-26 03:45:22,164 INFO    Thread-12 :26529 [dir_watcher.py:_on_file_modified():292] file/dir modified: /media/songoh/ssh3/songoh_ws/DAB Mask3D-main/wandb/run-20230526_033740-3ij1pqzr/files/output.log
+2023-05-26 03:45:22,196 DEBUG   HandlerThread:26529 [handler.py:handle_request():141] handle_request: stop_status
+2023-05-26 03:45:22,196 DEBUG   SenderThread:26529 [sender.py:send_request():316] send_request: stop_status
+2023-05-26 03:45:23,164 INFO    Thread-12 :26529 [dir_watcher.py:_on_file_modified():292] file/dir modified: /media/songoh/ssh3/songoh_ws/DAB Mask3D-main/wandb/run-20230526_033740-3ij1pqzr/files/output.log
+2023-05-26 03:45:24,165 INFO    Thread-12 :26529 [dir_watcher.py:_on_file_modified():292] file/dir modified: /media/songoh/ssh3/songoh_ws/DAB Mask3D-main/wandb/run-20230526_033740-3ij1pqzr/files/output.log
+2023-05-26 03:45:27,166 INFO    Thread-12 :26529 [dir_watcher.py:_on_file_modified():292] file/dir modified: /media/songoh/ssh3/songoh_ws/DAB Mask3D-main/wandb/run-20230526_033740-3ij1pqzr/files/output.log
+2023-05-26 03:45:28,167 INFO    Thread-12 :26529 [dir_watcher.py:_on_file_modified():292] file/dir modified: /media/songoh/ssh3/songoh_ws/DAB Mask3D-main/wandb/run-20230526_033740-3ij1pqzr/files/output.log
+2023-05-26 03:45:32,169 INFO    Thread-12 :26529 [dir_watcher.py:_on_file_modified():292] file/dir modified: /media/songoh/ssh3/songoh_ws/DAB Mask3D-main/wandb/run-20230526_033740-3ij1pqzr/files/output.log
+2023-05-26 03:45:33,169 INFO    Thread-12 :26529 [dir_watcher.py:_on_file_modified():292] file/dir modified: /media/songoh/ssh3/songoh_ws/DAB Mask3D-main/wandb/run-20230526_033740-3ij1pqzr/files/output.log
+2023-05-26 03:45:34,169 INFO    Thread-12 :26529 [dir_watcher.py:_on_file_modified():292] file/dir modified: /media/songoh/ssh3/songoh_ws/DAB Mask3D-main/wandb/run-20230526_033740-3ij1pqzr/files/output.log
+2023-05-26 03:45:37,410 DEBUG   HandlerThread:26529 [handler.py:handle_request():141] handle_request: stop_status
+2023-05-26 03:45:37,410 DEBUG   SenderThread:26529 [sender.py:send_request():316] send_request: stop_status
+2023-05-26 03:45:38,171 INFO    Thread-12 :26529 [dir_watcher.py:_on_file_modified():292] file/dir modified: /media/songoh/ssh3/songoh_ws/DAB Mask3D-main/wandb/run-20230526_033740-3ij1pqzr/files/output.log
+2023-05-26 03:45:39,172 INFO    Thread-12 :26529 [dir_watcher.py:_on_file_modified():292] file/dir modified: /media/songoh/ssh3/songoh_ws/DAB Mask3D-main/wandb/run-20230526_033740-3ij1pqzr/files/output.log
+2023-05-26 03:45:44,174 INFO    Thread-12 :26529 [dir_watcher.py:_on_file_modified():292] file/dir modified: /media/songoh/ssh3/songoh_ws/DAB Mask3D-main/wandb/run-20230526_033740-3ij1pqzr/files/output.log
+2023-05-26 03:45:45,174 INFO    Thread-12 :26529 [dir_watcher.py:_on_file_modified():292] file/dir modified: /media/songoh/ssh3/songoh_ws/DAB Mask3D-main/wandb/run-20230526_033740-3ij1pqzr/files/output.log
+2023-05-26 03:45:48,049 DEBUG   SenderThread:26529 [sender.py:send():302] send: stats
+2023-05-26 03:45:49,176 INFO    Thread-12 :26529 [dir_watcher.py:_on_file_modified():292] file/dir modified: /media/songoh/ssh3/songoh_ws/DAB Mask3D-main/wandb/run-20230526_033740-3ij1pqzr/files/output.log
+2023-05-26 03:45:50,176 INFO    Thread-12 :26529 [dir_watcher.py:_on_file_modified():292] file/dir modified: /media/songoh/ssh3/songoh_ws/DAB Mask3D-main/wandb/run-20230526_033740-3ij1pqzr/files/output.log
+2023-05-26 03:45:52,839 DEBUG   HandlerThread:26529 [handler.py:handle_request():141] handle_request: stop_status
+2023-05-26 03:45:52,839 DEBUG   SenderThread:26529 [sender.py:send_request():316] send_request: stop_status
+2023-05-26 03:46:00,181 INFO    Thread-12 :26529 [dir_watcher.py:_on_file_modified():292] file/dir modified: /media/songoh/ssh3/songoh_ws/DAB Mask3D-main/wandb/run-20230526_033740-3ij1pqzr/files/output.log
+2023-05-26 03:46:01,181 INFO    Thread-12 :26529 [dir_watcher.py:_on_file_modified():292] file/dir modified: /media/songoh/ssh3/songoh_ws/DAB Mask3D-main/wandb/run-20230526_033740-3ij1pqzr/files/output.log
+2023-05-26 03:46:02,182 INFO    Thread-12 :26529 [dir_watcher.py:_on_file_modified():292] file/dir modified: /media/songoh/ssh3/songoh_ws/DAB Mask3D-main/wandb/run-20230526_033740-3ij1pqzr/files/output.log
+2023-05-26 03:46:08,083 DEBUG   HandlerThread:26529 [handler.py:handle_request():141] handle_request: stop_status
+2023-05-26 03:46:08,084 DEBUG   SenderThread:26529 [sender.py:send_request():316] send_request: stop_status
+2023-05-26 03:46:10,186 INFO    Thread-12 :26529 [dir_watcher.py:_on_file_modified():292] file/dir modified: /media/songoh/ssh3/songoh_ws/DAB Mask3D-main/wandb/run-20230526_033740-3ij1pqzr/files/output.log
+2023-05-26 03:46:11,186 INFO    Thread-12 :26529 [dir_watcher.py:_on_file_modified():292] file/dir modified: /media/songoh/ssh3/songoh_ws/DAB Mask3D-main/wandb/run-20230526_033740-3ij1pqzr/files/output.log
+2023-05-26 03:46:12,187 INFO    Thread-12 :26529 [dir_watcher.py:_on_file_modified():292] file/dir modified: /media/songoh/ssh3/songoh_ws/DAB Mask3D-main/wandb/run-20230526_033740-3ij1pqzr/files/output.log
+2023-05-26 03:46:18,550 DEBUG   SenderThread:26529 [sender.py:send():302] send: stats
+2023-05-26 03:46:22,191 INFO    Thread-12 :26529 [dir_watcher.py:_on_file_modified():292] file/dir modified: /media/songoh/ssh3/songoh_ws/DAB Mask3D-main/wandb/run-20230526_033740-3ij1pqzr/files/output.log
+2023-05-26 03:46:23,192 INFO    Thread-12 :26529 [dir_watcher.py:_on_file_modified():292] file/dir modified: /media/songoh/ssh3/songoh_ws/DAB Mask3D-main/wandb/run-20230526_033740-3ij1pqzr/files/output.log
+2023-05-26 03:46:23,312 DEBUG   HandlerThread:26529 [handler.py:handle_request():141] handle_request: stop_status
+2023-05-26 03:46:23,312 DEBUG   SenderThread:26529 [sender.py:send_request():316] send_request: stop_status
+2023-05-26 03:46:24,192 INFO    Thread-12 :26529 [dir_watcher.py:_on_file_modified():292] file/dir modified: /media/songoh/ssh3/songoh_ws/DAB Mask3D-main/wandb/run-20230526_033740-3ij1pqzr/files/output.log
+2023-05-26 03:46:34,196 INFO    Thread-12 :26529 [dir_watcher.py:_on_file_modified():292] file/dir modified: /media/songoh/ssh3/songoh_ws/DAB Mask3D-main/wandb/run-20230526_033740-3ij1pqzr/files/output.log
+2023-05-26 03:46:35,197 INFO    Thread-12 :26529 [dir_watcher.py:_on_file_modified():292] file/dir modified: /media/songoh/ssh3/songoh_ws/DAB Mask3D-main/wandb/run-20230526_033740-3ij1pqzr/files/output.log
+2023-05-26 03:46:38,551 DEBUG   HandlerThread:26529 [handler.py:handle_request():141] handle_request: stop_status
+2023-05-26 03:46:38,551 DEBUG   SenderThread:26529 [sender.py:send_request():316] send_request: stop_status
+2023-05-26 03:46:42,199 INFO    Thread-12 :26529 [dir_watcher.py:_on_file_modified():292] file/dir modified: /media/songoh/ssh3/songoh_ws/DAB Mask3D-main/wandb/run-20230526_033740-3ij1pqzr/files/output.log
+2023-05-26 03:46:43,200 INFO    Thread-12 :26529 [dir_watcher.py:_on_file_modified():292] file/dir modified: /media/songoh/ssh3/songoh_ws/DAB Mask3D-main/wandb/run-20230526_033740-3ij1pqzr/files/output.log
+2023-05-26 03:46:49,037 DEBUG   SenderThread:26529 [sender.py:send():302] send: stats
+2023-05-26 03:46:51,203 INFO    Thread-12 :26529 [dir_watcher.py:_on_file_modified():292] file/dir modified: /media/songoh/ssh3/songoh_ws/DAB Mask3D-main/wandb/run-20230526_033740-3ij1pqzr/files/output.log
+2023-05-26 03:46:52,203 INFO    Thread-12 :26529 [dir_watcher.py:_on_file_modified():292] file/dir modified: /media/songoh/ssh3/songoh_ws/DAB Mask3D-main/wandb/run-20230526_033740-3ij1pqzr/files/output.log
+2023-05-26 03:46:53,794 DEBUG   HandlerThread:26529 [handler.py:handle_request():141] handle_request: stop_status
+2023-05-26 03:46:53,794 DEBUG   SenderThread:26529 [sender.py:send_request():316] send_request: stop_status
+2023-05-26 03:46:58,206 INFO    Thread-12 :26529 [dir_watcher.py:_on_file_modified():292] file/dir modified: /media/songoh/ssh3/songoh_ws/DAB Mask3D-main/wandb/run-20230526_033740-3ij1pqzr/files/output.log
+2023-05-26 03:46:59,206 INFO    Thread-12 :26529 [dir_watcher.py:_on_file_modified():292] file/dir modified: /media/songoh/ssh3/songoh_ws/DAB Mask3D-main/wandb/run-20230526_033740-3ij1pqzr/files/output.log
+2023-05-26 03:47:00,207 INFO    Thread-12 :26529 [dir_watcher.py:_on_file_modified():292] file/dir modified: /media/songoh/ssh3/songoh_ws/DAB Mask3D-main/wandb/run-20230526_033740-3ij1pqzr/files/output.log
+2023-05-26 03:47:09,053 DEBUG   HandlerThread:26529 [handler.py:handle_request():141] handle_request: stop_status
+2023-05-26 03:47:09,054 DEBUG   SenderThread:26529 [sender.py:send_request():316] send_request: stop_status
+2023-05-26 03:47:12,212 INFO    Thread-12 :26529 [dir_watcher.py:_on_file_modified():292] file/dir modified: /media/songoh/ssh3/songoh_ws/DAB Mask3D-main/wandb/run-20230526_033740-3ij1pqzr/files/output.log
+2023-05-26 03:47:13,212 INFO    Thread-12 :26529 [dir_watcher.py:_on_file_modified():292] file/dir modified: /media/songoh/ssh3/songoh_ws/DAB Mask3D-main/wandb/run-20230526_033740-3ij1pqzr/files/output.log
+2023-05-26 03:47:14,213 INFO    Thread-12 :26529 [dir_watcher.py:_on_file_modified():292] file/dir modified: /media/songoh/ssh3/songoh_ws/DAB Mask3D-main/wandb/run-20230526_033740-3ij1pqzr/files/output.log
+2023-05-26 03:47:19,679 DEBUG   SenderThread:26529 [sender.py:send():302] send: stats
+2023-05-26 03:47:22,216 INFO    Thread-12 :26529 [dir_watcher.py:_on_file_modified():292] file/dir modified: /media/songoh/ssh3/songoh_ws/DAB Mask3D-main/wandb/run-20230526_033740-3ij1pqzr/files/output.log
+2023-05-26 03:47:23,217 INFO    Thread-12 :26529 [dir_watcher.py:_on_file_modified():292] file/dir modified: /media/songoh/ssh3/songoh_ws/DAB Mask3D-main/wandb/run-20230526_033740-3ij1pqzr/files/output.log
+2023-05-26 03:47:24,218 INFO    Thread-12 :26529 [dir_watcher.py:_on_file_modified():292] file/dir modified: /media/songoh/ssh3/songoh_ws/DAB Mask3D-main/wandb/run-20230526_033740-3ij1pqzr/files/output.log
+2023-05-26 03:47:25,137 DEBUG   HandlerThread:26529 [handler.py:handle_request():141] handle_request: stop_status
+2023-05-26 03:47:25,137 DEBUG   SenderThread:26529 [sender.py:send_request():316] send_request: stop_status
+2023-05-26 03:47:36,222 INFO    Thread-12 :26529 [dir_watcher.py:_on_file_modified():292] file/dir modified: /media/songoh/ssh3/songoh_ws/DAB Mask3D-main/wandb/run-20230526_033740-3ij1pqzr/files/output.log
+2023-05-26 03:47:37,223 INFO    Thread-12 :26529 [dir_watcher.py:_on_file_modified():292] file/dir modified: /media/songoh/ssh3/songoh_ws/DAB Mask3D-main/wandb/run-20230526_033740-3ij1pqzr/files/output.log
+2023-05-26 03:47:40,487 DEBUG   HandlerThread:26529 [handler.py:handle_request():141] handle_request: stop_status
+2023-05-26 03:47:40,488 DEBUG   SenderThread:26529 [sender.py:send_request():316] send_request: stop_status
+2023-05-26 03:47:44,226 INFO    Thread-12 :26529 [dir_watcher.py:_on_file_modified():292] file/dir modified: /media/songoh/ssh3/songoh_ws/DAB Mask3D-main/wandb/run-20230526_033740-3ij1pqzr/files/output.log
+2023-05-26 03:47:45,227 INFO    Thread-12 :26529 [dir_watcher.py:_on_file_modified():292] file/dir modified: /media/songoh/ssh3/songoh_ws/DAB Mask3D-main/wandb/run-20230526_033740-3ij1pqzr/files/output.log
+2023-05-26 03:47:46,227 INFO    Thread-12 :26529 [dir_watcher.py:_on_file_modified():292] file/dir modified: /media/songoh/ssh3/songoh_ws/DAB Mask3D-main/wandb/run-20230526_033740-3ij1pqzr/files/output.log
+2023-05-26 03:47:50,224 DEBUG   SenderThread:26529 [sender.py:send():302] send: stats
+2023-05-26 03:47:52,229 INFO    Thread-12 :26529 [dir_watcher.py:_on_file_modified():292] file/dir modified: /media/songoh/ssh3/songoh_ws/DAB Mask3D-main/wandb/run-20230526_033740-3ij1pqzr/files/output.log
+2023-05-26 03:47:53,230 INFO    Thread-12 :26529 [dir_watcher.py:_on_file_modified():292] file/dir modified: /media/songoh/ssh3/songoh_ws/DAB Mask3D-main/wandb/run-20230526_033740-3ij1pqzr/files/output.log
+2023-05-26 03:47:54,230 INFO    Thread-12 :26529 [dir_watcher.py:_on_file_modified():292] file/dir modified: /media/songoh/ssh3/songoh_ws/DAB Mask3D-main/wandb/run-20230526_033740-3ij1pqzr/files/output.log
+2023-05-26 03:47:55,721 DEBUG   HandlerThread:26529 [handler.py:handle_request():141] handle_request: stop_status
+2023-05-26 03:47:55,721 DEBUG   SenderThread:26529 [sender.py:send_request():316] send_request: stop_status
+2023-05-26 03:48:00,233 INFO    Thread-12 :26529 [dir_watcher.py:_on_file_modified():292] file/dir modified: /media/songoh/ssh3/songoh_ws/DAB Mask3D-main/wandb/run-20230526_033740-3ij1pqzr/files/output.log
+2023-05-26 03:48:01,234 INFO    Thread-12 :26529 [dir_watcher.py:_on_file_modified():292] file/dir modified: /media/songoh/ssh3/songoh_ws/DAB Mask3D-main/wandb/run-20230526_033740-3ij1pqzr/files/output.log
+2023-05-26 03:48:02,234 INFO    Thread-12 :26529 [dir_watcher.py:_on_file_modified():292] file/dir modified: /media/songoh/ssh3/songoh_ws/DAB Mask3D-main/wandb/run-20230526_033740-3ij1pqzr/files/output.log
+2023-05-26 03:48:10,978 DEBUG   HandlerThread:26529 [handler.py:handle_request():141] handle_request: stop_status
+2023-05-26 03:48:10,978 DEBUG   SenderThread:26529 [sender.py:send_request():316] send_request: stop_status
+2023-05-26 03:48:16,240 INFO    Thread-12 :26529 [dir_watcher.py:_on_file_modified():292] file/dir modified: /media/songoh/ssh3/songoh_ws/DAB Mask3D-main/wandb/run-20230526_033740-3ij1pqzr/files/output.log
+2023-05-26 03:48:17,240 INFO    Thread-12 :26529 [dir_watcher.py:_on_file_modified():292] file/dir modified: /media/songoh/ssh3/songoh_ws/DAB Mask3D-main/wandb/run-20230526_033740-3ij1pqzr/files/output.log
+2023-05-26 03:48:18,241 INFO    Thread-12 :26529 [dir_watcher.py:_on_file_modified():292] file/dir modified: /media/songoh/ssh3/songoh_ws/DAB Mask3D-main/wandb/run-20230526_033740-3ij1pqzr/files/output.log
+2023-05-26 03:48:20,774 DEBUG   SenderThread:26529 [sender.py:send():302] send: stats
+2023-05-26 03:48:24,243 INFO    Thread-12 :26529 [dir_watcher.py:_on_file_modified():292] file/dir modified: /media/songoh/ssh3/songoh_ws/DAB Mask3D-main/wandb/run-20230526_033740-3ij1pqzr/files/output.log
+2023-05-26 03:48:25,244 INFO    Thread-12 :26529 [dir_watcher.py:_on_file_modified():292] file/dir modified: /media/songoh/ssh3/songoh_ws/DAB Mask3D-main/wandb/run-20230526_033740-3ij1pqzr/files/output.log
+2023-05-26 03:48:26,216 DEBUG   HandlerThread:26529 [handler.py:handle_request():141] handle_request: stop_status
+2023-05-26 03:48:26,216 DEBUG   SenderThread:26529 [sender.py:send_request():316] send_request: stop_status
+2023-05-26 03:48:30,246 INFO    Thread-12 :26529 [dir_watcher.py:_on_file_modified():292] file/dir modified: /media/songoh/ssh3/songoh_ws/DAB Mask3D-main/wandb/run-20230526_033740-3ij1pqzr/files/output.log
+2023-05-26 03:48:31,247 INFO    Thread-12 :26529 [dir_watcher.py:_on_file_modified():292] file/dir modified: /media/songoh/ssh3/songoh_ws/DAB Mask3D-main/wandb/run-20230526_033740-3ij1pqzr/files/output.log
+2023-05-26 03:48:32,247 INFO    Thread-12 :26529 [dir_watcher.py:_on_file_modified():292] file/dir modified: /media/songoh/ssh3/songoh_ws/DAB Mask3D-main/wandb/run-20230526_033740-3ij1pqzr/files/output.log
+2023-05-26 03:48:38,250 INFO    Thread-12 :26529 [dir_watcher.py:_on_file_modified():292] file/dir modified: /media/songoh/ssh3/songoh_ws/DAB Mask3D-main/wandb/run-20230526_033740-3ij1pqzr/files/output.log
+2023-05-26 03:48:39,250 INFO    Thread-12 :26529 [dir_watcher.py:_on_file_modified():292] file/dir modified: /media/songoh/ssh3/songoh_ws/DAB Mask3D-main/wandb/run-20230526_033740-3ij1pqzr/files/output.log
+2023-05-26 03:48:41,447 DEBUG   HandlerThread:26529 [handler.py:handle_request():141] handle_request: stop_status
+2023-05-26 03:48:41,447 DEBUG   SenderThread:26529 [sender.py:send_request():316] send_request: stop_status
+2023-05-26 03:48:46,253 INFO    Thread-12 :26529 [dir_watcher.py:_on_file_modified():292] file/dir modified: /media/songoh/ssh3/songoh_ws/DAB Mask3D-main/wandb/run-20230526_033740-3ij1pqzr/files/output.log
+2023-05-26 03:48:47,253 INFO    Thread-12 :26529 [dir_watcher.py:_on_file_modified():292] file/dir modified: /media/songoh/ssh3/songoh_ws/DAB Mask3D-main/wandb/run-20230526_033740-3ij1pqzr/files/output.log
+2023-05-26 03:48:51,318 DEBUG   SenderThread:26529 [sender.py:send():302] send: stats
+2023-05-26 03:48:56,257 INFO    Thread-12 :26529 [dir_watcher.py:_on_file_modified():292] file/dir modified: /media/songoh/ssh3/songoh_ws/DAB Mask3D-main/wandb/run-20230526_033740-3ij1pqzr/files/output.log
+2023-05-26 03:48:56,775 DEBUG   HandlerThread:26529 [handler.py:handle_request():141] handle_request: stop_status
+2023-05-26 03:48:56,775 DEBUG   SenderThread:26529 [sender.py:send_request():316] send_request: stop_status
+2023-05-26 03:48:57,258 INFO    Thread-12 :26529 [dir_watcher.py:_on_file_modified():292] file/dir modified: /media/songoh/ssh3/songoh_ws/DAB Mask3D-main/wandb/run-20230526_033740-3ij1pqzr/files/output.log
+2023-05-26 03:49:08,263 INFO    Thread-12 :26529 [dir_watcher.py:_on_file_modified():292] file/dir modified: /media/songoh/ssh3/songoh_ws/DAB Mask3D-main/wandb/run-20230526_033740-3ij1pqzr/files/output.log
+2023-05-26 03:49:09,263 INFO    Thread-12 :26529 [dir_watcher.py:_on_file_modified():292] file/dir modified: /media/songoh/ssh3/songoh_ws/DAB Mask3D-main/wandb/run-20230526_033740-3ij1pqzr/files/output.log
+2023-05-26 03:49:10,263 INFO    Thread-12 :26529 [dir_watcher.py:_on_file_modified():292] file/dir modified: /media/songoh/ssh3/songoh_ws/DAB Mask3D-main/wandb/run-20230526_033740-3ij1pqzr/files/output.log
+2023-05-26 03:49:12,037 DEBUG   HandlerThread:26529 [handler.py:handle_request():141] handle_request: stop_status
+2023-05-26 03:49:12,038 DEBUG   SenderThread:26529 [sender.py:send_request():316] send_request: stop_status
+2023-05-26 03:49:20,268 INFO    Thread-12 :26529 [dir_watcher.py:_on_file_modified():292] file/dir modified: /media/songoh/ssh3/songoh_ws/DAB Mask3D-main/wandb/run-20230526_033740-3ij1pqzr/files/output.log
+2023-05-26 03:49:21,827 DEBUG   SenderThread:26529 [sender.py:send():302] send: stats
+2023-05-26 03:49:23,269 INFO    Thread-12 :26529 [dir_watcher.py:_on_file_modified():292] file/dir modified: /media/songoh/ssh3/songoh_ws/DAB Mask3D-main/wandb/run-20230526_033740-3ij1pqzr/files/output.log
+2023-05-26 03:49:24,269 INFO    Thread-12 :26529 [dir_watcher.py:_on_file_modified():292] file/dir modified: /media/songoh/ssh3/songoh_ws/DAB Mask3D-main/wandb/run-20230526_033740-3ij1pqzr/files/output.log
+2023-05-26 03:49:27,290 DEBUG   HandlerThread:26529 [handler.py:handle_request():141] handle_request: stop_status
+2023-05-26 03:49:27,290 DEBUG   SenderThread:26529 [sender.py:send_request():316] send_request: stop_status
+2023-05-26 03:49:32,273 INFO    Thread-12 :26529 [dir_watcher.py:_on_file_modified():292] file/dir modified: /media/songoh/ssh3/songoh_ws/DAB Mask3D-main/wandb/run-20230526_033740-3ij1pqzr/files/output.log
+2023-05-26 03:49:34,274 INFO    Thread-12 :26529 [dir_watcher.py:_on_file_modified():292] file/dir modified: /media/songoh/ssh3/songoh_ws/DAB Mask3D-main/wandb/run-20230526_033740-3ij1pqzr/files/output.log
+2023-05-26 03:49:35,275 INFO    Thread-12 :26529 [dir_watcher.py:_on_file_modified():292] file/dir modified: /media/songoh/ssh3/songoh_ws/DAB Mask3D-main/wandb/run-20230526_033740-3ij1pqzr/files/output.log
+2023-05-26 03:49:40,277 INFO    Thread-12 :26529 [dir_watcher.py:_on_file_modified():292] file/dir modified: /media/songoh/ssh3/songoh_ws/DAB Mask3D-main/wandb/run-20230526_033740-3ij1pqzr/files/output.log
+2023-05-26 03:49:41,278 INFO    Thread-12 :26529 [dir_watcher.py:_on_file_modified():292] file/dir modified: /media/songoh/ssh3/songoh_ws/DAB Mask3D-main/wandb/run-20230526_033740-3ij1pqzr/files/output.log
+2023-05-26 03:49:42,278 INFO    Thread-12 :26529 [dir_watcher.py:_on_file_modified():292] file/dir modified: /media/songoh/ssh3/songoh_ws/DAB Mask3D-main/wandb/run-20230526_033740-3ij1pqzr/files/output.log
+2023-05-26 03:49:42,528 DEBUG   HandlerThread:26529 [handler.py:handle_request():141] handle_request: stop_status
+2023-05-26 03:49:42,529 DEBUG   SenderThread:26529 [sender.py:send_request():316] send_request: stop_status
+2023-05-26 03:49:50,281 INFO    Thread-12 :26529 [dir_watcher.py:_on_file_modified():292] file/dir modified: /media/songoh/ssh3/songoh_ws/DAB Mask3D-main/wandb/run-20230526_033740-3ij1pqzr/files/output.log
+2023-05-26 03:49:51,281 INFO    Thread-12 :26529 [dir_watcher.py:_on_file_modified():292] file/dir modified: /media/songoh/ssh3/songoh_ws/DAB Mask3D-main/wandb/run-20230526_033740-3ij1pqzr/files/output.log
+2023-05-26 03:49:52,282 INFO    Thread-12 :26529 [dir_watcher.py:_on_file_modified():292] file/dir modified: /media/songoh/ssh3/songoh_ws/DAB Mask3D-main/wandb/run-20230526_033740-3ij1pqzr/files/output.log
+2023-05-26 03:49:52,366 DEBUG   SenderThread:26529 [sender.py:send():302] send: stats
+2023-05-26 03:49:57,866 DEBUG   HandlerThread:26529 [handler.py:handle_request():141] handle_request: stop_status
+2023-05-26 03:49:57,866 DEBUG   SenderThread:26529 [sender.py:send_request():316] send_request: stop_status
+2023-05-26 03:50:00,285 INFO    Thread-12 :26529 [dir_watcher.py:_on_file_modified():292] file/dir modified: /media/songoh/ssh3/songoh_ws/DAB Mask3D-main/wandb/run-20230526_033740-3ij1pqzr/files/output.log
+2023-05-26 03:50:01,286 INFO    Thread-12 :26529 [dir_watcher.py:_on_file_modified():292] file/dir modified: /media/songoh/ssh3/songoh_ws/DAB Mask3D-main/wandb/run-20230526_033740-3ij1pqzr/files/output.log
+2023-05-26 03:50:02,287 INFO    Thread-12 :26529 [dir_watcher.py:_on_file_modified():292] file/dir modified: /media/songoh/ssh3/songoh_ws/DAB Mask3D-main/wandb/run-20230526_033740-3ij1pqzr/files/output.log
+2023-05-26 03:50:08,289 INFO    Thread-12 :26529 [dir_watcher.py:_on_file_modified():292] file/dir modified: /media/songoh/ssh3/songoh_ws/DAB Mask3D-main/wandb/run-20230526_033740-3ij1pqzr/files/output.log
+2023-05-26 03:50:09,290 INFO    Thread-12 :26529 [dir_watcher.py:_on_file_modified():292] file/dir modified: /media/songoh/ssh3/songoh_ws/DAB Mask3D-main/wandb/run-20230526_033740-3ij1pqzr/files/output.log
+2023-05-26 03:50:10,290 INFO    Thread-12 :26529 [dir_watcher.py:_on_file_modified():292] file/dir modified: /media/songoh/ssh3/songoh_ws/DAB Mask3D-main/wandb/run-20230526_033740-3ij1pqzr/files/output.log
+2023-05-26 03:50:13,130 DEBUG   HandlerThread:26529 [handler.py:handle_request():141] handle_request: stop_status
+2023-05-26 03:50:13,131 DEBUG   SenderThread:26529 [sender.py:send_request():316] send_request: stop_status
+2023-05-26 03:50:16,293 INFO    Thread-12 :26529 [dir_watcher.py:_on_file_modified():292] file/dir modified: /media/songoh/ssh3/songoh_ws/DAB Mask3D-main/wandb/run-20230526_033740-3ij1pqzr/files/output.log
+2023-05-26 03:50:17,293 INFO    Thread-12 :26529 [dir_watcher.py:_on_file_modified():292] file/dir modified: /media/songoh/ssh3/songoh_ws/DAB Mask3D-main/wandb/run-20230526_033740-3ij1pqzr/files/output.log
+2023-05-26 03:50:18,294 INFO    Thread-12 :26529 [dir_watcher.py:_on_file_modified():292] file/dir modified: /media/songoh/ssh3/songoh_ws/DAB Mask3D-main/wandb/run-20230526_033740-3ij1pqzr/files/output.log
+2023-05-26 03:50:22,937 DEBUG   SenderThread:26529 [sender.py:send():302] send: stats
+2023-05-26 03:50:24,296 INFO    Thread-12 :26529 [dir_watcher.py:_on_file_modified():292] file/dir modified: /media/songoh/ssh3/songoh_ws/DAB Mask3D-main/wandb/run-20230526_033740-3ij1pqzr/files/output.log
+2023-05-26 03:50:25,297 INFO    Thread-12 :26529 [dir_watcher.py:_on_file_modified():292] file/dir modified: /media/songoh/ssh3/songoh_ws/DAB Mask3D-main/wandb/run-20230526_033740-3ij1pqzr/files/output.log
+2023-05-26 03:50:28,371 DEBUG   HandlerThread:26529 [handler.py:handle_request():141] handle_request: stop_status
+2023-05-26 03:50:28,371 DEBUG   SenderThread:26529 [sender.py:send_request():316] send_request: stop_status
+2023-05-26 03:50:32,300 INFO    Thread-12 :26529 [dir_watcher.py:_on_file_modified():292] file/dir modified: /media/songoh/ssh3/songoh_ws/DAB Mask3D-main/wandb/run-20230526_033740-3ij1pqzr/files/output.log
+2023-05-26 03:50:34,301 INFO    Thread-12 :26529 [dir_watcher.py:_on_file_modified():292] file/dir modified: /media/songoh/ssh3/songoh_ws/DAB Mask3D-main/wandb/run-20230526_033740-3ij1pqzr/files/output.log
+2023-05-26 03:50:35,301 INFO    Thread-12 :26529 [dir_watcher.py:_on_file_modified():292] file/dir modified: /media/songoh/ssh3/songoh_ws/DAB Mask3D-main/wandb/run-20230526_033740-3ij1pqzr/files/output.log
+2023-05-26 03:50:42,304 INFO    Thread-12 :26529 [dir_watcher.py:_on_file_modified():292] file/dir modified: /media/songoh/ssh3/songoh_ws/DAB Mask3D-main/wandb/run-20230526_033740-3ij1pqzr/files/output.log
+2023-05-26 03:50:43,304 INFO    Thread-12 :26529 [dir_watcher.py:_on_file_modified():292] file/dir modified: /media/songoh/ssh3/songoh_ws/DAB Mask3D-main/wandb/run-20230526_033740-3ij1pqzr/files/output.log
+2023-05-26 03:50:43,683 DEBUG   HandlerThread:26529 [handler.py:handle_request():141] handle_request: stop_status
+2023-05-26 03:50:43,684 DEBUG   SenderThread:26529 [sender.py:send_request():316] send_request: stop_status
+2023-05-26 03:50:48,306 INFO    Thread-12 :26529 [dir_watcher.py:_on_file_modified():292] file/dir modified: /media/songoh/ssh3/songoh_ws/DAB Mask3D-main/wandb/run-20230526_033740-3ij1pqzr/files/output.log
+2023-05-26 03:50:49,307 INFO    Thread-12 :26529 [dir_watcher.py:_on_file_modified():292] file/dir modified: /media/songoh/ssh3/songoh_ws/DAB Mask3D-main/wandb/run-20230526_033740-3ij1pqzr/files/output.log
+2023-05-26 03:50:53,479 DEBUG   SenderThread:26529 [sender.py:send():302] send: stats
+2023-05-26 03:50:56,309 INFO    Thread-12 :26529 [dir_watcher.py:_on_file_modified():292] file/dir modified: /media/songoh/ssh3/songoh_ws/DAB Mask3D-main/wandb/run-20230526_033740-3ij1pqzr/files/output.log
+2023-05-26 03:50:57,309 INFO    Thread-12 :26529 [dir_watcher.py:_on_file_modified():292] file/dir modified: /media/songoh/ssh3/songoh_ws/DAB Mask3D-main/wandb/run-20230526_033740-3ij1pqzr/files/output.log
+2023-05-26 03:50:58,962 DEBUG   HandlerThread:26529 [handler.py:handle_request():141] handle_request: stop_status
+2023-05-26 03:50:58,963 DEBUG   SenderThread:26529 [sender.py:send_request():316] send_request: stop_status
+2023-05-26 03:51:03,312 INFO    Thread-12 :26529 [dir_watcher.py:_on_file_modified():292] file/dir modified: /media/songoh/ssh3/songoh_ws/DAB Mask3D-main/wandb/run-20230526_033740-3ij1pqzr/files/output.log
+2023-05-26 03:51:04,312 INFO    Thread-12 :26529 [dir_watcher.py:_on_file_modified():292] file/dir modified: /media/songoh/ssh3/songoh_ws/DAB Mask3D-main/wandb/run-20230526_033740-3ij1pqzr/files/output.log
+2023-05-26 03:51:10,315 INFO    Thread-12 :26529 [dir_watcher.py:_on_file_modified():292] file/dir modified: /media/songoh/ssh3/songoh_ws/DAB Mask3D-main/wandb/run-20230526_033740-3ij1pqzr/files/output.log
+2023-05-26 03:51:11,315 INFO    Thread-12 :26529 [dir_watcher.py:_on_file_modified():292] file/dir modified: /media/songoh/ssh3/songoh_ws/DAB Mask3D-main/wandb/run-20230526_033740-3ij1pqzr/files/output.log
+2023-05-26 03:51:14,246 DEBUG   HandlerThread:26529 [handler.py:handle_request():141] handle_request: stop_status
+2023-05-26 03:51:14,246 DEBUG   SenderThread:26529 [sender.py:send_request():316] send_request: stop_status
+2023-05-26 03:51:16,317 INFO    Thread-12 :26529 [dir_watcher.py:_on_file_modified():292] file/dir modified: /media/songoh/ssh3/songoh_ws/DAB Mask3D-main/wandb/run-20230526_033740-3ij1pqzr/files/output.log
+2023-05-26 03:51:17,318 INFO    Thread-12 :26529 [dir_watcher.py:_on_file_modified():292] file/dir modified: /media/songoh/ssh3/songoh_ws/DAB Mask3D-main/wandb/run-20230526_033740-3ij1pqzr/files/output.log
+2023-05-26 03:51:24,022 DEBUG   SenderThread:26529 [sender.py:send():302] send: stats
+2023-05-26 03:51:24,321 INFO    Thread-12 :26529 [dir_watcher.py:_on_file_modified():292] file/dir modified: /media/songoh/ssh3/songoh_ws/DAB Mask3D-main/wandb/run-20230526_033740-3ij1pqzr/files/output.log
+2023-05-26 03:51:25,321 INFO    Thread-12 :26529 [dir_watcher.py:_on_file_modified():292] file/dir modified: /media/songoh/ssh3/songoh_ws/DAB Mask3D-main/wandb/run-20230526_033740-3ij1pqzr/files/output.log
+2023-05-26 03:51:29,494 DEBUG   HandlerThread:26529 [handler.py:handle_request():141] handle_request: stop_status
+2023-05-26 03:51:29,494 DEBUG   SenderThread:26529 [sender.py:send_request():316] send_request: stop_status
+2023-05-26 03:51:44,774 DEBUG   HandlerThread:26529 [handler.py:handle_request():141] handle_request: stop_status
+2023-05-26 03:51:44,774 DEBUG   SenderThread:26529 [sender.py:send_request():316] send_request: stop_status
+2023-05-26 03:51:54,539 DEBUG   SenderThread:26529 [sender.py:send():302] send: stats
+2023-05-26 03:51:58,333 INFO    Thread-12 :26529 [dir_watcher.py:_on_file_modified():292] file/dir modified: /media/songoh/ssh3/songoh_ws/DAB Mask3D-main/wandb/run-20230526_033740-3ij1pqzr/files/output.log
+2023-05-26 03:51:59,334 INFO    Thread-12 :26529 [dir_watcher.py:_on_file_modified():292] file/dir modified: /media/songoh/ssh3/songoh_ws/DAB Mask3D-main/wandb/run-20230526_033740-3ij1pqzr/files/output.log
+2023-05-26 03:52:00,282 DEBUG   HandlerThread:26529 [handler.py:handle_request():141] handle_request: stop_status
+2023-05-26 03:52:00,283 DEBUG   SenderThread:26529 [sender.py:send_request():316] send_request: stop_status
+2023-05-26 03:52:08,337 INFO    Thread-12 :26529 [dir_watcher.py:_on_file_modified():292] file/dir modified: /media/songoh/ssh3/songoh_ws/DAB Mask3D-main/wandb/run-20230526_033740-3ij1pqzr/files/output.log
+2023-05-26 03:52:10,338 INFO    Thread-12 :26529 [dir_watcher.py:_on_file_modified():292] file/dir modified: /media/songoh/ssh3/songoh_ws/DAB Mask3D-main/wandb/run-20230526_033740-3ij1pqzr/files/output.log
+2023-05-26 03:52:11,339 INFO    Thread-12 :26529 [dir_watcher.py:_on_file_modified():292] file/dir modified: /media/songoh/ssh3/songoh_ws/DAB Mask3D-main/wandb/run-20230526_033740-3ij1pqzr/files/output.log
+2023-05-26 03:52:15,595 DEBUG   HandlerThread:26529 [handler.py:handle_request():141] handle_request: stop_status
+2023-05-26 03:52:15,596 DEBUG   SenderThread:26529 [sender.py:send_request():316] send_request: stop_status
+2023-05-26 03:52:20,342 INFO    Thread-12 :26529 [dir_watcher.py:_on_file_modified():292] file/dir modified: /media/songoh/ssh3/songoh_ws/DAB Mask3D-main/wandb/run-20230526_033740-3ij1pqzr/files/output.log
+2023-05-26 03:52:22,343 INFO    Thread-12 :26529 [dir_watcher.py:_on_file_modified():292] file/dir modified: /media/songoh/ssh3/songoh_ws/DAB Mask3D-main/wandb/run-20230526_033740-3ij1pqzr/files/output.log
+2023-05-26 03:52:23,344 INFO    Thread-12 :26529 [dir_watcher.py:_on_file_modified():292] file/dir modified: /media/songoh/ssh3/songoh_ws/DAB Mask3D-main/wandb/run-20230526_033740-3ij1pqzr/files/output.log
+2023-05-26 03:52:25,094 DEBUG   SenderThread:26529 [sender.py:send():302] send: stats
+2023-05-26 03:52:31,176 DEBUG   HandlerThread:26529 [handler.py:handle_request():141] handle_request: stop_status
+2023-05-26 03:52:31,177 DEBUG   SenderThread:26529 [sender.py:send_request():316] send_request: stop_status
+2023-05-26 03:52:32,348 INFO    Thread-12 :26529 [dir_watcher.py:_on_file_modified():292] file/dir modified: /media/songoh/ssh3/songoh_ws/DAB Mask3D-main/wandb/run-20230526_033740-3ij1pqzr/files/output.log
+2023-05-26 03:52:35,349 INFO    Thread-12 :26529 [dir_watcher.py:_on_file_modified():292] file/dir modified: /media/songoh/ssh3/songoh_ws/DAB Mask3D-main/wandb/run-20230526_033740-3ij1pqzr/files/output.log
+2023-05-26 03:52:36,350 INFO    Thread-12 :26529 [dir_watcher.py:_on_file_modified():292] file/dir modified: /media/songoh/ssh3/songoh_ws/DAB Mask3D-main/wandb/run-20230526_033740-3ij1pqzr/files/output.log
+2023-05-26 03:52:40,352 INFO    Thread-12 :26529 [dir_watcher.py:_on_file_modified():292] file/dir modified: /media/songoh/ssh3/songoh_ws/DAB Mask3D-main/wandb/run-20230526_033740-3ij1pqzr/files/output.log
+2023-05-26 03:52:41,352 INFO    Thread-12 :26529 [dir_watcher.py:_on_file_modified():292] file/dir modified: /media/songoh/ssh3/songoh_ws/DAB Mask3D-main/wandb/run-20230526_033740-3ij1pqzr/files/output.log
+2023-05-26 03:52:42,353 INFO    Thread-12 :26529 [dir_watcher.py:_on_file_modified():292] file/dir modified: /media/songoh/ssh3/songoh_ws/DAB Mask3D-main/wandb/run-20230526_033740-3ij1pqzr/files/output.log
+2023-05-26 03:52:46,403 DEBUG   HandlerThread:26529 [handler.py:handle_request():141] handle_request: stop_status
+2023-05-26 03:52:46,403 DEBUG   SenderThread:26529 [sender.py:send_request():316] send_request: stop_status
+2023-05-26 03:52:50,356 INFO    Thread-12 :26529 [dir_watcher.py:_on_file_modified():292] file/dir modified: /media/songoh/ssh3/songoh_ws/DAB Mask3D-main/wandb/run-20230526_033740-3ij1pqzr/files/output.log
+2023-05-26 03:52:51,357 INFO    Thread-12 :26529 [dir_watcher.py:_on_file_modified():292] file/dir modified: /media/songoh/ssh3/songoh_ws/DAB Mask3D-main/wandb/run-20230526_033740-3ij1pqzr/files/output.log
+2023-05-26 03:52:52,357 INFO    Thread-12 :26529 [dir_watcher.py:_on_file_modified():292] file/dir modified: /media/songoh/ssh3/songoh_ws/DAB Mask3D-main/wandb/run-20230526_033740-3ij1pqzr/files/output.log
+2023-05-26 03:52:55,607 DEBUG   SenderThread:26529 [sender.py:send():302] send: stats
+2023-05-26 03:52:58,360 INFO    Thread-12 :26529 [dir_watcher.py:_on_file_modified():292] file/dir modified: /media/songoh/ssh3/songoh_ws/DAB Mask3D-main/wandb/run-20230526_033740-3ij1pqzr/files/output.log
+2023-05-26 03:52:59,360 INFO    Thread-12 :26529 [dir_watcher.py:_on_file_modified():292] file/dir modified: /media/songoh/ssh3/songoh_ws/DAB Mask3D-main/wandb/run-20230526_033740-3ij1pqzr/files/output.log
+2023-05-26 03:53:01,630 DEBUG   HandlerThread:26529 [handler.py:handle_request():141] handle_request: stop_status
+2023-05-26 03:53:01,630 DEBUG   SenderThread:26529 [sender.py:send_request():316] send_request: stop_status
+2023-05-26 03:53:06,364 INFO    Thread-12 :26529 [dir_watcher.py:_on_file_modified():292] file/dir modified: /media/songoh/ssh3/songoh_ws/DAB Mask3D-main/wandb/run-20230526_033740-3ij1pqzr/files/output.log
+2023-05-26 03:53:07,364 INFO    Thread-12 :26529 [dir_watcher.py:_on_file_modified():292] file/dir modified: /media/songoh/ssh3/songoh_ws/DAB Mask3D-main/wandb/run-20230526_033740-3ij1pqzr/files/output.log
+2023-05-26 03:53:08,365 INFO    Thread-12 :26529 [dir_watcher.py:_on_file_modified():292] file/dir modified: /media/songoh/ssh3/songoh_ws/DAB Mask3D-main/wandb/run-20230526_033740-3ij1pqzr/files/output.log
+2023-05-26 03:53:14,371 INFO    Thread-12 :26529 [dir_watcher.py:_on_file_modified():292] file/dir modified: /media/songoh/ssh3/songoh_ws/DAB Mask3D-main/wandb/run-20230526_033740-3ij1pqzr/files/output.log
+2023-05-26 03:53:16,372 INFO    Thread-12 :26529 [dir_watcher.py:_on_file_modified():292] file/dir modified: /media/songoh/ssh3/songoh_ws/DAB Mask3D-main/wandb/run-20230526_033740-3ij1pqzr/files/output.log
+2023-05-26 03:53:16,852 DEBUG   HandlerThread:26529 [handler.py:handle_request():141] handle_request: stop_status
+2023-05-26 03:53:16,852 DEBUG   SenderThread:26529 [sender.py:send_request():316] send_request: stop_status
+2023-05-26 03:53:17,373 INFO    Thread-12 :26529 [dir_watcher.py:_on_file_modified():292] file/dir modified: /media/songoh/ssh3/songoh_ws/DAB Mask3D-main/wandb/run-20230526_033740-3ij1pqzr/files/output.log
+2023-05-26 03:53:22,375 INFO    Thread-12 :26529 [dir_watcher.py:_on_file_modified():292] file/dir modified: /media/songoh/ssh3/songoh_ws/DAB Mask3D-main/wandb/run-20230526_033740-3ij1pqzr/files/output.log
+2023-05-26 03:53:24,376 INFO    Thread-12 :26529 [dir_watcher.py:_on_file_modified():292] file/dir modified: /media/songoh/ssh3/songoh_ws/DAB Mask3D-main/wandb/run-20230526_033740-3ij1pqzr/files/output.log
+2023-05-26 03:53:25,376 INFO    Thread-12 :26529 [dir_watcher.py:_on_file_modified():292] file/dir modified: /media/songoh/ssh3/songoh_ws/DAB Mask3D-main/wandb/run-20230526_033740-3ij1pqzr/files/output.log
+2023-05-26 03:53:26,132 DEBUG   SenderThread:26529 [sender.py:send():302] send: stats
+2023-05-26 03:53:32,269 DEBUG   HandlerThread:26529 [handler.py:handle_request():141] handle_request: stop_status
+2023-05-26 03:53:32,269 DEBUG   SenderThread:26529 [sender.py:send_request():316] send_request: stop_status
+2023-05-26 03:53:47,535 DEBUG   HandlerThread:26529 [handler.py:handle_request():141] handle_request: stop_status
+2023-05-26 03:53:47,535 DEBUG   SenderThread:26529 [sender.py:send_request():316] send_request: stop_status
+2023-05-26 03:53:50,386 INFO    Thread-12 :26529 [dir_watcher.py:_on_file_modified():292] file/dir modified: /media/songoh/ssh3/songoh_ws/DAB Mask3D-main/wandb/run-20230526_033740-3ij1pqzr/files/output.log
+2023-05-26 03:53:51,386 INFO    Thread-12 :26529 [dir_watcher.py:_on_file_modified():292] file/dir modified: /media/songoh/ssh3/songoh_ws/DAB Mask3D-main/wandb/run-20230526_033740-3ij1pqzr/files/output.log
+2023-05-26 03:53:56,763 DEBUG   SenderThread:26529 [sender.py:send():302] send: stats
+2023-05-26 03:54:03,557 DEBUG   HandlerThread:26529 [handler.py:handle_request():141] handle_request: stop_status
+2023-05-26 03:54:03,557 DEBUG   SenderThread:26529 [sender.py:send_request():316] send_request: stop_status
+2023-05-26 03:54:18,804 DEBUG   HandlerThread:26529 [handler.py:handle_request():141] handle_request: stop_status
+2023-05-26 03:54:18,804 DEBUG   SenderThread:26529 [sender.py:send_request():316] send_request: stop_status
+2023-05-26 03:54:27,326 DEBUG   SenderThread:26529 [sender.py:send():302] send: stats
+2023-05-26 03:54:30,401 INFO    Thread-12 :26529 [dir_watcher.py:_on_file_modified():292] file/dir modified: /media/songoh/ssh3/songoh_ws/DAB Mask3D-main/wandb/run-20230526_033740-3ij1pqzr/files/output.log
+2023-05-26 03:54:32,402 INFO    Thread-12 :26529 [dir_watcher.py:_on_file_modified():292] file/dir modified: /media/songoh/ssh3/songoh_ws/DAB Mask3D-main/wandb/run-20230526_033740-3ij1pqzr/files/output.log
+2023-05-26 03:54:33,403 INFO    Thread-12 :26529 [dir_watcher.py:_on_file_modified():292] file/dir modified: /media/songoh/ssh3/songoh_ws/DAB Mask3D-main/wandb/run-20230526_033740-3ij1pqzr/files/output.log
+2023-05-26 03:54:34,071 DEBUG   HandlerThread:26529 [handler.py:handle_request():141] handle_request: stop_status
+2023-05-26 03:54:34,072 DEBUG   SenderThread:26529 [sender.py:send_request():316] send_request: stop_status
+2023-05-26 03:54:49,302 DEBUG   HandlerThread:26529 [handler.py:handle_request():141] handle_request: stop_status
+2023-05-26 03:54:49,302 DEBUG   SenderThread:26529 [sender.py:send_request():316] send_request: stop_status
+2023-05-26 03:54:57,883 DEBUG   SenderThread:26529 [sender.py:send():302] send: stats
+2023-05-26 03:55:00,413 INFO    Thread-12 :26529 [dir_watcher.py:_on_file_modified():292] file/dir modified: /media/songoh/ssh3/songoh_ws/DAB Mask3D-main/wandb/run-20230526_033740-3ij1pqzr/files/output.log
+2023-05-26 03:55:02,414 INFO    Thread-12 :26529 [dir_watcher.py:_on_file_modified():292] file/dir modified: /media/songoh/ssh3/songoh_ws/DAB Mask3D-main/wandb/run-20230526_033740-3ij1pqzr/files/output.log
+2023-05-26 03:55:03,414 INFO    Thread-12 :26529 [dir_watcher.py:_on_file_modified():292] file/dir modified: /media/songoh/ssh3/songoh_ws/DAB Mask3D-main/wandb/run-20230526_033740-3ij1pqzr/files/output.log
+2023-05-26 03:55:04,532 DEBUG   HandlerThread:26529 [handler.py:handle_request():141] handle_request: stop_status
+2023-05-26 03:55:04,533 DEBUG   SenderThread:26529 [sender.py:send_request():316] send_request: stop_status
+2023-05-26 03:55:12,418 INFO    Thread-12 :26529 [dir_watcher.py:_on_file_modified():292] file/dir modified: /media/songoh/ssh3/songoh_ws/DAB Mask3D-main/wandb/run-20230526_033740-3ij1pqzr/files/output.log
+2023-05-26 03:55:13,419 INFO    Thread-12 :26529 [dir_watcher.py:_on_file_modified():292] file/dir modified: /media/songoh/ssh3/songoh_ws/DAB Mask3D-main/wandb/run-20230526_033740-3ij1pqzr/files/output.log
+2023-05-26 03:55:19,763 DEBUG   HandlerThread:26529 [handler.py:handle_request():141] handle_request: stop_status
+2023-05-26 03:55:19,763 DEBUG   SenderThread:26529 [sender.py:send_request():316] send_request: stop_status
+2023-05-26 03:55:20,422 INFO    Thread-12 :26529 [dir_watcher.py:_on_file_modified():292] file/dir modified: /media/songoh/ssh3/songoh_ws/DAB Mask3D-main/wandb/run-20230526_033740-3ij1pqzr/files/output.log
+2023-05-26 03:55:21,422 INFO    Thread-12 :26529 [dir_watcher.py:_on_file_modified():292] file/dir modified: /media/songoh/ssh3/songoh_ws/DAB Mask3D-main/wandb/run-20230526_033740-3ij1pqzr/files/output.log
+2023-05-26 03:55:26,424 INFO    Thread-12 :26529 [dir_watcher.py:_on_file_modified():292] file/dir modified: /media/songoh/ssh3/songoh_ws/DAB Mask3D-main/wandb/run-20230526_033740-3ij1pqzr/files/output.log
+2023-05-26 03:55:27,425 INFO    Thread-12 :26529 [dir_watcher.py:_on_file_modified():292] file/dir modified: /media/songoh/ssh3/songoh_ws/DAB Mask3D-main/wandb/run-20230526_033740-3ij1pqzr/files/output.log
+2023-05-26 03:55:28,423 DEBUG   SenderThread:26529 [sender.py:send():302] send: stats
+2023-05-26 03:55:32,429 INFO    Thread-12 :26529 [dir_watcher.py:_on_file_modified():292] file/dir modified: /media/songoh/ssh3/songoh_ws/DAB Mask3D-main/wandb/run-20230526_033740-3ij1pqzr/files/output.log
+2023-05-26 03:55:33,430 INFO    Thread-12 :26529 [dir_watcher.py:_on_file_modified():292] file/dir modified: /media/songoh/ssh3/songoh_ws/DAB Mask3D-main/wandb/run-20230526_033740-3ij1pqzr/files/output.log
+2023-05-26 03:55:35,053 DEBUG   HandlerThread:26529 [handler.py:handle_request():141] handle_request: stop_status
+2023-05-26 03:55:35,054 DEBUG   SenderThread:26529 [sender.py:send_request():316] send_request: stop_status
+2023-05-26 03:55:42,434 INFO    Thread-12 :26529 [dir_watcher.py:_on_file_modified():292] file/dir modified: /media/songoh/ssh3/songoh_ws/DAB Mask3D-main/wandb/run-20230526_033740-3ij1pqzr/files/output.log
+2023-05-26 03:55:43,434 INFO    Thread-12 :26529 [dir_watcher.py:_on_file_modified():292] file/dir modified: /media/songoh/ssh3/songoh_ws/DAB Mask3D-main/wandb/run-20230526_033740-3ij1pqzr/files/output.log
+2023-05-26 03:55:50,320 DEBUG   HandlerThread:26529 [handler.py:handle_request():141] handle_request: stop_status
+2023-05-26 03:55:50,320 DEBUG   SenderThread:26529 [sender.py:send_request():316] send_request: stop_status
+2023-05-26 03:55:50,437 INFO    Thread-12 :26529 [dir_watcher.py:_on_file_modified():292] file/dir modified: /media/songoh/ssh3/songoh_ws/DAB Mask3D-main/wandb/run-20230526_033740-3ij1pqzr/files/output.log
+2023-05-26 03:55:52,438 INFO    Thread-12 :26529 [dir_watcher.py:_on_file_modified():292] file/dir modified: /media/songoh/ssh3/songoh_ws/DAB Mask3D-main/wandb/run-20230526_033740-3ij1pqzr/files/output.log
+2023-05-26 03:55:53,438 INFO    Thread-12 :26529 [dir_watcher.py:_on_file_modified():292] file/dir modified: /media/songoh/ssh3/songoh_ws/DAB Mask3D-main/wandb/run-20230526_033740-3ij1pqzr/files/output.log
+2023-05-26 03:55:58,960 DEBUG   SenderThread:26529 [sender.py:send():302] send: stats
+2023-05-26 03:56:00,441 INFO    Thread-12 :26529 [dir_watcher.py:_on_file_modified():292] file/dir modified: /media/songoh/ssh3/songoh_ws/DAB Mask3D-main/wandb/run-20230526_033740-3ij1pqzr/files/output.log
+2023-05-26 03:56:01,442 INFO    Thread-12 :26529 [dir_watcher.py:_on_file_modified():292] file/dir modified: /media/songoh/ssh3/songoh_ws/DAB Mask3D-main/wandb/run-20230526_033740-3ij1pqzr/files/output.log
+2023-05-26 03:56:05,581 DEBUG   HandlerThread:26529 [handler.py:handle_request():141] handle_request: stop_status
+2023-05-26 03:56:05,581 DEBUG   SenderThread:26529 [sender.py:send_request():316] send_request: stop_status
+2023-05-26 03:56:08,445 INFO    Thread-12 :26529 [dir_watcher.py:_on_file_modified():292] file/dir modified: /media/songoh/ssh3/songoh_ws/DAB Mask3D-main/wandb/run-20230526_033740-3ij1pqzr/files/output.log
+2023-05-26 03:56:09,445 INFO    Thread-12 :26529 [dir_watcher.py:_on_file_modified():292] file/dir modified: /media/songoh/ssh3/songoh_ws/DAB Mask3D-main/wandb/run-20230526_033740-3ij1pqzr/files/output.log
+2023-05-26 03:56:18,449 INFO    Thread-12 :26529 [dir_watcher.py:_on_file_modified():292] file/dir modified: /media/songoh/ssh3/songoh_ws/DAB Mask3D-main/wandb/run-20230526_033740-3ij1pqzr/files/output.log
+2023-05-26 03:56:19,449 INFO    Thread-12 :26529 [dir_watcher.py:_on_file_modified():292] file/dir modified: /media/songoh/ssh3/songoh_ws/DAB Mask3D-main/wandb/run-20230526_033740-3ij1pqzr/files/output.log
+2023-05-26 03:56:20,819 DEBUG   HandlerThread:26529 [handler.py:handle_request():141] handle_request: stop_status
+2023-05-26 03:56:20,820 DEBUG   SenderThread:26529 [sender.py:send_request():316] send_request: stop_status
+2023-05-26 03:56:26,452 INFO    Thread-12 :26529 [dir_watcher.py:_on_file_modified():292] file/dir modified: /media/songoh/ssh3/songoh_ws/DAB Mask3D-main/wandb/run-20230526_033740-3ij1pqzr/files/output.log
+2023-05-26 03:56:27,454 INFO    Thread-12 :26529 [dir_watcher.py:_on_file_modified():292] file/dir modified: /media/songoh/ssh3/songoh_ws/DAB Mask3D-main/wandb/run-20230526_033740-3ij1pqzr/files/output.log
+2023-05-26 03:56:29,523 DEBUG   SenderThread:26529 [sender.py:send():302] send: stats
+2023-05-26 03:56:32,456 INFO    Thread-12 :26529 [dir_watcher.py:_on_file_modified():292] file/dir modified: /media/songoh/ssh3/songoh_ws/DAB Mask3D-main/wandb/run-20230526_033740-3ij1pqzr/files/output.log
+2023-05-26 03:56:33,456 INFO    Thread-12 :26529 [dir_watcher.py:_on_file_modified():292] file/dir modified: /media/songoh/ssh3/songoh_ws/DAB Mask3D-main/wandb/run-20230526_033740-3ij1pqzr/files/output.log
+2023-05-26 03:56:36,302 DEBUG   HandlerThread:26529 [handler.py:handle_request():141] handle_request: stop_status
+2023-05-26 03:56:36,303 DEBUG   SenderThread:26529 [sender.py:send_request():316] send_request: stop_status
+2023-05-26 03:56:48,462 INFO    Thread-12 :26529 [dir_watcher.py:_on_file_modified():292] file/dir modified: /media/songoh/ssh3/songoh_ws/DAB Mask3D-main/wandb/run-20230526_033740-3ij1pqzr/files/output.log
+2023-05-26 03:56:49,463 INFO    Thread-12 :26529 [dir_watcher.py:_on_file_modified():292] file/dir modified: /media/songoh/ssh3/songoh_ws/DAB Mask3D-main/wandb/run-20230526_033740-3ij1pqzr/files/output.log
+2023-05-26 03:56:51,538 DEBUG   HandlerThread:26529 [handler.py:handle_request():141] handle_request: stop_status
+2023-05-26 03:56:51,538 DEBUG   SenderThread:26529 [sender.py:send_request():316] send_request: stop_status
+2023-05-26 03:56:54,465 INFO    Thread-12 :26529 [dir_watcher.py:_on_file_modified():292] file/dir modified: /media/songoh/ssh3/songoh_ws/DAB Mask3D-main/wandb/run-20230526_033740-3ij1pqzr/files/output.log
+2023-05-26 03:56:55,465 INFO    Thread-12 :26529 [dir_watcher.py:_on_file_modified():292] file/dir modified: /media/songoh/ssh3/songoh_ws/DAB Mask3D-main/wandb/run-20230526_033740-3ij1pqzr/files/output.log
+2023-05-26 03:57:00,047 DEBUG   SenderThread:26529 [sender.py:send():302] send: stats
+2023-05-26 03:57:00,468 INFO    Thread-12 :26529 [dir_watcher.py:_on_file_modified():292] file/dir modified: /media/songoh/ssh3/songoh_ws/DAB Mask3D-main/wandb/run-20230526_033740-3ij1pqzr/files/output.log
+2023-05-26 03:57:01,468 INFO    Thread-12 :26529 [dir_watcher.py:_on_file_modified():292] file/dir modified: /media/songoh/ssh3/songoh_ws/DAB Mask3D-main/wandb/run-20230526_033740-3ij1pqzr/files/output.log
+2023-05-26 03:57:06,470 INFO    Thread-12 :26529 [dir_watcher.py:_on_file_modified():292] file/dir modified: /media/songoh/ssh3/songoh_ws/DAB Mask3D-main/wandb/run-20230526_033740-3ij1pqzr/files/output.log
+2023-05-26 03:57:06,779 DEBUG   HandlerThread:26529 [handler.py:handle_request():141] handle_request: stop_status
+2023-05-26 03:57:06,779 DEBUG   SenderThread:26529 [sender.py:send_request():316] send_request: stop_status
+2023-05-26 03:57:07,471 INFO    Thread-12 :26529 [dir_watcher.py:_on_file_modified():292] file/dir modified: /media/songoh/ssh3/songoh_ws/DAB Mask3D-main/wandb/run-20230526_033740-3ij1pqzr/files/output.log
+2023-05-26 03:57:08,471 INFO    Thread-12 :26529 [dir_watcher.py:_on_file_modified():292] file/dir modified: /media/songoh/ssh3/songoh_ws/DAB Mask3D-main/wandb/run-20230526_033740-3ij1pqzr/files/output.log
+2023-05-26 03:57:14,474 INFO    Thread-12 :26529 [dir_watcher.py:_on_file_modified():292] file/dir modified: /media/songoh/ssh3/songoh_ws/DAB Mask3D-main/wandb/run-20230526_033740-3ij1pqzr/files/output.log
+2023-05-26 03:57:15,474 INFO    Thread-12 :26529 [dir_watcher.py:_on_file_modified():292] file/dir modified: /media/songoh/ssh3/songoh_ws/DAB Mask3D-main/wandb/run-20230526_033740-3ij1pqzr/files/output.log
+2023-05-26 03:57:22,126 DEBUG   HandlerThread:26529 [handler.py:handle_request():141] handle_request: stop_status
+2023-05-26 03:57:22,126 DEBUG   SenderThread:26529 [sender.py:send_request():316] send_request: stop_status
+2023-05-26 03:57:28,479 INFO    Thread-12 :26529 [dir_watcher.py:_on_file_modified():292] file/dir modified: /media/songoh/ssh3/songoh_ws/DAB Mask3D-main/wandb/run-20230526_033740-3ij1pqzr/files/output.log
+2023-05-26 03:57:29,480 INFO    Thread-12 :26529 [dir_watcher.py:_on_file_modified():292] file/dir modified: /media/songoh/ssh3/songoh_ws/DAB Mask3D-main/wandb/run-20230526_033740-3ij1pqzr/files/output.log
+2023-05-26 03:57:30,642 DEBUG   SenderThread:26529 [sender.py:send():302] send: stats
+2023-05-26 03:57:37,367 DEBUG   HandlerThread:26529 [handler.py:handle_request():141] handle_request: stop_status
+2023-05-26 03:57:37,367 DEBUG   SenderThread:26529 [sender.py:send_request():316] send_request: stop_status
+2023-05-26 03:57:41,486 INFO    Thread-12 :26529 [dir_watcher.py:_on_file_modified():292] file/dir modified: /media/songoh/ssh3/songoh_ws/DAB Mask3D-main/wandb/run-20230526_033740-3ij1pqzr/files/output.log
+2023-05-26 03:57:51,490 INFO    Thread-12 :26529 [dir_watcher.py:_on_file_modified():292] file/dir modified: /media/songoh/ssh3/songoh_ws/DAB Mask3D-main/wandb/run-20230526_033740-3ij1pqzr/files/output.log
+2023-05-26 03:57:52,730 DEBUG   HandlerThread:26529 [handler.py:handle_request():141] handle_request: stop_status
+2023-05-26 03:57:52,730 DEBUG   SenderThread:26529 [sender.py:send_request():316] send_request: stop_status
+2023-05-26 03:57:59,494 INFO    Thread-12 :26529 [dir_watcher.py:_on_file_modified():292] file/dir modified: /media/songoh/ssh3/songoh_ws/DAB Mask3D-main/wandb/run-20230526_033740-3ij1pqzr/files/output.log
+2023-05-26 03:58:01,217 DEBUG   SenderThread:26529 [sender.py:send():302] send: stats
+2023-05-26 03:58:07,965 DEBUG   HandlerThread:26529 [handler.py:handle_request():141] handle_request: stop_status
+2023-05-26 03:58:07,965 DEBUG   SenderThread:26529 [sender.py:send_request():316] send_request: stop_status
+2023-05-26 03:58:09,499 INFO    Thread-12 :26529 [dir_watcher.py:_on_file_modified():292] file/dir modified: /media/songoh/ssh3/songoh_ws/DAB Mask3D-main/wandb/run-20230526_033740-3ij1pqzr/files/output.log
+2023-05-26 03:58:17,502 INFO    Thread-12 :26529 [dir_watcher.py:_on_file_modified():292] file/dir modified: /media/songoh/ssh3/songoh_ws/DAB Mask3D-main/wandb/run-20230526_033740-3ij1pqzr/files/output.log
+2023-05-26 03:58:23,199 DEBUG   HandlerThread:26529 [handler.py:handle_request():141] handle_request: stop_status
+2023-05-26 03:58:23,200 DEBUG   SenderThread:26529 [sender.py:send_request():316] send_request: stop_status
+2023-05-26 03:58:27,506 INFO    Thread-12 :26529 [dir_watcher.py:_on_file_modified():292] file/dir modified: /media/songoh/ssh3/songoh_ws/DAB Mask3D-main/wandb/run-20230526_033740-3ij1pqzr/files/output.log
+2023-05-26 03:58:31,787 DEBUG   SenderThread:26529 [sender.py:send():302] send: stats
+2023-05-26 03:58:35,509 INFO    Thread-12 :26529 [dir_watcher.py:_on_file_modified():292] file/dir modified: /media/songoh/ssh3/songoh_ws/DAB Mask3D-main/wandb/run-20230526_033740-3ij1pqzr/files/output.log
+2023-05-26 03:58:37,511 INFO    Thread-12 :26529 [dir_watcher.py:_on_file_modified():292] file/dir modified: /media/songoh/ssh3/songoh_ws/DAB Mask3D-main/wandb/run-20230526_033740-3ij1pqzr/files/output.log
+2023-05-26 03:58:38,493 DEBUG   HandlerThread:26529 [handler.py:handle_request():141] handle_request: stop_status
+2023-05-26 03:58:38,493 DEBUG   SenderThread:26529 [sender.py:send_request():316] send_request: stop_status
+2023-05-26 03:58:45,514 INFO    Thread-12 :26529 [dir_watcher.py:_on_file_modified():292] file/dir modified: /media/songoh/ssh3/songoh_ws/DAB Mask3D-main/wandb/run-20230526_033740-3ij1pqzr/files/output.log
+2023-05-26 03:58:53,518 INFO    Thread-12 :26529 [dir_watcher.py:_on_file_modified():292] file/dir modified: /media/songoh/ssh3/songoh_ws/DAB Mask3D-main/wandb/run-20230526_033740-3ij1pqzr/files/output.log
+2023-05-26 03:58:54,632 DEBUG   HandlerThread:26529 [handler.py:handle_request():141] handle_request: stop_status
+2023-05-26 03:58:54,632 DEBUG   SenderThread:26529 [sender.py:send_request():316] send_request: stop_status
+2023-05-26 03:58:55,519 INFO    Thread-12 :26529 [dir_watcher.py:_on_file_modified():292] file/dir modified: /media/songoh/ssh3/songoh_ws/DAB Mask3D-main/wandb/run-20230526_033740-3ij1pqzr/files/output.log
+2023-05-26 03:59:02,370 DEBUG   SenderThread:26529 [sender.py:send():302] send: stats
+2023-05-26 03:59:03,522 INFO    Thread-12 :26529 [dir_watcher.py:_on_file_modified():292] file/dir modified: /media/songoh/ssh3/songoh_ws/DAB Mask3D-main/wandb/run-20230526_033740-3ij1pqzr/files/output.log
+2023-05-26 03:59:09,524 INFO    Thread-12 :26529 [dir_watcher.py:_on_file_modified():292] file/dir modified: /media/songoh/ssh3/songoh_ws/DAB Mask3D-main/wandb/run-20230526_033740-3ij1pqzr/files/output.log
+2023-05-26 03:59:09,873 DEBUG   HandlerThread:26529 [handler.py:handle_request():141] handle_request: stop_status
+2023-05-26 03:59:09,873 DEBUG   SenderThread:26529 [sender.py:send_request():316] send_request: stop_status
+2023-05-26 03:59:13,527 INFO    Thread-12 :26529 [dir_watcher.py:_on_file_modified():292] file/dir modified: /media/songoh/ssh3/songoh_ws/DAB Mask3D-main/wandb/run-20230526_033740-3ij1pqzr/files/output.log
+2023-05-26 03:59:19,529 INFO    Thread-12 :26529 [dir_watcher.py:_on_file_modified():292] file/dir modified: /media/songoh/ssh3/songoh_ws/DAB Mask3D-main/wandb/run-20230526_033740-3ij1pqzr/files/output.log
+2023-05-26 03:59:25,110 DEBUG   HandlerThread:26529 [handler.py:handle_request():141] handle_request: stop_status
+2023-05-26 03:59:25,111 DEBUG   SenderThread:26529 [sender.py:send_request():316] send_request: stop_status
+2023-05-26 03:59:27,533 INFO    Thread-12 :26529 [dir_watcher.py:_on_file_modified():292] file/dir modified: /media/songoh/ssh3/songoh_ws/DAB Mask3D-main/wandb/run-20230526_033740-3ij1pqzr/files/output.log
+2023-05-26 03:59:32,912 DEBUG   SenderThread:26529 [sender.py:send():302] send: stats
+2023-05-26 03:59:35,536 INFO    Thread-12 :26529 [dir_watcher.py:_on_file_modified():292] file/dir modified: /media/songoh/ssh3/songoh_ws/DAB Mask3D-main/wandb/run-20230526_033740-3ij1pqzr/files/output.log
+2023-05-26 03:59:40,502 DEBUG   HandlerThread:26529 [handler.py:handle_request():141] handle_request: stop_status
+2023-05-26 03:59:40,503 DEBUG   SenderThread:26529 [sender.py:send_request():316] send_request: stop_status
+2023-05-26 03:59:43,540 INFO    Thread-12 :26529 [dir_watcher.py:_on_file_modified():292] file/dir modified: /media/songoh/ssh3/songoh_ws/DAB Mask3D-main/wandb/run-20230526_033740-3ij1pqzr/files/output.log
+2023-05-26 03:59:55,838 DEBUG   HandlerThread:26529 [handler.py:handle_request():141] handle_request: stop_status
+2023-05-26 03:59:55,838 DEBUG   SenderThread:26529 [sender.py:send_request():316] send_request: stop_status
+2023-05-26 04:00:01,548 INFO    Thread-12 :26529 [dir_watcher.py:_on_file_modified():292] file/dir modified: /media/songoh/ssh3/songoh_ws/DAB Mask3D-main/wandb/run-20230526_033740-3ij1pqzr/files/output.log
+2023-05-26 04:00:03,522 DEBUG   SenderThread:26529 [sender.py:send():302] send: stats
+2023-05-26 04:00:11,070 DEBUG   HandlerThread:26529 [handler.py:handle_request():141] handle_request: stop_status
+2023-05-26 04:00:11,071 DEBUG   SenderThread:26529 [sender.py:send_request():316] send_request: stop_status
+2023-05-26 04:00:13,553 INFO    Thread-12 :26529 [dir_watcher.py:_on_file_modified():292] file/dir modified: /media/songoh/ssh3/songoh_ws/DAB Mask3D-main/wandb/run-20230526_033740-3ij1pqzr/files/output.log
+2023-05-26 04:00:23,557 INFO    Thread-12 :26529 [dir_watcher.py:_on_file_modified():292] file/dir modified: /media/songoh/ssh3/songoh_ws/DAB Mask3D-main/wandb/run-20230526_033740-3ij1pqzr/files/output.log
+2023-05-26 04:00:26,309 DEBUG   HandlerThread:26529 [handler.py:handle_request():141] handle_request: stop_status
+2023-05-26 04:00:26,310 DEBUG   SenderThread:26529 [sender.py:send_request():316] send_request: stop_status
+2023-05-26 04:00:29,560 INFO    Thread-12 :26529 [dir_watcher.py:_on_file_modified():292] file/dir modified: /media/songoh/ssh3/songoh_ws/DAB Mask3D-main/wandb/run-20230526_033740-3ij1pqzr/files/output.log
+2023-05-26 04:00:31,561 INFO    Thread-12 :26529 [dir_watcher.py:_on_file_modified():292] file/dir modified: /media/songoh/ssh3/songoh_ws/DAB Mask3D-main/wandb/run-20230526_033740-3ij1pqzr/files/output.log
+2023-05-26 04:00:34,057 DEBUG   SenderThread:26529 [sender.py:send():302] send: stats
+2023-05-26 04:00:37,564 INFO    Thread-12 :26529 [dir_watcher.py:_on_file_modified():292] file/dir modified: /media/songoh/ssh3/songoh_ws/DAB Mask3D-main/wandb/run-20230526_033740-3ij1pqzr/files/output.log
+2023-05-26 04:00:41,557 DEBUG   HandlerThread:26529 [handler.py:handle_request():141] handle_request: stop_status
+2023-05-26 04:00:41,557 DEBUG   SenderThread:26529 [sender.py:send_request():316] send_request: stop_status
+2023-05-26 04:00:43,568 INFO    Thread-12 :26529 [dir_watcher.py:_on_file_modified():292] file/dir modified: /media/songoh/ssh3/songoh_ws/DAB Mask3D-main/wandb/run-20230526_033740-3ij1pqzr/files/output.log
+2023-05-26 04:00:49,570 INFO    Thread-12 :26529 [dir_watcher.py:_on_file_modified():292] file/dir modified: /media/songoh/ssh3/songoh_ws/DAB Mask3D-main/wandb/run-20230526_033740-3ij1pqzr/files/output.log
+2023-05-26 04:00:55,573 INFO    Thread-12 :26529 [dir_watcher.py:_on_file_modified():292] file/dir modified: /media/songoh/ssh3/songoh_ws/DAB Mask3D-main/wandb/run-20230526_033740-3ij1pqzr/files/output.log
+2023-05-26 04:00:56,804 DEBUG   HandlerThread:26529 [handler.py:handle_request():141] handle_request: stop_status
+2023-05-26 04:00:56,804 DEBUG   SenderThread:26529 [sender.py:send_request():316] send_request: stop_status
+2023-05-26 04:01:04,657 DEBUG   SenderThread:26529 [sender.py:send():302] send: stats
+2023-05-26 04:01:05,578 INFO    Thread-12 :26529 [dir_watcher.py:_on_file_modified():292] file/dir modified: /media/songoh/ssh3/songoh_ws/DAB Mask3D-main/wandb/run-20230526_033740-3ij1pqzr/files/output.log
+2023-05-26 04:01:12,040 DEBUG   HandlerThread:26529 [handler.py:handle_request():141] handle_request: stop_status
+2023-05-26 04:01:12,040 DEBUG   SenderThread:26529 [sender.py:send_request():316] send_request: stop_status
+2023-05-26 04:01:17,582 INFO    Thread-12 :26529 [dir_watcher.py:_on_file_modified():292] file/dir modified: /media/songoh/ssh3/songoh_ws/DAB Mask3D-main/wandb/run-20230526_033740-3ij1pqzr/files/output.log
+2023-05-26 04:01:25,585 INFO    Thread-12 :26529 [dir_watcher.py:_on_file_modified():292] file/dir modified: /media/songoh/ssh3/songoh_ws/DAB Mask3D-main/wandb/run-20230526_033740-3ij1pqzr/files/output.log
+2023-05-26 04:01:27,285 DEBUG   HandlerThread:26529 [handler.py:handle_request():141] handle_request: stop_status
+2023-05-26 04:01:27,285 DEBUG   SenderThread:26529 [sender.py:send_request():316] send_request: stop_status
+2023-05-26 04:01:27,587 INFO    Thread-12 :26529 [dir_watcher.py:_on_file_modified():292] file/dir modified: /media/songoh/ssh3/songoh_ws/DAB Mask3D-main/wandb/run-20230526_033740-3ij1pqzr/files/output.log
+2023-05-26 04:01:35,211 DEBUG   SenderThread:26529 [sender.py:send():302] send: stats
+2023-05-26 04:01:35,590 INFO    Thread-12 :26529 [dir_watcher.py:_on_file_modified():292] file/dir modified: /media/songoh/ssh3/songoh_ws/DAB Mask3D-main/wandb/run-20230526_033740-3ij1pqzr/files/output.log
+2023-05-26 04:01:42,521 DEBUG   HandlerThread:26529 [handler.py:handle_request():141] handle_request: stop_status
+2023-05-26 04:01:42,521 DEBUG   SenderThread:26529 [sender.py:send_request():316] send_request: stop_status
+2023-05-26 04:01:43,594 INFO    Thread-12 :26529 [dir_watcher.py:_on_file_modified():292] file/dir modified: /media/songoh/ssh3/songoh_ws/DAB Mask3D-main/wandb/run-20230526_033740-3ij1pqzr/files/output.log
+2023-05-26 04:01:51,598 INFO    Thread-12 :26529 [dir_watcher.py:_on_file_modified():292] file/dir modified: /media/songoh/ssh3/songoh_ws/DAB Mask3D-main/wandb/run-20230526_033740-3ij1pqzr/files/output.log
+2023-05-26 04:01:53,598 INFO    Thread-12 :26529 [dir_watcher.py:_on_file_modified():292] file/dir modified: /media/songoh/ssh3/songoh_ws/DAB Mask3D-main/wandb/run-20230526_033740-3ij1pqzr/files/output.log
+2023-05-26 04:01:57,962 DEBUG   HandlerThread:26529 [handler.py:handle_request():141] handle_request: stop_status
+2023-05-26 04:01:57,962 DEBUG   SenderThread:26529 [sender.py:send_request():316] send_request: stop_status
+2023-05-26 04:02:01,602 INFO    Thread-12 :26529 [dir_watcher.py:_on_file_modified():292] file/dir modified: /media/songoh/ssh3/songoh_ws/DAB Mask3D-main/wandb/run-20230526_033740-3ij1pqzr/files/output.log
+2023-05-26 04:02:03,603 INFO    Thread-12 :26529 [dir_watcher.py:_on_file_modified():292] file/dir modified: /media/songoh/ssh3/songoh_ws/DAB Mask3D-main/wandb/run-20230526_033740-3ij1pqzr/files/output.log
+2023-05-26 04:02:05,774 DEBUG   SenderThread:26529 [sender.py:send():302] send: stats
+2023-05-26 04:02:09,606 INFO    Thread-12 :26529 [dir_watcher.py:_on_file_modified():292] file/dir modified: /media/songoh/ssh3/songoh_ws/DAB Mask3D-main/wandb/run-20230526_033740-3ij1pqzr/files/output.log
+2023-05-26 04:02:11,607 INFO    Thread-12 :26529 [dir_watcher.py:_on_file_modified():292] file/dir modified: /media/songoh/ssh3/songoh_ws/DAB Mask3D-main/wandb/run-20230526_033740-3ij1pqzr/files/output.log
+2023-05-26 04:02:13,203 DEBUG   HandlerThread:26529 [handler.py:handle_request():141] handle_request: stop_status
+2023-05-26 04:02:13,203 DEBUG   SenderThread:26529 [sender.py:send_request():316] send_request: stop_status
+2023-05-26 04:02:21,611 INFO    Thread-12 :26529 [dir_watcher.py:_on_file_modified():292] file/dir modified: /media/songoh/ssh3/songoh_ws/DAB Mask3D-main/wandb/run-20230526_033740-3ij1pqzr/files/output.log
+2023-05-26 04:02:23,612 INFO    Thread-12 :26529 [dir_watcher.py:_on_file_modified():292] file/dir modified: /media/songoh/ssh3/songoh_ws/DAB Mask3D-main/wandb/run-20230526_033740-3ij1pqzr/files/output.log
+2023-05-26 04:02:28,438 DEBUG   HandlerThread:26529 [handler.py:handle_request():141] handle_request: stop_status
+2023-05-26 04:02:28,438 DEBUG   SenderThread:26529 [sender.py:send_request():316] send_request: stop_status
+2023-05-26 04:02:29,614 INFO    Thread-12 :26529 [dir_watcher.py:_on_file_modified():292] file/dir modified: /media/songoh/ssh3/songoh_ws/DAB Mask3D-main/wandb/run-20230526_033740-3ij1pqzr/files/output.log
+2023-05-26 04:02:35,617 INFO    Thread-12 :26529 [dir_watcher.py:_on_file_modified():292] file/dir modified: /media/songoh/ssh3/songoh_ws/DAB Mask3D-main/wandb/run-20230526_033740-3ij1pqzr/files/output.log
+2023-05-26 04:02:36,342 DEBUG   SenderThread:26529 [sender.py:send():302] send: stats
+2023-05-26 04:02:37,618 INFO    Thread-12 :26529 [dir_watcher.py:_on_file_modified():292] file/dir modified: /media/songoh/ssh3/songoh_ws/DAB Mask3D-main/wandb/run-20230526_033740-3ij1pqzr/files/output.log
+2023-05-26 04:02:43,658 DEBUG   HandlerThread:26529 [handler.py:handle_request():141] handle_request: stop_status
+2023-05-26 04:02:43,659 DEBUG   SenderThread:26529 [sender.py:send_request():316] send_request: stop_status
+2023-05-26 04:02:45,621 INFO    Thread-12 :26529 [dir_watcher.py:_on_file_modified():292] file/dir modified: /media/songoh/ssh3/songoh_ws/DAB Mask3D-main/wandb/run-20230526_033740-3ij1pqzr/files/output.log
+2023-05-26 04:02:58,888 DEBUG   HandlerThread:26529 [handler.py:handle_request():141] handle_request: stop_status
+2023-05-26 04:02:58,888 DEBUG   SenderThread:26529 [sender.py:send_request():316] send_request: stop_status
+2023-05-26 04:03:06,876 DEBUG   SenderThread:26529 [sender.py:send():302] send: stats
+2023-05-26 04:03:09,631 INFO    Thread-12 :26529 [dir_watcher.py:_on_file_modified():292] file/dir modified: /media/songoh/ssh3/songoh_ws/DAB Mask3D-main/wandb/run-20230526_033740-3ij1pqzr/files/output.log
+2023-05-26 04:03:15,052 DEBUG   HandlerThread:26529 [handler.py:handle_request():141] handle_request: stop_status
+2023-05-26 04:03:15,052 DEBUG   SenderThread:26529 [sender.py:send_request():316] send_request: stop_status
+2023-05-26 04:03:15,633 INFO    Thread-12 :26529 [dir_watcher.py:_on_file_modified():292] file/dir modified: /media/songoh/ssh3/songoh_ws/DAB Mask3D-main/wandb/run-20230526_033740-3ij1pqzr/files/output.log
+2023-05-26 04:03:17,635 INFO    Thread-12 :26529 [dir_watcher.py:_on_file_modified():292] file/dir modified: /media/songoh/ssh3/songoh_ws/DAB Mask3D-main/wandb/run-20230526_033740-3ij1pqzr/files/output.log
+2023-05-26 04:03:25,638 INFO    Thread-12 :26529 [dir_watcher.py:_on_file_modified():292] file/dir modified: /media/songoh/ssh3/songoh_ws/DAB Mask3D-main/wandb/run-20230526_033740-3ij1pqzr/files/output.log
+2023-05-26 04:03:30,286 DEBUG   HandlerThread:26529 [handler.py:handle_request():141] handle_request: stop_status
+2023-05-26 04:03:30,287 DEBUG   SenderThread:26529 [sender.py:send_request():316] send_request: stop_status
+2023-05-26 04:03:33,641 INFO    Thread-12 :26529 [dir_watcher.py:_on_file_modified():292] file/dir modified: /media/songoh/ssh3/songoh_ws/DAB Mask3D-main/wandb/run-20230526_033740-3ij1pqzr/files/output.log
+2023-05-26 04:03:35,642 INFO    Thread-12 :26529 [dir_watcher.py:_on_file_modified():292] file/dir modified: /media/songoh/ssh3/songoh_ws/DAB Mask3D-main/wandb/run-20230526_033740-3ij1pqzr/files/output.log
+2023-05-26 04:03:37,435 DEBUG   SenderThread:26529 [sender.py:send():302] send: stats
+2023-05-26 04:03:41,645 INFO    Thread-12 :26529 [dir_watcher.py:_on_file_modified():292] file/dir modified: /media/songoh/ssh3/songoh_ws/DAB Mask3D-main/wandb/run-20230526_033740-3ij1pqzr/files/output.log
+2023-05-26 04:03:45,871 DEBUG   HandlerThread:26529 [handler.py:handle_request():141] handle_request: stop_status
+2023-05-26 04:03:45,871 DEBUG   SenderThread:26529 [sender.py:send_request():316] send_request: stop_status
+2023-05-26 04:03:49,649 INFO    Thread-12 :26529 [dir_watcher.py:_on_file_modified():292] file/dir modified: /media/songoh/ssh3/songoh_ws/DAB Mask3D-main/wandb/run-20230526_033740-3ij1pqzr/files/output.log
+2023-05-26 04:03:51,650 INFO    Thread-12 :26529 [dir_watcher.py:_on_file_modified():292] file/dir modified: /media/songoh/ssh3/songoh_ws/DAB Mask3D-main/wandb/run-20230526_033740-3ij1pqzr/files/output.log
+2023-05-26 04:03:55,651 INFO    Thread-12 :26529 [dir_watcher.py:_on_file_modified():292] file/dir modified: /media/songoh/ssh3/songoh_ws/DAB Mask3D-main/wandb/run-20230526_033740-3ij1pqzr/files/output.log
+2023-05-26 04:03:57,660 INFO    Thread-12 :26529 [dir_watcher.py:_on_file_modified():292] file/dir modified: /media/songoh/ssh3/songoh_ws/DAB Mask3D-main/wandb/run-20230526_033740-3ij1pqzr/files/output.log
+2023-05-26 04:04:01,111 DEBUG   HandlerThread:26529 [handler.py:handle_request():141] handle_request: stop_status
+2023-05-26 04:04:01,112 DEBUG   SenderThread:26529 [sender.py:send_request():316] send_request: stop_status
+2023-05-26 04:04:05,656 INFO    Thread-12 :26529 [dir_watcher.py:_on_file_modified():292] file/dir modified: /media/songoh/ssh3/songoh_ws/DAB Mask3D-main/wandb/run-20230526_033740-3ij1pqzr/files/output.log
+2023-05-26 04:04:07,969 DEBUG   SenderThread:26529 [sender.py:send():302] send: stats
+2023-05-26 04:04:15,660 INFO    Thread-12 :26529 [dir_watcher.py:_on_file_modified():292] file/dir modified: /media/songoh/ssh3/songoh_ws/DAB Mask3D-main/wandb/run-20230526_033740-3ij1pqzr/files/output.log
+2023-05-26 04:04:16,552 DEBUG   HandlerThread:26529 [handler.py:handle_request():141] handle_request: stop_status
+2023-05-26 04:04:16,552 DEBUG   SenderThread:26529 [sender.py:send_request():316] send_request: stop_status
+2023-05-26 04:04:27,664 INFO    Thread-12 :26529 [dir_watcher.py:_on_file_modified():292] file/dir modified: /media/songoh/ssh3/songoh_ws/DAB Mask3D-main/wandb/run-20230526_033740-3ij1pqzr/files/output.log
+2023-05-26 04:04:31,794 DEBUG   HandlerThread:26529 [handler.py:handle_request():141] handle_request: stop_status
+2023-05-26 04:04:31,794 DEBUG   SenderThread:26529 [sender.py:send_request():316] send_request: stop_status
+2023-05-26 04:04:35,667 INFO    Thread-12 :26529 [dir_watcher.py:_on_file_modified():292] file/dir modified: /media/songoh/ssh3/songoh_ws/DAB Mask3D-main/wandb/run-20230526_033740-3ij1pqzr/files/output.log
+2023-05-26 04:04:38,517 DEBUG   SenderThread:26529 [sender.py:send():302] send: stats
+2023-05-26 04:04:47,109 DEBUG   HandlerThread:26529 [handler.py:handle_request():141] handle_request: stop_status
+2023-05-26 04:04:47,109 DEBUG   SenderThread:26529 [sender.py:send_request():316] send_request: stop_status
+2023-05-26 04:04:47,672 INFO    Thread-12 :26529 [dir_watcher.py:_on_file_modified():292] file/dir modified: /media/songoh/ssh3/songoh_ws/DAB Mask3D-main/wandb/run-20230526_033740-3ij1pqzr/files/output.log
+2023-05-26 04:05:01,679 INFO    Thread-12 :26529 [dir_watcher.py:_on_file_modified():292] file/dir modified: /media/songoh/ssh3/songoh_ws/DAB Mask3D-main/wandb/run-20230526_033740-3ij1pqzr/files/output.log
+2023-05-26 04:05:02,574 DEBUG   HandlerThread:26529 [handler.py:handle_request():141] handle_request: stop_status
+2023-05-26 04:05:02,574 DEBUG   SenderThread:26529 [sender.py:send_request():316] send_request: stop_status
+2023-05-26 04:05:03,680 INFO    Thread-12 :26529 [dir_watcher.py:_on_file_modified():292] file/dir modified: /media/songoh/ssh3/songoh_ws/DAB Mask3D-main/wandb/run-20230526_033740-3ij1pqzr/files/output.log
+2023-05-26 04:05:09,040 DEBUG   SenderThread:26529 [sender.py:send():302] send: stats
+2023-05-26 04:05:17,686 INFO    Thread-12 :26529 [dir_watcher.py:_on_file_modified():292] file/dir modified: /media/songoh/ssh3/songoh_ws/DAB Mask3D-main/wandb/run-20230526_033740-3ij1pqzr/files/output.log
+2023-05-26 04:05:17,797 DEBUG   HandlerThread:26529 [handler.py:handle_request():141] handle_request: stop_status
+2023-05-26 04:05:17,797 DEBUG   SenderThread:26529 [sender.py:send_request():316] send_request: stop_status
+2023-05-26 04:05:19,687 INFO    Thread-12 :26529 [dir_watcher.py:_on_file_modified():292] file/dir modified: /media/songoh/ssh3/songoh_ws/DAB Mask3D-main/wandb/run-20230526_033740-3ij1pqzr/files/output.log
+2023-05-26 04:05:27,690 INFO    Thread-12 :26529 [dir_watcher.py:_on_file_modified():292] file/dir modified: /media/songoh/ssh3/songoh_ws/DAB Mask3D-main/wandb/run-20230526_033740-3ij1pqzr/files/output.log
+2023-05-26 04:05:33,066 DEBUG   HandlerThread:26529 [handler.py:handle_request():141] handle_request: stop_status
+2023-05-26 04:05:33,066 DEBUG   SenderThread:26529 [sender.py:send_request():316] send_request: stop_status
+2023-05-26 04:05:33,693 INFO    Thread-12 :26529 [dir_watcher.py:_on_file_modified():292] file/dir modified: /media/songoh/ssh3/songoh_ws/DAB Mask3D-main/wandb/run-20230526_033740-3ij1pqzr/files/output.log
+2023-05-26 04:05:39,606 DEBUG   SenderThread:26529 [sender.py:send():302] send: stats
+2023-05-26 04:05:39,695 INFO    Thread-12 :26529 [dir_watcher.py:_on_file_modified():292] file/dir modified: /media/songoh/ssh3/songoh_ws/DAB Mask3D-main/wandb/run-20230526_033740-3ij1pqzr/files/output.log
+2023-05-26 04:05:47,698 INFO    Thread-12 :26529 [dir_watcher.py:_on_file_modified():292] file/dir modified: /media/songoh/ssh3/songoh_ws/DAB Mask3D-main/wandb/run-20230526_033740-3ij1pqzr/files/output.log
+2023-05-26 04:05:48,301 DEBUG   HandlerThread:26529 [handler.py:handle_request():141] handle_request: stop_status
+2023-05-26 04:05:48,302 DEBUG   SenderThread:26529 [sender.py:send_request():316] send_request: stop_status
+2023-05-26 04:05:49,699 INFO    Thread-12 :26529 [dir_watcher.py:_on_file_modified():292] file/dir modified: /media/songoh/ssh3/songoh_ws/DAB Mask3D-main/wandb/run-20230526_033740-3ij1pqzr/files/output.log
+2023-05-26 04:05:59,704 INFO    Thread-12 :26529 [dir_watcher.py:_on_file_modified():292] file/dir modified: /media/songoh/ssh3/songoh_ws/DAB Mask3D-main/wandb/run-20230526_033740-3ij1pqzr/files/output.log
+2023-05-26 04:06:01,704 INFO    Thread-12 :26529 [dir_watcher.py:_on_file_modified():292] file/dir modified: /media/songoh/ssh3/songoh_ws/DAB Mask3D-main/wandb/run-20230526_033740-3ij1pqzr/files/output.log
+2023-05-26 04:06:03,673 DEBUG   HandlerThread:26529 [handler.py:handle_request():141] handle_request: stop_status
+2023-05-26 04:06:03,673 DEBUG   SenderThread:26529 [sender.py:send_request():316] send_request: stop_status
+2023-05-26 04:06:07,707 INFO    Thread-12 :26529 [dir_watcher.py:_on_file_modified():292] file/dir modified: /media/songoh/ssh3/songoh_ws/DAB Mask3D-main/wandb/run-20230526_033740-3ij1pqzr/files/output.log
+2023-05-26 04:06:10,174 DEBUG   SenderThread:26529 [sender.py:send():302] send: stats
+2023-05-26 04:06:13,709 INFO    Thread-12 :26529 [dir_watcher.py:_on_file_modified():292] file/dir modified: /media/songoh/ssh3/songoh_ws/DAB Mask3D-main/wandb/run-20230526_033740-3ij1pqzr/files/output.log
+2023-05-26 04:06:15,710 INFO    Thread-12 :26529 [dir_watcher.py:_on_file_modified():292] file/dir modified: /media/songoh/ssh3/songoh_ws/DAB Mask3D-main/wandb/run-20230526_033740-3ij1pqzr/files/output.log
+2023-05-26 04:06:18,950 DEBUG   HandlerThread:26529 [handler.py:handle_request():141] handle_request: stop_status
+2023-05-26 04:06:18,951 DEBUG   SenderThread:26529 [sender.py:send_request():316] send_request: stop_status
+2023-05-26 04:06:21,713 INFO    Thread-12 :26529 [dir_watcher.py:_on_file_modified():292] file/dir modified: /media/songoh/ssh3/songoh_ws/DAB Mask3D-main/wandb/run-20230526_033740-3ij1pqzr/files/output.log
+2023-05-26 04:06:27,716 INFO    Thread-12 :26529 [dir_watcher.py:_on_file_modified():292] file/dir modified: /media/songoh/ssh3/songoh_ws/DAB Mask3D-main/wandb/run-20230526_033740-3ij1pqzr/files/output.log
+2023-05-26 04:06:33,719 INFO    Thread-12 :26529 [dir_watcher.py:_on_file_modified():292] file/dir modified: /media/songoh/ssh3/songoh_ws/DAB Mask3D-main/wandb/run-20230526_033740-3ij1pqzr/files/output.log
+2023-05-26 04:06:34,267 DEBUG   HandlerThread:26529 [handler.py:handle_request():141] handle_request: stop_status
+2023-05-26 04:06:34,267 DEBUG   SenderThread:26529 [sender.py:send_request():316] send_request: stop_status
+2023-05-26 04:06:37,721 INFO    Thread-12 :26529 [dir_watcher.py:_on_file_modified():292] file/dir modified: /media/songoh/ssh3/songoh_ws/DAB Mask3D-main/wandb/run-20230526_033740-3ij1pqzr/files/output.log
+2023-05-26 04:06:40,760 DEBUG   SenderThread:26529 [sender.py:send():302] send: stats
+2023-05-26 04:06:43,724 INFO    Thread-12 :26529 [dir_watcher.py:_on_file_modified():292] file/dir modified: /media/songoh/ssh3/songoh_ws/DAB Mask3D-main/wandb/run-20230526_033740-3ij1pqzr/files/output.log
+2023-05-26 04:06:45,724 INFO    Thread-12 :26529 [dir_watcher.py:_on_file_modified():292] file/dir modified: /media/songoh/ssh3/songoh_ws/DAB Mask3D-main/wandb/run-20230526_033740-3ij1pqzr/files/output.log
+2023-05-26 04:06:49,490 DEBUG   HandlerThread:26529 [handler.py:handle_request():141] handle_request: stop_status
+2023-05-26 04:06:49,490 DEBUG   SenderThread:26529 [sender.py:send_request():316] send_request: stop_status
+2023-05-26 04:06:51,727 INFO    Thread-12 :26529 [dir_watcher.py:_on_file_modified():292] file/dir modified: /media/songoh/ssh3/songoh_ws/DAB Mask3D-main/wandb/run-20230526_033740-3ij1pqzr/files/output.log
+2023-05-26 04:07:01,731 INFO    Thread-12 :26529 [dir_watcher.py:_on_file_modified():292] file/dir modified: /media/songoh/ssh3/songoh_ws/DAB Mask3D-main/wandb/run-20230526_033740-3ij1pqzr/files/output.log
+2023-05-26 04:07:04,721 DEBUG   HandlerThread:26529 [handler.py:handle_request():141] handle_request: stop_status
+2023-05-26 04:07:04,722 DEBUG   SenderThread:26529 [sender.py:send_request():316] send_request: stop_status
+2023-05-26 04:07:09,738 INFO    Thread-12 :26529 [dir_watcher.py:_on_file_modified():292] file/dir modified: /media/songoh/ssh3/songoh_ws/DAB Mask3D-main/wandb/run-20230526_033740-3ij1pqzr/files/output.log
+2023-05-26 04:07:11,303 DEBUG   SenderThread:26529 [sender.py:send():302] send: stats
+2023-05-26 04:07:15,740 INFO    Thread-12 :26529 [dir_watcher.py:_on_file_modified():292] file/dir modified: /media/songoh/ssh3/songoh_ws/DAB Mask3D-main/wandb/run-20230526_033740-3ij1pqzr/files/output.log
+2023-05-26 04:07:17,741 INFO    Thread-12 :26529 [dir_watcher.py:_on_file_modified():292] file/dir modified: /media/songoh/ssh3/songoh_ws/DAB Mask3D-main/wandb/run-20230526_033740-3ij1pqzr/files/output.log
+2023-05-26 04:07:19,935 DEBUG   HandlerThread:26529 [handler.py:handle_request():141] handle_request: stop_status
+2023-05-26 04:07:19,935 DEBUG   SenderThread:26529 [sender.py:send_request():316] send_request: stop_status
+2023-05-26 04:07:25,745 INFO    Thread-12 :26529 [dir_watcher.py:_on_file_modified():292] file/dir modified: /media/songoh/ssh3/songoh_ws/DAB Mask3D-main/wandb/run-20230526_033740-3ij1pqzr/files/output.log
+2023-05-26 04:07:33,748 INFO    Thread-12 :26529 [dir_watcher.py:_on_file_modified():292] file/dir modified: /media/songoh/ssh3/songoh_ws/DAB Mask3D-main/wandb/run-20230526_033740-3ij1pqzr/files/output.log
+2023-05-26 04:07:35,161 DEBUG   HandlerThread:26529 [handler.py:handle_request():141] handle_request: stop_status
+2023-05-26 04:07:35,161 DEBUG   SenderThread:26529 [sender.py:send_request():316] send_request: stop_status
+2023-05-26 04:07:41,752 INFO    Thread-12 :26529 [dir_watcher.py:_on_file_modified():292] file/dir modified: /media/songoh/ssh3/songoh_ws/DAB Mask3D-main/wandb/run-20230526_033740-3ij1pqzr/files/output.log
+2023-05-26 04:07:41,894 DEBUG   SenderThread:26529 [sender.py:send():302] send: stats
+2023-05-26 04:07:43,753 INFO    Thread-12 :26529 [dir_watcher.py:_on_file_modified():292] file/dir modified: /media/songoh/ssh3/songoh_ws/DAB Mask3D-main/wandb/run-20230526_033740-3ij1pqzr/files/output.log
+2023-05-26 04:07:50,433 DEBUG   HandlerThread:26529 [handler.py:handle_request():141] handle_request: stop_status
+2023-05-26 04:07:50,433 DEBUG   SenderThread:26529 [sender.py:send_request():316] send_request: stop_status
+2023-05-26 04:07:51,757 INFO    Thread-12 :26529 [dir_watcher.py:_on_file_modified():292] file/dir modified: /media/songoh/ssh3/songoh_ws/DAB Mask3D-main/wandb/run-20230526_033740-3ij1pqzr/files/output.log
+2023-05-26 04:07:59,760 INFO    Thread-12 :26529 [dir_watcher.py:_on_file_modified():292] file/dir modified: /media/songoh/ssh3/songoh_ws/DAB Mask3D-main/wandb/run-20230526_033740-3ij1pqzr/files/output.log
+2023-05-26 04:08:05,655 DEBUG   HandlerThread:26529 [handler.py:handle_request():141] handle_request: stop_status
+2023-05-26 04:08:05,656 DEBUG   SenderThread:26529 [sender.py:send_request():316] send_request: stop_status
+2023-05-26 04:08:05,763 INFO    Thread-12 :26529 [dir_watcher.py:_on_file_modified():292] file/dir modified: /media/songoh/ssh3/songoh_ws/DAB Mask3D-main/wandb/run-20230526_033740-3ij1pqzr/files/output.log
+2023-05-26 04:08:09,765 INFO    Thread-12 :26529 [dir_watcher.py:_on_file_modified():292] file/dir modified: /media/songoh/ssh3/songoh_ws/DAB Mask3D-main/wandb/run-20230526_033740-3ij1pqzr/files/output.log
+2023-05-26 04:08:12,449 DEBUG   SenderThread:26529 [sender.py:send():302] send: stats
+2023-05-26 04:08:13,767 INFO    Thread-12 :26529 [dir_watcher.py:_on_file_modified():292] file/dir modified: /media/songoh/ssh3/songoh_ws/DAB Mask3D-main/wandb/run-20230526_033740-3ij1pqzr/files/output.log
+2023-05-26 04:08:15,768 INFO    Thread-12 :26529 [dir_watcher.py:_on_file_modified():292] file/dir modified: /media/songoh/ssh3/songoh_ws/DAB Mask3D-main/wandb/run-20230526_033740-3ij1pqzr/files/output.log
+2023-05-26 04:08:21,099 DEBUG   HandlerThread:26529 [handler.py:handle_request():141] handle_request: stop_status
+2023-05-26 04:08:21,100 DEBUG   SenderThread:26529 [sender.py:send_request():316] send_request: stop_status
+2023-05-26 04:08:25,772 INFO    Thread-12 :26529 [dir_watcher.py:_on_file_modified():292] file/dir modified: /media/songoh/ssh3/songoh_ws/DAB Mask3D-main/wandb/run-20230526_033740-3ij1pqzr/files/output.log
+2023-05-26 04:08:36,333 DEBUG   HandlerThread:26529 [handler.py:handle_request():141] handle_request: stop_status
+2023-05-26 04:08:36,334 DEBUG   SenderThread:26529 [sender.py:send_request():316] send_request: stop_status
+2023-05-26 04:08:39,777 INFO    Thread-12 :26529 [dir_watcher.py:_on_file_modified():292] file/dir modified: /media/songoh/ssh3/songoh_ws/DAB Mask3D-main/wandb/run-20230526_033740-3ij1pqzr/files/output.log
+2023-05-26 04:08:41,778 INFO    Thread-12 :26529 [dir_watcher.py:_on_file_modified():292] file/dir modified: /media/songoh/ssh3/songoh_ws/DAB Mask3D-main/wandb/run-20230526_033740-3ij1pqzr/files/output.log
+2023-05-26 04:08:43,038 DEBUG   SenderThread:26529 [sender.py:send():302] send: stats
+2023-05-26 04:08:51,595 DEBUG   HandlerThread:26529 [handler.py:handle_request():141] handle_request: stop_status
+2023-05-26 04:08:51,595 DEBUG   SenderThread:26529 [sender.py:send_request():316] send_request: stop_status
+2023-05-26 04:08:55,783 INFO    Thread-12 :26529 [dir_watcher.py:_on_file_modified():292] file/dir modified: /media/songoh/ssh3/songoh_ws/DAB Mask3D-main/wandb/run-20230526_033740-3ij1pqzr/files/output.log
+2023-05-26 04:08:57,784 INFO    Thread-12 :26529 [dir_watcher.py:_on_file_modified():292] file/dir modified: /media/songoh/ssh3/songoh_ws/DAB Mask3D-main/wandb/run-20230526_033740-3ij1pqzr/files/output.log
+2023-05-26 04:09:05,788 INFO    Thread-12 :26529 [dir_watcher.py:_on_file_modified():292] file/dir modified: /media/songoh/ssh3/songoh_ws/DAB Mask3D-main/wandb/run-20230526_033740-3ij1pqzr/files/output.log
+2023-05-26 04:09:06,963 DEBUG   HandlerThread:26529 [handler.py:handle_request():141] handle_request: stop_status
+2023-05-26 04:09:06,963 DEBUG   SenderThread:26529 [sender.py:send_request():316] send_request: stop_status
+2023-05-26 04:09:13,599 DEBUG   SenderThread:26529 [sender.py:send():302] send: stats
+2023-05-26 04:09:13,791 INFO    Thread-12 :26529 [dir_watcher.py:_on_file_modified():292] file/dir modified: /media/songoh/ssh3/songoh_ws/DAB Mask3D-main/wandb/run-20230526_033740-3ij1pqzr/files/output.log
+2023-05-26 04:09:21,795 INFO    Thread-12 :26529 [dir_watcher.py:_on_file_modified():292] file/dir modified: /media/songoh/ssh3/songoh_ws/DAB Mask3D-main/wandb/run-20230526_033740-3ij1pqzr/files/output.log
+2023-05-26 04:09:22,432 DEBUG   HandlerThread:26529 [handler.py:handle_request():141] handle_request: stop_status
+2023-05-26 04:09:22,432 DEBUG   SenderThread:26529 [sender.py:send_request():316] send_request: stop_status
+2023-05-26 04:09:22,795 INFO    Thread-12 :26529 [dir_watcher.py:_on_file_modified():292] file/dir modified: /media/songoh/ssh3/songoh_ws/DAB Mask3D-main/wandb/run-20230526_033740-3ij1pqzr/files/output.log
+2023-05-26 04:09:29,798 INFO    Thread-12 :26529 [dir_watcher.py:_on_file_modified():292] file/dir modified: /media/songoh/ssh3/songoh_ws/DAB Mask3D-main/wandb/run-20230526_033740-3ij1pqzr/files/output.log
+2023-05-26 04:09:30,799 INFO    Thread-12 :26529 [dir_watcher.py:_on_file_modified():292] file/dir modified: /media/songoh/ssh3/songoh_ws/DAB Mask3D-main/wandb/run-20230526_033740-3ij1pqzr/files/output.log
+2023-05-26 04:09:37,673 DEBUG   HandlerThread:26529 [handler.py:handle_request():141] handle_request: stop_status
+2023-05-26 04:09:37,673 DEBUG   SenderThread:26529 [sender.py:send_request():316] send_request: stop_status
+2023-05-26 04:09:39,803 INFO    Thread-12 :26529 [dir_watcher.py:_on_file_modified():292] file/dir modified: /media/songoh/ssh3/songoh_ws/DAB Mask3D-main/wandb/run-20230526_033740-3ij1pqzr/files/output.log
+2023-05-26 04:09:40,803 INFO    Thread-12 :26529 [dir_watcher.py:_on_file_modified():292] file/dir modified: /media/songoh/ssh3/songoh_ws/DAB Mask3D-main/wandb/run-20230526_033740-3ij1pqzr/files/output.log
+2023-05-26 04:09:44,148 DEBUG   SenderThread:26529 [sender.py:send():302] send: stats
+2023-05-26 04:09:45,805 INFO    Thread-12 :26529 [dir_watcher.py:_on_file_modified():292] file/dir modified: /media/songoh/ssh3/songoh_ws/DAB Mask3D-main/wandb/run-20230526_033740-3ij1pqzr/files/output.log
+2023-05-26 04:09:46,806 INFO    Thread-12 :26529 [dir_watcher.py:_on_file_modified():292] file/dir modified: /media/songoh/ssh3/songoh_ws/DAB Mask3D-main/wandb/run-20230526_033740-3ij1pqzr/files/output.log
+2023-05-26 04:09:51,808 INFO    Thread-12 :26529 [dir_watcher.py:_on_file_modified():292] file/dir modified: /media/songoh/ssh3/songoh_ws/DAB Mask3D-main/wandb/run-20230526_033740-3ij1pqzr/files/output.log
+2023-05-26 04:09:52,809 INFO    Thread-12 :26529 [dir_watcher.py:_on_file_modified():292] file/dir modified: /media/songoh/ssh3/songoh_ws/DAB Mask3D-main/wandb/run-20230526_033740-3ij1pqzr/files/output.log
+2023-05-26 04:09:52,892 DEBUG   HandlerThread:26529 [handler.py:handle_request():141] handle_request: stop_status
+2023-05-26 04:09:52,892 DEBUG   SenderThread:26529 [sender.py:send_request():316] send_request: stop_status
+2023-05-26 04:09:57,811 INFO    Thread-12 :26529 [dir_watcher.py:_on_file_modified():292] file/dir modified: /media/songoh/ssh3/songoh_ws/DAB Mask3D-main/wandb/run-20230526_033740-3ij1pqzr/files/output.log
+2023-05-26 04:09:58,812 INFO    Thread-12 :26529 [dir_watcher.py:_on_file_modified():292] file/dir modified: /media/songoh/ssh3/songoh_ws/DAB Mask3D-main/wandb/run-20230526_033740-3ij1pqzr/files/output.log
+2023-05-26 04:10:03,814 INFO    Thread-12 :26529 [dir_watcher.py:_on_file_modified():292] file/dir modified: /media/songoh/ssh3/songoh_ws/DAB Mask3D-main/wandb/run-20230526_033740-3ij1pqzr/files/output.log
+2023-05-26 04:10:05,815 INFO    Thread-12 :26529 [dir_watcher.py:_on_file_modified():292] file/dir modified: /media/songoh/ssh3/songoh_ws/DAB Mask3D-main/wandb/run-20230526_033740-3ij1pqzr/files/output.log
+2023-05-26 04:10:06,815 INFO    Thread-12 :26529 [dir_watcher.py:_on_file_modified():292] file/dir modified: /media/songoh/ssh3/songoh_ws/DAB Mask3D-main/wandb/run-20230526_033740-3ij1pqzr/files/output.log
+2023-05-26 04:10:08,110 DEBUG   HandlerThread:26529 [handler.py:handle_request():141] handle_request: stop_status
+2023-05-26 04:10:08,111 DEBUG   SenderThread:26529 [sender.py:send_request():316] send_request: stop_status
+2023-05-26 04:10:11,818 INFO    Thread-12 :26529 [dir_watcher.py:_on_file_modified():292] file/dir modified: /media/songoh/ssh3/songoh_ws/DAB Mask3D-main/wandb/run-20230526_033740-3ij1pqzr/files/output.log
+2023-05-26 04:10:13,819 INFO    Thread-12 :26529 [dir_watcher.py:_on_file_modified():292] file/dir modified: /media/songoh/ssh3/songoh_ws/DAB Mask3D-main/wandb/run-20230526_033740-3ij1pqzr/files/output.log
+2023-05-26 04:10:14,750 DEBUG   SenderThread:26529 [sender.py:send():302] send: stats
+2023-05-26 04:10:14,819 INFO    Thread-12 :26529 [dir_watcher.py:_on_file_modified():292] file/dir modified: /media/songoh/ssh3/songoh_ws/DAB Mask3D-main/wandb/run-20230526_033740-3ij1pqzr/files/output.log
+2023-05-26 04:10:19,821 INFO    Thread-12 :26529 [dir_watcher.py:_on_file_modified():292] file/dir modified: /media/songoh/ssh3/songoh_ws/DAB Mask3D-main/wandb/run-20230526_033740-3ij1pqzr/files/output.log
+2023-05-26 04:10:20,822 INFO    Thread-12 :26529 [dir_watcher.py:_on_file_modified():292] file/dir modified: /media/songoh/ssh3/songoh_ws/DAB Mask3D-main/wandb/run-20230526_033740-3ij1pqzr/files/output.log
+2023-05-26 04:10:23,843 DEBUG   HandlerThread:26529 [handler.py:handle_request():141] handle_request: stop_status
+2023-05-26 04:10:23,843 DEBUG   SenderThread:26529 [sender.py:send_request():316] send_request: stop_status
+2023-05-26 04:10:40,383 DEBUG   HandlerThread:26529 [handler.py:handle_request():141] handle_request: stop_status
+2023-05-26 04:10:40,384 DEBUG   SenderThread:26529 [sender.py:send_request():316] send_request: stop_status
+2023-05-26 04:10:45,334 DEBUG   SenderThread:26529 [sender.py:send():302] send: stats
+2023-05-26 04:10:51,834 INFO    Thread-12 :26529 [dir_watcher.py:_on_file_modified():292] file/dir modified: /media/songoh/ssh3/songoh_ws/DAB Mask3D-main/wandb/run-20230526_033740-3ij1pqzr/files/output.log
+2023-05-26 04:10:52,834 INFO    Thread-12 :26529 [dir_watcher.py:_on_file_modified():292] file/dir modified: /media/songoh/ssh3/songoh_ws/DAB Mask3D-main/wandb/run-20230526_033740-3ij1pqzr/files/output.log
+2023-05-26 04:10:53,835 INFO    Thread-12 :26529 [dir_watcher.py:_on_file_modified():292] file/dir modified: /media/songoh/ssh3/songoh_ws/DAB Mask3D-main/wandb/run-20230526_033740-3ij1pqzr/files/output.log
+2023-05-26 04:10:56,699 DEBUG   HandlerThread:26529 [handler.py:handle_request():141] handle_request: stop_status
+2023-05-26 04:10:56,700 DEBUG   SenderThread:26529 [sender.py:send_request():316] send_request: stop_status
+2023-05-26 04:11:12,048 DEBUG   HandlerThread:26529 [handler.py:handle_request():141] handle_request: stop_status
+2023-05-26 04:11:12,048 DEBUG   SenderThread:26529 [sender.py:send_request():316] send_request: stop_status
+2023-05-26 04:11:15,867 DEBUG   SenderThread:26529 [sender.py:send():302] send: stats
+2023-05-26 04:11:17,844 INFO    Thread-12 :26529 [dir_watcher.py:_on_file_modified():292] file/dir modified: /media/songoh/ssh3/songoh_ws/DAB Mask3D-main/wandb/run-20230526_033740-3ij1pqzr/files/output.log
+2023-05-26 04:11:18,845 INFO    Thread-12 :26529 [dir_watcher.py:_on_file_modified():292] file/dir modified: /media/songoh/ssh3/songoh_ws/DAB Mask3D-main/wandb/run-20230526_033740-3ij1pqzr/files/output.log
+2023-05-26 04:11:19,845 INFO    Thread-12 :26529 [dir_watcher.py:_on_file_modified():292] file/dir modified: /media/songoh/ssh3/songoh_ws/DAB Mask3D-main/wandb/run-20230526_033740-3ij1pqzr/files/output.log
+2023-05-26 04:11:27,284 DEBUG   HandlerThread:26529 [handler.py:handle_request():141] handle_request: stop_status
+2023-05-26 04:11:27,284 DEBUG   SenderThread:26529 [sender.py:send_request():316] send_request: stop_status
+2023-05-26 04:11:33,851 INFO    Thread-12 :26529 [dir_watcher.py:_on_file_modified():292] file/dir modified: /media/songoh/ssh3/songoh_ws/DAB Mask3D-main/wandb/run-20230526_033740-3ij1pqzr/files/output.log
+2023-05-26 04:11:34,851 INFO    Thread-12 :26529 [dir_watcher.py:_on_file_modified():292] file/dir modified: /media/songoh/ssh3/songoh_ws/DAB Mask3D-main/wandb/run-20230526_033740-3ij1pqzr/files/output.log
+2023-05-26 04:11:42,516 DEBUG   HandlerThread:26529 [handler.py:handle_request():141] handle_request: stop_status
+2023-05-26 04:11:42,516 DEBUG   SenderThread:26529 [sender.py:send_request():316] send_request: stop_status
+2023-05-26 04:11:45,856 INFO    Thread-12 :26529 [dir_watcher.py:_on_file_modified():292] file/dir modified: /media/songoh/ssh3/songoh_ws/DAB Mask3D-main/wandb/run-20230526_033740-3ij1pqzr/files/output.log
+2023-05-26 04:11:46,394 DEBUG   SenderThread:26529 [sender.py:send():302] send: stats
+2023-05-26 04:11:47,857 INFO    Thread-12 :26529 [dir_watcher.py:_on_file_modified():292] file/dir modified: /media/songoh/ssh3/songoh_ws/DAB Mask3D-main/wandb/run-20230526_033740-3ij1pqzr/files/output.log
+2023-05-26 04:11:48,857 INFO    Thread-12 :26529 [dir_watcher.py:_on_file_modified():292] file/dir modified: /media/songoh/ssh3/songoh_ws/DAB Mask3D-main/wandb/run-20230526_033740-3ij1pqzr/files/output.log
+2023-05-26 04:11:57,749 DEBUG   HandlerThread:26529 [handler.py:handle_request():141] handle_request: stop_status
+2023-05-26 04:11:57,749 DEBUG   SenderThread:26529 [sender.py:send_request():316] send_request: stop_status
+2023-05-26 04:12:01,862 INFO    Thread-12 :26529 [dir_watcher.py:_on_file_modified():292] file/dir modified: /media/songoh/ssh3/songoh_ws/DAB Mask3D-main/wandb/run-20230526_033740-3ij1pqzr/files/output.log
+2023-05-26 04:12:02,863 INFO    Thread-12 :26529 [dir_watcher.py:_on_file_modified():292] file/dir modified: /media/songoh/ssh3/songoh_ws/DAB Mask3D-main/wandb/run-20230526_033740-3ij1pqzr/files/output.log
+2023-05-26 04:12:11,867 INFO    Thread-12 :26529 [dir_watcher.py:_on_file_modified():292] file/dir modified: /media/songoh/ssh3/songoh_ws/DAB Mask3D-main/wandb/run-20230526_033740-3ij1pqzr/files/output.log
+2023-05-26 04:12:12,867 INFO    Thread-12 :26529 [dir_watcher.py:_on_file_modified():292] file/dir modified: /media/songoh/ssh3/songoh_ws/DAB Mask3D-main/wandb/run-20230526_033740-3ij1pqzr/files/output.log
+2023-05-26 04:12:12,991 DEBUG   HandlerThread:26529 [handler.py:handle_request():141] handle_request: stop_status
+2023-05-26 04:12:12,991 DEBUG   SenderThread:26529 [sender.py:send_request():316] send_request: stop_status
+2023-05-26 04:12:16,962 DEBUG   SenderThread:26529 [sender.py:send():302] send: stats
+2023-05-26 04:12:17,869 INFO    Thread-12 :26529 [dir_watcher.py:_on_file_modified():292] file/dir modified: /media/songoh/ssh3/songoh_ws/DAB Mask3D-main/wandb/run-20230526_033740-3ij1pqzr/files/output.log
+2023-05-26 04:12:18,870 INFO    Thread-12 :26529 [dir_watcher.py:_on_file_modified():292] file/dir modified: /media/songoh/ssh3/songoh_ws/DAB Mask3D-main/wandb/run-20230526_033740-3ij1pqzr/files/output.log
+2023-05-26 04:12:19,870 INFO    Thread-12 :26529 [dir_watcher.py:_on_file_modified():292] file/dir modified: /media/songoh/ssh3/songoh_ws/DAB Mask3D-main/wandb/run-20230526_033740-3ij1pqzr/files/output.log
+2023-05-26 04:12:25,873 INFO    Thread-12 :26529 [dir_watcher.py:_on_file_modified():292] file/dir modified: /media/songoh/ssh3/songoh_ws/DAB Mask3D-main/wandb/run-20230526_033740-3ij1pqzr/files/output.log
+2023-05-26 04:12:26,873 INFO    Thread-12 :26529 [dir_watcher.py:_on_file_modified():292] file/dir modified: /media/songoh/ssh3/songoh_ws/DAB Mask3D-main/wandb/run-20230526_033740-3ij1pqzr/files/output.log
+2023-05-26 04:12:28,226 DEBUG   HandlerThread:26529 [handler.py:handle_request():141] handle_request: stop_status
+2023-05-26 04:12:28,227 DEBUG   SenderThread:26529 [sender.py:send_request():316] send_request: stop_status
+2023-05-26 04:12:31,875 INFO    Thread-12 :26529 [dir_watcher.py:_on_file_modified():292] file/dir modified: /media/songoh/ssh3/songoh_ws/DAB Mask3D-main/wandb/run-20230526_033740-3ij1pqzr/files/output.log
+2023-05-26 04:12:33,876 INFO    Thread-12 :26529 [dir_watcher.py:_on_file_modified():292] file/dir modified: /media/songoh/ssh3/songoh_ws/DAB Mask3D-main/wandb/run-20230526_033740-3ij1pqzr/files/output.log
+2023-05-26 04:12:34,877 INFO    Thread-12 :26529 [dir_watcher.py:_on_file_modified():292] file/dir modified: /media/songoh/ssh3/songoh_ws/DAB Mask3D-main/wandb/run-20230526_033740-3ij1pqzr/files/output.log
+2023-05-26 04:12:39,879 INFO    Thread-12 :26529 [dir_watcher.py:_on_file_modified():292] file/dir modified: /media/songoh/ssh3/songoh_ws/DAB Mask3D-main/wandb/run-20230526_033740-3ij1pqzr/files/output.log
+2023-05-26 04:12:40,879 INFO    Thread-12 :26529 [dir_watcher.py:_on_file_modified():292] file/dir modified: /media/songoh/ssh3/songoh_ws/DAB Mask3D-main/wandb/run-20230526_033740-3ij1pqzr/files/output.log
+2023-05-26 04:12:43,468 DEBUG   HandlerThread:26529 [handler.py:handle_request():141] handle_request: stop_status
+2023-05-26 04:12:43,469 DEBUG   SenderThread:26529 [sender.py:send_request():316] send_request: stop_status
+2023-05-26 04:12:47,548 DEBUG   SenderThread:26529 [sender.py:send():302] send: stats
+2023-05-26 04:12:47,882 INFO    Thread-12 :26529 [dir_watcher.py:_on_file_modified():292] file/dir modified: /media/songoh/ssh3/songoh_ws/DAB Mask3D-main/wandb/run-20230526_033740-3ij1pqzr/files/output.log
+2023-05-26 04:12:48,883 INFO    Thread-12 :26529 [dir_watcher.py:_on_file_modified():292] file/dir modified: /media/songoh/ssh3/songoh_ws/DAB Mask3D-main/wandb/run-20230526_033740-3ij1pqzr/files/output.log
+2023-05-26 04:12:55,886 INFO    Thread-12 :26529 [dir_watcher.py:_on_file_modified():292] file/dir modified: /media/songoh/ssh3/songoh_ws/DAB Mask3D-main/wandb/run-20230526_033740-3ij1pqzr/files/output.log
+2023-05-26 04:12:56,886 INFO    Thread-12 :26529 [dir_watcher.py:_on_file_modified():292] file/dir modified: /media/songoh/ssh3/songoh_ws/DAB Mask3D-main/wandb/run-20230526_033740-3ij1pqzr/files/output.log
+2023-05-26 04:12:59,379 DEBUG   HandlerThread:26529 [handler.py:handle_request():141] handle_request: stop_status
+2023-05-26 04:12:59,379 DEBUG   SenderThread:26529 [sender.py:send_request():316] send_request: stop_status
+2023-05-26 04:13:03,889 INFO    Thread-12 :26529 [dir_watcher.py:_on_file_modified():292] file/dir modified: /media/songoh/ssh3/songoh_ws/DAB Mask3D-main/wandb/run-20230526_033740-3ij1pqzr/files/output.log
+2023-05-26 04:13:04,890 INFO    Thread-12 :26529 [dir_watcher.py:_on_file_modified():292] file/dir modified: /media/songoh/ssh3/songoh_ws/DAB Mask3D-main/wandb/run-20230526_033740-3ij1pqzr/files/output.log
+2023-05-26 04:13:09,892 INFO    Thread-12 :26529 [dir_watcher.py:_on_file_modified():292] file/dir modified: /media/songoh/ssh3/songoh_ws/DAB Mask3D-main/wandb/run-20230526_033740-3ij1pqzr/files/output.log
+2023-05-26 04:13:10,892 INFO    Thread-12 :26529 [dir_watcher.py:_on_file_modified():292] file/dir modified: /media/songoh/ssh3/songoh_ws/DAB Mask3D-main/wandb/run-20230526_033740-3ij1pqzr/files/output.log
+2023-05-26 04:13:14,627 DEBUG   HandlerThread:26529 [handler.py:handle_request():141] handle_request: stop_status
+2023-05-26 04:13:14,628 DEBUG   SenderThread:26529 [sender.py:send_request():316] send_request: stop_status
+2023-05-26 04:13:18,093 DEBUG   SenderThread:26529 [sender.py:send():302] send: stats
+2023-05-26 04:13:19,897 INFO    Thread-12 :26529 [dir_watcher.py:_on_file_modified():292] file/dir modified: /media/songoh/ssh3/songoh_ws/DAB Mask3D-main/wandb/run-20230526_033740-3ij1pqzr/files/output.log
+2023-05-26 04:13:20,897 INFO    Thread-12 :26529 [dir_watcher.py:_on_file_modified():292] file/dir modified: /media/songoh/ssh3/songoh_ws/DAB Mask3D-main/wandb/run-20230526_033740-3ij1pqzr/files/output.log
+2023-05-26 04:13:21,898 INFO    Thread-12 :26529 [dir_watcher.py:_on_file_modified():292] file/dir modified: /media/songoh/ssh3/songoh_ws/DAB Mask3D-main/wandb/run-20230526_033740-3ij1pqzr/files/output.log
+2023-05-26 04:13:29,867 DEBUG   HandlerThread:26529 [handler.py:handle_request():141] handle_request: stop_status
+2023-05-26 04:13:29,867 DEBUG   SenderThread:26529 [sender.py:send_request():316] send_request: stop_status
+2023-05-26 04:13:31,902 INFO    Thread-12 :26529 [dir_watcher.py:_on_file_modified():292] file/dir modified: /media/songoh/ssh3/songoh_ws/DAB Mask3D-main/wandb/run-20230526_033740-3ij1pqzr/files/output.log
+2023-05-26 04:13:33,903 INFO    Thread-12 :26529 [dir_watcher.py:_on_file_modified():292] file/dir modified: /media/songoh/ssh3/songoh_ws/DAB Mask3D-main/wandb/run-20230526_033740-3ij1pqzr/files/output.log
+2023-05-26 04:13:34,903 INFO    Thread-12 :26529 [dir_watcher.py:_on_file_modified():292] file/dir modified: /media/songoh/ssh3/songoh_ws/DAB Mask3D-main/wandb/run-20230526_033740-3ij1pqzr/files/output.log
+2023-05-26 04:13:45,456 DEBUG   HandlerThread:26529 [handler.py:handle_request():141] handle_request: stop_status
+2023-05-26 04:13:45,456 DEBUG   SenderThread:26529 [sender.py:send_request():316] send_request: stop_status
+2023-05-26 04:13:47,909 INFO    Thread-12 :26529 [dir_watcher.py:_on_file_modified():292] file/dir modified: /media/songoh/ssh3/songoh_ws/DAB Mask3D-main/wandb/run-20230526_033740-3ij1pqzr/files/output.log
+2023-05-26 04:13:48,637 DEBUG   SenderThread:26529 [sender.py:send():302] send: stats
+2023-05-26 04:13:49,910 INFO    Thread-12 :26529 [dir_watcher.py:_on_file_modified():292] file/dir modified: /media/songoh/ssh3/songoh_ws/DAB Mask3D-main/wandb/run-20230526_033740-3ij1pqzr/files/output.log
+2023-05-26 04:13:50,910 INFO    Thread-12 :26529 [dir_watcher.py:_on_file_modified():292] file/dir modified: /media/songoh/ssh3/songoh_ws/DAB Mask3D-main/wandb/run-20230526_033740-3ij1pqzr/files/output.log
+2023-05-26 04:14:00,734 DEBUG   HandlerThread:26529 [handler.py:handle_request():141] handle_request: stop_status
+2023-05-26 04:14:00,735 DEBUG   SenderThread:26529 [sender.py:send_request():316] send_request: stop_status
+2023-05-26 04:14:01,915 INFO    Thread-12 :26529 [dir_watcher.py:_on_file_modified():292] file/dir modified: /media/songoh/ssh3/songoh_ws/DAB Mask3D-main/wandb/run-20230526_033740-3ij1pqzr/files/output.log
+2023-05-26 04:14:02,915 INFO    Thread-12 :26529 [dir_watcher.py:_on_file_modified():292] file/dir modified: /media/songoh/ssh3/songoh_ws/DAB Mask3D-main/wandb/run-20230526_033740-3ij1pqzr/files/output.log
+2023-05-26 04:14:13,919 INFO    Thread-12 :26529 [dir_watcher.py:_on_file_modified():292] file/dir modified: /media/songoh/ssh3/songoh_ws/DAB Mask3D-main/wandb/run-20230526_033740-3ij1pqzr/files/output.log
+2023-05-26 04:14:14,920 INFO    Thread-12 :26529 [dir_watcher.py:_on_file_modified():292] file/dir modified: /media/songoh/ssh3/songoh_ws/DAB Mask3D-main/wandb/run-20230526_033740-3ij1pqzr/files/output.log
+2023-05-26 04:14:15,920 INFO    Thread-12 :26529 [dir_watcher.py:_on_file_modified():292] file/dir modified: /media/songoh/ssh3/songoh_ws/DAB Mask3D-main/wandb/run-20230526_033740-3ij1pqzr/files/output.log
+2023-05-26 04:14:15,986 DEBUG   HandlerThread:26529 [handler.py:handle_request():141] handle_request: stop_status
+2023-05-26 04:14:15,986 DEBUG   SenderThread:26529 [sender.py:send_request():316] send_request: stop_status
+2023-05-26 04:14:19,203 DEBUG   SenderThread:26529 [sender.py:send():302] send: stats
+2023-05-26 04:14:23,924 INFO    Thread-12 :26529 [dir_watcher.py:_on_file_modified():292] file/dir modified: /media/songoh/ssh3/songoh_ws/DAB Mask3D-main/wandb/run-20230526_033740-3ij1pqzr/files/output.log
+2023-05-26 04:14:24,925 INFO    Thread-12 :26529 [dir_watcher.py:_on_file_modified():292] file/dir modified: /media/songoh/ssh3/songoh_ws/DAB Mask3D-main/wandb/run-20230526_033740-3ij1pqzr/files/output.log
+2023-05-26 04:14:29,927 INFO    Thread-12 :26529 [dir_watcher.py:_on_file_modified():292] file/dir modified: /media/songoh/ssh3/songoh_ws/DAB Mask3D-main/wandb/run-20230526_033740-3ij1pqzr/files/output.log
+2023-05-26 04:14:30,928 INFO    Thread-12 :26529 [dir_watcher.py:_on_file_modified():292] file/dir modified: /media/songoh/ssh3/songoh_ws/DAB Mask3D-main/wandb/run-20230526_033740-3ij1pqzr/files/output.log
+2023-05-26 04:14:31,290 DEBUG   HandlerThread:26529 [handler.py:handle_request():141] handle_request: stop_status
+2023-05-26 04:14:31,290 DEBUG   SenderThread:26529 [sender.py:send_request():316] send_request: stop_status
+2023-05-26 04:14:46,533 DEBUG   HandlerThread:26529 [handler.py:handle_request():141] handle_request: stop_status
+2023-05-26 04:14:46,533 DEBUG   SenderThread:26529 [sender.py:send_request():316] send_request: stop_status
+2023-05-26 04:14:49,805 DEBUG   SenderThread:26529 [sender.py:send():302] send: stats
+2023-05-26 04:15:01,804 DEBUG   HandlerThread:26529 [handler.py:handle_request():141] handle_request: stop_status
+2023-05-26 04:15:01,805 DEBUG   SenderThread:26529 [sender.py:send_request():316] send_request: stop_status
+2023-05-26 04:15:07,943 INFO    Thread-12 :26529 [dir_watcher.py:_on_file_modified():292] file/dir modified: /media/songoh/ssh3/songoh_ws/DAB Mask3D-main/wandb/run-20230526_033740-3ij1pqzr/files/output.log
+2023-05-26 04:15:08,943 INFO    Thread-12 :26529 [dir_watcher.py:_on_file_modified():292] file/dir modified: /media/songoh/ssh3/songoh_ws/DAB Mask3D-main/wandb/run-20230526_033740-3ij1pqzr/files/output.log
+2023-05-26 04:15:17,048 DEBUG   HandlerThread:26529 [handler.py:handle_request():141] handle_request: stop_status
+2023-05-26 04:15:17,049 DEBUG   SenderThread:26529 [sender.py:send_request():316] send_request: stop_status
+2023-05-26 04:15:20,403 DEBUG   SenderThread:26529 [sender.py:send():302] send: stats
+2023-05-26 04:15:27,951 INFO    Thread-12 :26529 [dir_watcher.py:_on_file_modified():292] file/dir modified: /media/songoh/ssh3/songoh_ws/DAB Mask3D-main/wandb/run-20230526_033740-3ij1pqzr/files/output.log
+2023-05-26 04:15:29,952 INFO    Thread-12 :26529 [dir_watcher.py:_on_file_modified():292] file/dir modified: /media/songoh/ssh3/songoh_ws/DAB Mask3D-main/wandb/run-20230526_033740-3ij1pqzr/files/output.log
+2023-05-26 04:15:30,952 INFO    Thread-12 :26529 [dir_watcher.py:_on_file_modified():292] file/dir modified: /media/songoh/ssh3/songoh_ws/DAB Mask3D-main/wandb/run-20230526_033740-3ij1pqzr/files/output.log
+2023-05-26 04:15:32,264 DEBUG   HandlerThread:26529 [handler.py:handle_request():141] handle_request: stop_status
+2023-05-26 04:15:32,265 DEBUG   SenderThread:26529 [sender.py:send_request():316] send_request: stop_status
+2023-05-26 04:15:35,955 INFO    Thread-12 :26529 [dir_watcher.py:_on_file_modified():292] file/dir modified: /media/songoh/ssh3/songoh_ws/DAB Mask3D-main/wandb/run-20230526_033740-3ij1pqzr/files/output.log
+2023-05-26 04:15:37,956 INFO    Thread-12 :26529 [dir_watcher.py:_on_file_modified():292] file/dir modified: /media/songoh/ssh3/songoh_ws/DAB Mask3D-main/wandb/run-20230526_033740-3ij1pqzr/files/output.log
+2023-05-26 04:15:38,956 INFO    Thread-12 :26529 [dir_watcher.py:_on_file_modified():292] file/dir modified: /media/songoh/ssh3/songoh_ws/DAB Mask3D-main/wandb/run-20230526_033740-3ij1pqzr/files/output.log
+2023-05-26 04:15:47,773 DEBUG   HandlerThread:26529 [handler.py:handle_request():141] handle_request: stop_status
+2023-05-26 04:15:47,774 DEBUG   SenderThread:26529 [sender.py:send_request():316] send_request: stop_status
+2023-05-26 04:15:50,976 DEBUG   SenderThread:26529 [sender.py:send():302] send: stats
+2023-05-26 04:15:51,961 INFO    Thread-12 :26529 [dir_watcher.py:_on_file_modified():292] file/dir modified: /media/songoh/ssh3/songoh_ws/DAB Mask3D-main/wandb/run-20230526_033740-3ij1pqzr/files/output.log
+2023-05-26 04:15:52,961 INFO    Thread-12 :26529 [dir_watcher.py:_on_file_modified():292] file/dir modified: /media/songoh/ssh3/songoh_ws/DAB Mask3D-main/wandb/run-20230526_033740-3ij1pqzr/files/output.log
+2023-05-26 04:15:53,963 INFO    Thread-12 :26529 [dir_watcher.py:_on_file_modified():292] file/dir modified: /media/songoh/ssh3/songoh_ws/DAB Mask3D-main/wandb/run-20230526_033740-3ij1pqzr/files/output.log
+2023-05-26 04:16:03,091 DEBUG   HandlerThread:26529 [handler.py:handle_request():141] handle_request: stop_status
+2023-05-26 04:16:03,091 DEBUG   SenderThread:26529 [sender.py:send_request():316] send_request: stop_status
+2023-05-26 04:16:08,969 INFO    Thread-12 :26529 [dir_watcher.py:_on_file_modified():292] file/dir modified: /media/songoh/ssh3/songoh_ws/DAB Mask3D-main/wandb/run-20230526_033740-3ij1pqzr/files/output.log
+2023-05-26 04:16:10,970 INFO    Thread-12 :26529 [dir_watcher.py:_on_file_modified():292] file/dir modified: /media/songoh/ssh3/songoh_ws/DAB Mask3D-main/wandb/run-20230526_033740-3ij1pqzr/files/output.log
+2023-05-26 04:16:18,336 DEBUG   HandlerThread:26529 [handler.py:handle_request():141] handle_request: stop_status
+2023-05-26 04:16:18,336 DEBUG   SenderThread:26529 [sender.py:send_request():316] send_request: stop_status
+2023-05-26 04:16:21,497 DEBUG   SenderThread:26529 [sender.py:send():302] send: stats
+2023-05-26 04:16:22,975 INFO    Thread-12 :26529 [dir_watcher.py:_on_file_modified():292] file/dir modified: /media/songoh/ssh3/songoh_ws/DAB Mask3D-main/wandb/run-20230526_033740-3ij1pqzr/files/output.log
+2023-05-26 04:16:34,419 DEBUG   HandlerThread:26529 [handler.py:handle_request():141] handle_request: stop_status
+2023-05-26 04:16:34,419 DEBUG   SenderThread:26529 [sender.py:send_request():316] send_request: stop_status
+2023-05-26 04:16:44,983 INFO    Thread-12 :26529 [dir_watcher.py:_on_file_modified():292] file/dir modified: /media/songoh/ssh3/songoh_ws/DAB Mask3D-main/wandb/run-20230526_033740-3ij1pqzr/files/output.log
+2023-05-26 04:16:49,665 DEBUG   HandlerThread:26529 [handler.py:handle_request():141] handle_request: stop_status
+2023-05-26 04:16:49,674 DEBUG   SenderThread:26529 [sender.py:send_request():316] send_request: stop_status
+2023-05-26 04:16:52,073 DEBUG   SenderThread:26529 [sender.py:send():302] send: stats
+2023-05-26 04:16:52,987 INFO    Thread-12 :26529 [dir_watcher.py:_on_file_modified():292] file/dir modified: /media/songoh/ssh3/songoh_ws/DAB Mask3D-main/wandb/run-20230526_033740-3ij1pqzr/files/output.log
+2023-05-26 04:17:00,991 INFO    Thread-12 :26529 [dir_watcher.py:_on_file_modified():292] file/dir modified: /media/songoh/ssh3/songoh_ws/DAB Mask3D-main/wandb/run-20230526_033740-3ij1pqzr/files/output.log
+2023-05-26 04:17:05,017 DEBUG   HandlerThread:26529 [handler.py:handle_request():141] handle_request: stop_status
+2023-05-26 04:17:05,018 DEBUG   SenderThread:26529 [sender.py:send_request():316] send_request: stop_status
+2023-05-26 04:17:06,993 INFO    Thread-12 :26529 [dir_watcher.py:_on_file_modified():292] file/dir modified: /media/songoh/ssh3/songoh_ws/DAB Mask3D-main/wandb/run-20230526_033740-3ij1pqzr/files/output.log
+2023-05-26 04:17:08,994 INFO    Thread-12 :26529 [dir_watcher.py:_on_file_modified():292] file/dir modified: /media/songoh/ssh3/songoh_ws/DAB Mask3D-main/wandb/run-20230526_033740-3ij1pqzr/files/output.log
+2023-05-26 04:17:16,997 INFO    Thread-12 :26529 [dir_watcher.py:_on_file_modified():292] file/dir modified: /media/songoh/ssh3/songoh_ws/DAB Mask3D-main/wandb/run-20230526_033740-3ij1pqzr/files/output.log
+2023-05-26 04:17:18,998 INFO    Thread-12 :26529 [dir_watcher.py:_on_file_modified():292] file/dir modified: /media/songoh/ssh3/songoh_ws/DAB Mask3D-main/wandb/run-20230526_033740-3ij1pqzr/files/output.log
+2023-05-26 04:17:20,259 DEBUG   HandlerThread:26529 [handler.py:handle_request():141] handle_request: stop_status
+2023-05-26 04:17:20,260 DEBUG   SenderThread:26529 [sender.py:send_request():316] send_request: stop_status
+2023-05-26 04:17:22,618 DEBUG   SenderThread:26529 [sender.py:send():302] send: stats
+2023-05-26 04:17:27,001 INFO    Thread-12 :26529 [dir_watcher.py:_on_file_modified():292] file/dir modified: /media/songoh/ssh3/songoh_ws/DAB Mask3D-main/wandb/run-20230526_033740-3ij1pqzr/files/output.log
+2023-05-26 04:17:29,002 INFO    Thread-12 :26529 [dir_watcher.py:_on_file_modified():292] file/dir modified: /media/songoh/ssh3/songoh_ws/DAB Mask3D-main/wandb/run-20230526_033740-3ij1pqzr/files/output.log
+2023-05-26 04:17:35,496 DEBUG   HandlerThread:26529 [handler.py:handle_request():141] handle_request: stop_status
+2023-05-26 04:17:35,496 DEBUG   SenderThread:26529 [sender.py:send_request():316] send_request: stop_status
+2023-05-26 04:17:37,006 INFO    Thread-12 :26529 [dir_watcher.py:_on_file_modified():292] file/dir modified: /media/songoh/ssh3/songoh_ws/DAB Mask3D-main/wandb/run-20230526_033740-3ij1pqzr/files/output.log
+2023-05-26 04:17:39,007 INFO    Thread-12 :26529 [dir_watcher.py:_on_file_modified():292] file/dir modified: /media/songoh/ssh3/songoh_ws/DAB Mask3D-main/wandb/run-20230526_033740-3ij1pqzr/files/output.log
+2023-05-26 04:17:45,024 INFO    Thread-12 :26529 [dir_watcher.py:_on_file_modified():292] file/dir modified: /media/songoh/ssh3/songoh_ws/DAB Mask3D-main/wandb/run-20230526_033740-3ij1pqzr/files/output.log
+2023-05-26 04:17:47,025 INFO    Thread-12 :26529 [dir_watcher.py:_on_file_modified():292] file/dir modified: /media/songoh/ssh3/songoh_ws/DAB Mask3D-main/wandb/run-20230526_033740-3ij1pqzr/files/output.log
+2023-05-26 04:17:51,258 DEBUG   HandlerThread:26529 [handler.py:handle_request():141] handle_request: stop_status
+2023-05-26 04:17:51,258 DEBUG   SenderThread:26529 [sender.py:send_request():316] send_request: stop_status
+2023-05-26 04:17:53,287 DEBUG   SenderThread:26529 [sender.py:send():302] send: stats
+2023-05-26 04:17:59,030 INFO    Thread-12 :26529 [dir_watcher.py:_on_file_modified():292] file/dir modified: /media/songoh/ssh3/songoh_ws/DAB Mask3D-main/wandb/run-20230526_033740-3ij1pqzr/files/output.log
+2023-05-26 04:18:06,893 DEBUG   HandlerThread:26529 [handler.py:handle_request():141] handle_request: stop_status
+2023-05-26 04:18:06,893 DEBUG   SenderThread:26529 [sender.py:send_request():316] send_request: stop_status
+2023-05-26 04:18:09,034 INFO    Thread-12 :26529 [dir_watcher.py:_on_file_modified():292] file/dir modified: /media/songoh/ssh3/songoh_ws/DAB Mask3D-main/wandb/run-20230526_033740-3ij1pqzr/files/output.log
+2023-05-26 04:18:11,036 INFO    Thread-12 :26529 [dir_watcher.py:_on_file_modified():292] file/dir modified: /media/songoh/ssh3/songoh_ws/DAB Mask3D-main/wandb/run-20230526_033740-3ij1pqzr/files/output.log
+2023-05-26 04:18:17,038 INFO    Thread-12 :26529 [dir_watcher.py:_on_file_modified():292] file/dir modified: /media/songoh/ssh3/songoh_ws/DAB Mask3D-main/wandb/run-20230526_033740-3ij1pqzr/files/output.log
+2023-05-26 04:18:22,162 DEBUG   HandlerThread:26529 [handler.py:handle_request():141] handle_request: stop_status
+2023-05-26 04:18:22,163 DEBUG   SenderThread:26529 [sender.py:send_request():316] send_request: stop_status
+2023-05-26 04:18:23,821 DEBUG   SenderThread:26529 [sender.py:send():302] send: stats
+2023-05-26 04:18:25,042 INFO    Thread-12 :26529 [dir_watcher.py:_on_file_modified():292] file/dir modified: /media/songoh/ssh3/songoh_ws/DAB Mask3D-main/wandb/run-20230526_033740-3ij1pqzr/files/output.log
+2023-05-26 04:18:31,045 INFO    Thread-12 :26529 [dir_watcher.py:_on_file_modified():292] file/dir modified: /media/songoh/ssh3/songoh_ws/DAB Mask3D-main/wandb/run-20230526_033740-3ij1pqzr/files/output.log
+2023-05-26 04:18:37,047 INFO    Thread-12 :26529 [dir_watcher.py:_on_file_modified():292] file/dir modified: /media/songoh/ssh3/songoh_ws/DAB Mask3D-main/wandb/run-20230526_033740-3ij1pqzr/files/output.log
+2023-05-26 04:18:37,581 DEBUG   HandlerThread:26529 [handler.py:handle_request():141] handle_request: stop_status
+2023-05-26 04:18:37,582 DEBUG   SenderThread:26529 [sender.py:send_request():316] send_request: stop_status
+2023-05-26 04:18:45,051 INFO    Thread-12 :26529 [dir_watcher.py:_on_file_modified():292] file/dir modified: /media/songoh/ssh3/songoh_ws/DAB Mask3D-main/wandb/run-20230526_033740-3ij1pqzr/files/output.log
+2023-05-26 04:18:52,815 DEBUG   HandlerThread:26529 [handler.py:handle_request():141] handle_request: stop_status
+2023-05-26 04:18:52,816 DEBUG   SenderThread:26529 [sender.py:send_request():316] send_request: stop_status
+2023-05-26 04:18:53,054 INFO    Thread-12 :26529 [dir_watcher.py:_on_file_modified():292] file/dir modified: /media/songoh/ssh3/songoh_ws/DAB Mask3D-main/wandb/run-20230526_033740-3ij1pqzr/files/output.log
+2023-05-26 04:18:54,383 DEBUG   SenderThread:26529 [sender.py:send():302] send: stats
+2023-05-26 04:18:55,055 INFO    Thread-12 :26529 [dir_watcher.py:_on_file_modified():292] file/dir modified: /media/songoh/ssh3/songoh_ws/DAB Mask3D-main/wandb/run-20230526_033740-3ij1pqzr/files/output.log
+2023-05-26 04:19:03,058 INFO    Thread-12 :26529 [dir_watcher.py:_on_file_modified():292] file/dir modified: /media/songoh/ssh3/songoh_ws/DAB Mask3D-main/wandb/run-20230526_033740-3ij1pqzr/files/output.log
+2023-05-26 04:19:05,059 INFO    Thread-12 :26529 [dir_watcher.py:_on_file_modified():292] file/dir modified: /media/songoh/ssh3/songoh_ws/DAB Mask3D-main/wandb/run-20230526_033740-3ij1pqzr/files/output.log
+2023-05-26 04:19:08,115 DEBUG   HandlerThread:26529 [handler.py:handle_request():141] handle_request: stop_status
+2023-05-26 04:19:08,115 DEBUG   SenderThread:26529 [sender.py:send_request():316] send_request: stop_status
+2023-05-26 04:19:13,062 INFO    Thread-12 :26529 [dir_watcher.py:_on_file_modified():292] file/dir modified: /media/songoh/ssh3/songoh_ws/DAB Mask3D-main/wandb/run-20230526_033740-3ij1pqzr/files/output.log
+2023-05-26 04:19:15,063 INFO    Thread-12 :26529 [dir_watcher.py:_on_file_modified():292] file/dir modified: /media/songoh/ssh3/songoh_ws/DAB Mask3D-main/wandb/run-20230526_033740-3ij1pqzr/files/output.log
+2023-05-26 04:19:23,335 DEBUG   HandlerThread:26529 [handler.py:handle_request():141] handle_request: stop_status
+2023-05-26 04:19:23,335 DEBUG   SenderThread:26529 [sender.py:send_request():316] send_request: stop_status
+2023-05-26 04:19:24,943 DEBUG   SenderThread:26529 [sender.py:send():302] send: stats
+2023-05-26 04:19:25,067 INFO    Thread-12 :26529 [dir_watcher.py:_on_file_modified():292] file/dir modified: /media/songoh/ssh3/songoh_ws/DAB Mask3D-main/wandb/run-20230526_033740-3ij1pqzr/files/output.log
+2023-05-26 04:19:37,072 INFO    Thread-12 :26529 [dir_watcher.py:_on_file_modified():292] file/dir modified: /media/songoh/ssh3/songoh_ws/DAB Mask3D-main/wandb/run-20230526_033740-3ij1pqzr/files/output.log
+2023-05-26 04:19:38,575 DEBUG   HandlerThread:26529 [handler.py:handle_request():141] handle_request: stop_status
+2023-05-26 04:19:38,575 DEBUG   SenderThread:26529 [sender.py:send_request():316] send_request: stop_status
+2023-05-26 04:19:39,073 INFO    Thread-12 :26529 [dir_watcher.py:_on_file_modified():292] file/dir modified: /media/songoh/ssh3/songoh_ws/DAB Mask3D-main/wandb/run-20230526_033740-3ij1pqzr/files/output.log
+2023-05-26 04:19:49,077 INFO    Thread-12 :26529 [dir_watcher.py:_on_file_modified():292] file/dir modified: /media/songoh/ssh3/songoh_ws/DAB Mask3D-main/wandb/run-20230526_033740-3ij1pqzr/files/output.log
+2023-05-26 04:19:53,881 DEBUG   HandlerThread:26529 [handler.py:handle_request():141] handle_request: stop_status
+2023-05-26 04:19:53,882 DEBUG   SenderThread:26529 [sender.py:send_request():316] send_request: stop_status
+2023-05-26 04:19:55,537 DEBUG   SenderThread:26529 [sender.py:send():302] send: stats
+2023-05-26 04:19:59,081 INFO    Thread-12 :26529 [dir_watcher.py:_on_file_modified():292] file/dir modified: /media/songoh/ssh3/songoh_ws/DAB Mask3D-main/wandb/run-20230526_033740-3ij1pqzr/files/output.log
+2023-05-26 04:20:09,330 DEBUG   HandlerThread:26529 [handler.py:handle_request():141] handle_request: stop_status
+2023-05-26 04:20:09,330 DEBUG   SenderThread:26529 [sender.py:send_request():316] send_request: stop_status
+2023-05-26 04:20:15,087 INFO    Thread-12 :26529 [dir_watcher.py:_on_file_modified():292] file/dir modified: /media/songoh/ssh3/songoh_ws/DAB Mask3D-main/wandb/run-20230526_033740-3ij1pqzr/files/output.log
+2023-05-26 04:20:23,091 INFO    Thread-12 :26529 [dir_watcher.py:_on_file_modified():292] file/dir modified: /media/songoh/ssh3/songoh_ws/DAB Mask3D-main/wandb/run-20230526_033740-3ij1pqzr/files/output.log
+2023-05-26 04:20:24,615 DEBUG   HandlerThread:26529 [handler.py:handle_request():141] handle_request: stop_status
+2023-05-26 04:20:24,616 DEBUG   SenderThread:26529 [sender.py:send_request():316] send_request: stop_status
+2023-05-26 04:20:26,051 DEBUG   SenderThread:26529 [sender.py:send():302] send: stats
+2023-05-26 04:20:33,095 INFO    Thread-12 :26529 [dir_watcher.py:_on_file_modified():292] file/dir modified: /media/songoh/ssh3/songoh_ws/DAB Mask3D-main/wandb/run-20230526_033740-3ij1pqzr/files/output.log
+2023-05-26 04:20:35,096 INFO    Thread-12 :26529 [dir_watcher.py:_on_file_modified():292] file/dir modified: /media/songoh/ssh3/songoh_ws/DAB Mask3D-main/wandb/run-20230526_033740-3ij1pqzr/files/output.log
+2023-05-26 04:20:39,098 INFO    Thread-12 :26529 [dir_watcher.py:_on_file_modified():292] file/dir modified: /media/songoh/ssh3/songoh_ws/DAB Mask3D-main/wandb/run-20230526_033740-3ij1pqzr/files/output.log
+2023-05-26 04:20:39,839 DEBUG   HandlerThread:26529 [handler.py:handle_request():141] handle_request: stop_status
+2023-05-26 04:20:39,840 DEBUG   SenderThread:26529 [sender.py:send_request():316] send_request: stop_status
+2023-05-26 04:20:43,100 INFO    Thread-12 :26529 [dir_watcher.py:_on_file_modified():292] file/dir modified: /media/songoh/ssh3/songoh_ws/DAB Mask3D-main/wandb/run-20230526_033740-3ij1pqzr/files/output.log
+2023-05-26 04:20:47,102 INFO    Thread-12 :26529 [dir_watcher.py:_on_file_modified():292] file/dir modified: /media/songoh/ssh3/songoh_ws/DAB Mask3D-main/wandb/run-20230526_033740-3ij1pqzr/files/output.log
+2023-05-26 04:20:49,103 INFO    Thread-12 :26529 [dir_watcher.py:_on_file_modified():292] file/dir modified: /media/songoh/ssh3/songoh_ws/DAB Mask3D-main/wandb/run-20230526_033740-3ij1pqzr/files/output.log
+2023-05-26 04:20:53,104 INFO    Thread-12 :26529 [dir_watcher.py:_on_file_modified():292] file/dir modified: /media/songoh/ssh3/songoh_ws/DAB Mask3D-main/wandb/run-20230526_033740-3ij1pqzr/files/output.log
+2023-05-26 04:20:55,062 DEBUG   HandlerThread:26529 [handler.py:handle_request():141] handle_request: stop_status
+2023-05-26 04:20:55,062 DEBUG   SenderThread:26529 [sender.py:send_request():316] send_request: stop_status
+2023-05-26 04:20:56,634 DEBUG   SenderThread:26529 [sender.py:send():302] send: stats
+2023-05-26 04:21:01,107 INFO    Thread-12 :26529 [dir_watcher.py:_on_file_modified():292] file/dir modified: /media/songoh/ssh3/songoh_ws/DAB Mask3D-main/wandb/run-20230526_033740-3ij1pqzr/files/output.log
+2023-05-26 04:21:03,108 INFO    Thread-12 :26529 [dir_watcher.py:_on_file_modified():292] file/dir modified: /media/songoh/ssh3/songoh_ws/DAB Mask3D-main/wandb/run-20230526_033740-3ij1pqzr/files/output.log
+2023-05-26 04:21:10,287 DEBUG   HandlerThread:26529 [handler.py:handle_request():141] handle_request: stop_status
+2023-05-26 04:21:10,287 DEBUG   SenderThread:26529 [sender.py:send_request():316] send_request: stop_status
+2023-05-26 04:21:11,111 INFO    Thread-12 :26529 [dir_watcher.py:_on_file_modified():292] file/dir modified: /media/songoh/ssh3/songoh_ws/DAB Mask3D-main/wandb/run-20230526_033740-3ij1pqzr/files/output.log
+2023-05-26 04:21:19,115 INFO    Thread-12 :26529 [dir_watcher.py:_on_file_modified():292] file/dir modified: /media/songoh/ssh3/songoh_ws/DAB Mask3D-main/wandb/run-20230526_033740-3ij1pqzr/files/output.log
+2023-05-26 04:21:25,521 DEBUG   HandlerThread:26529 [handler.py:handle_request():141] handle_request: stop_status
+2023-05-26 04:21:25,522 DEBUG   SenderThread:26529 [sender.py:send_request():316] send_request: stop_status
+2023-05-26 04:21:27,118 INFO    Thread-12 :26529 [dir_watcher.py:_on_file_modified():292] file/dir modified: /media/songoh/ssh3/songoh_ws/DAB Mask3D-main/wandb/run-20230526_033740-3ij1pqzr/files/output.log
+2023-05-26 04:21:27,170 DEBUG   SenderThread:26529 [sender.py:send():302] send: stats
+2023-05-26 04:21:33,121 INFO    Thread-12 :26529 [dir_watcher.py:_on_file_modified():292] file/dir modified: /media/songoh/ssh3/songoh_ws/DAB Mask3D-main/wandb/run-20230526_033740-3ij1pqzr/files/output.log
+2023-05-26 04:21:35,122 INFO    Thread-12 :26529 [dir_watcher.py:_on_file_modified():292] file/dir modified: /media/songoh/ssh3/songoh_ws/DAB Mask3D-main/wandb/run-20230526_033740-3ij1pqzr/files/output.log
+2023-05-26 04:21:39,124 INFO    Thread-12 :26529 [dir_watcher.py:_on_file_modified():292] file/dir modified: /media/songoh/ssh3/songoh_ws/DAB Mask3D-main/wandb/run-20230526_033740-3ij1pqzr/files/output.log
+2023-05-26 04:21:41,507 DEBUG   HandlerThread:26529 [handler.py:handle_request():141] handle_request: stop_status
+2023-05-26 04:21:41,507 DEBUG   SenderThread:26529 [sender.py:send_request():316] send_request: stop_status
+2023-05-26 04:21:56,744 DEBUG   HandlerThread:26529 [handler.py:handle_request():141] handle_request: stop_status
+2023-05-26 04:21:56,744 DEBUG   SenderThread:26529 [sender.py:send_request():316] send_request: stop_status
+2023-05-26 04:21:57,736 DEBUG   SenderThread:26529 [sender.py:send():302] send: stats
+2023-05-26 04:22:11,955 DEBUG   HandlerThread:26529 [handler.py:handle_request():141] handle_request: stop_status
+2023-05-26 04:22:11,955 DEBUG   SenderThread:26529 [sender.py:send_request():316] send_request: stop_status
+2023-05-26 04:22:23,140 INFO    Thread-12 :26529 [dir_watcher.py:_on_file_modified():292] file/dir modified: /media/songoh/ssh3/songoh_ws/DAB Mask3D-main/wandb/run-20230526_033740-3ij1pqzr/files/output.log
+2023-05-26 04:22:27,142 INFO    Thread-12 :26529 [dir_watcher.py:_on_file_modified():292] file/dir modified: /media/songoh/ssh3/songoh_ws/DAB Mask3D-main/wandb/run-20230526_033740-3ij1pqzr/files/output.log
+2023-05-26 04:22:27,690 DEBUG   HandlerThread:26529 [handler.py:handle_request():141] handle_request: stop_status
+2023-05-26 04:22:27,690 DEBUG   SenderThread:26529 [sender.py:send_request():316] send_request: stop_status
+2023-05-26 04:22:28,328 DEBUG   SenderThread:26529 [sender.py:send():302] send: stats
+2023-05-26 04:22:43,031 DEBUG   HandlerThread:26529 [handler.py:handle_request():141] handle_request: stop_status
+2023-05-26 04:22:43,031 DEBUG   SenderThread:26529 [sender.py:send_request():316] send_request: stop_status
+2023-05-26 04:22:58,254 DEBUG   HandlerThread:26529 [handler.py:handle_request():141] handle_request: stop_status
+2023-05-26 04:22:58,254 DEBUG   SenderThread:26529 [sender.py:send_request():316] send_request: stop_status
+2023-05-26 04:22:58,907 DEBUG   SenderThread:26529 [sender.py:send():302] send: stats
+2023-05-26 04:22:59,155 INFO    Thread-12 :26529 [dir_watcher.py:_on_file_modified():292] file/dir modified: /media/songoh/ssh3/songoh_ws/DAB Mask3D-main/wandb/run-20230526_033740-3ij1pqzr/files/output.log
+2023-05-26 04:23:01,156 INFO    Thread-12 :26529 [dir_watcher.py:_on_file_modified():292] file/dir modified: /media/songoh/ssh3/songoh_ws/DAB Mask3D-main/wandb/run-20230526_033740-3ij1pqzr/files/output.log
+2023-05-26 04:23:03,156 INFO    Thread-12 :26529 [dir_watcher.py:_on_file_modified():292] file/dir modified: /media/songoh/ssh3/songoh_ws/DAB Mask3D-main/wandb/run-20230526_033740-3ij1pqzr/files/output.log
+2023-05-26 04:23:13,492 DEBUG   HandlerThread:26529 [handler.py:handle_request():141] handle_request: stop_status
+2023-05-26 04:23:13,492 DEBUG   SenderThread:26529 [sender.py:send_request():316] send_request: stop_status
+2023-05-26 04:23:28,713 DEBUG   HandlerThread:26529 [handler.py:handle_request():141] handle_request: stop_status
+2023-05-26 04:23:28,713 DEBUG   SenderThread:26529 [sender.py:send_request():316] send_request: stop_status
+2023-05-26 04:23:29,480 DEBUG   SenderThread:26529 [sender.py:send():302] send: stats
+2023-05-26 04:23:33,168 INFO    Thread-12 :26529 [dir_watcher.py:_on_file_modified():292] file/dir modified: /media/songoh/ssh3/songoh_ws/DAB Mask3D-main/wandb/run-20230526_033740-3ij1pqzr/files/output.log
+2023-05-26 04:23:35,169 INFO    Thread-12 :26529 [dir_watcher.py:_on_file_modified():292] file/dir modified: /media/songoh/ssh3/songoh_ws/DAB Mask3D-main/wandb/run-20230526_033740-3ij1pqzr/files/output.log
+2023-05-26 04:23:39,171 INFO    Thread-12 :26529 [dir_watcher.py:_on_file_modified():292] file/dir modified: /media/songoh/ssh3/songoh_ws/DAB Mask3D-main/wandb/run-20230526_033740-3ij1pqzr/files/output.log
+2023-05-26 04:23:43,173 INFO    Thread-12 :26529 [dir_watcher.py:_on_file_modified():292] file/dir modified: /media/songoh/ssh3/songoh_ws/DAB Mask3D-main/wandb/run-20230526_033740-3ij1pqzr/files/output.log
+2023-05-26 04:23:44,311 DEBUG   HandlerThread:26529 [handler.py:handle_request():141] handle_request: stop_status
+2023-05-26 04:23:44,311 DEBUG   SenderThread:26529 [sender.py:send_request():316] send_request: stop_status
+2023-05-26 04:23:53,176 INFO    Thread-12 :26529 [dir_watcher.py:_on_file_modified():292] file/dir modified: /media/songoh/ssh3/songoh_ws/DAB Mask3D-main/wandb/run-20230526_033740-3ij1pqzr/files/output.log
+2023-05-26 04:23:59,809 DEBUG   HandlerThread:26529 [handler.py:handle_request():141] handle_request: stop_status
+2023-05-26 04:23:59,809 DEBUG   SenderThread:26529 [sender.py:send_request():316] send_request: stop_status
+2023-05-26 04:24:00,049 DEBUG   SenderThread:26529 [sender.py:send():302] send: stats
+2023-05-26 04:24:11,183 INFO    Thread-12 :26529 [dir_watcher.py:_on_file_modified():292] file/dir modified: /media/songoh/ssh3/songoh_ws/DAB Mask3D-main/wandb/run-20230526_033740-3ij1pqzr/files/output.log
+2023-05-26 04:24:15,068 DEBUG   HandlerThread:26529 [handler.py:handle_request():141] handle_request: stop_status
+2023-05-26 04:24:15,069 DEBUG   SenderThread:26529 [sender.py:send_request():316] send_request: stop_status
+2023-05-26 04:24:30,398 DEBUG   HandlerThread:26529 [handler.py:handle_request():141] handle_request: stop_status
+2023-05-26 04:24:30,398 DEBUG   SenderThread:26529 [sender.py:send_request():316] send_request: stop_status
+2023-05-26 04:24:30,619 DEBUG   SenderThread:26529 [sender.py:send():302] send: stats
+2023-05-26 04:24:37,193 INFO    Thread-12 :26529 [dir_watcher.py:_on_file_modified():292] file/dir modified: /media/songoh/ssh3/songoh_ws/DAB Mask3D-main/wandb/run-20230526_033740-3ij1pqzr/files/output.log
+2023-05-26 04:24:39,194 INFO    Thread-12 :26529 [dir_watcher.py:_on_file_modified():292] file/dir modified: /media/songoh/ssh3/songoh_ws/DAB Mask3D-main/wandb/run-20230526_033740-3ij1pqzr/files/output.log
+2023-05-26 04:24:45,732 DEBUG   HandlerThread:26529 [handler.py:handle_request():141] handle_request: stop_status
+2023-05-26 04:24:45,732 DEBUG   SenderThread:26529 [sender.py:send_request():316] send_request: stop_status
+2023-05-26 04:24:47,197 INFO    Thread-12 :26529 [dir_watcher.py:_on_file_modified():292] file/dir modified: /media/songoh/ssh3/songoh_ws/DAB Mask3D-main/wandb/run-20230526_033740-3ij1pqzr/files/output.log
+2023-05-26 04:24:49,199 INFO    Thread-12 :26529 [dir_watcher.py:_on_file_modified():292] file/dir modified: /media/songoh/ssh3/songoh_ws/DAB Mask3D-main/wandb/run-20230526_033740-3ij1pqzr/files/output.log
+2023-05-26 04:24:59,203 INFO    Thread-12 :26529 [dir_watcher.py:_on_file_modified():292] file/dir modified: /media/songoh/ssh3/songoh_ws/DAB Mask3D-main/wandb/run-20230526_033740-3ij1pqzr/files/output.log
+2023-05-26 04:25:00,989 DEBUG   HandlerThread:26529 [handler.py:handle_request():141] handle_request: stop_status
+2023-05-26 04:25:00,990 DEBUG   SenderThread:26529 [sender.py:send_request():316] send_request: stop_status
+2023-05-26 04:25:01,207 DEBUG   SenderThread:26529 [sender.py:send():302] send: stats
+2023-05-26 04:25:09,206 INFO    Thread-12 :26529 [dir_watcher.py:_on_file_modified():292] file/dir modified: /media/songoh/ssh3/songoh_ws/DAB Mask3D-main/wandb/run-20230526_033740-3ij1pqzr/files/output.log
+2023-05-26 04:25:16,212 DEBUG   HandlerThread:26529 [handler.py:handle_request():141] handle_request: stop_status
+2023-05-26 04:25:16,212 DEBUG   SenderThread:26529 [sender.py:send_request():316] send_request: stop_status
+2023-05-26 04:25:17,210 INFO    Thread-12 :26529 [dir_watcher.py:_on_file_modified():292] file/dir modified: /media/songoh/ssh3/songoh_ws/DAB Mask3D-main/wandb/run-20230526_033740-3ij1pqzr/files/output.log
+2023-05-26 04:25:31,665 DEBUG   SenderThread:26529 [sender.py:send():302] send: stats
+2023-05-26 04:25:31,691 DEBUG   HandlerThread:26529 [handler.py:handle_request():141] handle_request: stop_status
+2023-05-26 04:25:31,691 DEBUG   SenderThread:26529 [sender.py:send_request():316] send_request: stop_status
+2023-05-26 04:25:46,918 DEBUG   HandlerThread:26529 [handler.py:handle_request():141] handle_request: stop_status
+2023-05-26 04:25:46,919 DEBUG   SenderThread:26529 [sender.py:send_request():316] send_request: stop_status
+2023-05-26 04:25:47,221 INFO    Thread-12 :26529 [dir_watcher.py:_on_file_modified():292] file/dir modified: /media/songoh/ssh3/songoh_ws/DAB Mask3D-main/wandb/run-20230526_033740-3ij1pqzr/files/output.log
+2023-05-26 04:26:01,228 INFO    Thread-12 :26529 [dir_watcher.py:_on_file_modified():292] file/dir modified: /media/songoh/ssh3/songoh_ws/DAB Mask3D-main/wandb/run-20230526_033740-3ij1pqzr/files/output.log
+2023-05-26 04:26:02,231 DEBUG   SenderThread:26529 [sender.py:send():302] send: stats
+2023-05-26 04:26:02,257 DEBUG   HandlerThread:26529 [handler.py:handle_request():141] handle_request: stop_status
+2023-05-26 04:26:02,257 DEBUG   SenderThread:26529 [sender.py:send_request():316] send_request: stop_status
+2023-05-26 04:26:05,230 INFO    Thread-12 :26529 [dir_watcher.py:_on_file_modified():292] file/dir modified: /media/songoh/ssh3/songoh_ws/DAB Mask3D-main/wandb/run-20230526_033740-3ij1pqzr/files/output.log
+2023-05-26 04:26:11,232 INFO    Thread-12 :26529 [dir_watcher.py:_on_file_modified():292] file/dir modified: /media/songoh/ssh3/songoh_ws/DAB Mask3D-main/wandb/run-20230526_033740-3ij1pqzr/files/output.log
+2023-05-26 04:26:15,234 INFO    Thread-12 :26529 [dir_watcher.py:_on_file_modified():292] file/dir modified: /media/songoh/ssh3/songoh_ws/DAB Mask3D-main/wandb/run-20230526_033740-3ij1pqzr/files/output.log
+2023-05-26 04:26:17,499 DEBUG   HandlerThread:26529 [handler.py:handle_request():141] handle_request: stop_status
+2023-05-26 04:26:17,499 DEBUG   SenderThread:26529 [sender.py:send_request():316] send_request: stop_status
+2023-05-26 04:26:21,237 INFO    Thread-12 :26529 [dir_watcher.py:_on_file_modified():292] file/dir modified: /media/songoh/ssh3/songoh_ws/DAB Mask3D-main/wandb/run-20230526_033740-3ij1pqzr/files/output.log
+2023-05-26 04:26:27,240 INFO    Thread-12 :26529 [dir_watcher.py:_on_file_modified():292] file/dir modified: /media/songoh/ssh3/songoh_ws/DAB Mask3D-main/wandb/run-20230526_033740-3ij1pqzr/files/output.log
+2023-05-26 04:26:29,240 INFO    Thread-12 :26529 [dir_watcher.py:_on_file_modified():292] file/dir modified: /media/songoh/ssh3/songoh_ws/DAB Mask3D-main/wandb/run-20230526_033740-3ij1pqzr/files/output.log
+2023-05-26 04:26:32,737 DEBUG   HandlerThread:26529 [handler.py:handle_request():141] handle_request: stop_status
+2023-05-26 04:26:32,738 DEBUG   SenderThread:26529 [sender.py:send_request():316] send_request: stop_status
+2023-05-26 04:26:32,971 DEBUG   SenderThread:26529 [sender.py:send():302] send: stats
+2023-05-26 04:26:35,243 INFO    Thread-12 :26529 [dir_watcher.py:_on_file_modified():292] file/dir modified: /media/songoh/ssh3/songoh_ws/DAB Mask3D-main/wandb/run-20230526_033740-3ij1pqzr/files/output.log
+2023-05-26 04:26:43,247 INFO    Thread-12 :26529 [dir_watcher.py:_on_file_modified():292] file/dir modified: /media/songoh/ssh3/songoh_ws/DAB Mask3D-main/wandb/run-20230526_033740-3ij1pqzr/files/output.log
+2023-05-26 04:26:45,248 INFO    Thread-12 :26529 [dir_watcher.py:_on_file_modified():292] file/dir modified: /media/songoh/ssh3/songoh_ws/DAB Mask3D-main/wandb/run-20230526_033740-3ij1pqzr/files/output.log
+2023-05-26 04:26:47,977 DEBUG   HandlerThread:26529 [handler.py:handle_request():141] handle_request: stop_status
+2023-05-26 04:26:47,978 DEBUG   SenderThread:26529 [sender.py:send_request():316] send_request: stop_status
+2023-05-26 04:26:55,253 INFO    Thread-12 :26529 [dir_watcher.py:_on_file_modified():292] file/dir modified: /media/songoh/ssh3/songoh_ws/DAB Mask3D-main/wandb/run-20230526_033740-3ij1pqzr/files/output.log
+2023-05-26 04:26:57,254 INFO    Thread-12 :26529 [dir_watcher.py:_on_file_modified():292] file/dir modified: /media/songoh/ssh3/songoh_ws/DAB Mask3D-main/wandb/run-20230526_033740-3ij1pqzr/files/output.log
+2023-05-26 04:27:03,208 DEBUG   HandlerThread:26529 [handler.py:handle_request():141] handle_request: stop_status
+2023-05-26 04:27:03,208 DEBUG   SenderThread:26529 [sender.py:send_request():316] send_request: stop_status
+2023-05-26 04:27:03,476 DEBUG   SenderThread:26529 [sender.py:send():302] send: stats
+2023-05-26 04:27:05,257 INFO    Thread-12 :26529 [dir_watcher.py:_on_file_modified():292] file/dir modified: /media/songoh/ssh3/songoh_ws/DAB Mask3D-main/wandb/run-20230526_033740-3ij1pqzr/files/output.log
+2023-05-26 04:27:07,258 INFO    Thread-12 :26529 [dir_watcher.py:_on_file_modified():292] file/dir modified: /media/songoh/ssh3/songoh_ws/DAB Mask3D-main/wandb/run-20230526_033740-3ij1pqzr/files/output.log
+2023-05-26 04:27:17,263 INFO    Thread-12 :26529 [dir_watcher.py:_on_file_modified():292] file/dir modified: /media/songoh/ssh3/songoh_ws/DAB Mask3D-main/wandb/run-20230526_033740-3ij1pqzr/files/output.log
+2023-05-26 04:27:18,482 DEBUG   HandlerThread:26529 [handler.py:handle_request():141] handle_request: stop_status
+2023-05-26 04:27:18,483 DEBUG   SenderThread:26529 [sender.py:send_request():316] send_request: stop_status
+2023-05-26 04:27:25,266 INFO    Thread-12 :26529 [dir_watcher.py:_on_file_modified():292] file/dir modified: /media/songoh/ssh3/songoh_ws/DAB Mask3D-main/wandb/run-20230526_033740-3ij1pqzr/files/output.log
+2023-05-26 04:27:27,267 INFO    Thread-12 :26529 [dir_watcher.py:_on_file_modified():292] file/dir modified: /media/songoh/ssh3/songoh_ws/DAB Mask3D-main/wandb/run-20230526_033740-3ij1pqzr/files/output.log
+2023-05-26 04:27:33,270 INFO    Thread-12 :26529 [dir_watcher.py:_on_file_modified():292] file/dir modified: /media/songoh/ssh3/songoh_ws/DAB Mask3D-main/wandb/run-20230526_033740-3ij1pqzr/files/output.log
+2023-05-26 04:27:33,763 DEBUG   HandlerThread:26529 [handler.py:handle_request():141] handle_request: stop_status
+2023-05-26 04:27:33,764 DEBUG   SenderThread:26529 [sender.py:send_request():316] send_request: stop_status
+2023-05-26 04:27:33,989 DEBUG   SenderThread:26529 [sender.py:send():302] send: stats
+2023-05-26 04:27:35,270 INFO    Thread-12 :26529 [dir_watcher.py:_on_file_modified():292] file/dir modified: /media/songoh/ssh3/songoh_ws/DAB Mask3D-main/wandb/run-20230526_033740-3ij1pqzr/files/output.log
+2023-05-26 04:27:43,275 INFO    Thread-12 :26529 [dir_watcher.py:_on_file_modified():292] file/dir modified: /media/songoh/ssh3/songoh_ws/DAB Mask3D-main/wandb/run-20230526_033740-3ij1pqzr/files/output.log
+2023-05-26 04:27:45,275 INFO    Thread-12 :26529 [dir_watcher.py:_on_file_modified():292] file/dir modified: /media/songoh/ssh3/songoh_ws/DAB Mask3D-main/wandb/run-20230526_033740-3ij1pqzr/files/output.log
+2023-05-26 04:27:48,994 DEBUG   HandlerThread:26529 [handler.py:handle_request():141] handle_request: stop_status
+2023-05-26 04:27:48,995 DEBUG   SenderThread:26529 [sender.py:send_request():316] send_request: stop_status
+2023-05-26 04:27:53,279 INFO    Thread-12 :26529 [dir_watcher.py:_on_file_modified():292] file/dir modified: /media/songoh/ssh3/songoh_ws/DAB Mask3D-main/wandb/run-20230526_033740-3ij1pqzr/files/output.log
+2023-05-26 04:27:59,281 INFO    Thread-12 :26529 [dir_watcher.py:_on_file_modified():292] file/dir modified: /media/songoh/ssh3/songoh_ws/DAB Mask3D-main/wandb/run-20230526_033740-3ij1pqzr/files/output.log
+2023-05-26 04:28:01,282 INFO    Thread-12 :26529 [dir_watcher.py:_on_file_modified():292] file/dir modified: /media/songoh/ssh3/songoh_ws/DAB Mask3D-main/wandb/run-20230526_033740-3ij1pqzr/files/output.log
+2023-05-26 04:28:04,223 DEBUG   HandlerThread:26529 [handler.py:handle_request():141] handle_request: stop_status
+2023-05-26 04:28:04,223 DEBUG   SenderThread:26529 [sender.py:send_request():316] send_request: stop_status
+2023-05-26 04:28:04,506 DEBUG   SenderThread:26529 [sender.py:send():302] send: stats
+2023-05-26 04:28:09,285 INFO    Thread-12 :26529 [dir_watcher.py:_on_file_modified():292] file/dir modified: /media/songoh/ssh3/songoh_ws/DAB Mask3D-main/wandb/run-20230526_033740-3ij1pqzr/files/output.log
+2023-05-26 04:28:11,286 INFO    Thread-12 :26529 [dir_watcher.py:_on_file_modified():292] file/dir modified: /media/songoh/ssh3/songoh_ws/DAB Mask3D-main/wandb/run-20230526_033740-3ij1pqzr/files/output.log
+2023-05-26 04:28:19,471 DEBUG   HandlerThread:26529 [handler.py:handle_request():141] handle_request: stop_status
+2023-05-26 04:28:19,471 DEBUG   SenderThread:26529 [sender.py:send_request():316] send_request: stop_status
+2023-05-26 04:28:21,290 INFO    Thread-12 :26529 [dir_watcher.py:_on_file_modified():292] file/dir modified: /media/songoh/ssh3/songoh_ws/DAB Mask3D-main/wandb/run-20230526_033740-3ij1pqzr/files/output.log
+2023-05-26 04:28:29,293 INFO    Thread-12 :26529 [dir_watcher.py:_on_file_modified():292] file/dir modified: /media/songoh/ssh3/songoh_ws/DAB Mask3D-main/wandb/run-20230526_033740-3ij1pqzr/files/output.log
+2023-05-26 04:28:31,295 INFO    Thread-12 :26529 [dir_watcher.py:_on_file_modified():292] file/dir modified: /media/songoh/ssh3/songoh_ws/DAB Mask3D-main/wandb/run-20230526_033740-3ij1pqzr/files/output.log
+2023-05-26 04:28:34,784 DEBUG   HandlerThread:26529 [handler.py:handle_request():141] handle_request: stop_status
+2023-05-26 04:28:34,784 DEBUG   SenderThread:26529 [sender.py:send_request():316] send_request: stop_status
+2023-05-26 04:28:35,105 DEBUG   SenderThread:26529 [sender.py:send():302] send: stats
+2023-05-26 04:28:45,301 INFO    Thread-12 :26529 [dir_watcher.py:_on_file_modified():292] file/dir modified: /media/songoh/ssh3/songoh_ws/DAB Mask3D-main/wandb/run-20230526_033740-3ij1pqzr/files/output.log
+2023-05-26 04:28:50,082 DEBUG   HandlerThread:26529 [handler.py:handle_request():141] handle_request: stop_status
+2023-05-26 04:28:50,083 DEBUG   SenderThread:26529 [sender.py:send_request():316] send_request: stop_status
+2023-05-26 04:28:59,306 INFO    Thread-12 :26529 [dir_watcher.py:_on_file_modified():292] file/dir modified: /media/songoh/ssh3/songoh_ws/DAB Mask3D-main/wandb/run-20230526_033740-3ij1pqzr/files/output.log
+2023-05-26 04:29:01,307 INFO    Thread-12 :26529 [dir_watcher.py:_on_file_modified():292] file/dir modified: /media/songoh/ssh3/songoh_ws/DAB Mask3D-main/wandb/run-20230526_033740-3ij1pqzr/files/output.log
+2023-05-26 04:29:05,399 DEBUG   HandlerThread:26529 [handler.py:handle_request():141] handle_request: stop_status
+2023-05-26 04:29:05,399 DEBUG   SenderThread:26529 [sender.py:send_request():316] send_request: stop_status
+2023-05-26 04:29:05,666 DEBUG   SenderThread:26529 [sender.py:send():302] send: stats
+2023-05-26 04:29:15,313 INFO    Thread-12 :26529 [dir_watcher.py:_on_file_modified():292] file/dir modified: /media/songoh/ssh3/songoh_ws/DAB Mask3D-main/wandb/run-20230526_033740-3ij1pqzr/files/output.log
+2023-05-26 04:29:19,315 INFO    Thread-12 :26529 [dir_watcher.py:_on_file_modified():292] file/dir modified: /media/songoh/ssh3/songoh_ws/DAB Mask3D-main/wandb/run-20230526_033740-3ij1pqzr/files/output.log
+2023-05-26 04:29:20,691 DEBUG   HandlerThread:26529 [handler.py:handle_request():141] handle_request: stop_status
+2023-05-26 04:29:20,691 DEBUG   SenderThread:26529 [sender.py:send_request():316] send_request: stop_status
+2023-05-26 04:29:25,318 INFO    Thread-12 :26529 [dir_watcher.py:_on_file_modified():292] file/dir modified: /media/songoh/ssh3/songoh_ws/DAB Mask3D-main/wandb/run-20230526_033740-3ij1pqzr/files/output.log
+2023-05-26 04:29:29,320 INFO    Thread-12 :26529 [dir_watcher.py:_on_file_modified():292] file/dir modified: /media/songoh/ssh3/songoh_ws/DAB Mask3D-main/wandb/run-20230526_033740-3ij1pqzr/files/output.log
+2023-05-26 04:29:36,088 DEBUG   HandlerThread:26529 [handler.py:handle_request():141] handle_request: stop_status
+2023-05-26 04:29:36,089 DEBUG   SenderThread:26529 [sender.py:send_request():316] send_request: stop_status
+2023-05-26 04:29:36,332 DEBUG   SenderThread:26529 [sender.py:send():302] send: stats
+2023-05-26 04:29:41,325 INFO    Thread-12 :26529 [dir_watcher.py:_on_file_modified():292] file/dir modified: /media/songoh/ssh3/songoh_ws/DAB Mask3D-main/wandb/run-20230526_033740-3ij1pqzr/files/output.log
+2023-05-26 04:29:51,329 INFO    Thread-12 :26529 [dir_watcher.py:_on_file_modified():292] file/dir modified: /media/songoh/ssh3/songoh_ws/DAB Mask3D-main/wandb/run-20230526_033740-3ij1pqzr/files/output.log
+2023-05-26 04:29:51,357 DEBUG   HandlerThread:26529 [handler.py:handle_request():141] handle_request: stop_status
+2023-05-26 04:29:51,358 DEBUG   SenderThread:26529 [sender.py:send_request():316] send_request: stop_status
+2023-05-26 04:29:53,330 INFO    Thread-12 :26529 [dir_watcher.py:_on_file_modified():292] file/dir modified: /media/songoh/ssh3/songoh_ws/DAB Mask3D-main/wandb/run-20230526_033740-3ij1pqzr/files/output.log
+2023-05-26 04:29:55,331 INFO    Thread-12 :26529 [dir_watcher.py:_on_file_modified():292] file/dir modified: /media/songoh/ssh3/songoh_ws/DAB Mask3D-main/wandb/run-20230526_033740-3ij1pqzr/files/output.log
+2023-05-26 04:29:57,332 INFO    Thread-12 :26529 [dir_watcher.py:_on_file_modified():292] file/dir modified: /media/songoh/ssh3/songoh_ws/DAB Mask3D-main/wandb/run-20230526_033740-3ij1pqzr/files/output.log
+2023-05-26 04:29:59,334 INFO    Thread-12 :26529 [dir_watcher.py:_on_file_modified():292] file/dir modified: /media/songoh/ssh3/songoh_ws/DAB Mask3D-main/wandb/run-20230526_033740-3ij1pqzr/files/output.log
+2023-05-26 04:30:01,335 INFO    Thread-12 :26529 [dir_watcher.py:_on_file_modified():292] file/dir modified: /media/songoh/ssh3/songoh_ws/DAB Mask3D-main/wandb/run-20230526_033740-3ij1pqzr/files/output.log
+2023-05-26 04:30:03,054 DEBUG   HandlerThread:26529 [handler.py:handle_request():141] handle_request: partial_history
+2023-05-26 04:30:03,063 DEBUG   SenderThread:26529 [sender.py:send():302] send: history
+2023-05-26 04:30:03,076 DEBUG   SenderThread:26529 [sender.py:send():302] send: summary
+2023-05-26 04:30:03,080 INFO    SenderThread:26529 [sender.py:_save_file():1156] saving file wandb-summary.json with policy end
+2023-05-26 04:30:03,323 DEBUG   HandlerThread:26529 [handler.py:handle_request():141] handle_request: poll_exit
+2023-05-26 04:30:03,323 DEBUG   SenderThread:26529 [sender.py:send():302] send: exit
+2023-05-26 04:30:03,324 INFO    SenderThread:26529 [sender.py:send_exit():438] handling exit code: 0
+2023-05-26 04:30:03,324 INFO    SenderThread:26529 [sender.py:send_exit():440] handling runtime: 3142
+2023-05-26 04:30:03,325 INFO    SenderThread:26529 [sender.py:_save_file():1156] saving file wandb-summary.json with policy end
+2023-05-26 04:30:03,325 INFO    SenderThread:26529 [sender.py:send_exit():446] send defer
+2023-05-26 04:30:03,326 DEBUG   SenderThread:26529 [sender.py:send_request():316] send_request: poll_exit
+2023-05-26 04:30:03,326 DEBUG   HandlerThread:26529 [handler.py:handle_request():141] handle_request: defer
+2023-05-26 04:30:03,326 INFO    HandlerThread:26529 [handler.py:handle_request_defer():164] handle defer: 0
+2023-05-26 04:30:03,327 DEBUG   SenderThread:26529 [sender.py:send_request():316] send_request: defer
+2023-05-26 04:30:03,327 INFO    SenderThread:26529 [sender.py:send_request_defer():455] handle sender defer: 0
+2023-05-26 04:30:03,327 INFO    SenderThread:26529 [sender.py:transition_state():459] send defer: 1
+2023-05-26 04:30:03,328 DEBUG   HandlerThread:26529 [handler.py:handle_request():141] handle_request: defer
+2023-05-26 04:30:03,328 INFO    HandlerThread:26529 [handler.py:handle_request_defer():164] handle defer: 1
+2023-05-26 04:30:03,336 INFO    Thread-12 :26529 [dir_watcher.py:_on_file_modified():292] file/dir modified: /media/songoh/ssh3/songoh_ws/DAB Mask3D-main/wandb/run-20230526_033740-3ij1pqzr/files/output.log
+2023-05-26 04:30:03,336 INFO    Thread-12 :26529 [dir_watcher.py:_on_file_modified():292] file/dir modified: /media/songoh/ssh3/songoh_ws/DAB Mask3D-main/wandb/run-20230526_033740-3ij1pqzr/files/wandb-summary.json
+2023-05-26 04:30:03,438 DEBUG   SenderThread:26529 [sender.py:send_request():316] send_request: defer
+2023-05-26 04:30:03,438 DEBUG   HandlerThread:26529 [handler.py:handle_request():141] handle_request: poll_exit
+2023-05-26 04:30:03,438 INFO    SenderThread:26529 [sender.py:send_request_defer():455] handle sender defer: 1
+2023-05-26 04:30:03,439 INFO    SenderThread:26529 [sender.py:transition_state():459] send defer: 2
+2023-05-26 04:30:03,439 DEBUG   SenderThread:26529 [sender.py:send_request():316] send_request: poll_exit
+2023-05-26 04:30:03,440 DEBUG   SenderThread:26529 [sender.py:send():302] send: stats
+2023-05-26 04:30:03,440 DEBUG   HandlerThread:26529 [handler.py:handle_request():141] handle_request: defer
+2023-05-26 04:30:03,441 INFO    HandlerThread:26529 [handler.py:handle_request_defer():164] handle defer: 2
+2023-05-26 04:30:03,441 DEBUG   SenderThread:26529 [sender.py:send_request():316] send_request: defer
+2023-05-26 04:30:03,442 INFO    SenderThread:26529 [sender.py:send_request_defer():455] handle sender defer: 2
+2023-05-26 04:30:03,442 INFO    SenderThread:26529 [sender.py:transition_state():459] send defer: 3
+2023-05-26 04:30:03,442 DEBUG   HandlerThread:26529 [handler.py:handle_request():141] handle_request: defer
+2023-05-26 04:30:03,442 INFO    HandlerThread:26529 [handler.py:handle_request_defer():164] handle defer: 3
+2023-05-26 04:30:03,442 DEBUG   SenderThread:26529 [sender.py:send_request():316] send_request: defer
+2023-05-26 04:30:03,443 INFO    SenderThread:26529 [sender.py:send_request_defer():455] handle sender defer: 3
+2023-05-26 04:30:03,443 INFO    SenderThread:26529 [sender.py:transition_state():459] send defer: 4
+2023-05-26 04:30:03,443 DEBUG   HandlerThread:26529 [handler.py:handle_request():141] handle_request: defer
+2023-05-26 04:30:03,443 INFO    HandlerThread:26529 [handler.py:handle_request_defer():164] handle defer: 4
+2023-05-26 04:30:03,445 DEBUG   SenderThread:26529 [sender.py:send():302] send: summary
+2023-05-26 04:30:03,447 INFO    SenderThread:26529 [sender.py:_save_file():1156] saving file wandb-summary.json with policy end
+2023-05-26 04:30:03,447 DEBUG   SenderThread:26529 [sender.py:send_request():316] send_request: defer
+2023-05-26 04:30:03,448 INFO    SenderThread:26529 [sender.py:send_request_defer():455] handle sender defer: 4
+2023-05-26 04:30:03,448 INFO    SenderThread:26529 [sender.py:transition_state():459] send defer: 5
+2023-05-26 04:30:03,448 DEBUG   HandlerThread:26529 [handler.py:handle_request():141] handle_request: defer
+2023-05-26 04:30:03,448 INFO    HandlerThread:26529 [handler.py:handle_request_defer():164] handle defer: 5
+2023-05-26 04:30:03,448 DEBUG   SenderThread:26529 [sender.py:send_request():316] send_request: defer
+2023-05-26 04:30:03,448 INFO    SenderThread:26529 [sender.py:send_request_defer():455] handle sender defer: 5
+2023-05-26 04:30:03,448 INFO    SenderThread:26529 [sender.py:transition_state():459] send defer: 6
+2023-05-26 04:30:03,449 DEBUG   HandlerThread:26529 [handler.py:handle_request():141] handle_request: defer
+2023-05-26 04:30:03,449 INFO    HandlerThread:26529 [handler.py:handle_request_defer():164] handle defer: 6
+2023-05-26 04:30:03,449 DEBUG   SenderThread:26529 [sender.py:send_request():316] send_request: defer
+2023-05-26 04:30:03,449 INFO    SenderThread:26529 [sender.py:send_request_defer():455] handle sender defer: 6
+2023-05-26 04:30:03,542 DEBUG   HandlerThread:26529 [handler.py:handle_request():141] handle_request: poll_exit
+2023-05-26 04:30:04,336 INFO    Thread-12 :26529 [dir_watcher.py:_on_file_modified():292] file/dir modified: /media/songoh/ssh3/songoh_ws/DAB Mask3D-main/wandb/run-20230526_033740-3ij1pqzr/files/wandb-summary.json
+2023-05-26 04:30:05,439 INFO    SenderThread:26529 [sender.py:transition_state():459] send defer: 7
+2023-05-26 04:30:05,439 DEBUG   SenderThread:26529 [sender.py:send_request():316] send_request: poll_exit
+2023-05-26 04:30:05,440 DEBUG   HandlerThread:26529 [handler.py:handle_request():141] handle_request: defer
+2023-05-26 04:30:05,440 INFO    HandlerThread:26529 [handler.py:handle_request_defer():164] handle defer: 7
+2023-05-26 04:30:05,441 DEBUG   SenderThread:26529 [sender.py:send_request():316] send_request: defer
+2023-05-26 04:30:05,441 INFO    SenderThread:26529 [sender.py:send_request_defer():455] handle sender defer: 7
+2023-05-26 04:30:05,441 INFO    SenderThread:26529 [dir_watcher.py:finish():362] shutting down directory watcher
+2023-05-26 04:30:05,542 DEBUG   HandlerThread:26529 [handler.py:handle_request():141] handle_request: poll_exit
+2023-05-26 04:30:06,338 INFO    SenderThread:26529 [dir_watcher.py:_on_file_modified():292] file/dir modified: /media/songoh/ssh3/songoh_ws/DAB Mask3D-main/wandb/run-20230526_033740-3ij1pqzr/files/output.log
+2023-05-26 04:30:06,338 INFO    SenderThread:26529 [dir_watcher.py:finish():392] scan: /media/songoh/ssh3/songoh_ws/DAB Mask3D-main/wandb/run-20230526_033740-3ij1pqzr/files
+2023-05-26 04:30:06,338 INFO    SenderThread:26529 [dir_watcher.py:finish():406] scan save: /media/songoh/ssh3/songoh_ws/DAB Mask3D-main/wandb/run-20230526_033740-3ij1pqzr/files/config.yaml config.yaml
+2023-05-26 04:30:06,339 INFO    SenderThread:26529 [dir_watcher.py:finish():406] scan save: /media/songoh/ssh3/songoh_ws/DAB Mask3D-main/wandb/run-20230526_033740-3ij1pqzr/files/wandb-metadata.json wandb-metadata.json
+2023-05-26 04:30:06,339 INFO    SenderThread:26529 [dir_watcher.py:finish():406] scan save: /media/songoh/ssh3/songoh_ws/DAB Mask3D-main/wandb/run-20230526_033740-3ij1pqzr/files/requirements.txt requirements.txt
+2023-05-26 04:30:06,339 INFO    SenderThread:26529 [dir_watcher.py:finish():406] scan save: /media/songoh/ssh3/songoh_ws/DAB Mask3D-main/wandb/run-20230526_033740-3ij1pqzr/files/output.log output.log
+2023-05-26 04:30:06,345 INFO    SenderThread:26529 [dir_watcher.py:finish():406] scan save: /media/songoh/ssh3/songoh_ws/DAB Mask3D-main/wandb/run-20230526_033740-3ij1pqzr/files/wandb-summary.json wandb-summary.json
+2023-05-26 04:30:06,357 INFO    SenderThread:26529 [dir_watcher.py:finish():406] scan save: /media/songoh/ssh3/songoh_ws/DAB Mask3D-main/wandb/run-20230526_033740-3ij1pqzr/files/conda-environment.yaml conda-environment.yaml
+2023-05-26 04:30:06,364 INFO    SenderThread:26529 [sender.py:transition_state():459] send defer: 8
+2023-05-26 04:30:06,365 DEBUG   SenderThread:26529 [sender.py:send_request():316] send_request: poll_exit
+2023-05-26 04:30:06,371 DEBUG   HandlerThread:26529 [handler.py:handle_request():141] handle_request: defer
+2023-05-26 04:30:06,371 INFO    HandlerThread:26529 [handler.py:handle_request_defer():164] handle defer: 8
+2023-05-26 04:30:06,372 DEBUG   SenderThread:26529 [sender.py:send_request():316] send_request: defer
+2023-05-26 04:30:06,373 INFO    SenderThread:26529 [sender.py:send_request_defer():455] handle sender defer: 8
+2023-05-26 04:30:06,374 INFO    SenderThread:26529 [file_pusher.py:finish():171] shutting down file pusher
+2023-05-26 04:30:06,475 DEBUG   HandlerThread:26529 [handler.py:handle_request():141] handle_request: poll_exit
+2023-05-26 04:30:06,475 DEBUG   SenderThread:26529 [sender.py:send_request():316] send_request: poll_exit
+2023-05-26 04:30:06,577 DEBUG   HandlerThread:26529 [handler.py:handle_request():141] handle_request: poll_exit
+2023-05-26 04:30:06,578 DEBUG   SenderThread:26529 [sender.py:send_request():316] send_request: poll_exit
+2023-05-26 04:30:06,680 DEBUG   HandlerThread:26529 [handler.py:handle_request():141] handle_request: poll_exit
+2023-05-26 04:30:06,681 DEBUG   SenderThread:26529 [sender.py:send_request():316] send_request: poll_exit
+2023-05-26 04:30:06,783 DEBUG   HandlerThread:26529 [handler.py:handle_request():141] handle_request: poll_exit
+2023-05-26 04:30:06,783 DEBUG   SenderThread:26529 [sender.py:send_request():316] send_request: poll_exit
+2023-05-26 04:30:06,885 DEBUG   HandlerThread:26529 [handler.py:handle_request():141] handle_request: poll_exit
+2023-05-26 04:30:06,886 DEBUG   SenderThread:26529 [sender.py:send_request():316] send_request: poll_exit
+2023-05-26 04:30:06,987 DEBUG   HandlerThread:26529 [handler.py:handle_request():141] handle_request: poll_exit
+2023-05-26 04:30:06,988 DEBUG   SenderThread:26529 [sender.py:send_request():316] send_request: poll_exit
+2023-05-26 04:30:07,014 INFO    Thread-21 :26529 [upload_job.py:push():138] Uploaded file /media/songoh/ssh3/songoh_ws/DAB Mask3D-main/wandb/run-20230526_033740-3ij1pqzr/files/conda-environment.yaml
+2023-05-26 04:30:07,067 INFO    Thread-19 :26529 [upload_job.py:push():138] Uploaded file /media/songoh/ssh3/songoh_ws/DAB Mask3D-main/wandb/run-20230526_033740-3ij1pqzr/files/output.log
+2023-05-26 04:30:07,093 INFO    Thread-20 :26529 [upload_job.py:push():138] Uploaded file /media/songoh/ssh3/songoh_ws/DAB Mask3D-main/wandb/run-20230526_033740-3ij1pqzr/files/wandb-summary.json
+2023-05-26 04:30:07,097 INFO    Thread-17 :26529 [upload_job.py:push():138] Uploaded file /media/songoh/ssh3/songoh_ws/DAB Mask3D-main/wandb/run-20230526_033740-3ij1pqzr/files/config.yaml
+2023-05-26 04:30:07,097 DEBUG   HandlerThread:26529 [handler.py:handle_request():141] handle_request: poll_exit
+2023-05-26 04:30:07,100 INFO    Thread-18 :26529 [upload_job.py:push():138] Uploaded file /media/songoh/ssh3/songoh_ws/DAB Mask3D-main/wandb/run-20230526_033740-3ij1pqzr/files/requirements.txt
+2023-05-26 04:30:07,101 DEBUG   SenderThread:26529 [sender.py:send_request():316] send_request: poll_exit
+2023-05-26 04:30:07,203 DEBUG   HandlerThread:26529 [handler.py:handle_request():141] handle_request: poll_exit
+2023-05-26 04:30:07,204 DEBUG   SenderThread:26529 [sender.py:send_request():316] send_request: poll_exit
+2023-05-26 04:30:07,302 INFO    Thread-11 (_thread_body):26529 [sender.py:transition_state():459] send defer: 9
+2023-05-26 04:30:07,303 DEBUG   HandlerThread:26529 [handler.py:handle_request():141] handle_request: defer
+2023-05-26 04:30:07,303 INFO    HandlerThread:26529 [handler.py:handle_request_defer():164] handle defer: 9
+2023-05-26 04:30:07,303 DEBUG   SenderThread:26529 [sender.py:send_request():316] send_request: defer
+2023-05-26 04:30:07,303 INFO    SenderThread:26529 [sender.py:send_request_defer():455] handle sender defer: 9
+2023-05-26 04:30:07,306 DEBUG   HandlerThread:26529 [handler.py:handle_request():141] handle_request: poll_exit
+2023-05-26 04:30:08,015 INFO    SenderThread:26529 [sender.py:transition_state():459] send defer: 10
+2023-05-26 04:30:08,016 DEBUG   SenderThread:26529 [sender.py:send_request():316] send_request: poll_exit
+2023-05-26 04:30:08,017 DEBUG   HandlerThread:26529 [handler.py:handle_request():141] handle_request: defer
+2023-05-26 04:30:08,018 INFO    HandlerThread:26529 [handler.py:handle_request_defer():164] handle defer: 10
+2023-05-26 04:30:08,018 DEBUG   SenderThread:26529 [sender.py:send_request():316] send_request: defer
+2023-05-26 04:30:08,018 INFO    SenderThread:26529 [sender.py:send_request_defer():455] handle sender defer: 10
+2023-05-26 04:30:08,019 INFO    SenderThread:26529 [sender.py:transition_state():459] send defer: 11
+2023-05-26 04:30:08,020 DEBUG   SenderThread:26529 [sender.py:send():302] send: final
+2023-05-26 04:30:08,020 DEBUG   SenderThread:26529 [sender.py:send():302] send: footer
+2023-05-26 04:30:08,020 DEBUG   HandlerThread:26529 [handler.py:handle_request():141] handle_request: defer
+2023-05-26 04:30:08,021 INFO    HandlerThread:26529 [handler.py:handle_request_defer():164] handle defer: 11
+2023-05-26 04:30:08,021 DEBUG   SenderThread:26529 [sender.py:send_request():316] send_request: defer
+2023-05-26 04:30:08,021 INFO    SenderThread:26529 [sender.py:send_request_defer():455] handle sender defer: 11
+2023-05-26 04:30:08,119 DEBUG   HandlerThread:26529 [handler.py:handle_request():141] handle_request: poll_exit
+2023-05-26 04:30:08,120 DEBUG   SenderThread:26529 [sender.py:send_request():316] send_request: poll_exit
+2023-05-26 04:30:08,128 INFO    SenderThread:26529 [file_pusher.py:join():176] waiting for file pusher
+2023-05-26 04:30:08,679 DEBUG   HandlerThread:26529 [handler.py:handle_request():141] handle_request: sampled_history
+2023-05-26 04:30:08,685 DEBUG   HandlerThread:26529 [handler.py:handle_request():141] handle_request: get_summary
+2023-05-26 04:30:08,688 INFO    MainThread:26529 [wandb_run.py:_footer_history_summary_info():3305] rendering history
+2023-05-26 04:30:08,692 INFO    MainThread:26529 [wandb_run.py:_footer_history_summary_info():3337] rendering summary
+2023-05-26 04:30:08,694 INFO    MainThread:26529 [wandb_run.py:_footer_sync_info():3261] logging synced files
+2023-05-26 04:30:08,695 DEBUG   HandlerThread:26529 [handler.py:handle_request():141] handle_request: shutdown
+2023-05-26 04:30:08,696 INFO    HandlerThread:26529 [handler.py:finish():810] shutting down handler
+2023-05-26 04:30:09,020 INFO    WriterThread:26529 [datastore.py:close():279] close: /media/songoh/ssh3/songoh_ws/DAB Mask3D-main/wandb/run-20230526_033740-3ij1pqzr/run-3ij1pqzr.wandb
+2023-05-26 04:30:09,577 INFO    SenderThread:26529 [sender.py:finish():1312] shutting down sender
+2023-05-26 04:30:09,578 INFO    SenderThread:26529 [file_pusher.py:finish():171] shutting down file pusher
+2023-05-26 04:30:09,578 INFO    SenderThread:26529 [file_pusher.py:join():176] waiting for file pusher
+2023-05-26 04:30:09,699 INFO    MainThread:26529 [internal.py:handle_exit():80] Internal process exited

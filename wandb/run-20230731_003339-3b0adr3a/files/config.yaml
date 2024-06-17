@@ -1,0 +1,828 @@
+wandb_version: 1
+
+_wandb:
+  desc: null
+  value:
+    cli_version: 0.13.2
+    framework: lightning
+    is_jupyter_run: false
+    is_kaggle_kernel: true
+    python_version: 3.10.6
+    start_time: 1690731219.367715
+    t:
+      1:
+      - 55
+      2:
+      - 1
+      - 5
+      - 9
+      - 41
+      - 43
+      - 50
+      - 53
+      - 55
+      - 80
+      3:
+      - 23
+      4: 3.10.6
+      5: 0.13.2
+      8:
+      - 2
+      - 5
+callbacks:
+  desc: null
+  value:
+  - _target_: pytorch_lightning.callbacks.ModelCheckpoint
+    dirpath: saved/DEBUG_ABLATION
+    every_n_epochs: 1
+    filename: '{epoch}-{val_mean_ap_50:.3f}'
+    mode: max
+    monitor: val_mean_ap_50
+    save_last: true
+    save_top_k: 1
+  - _target_: pytorch_lightning.callbacks.LearningRateMonitor
+data_add_colors:
+  desc: null
+  value: true
+data_add_instance:
+  desc: null
+  value: true
+data_add_normals:
+  desc: null
+  value: false
+data_add_raw_coordinates:
+  desc: null
+  value: true
+data_batch_size:
+  desc: null
+  value: 3
+data_cache_data:
+  desc: null
+  value: false
+data_crop_length:
+  desc: null
+  value: 6.0
+data_crop_min_size:
+  desc: null
+  value: 20000
+data_cropping:
+  desc: null
+  value: false
+data_cropping_args_aspect:
+  desc: null
+  value: 0.8
+data_cropping_args_max_crop:
+  desc: null
+  value: 1.0
+data_cropping_args_min_crop:
+  desc: null
+  value: 0.5
+data_cropping_args_min_points:
+  desc: null
+  value: 30000
+data_cropping_v1:
+  desc: null
+  value: true
+data_ignore_label:
+  desc: null
+  value: 255
+data_in_channels:
+  desc: null
+  value: 3
+data_num_labels:
+  desc: null
+  value: 20
+data_num_workers:
+  desc: null
+  value: 4
+data_pin_memory:
+  desc: null
+  value: false
+data_reps_per_epoch:
+  desc: null
+  value: 1
+data_task:
+  desc: null
+  value: instance_segmentation
+data_test_batch_size:
+  desc: null
+  value: 1
+data_test_collation__target_:
+  desc: null
+  value: datasets.utils.VoxelizeCollate
+data_test_collation_batch_instance:
+  desc: null
+  value: false
+data_test_collation_filter_out_classes:
+  desc: null
+  value:
+  - 0
+  - 1
+data_test_collation_ignore_class_threshold:
+  desc: null
+  value: 100
+data_test_collation_ignore_label:
+  desc: null
+  value: 255
+data_test_collation_label_offset:
+  desc: null
+  value: 2
+data_test_collation_mode:
+  desc: null
+  value: validation
+data_test_collation_num_queries:
+  desc: null
+  value: 150
+data_test_collation_probing:
+  desc: null
+  value: false
+data_test_collation_task:
+  desc: null
+  value: instance_segmentation
+data_test_collation_voxel_size:
+  desc: null
+  value: 0.02
+data_test_dataloader__target_:
+  desc: null
+  value: torch.utils.data.DataLoader
+data_test_dataloader_batch_size:
+  desc: null
+  value: 1
+data_test_dataloader_num_workers:
+  desc: null
+  value: 4
+data_test_dataloader_pin_memory:
+  desc: null
+  value: false
+data_test_dataloader_shuffle:
+  desc: null
+  value: false
+data_test_dataset__target_:
+  desc: null
+  value: datasets.semseg.SemanticSegmentationDataset
+data_test_dataset_add_colors:
+  desc: null
+  value: true
+data_test_dataset_add_instance:
+  desc: null
+  value: true
+data_test_dataset_add_normals:
+  desc: null
+  value: false
+data_test_dataset_add_raw_coordinates:
+  desc: null
+  value: true
+data_test_dataset_color_mean_std:
+  desc: null
+  value: data/processed/scannet/color_mean_std.yaml
+data_test_dataset_crop_length:
+  desc: null
+  value: 6.0
+data_test_dataset_crop_min_size:
+  desc: null
+  value: 20000
+data_test_dataset_cropping:
+  desc: null
+  value: false
+data_test_dataset_data_dir:
+  desc: null
+  value: data/processed/scannet
+data_test_dataset_data_percent:
+  desc: null
+  value: 1.0
+data_test_dataset_dataset_name:
+  desc: null
+  value: scannet
+data_test_dataset_filter_out_classes:
+  desc: null
+  value:
+  - 0
+  - 1
+data_test_dataset_ignore_label:
+  desc: null
+  value: 255
+data_test_dataset_image_augmentations_path:
+  desc: null
+  value: None
+data_test_dataset_is_tta:
+  desc: null
+  value: false
+data_test_dataset_label_db_filepath:
+  desc: null
+  value: data/processed/scannet/label_database.yaml
+data_test_dataset_label_offset:
+  desc: null
+  value: 2
+data_test_dataset_mode:
+  desc: null
+  value: validation
+data_test_dataset_num_labels:
+  desc: null
+  value: 20
+data_test_dataset_volume_augmentations_path:
+  desc: null
+  value: None
+data_test_mode:
+  desc: null
+  value: validation
+data_train_collation__target_:
+  desc: null
+  value: datasets.utils.VoxelizeCollate
+data_train_collation_batch_instance:
+  desc: null
+  value: false
+data_train_collation_filter_out_classes:
+  desc: null
+  value:
+  - 0
+  - 1
+data_train_collation_ignore_class_threshold:
+  desc: null
+  value: 100
+data_train_collation_ignore_label:
+  desc: null
+  value: 255
+data_train_collation_label_offset:
+  desc: null
+  value: 2
+data_train_collation_mode:
+  desc: null
+  value: train
+data_train_collation_num_queries:
+  desc: null
+  value: 150
+data_train_collation_probing:
+  desc: null
+  value: false
+data_train_collation_small_crops:
+  desc: null
+  value: false
+data_train_collation_task:
+  desc: null
+  value: instance_segmentation
+data_train_collation_very_small_crops:
+  desc: null
+  value: false
+data_train_collation_voxel_size:
+  desc: null
+  value: 0.02
+data_train_dataloader__target_:
+  desc: null
+  value: torch.utils.data.DataLoader
+data_train_dataloader_batch_size:
+  desc: null
+  value: 3
+data_train_dataloader_num_workers:
+  desc: null
+  value: 4
+data_train_dataloader_pin_memory:
+  desc: null
+  value: false
+data_train_dataloader_shuffle:
+  desc: null
+  value: true
+data_train_dataset__target_:
+  desc: null
+  value: datasets.semseg.SemanticSegmentationDataset
+data_train_dataset_add_colors:
+  desc: null
+  value: true
+data_train_dataset_add_instance:
+  desc: null
+  value: true
+data_train_dataset_add_normals:
+  desc: null
+  value: false
+data_train_dataset_add_raw_coordinates:
+  desc: null
+  value: true
+data_train_dataset_add_unlabeled_pc:
+  desc: null
+  value: false
+data_train_dataset_color_mean_std:
+  desc: null
+  value: data/processed/scannet/color_mean_std.yaml
+data_train_dataset_crop_length:
+  desc: null
+  value: 6.0
+data_train_dataset_crop_min_size:
+  desc: null
+  value: 20000
+data_train_dataset_cropping:
+  desc: null
+  value: false
+data_train_dataset_cropping_args_aspect:
+  desc: null
+  value: 0.8
+data_train_dataset_cropping_args_max_crop:
+  desc: null
+  value: 1.0
+data_train_dataset_cropping_args_min_crop:
+  desc: null
+  value: 0.5
+data_train_dataset_cropping_args_min_points:
+  desc: null
+  value: 30000
+data_train_dataset_data_dir:
+  desc: null
+  value: data/processed/scannet
+data_train_dataset_data_percent:
+  desc: null
+  value: 1.0
+data_train_dataset_dataset_name:
+  desc: null
+  value: scannet
+data_train_dataset_filter_out_classes:
+  desc: null
+  value:
+  - 0
+  - 1
+data_train_dataset_flip_in_center:
+  desc: null
+  value: false
+data_train_dataset_ignore_label:
+  desc: null
+  value: 255
+data_train_dataset_image_augmentations_path:
+  desc: null
+  value: conf/augmentation/albumentations_aug.yaml
+data_train_dataset_instance_oversampling:
+  desc: null
+  value: 0.0
+data_train_dataset_is_tta:
+  desc: null
+  value: false
+data_train_dataset_label_db_filepath:
+  desc: null
+  value: data/processed/scannet/label_database.yaml
+data_train_dataset_label_offset:
+  desc: null
+  value: 2
+data_train_dataset_max_cut_region:
+  desc: null
+  value: 0
+data_train_dataset_mode:
+  desc: null
+  value: train
+data_train_dataset_noise_rate:
+  desc: null
+  value: 0
+data_train_dataset_num_labels:
+  desc: null
+  value: 20
+data_train_dataset_place_around_existing:
+  desc: null
+  value: false
+data_train_dataset_point_per_cut:
+  desc: null
+  value: 0
+data_train_dataset_resample_points:
+  desc: null
+  value: 0
+data_train_dataset_volume_augmentations_path:
+  desc: null
+  value: conf/augmentation/volumentations_aug.yaml
+data_train_mode:
+  desc: null
+  value: train
+data_validation_collation__target_:
+  desc: null
+  value: datasets.utils.VoxelizeCollate
+data_validation_collation_batch_instance:
+  desc: null
+  value: false
+data_validation_collation_filter_out_classes:
+  desc: null
+  value:
+  - 0
+  - 1
+data_validation_collation_ignore_class_threshold:
+  desc: null
+  value: 100
+data_validation_collation_ignore_label:
+  desc: null
+  value: 255
+data_validation_collation_label_offset:
+  desc: null
+  value: 2
+data_validation_collation_mode:
+  desc: null
+  value: validation
+data_validation_collation_num_queries:
+  desc: null
+  value: 150
+data_validation_collation_probing:
+  desc: null
+  value: false
+data_validation_collation_task:
+  desc: null
+  value: instance_segmentation
+data_validation_collation_voxel_size:
+  desc: null
+  value: 0.02
+data_validation_dataloader__target_:
+  desc: null
+  value: torch.utils.data.DataLoader
+data_validation_dataloader_batch_size:
+  desc: null
+  value: 1
+data_validation_dataloader_num_workers:
+  desc: null
+  value: 4
+data_validation_dataloader_pin_memory:
+  desc: null
+  value: false
+data_validation_dataloader_shuffle:
+  desc: null
+  value: false
+data_validation_dataset__target_:
+  desc: null
+  value: datasets.semseg.SemanticSegmentationDataset
+data_validation_dataset_add_colors:
+  desc: null
+  value: true
+data_validation_dataset_add_instance:
+  desc: null
+  value: true
+data_validation_dataset_add_normals:
+  desc: null
+  value: false
+data_validation_dataset_add_raw_coordinates:
+  desc: null
+  value: true
+data_validation_dataset_color_mean_std:
+  desc: null
+  value: data/processed/scannet/color_mean_std.yaml
+data_validation_dataset_crop_length:
+  desc: null
+  value: 6.0
+data_validation_dataset_crop_min_size:
+  desc: null
+  value: 20000
+data_validation_dataset_cropping:
+  desc: null
+  value: false
+data_validation_dataset_data_dir:
+  desc: null
+  value: data/processed/scannet
+data_validation_dataset_data_percent:
+  desc: null
+  value: 1.0
+data_validation_dataset_dataset_name:
+  desc: null
+  value: scannet
+data_validation_dataset_filter_out_classes:
+  desc: null
+  value:
+  - 0
+  - 1
+data_validation_dataset_ignore_label:
+  desc: null
+  value: 255
+data_validation_dataset_image_augmentations_path:
+  desc: null
+  value: None
+data_validation_dataset_is_tta:
+  desc: null
+  value: false
+data_validation_dataset_label_db_filepath:
+  desc: null
+  value: data/processed/scannet/label_database.yaml
+data_validation_dataset_label_offset:
+  desc: null
+  value: 2
+data_validation_dataset_mode:
+  desc: null
+  value: validation
+data_validation_dataset_num_labels:
+  desc: null
+  value: 20
+data_validation_dataset_volume_augmentations_path:
+  desc: null
+  value: None
+data_validation_mode:
+  desc: null
+  value: validation
+data_voxel_size:
+  desc: null
+  value: 0.02
+general_add_instance:
+  desc: null
+  value: true
+general_area:
+  desc: null
+  value: 5
+general_backbone_checkpoint:
+  desc: null
+  value: None
+general_checkpoint:
+  desc: null
+  value: saved/DAB_Mask_F0/last-epoch.ckpt
+general_dbscan_eps:
+  desc: null
+  value: 0.95
+general_dbscan_min_points:
+  desc: null
+  value: 1
+general_decoder_id:
+  desc: null
+  value: -1
+general_eval_inner_core:
+  desc: null
+  value: -1
+general_eval_on_segments:
+  desc: null
+  value: true
+general_experiment_name:
+  desc: null
+  value: DEBUG_ABLATION
+general_export:
+  desc: null
+  value: false
+general_export_threshold:
+  desc: null
+  value: 0.0001
+general_filter_out_instances:
+  desc: null
+  value: true
+general_freeze_backbone:
+  desc: null
+  value: false
+general_gpus:
+  desc: null
+  value: 1
+general_ignore_class_threshold:
+  desc: null
+  value: 100
+general_ignore_mask_idx:
+  desc: null
+  value: []
+general_iou_threshold:
+  desc: null
+  value: 1.0
+general_linear_probing_backbone:
+  desc: null
+  value: false
+general_max_batch_size:
+  desc: null
+  value: 99999999
+general_num_targets:
+  desc: null
+  value: 19
+general_on_crops:
+  desc: null
+  value: false
+general_project_name:
+  desc: null
+  value: scannet
+general_reps_per_epoch:
+  desc: null
+  value: 1
+general_save_dir:
+  desc: null
+  value: saved/DEBUG_ABLATION
+general_save_visualizations:
+  desc: null
+  value: false
+general_scores_threshold:
+  desc: null
+  value: 0.8
+general_seed:
+  desc: null
+  value: None
+general_task:
+  desc: null
+  value: instance_segmentation
+general_topk_per_image:
+  desc: null
+  value: -1
+general_train_mode:
+  desc: null
+  value: false
+general_train_on_segments:
+  desc: null
+  value: true
+general_use_dbscan:
+  desc: null
+  value: true
+general_visualization_point_size:
+  desc: null
+  value: 20
+general_workspace:
+  desc: null
+  value: jonasschult
+logging:
+  desc: null
+  value:
+  - _target_: pytorch_lightning.loggers.WandbLogger
+    entity: schult
+    id: DEBUG_ABLATION
+    name: DEBUG_ABLATION
+    project: scannet
+    resume: allow
+    save_dir: saved/DEBUG_ABLATION
+loss__target_:
+  desc: null
+  value: models.criterion.SetCriterion
+loss_class_weights:
+  desc: null
+  value: -1
+loss_eos_coef:
+  desc: null
+  value: 0.1
+loss_importance_sample_ratio:
+  desc: null
+  value: 0.75
+loss_losses:
+  desc: null
+  value:
+  - labels
+  - masks
+loss_num_classes:
+  desc: null
+  value: 19
+loss_num_points:
+  desc: null
+  value: -1
+loss_oversample_ratio:
+  desc: null
+  value: 3.0
+matcher__target_:
+  desc: null
+  value: models.matcher.HungarianMatcher
+matcher_cost_class:
+  desc: null
+  value: 2.0
+matcher_cost_dice:
+  desc: null
+  value: 2.0
+matcher_cost_mask:
+  desc: null
+  value: 5.0
+matcher_num_points:
+  desc: null
+  value: -1
+metrics__target_:
+  desc: null
+  value: models.metrics.ConfusionMatrix
+metrics_ignore_label:
+  desc: null
+  value: 255
+metrics_num_classes:
+  desc: null
+  value: 20
+model__target_:
+  desc: null
+  value: models.Mask3D
+model_anchor_dim:
+  desc: null
+  value: 6
+model_config_backbone__target_:
+  desc: null
+  value: models.Res16UNet34C
+model_config_backbone_config_bn_momentum:
+  desc: null
+  value: 0.02
+model_config_backbone_config_conv1_kernel_size:
+  desc: null
+  value: 5
+model_config_backbone_config_dialations:
+  desc: null
+  value:
+  - 1
+  - 1
+  - 1
+  - 1
+model_config_backbone_in_channels:
+  desc: null
+  value: 3
+model_config_backbone_out_channels:
+  desc: null
+  value: 20
+model_config_backbone_out_fpn:
+  desc: null
+  value: true
+model_dim_feedforward:
+  desc: null
+  value: 1024
+model_dropout:
+  desc: null
+  value: 0.0
+model_gauss_scale:
+  desc: null
+  value: 1.0
+model_hidden_dim:
+  desc: null
+  value: 128
+model_hlevels:
+  desc: null
+  value:
+  - 0
+  - 1
+  - 2
+  - 3
+  - 4
+model_max_sample_size:
+  desc: null
+  value: false
+model_non_parametric_queries:
+  desc: null
+  value: false
+model_normalize_pos_enc:
+  desc: null
+  value: true
+model_num_classes:
+  desc: null
+  value: 19
+model_num_decoders:
+  desc: null
+  value: 3
+model_num_heads:
+  desc: null
+  value: 8
+model_num_queries:
+  desc: null
+  value: 150
+model_positional_encoding_type:
+  desc: null
+  value: fourier
+model_pre_norm:
+  desc: null
+  value: false
+model_query_selection:
+  desc: null
+  value: true
+model_random_normal:
+  desc: null
+  value: false
+model_random_queries:
+  desc: null
+  value: false
+model_random_query_both:
+  desc: null
+  value: false
+model_sample_sizes:
+  desc: null
+  value:
+  - 200
+  - 800
+  - 3200
+  - 12800
+  - 51200
+model_scatter_type:
+  desc: null
+  value: mean
+model_shared_decoder:
+  desc: null
+  value: true
+model_train_on_segments:
+  desc: null
+  value: true
+model_use_level_embed:
+  desc: null
+  value: false
+model_use_np_features:
+  desc: null
+  value: false
+model_voxel_size:
+  desc: null
+  value: 0.02
+optimizer__target_:
+  desc: null
+  value: torch.optim.AdamW
+optimizer_lr:
+  desc: null
+  value: 0.0001
+scheduler_pytorch_lightning_params_interval:
+  desc: null
+  value: step
+scheduler_scheduler__target_:
+  desc: null
+  value: torch.optim.lr_scheduler.OneCycleLR
+scheduler_scheduler_epochs:
+  desc: null
+  value: 601
+scheduler_scheduler_max_lr:
+  desc: null
+  value: 0.0001
+scheduler_scheduler_steps_per_epoch:
+  desc: null
+  value: -1
+trainer_check_val_every_n_epoch:
+  desc: null
+  value: 50
+trainer_deterministic:
+  desc: null
+  value: false
+trainer_max_epochs:
+  desc: null
+  value: 601
+trainer_min_epochs:
+  desc: null
+  value: 1
+trainer_num_sanity_val_steps:
+  desc: null
+  value: 2
+trainer_resume_from_checkpoint:
+  desc: null
+  value: saved/DEBUG_ABLATION/last-epoch.ckpt

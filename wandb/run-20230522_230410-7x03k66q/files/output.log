@@ -1,0 +1,100 @@
+/home/songoh/miniconda3/envs/mask/lib/python3.10/site-packages/MinkowskiEngine/__init__.py:36: UserWarning: The environment variable `OMP_NUM_THREADS` not set. MinkowskiEngine will automatically set `OMP_NUM_THREADS=16`. If you want to set `OMP_NUM_THREADS` manually, please export it on the command line before running a python script. e.g. `export OMP_NUM_THREADS=12; python your_program.py`. It is recommended to set it below 24.
+  warnings.warn(
+/home/songoh/miniconda3/envs/mask/lib/python3.10/site-packages/pytorch_lightning/utilities/seed.py:55: UserWarning: No seed found, seed set to 3602164506
+  rank_zero_warn(f"No seed found, seed set to {seed}")
+Global seed set to 3602164506
+{'_target_': 'pytorch_lightning.loggers.WandbLogger', 'project': '${general.project_name}', 'name': '${general.experiment_name}', 'save_dir': '${general.save_dir}', 'entity': 'schult', 'resume': 'allow', 'id': '${general.experiment_name}'}
+/home/songoh/miniconda3/envs/mask/lib/python3.10/site-packages/pytorch_lightning/loggers/wandb.py:352: UserWarning: There is a wandb run already in progress and newly created instances of `WandbLogger` will reuse this run. If this is not desired, call `wandb.finish()` before instantiating `WandbLogger`.
+  rank_zero_warn(
+[2023-05-22 23:04:23,395][__main__][INFO] - {'general_train_mode': True, 'general_task': 'instance_segmentation', 'general_seed': None, 'general_checkpoint': None, 'general_backbone_checkpoint': None, 'general_freeze_backbone': False, 'general_linear_probing_backbone': False, 'general_train_on_segments': False, 'general_eval_on_segments': False, 'general_filter_out_instances': False, 'general_save_visualizations': False, 'general_visualization_point_size': 20, 'general_decoder_id': -1, 'general_export': False, 'general_use_dbscan': False, 'general_ignore_class_threshold': 100, 'general_project_name': 'scannet', 'general_workspace': 'jonasschult', 'general_experiment_name': 'DEBUG_ABLATION', 'general_num_targets': 19, 'general_add_instance': True, 'general_dbscan_eps': 0.95, 'general_dbscan_min_points': 1, 'general_export_threshold': 0.0001, 'general_reps_per_epoch': 1, 'general_on_crops': False, 'general_scores_threshold': 0.0, 'general_iou_threshold': 1.0, 'general_area': 5, 'general_eval_inner_core': -1, 'general_topk_per_image': 100, 'general_ignore_mask_idx': [], 'general_max_batch_size': 99999999, 'general_save_dir': 'saved/DEBUG_ABLATION', 'general_gpus': 1, 'data_train_mode': 'train', 'data_validation_mode': 'validation', 'data_test_mode': 'validation', 'data_ignore_label': 255, 'data_add_raw_coordinates': True, 'data_add_colors': True, 'data_add_normals': False, 'data_in_channels': 3, 'data_num_labels': 20, 'data_add_instance': True, 'data_task': 'instance_segmentation', 'data_pin_memory': False, 'data_num_workers': 4, 'data_batch_size': 3, 'data_test_batch_size': 1, 'data_cache_data': False, 'data_voxel_size': 0.02, 'data_reps_per_epoch': 1, 'data_cropping': False, 'data_cropping_args_min_points': 30000, 'data_cropping_args_aspect': 0.8, 'data_cropping_args_min_crop': 0.5, 'data_cropping_args_max_crop': 1.0, 'data_crop_min_size': 20000, 'data_crop_length': 6.0, 'data_cropping_v1': True, 'data_train_dataloader__target_': 'torch.utils.data.DataLoader', 'data_train_dataloader_shuffle': True, 'data_train_dataloader_pin_memory': False, 'data_train_dataloader_num_workers': 4, 'data_train_dataloader_batch_size': 3, 'data_validation_dataloader__target_': 'torch.utils.data.DataLoader', 'data_validation_dataloader_shuffle': False, 'data_validation_dataloader_pin_memory': False, 'data_validation_dataloader_num_workers': 4, 'data_validation_dataloader_batch_size': 1, 'data_test_dataloader__target_': 'torch.utils.data.DataLoader', 'data_test_dataloader_shuffle': False, 'data_test_dataloader_pin_memory': False, 'data_test_dataloader_num_workers': 4, 'data_test_dataloader_batch_size': 1, 'data_train_dataset__target_': 'datasets.semseg.SemanticSegmentationDataset', 'data_train_dataset_dataset_name': 'scannet', 'data_train_dataset_data_dir': 'data/processed/scannet', 'data_train_dataset_image_augmentations_path': 'conf/augmentation/albumentations_aug.yaml', 'data_train_dataset_volume_augmentations_path': 'conf/augmentation/volumentations_aug.yaml', 'data_train_dataset_label_db_filepath': 'data/processed/scannet/label_database.yaml', 'data_train_dataset_color_mean_std': 'data/processed/scannet/color_mean_std.yaml', 'data_train_dataset_data_percent': 1.0, 'data_train_dataset_mode': 'train', 'data_train_dataset_ignore_label': 255, 'data_train_dataset_num_labels': 20, 'data_train_dataset_add_raw_coordinates': True, 'data_train_dataset_add_colors': True, 'data_train_dataset_add_normals': False, 'data_train_dataset_add_instance': True, 'data_train_dataset_instance_oversampling': 0.0, 'data_train_dataset_place_around_existing': False, 'data_train_dataset_point_per_cut': 0, 'data_train_dataset_max_cut_region': 0, 'data_train_dataset_flip_in_center': False, 'data_train_dataset_noise_rate': 0, 'data_train_dataset_resample_points': 0, 'data_train_dataset_add_unlabeled_pc': False, 'data_train_dataset_cropping': False, 'data_train_dataset_cropping_args_min_points': 30000, 'data_train_dataset_cropping_args_aspect': 0.8, 'data_train_dataset_cropping_args_min_crop': 0.5, 'data_train_dataset_cropping_args_max_crop': 1.0, 'data_train_dataset_is_tta': False, 'data_train_dataset_crop_min_size': 20000, 'data_train_dataset_crop_length': 6.0, 'data_train_dataset_filter_out_classes': [0, 1], 'data_train_dataset_label_offset': 2, 'data_validation_dataset__target_': 'datasets.semseg.SemanticSegmentationDataset', 'data_validation_dataset_dataset_name': 'scannet', 'data_validation_dataset_data_dir': 'data/processed/scannet', 'data_validation_dataset_image_augmentations_path': None, 'data_validation_dataset_volume_augmentations_path': None, 'data_validation_dataset_label_db_filepath': 'data/processed/scannet/label_database.yaml', 'data_validation_dataset_color_mean_std': 'data/processed/scannet/color_mean_std.yaml', 'data_validation_dataset_data_percent': 1.0, 'data_validation_dataset_mode': 'validation', 'data_validation_dataset_ignore_label': 255, 'data_validation_dataset_num_labels': 20, 'data_validation_dataset_add_raw_coordinates': True, 'data_validation_dataset_add_colors': True, 'data_validation_dataset_add_normals': False, 'data_validation_dataset_add_instance': True, 'data_validation_dataset_cropping': False, 'data_validation_dataset_is_tta': False, 'data_validation_dataset_crop_min_size': 20000, 'data_validation_dataset_crop_length': 6.0, 'data_validation_dataset_filter_out_classes': [0, 1], 'data_validation_dataset_label_offset': 2, 'data_test_dataset__target_': 'datasets.semseg.SemanticSegmentationDataset', 'data_test_dataset_dataset_name': 'scannet', 'data_test_dataset_data_dir': 'data/processed/scannet', 'data_test_dataset_image_augmentations_path': None, 'data_test_dataset_volume_augmentations_path': None, 'data_test_dataset_label_db_filepath': 'data/processed/scannet/label_database.yaml', 'data_test_dataset_color_mean_std': 'data/processed/scannet/color_mean_std.yaml', 'data_test_dataset_data_percent': 1.0, 'data_test_dataset_mode': 'validation', 'data_test_dataset_ignore_label': 255, 'data_test_dataset_num_labels': 20, 'data_test_dataset_add_raw_coordinates': True, 'data_test_dataset_add_colors': True, 'data_test_dataset_add_normals': False, 'data_test_dataset_add_instance': True, 'data_test_dataset_cropping': False, 'data_test_dataset_is_tta': False, 'data_test_dataset_crop_min_size': 20000, 'data_test_dataset_crop_length': 6.0, 'data_test_dataset_filter_out_classes': [0, 1], 'data_test_dataset_label_offset': 2, 'data_train_collation__target_': 'datasets.utils.VoxelizeCollate', 'data_train_collation_ignore_label': 255, 'data_train_collation_voxel_size': 0.02, 'data_train_collation_mode': 'train', 'data_train_collation_small_crops': False, 'data_train_collation_very_small_crops': False, 'data_train_collation_batch_instance': False, 'data_train_collation_probing': False, 'data_train_collation_task': 'instance_segmentation', 'data_train_collation_ignore_class_threshold': 100, 'data_train_collation_filter_out_classes': [0, 1], 'data_train_collation_label_offset': 2, 'data_train_collation_num_queries': 100, 'data_validation_collation__target_': 'datasets.utils.VoxelizeCollate', 'data_validation_collation_ignore_label': 255, 'data_validation_collation_voxel_size': 0.02, 'data_validation_collation_mode': 'validation', 'data_validation_collation_batch_instance': False, 'data_validation_collation_probing': False, 'data_validation_collation_task': 'instance_segmentation', 'data_validation_collation_ignore_class_threshold': 100, 'data_validation_collation_filter_out_classes': [0, 1], 'data_validation_collation_label_offset': 2, 'data_validation_collation_num_queries': 100, 'data_test_collation__target_': 'datasets.utils.VoxelizeCollate', 'data_test_collation_ignore_label': 255, 'data_test_collation_voxel_size': 0.02, 'data_test_collation_mode': 'validation', 'data_test_collation_batch_instance': False, 'data_test_collation_probing': False, 'data_test_collation_task': 'instance_segmentation', 'data_test_collation_ignore_class_threshold': 100, 'data_test_collation_filter_out_classes': [0, 1], 'data_test_collation_label_offset': 2, 'data_test_collation_num_queries': 100, 'logging': [{'_target_': 'pytorch_lightning.loggers.WandbLogger', 'project': 'scannet', 'name': 'DEBUG_ABLATION', 'save_dir': 'saved/DEBUG_ABLATION', 'entity': 'schult', 'resume': 'allow', 'id': 'DEBUG_ABLATION'}], 'model__target_': 'models.Mask3D', 'model_hidden_dim': 128, 'model_dim_feedforward': 1024, 'model_num_queries': 100, 'model_num_heads': 8, 'model_num_decoders': 3, 'model_dropout': 0.0, 'model_pre_norm': False, 'model_use_level_embed': False, 'model_normalize_pos_enc': True, 'model_positional_encoding_type': 'fourier', 'model_gauss_scale': 1.0, 'model_hlevels': [0, 1, 2, 3], 'model_anchor_dim': 6, 'model_non_parametric_queries': False, 'model_random_query_both': False, 'model_random_normal': False, 'model_random_queries': False, 'model_use_np_features': False, 'model_sample_sizes': [200, 800, 3200, 12800, 51200], 'model_max_sample_size': False, 'model_shared_decoder': True, 'model_num_classes': 19, 'model_train_on_segments': False, 'model_scatter_type': 'mean', 'model_voxel_size': 0.02, 'model_config_backbone__target_': 'models.Res16UNet34C', 'model_config_backbone_config_dialations': [1, 1, 1, 1], 'model_config_backbone_config_conv1_kernel_size': 5, 'model_config_backbone_config_bn_momentum': 0.02, 'model_config_backbone_in_channels': 3, 'model_config_backbone_out_channels': 20, 'model_config_backbone_out_fpn': True, 'metrics__target_': 'models.metrics.ConfusionMatrix', 'metrics_num_classes': 20, 'metrics_ignore_label': 255, 'optimizer__target_': 'torch.optim.AdamW', 'optimizer_lr': 0.0001, 'scheduler_scheduler__target_': 'torch.optim.lr_scheduler.OneCycleLR', 'scheduler_scheduler_max_lr': 0.0001, 'scheduler_scheduler_epochs': 601, 'scheduler_scheduler_steps_per_epoch': -1, 'scheduler_pytorch_lightning_params_interval': 'step', 'trainer_deterministic': False, 'trainer_max_epochs': 601, 'trainer_min_epochs': 1, 'trainer_resume_from_checkpoint': None, 'trainer_check_val_every_n_epoch': 50, 'trainer_num_sanity_val_steps': 2, 'callbacks': [{'_target_': 'pytorch_lightning.callbacks.ModelCheckpoint', 'monitor': 'val_mean_ap_50', 'save_last': True, 'save_top_k': 1, 'mode': 'max', 'dirpath': 'saved/DEBUG_ABLATION', 'filename': '{epoch}-{val_mean_ap_50:.3f}', 'every_n_epochs': 1}, {'_target_': 'pytorch_lightning.callbacks.LearningRateMonitor'}], 'matcher__target_': 'models.matcher.HungarianMatcher', 'matcher_cost_class': 2.0, 'matcher_cost_mask': 5.0, 'matcher_cost_dice': 2.0, 'matcher_num_points': -1, 'loss__target_': 'models.criterion.SetCriterion', 'loss_num_classes': 19, 'loss_eos_coef': 0.1, 'loss_losses': ['labels', 'masks'], 'loss_num_points': -1, 'loss_oversample_ratio': 3.0, 'loss_importance_sample_ratio': 0.75, 'loss_class_weights': -1}
+/home/songoh/miniconda3/envs/mask/lib/python3.10/site-packages/pytorch_lightning/trainer/connectors/accelerator_connector.py:446: LightningDeprecationWarning: Setting `Trainer(gpus=1)` is deprecated in v1.7 and will be removed in v2.0. Please use `Trainer(accelerator='gpu', devices=1)` instead.
+  rank_zero_deprecation(
+/home/songoh/miniconda3/envs/mask/lib/python3.10/site-packages/pytorch_lightning/trainer/connectors/callback_connector.py:57: LightningDeprecationWarning: Setting `Trainer(weights_save_path=)` has been deprecated in v1.6 and will be removed in v1.8. Please pass ``dirpath`` directly to the `ModelCheckpoint` callback
+  rank_zero_deprecation(
+GPU available: True (cuda), used: True
+TPU available: False, using: 0 TPU cores
+IPU available: False, using: 0 IPUs
+HPU available: False, using: 0 HPUs
+/media/songoh/ssh3/songoh_ws/DAB Mask3D-main/datasets/semseg.py:573: YAMLLoadWarning: calling yaml.load() without Loader=... is deprecated, as the default Loader is unsafe. Please read https://msg.pyyaml.org/load for full details.
+  file = yaml.load(f)
+LOCAL_RANK: 0 - CUDA_VISIBLE_DEVICES: [0,1]
+Sanity Checking: 0it [00:00, ?it/s]
+  | Name      | Type         | Params
+-------------------------------------------
+0 | model     | Mask3D       | 40.2 M
+1 | criterion | SetCriterion | 0
+-------------------------------------------
+40.2 M    Trainable params
+0         Non-trainable params
+40.2 M    Total params
+Sanity Checking DataLoader 0:   0%|          | 0/2 [00:00<?, ?it/s]check
+check2
+/media/songoh/ssh3/songoh_ws/DAB Mask3D-main/models/mask3d.py:255: UserWarning: __floordiv__ is deprecated, and its behavior will change in a future version of pytorch. It currently rounds toward 0 (like the 'trunc' function NOT 'floor'). This results in incorrect rounding for negative values. To keep the current behavior, use torch.div(a, b, rounding_mode='trunc'), or for actual floor division, use torch.div(a, b, rounding_mode='floor').
+  dim_t = 10000 ** (2 * (dim_t // 2) / 128)
+check
+check
+check2
+check
+The size of tensor a (384) must match the size of tensor b (768) at non-singleton dimension 2
+Traceback (most recent call last):
+  File "/home/songoh/miniconda3/envs/mask/lib/python3.10/site-packages/hydra/_internal/utils.py", line 198, in run_and_report
+    return func()
+  File "/home/songoh/miniconda3/envs/mask/lib/python3.10/site-packages/hydra/_internal/utils.py", line 347, in <lambda>
+    lambda: hydra.run(
+  File "/home/songoh/miniconda3/envs/mask/lib/python3.10/site-packages/hydra/_internal/hydra.py", line 107, in run
+    return run_job(
+  File "/home/songoh/miniconda3/envs/mask/lib/python3.10/site-packages/hydra/core/utils.py", line 128, in run_job
+    ret.return_value = task_function(task_cfg)
+  File "/media/songoh/ssh3/songoh_ws/DAB Mask3D-main/main_instance_segmentation.py", line 99, in main
+    train(cfg)
+  File "/home/songoh/miniconda3/envs/mask/lib/python3.10/site-packages/hydra/main.py", line 27, in decorated_main
+    return task_function(cfg_passthrough)
+  File "/media/songoh/ssh3/songoh_ws/DAB Mask3D-main/main_instance_segmentation.py", line 80, in train
+    runner.fit(model)
+  File "/home/songoh/miniconda3/envs/mask/lib/python3.10/site-packages/pytorch_lightning/trainer/trainer.py", line 696, in fit
+    self._call_and_handle_interrupt(
+  File "/home/songoh/miniconda3/envs/mask/lib/python3.10/site-packages/pytorch_lightning/trainer/trainer.py", line 650, in _call_and_handle_interrupt
+    return trainer_fn(*args, **kwargs)
+  File "/home/songoh/miniconda3/envs/mask/lib/python3.10/site-packages/pytorch_lightning/trainer/trainer.py", line 737, in _fit_impl
+    results = self._run(model, ckpt_path=self.ckpt_path)
+  File "/home/songoh/miniconda3/envs/mask/lib/python3.10/site-packages/pytorch_lightning/trainer/trainer.py", line 1168, in _run
+    results = self._run_stage()
+  File "/home/songoh/miniconda3/envs/mask/lib/python3.10/site-packages/pytorch_lightning/trainer/trainer.py", line 1254, in _run_stage
+    return self._run_train()
+  File "/home/songoh/miniconda3/envs/mask/lib/python3.10/site-packages/pytorch_lightning/trainer/trainer.py", line 1276, in _run_train
+    self._run_sanity_check()
+  File "/home/songoh/miniconda3/envs/mask/lib/python3.10/site-packages/pytorch_lightning/trainer/trainer.py", line 1345, in _run_sanity_check
+    val_loop.run()
+  File "/home/songoh/miniconda3/envs/mask/lib/python3.10/site-packages/pytorch_lightning/loops/loop.py", line 200, in run
+    self.advance(*args, **kwargs)
+  File "/home/songoh/miniconda3/envs/mask/lib/python3.10/site-packages/pytorch_lightning/loops/dataloader/evaluation_loop.py", line 155, in advance
+    dl_outputs = self.epoch_loop.run(self._data_fetcher, dl_max_batches, kwargs)
+  File "/home/songoh/miniconda3/envs/mask/lib/python3.10/site-packages/pytorch_lightning/loops/loop.py", line 200, in run
+    self.advance(*args, **kwargs)
+  File "/home/songoh/miniconda3/envs/mask/lib/python3.10/site-packages/pytorch_lightning/loops/epoch/evaluation_epoch_loop.py", line 143, in advance
+    output = self._evaluation_step(**kwargs)
+  File "/home/songoh/miniconda3/envs/mask/lib/python3.10/site-packages/pytorch_lightning/loops/epoch/evaluation_epoch_loop.py", line 240, in _evaluation_step
+    output = self.trainer._call_strategy_hook(hook_name, *kwargs.values())
+  File "/home/songoh/miniconda3/envs/mask/lib/python3.10/site-packages/pytorch_lightning/trainer/trainer.py", line 1706, in _call_strategy_hook
+    output = fn(*args, **kwargs)
+  File "/home/songoh/miniconda3/envs/mask/lib/python3.10/site-packages/pytorch_lightning/strategies/strategy.py", line 370, in validation_step
+    return self.model.validation_step(*args, **kwargs)
+  File "/media/songoh/ssh3/songoh_ws/DAB Mask3D-main/trainer/trainer.py", line 160, in validation_step
+    return self.eval_step(batch, batch_idx)
+  File "/media/songoh/ssh3/songoh_ws/DAB Mask3D-main/trainer/trainer.py", line 357, in eval_step
+    raise run_err
+  File "/media/songoh/ssh3/songoh_ws/DAB Mask3D-main/trainer/trainer.py", line 348, in eval_step
+    output = self.forward(data,
+  File "/media/songoh/ssh3/songoh_ws/DAB Mask3D-main/trainer/trainer.py", line 92, in forward
+    x = self.model(x, point2segment, raw_coordinates=raw_coordinates,
+  File "/home/songoh/miniconda3/envs/mask/lib/python3.10/site-packages/torch/nn/modules/module.py", line 1130, in _call_impl
+    return forward_call(*input, **kwargs)
+  File "/media/songoh/ssh3/songoh_ws/DAB Mask3D-main/models/mask3d.py", line 428, in forward
+    query_sine_embed = query_sine_embed[..., :self.mask_dim * 3] * pos_transformation
+RuntimeError: The size of tensor a (384) must match the size of tensor b (768) at non-singleton dimension 2
+During handling of the above exception, another exception occurred:
+Traceback (most recent call last):
+  File "/home/songoh/miniconda3/envs/mask/lib/python3.10/site-packages/hydra/_internal/utils.py", line 346, in _run_hydra
+    run_and_report(
+  File "/home/songoh/miniconda3/envs/mask/lib/python3.10/site-packages/hydra/_internal/utils.py", line 267, in run_and_report
+    print_exception(etype=None, value=ex, tb=final_tb)  # type: ignore

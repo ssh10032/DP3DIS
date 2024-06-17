@@ -1,0 +1,6 @@
+2023-08-22 16:34:01,167 INFO    StreamThr :18962 [internal.py:wandb_internal():90] W&B internal server running at pid: 18962, started at: 2023-08-22 16:34:01.166263
+2023-08-22 16:34:01,188 DEBUG   HandlerThread:18962 [handler.py:handle_request():141] handle_request: status
+2023-08-22 16:34:01,188 DEBUG   SenderThread:18962 [sender.py:send_request():316] send_request: status
+2023-08-22 16:34:01,198 DEBUG   SenderThread:18962 [sender.py:send():302] send: header
+2023-08-22 16:34:01,198 DEBUG   SenderThread:18962 [sender.py:send():302] send: run
+2023-08-22 16:34:01,202 INFO    WriterThread:18962 [datastore.py:open_for_write():75] open: /media/songoh/ssh3/songoh_ws/MaskDNtoBBox_GPU0/wandb/run-20230822_163401-26zm6n4h/run-26zm6n4h.wandb

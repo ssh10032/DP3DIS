@@ -1,0 +1,180 @@
+2023-08-24 19:00:42,396 INFO    StreamThr :6455 [internal.py:wandb_internal():90] W&B internal server running at pid: 6455, started at: 2023-08-24 19:00:42.395122
+2023-08-24 19:00:42,399 DEBUG   HandlerThread:6455 [handler.py:handle_request():141] handle_request: status
+2023-08-24 19:00:42,401 DEBUG   SenderThread:6455 [sender.py:send_request():316] send_request: status
+2023-08-24 19:00:42,403 INFO    WriterThread:6455 [datastore.py:open_for_write():75] open: /media/songoh/ssh3/songoh_ws/MaskDNtoBBox_GPU0/wandb/run-20230824_190042-17x0mhct/run-17x0mhct.wandb
+2023-08-24 19:00:42,403 DEBUG   SenderThread:6455 [sender.py:send():302] send: header
+2023-08-24 19:00:42,403 DEBUG   SenderThread:6455 [sender.py:send():302] send: run
+2023-08-24 19:00:42,989 DEBUG   HandlerThread:6455 [handler.py:handle_request():141] handle_request: check_version
+2023-08-24 19:00:43,009 INFO    SenderThread:6455 [dir_watcher.py:__init__():216] watching files in: /media/songoh/ssh3/songoh_ws/MaskDNtoBBox_GPU0/wandb/run-20230824_190042-17x0mhct/files
+2023-08-24 19:00:43,010 INFO    SenderThread:6455 [sender.py:_start_run_threads():913] run started: 17x0mhct with start time 1692871242.384656
+2023-08-24 19:00:43,010 DEBUG   SenderThread:6455 [sender.py:send():302] send: summary
+2023-08-24 19:00:43,010 INFO    SenderThread:6455 [sender.py:_save_file():1156] saving file wandb-summary.json with policy end
+2023-08-24 19:00:43,010 DEBUG   SenderThread:6455 [sender.py:send_request():316] send_request: check_version
+2023-08-24 19:00:43,079 DEBUG   HandlerThread:6455 [handler.py:handle_request():141] handle_request: run_start
+2023-08-24 19:00:43,085 DEBUG   HandlerThread:6455 [meta.py:__init__():35] meta init
+2023-08-24 19:00:43,085 DEBUG   HandlerThread:6455 [meta.py:__init__():50] meta init done
+2023-08-24 19:00:43,085 DEBUG   HandlerThread:6455 [meta.py:probe():216] probe
+2023-08-24 19:00:43,091 DEBUG   HandlerThread:6455 [git.py:repo():40] git repository is invalid
+2023-08-24 19:00:43,091 DEBUG   HandlerThread:6455 [meta.py:_save_pip():54] save pip
+2023-08-24 19:00:43,091 DEBUG   HandlerThread:6455 [meta.py:_save_pip():68] save pip done
+2023-08-24 19:00:43,091 DEBUG   HandlerThread:6455 [meta.py:_save_conda():75] save conda
+2023-08-24 19:00:44,008 INFO    Thread-12 :6455 [dir_watcher.py:_on_file_created():275] file/dir created: /media/songoh/ssh3/songoh_ws/MaskDNtoBBox_GPU0/wandb/run-20230824_190042-17x0mhct/files/wandb-summary.json
+2023-08-24 19:00:44,009 INFO    Thread-12 :6455 [dir_watcher.py:_on_file_created():275] file/dir created: /media/songoh/ssh3/songoh_ws/MaskDNtoBBox_GPU0/wandb/run-20230824_190042-17x0mhct/files/conda-environment.yaml
+2023-08-24 19:00:44,009 INFO    Thread-12 :6455 [dir_watcher.py:_on_file_created():275] file/dir created: /media/songoh/ssh3/songoh_ws/MaskDNtoBBox_GPU0/wandb/run-20230824_190042-17x0mhct/files/requirements.txt
+2023-08-24 19:00:47,007 INFO    Thread-12 :6455 [dir_watcher.py:_on_file_modified():292] file/dir modified: /media/songoh/ssh3/songoh_ws/MaskDNtoBBox_GPU0/wandb/run-20230824_190042-17x0mhct/files/conda-environment.yaml
+2023-08-24 19:00:47,197 DEBUG   HandlerThread:6455 [meta.py:_save_conda():85] save conda done
+2023-08-24 19:00:47,197 DEBUG   HandlerThread:6455 [meta.py:probe():254] probe done
+2023-08-24 19:00:47,238 DEBUG   SenderThread:6455 [sender.py:send():302] send: files
+2023-08-24 19:00:47,238 INFO    SenderThread:6455 [sender.py:_save_file():1156] saving file wandb-metadata.json with policy now
+2023-08-24 19:00:47,249 DEBUG   HandlerThread:6455 [handler.py:handle_request():141] handle_request: stop_status
+2023-08-24 19:00:47,249 DEBUG   SenderThread:6455 [sender.py:send_request():316] send_request: stop_status
+2023-08-24 19:00:47,555 DEBUG   SenderThread:6455 [sender.py:send():302] send: telemetry
+2023-08-24 19:00:47,555 DEBUG   SenderThread:6455 [sender.py:send():302] send: telemetry
+2023-08-24 19:00:47,921 INFO    Thread-16 :6455 [upload_job.py:push():138] Uploaded file /tmp/tmph4jdxt6lwandb/3aezz30p-wandb-metadata.json
+2023-08-24 19:00:48,007 INFO    Thread-12 :6455 [dir_watcher.py:_on_file_created():275] file/dir created: /media/songoh/ssh3/songoh_ws/MaskDNtoBBox_GPU0/wandb/run-20230824_190042-17x0mhct/files/wandb-metadata.json
+2023-08-24 19:00:48,105 DEBUG   SenderThread:6455 [sender.py:send():302] send: telemetry
+2023-08-24 19:00:48,692 DEBUG   SenderThread:6455 [sender.py:send():302] send: telemetry
+2023-08-24 19:00:48,707 DEBUG   SenderThread:6455 [sender.py:send():302] send: telemetry
+2023-08-24 19:00:49,572 DEBUG   SenderThread:6455 [sender.py:send():302] send: telemetry
+2023-08-24 19:00:50,008 INFO    Thread-12 :6455 [dir_watcher.py:_on_file_created():275] file/dir created: /media/songoh/ssh3/songoh_ws/MaskDNtoBBox_GPU0/wandb/run-20230824_190042-17x0mhct/files/output.log
+2023-08-24 19:00:50,413 DEBUG   SenderThread:6455 [sender.py:send():302] send: telemetry
+2023-08-24 19:00:52,008 INFO    Thread-12 :6455 [dir_watcher.py:_on_file_modified():292] file/dir modified: /media/songoh/ssh3/songoh_ws/MaskDNtoBBox_GPU0/wandb/run-20230824_190042-17x0mhct/files/output.log
+2023-08-24 19:00:53,718 DEBUG   SenderThread:6455 [sender.py:send():302] send: config
+2023-08-24 19:00:54,009 INFO    Thread-12 :6455 [dir_watcher.py:_on_file_modified():292] file/dir modified: /media/songoh/ssh3/songoh_ws/MaskDNtoBBox_GPU0/wandb/run-20230824_190042-17x0mhct/files/output.log
+2023-08-24 19:00:55,010 INFO    Thread-12 :6455 [dir_watcher.py:_on_file_modified():292] file/dir modified: /media/songoh/ssh3/songoh_ws/MaskDNtoBBox_GPU0/wandb/run-20230824_190042-17x0mhct/files/output.log
+2023-08-24 19:00:56,010 INFO    Thread-12 :6455 [dir_watcher.py:_on_file_modified():292] file/dir modified: /media/songoh/ssh3/songoh_ws/MaskDNtoBBox_GPU0/wandb/run-20230824_190042-17x0mhct/files/output.log
+2023-08-24 19:00:56,959 DEBUG   SenderThread:6455 [sender.py:send():302] send: telemetry
+2023-08-24 19:01:01,742 DEBUG   SenderThread:6455 [sender.py:send():302] send: telemetry
+2023-08-24 19:01:02,013 INFO    Thread-12 :6455 [dir_watcher.py:_on_file_modified():292] file/dir modified: /media/songoh/ssh3/songoh_ws/MaskDNtoBBox_GPU0/wandb/run-20230824_190042-17x0mhct/files/output.log
+2023-08-24 19:01:02,750 DEBUG   HandlerThread:6455 [handler.py:handle_request():141] handle_request: stop_status
+2023-08-24 19:01:02,751 DEBUG   SenderThread:6455 [sender.py:send_request():316] send_request: stop_status
+2023-08-24 19:01:04,013 INFO    Thread-12 :6455 [dir_watcher.py:_on_file_modified():292] file/dir modified: /media/songoh/ssh3/songoh_ws/MaskDNtoBBox_GPU0/wandb/run-20230824_190042-17x0mhct/files/output.log
+2023-08-24 19:01:11,653 DEBUG   SenderThread:6455 [sender.py:send():302] send: stats
+2023-08-24 19:01:13,043 INFO    Thread-12 :6455 [dir_watcher.py:_on_file_modified():292] file/dir modified: /media/songoh/ssh3/songoh_ws/MaskDNtoBBox_GPU0/wandb/run-20230824_190042-17x0mhct/files/config.yaml
+2023-08-24 19:01:18,082 DEBUG   HandlerThread:6455 [handler.py:handle_request():141] handle_request: stop_status
+2023-08-24 19:01:18,083 DEBUG   SenderThread:6455 [sender.py:send_request():316] send_request: stop_status
+2023-08-24 19:01:23,785 DEBUG   SenderThread:6455 [sender.py:send():302] send: config
+2023-08-24 19:01:24,046 INFO    Thread-12 :6455 [dir_watcher.py:_on_file_modified():292] file/dir modified: /media/songoh/ssh3/songoh_ws/MaskDNtoBBox_GPU0/wandb/run-20230824_190042-17x0mhct/files/output.log
+2023-08-24 19:01:25,047 INFO    Thread-12 :6455 [dir_watcher.py:_on_file_modified():292] file/dir modified: /media/songoh/ssh3/songoh_ws/MaskDNtoBBox_GPU0/wandb/run-20230824_190042-17x0mhct/files/output.log
+2023-08-24 19:01:26,047 INFO    Thread-12 :6455 [dir_watcher.py:_on_file_modified():292] file/dir modified: /media/songoh/ssh3/songoh_ws/MaskDNtoBBox_GPU0/wandb/run-20230824_190042-17x0mhct/files/output.log
+2023-08-24 19:01:27,048 INFO    Thread-12 :6455 [dir_watcher.py:_on_file_modified():292] file/dir modified: /media/songoh/ssh3/songoh_ws/MaskDNtoBBox_GPU0/wandb/run-20230824_190042-17x0mhct/files/output.log
+2023-08-24 19:01:33,400 DEBUG   HandlerThread:6455 [handler.py:handle_request():141] handle_request: stop_status
+2023-08-24 19:01:33,400 DEBUG   SenderThread:6455 [sender.py:send_request():316] send_request: stop_status
+2023-08-24 19:01:34,050 INFO    Thread-12 :6455 [dir_watcher.py:_on_file_modified():292] file/dir modified: /media/songoh/ssh3/songoh_ws/MaskDNtoBBox_GPU0/wandb/run-20230824_190042-17x0mhct/files/output.log
+2023-08-24 19:01:37,052 INFO    Thread-12 :6455 [dir_watcher.py:_on_file_modified():292] file/dir modified: /media/songoh/ssh3/songoh_ws/MaskDNtoBBox_GPU0/wandb/run-20230824_190042-17x0mhct/files/output.log
+2023-08-24 19:01:41,053 INFO    Thread-12 :6455 [dir_watcher.py:_on_file_modified():292] file/dir modified: /media/songoh/ssh3/songoh_ws/MaskDNtoBBox_GPU0/wandb/run-20230824_190042-17x0mhct/files/output.log
+2023-08-24 19:01:42,287 DEBUG   SenderThread:6455 [sender.py:send():302] send: stats
+2023-08-24 19:01:43,054 INFO    Thread-12 :6455 [dir_watcher.py:_on_file_modified():292] file/dir modified: /media/songoh/ssh3/songoh_ws/MaskDNtoBBox_GPU0/wandb/run-20230824_190042-17x0mhct/files/output.log
+2023-08-24 19:01:44,055 INFO    Thread-12 :6455 [dir_watcher.py:_on_file_modified():292] file/dir modified: /media/songoh/ssh3/songoh_ws/MaskDNtoBBox_GPU0/wandb/run-20230824_190042-17x0mhct/files/config.yaml
+2023-08-24 19:01:48,743 DEBUG   HandlerThread:6455 [handler.py:handle_request():141] handle_request: stop_status
+2023-08-24 19:01:48,744 DEBUG   SenderThread:6455 [sender.py:send_request():316] send_request: stop_status
+2023-08-24 19:02:04,078 DEBUG   HandlerThread:6455 [handler.py:handle_request():141] handle_request: stop_status
+2023-08-24 19:02:04,079 DEBUG   SenderThread:6455 [sender.py:send_request():316] send_request: stop_status
+2023-08-24 19:02:12,989 DEBUG   SenderThread:6455 [sender.py:send():302] send: stats
+2023-08-24 19:02:19,388 DEBUG   HandlerThread:6455 [handler.py:handle_request():141] handle_request: stop_status
+2023-08-24 19:02:19,388 DEBUG   SenderThread:6455 [sender.py:send_request():316] send_request: stop_status
+2023-08-24 19:02:34,706 DEBUG   HandlerThread:6455 [handler.py:handle_request():141] handle_request: stop_status
+2023-08-24 19:02:34,706 DEBUG   SenderThread:6455 [sender.py:send_request():316] send_request: stop_status
+2023-08-24 19:02:43,612 DEBUG   SenderThread:6455 [sender.py:send():302] send: stats
+2023-08-24 19:02:49,990 DEBUG   HandlerThread:6455 [handler.py:handle_request():141] handle_request: stop_status
+2023-08-24 19:02:49,990 DEBUG   SenderThread:6455 [sender.py:send_request():316] send_request: stop_status
+2023-08-24 19:03:05,272 DEBUG   HandlerThread:6455 [handler.py:handle_request():141] handle_request: stop_status
+2023-08-24 19:03:05,272 DEBUG   SenderThread:6455 [sender.py:send_request():316] send_request: stop_status
+2023-08-24 19:03:14,218 DEBUG   SenderThread:6455 [sender.py:send():302] send: stats
+2023-08-24 19:03:20,547 DEBUG   HandlerThread:6455 [handler.py:handle_request():141] handle_request: stop_status
+2023-08-24 19:03:20,548 DEBUG   SenderThread:6455 [sender.py:send_request():316] send_request: stop_status
+2023-08-24 19:03:35,881 DEBUG   HandlerThread:6455 [handler.py:handle_request():141] handle_request: stop_status
+2023-08-24 19:03:35,881 DEBUG   SenderThread:6455 [sender.py:send_request():316] send_request: stop_status
+2023-08-24 19:03:44,826 DEBUG   SenderThread:6455 [sender.py:send():302] send: stats
+2023-08-24 19:03:51,211 DEBUG   HandlerThread:6455 [handler.py:handle_request():141] handle_request: stop_status
+2023-08-24 19:03:51,211 DEBUG   SenderThread:6455 [sender.py:send_request():316] send_request: stop_status
+2023-08-24 19:04:06,540 DEBUG   HandlerThread:6455 [handler.py:handle_request():141] handle_request: stop_status
+2023-08-24 19:04:06,541 DEBUG   SenderThread:6455 [sender.py:send_request():316] send_request: stop_status
+2023-08-24 19:04:15,460 DEBUG   SenderThread:6455 [sender.py:send():302] send: stats
+2023-08-24 19:04:21,807 DEBUG   HandlerThread:6455 [handler.py:handle_request():141] handle_request: stop_status
+2023-08-24 19:04:21,808 DEBUG   SenderThread:6455 [sender.py:send_request():316] send_request: stop_status
+2023-08-24 19:04:37,166 DEBUG   HandlerThread:6455 [handler.py:handle_request():141] handle_request: stop_status
+2023-08-24 19:04:37,166 DEBUG   SenderThread:6455 [sender.py:send_request():316] send_request: stop_status
+2023-08-24 19:04:46,088 DEBUG   SenderThread:6455 [sender.py:send():302] send: stats
+2023-08-24 19:04:52,470 DEBUG   HandlerThread:6455 [handler.py:handle_request():141] handle_request: stop_status
+2023-08-24 19:04:52,470 DEBUG   SenderThread:6455 [sender.py:send_request():316] send_request: stop_status
+2023-08-24 19:05:07,780 DEBUG   HandlerThread:6455 [handler.py:handle_request():141] handle_request: stop_status
+2023-08-24 19:05:07,780 DEBUG   SenderThread:6455 [sender.py:send_request():316] send_request: stop_status
+2023-08-24 19:05:16,677 DEBUG   SenderThread:6455 [sender.py:send():302] send: stats
+2023-08-24 19:05:23,085 DEBUG   HandlerThread:6455 [handler.py:handle_request():141] handle_request: stop_status
+2023-08-24 19:05:23,085 DEBUG   SenderThread:6455 [sender.py:send_request():316] send_request: stop_status
+2023-08-24 19:05:38,332 DEBUG   HandlerThread:6455 [handler.py:handle_request():141] handle_request: stop_status
+2023-08-24 19:05:38,332 DEBUG   SenderThread:6455 [sender.py:send_request():316] send_request: stop_status
+2023-08-24 19:05:47,307 DEBUG   SenderThread:6455 [sender.py:send():302] send: stats
+2023-08-24 19:05:53,582 DEBUG   HandlerThread:6455 [handler.py:handle_request():141] handle_request: stop_status
+2023-08-24 19:05:53,583 DEBUG   SenderThread:6455 [sender.py:send_request():316] send_request: stop_status
+2023-08-24 19:06:08,851 DEBUG   HandlerThread:6455 [handler.py:handle_request():141] handle_request: stop_status
+2023-08-24 19:06:08,851 DEBUG   SenderThread:6455 [sender.py:send_request():316] send_request: stop_status
+2023-08-24 19:06:17,900 DEBUG   SenderThread:6455 [sender.py:send():302] send: stats
+2023-08-24 19:06:24,157 DEBUG   HandlerThread:6455 [handler.py:handle_request():141] handle_request: stop_status
+2023-08-24 19:06:24,158 DEBUG   SenderThread:6455 [sender.py:send_request():316] send_request: stop_status
+2023-08-24 19:06:39,389 DEBUG   HandlerThread:6455 [handler.py:handle_request():141] handle_request: stop_status
+2023-08-24 19:06:39,390 DEBUG   SenderThread:6455 [sender.py:send_request():316] send_request: stop_status
+2023-08-24 19:06:48,515 DEBUG   SenderThread:6455 [sender.py:send():302] send: stats
+2023-08-24 19:06:54,667 DEBUG   HandlerThread:6455 [handler.py:handle_request():141] handle_request: stop_status
+2023-08-24 19:06:54,667 DEBUG   SenderThread:6455 [sender.py:send_request():316] send_request: stop_status
+2023-08-24 19:07:09,932 DEBUG   HandlerThread:6455 [handler.py:handle_request():141] handle_request: stop_status
+2023-08-24 19:07:09,932 DEBUG   SenderThread:6455 [sender.py:send_request():316] send_request: stop_status
+2023-08-24 19:07:19,143 DEBUG   SenderThread:6455 [sender.py:send():302] send: stats
+2023-08-24 19:07:25,251 DEBUG   HandlerThread:6455 [handler.py:handle_request():141] handle_request: stop_status
+2023-08-24 19:07:25,251 DEBUG   SenderThread:6455 [sender.py:send_request():316] send_request: stop_status
+2023-08-24 19:07:40,568 DEBUG   HandlerThread:6455 [handler.py:handle_request():141] handle_request: stop_status
+2023-08-24 19:07:40,568 DEBUG   SenderThread:6455 [sender.py:send_request():316] send_request: stop_status
+2023-08-24 19:07:49,842 DEBUG   SenderThread:6455 [sender.py:send():302] send: stats
+2023-08-24 19:07:55,864 DEBUG   HandlerThread:6455 [handler.py:handle_request():141] handle_request: stop_status
+2023-08-24 19:07:55,865 DEBUG   SenderThread:6455 [sender.py:send_request():316] send_request: stop_status
+2023-08-24 19:08:11,179 DEBUG   HandlerThread:6455 [handler.py:handle_request():141] handle_request: stop_status
+2023-08-24 19:08:11,180 DEBUG   SenderThread:6455 [sender.py:send_request():316] send_request: stop_status
+2023-08-24 19:08:20,461 DEBUG   SenderThread:6455 [sender.py:send():302] send: stats
+2023-08-24 19:08:26,435 DEBUG   HandlerThread:6455 [handler.py:handle_request():141] handle_request: stop_status
+2023-08-24 19:08:26,435 DEBUG   SenderThread:6455 [sender.py:send_request():316] send_request: stop_status
+2023-08-24 19:08:41,688 DEBUG   HandlerThread:6455 [handler.py:handle_request():141] handle_request: stop_status
+2023-08-24 19:08:41,688 DEBUG   SenderThread:6455 [sender.py:send_request():316] send_request: stop_status
+2023-08-24 19:08:51,108 DEBUG   SenderThread:6455 [sender.py:send():302] send: stats
+2023-08-24 19:08:57,005 DEBUG   HandlerThread:6455 [handler.py:handle_request():141] handle_request: stop_status
+2023-08-24 19:08:57,005 DEBUG   SenderThread:6455 [sender.py:send_request():316] send_request: stop_status
+2023-08-24 19:09:12,314 DEBUG   HandlerThread:6455 [handler.py:handle_request():141] handle_request: stop_status
+2023-08-24 19:09:12,315 DEBUG   SenderThread:6455 [sender.py:send_request():316] send_request: stop_status
+2023-08-24 19:09:21,833 DEBUG   SenderThread:6455 [sender.py:send():302] send: stats
+2023-08-24 19:09:27,592 DEBUG   HandlerThread:6455 [handler.py:handle_request():141] handle_request: stop_status
+2023-08-24 19:09:27,592 DEBUG   SenderThread:6455 [sender.py:send_request():316] send_request: stop_status
+2023-08-24 19:09:42,886 DEBUG   HandlerThread:6455 [handler.py:handle_request():141] handle_request: stop_status
+2023-08-24 19:09:42,887 DEBUG   SenderThread:6455 [sender.py:send_request():316] send_request: stop_status
+2023-08-24 19:09:52,395 DEBUG   SenderThread:6455 [sender.py:send():302] send: stats
+2023-08-24 19:09:58,131 DEBUG   HandlerThread:6455 [handler.py:handle_request():141] handle_request: stop_status
+2023-08-24 19:09:58,131 DEBUG   SenderThread:6455 [sender.py:send_request():316] send_request: stop_status
+2023-08-24 19:10:13,453 DEBUG   HandlerThread:6455 [handler.py:handle_request():141] handle_request: stop_status
+2023-08-24 19:10:13,453 DEBUG   SenderThread:6455 [sender.py:send_request():316] send_request: stop_status
+2023-08-24 19:10:22,999 DEBUG   SenderThread:6455 [sender.py:send():302] send: stats
+2023-08-24 19:10:28,722 DEBUG   HandlerThread:6455 [handler.py:handle_request():141] handle_request: stop_status
+2023-08-24 19:10:28,722 DEBUG   SenderThread:6455 [sender.py:send_request():316] send_request: stop_status
+2023-08-24 19:10:44,030 DEBUG   HandlerThread:6455 [handler.py:handle_request():141] handle_request: stop_status
+2023-08-24 19:10:44,030 DEBUG   SenderThread:6455 [sender.py:send_request():316] send_request: stop_status
+2023-08-24 19:10:53,670 DEBUG   SenderThread:6455 [sender.py:send():302] send: stats
+2023-08-24 19:10:59,328 DEBUG   HandlerThread:6455 [handler.py:handle_request():141] handle_request: stop_status
+2023-08-24 19:10:59,328 DEBUG   SenderThread:6455 [sender.py:send_request():316] send_request: stop_status
+2023-08-24 19:11:14,617 DEBUG   HandlerThread:6455 [handler.py:handle_request():141] handle_request: stop_status
+2023-08-24 19:11:14,617 DEBUG   SenderThread:6455 [sender.py:send_request():316] send_request: stop_status
+2023-08-24 19:11:24,332 DEBUG   SenderThread:6455 [sender.py:send():302] send: stats
+2023-08-24 19:11:29,867 DEBUG   HandlerThread:6455 [handler.py:handle_request():141] handle_request: stop_status
+2023-08-24 19:11:29,868 DEBUG   SenderThread:6455 [sender.py:send_request():316] send_request: stop_status
+2023-08-24 19:11:45,115 DEBUG   HandlerThread:6455 [handler.py:handle_request():141] handle_request: stop_status
+2023-08-24 19:11:45,115 DEBUG   SenderThread:6455 [sender.py:send_request():316] send_request: stop_status
+2023-08-24 19:11:54,921 DEBUG   SenderThread:6455 [sender.py:send():302] send: stats
+2023-08-24 19:12:00,408 DEBUG   HandlerThread:6455 [handler.py:handle_request():141] handle_request: stop_status
+2023-08-24 19:12:00,409 DEBUG   SenderThread:6455 [sender.py:send_request():316] send_request: stop_status
+2023-08-24 19:12:15,703 DEBUG   HandlerThread:6455 [handler.py:handle_request():141] handle_request: stop_status
+2023-08-24 19:12:15,703 DEBUG   SenderThread:6455 [sender.py:send_request():316] send_request: stop_status
+2023-08-24 19:12:25,489 DEBUG   SenderThread:6455 [sender.py:send():302] send: stats
+2023-08-24 19:12:31,025 DEBUG   HandlerThread:6455 [handler.py:handle_request():141] handle_request: stop_status
+2023-08-24 19:12:31,025 DEBUG   SenderThread:6455 [sender.py:send_request():316] send_request: stop_status
+2023-08-24 19:12:46,294 DEBUG   HandlerThread:6455 [handler.py:handle_request():141] handle_request: stop_status
+2023-08-24 19:12:46,294 DEBUG   SenderThread:6455 [sender.py:send_request():316] send_request: stop_status
+2023-08-24 19:12:56,138 DEBUG   SenderThread:6455 [sender.py:send():302] send: stats
+2023-08-24 19:13:01,572 DEBUG   HandlerThread:6455 [handler.py:handle_request():141] handle_request: stop_status
+2023-08-24 19:13:01,573 DEBUG   SenderThread:6455 [sender.py:send_request():316] send_request: stop_status

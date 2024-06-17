@@ -1,0 +1,8 @@
+2023-08-21 16:20:36,662 INFO    StreamThr :2250 [internal.py:wandb_internal():90] W&B internal server running at pid: 2250, started at: 2023-08-21 16:20:36.661365
+2023-08-21 16:20:36,665 DEBUG   HandlerThread:2250 [handler.py:handle_request():141] handle_request: status
+2023-08-21 16:20:36,667 DEBUG   SenderThread:2250 [sender.py:send_request():316] send_request: status
+2023-08-21 16:20:36,669 DEBUG   SenderThread:2250 [sender.py:send():302] send: header
+2023-08-21 16:20:36,670 INFO    WriterThread:2250 [datastore.py:open_for_write():75] open: /media/songoh/ssh3/songoh_ws/MaskDNtoBBox_GPU0/wandb/run-20230821_162036-2kgyx886/run-2kgyx886.wandb
+2023-08-21 16:20:36,670 DEBUG   SenderThread:2250 [sender.py:send():302] send: run
+2023-08-21 16:20:37,207 INFO    SenderThread:2250 [dir_watcher.py:__init__():216] watching files in: /media/songoh/ssh3/songoh_ws/MaskDNtoBBox_GPU0/wandb/run-20230821_162036-2kgyx886/files
+2023-08-21 16:20:37,207 INFO    SenderThread:2250 [sender.py:_start_run_threads():913] run started: 2kgyx886 with start time 1692602436.645306

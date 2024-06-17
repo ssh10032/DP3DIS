@@ -1,0 +1,179 @@
+2023-05-30 14:41:45,647 INFO    StreamThr :3665 [internal.py:wandb_internal():90] W&B internal server running at pid: 3665, started at: 2023-05-30 14:41:45.646541
+2023-05-30 14:41:45,649 DEBUG   HandlerThread:3665 [handler.py:handle_request():141] handle_request: status
+2023-05-30 14:41:45,652 DEBUG   SenderThread:3665 [sender.py:send_request():316] send_request: status
+2023-05-30 14:41:45,654 INFO    WriterThread:3665 [datastore.py:open_for_write():75] open: /media/songoh/ssh3/songoh_ws/DAB Mask3D-main/wandb/run-20230530_144145-85t88zz2/run-85t88zz2.wandb
+2023-05-30 14:41:45,654 DEBUG   SenderThread:3665 [sender.py:send():302] send: header
+2023-05-30 14:41:45,654 DEBUG   SenderThread:3665 [sender.py:send():302] send: run
+2023-05-30 14:41:46,370 DEBUG   HandlerThread:3665 [handler.py:handle_request():141] handle_request: check_version
+2023-05-30 14:41:46,376 INFO    SenderThread:3665 [dir_watcher.py:__init__():216] watching files in: /media/songoh/ssh3/songoh_ws/DAB Mask3D-main/wandb/run-20230530_144145-85t88zz2/files
+2023-05-30 14:41:46,376 INFO    SenderThread:3665 [sender.py:_start_run_threads():913] run started: 85t88zz2 with start time 1685425305.605435
+2023-05-30 14:41:46,376 DEBUG   SenderThread:3665 [sender.py:send():302] send: summary
+2023-05-30 14:41:46,377 INFO    SenderThread:3665 [sender.py:_save_file():1156] saving file wandb-summary.json with policy end
+2023-05-30 14:41:46,377 DEBUG   SenderThread:3665 [sender.py:send_request():316] send_request: check_version
+2023-05-30 14:41:46,488 DEBUG   HandlerThread:3665 [handler.py:handle_request():141] handle_request: run_start
+2023-05-30 14:41:46,503 DEBUG   HandlerThread:3665 [meta.py:__init__():35] meta init
+2023-05-30 14:41:46,503 DEBUG   HandlerThread:3665 [meta.py:__init__():50] meta init done
+2023-05-30 14:41:46,503 DEBUG   HandlerThread:3665 [meta.py:probe():216] probe
+2023-05-30 14:41:46,509 DEBUG   HandlerThread:3665 [git.py:repo():40] git repository is invalid
+2023-05-30 14:41:46,509 DEBUG   HandlerThread:3665 [meta.py:_save_pip():54] save pip
+2023-05-30 14:41:46,510 DEBUG   HandlerThread:3665 [meta.py:_save_pip():68] save pip done
+2023-05-30 14:41:46,510 DEBUG   HandlerThread:3665 [meta.py:_save_conda():75] save conda
+2023-05-30 14:41:47,379 INFO    Thread-12 :3665 [dir_watcher.py:_on_file_created():275] file/dir created: /media/songoh/ssh3/songoh_ws/DAB Mask3D-main/wandb/run-20230530_144145-85t88zz2/files/wandb-summary.json
+2023-05-30 14:41:47,379 INFO    Thread-12 :3665 [dir_watcher.py:_on_file_created():275] file/dir created: /media/songoh/ssh3/songoh_ws/DAB Mask3D-main/wandb/run-20230530_144145-85t88zz2/files/requirements.txt
+2023-05-30 14:41:47,380 INFO    Thread-12 :3665 [dir_watcher.py:_on_file_created():275] file/dir created: /media/songoh/ssh3/songoh_ws/DAB Mask3D-main/wandb/run-20230530_144145-85t88zz2/files/conda-environment.yaml
+2023-05-30 14:41:49,364 DEBUG   HandlerThread:3665 [meta.py:_save_conda():85] save conda done
+2023-05-30 14:41:49,364 DEBUG   HandlerThread:3665 [meta.py:probe():254] probe done
+2023-05-30 14:41:49,379 INFO    Thread-12 :3665 [dir_watcher.py:_on_file_modified():292] file/dir modified: /media/songoh/ssh3/songoh_ws/DAB Mask3D-main/wandb/run-20230530_144145-85t88zz2/files/conda-environment.yaml
+2023-05-30 14:41:49,380 INFO    Thread-12 :3665 [dir_watcher.py:_on_file_created():275] file/dir created: /media/songoh/ssh3/songoh_ws/DAB Mask3D-main/wandb/run-20230530_144145-85t88zz2/files/wandb-metadata.json
+2023-05-30 14:41:49,411 DEBUG   SenderThread:3665 [sender.py:send():302] send: files
+2023-05-30 14:41:49,411 INFO    SenderThread:3665 [sender.py:_save_file():1156] saving file wandb-metadata.json with policy now
+2023-05-30 14:41:49,420 DEBUG   HandlerThread:3665 [handler.py:handle_request():141] handle_request: stop_status
+2023-05-30 14:41:49,420 DEBUG   SenderThread:3665 [sender.py:send_request():316] send_request: stop_status
+2023-05-30 14:41:49,682 DEBUG   SenderThread:3665 [sender.py:send():302] send: telemetry
+2023-05-30 14:41:49,683 DEBUG   SenderThread:3665 [sender.py:send():302] send: telemetry
+2023-05-30 14:41:49,863 DEBUG   SenderThread:3665 [sender.py:send():302] send: telemetry
+2023-05-30 14:41:50,172 DEBUG   SenderThread:3665 [sender.py:send():302] send: telemetry
+2023-05-30 14:41:50,177 DEBUG   SenderThread:3665 [sender.py:send():302] send: telemetry
+2023-05-30 14:41:50,183 INFO    Thread-16 :3665 [upload_job.py:push():138] Uploaded file /tmp/tmpx_v3u3zuwandb/fjszob08-wandb-metadata.json
+2023-05-30 14:41:50,380 INFO    Thread-12 :3665 [dir_watcher.py:_on_file_created():275] file/dir created: /media/songoh/ssh3/songoh_ws/DAB Mask3D-main/wandb/run-20230530_144145-85t88zz2/files/output.log
+2023-05-30 14:41:50,539 DEBUG   SenderThread:3665 [sender.py:send():302] send: telemetry
+2023-05-30 14:41:50,837 DEBUG   SenderThread:3665 [sender.py:send():302] send: telemetry
+2023-05-30 14:41:51,382 DEBUG   SenderThread:3665 [sender.py:send():302] send: config
+2023-05-30 14:41:52,155 DEBUG   SenderThread:3665 [sender.py:send():302] send: telemetry
+2023-05-30 14:41:52,383 INFO    Thread-12 :3665 [dir_watcher.py:_on_file_modified():292] file/dir modified: /media/songoh/ssh3/songoh_ws/DAB Mask3D-main/wandb/run-20230530_144145-85t88zz2/files/output.log
+2023-05-30 14:41:52,991 DEBUG   SenderThread:3665 [sender.py:send():302] send: telemetry
+2023-05-30 14:41:53,384 INFO    Thread-12 :3665 [dir_watcher.py:_on_file_modified():292] file/dir modified: /media/songoh/ssh3/songoh_ws/DAB Mask3D-main/wandb/run-20230530_144145-85t88zz2/files/output.log
+2023-05-30 14:41:54,390 INFO    Thread-12 :3665 [dir_watcher.py:_on_file_modified():292] file/dir modified: /media/songoh/ssh3/songoh_ws/DAB Mask3D-main/wandb/run-20230530_144145-85t88zz2/files/output.log
+2023-05-30 14:41:57,941 DEBUG   SenderThread:3665 [sender.py:send():302] send: config
+2023-05-30 14:41:59,393 INFO    Thread-12 :3665 [dir_watcher.py:_on_file_modified():292] file/dir modified: /media/songoh/ssh3/songoh_ws/DAB Mask3D-main/wandb/run-20230530_144145-85t88zz2/files/output.log
+2023-05-30 14:42:00,103 DEBUG   HandlerThread:3665 [handler.py:handle_request():141] handle_request: poll_exit
+2023-05-30 14:42:00,104 DEBUG   SenderThread:3665 [sender.py:send():302] send: exit
+2023-05-30 14:42:00,105 INFO    SenderThread:3665 [sender.py:send_exit():438] handling exit code: 1
+2023-05-30 14:42:00,105 INFO    SenderThread:3665 [sender.py:send_exit():440] handling runtime: 13
+2023-05-30 14:42:00,106 INFO    SenderThread:3665 [sender.py:_save_file():1156] saving file wandb-summary.json with policy end
+2023-05-30 14:42:00,106 INFO    SenderThread:3665 [sender.py:send_exit():446] send defer
+2023-05-30 14:42:00,106 DEBUG   SenderThread:3665 [sender.py:send_request():316] send_request: poll_exit
+2023-05-30 14:42:00,107 DEBUG   HandlerThread:3665 [handler.py:handle_request():141] handle_request: defer
+2023-05-30 14:42:00,107 INFO    HandlerThread:3665 [handler.py:handle_request_defer():164] handle defer: 0
+2023-05-30 14:42:00,108 DEBUG   SenderThread:3665 [sender.py:send_request():316] send_request: defer
+2023-05-30 14:42:00,108 INFO    SenderThread:3665 [sender.py:send_request_defer():455] handle sender defer: 0
+2023-05-30 14:42:00,108 INFO    SenderThread:3665 [sender.py:transition_state():459] send defer: 1
+2023-05-30 14:42:00,108 DEBUG   HandlerThread:3665 [handler.py:handle_request():141] handle_request: defer
+2023-05-30 14:42:00,108 INFO    HandlerThread:3665 [handler.py:handle_request_defer():164] handle defer: 1
+2023-05-30 14:42:00,209 DEBUG   SenderThread:3665 [sender.py:send_request():316] send_request: defer
+2023-05-30 14:42:00,209 INFO    SenderThread:3665 [sender.py:send_request_defer():455] handle sender defer: 1
+2023-05-30 14:42:00,210 INFO    SenderThread:3665 [sender.py:transition_state():459] send defer: 2
+2023-05-30 14:42:00,210 DEBUG   HandlerThread:3665 [handler.py:handle_request():141] handle_request: poll_exit
+2023-05-30 14:42:00,210 DEBUG   SenderThread:3665 [sender.py:send():302] send: stats
+2023-05-30 14:42:00,211 DEBUG   HandlerThread:3665 [handler.py:handle_request():141] handle_request: defer
+2023-05-30 14:42:00,211 DEBUG   SenderThread:3665 [sender.py:send_request():316] send_request: poll_exit
+2023-05-30 14:42:00,212 INFO    HandlerThread:3665 [handler.py:handle_request_defer():164] handle defer: 2
+2023-05-30 14:42:00,212 DEBUG   SenderThread:3665 [sender.py:send_request():316] send_request: defer
+2023-05-30 14:42:00,213 INFO    SenderThread:3665 [sender.py:send_request_defer():455] handle sender defer: 2
+2023-05-30 14:42:00,213 INFO    SenderThread:3665 [sender.py:transition_state():459] send defer: 3
+2023-05-30 14:42:00,213 DEBUG   HandlerThread:3665 [handler.py:handle_request():141] handle_request: defer
+2023-05-30 14:42:00,213 INFO    HandlerThread:3665 [handler.py:handle_request_defer():164] handle defer: 3
+2023-05-30 14:42:00,214 DEBUG   SenderThread:3665 [sender.py:send_request():316] send_request: defer
+2023-05-30 14:42:00,214 INFO    SenderThread:3665 [sender.py:send_request_defer():455] handle sender defer: 3
+2023-05-30 14:42:00,214 INFO    SenderThread:3665 [sender.py:transition_state():459] send defer: 4
+2023-05-30 14:42:00,214 DEBUG   HandlerThread:3665 [handler.py:handle_request():141] handle_request: defer
+2023-05-30 14:42:00,214 INFO    HandlerThread:3665 [handler.py:handle_request_defer():164] handle defer: 4
+2023-05-30 14:42:00,214 DEBUG   SenderThread:3665 [sender.py:send():302] send: summary
+2023-05-30 14:42:00,215 INFO    SenderThread:3665 [sender.py:_save_file():1156] saving file wandb-summary.json with policy end
+2023-05-30 14:42:00,215 DEBUG   SenderThread:3665 [sender.py:send_request():316] send_request: defer
+2023-05-30 14:42:00,215 INFO    SenderThread:3665 [sender.py:send_request_defer():455] handle sender defer: 4
+2023-05-30 14:42:00,215 INFO    SenderThread:3665 [sender.py:transition_state():459] send defer: 5
+2023-05-30 14:42:00,216 DEBUG   HandlerThread:3665 [handler.py:handle_request():141] handle_request: defer
+2023-05-30 14:42:00,216 INFO    HandlerThread:3665 [handler.py:handle_request_defer():164] handle defer: 5
+2023-05-30 14:42:00,216 DEBUG   SenderThread:3665 [sender.py:send_request():316] send_request: defer
+2023-05-30 14:42:00,216 INFO    SenderThread:3665 [sender.py:send_request_defer():455] handle sender defer: 5
+2023-05-30 14:42:00,313 DEBUG   HandlerThread:3665 [handler.py:handle_request():141] handle_request: poll_exit
+2023-05-30 14:42:00,393 INFO    Thread-12 :3665 [dir_watcher.py:_on_file_modified():292] file/dir modified: /media/songoh/ssh3/songoh_ws/DAB Mask3D-main/wandb/run-20230530_144145-85t88zz2/files/wandb-summary.json
+2023-05-30 14:42:01,110 INFO    SenderThread:3665 [sender.py:transition_state():459] send defer: 6
+2023-05-30 14:42:01,110 DEBUG   SenderThread:3665 [sender.py:send_request():316] send_request: poll_exit
+2023-05-30 14:42:01,111 DEBUG   HandlerThread:3665 [handler.py:handle_request():141] handle_request: defer
+2023-05-30 14:42:01,111 INFO    HandlerThread:3665 [handler.py:handle_request_defer():164] handle defer: 6
+2023-05-30 14:42:01,112 DEBUG   SenderThread:3665 [sender.py:send_request():316] send_request: defer
+2023-05-30 14:42:01,112 INFO    SenderThread:3665 [sender.py:send_request_defer():455] handle sender defer: 6
+2023-05-30 14:42:01,213 DEBUG   HandlerThread:3665 [handler.py:handle_request():141] handle_request: poll_exit
+2023-05-30 14:42:01,394 INFO    Thread-12 :3665 [dir_watcher.py:_on_file_modified():292] file/dir modified: /media/songoh/ssh3/songoh_ws/DAB Mask3D-main/wandb/run-20230530_144145-85t88zz2/files/config.yaml
+2023-05-30 14:42:03,337 INFO    SenderThread:3665 [sender.py:transition_state():459] send defer: 7
+2023-05-30 14:42:03,337 DEBUG   SenderThread:3665 [sender.py:send_request():316] send_request: poll_exit
+2023-05-30 14:42:03,339 DEBUG   HandlerThread:3665 [handler.py:handle_request():141] handle_request: defer
+2023-05-30 14:42:03,339 INFO    HandlerThread:3665 [handler.py:handle_request_defer():164] handle defer: 7
+2023-05-30 14:42:03,340 DEBUG   SenderThread:3665 [sender.py:send_request():316] send_request: defer
+2023-05-30 14:42:03,340 INFO    SenderThread:3665 [sender.py:send_request_defer():455] handle sender defer: 7
+2023-05-30 14:42:03,340 INFO    SenderThread:3665 [dir_watcher.py:finish():362] shutting down directory watcher
+2023-05-30 14:42:03,395 INFO    Thread-12 :3665 [dir_watcher.py:_on_file_modified():292] file/dir modified: /media/songoh/ssh3/songoh_ws/DAB Mask3D-main/wandb/run-20230530_144145-85t88zz2/files/output.log
+2023-05-30 14:42:03,396 INFO    SenderThread:3665 [dir_watcher.py:finish():392] scan: /media/songoh/ssh3/songoh_ws/DAB Mask3D-main/wandb/run-20230530_144145-85t88zz2/files
+2023-05-30 14:42:03,403 INFO    SenderThread:3665 [dir_watcher.py:finish():406] scan save: /media/songoh/ssh3/songoh_ws/DAB Mask3D-main/wandb/run-20230530_144145-85t88zz2/files/config.yaml config.yaml
+2023-05-30 14:42:03,403 INFO    SenderThread:3665 [dir_watcher.py:finish():406] scan save: /media/songoh/ssh3/songoh_ws/DAB Mask3D-main/wandb/run-20230530_144145-85t88zz2/files/wandb-metadata.json wandb-metadata.json
+2023-05-30 14:42:03,404 INFO    SenderThread:3665 [dir_watcher.py:finish():406] scan save: /media/songoh/ssh3/songoh_ws/DAB Mask3D-main/wandb/run-20230530_144145-85t88zz2/files/requirements.txt requirements.txt
+2023-05-30 14:42:03,404 INFO    SenderThread:3665 [dir_watcher.py:finish():406] scan save: /media/songoh/ssh3/songoh_ws/DAB Mask3D-main/wandb/run-20230530_144145-85t88zz2/files/output.log output.log
+2023-05-30 14:42:03,410 INFO    SenderThread:3665 [dir_watcher.py:finish():406] scan save: /media/songoh/ssh3/songoh_ws/DAB Mask3D-main/wandb/run-20230530_144145-85t88zz2/files/wandb-summary.json wandb-summary.json
+2023-05-30 14:42:03,417 INFO    SenderThread:3665 [dir_watcher.py:finish():406] scan save: /media/songoh/ssh3/songoh_ws/DAB Mask3D-main/wandb/run-20230530_144145-85t88zz2/files/conda-environment.yaml conda-environment.yaml
+2023-05-30 14:42:03,428 INFO    SenderThread:3665 [sender.py:transition_state():459] send defer: 8
+2023-05-30 14:42:03,430 DEBUG   HandlerThread:3665 [handler.py:handle_request():141] handle_request: defer
+2023-05-30 14:42:03,437 INFO    HandlerThread:3665 [handler.py:handle_request_defer():164] handle defer: 8
+2023-05-30 14:42:03,437 DEBUG   SenderThread:3665 [sender.py:send_request():316] send_request: defer
+2023-05-30 14:42:03,438 INFO    SenderThread:3665 [sender.py:send_request_defer():455] handle sender defer: 8
+2023-05-30 14:42:03,438 INFO    SenderThread:3665 [file_pusher.py:finish():171] shutting down file pusher
+2023-05-30 14:42:03,442 DEBUG   HandlerThread:3665 [handler.py:handle_request():141] handle_request: poll_exit
+2023-05-30 14:42:03,442 DEBUG   SenderThread:3665 [sender.py:send_request():316] send_request: poll_exit
+2023-05-30 14:42:03,545 DEBUG   HandlerThread:3665 [handler.py:handle_request():141] handle_request: poll_exit
+2023-05-30 14:42:03,545 DEBUG   SenderThread:3665 [sender.py:send_request():316] send_request: poll_exit
+2023-05-30 14:42:03,647 DEBUG   HandlerThread:3665 [handler.py:handle_request():141] handle_request: poll_exit
+2023-05-30 14:42:03,648 DEBUG   SenderThread:3665 [sender.py:send_request():316] send_request: poll_exit
+2023-05-30 14:42:03,750 DEBUG   HandlerThread:3665 [handler.py:handle_request():141] handle_request: poll_exit
+2023-05-30 14:42:03,751 DEBUG   SenderThread:3665 [sender.py:send_request():316] send_request: poll_exit
+2023-05-30 14:42:03,853 DEBUG   HandlerThread:3665 [handler.py:handle_request():141] handle_request: poll_exit
+2023-05-30 14:42:03,853 DEBUG   SenderThread:3665 [sender.py:send_request():316] send_request: poll_exit
+2023-05-30 14:42:03,955 DEBUG   HandlerThread:3665 [handler.py:handle_request():141] handle_request: poll_exit
+2023-05-30 14:42:03,955 DEBUG   SenderThread:3665 [sender.py:send_request():316] send_request: poll_exit
+2023-05-30 14:42:04,057 DEBUG   HandlerThread:3665 [handler.py:handle_request():141] handle_request: poll_exit
+2023-05-30 14:42:04,058 DEBUG   SenderThread:3665 [sender.py:send_request():316] send_request: poll_exit
+2023-05-30 14:42:04,073 INFO    Thread-19 :3665 [upload_job.py:push():138] Uploaded file /media/songoh/ssh3/songoh_ws/DAB Mask3D-main/wandb/run-20230530_144145-85t88zz2/files/output.log
+2023-05-30 14:42:04,082 INFO    Thread-18 :3665 [upload_job.py:push():138] Uploaded file /media/songoh/ssh3/songoh_ws/DAB Mask3D-main/wandb/run-20230530_144145-85t88zz2/files/requirements.txt
+2023-05-30 14:42:04,098 INFO    Thread-21 :3665 [upload_job.py:push():138] Uploaded file /media/songoh/ssh3/songoh_ws/DAB Mask3D-main/wandb/run-20230530_144145-85t88zz2/files/conda-environment.yaml
+2023-05-30 14:42:04,145 INFO    Thread-17 :3665 [upload_job.py:push():138] Uploaded file /media/songoh/ssh3/songoh_ws/DAB Mask3D-main/wandb/run-20230530_144145-85t88zz2/files/config.yaml
+2023-05-30 14:42:04,160 DEBUG   HandlerThread:3665 [handler.py:handle_request():141] handle_request: poll_exit
+2023-05-30 14:42:04,160 DEBUG   SenderThread:3665 [sender.py:send_request():316] send_request: poll_exit
+2023-05-30 14:42:04,197 INFO    Thread-20 :3665 [upload_job.py:push():138] Uploaded file /media/songoh/ssh3/songoh_ws/DAB Mask3D-main/wandb/run-20230530_144145-85t88zz2/files/wandb-summary.json
+2023-05-30 14:42:04,263 DEBUG   HandlerThread:3665 [handler.py:handle_request():141] handle_request: poll_exit
+2023-05-30 14:42:04,263 DEBUG   SenderThread:3665 [sender.py:send_request():316] send_request: poll_exit
+2023-05-30 14:42:04,365 DEBUG   HandlerThread:3665 [handler.py:handle_request():141] handle_request: poll_exit
+2023-05-30 14:42:04,365 DEBUG   SenderThread:3665 [sender.py:send_request():316] send_request: poll_exit
+2023-05-30 14:42:04,398 INFO    Thread-11 (_thread_body):3665 [sender.py:transition_state():459] send defer: 9
+2023-05-30 14:42:04,399 DEBUG   HandlerThread:3665 [handler.py:handle_request():141] handle_request: defer
+2023-05-30 14:42:04,399 INFO    HandlerThread:3665 [handler.py:handle_request_defer():164] handle defer: 9
+2023-05-30 14:42:04,399 DEBUG   SenderThread:3665 [sender.py:send_request():316] send_request: defer
+2023-05-30 14:42:04,399 INFO    SenderThread:3665 [sender.py:send_request_defer():455] handle sender defer: 9
+2023-05-30 14:42:04,468 DEBUG   HandlerThread:3665 [handler.py:handle_request():141] handle_request: poll_exit
+2023-05-30 14:42:05,181 INFO    SenderThread:3665 [sender.py:transition_state():459] send defer: 10
+2023-05-30 14:42:05,181 DEBUG   SenderThread:3665 [sender.py:send_request():316] send_request: poll_exit
+2023-05-30 14:42:05,182 DEBUG   HandlerThread:3665 [handler.py:handle_request():141] handle_request: defer
+2023-05-30 14:42:05,182 INFO    HandlerThread:3665 [handler.py:handle_request_defer():164] handle defer: 10
+2023-05-30 14:42:05,183 DEBUG   SenderThread:3665 [sender.py:send_request():316] send_request: defer
+2023-05-30 14:42:05,183 INFO    SenderThread:3665 [sender.py:send_request_defer():455] handle sender defer: 10
+2023-05-30 14:42:05,183 INFO    SenderThread:3665 [sender.py:transition_state():459] send defer: 11
+2023-05-30 14:42:05,184 DEBUG   HandlerThread:3665 [handler.py:handle_request():141] handle_request: defer
+2023-05-30 14:42:05,185 DEBUG   SenderThread:3665 [sender.py:send():302] send: final
+2023-05-30 14:42:05,185 INFO    HandlerThread:3665 [handler.py:handle_request_defer():164] handle defer: 11
+2023-05-30 14:42:05,185 DEBUG   SenderThread:3665 [sender.py:send():302] send: footer
+2023-05-30 14:42:05,185 DEBUG   SenderThread:3665 [sender.py:send_request():316] send_request: defer
+2023-05-30 14:42:05,185 INFO    SenderThread:3665 [sender.py:send_request_defer():455] handle sender defer: 11
+2023-05-30 14:42:05,284 DEBUG   HandlerThread:3665 [handler.py:handle_request():141] handle_request: poll_exit
+2023-05-30 14:42:05,284 DEBUG   SenderThread:3665 [sender.py:send_request():316] send_request: poll_exit
+2023-05-30 14:42:05,285 INFO    SenderThread:3665 [file_pusher.py:join():176] waiting for file pusher
+2023-05-30 14:42:05,963 DEBUG   HandlerThread:3665 [handler.py:handle_request():141] handle_request: sampled_history
+2023-05-30 14:42:05,964 DEBUG   HandlerThread:3665 [handler.py:handle_request():141] handle_request: get_summary
+2023-05-30 14:42:05,965 INFO    MainThread:3665 [wandb_run.py:_footer_history_summary_info():3305] rendering history
+2023-05-30 14:42:05,965 INFO    MainThread:3665 [wandb_run.py:_footer_history_summary_info():3337] rendering summary
+2023-05-30 14:42:05,965 INFO    MainThread:3665 [wandb_run.py:_footer_sync_info():3261] logging synced files
+2023-05-30 14:42:05,966 DEBUG   HandlerThread:3665 [handler.py:handle_request():141] handle_request: shutdown
+2023-05-30 14:42:05,966 INFO    HandlerThread:3665 [handler.py:finish():810] shutting down handler
+2023-05-30 14:42:06,185 INFO    WriterThread:3665 [datastore.py:close():279] close: /media/songoh/ssh3/songoh_ws/DAB Mask3D-main/wandb/run-20230530_144145-85t88zz2/run-85t88zz2.wandb
+2023-05-30 14:42:06,861 INFO    SenderThread:3665 [sender.py:finish():1312] shutting down sender
+2023-05-30 14:42:06,861 INFO    SenderThread:3665 [file_pusher.py:finish():171] shutting down file pusher
+2023-05-30 14:42:06,861 INFO    SenderThread:3665 [file_pusher.py:join():176] waiting for file pusher
+2023-05-30 14:42:06,969 INFO    MainThread:3665 [internal.py:handle_exit():80] Internal process exited

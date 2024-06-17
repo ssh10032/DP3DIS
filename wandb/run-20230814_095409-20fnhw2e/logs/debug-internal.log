@@ -1,0 +1,172 @@
+2023-08-14 09:54:09,946 INFO    StreamThr :13553 [internal.py:wandb_internal():90] W&B internal server running at pid: 13553, started at: 2023-08-14 09:54:09.945944
+2023-08-14 09:54:09,949 DEBUG   HandlerThread:13553 [handler.py:handle_request():141] handle_request: status
+2023-08-14 09:54:09,951 DEBUG   SenderThread:13553 [sender.py:send_request():316] send_request: status
+2023-08-14 09:54:09,954 DEBUG   SenderThread:13553 [sender.py:send():302] send: header
+2023-08-14 09:54:09,954 INFO    WriterThread:13553 [datastore.py:open_for_write():75] open: /media/songoh/ssh3/songoh_ws/Mask CDN-main1/wandb/run-20230814_095409-20fnhw2e/run-20fnhw2e.wandb
+2023-08-14 09:54:09,954 DEBUG   SenderThread:13553 [sender.py:send():302] send: run
+2023-08-14 09:54:10,518 DEBUG   HandlerThread:13553 [handler.py:handle_request():141] handle_request: check_version
+2023-08-14 09:54:10,526 INFO    SenderThread:13553 [dir_watcher.py:__init__():216] watching files in: /media/songoh/ssh3/songoh_ws/Mask CDN-main1/wandb/run-20230814_095409-20fnhw2e/files
+2023-08-14 09:54:10,526 INFO    SenderThread:13553 [sender.py:_start_run_threads():913] run started: 20fnhw2e with start time 1691974449.889458
+2023-08-14 09:54:10,526 DEBUG   SenderThread:13553 [sender.py:send():302] send: summary
+2023-08-14 09:54:10,527 INFO    SenderThread:13553 [sender.py:_save_file():1156] saving file wandb-summary.json with policy end
+2023-08-14 09:54:10,527 DEBUG   SenderThread:13553 [sender.py:send_request():316] send_request: check_version
+2023-08-14 09:54:10,603 DEBUG   HandlerThread:13553 [handler.py:handle_request():141] handle_request: run_start
+2023-08-14 09:54:10,617 DEBUG   HandlerThread:13553 [meta.py:__init__():35] meta init
+2023-08-14 09:54:10,618 DEBUG   HandlerThread:13553 [meta.py:__init__():50] meta init done
+2023-08-14 09:54:10,618 DEBUG   HandlerThread:13553 [meta.py:probe():216] probe
+2023-08-14 09:54:10,624 DEBUG   HandlerThread:13553 [git.py:repo():40] git repository is invalid
+2023-08-14 09:54:10,624 DEBUG   HandlerThread:13553 [meta.py:_save_pip():54] save pip
+2023-08-14 09:54:10,625 DEBUG   HandlerThread:13553 [meta.py:_save_pip():68] save pip done
+2023-08-14 09:54:10,625 DEBUG   HandlerThread:13553 [meta.py:_save_conda():75] save conda
+2023-08-14 09:54:11,529 INFO    Thread-12 :13553 [dir_watcher.py:_on_file_created():275] file/dir created: /media/songoh/ssh3/songoh_ws/Mask CDN-main1/wandb/run-20230814_095409-20fnhw2e/files/wandb-summary.json
+2023-08-14 09:54:11,530 INFO    Thread-12 :13553 [dir_watcher.py:_on_file_created():275] file/dir created: /media/songoh/ssh3/songoh_ws/Mask CDN-main1/wandb/run-20230814_095409-20fnhw2e/files/requirements.txt
+2023-08-14 09:54:11,530 INFO    Thread-12 :13553 [dir_watcher.py:_on_file_created():275] file/dir created: /media/songoh/ssh3/songoh_ws/Mask CDN-main1/wandb/run-20230814_095409-20fnhw2e/files/conda-environment.yaml
+2023-08-14 09:54:13,527 INFO    Thread-12 :13553 [dir_watcher.py:_on_file_modified():292] file/dir modified: /media/songoh/ssh3/songoh_ws/Mask CDN-main1/wandb/run-20230814_095409-20fnhw2e/files/conda-environment.yaml
+2023-08-14 09:54:13,539 DEBUG   HandlerThread:13553 [meta.py:_save_conda():85] save conda done
+2023-08-14 09:54:13,539 DEBUG   HandlerThread:13553 [meta.py:probe():254] probe done
+2023-08-14 09:54:13,583 DEBUG   SenderThread:13553 [sender.py:send():302] send: files
+2023-08-14 09:54:13,583 INFO    SenderThread:13553 [sender.py:_save_file():1156] saving file wandb-metadata.json with policy now
+2023-08-14 09:54:13,592 DEBUG   HandlerThread:13553 [handler.py:handle_request():141] handle_request: stop_status
+2023-08-14 09:54:13,592 DEBUG   SenderThread:13553 [sender.py:send_request():316] send_request: stop_status
+2023-08-14 09:54:13,848 DEBUG   SenderThread:13553 [sender.py:send():302] send: telemetry
+2023-08-14 09:54:13,849 DEBUG   SenderThread:13553 [sender.py:send():302] send: telemetry
+2023-08-14 09:54:14,047 DEBUG   SenderThread:13553 [sender.py:send():302] send: telemetry
+2023-08-14 09:54:14,295 INFO    Thread-16 :13553 [upload_job.py:push():138] Uploaded file /tmp/tmp5fmtk8anwandb/28snkf9m-wandb-metadata.json
+2023-08-14 09:54:14,354 DEBUG   SenderThread:13553 [sender.py:send():302] send: telemetry
+2023-08-14 09:54:14,358 DEBUG   SenderThread:13553 [sender.py:send():302] send: telemetry
+2023-08-14 09:54:14,528 INFO    Thread-12 :13553 [dir_watcher.py:_on_file_created():275] file/dir created: /media/songoh/ssh3/songoh_ws/Mask CDN-main1/wandb/run-20230814_095409-20fnhw2e/files/wandb-metadata.json
+2023-08-14 09:54:14,727 DEBUG   SenderThread:13553 [sender.py:send():302] send: telemetry
+2023-08-14 09:54:15,033 DEBUG   SenderThread:13553 [sender.py:send():302] send: telemetry
+2023-08-14 09:54:15,528 INFO    Thread-12 :13553 [dir_watcher.py:_on_file_created():275] file/dir created: /media/songoh/ssh3/songoh_ws/Mask CDN-main1/wandb/run-20230814_095409-20fnhw2e/files/output.log
+2023-08-14 09:54:15,574 DEBUG   SenderThread:13553 [sender.py:send():302] send: config
+2023-08-14 09:54:16,378 DEBUG   SenderThread:13553 [sender.py:send():302] send: telemetry
+2023-08-14 09:54:17,254 DEBUG   SenderThread:13553 [sender.py:send():302] send: telemetry
+2023-08-14 09:54:17,529 INFO    Thread-12 :13553 [dir_watcher.py:_on_file_modified():292] file/dir modified: /media/songoh/ssh3/songoh_ws/Mask CDN-main1/wandb/run-20230814_095409-20fnhw2e/files/output.log
+2023-08-14 09:54:19,530 INFO    Thread-12 :13553 [dir_watcher.py:_on_file_modified():292] file/dir modified: /media/songoh/ssh3/songoh_ws/Mask CDN-main1/wandb/run-20230814_095409-20fnhw2e/files/output.log
+2023-08-14 09:54:20,934 DEBUG   SenderThread:13553 [sender.py:send():302] send: exit
+2023-08-14 09:54:20,935 DEBUG   HandlerThread:13553 [handler.py:handle_request():141] handle_request: poll_exit
+2023-08-14 09:54:20,935 INFO    SenderThread:13553 [sender.py:send_exit():438] handling exit code: 1
+2023-08-14 09:54:20,936 INFO    SenderThread:13553 [sender.py:send_exit():440] handling runtime: 10
+2023-08-14 09:54:20,938 INFO    SenderThread:13553 [sender.py:_save_file():1156] saving file wandb-summary.json with policy end
+2023-08-14 09:54:20,938 INFO    SenderThread:13553 [sender.py:send_exit():446] send defer
+2023-08-14 09:54:20,939 DEBUG   SenderThread:13553 [sender.py:send_request():316] send_request: poll_exit
+2023-08-14 09:54:20,939 DEBUG   HandlerThread:13553 [handler.py:handle_request():141] handle_request: defer
+2023-08-14 09:54:20,940 INFO    HandlerThread:13553 [handler.py:handle_request_defer():164] handle defer: 0
+2023-08-14 09:54:20,940 DEBUG   SenderThread:13553 [sender.py:send_request():316] send_request: defer
+2023-08-14 09:54:20,940 INFO    SenderThread:13553 [sender.py:send_request_defer():455] handle sender defer: 0
+2023-08-14 09:54:20,940 INFO    SenderThread:13553 [sender.py:transition_state():459] send defer: 1
+2023-08-14 09:54:20,940 DEBUG   HandlerThread:13553 [handler.py:handle_request():141] handle_request: defer
+2023-08-14 09:54:20,940 INFO    HandlerThread:13553 [handler.py:handle_request_defer():164] handle defer: 1
+2023-08-14 09:54:21,043 DEBUG   HandlerThread:13553 [handler.py:handle_request():141] handle_request: poll_exit
+2023-08-14 09:54:21,043 DEBUG   SenderThread:13553 [sender.py:send_request():316] send_request: defer
+2023-08-14 09:54:21,044 INFO    SenderThread:13553 [sender.py:send_request_defer():455] handle sender defer: 1
+2023-08-14 09:54:21,044 INFO    SenderThread:13553 [sender.py:transition_state():459] send defer: 2
+2023-08-14 09:54:21,044 DEBUG   SenderThread:13553 [sender.py:send_request():316] send_request: poll_exit
+2023-08-14 09:54:21,044 DEBUG   SenderThread:13553 [sender.py:send():302] send: stats
+2023-08-14 09:54:21,045 DEBUG   HandlerThread:13553 [handler.py:handle_request():141] handle_request: defer
+2023-08-14 09:54:21,046 INFO    HandlerThread:13553 [handler.py:handle_request_defer():164] handle defer: 2
+2023-08-14 09:54:21,046 DEBUG   SenderThread:13553 [sender.py:send_request():316] send_request: defer
+2023-08-14 09:54:21,046 INFO    SenderThread:13553 [sender.py:send_request_defer():455] handle sender defer: 2
+2023-08-14 09:54:21,046 INFO    SenderThread:13553 [sender.py:transition_state():459] send defer: 3
+2023-08-14 09:54:21,047 DEBUG   HandlerThread:13553 [handler.py:handle_request():141] handle_request: defer
+2023-08-14 09:54:21,047 INFO    HandlerThread:13553 [handler.py:handle_request_defer():164] handle defer: 3
+2023-08-14 09:54:21,047 DEBUG   SenderThread:13553 [sender.py:send_request():316] send_request: defer
+2023-08-14 09:54:21,047 INFO    SenderThread:13553 [sender.py:send_request_defer():455] handle sender defer: 3
+2023-08-14 09:54:21,047 INFO    SenderThread:13553 [sender.py:transition_state():459] send defer: 4
+2023-08-14 09:54:21,047 DEBUG   HandlerThread:13553 [handler.py:handle_request():141] handle_request: defer
+2023-08-14 09:54:21,048 INFO    HandlerThread:13553 [handler.py:handle_request_defer():164] handle defer: 4
+2023-08-14 09:54:21,048 DEBUG   SenderThread:13553 [sender.py:send():302] send: summary
+2023-08-14 09:54:21,048 INFO    SenderThread:13553 [sender.py:_save_file():1156] saving file wandb-summary.json with policy end
+2023-08-14 09:54:21,048 DEBUG   SenderThread:13553 [sender.py:send_request():316] send_request: defer
+2023-08-14 09:54:21,049 INFO    SenderThread:13553 [sender.py:send_request_defer():455] handle sender defer: 4
+2023-08-14 09:54:21,049 INFO    SenderThread:13553 [sender.py:transition_state():459] send defer: 5
+2023-08-14 09:54:21,049 DEBUG   HandlerThread:13553 [handler.py:handle_request():141] handle_request: defer
+2023-08-14 09:54:21,049 INFO    HandlerThread:13553 [handler.py:handle_request_defer():164] handle defer: 5
+2023-08-14 09:54:21,049 DEBUG   SenderThread:13553 [sender.py:send_request():316] send_request: defer
+2023-08-14 09:54:21,049 INFO    SenderThread:13553 [sender.py:send_request_defer():455] handle sender defer: 5
+2023-08-14 09:54:21,147 DEBUG   HandlerThread:13553 [handler.py:handle_request():141] handle_request: poll_exit
+2023-08-14 09:54:21,376 INFO    SenderThread:13553 [sender.py:transition_state():459] send defer: 6
+2023-08-14 09:54:21,376 DEBUG   SenderThread:13553 [sender.py:send_request():316] send_request: poll_exit
+2023-08-14 09:54:21,377 DEBUG   HandlerThread:13553 [handler.py:handle_request():141] handle_request: defer
+2023-08-14 09:54:21,377 INFO    HandlerThread:13553 [handler.py:handle_request_defer():164] handle defer: 6
+2023-08-14 09:54:21,378 DEBUG   SenderThread:13553 [sender.py:send_request():316] send_request: defer
+2023-08-14 09:54:21,378 INFO    SenderThread:13553 [sender.py:send_request_defer():455] handle sender defer: 6
+2023-08-14 09:54:21,496 DEBUG   HandlerThread:13553 [handler.py:handle_request():141] handle_request: poll_exit
+2023-08-14 09:54:21,531 INFO    Thread-12 :13553 [dir_watcher.py:_on_file_modified():292] file/dir modified: /media/songoh/ssh3/songoh_ws/Mask CDN-main1/wandb/run-20230814_095409-20fnhw2e/files/wandb-summary.json
+2023-08-14 09:54:21,531 INFO    Thread-12 :13553 [dir_watcher.py:_on_file_modified():292] file/dir modified: /media/songoh/ssh3/songoh_ws/Mask CDN-main1/wandb/run-20230814_095409-20fnhw2e/files/config.yaml
+2023-08-14 09:54:23,518 INFO    SenderThread:13553 [sender.py:transition_state():459] send defer: 7
+2023-08-14 09:54:23,518 DEBUG   SenderThread:13553 [sender.py:send_request():316] send_request: poll_exit
+2023-08-14 09:54:23,518 DEBUG   HandlerThread:13553 [handler.py:handle_request():141] handle_request: defer
+2023-08-14 09:54:23,518 INFO    HandlerThread:13553 [handler.py:handle_request_defer():164] handle defer: 7
+2023-08-14 09:54:23,519 DEBUG   SenderThread:13553 [sender.py:send_request():316] send_request: defer
+2023-08-14 09:54:23,519 INFO    SenderThread:13553 [sender.py:send_request_defer():455] handle sender defer: 7
+2023-08-14 09:54:23,519 INFO    SenderThread:13553 [dir_watcher.py:finish():362] shutting down directory watcher
+2023-08-14 09:54:23,532 INFO    Thread-12 :13553 [dir_watcher.py:_on_file_modified():292] file/dir modified: /media/songoh/ssh3/songoh_ws/Mask CDN-main1/wandb/run-20230814_095409-20fnhw2e/files/output.log
+2023-08-14 09:54:23,532 INFO    SenderThread:13553 [dir_watcher.py:finish():392] scan: /media/songoh/ssh3/songoh_ws/Mask CDN-main1/wandb/run-20230814_095409-20fnhw2e/files
+2023-08-14 09:54:23,532 INFO    SenderThread:13553 [dir_watcher.py:finish():406] scan save: /media/songoh/ssh3/songoh_ws/Mask CDN-main1/wandb/run-20230814_095409-20fnhw2e/files/config.yaml config.yaml
+2023-08-14 09:54:23,532 INFO    SenderThread:13553 [dir_watcher.py:finish():406] scan save: /media/songoh/ssh3/songoh_ws/Mask CDN-main1/wandb/run-20230814_095409-20fnhw2e/files/wandb-metadata.json wandb-metadata.json
+2023-08-14 09:54:23,532 INFO    SenderThread:13553 [dir_watcher.py:finish():406] scan save: /media/songoh/ssh3/songoh_ws/Mask CDN-main1/wandb/run-20230814_095409-20fnhw2e/files/requirements.txt requirements.txt
+2023-08-14 09:54:23,533 INFO    SenderThread:13553 [dir_watcher.py:finish():406] scan save: /media/songoh/ssh3/songoh_ws/Mask CDN-main1/wandb/run-20230814_095409-20fnhw2e/files/output.log output.log
+2023-08-14 09:54:23,538 INFO    SenderThread:13553 [dir_watcher.py:finish():406] scan save: /media/songoh/ssh3/songoh_ws/Mask CDN-main1/wandb/run-20230814_095409-20fnhw2e/files/wandb-summary.json wandb-summary.json
+2023-08-14 09:54:23,538 INFO    SenderThread:13553 [dir_watcher.py:finish():406] scan save: /media/songoh/ssh3/songoh_ws/Mask CDN-main1/wandb/run-20230814_095409-20fnhw2e/files/conda-environment.yaml conda-environment.yaml
+2023-08-14 09:54:23,541 INFO    SenderThread:13553 [sender.py:transition_state():459] send defer: 8
+2023-08-14 09:54:23,549 DEBUG   HandlerThread:13553 [handler.py:handle_request():141] handle_request: defer
+2023-08-14 09:54:23,550 INFO    HandlerThread:13553 [handler.py:handle_request_defer():164] handle defer: 8
+2023-08-14 09:54:23,550 DEBUG   SenderThread:13553 [sender.py:send_request():316] send_request: defer
+2023-08-14 09:54:23,551 INFO    SenderThread:13553 [sender.py:send_request_defer():455] handle sender defer: 8
+2023-08-14 09:54:23,551 INFO    SenderThread:13553 [file_pusher.py:finish():171] shutting down file pusher
+2023-08-14 09:54:23,620 DEBUG   HandlerThread:13553 [handler.py:handle_request():141] handle_request: poll_exit
+2023-08-14 09:54:23,620 DEBUG   SenderThread:13553 [sender.py:send_request():316] send_request: poll_exit
+2023-08-14 09:54:23,722 DEBUG   HandlerThread:13553 [handler.py:handle_request():141] handle_request: poll_exit
+2023-08-14 09:54:23,722 DEBUG   SenderThread:13553 [sender.py:send_request():316] send_request: poll_exit
+2023-08-14 09:54:23,825 DEBUG   HandlerThread:13553 [handler.py:handle_request():141] handle_request: poll_exit
+2023-08-14 09:54:23,827 DEBUG   SenderThread:13553 [sender.py:send_request():316] send_request: poll_exit
+2023-08-14 09:54:23,929 DEBUG   HandlerThread:13553 [handler.py:handle_request():141] handle_request: poll_exit
+2023-08-14 09:54:23,929 DEBUG   SenderThread:13553 [sender.py:send_request():316] send_request: poll_exit
+2023-08-14 09:54:24,031 DEBUG   HandlerThread:13553 [handler.py:handle_request():141] handle_request: poll_exit
+2023-08-14 09:54:24,031 DEBUG   SenderThread:13553 [sender.py:send_request():316] send_request: poll_exit
+2023-08-14 09:54:24,115 INFO    Thread-21 :13553 [upload_job.py:push():138] Uploaded file /media/songoh/ssh3/songoh_ws/Mask CDN-main1/wandb/run-20230814_095409-20fnhw2e/files/conda-environment.yaml
+2023-08-14 09:54:24,133 DEBUG   HandlerThread:13553 [handler.py:handle_request():141] handle_request: poll_exit
+2023-08-14 09:54:24,133 DEBUG   SenderThread:13553 [sender.py:send_request():316] send_request: poll_exit
+2023-08-14 09:54:24,147 INFO    Thread-18 :13553 [upload_job.py:push():138] Uploaded file /media/songoh/ssh3/songoh_ws/Mask CDN-main1/wandb/run-20230814_095409-20fnhw2e/files/requirements.txt
+2023-08-14 09:54:24,150 INFO    Thread-17 :13553 [upload_job.py:push():138] Uploaded file /media/songoh/ssh3/songoh_ws/Mask CDN-main1/wandb/run-20230814_095409-20fnhw2e/files/config.yaml
+2023-08-14 09:54:24,152 INFO    Thread-19 :13553 [upload_job.py:push():138] Uploaded file /media/songoh/ssh3/songoh_ws/Mask CDN-main1/wandb/run-20230814_095409-20fnhw2e/files/output.log
+2023-08-14 09:54:24,210 INFO    Thread-20 :13553 [upload_job.py:push():138] Uploaded file /media/songoh/ssh3/songoh_ws/Mask CDN-main1/wandb/run-20230814_095409-20fnhw2e/files/wandb-summary.json
+2023-08-14 09:54:24,235 DEBUG   HandlerThread:13553 [handler.py:handle_request():141] handle_request: poll_exit
+2023-08-14 09:54:24,235 DEBUG   SenderThread:13553 [sender.py:send_request():316] send_request: poll_exit
+2023-08-14 09:54:24,337 DEBUG   HandlerThread:13553 [handler.py:handle_request():141] handle_request: poll_exit
+2023-08-14 09:54:24,338 DEBUG   SenderThread:13553 [sender.py:send_request():316] send_request: poll_exit
+2023-08-14 09:54:24,411 INFO    Thread-11 (_thread_body):13553 [sender.py:transition_state():459] send defer: 9
+2023-08-14 09:54:24,412 DEBUG   HandlerThread:13553 [handler.py:handle_request():141] handle_request: defer
+2023-08-14 09:54:24,412 INFO    HandlerThread:13553 [handler.py:handle_request_defer():164] handle defer: 9
+2023-08-14 09:54:24,412 DEBUG   SenderThread:13553 [sender.py:send_request():316] send_request: defer
+2023-08-14 09:54:24,413 INFO    SenderThread:13553 [sender.py:send_request_defer():455] handle sender defer: 9
+2023-08-14 09:54:24,439 DEBUG   HandlerThread:13553 [handler.py:handle_request():141] handle_request: poll_exit
+2023-08-14 09:54:24,791 INFO    SenderThread:13553 [sender.py:transition_state():459] send defer: 10
+2023-08-14 09:54:24,792 DEBUG   SenderThread:13553 [sender.py:send_request():316] send_request: poll_exit
+2023-08-14 09:54:24,793 DEBUG   HandlerThread:13553 [handler.py:handle_request():141] handle_request: defer
+2023-08-14 09:54:24,793 INFO    HandlerThread:13553 [handler.py:handle_request_defer():164] handle defer: 10
+2023-08-14 09:54:24,794 DEBUG   SenderThread:13553 [sender.py:send_request():316] send_request: defer
+2023-08-14 09:54:24,794 INFO    SenderThread:13553 [sender.py:send_request_defer():455] handle sender defer: 10
+2023-08-14 09:54:24,795 INFO    SenderThread:13553 [sender.py:transition_state():459] send defer: 11
+2023-08-14 09:54:24,796 DEBUG   SenderThread:13553 [sender.py:send():302] send: final
+2023-08-14 09:54:24,796 DEBUG   HandlerThread:13553 [handler.py:handle_request():141] handle_request: defer
+2023-08-14 09:54:24,796 DEBUG   SenderThread:13553 [sender.py:send():302] send: footer
+2023-08-14 09:54:24,797 INFO    HandlerThread:13553 [handler.py:handle_request_defer():164] handle defer: 11
+2023-08-14 09:54:24,797 DEBUG   SenderThread:13553 [sender.py:send_request():316] send_request: defer
+2023-08-14 09:54:24,797 INFO    SenderThread:13553 [sender.py:send_request_defer():455] handle sender defer: 11
+2023-08-14 09:54:24,895 DEBUG   HandlerThread:13553 [handler.py:handle_request():141] handle_request: poll_exit
+2023-08-14 09:54:24,896 DEBUG   SenderThread:13553 [sender.py:send_request():316] send_request: poll_exit
+2023-08-14 09:54:24,896 INFO    SenderThread:13553 [file_pusher.py:join():176] waiting for file pusher
+2023-08-14 09:54:25,445 DEBUG   HandlerThread:13553 [handler.py:handle_request():141] handle_request: sampled_history
+2023-08-14 09:54:25,446 DEBUG   HandlerThread:13553 [handler.py:handle_request():141] handle_request: get_summary
+2023-08-14 09:54:25,447 INFO    MainThread:13553 [wandb_run.py:_footer_history_summary_info():3305] rendering history
+2023-08-14 09:54:25,447 INFO    MainThread:13553 [wandb_run.py:_footer_history_summary_info():3337] rendering summary
+2023-08-14 09:54:25,447 INFO    MainThread:13553 [wandb_run.py:_footer_sync_info():3261] logging synced files
+2023-08-14 09:54:25,448 DEBUG   HandlerThread:13553 [handler.py:handle_request():141] handle_request: shutdown
+2023-08-14 09:54:25,448 INFO    HandlerThread:13553 [handler.py:finish():810] shutting down handler
+2023-08-14 09:54:25,796 INFO    WriterThread:13553 [datastore.py:close():279] close: /media/songoh/ssh3/songoh_ws/Mask CDN-main1/wandb/run-20230814_095409-20fnhw2e/run-20fnhw2e.wandb
+2023-08-14 09:54:26,343 INFO    SenderThread:13553 [sender.py:finish():1312] shutting down sender
+2023-08-14 09:54:26,344 INFO    SenderThread:13553 [file_pusher.py:finish():171] shutting down file pusher
+2023-08-14 09:54:26,344 INFO    SenderThread:13553 [file_pusher.py:join():176] waiting for file pusher
+2023-08-14 09:54:26,451 INFO    MainThread:13553 [internal.py:handle_exit():80] Internal process exited

@@ -1,0 +1,35 @@
+2023-07-31 00:19:40,200 INFO    MainThread:18296 [wandb_setup.py:_flush():76] Configure stats pid to 18296
+2023-07-31 00:19:40,201 INFO    MainThread:18296 [wandb_setup.py:_flush():76] Loading settings from /home/songoh/.config/wandb/settings
+2023-07-31 00:19:40,201 INFO    MainThread:18296 [wandb_setup.py:_flush():76] Loading settings from /media/songoh/ssh3/songoh_ws/Mask 3 DINO/wandb/settings
+2023-07-31 00:19:40,201 INFO    MainThread:18296 [wandb_setup.py:_flush():76] Loading settings from environment variables: {'_require_service': 'True'}
+2023-07-31 00:19:40,201 INFO    MainThread:18296 [wandb_setup.py:_flush():76] Inferring run settings from compute environment: {'program_relpath': 'main_instance_segmentation.py', 'program': '/media/songoh/ssh3/songoh_ws/Mask 3 DINO/main_instance_segmentation.py'}
+2023-07-31 00:19:40,202 INFO    MainThread:18296 [wandb_init.py:_log_setup():461] Logging user logs to /media/songoh/ssh3/songoh_ws/Mask 3 DINO/wandb/run-20230731_001940-2gq6fbrh/logs/debug.log
+2023-07-31 00:19:40,202 INFO    MainThread:18296 [wandb_init.py:_log_setup():462] Logging internal logs to /media/songoh/ssh3/songoh_ws/Mask 3 DINO/wandb/run-20230731_001940-2gq6fbrh/logs/debug-internal.log
+2023-07-31 00:19:40,204 INFO    MainThread:18296 [wandb_init.py:init():495] calling init triggers
+2023-07-31 00:19:40,204 INFO    MainThread:18296 [wandb_init.py:init():498] wandb.init called with sweep_config: {}
+config: {}
+2023-07-31 00:19:40,205 INFO    MainThread:18296 [wandb_init.py:init():548] starting backend
+2023-07-31 00:19:40,206 INFO    MainThread:18296 [wandb_init.py:init():552] setting up manager
+2023-07-31 00:19:40,215 INFO    MainThread:18296 [backend.py:_multiprocessing_setup():97] multiprocessing start_methods=fork,spawn,forkserver, using: spawn
+2023-07-31 00:19:40,221 INFO    MainThread:18296 [wandb_init.py:init():558] backend started and connected
+2023-07-31 00:19:40,225 INFO    MainThread:18296 [wandb_init.py:init():636] updated telemetry
+2023-07-31 00:19:40,227 INFO    MainThread:18296 [wandb_init.py:init():667] communicating run to backend with 30 second timeout
+2023-07-31 00:19:40,589 WARNING MainThread:18296 [wandb_init.py:init():1064] interrupted
+Traceback (most recent call last):
+  File "/home/songoh/miniconda3/envs/mask/lib/python3.10/site-packages/wandb/sdk/wandb_init.py", line 1043, in init
+    run = wi.init()
+  File "/home/songoh/miniconda3/envs/mask/lib/python3.10/site-packages/wandb/sdk/wandb_init.py", line 670, in init
+    run_result = backend.interface.communicate_run(
+  File "/home/songoh/miniconda3/envs/mask/lib/python3.10/site-packages/wandb/sdk/interface/interface.py", line 223, in communicate_run
+    return self._communicate_run(run, timeout=timeout)
+  File "/home/songoh/miniconda3/envs/mask/lib/python3.10/site-packages/wandb/sdk/interface/interface_shared.py", line 329, in _communicate_run
+    resp = self._communicate(req, timeout=timeout)
+  File "/home/songoh/miniconda3/envs/mask/lib/python3.10/site-packages/wandb/sdk/interface/interface_shared.py", line 231, in _communicate
+    return self._communicate_async(rec, local=local).get(timeout=timeout)
+  File "/home/songoh/miniconda3/envs/mask/lib/python3.10/site-packages/wandb/sdk/interface/router.py", line 37, in get
+    is_set = self._object_ready.wait(timeout)
+  File "/home/songoh/miniconda3/envs/mask/lib/python3.10/threading.py", line 607, in wait
+    signaled = self._cond.wait(timeout)
+  File "/home/songoh/miniconda3/envs/mask/lib/python3.10/threading.py", line 324, in wait
+    gotit = waiter.acquire(True, timeout)
+KeyboardInterrupt

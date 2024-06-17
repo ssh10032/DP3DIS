@@ -1,0 +1,78 @@
+/home/songoh/miniconda3/envs/mask/lib/python3.10/site-packages/MinkowskiEngine/__init__.py:36: UserWarning: The environment variable `OMP_NUM_THREADS` not set. MinkowskiEngine will automatically set `OMP_NUM_THREADS=16`. If you want to set `OMP_NUM_THREADS` manually, please export it on the command line before running a python script. e.g. `export OMP_NUM_THREADS=12; python your_program.py`. It is recommended to set it below 24.
+  warnings.warn(
+/home/songoh/miniconda3/envs/mask/lib/python3.10/site-packages/pytorch_lightning/utilities/seed.py:55: UserWarning: No seed found, seed set to 1237423306
+  rank_zero_warn(f"No seed found, seed set to {seed}")
+Global seed set to 1237423306
+/home/songoh/miniconda3/envs/mask/lib/python3.10/site-packages/pytorch_lightning/loggers/wandb.py:352: UserWarning: There is a wandb run already in progress and newly created instances of `WandbLogger` will reuse this run. If this is not desired, call `wandb.finish()` before instantiating `WandbLogger`.
+  rank_zero_warn(
+{'_target_': 'pytorch_lightning.loggers.WandbLogger', 'project': '${general.project_name}', 'name': '${general.experiment_name}', 'save_dir': '${general.save_dir}', 'entity': 'schult', 'resume': 'allow', 'id': '${general.experiment_name}'}
+Traceback (most recent call last):
+  File "/home/songoh/miniconda3/envs/mask/lib/python3.10/site-packages/hydra/_internal/utils.py", line 544, in _locate
+    import_module(mod)
+  File "/home/songoh/miniconda3/envs/mask/lib/python3.10/importlib/__init__.py", line 126, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+  File "<frozen importlib._bootstrap>", line 1050, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 1027, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 1006, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 688, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 883, in exec_module
+  File "<frozen importlib._bootstrap>", line 241, in _call_with_frames_removed
+  File "/media/songoh/ssh2/song_ws/T3DIS_backup/MaskDNtoBBox_GPU0/models/matcher.py", line 12, in <module>
+    from detectron2.projects.point_rend.point_features import point_sample
+  File "/home/songoh/miniconda3/envs/mask/lib/python3.10/site-packages/detectron2/projects/point_rend/__init__.py", line 3, in <module>
+    from .mask_head import PointRendMaskHead, ImplicitPointRendMaskHead
+  File "/home/songoh/miniconda3/envs/mask/lib/python3.10/site-packages/detectron2/projects/point_rend/mask_head.py", line 13, in <module>
+    from detectron2.modeling import ROI_MASK_HEAD_REGISTRY
+  File "/home/songoh/miniconda3/envs/mask/lib/python3.10/site-packages/detectron2/modeling/__init__.py", line 15, in <module>
+    from .meta_arch import (
+  File "/home/songoh/miniconda3/envs/mask/lib/python3.10/site-packages/detectron2/modeling/meta_arch/__init__.py", line 6, in <module>
+    from .panoptic_fpn import PanopticFPN
+  File "/home/songoh/miniconda3/envs/mask/lib/python3.10/site-packages/detectron2/modeling/meta_arch/panoptic_fpn.py", line 14, in <module>
+    from .rcnn import GeneralizedRCNN
+  File "/home/songoh/miniconda3/envs/mask/lib/python3.10/site-packages/detectron2/modeling/meta_arch/rcnn.py", line 9, in <module>
+    from detectron2.data.detection_utils import convert_image_to_rgb
+  File "/home/songoh/miniconda3/envs/mask/lib/python3.10/site-packages/detectron2/data/__init__.py", line 2, in <module>
+    from . import transforms  # isort:skip
+  File "/home/songoh/miniconda3/envs/mask/lib/python3.10/site-packages/detectron2/data/transforms/__init__.py", line 4, in <module>
+    from .transform import *
+  File "/home/songoh/miniconda3/envs/mask/lib/python3.10/site-packages/detectron2/data/transforms/transform.py", line 36, in <module>
+    class ExtentTransform(Transform):
+  File "/home/songoh/miniconda3/envs/mask/lib/python3.10/site-packages/detectron2/data/transforms/transform.py", line 46, in ExtentTransform
+    def __init__(self, src_rect, output_size, interp=Image.LINEAR, fill=0):
+AttributeError: module 'PIL.Image' has no attribute 'LINEAR'. Did you mean: 'BILINEAR'?
+The above exception was the direct cause of the following exception:
+Traceback (most recent call last):
+  File "/home/songoh/miniconda3/envs/mask/lib/python3.10/site-packages/hydra/utils.py", line 61, in call
+    type_or_callable = _locate(cls)
+  File "/home/songoh/miniconda3/envs/mask/lib/python3.10/site-packages/hydra/_internal/utils.py", line 546, in _locate
+    raise ImportError(
+ImportError: Encountered error: `module 'PIL.Image' has no attribute 'LINEAR'` when loading module 'models.matcher.HungarianMatcher'
+The above exception was the direct cause of the following exception:
+Traceback (most recent call last):
+  File "/home/songoh/miniconda3/envs/mask/lib/python3.10/site-packages/hydra/_internal/utils.py", line 198, in run_and_report
+    return func()
+  File "/home/songoh/miniconda3/envs/mask/lib/python3.10/site-packages/hydra/_internal/utils.py", line 347, in <lambda>
+    lambda: hydra.run(
+  File "/home/songoh/miniconda3/envs/mask/lib/python3.10/site-packages/hydra/_internal/hydra.py", line 107, in run
+    return run_job(
+  File "/home/songoh/miniconda3/envs/mask/lib/python3.10/site-packages/hydra/core/utils.py", line 128, in run_job
+    ret.return_value = task_function(task_cfg)
+  File "/media/songoh/ssh2/song_ws/T3DIS_backup/MaskDNtoBBox_GPU0/main_instance_segmentation.py", line 115, in main
+    train(cfg)
+  File "/home/songoh/miniconda3/envs/mask/lib/python3.10/site-packages/hydra/main.py", line 27, in decorated_main
+    return task_function(cfg_passthrough)
+  File "/media/songoh/ssh2/song_ws/T3DIS_backup/MaskDNtoBBox_GPU0/main_instance_segmentation.py", line 68, in train
+    cfg, model, loggers = get_parameters(cfg)
+  File "/media/songoh/ssh2/song_ws/T3DIS_backup/MaskDNtoBBox_GPU0/main_instance_segmentation.py", line 55, in get_parameters
+    model = InstanceSegmentation(cfg)
+  File "/media/songoh/ssh2/song_ws/T3DIS_backup/MaskDNtoBBox_GPU0/trainer/trainer.py", line 68, in __init__
+    matcher = hydra.utils.instantiate(config.matcher)
+  File "/home/songoh/miniconda3/envs/mask/lib/python3.10/site-packages/hydra/utils.py", line 70, in call
+    raise HydraException(f"Error calling '{cls}' : {e}") from e
+hydra.errors.HydraException: Error calling 'models.matcher.HungarianMatcher' : Encountered error: `module 'PIL.Image' has no attribute 'LINEAR'` when loading module 'models.matcher.HungarianMatcher'
+During handling of the above exception, another exception occurred:
+Traceback (most recent call last):
+  File "/home/songoh/miniconda3/envs/mask/lib/python3.10/site-packages/hydra/_internal/utils.py", line 346, in _run_hydra
+    run_and_report(
+  File "/home/songoh/miniconda3/envs/mask/lib/python3.10/site-packages/hydra/_internal/utils.py", line 267, in run_and_report
+    print_exception(etype=None, value=ex, tb=final_tb)  # type: ignore

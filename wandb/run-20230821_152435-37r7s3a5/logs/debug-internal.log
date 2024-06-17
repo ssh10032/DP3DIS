@@ -1,0 +1,78 @@
+2023-08-21 15:24:35,916 INFO    StreamThr :11032 [internal.py:wandb_internal():90] W&B internal server running at pid: 11032, started at: 2023-08-21 15:24:35.916053
+2023-08-21 15:24:35,934 DEBUG   HandlerThread:11032 [handler.py:handle_request():141] handle_request: status
+2023-08-21 15:24:35,934 DEBUG   SenderThread:11032 [sender.py:send_request():316] send_request: status
+2023-08-21 15:24:35,939 INFO    WriterThread:11032 [datastore.py:open_for_write():75] open: /media/songoh/ssh3/songoh_ws/MaskDNtoBBox_GPU0/wandb/run-20230821_152435-37r7s3a5/run-37r7s3a5.wandb
+2023-08-21 15:24:35,939 DEBUG   SenderThread:11032 [sender.py:send():302] send: header
+2023-08-21 15:24:35,939 DEBUG   SenderThread:11032 [sender.py:send():302] send: run
+2023-08-21 15:24:36,454 DEBUG   HandlerThread:11032 [handler.py:handle_request():141] handle_request: check_version
+2023-08-21 15:24:36,455 INFO    SenderThread:11032 [dir_watcher.py:__init__():216] watching files in: /media/songoh/ssh3/songoh_ws/MaskDNtoBBox_GPU0/wandb/run-20230821_152435-37r7s3a5/files
+2023-08-21 15:24:36,455 INFO    SenderThread:11032 [sender.py:_start_run_threads():913] run started: 37r7s3a5 with start time 1692599075.909783
+2023-08-21 15:24:36,455 DEBUG   SenderThread:11032 [sender.py:send():302] send: summary
+2023-08-21 15:24:36,455 INFO    SenderThread:11032 [sender.py:_save_file():1156] saving file wandb-summary.json with policy end
+2023-08-21 15:24:36,455 DEBUG   SenderThread:11032 [sender.py:send_request():316] send_request: check_version
+2023-08-21 15:24:36,555 DEBUG   HandlerThread:11032 [handler.py:handle_request():141] handle_request: run_start
+2023-08-21 15:24:36,561 DEBUG   HandlerThread:11032 [meta.py:__init__():35] meta init
+2023-08-21 15:24:36,561 DEBUG   HandlerThread:11032 [meta.py:__init__():50] meta init done
+2023-08-21 15:24:36,561 DEBUG   HandlerThread:11032 [meta.py:probe():216] probe
+2023-08-21 15:24:36,567 DEBUG   HandlerThread:11032 [git.py:repo():40] git repository is invalid
+2023-08-21 15:24:36,567 DEBUG   HandlerThread:11032 [meta.py:_save_pip():54] save pip
+2023-08-21 15:24:36,568 DEBUG   HandlerThread:11032 [meta.py:_save_pip():68] save pip done
+2023-08-21 15:24:36,568 DEBUG   HandlerThread:11032 [meta.py:_save_conda():75] save conda
+2023-08-21 15:24:37,456 INFO    Thread-12 :11032 [dir_watcher.py:_on_file_created():275] file/dir created: /media/songoh/ssh3/songoh_ws/MaskDNtoBBox_GPU0/wandb/run-20230821_152435-37r7s3a5/files/wandb-summary.json
+2023-08-21 15:24:37,456 INFO    Thread-12 :11032 [dir_watcher.py:_on_file_created():275] file/dir created: /media/songoh/ssh3/songoh_ws/MaskDNtoBBox_GPU0/wandb/run-20230821_152435-37r7s3a5/files/conda-environment.yaml
+2023-08-21 15:24:37,456 INFO    Thread-12 :11032 [dir_watcher.py:_on_file_created():275] file/dir created: /media/songoh/ssh3/songoh_ws/MaskDNtoBBox_GPU0/wandb/run-20230821_152435-37r7s3a5/files/requirements.txt
+2023-08-21 15:24:40,116 DEBUG   HandlerThread:11032 [meta.py:_save_conda():85] save conda done
+2023-08-21 15:24:40,116 DEBUG   HandlerThread:11032 [meta.py:probe():254] probe done
+2023-08-21 15:24:40,162 DEBUG   SenderThread:11032 [sender.py:send():302] send: files
+2023-08-21 15:24:40,163 INFO    SenderThread:11032 [sender.py:_save_file():1156] saving file wandb-metadata.json with policy now
+2023-08-21 15:24:40,171 DEBUG   HandlerThread:11032 [handler.py:handle_request():141] handle_request: stop_status
+2023-08-21 15:24:40,172 DEBUG   SenderThread:11032 [sender.py:send_request():316] send_request: stop_status
+2023-08-21 15:24:40,456 INFO    Thread-12 :11032 [dir_watcher.py:_on_file_modified():292] file/dir modified: /media/songoh/ssh3/songoh_ws/MaskDNtoBBox_GPU0/wandb/run-20230821_152435-37r7s3a5/files/conda-environment.yaml
+2023-08-21 15:24:40,460 INFO    Thread-12 :11032 [dir_watcher.py:_on_file_created():275] file/dir created: /media/songoh/ssh3/songoh_ws/MaskDNtoBBox_GPU0/wandb/run-20230821_152435-37r7s3a5/files/wandb-metadata.json
+2023-08-21 15:24:40,511 DEBUG   SenderThread:11032 [sender.py:send():302] send: telemetry
+2023-08-21 15:24:40,514 DEBUG   SenderThread:11032 [sender.py:send():302] send: telemetry
+2023-08-21 15:24:40,896 INFO    Thread-16 :11032 [upload_job.py:push():138] Uploaded file /tmp/tmp6mzowonuwandb/6vkxkkov-wandb-metadata.json
+2023-08-21 15:24:41,037 DEBUG   SenderThread:11032 [sender.py:send():302] send: telemetry
+2023-08-21 15:24:41,457 INFO    Thread-12 :11032 [dir_watcher.py:_on_file_created():275] file/dir created: /media/songoh/ssh3/songoh_ws/MaskDNtoBBox_GPU0/wandb/run-20230821_152435-37r7s3a5/files/output.log
+2023-08-21 15:24:41,628 DEBUG   SenderThread:11032 [sender.py:send():302] send: telemetry
+2023-08-21 15:24:41,638 DEBUG   SenderThread:11032 [sender.py:send():302] send: telemetry
+2023-08-21 15:24:42,474 DEBUG   SenderThread:11032 [sender.py:send():302] send: telemetry
+2023-08-21 15:24:43,387 DEBUG   SenderThread:11032 [sender.py:send():302] send: telemetry
+2023-08-21 15:24:43,457 INFO    Thread-12 :11032 [dir_watcher.py:_on_file_modified():292] file/dir modified: /media/songoh/ssh3/songoh_ws/MaskDNtoBBox_GPU0/wandb/run-20230821_152435-37r7s3a5/files/output.log
+2023-08-21 15:24:46,324 DEBUG   SenderThread:11032 [sender.py:send():302] send: config
+2023-08-21 15:24:47,459 INFO    Thread-12 :11032 [dir_watcher.py:_on_file_modified():292] file/dir modified: /media/songoh/ssh3/songoh_ws/MaskDNtoBBox_GPU0/wandb/run-20230821_152435-37r7s3a5/files/output.log
+2023-08-21 15:24:49,006 DEBUG   SenderThread:11032 [sender.py:send():302] send: telemetry
+2023-08-21 15:24:49,460 INFO    Thread-12 :11032 [dir_watcher.py:_on_file_modified():292] file/dir modified: /media/songoh/ssh3/songoh_ws/MaskDNtoBBox_GPU0/wandb/run-20230821_152435-37r7s3a5/files/output.log
+2023-08-21 15:24:51,461 INFO    Thread-12 :11032 [dir_watcher.py:_on_file_modified():292] file/dir modified: /media/songoh/ssh3/songoh_ws/MaskDNtoBBox_GPU0/wandb/run-20230821_152435-37r7s3a5/files/output.log
+2023-08-21 15:24:53,149 DEBUG   SenderThread:11032 [sender.py:send():302] send: telemetry
+2023-08-21 15:24:53,471 INFO    Thread-12 :11032 [dir_watcher.py:_on_file_modified():292] file/dir modified: /media/songoh/ssh3/songoh_ws/MaskDNtoBBox_GPU0/wandb/run-20230821_152435-37r7s3a5/files/output.log
+2023-08-21 15:24:55,473 INFO    Thread-12 :11032 [dir_watcher.py:_on_file_modified():292] file/dir modified: /media/songoh/ssh3/songoh_ws/MaskDNtoBBox_GPU0/wandb/run-20230821_152435-37r7s3a5/files/output.log
+2023-08-21 15:24:55,650 DEBUG   HandlerThread:11032 [handler.py:handle_request():141] handle_request: stop_status
+2023-08-21 15:24:55,650 DEBUG   SenderThread:11032 [sender.py:send_request():316] send_request: stop_status
+2023-08-21 15:25:05,185 DEBUG   SenderThread:11032 [sender.py:send():302] send: stats
+2023-08-21 15:25:06,477 INFO    Thread-12 :11032 [dir_watcher.py:_on_file_modified():292] file/dir modified: /media/songoh/ssh3/songoh_ws/MaskDNtoBBox_GPU0/wandb/run-20230821_152435-37r7s3a5/files/config.yaml
+2023-08-21 15:25:10,967 DEBUG   HandlerThread:11032 [handler.py:handle_request():141] handle_request: stop_status
+2023-08-21 15:25:10,967 DEBUG   SenderThread:11032 [sender.py:send_request():316] send_request: stop_status
+2023-08-21 15:25:15,480 INFO    Thread-12 :11032 [dir_watcher.py:_on_file_modified():292] file/dir modified: /media/songoh/ssh3/songoh_ws/MaskDNtoBBox_GPU0/wandb/run-20230821_152435-37r7s3a5/files/output.log
+2023-08-21 15:25:16,423 DEBUG   SenderThread:11032 [sender.py:send():302] send: config
+2023-08-21 15:25:18,482 INFO    Thread-12 :11032 [dir_watcher.py:_on_file_modified():292] file/dir modified: /media/songoh/ssh3/songoh_ws/MaskDNtoBBox_GPU0/wandb/run-20230821_152435-37r7s3a5/files/output.log
+2023-08-21 15:25:19,482 INFO    Thread-12 :11032 [dir_watcher.py:_on_file_modified():292] file/dir modified: /media/songoh/ssh3/songoh_ws/MaskDNtoBBox_GPU0/wandb/run-20230821_152435-37r7s3a5/files/output.log
+2023-08-21 15:25:20,482 INFO    Thread-12 :11032 [dir_watcher.py:_on_file_modified():292] file/dir modified: /media/songoh/ssh3/songoh_ws/MaskDNtoBBox_GPU0/wandb/run-20230821_152435-37r7s3a5/files/output.log
+2023-08-21 15:25:21,483 INFO    Thread-12 :11032 [dir_watcher.py:_on_file_modified():292] file/dir modified: /media/songoh/ssh3/songoh_ws/MaskDNtoBBox_GPU0/wandb/run-20230821_152435-37r7s3a5/files/output.log
+2023-08-21 15:25:22,483 INFO    Thread-12 :11032 [dir_watcher.py:_on_file_modified():292] file/dir modified: /media/songoh/ssh3/songoh_ws/MaskDNtoBBox_GPU0/wandb/run-20230821_152435-37r7s3a5/files/output.log
+2023-08-21 15:25:24,484 INFO    Thread-12 :11032 [dir_watcher.py:_on_file_modified():292] file/dir modified: /media/songoh/ssh3/songoh_ws/MaskDNtoBBox_GPU0/wandb/run-20230821_152435-37r7s3a5/files/output.log
+2023-08-21 15:25:25,485 INFO    Thread-12 :11032 [dir_watcher.py:_on_file_modified():292] file/dir modified: /media/songoh/ssh3/songoh_ws/MaskDNtoBBox_GPU0/wandb/run-20230821_152435-37r7s3a5/files/output.log
+2023-08-21 15:25:26,296 DEBUG   HandlerThread:11032 [handler.py:handle_request():141] handle_request: stop_status
+2023-08-21 15:25:26,296 DEBUG   SenderThread:11032 [sender.py:send_request():316] send_request: stop_status
+2023-08-21 15:25:26,485 INFO    Thread-12 :11032 [dir_watcher.py:_on_file_modified():292] file/dir modified: /media/songoh/ssh3/songoh_ws/MaskDNtoBBox_GPU0/wandb/run-20230821_152435-37r7s3a5/files/output.log
+2023-08-21 15:25:28,486 INFO    Thread-12 :11032 [dir_watcher.py:_on_file_modified():292] file/dir modified: /media/songoh/ssh3/songoh_ws/MaskDNtoBBox_GPU0/wandb/run-20230821_152435-37r7s3a5/files/output.log
+2023-08-21 15:25:34,488 INFO    Thread-12 :11032 [dir_watcher.py:_on_file_modified():292] file/dir modified: /media/songoh/ssh3/songoh_ws/MaskDNtoBBox_GPU0/wandb/run-20230821_152435-37r7s3a5/files/output.log
+2023-08-21 15:25:35,860 DEBUG   SenderThread:11032 [sender.py:send():302] send: stats
+2023-08-21 15:25:37,489 INFO    Thread-12 :11032 [dir_watcher.py:_on_file_modified():292] file/dir modified: /media/songoh/ssh3/songoh_ws/MaskDNtoBBox_GPU0/wandb/run-20230821_152435-37r7s3a5/files/config.yaml
+2023-08-21 15:25:41,628 DEBUG   HandlerThread:11032 [handler.py:handle_request():141] handle_request: stop_status
+2023-08-21 15:25:41,628 DEBUG   SenderThread:11032 [sender.py:send_request():316] send_request: stop_status
+2023-08-21 15:25:56,885 DEBUG   HandlerThread:11032 [handler.py:handle_request():141] handle_request: stop_status
+2023-08-21 15:25:56,886 DEBUG   SenderThread:11032 [sender.py:send_request():316] send_request: stop_status
+2023-08-21 15:26:06,545 DEBUG   SenderThread:11032 [sender.py:send():302] send: stats
+2023-08-21 15:26:12,200 DEBUG   HandlerThread:11032 [handler.py:handle_request():141] handle_request: stop_status
+2023-08-21 15:26:12,201 DEBUG   SenderThread:11032 [sender.py:send_request():316] send_request: stop_status

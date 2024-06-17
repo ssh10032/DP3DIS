@@ -1,0 +1,1215 @@
+/home/songoh/miniconda3/envs/mask/lib/python3.10/site-packages/MinkowskiEngine/__init__.py:36: UserWarning: The environment variable `OMP_NUM_THREADS` not set. MinkowskiEngine will automatically set `OMP_NUM_THREADS=16`. If you want to set `OMP_NUM_THREADS` manually, please export it on the command line before running a python script. e.g. `export OMP_NUM_THREADS=12; python your_program.py`. It is recommended to set it below 24.
+  warnings.warn(
+/home/songoh/miniconda3/envs/mask/lib/python3.10/site-packages/pytorch_lightning/utilities/seed.py:55: UserWarning: No seed found, seed set to 1050291598
+  rank_zero_warn(f"No seed found, seed set to {seed}")
+Global seed set to 1050291598
+/home/songoh/miniconda3/envs/mask/lib/python3.10/site-packages/pytorch_lightning/loggers/wandb.py:352: UserWarning: There is a wandb run already in progress and newly created instances of `WandbLogger` will reuse this run. If this is not desired, call `wandb.finish()` before instantiating `WandbLogger`.
+  rank_zero_warn(
+EXPERIMENT ALREADY EXIST
+{'_target_': 'pytorch_lightning.loggers.WandbLogger', 'project': '${general.project_name}', 'name': '${general.experiment_name}', 'save_dir': '${general.save_dir}', 'entity': 'schult', 'resume': 'allow', 'id': '${general.experiment_name}'}
+/home/songoh/miniconda3/envs/mask/lib/python3.10/site-packages/pytorch_lightning/trainer/connectors/accelerator_connector.py:446: LightningDeprecationWarning: Setting `Trainer(gpus=1)` is deprecated in v1.7 and will be removed in v2.0. Please use `Trainer(accelerator='gpu', devices=1)` instead.
+  rank_zero_deprecation(
+/home/songoh/miniconda3/envs/mask/lib/python3.10/site-packages/pytorch_lightning/trainer/connectors/checkpoint_connector.py:52: LightningDeprecationWarning: Setting `Trainer(resume_from_checkpoint=)` is deprecated in v1.5 and will be removed in v1.7. Please pass `Trainer.fit(ckpt_path=)` directly instead.
+  rank_zero_deprecation(
+/home/songoh/miniconda3/envs/mask/lib/python3.10/site-packages/pytorch_lightning/trainer/connectors/callback_connector.py:57: LightningDeprecationWarning: Setting `Trainer(weights_save_path=)` has been deprecated in v1.6 and will be removed in v1.8. Please pass ``dirpath`` directly to the `ModelCheckpoint` callback
+  rank_zero_deprecation(
+GPU available: True (cuda), used: True
+TPU available: False, using: 0 TPU cores
+IPU available: False, using: 0 IPUs
+HPU available: False, using: 0 HPUs
+[2023-08-30 16:46:52,067][__main__][INFO] - {'general_train_mode': False, 'general_task': 'instance_segmentation', 'general_seed': None, 'general_checkpoint': 'saved/dn_nobbox_3d_coord_test_noise_0.3_fix_dnquery30/last-epoch.ckpt', 'general_backbone_checkpoint': None, 'general_freeze_backbone': False, 'general_linear_probing_backbone': False, 'general_train_on_segments': True, 'general_eval_on_segments': True, 'general_filter_out_instances': True, 'general_save_visualizations': False, 'general_visualization_point_size': 20, 'general_decoder_id': -1, 'general_export': False, 'general_use_dbscan': True, 'general_ignore_class_threshold': 100, 'general_project_name': 'scannet', 'general_workspace': 'jonasschult', 'general_experiment_name': 'DEBUG_ABLATION', 'general_num_targets': 19, 'general_add_instance': True, 'general_dbscan_eps': 0.95, 'general_dbscan_min_points': 1, 'general_export_threshold': 0.0001, 'general_reps_per_epoch': 1, 'general_on_crops': False, 'general_scores_threshold': 0.7, 'general_iou_threshold': 1.0, 'general_area': 5, 'general_eval_inner_core': -1, 'general_topk_per_image': -1, 'general_ignore_mask_idx': [], 'general_max_batch_size': 99999999, 'general_save_dir': 'saved/DEBUG_ABLATION', 'general_gpus': 1, 'data_train_mode': 'train', 'data_validation_mode': 'validation', 'data_test_mode': 'validation', 'data_ignore_label': 255, 'data_add_raw_coordinates': True, 'data_add_colors': True, 'data_add_normals': False, 'data_in_channels': 3, 'data_num_labels': 20, 'data_add_instance': True, 'data_task': 'instance_segmentation', 'data_pin_memory': False, 'data_num_workers': 4, 'data_batch_size': 3, 'data_test_batch_size': 1, 'data_cache_data': False, 'data_voxel_size': 0.02, 'data_reps_per_epoch': 1, 'data_cropping': False, 'data_cropping_args_min_points': 30000, 'data_cropping_args_aspect': 0.8, 'data_cropping_args_min_crop': 0.5, 'data_cropping_args_max_crop': 1.0, 'data_crop_min_size': 20000, 'data_crop_length': 6.0, 'data_cropping_v1': True, 'data_train_dataloader__target_': 'torch.utils.data.DataLoader', 'data_train_dataloader_shuffle': True, 'data_train_dataloader_pin_memory': False, 'data_train_dataloader_num_workers': 4, 'data_train_dataloader_batch_size': 3, 'data_validation_dataloader__target_': 'torch.utils.data.DataLoader', 'data_validation_dataloader_shuffle': False, 'data_validation_dataloader_pin_memory': False, 'data_validation_dataloader_num_workers': 4, 'data_validation_dataloader_batch_size': 1, 'data_test_dataloader__target_': 'torch.utils.data.DataLoader', 'data_test_dataloader_shuffle': False, 'data_test_dataloader_pin_memory': False, 'data_test_dataloader_num_workers': 4, 'data_test_dataloader_batch_size': 1, 'data_train_dataset__target_': 'datasets.semseg.SemanticSegmentationDataset', 'data_train_dataset_dataset_name': 'scannet', 'data_train_dataset_data_dir': 'data/processed/scannet', 'data_train_dataset_image_augmentations_path': 'conf/augmentation/albumentations_aug.yaml', 'data_train_dataset_volume_augmentations_path': 'conf/augmentation/volumentations_aug.yaml', 'data_train_dataset_label_db_filepath': 'data/processed/scannet/label_database.yaml', 'data_train_dataset_color_mean_std': 'data/processed/scannet/color_mean_std.yaml', 'data_train_dataset_data_percent': 1.0, 'data_train_dataset_mode': 'train', 'data_train_dataset_ignore_label': 255, 'data_train_dataset_num_labels': 20, 'data_train_dataset_add_raw_coordinates': True, 'data_train_dataset_add_colors': True, 'data_train_dataset_add_normals': False, 'data_train_dataset_add_instance': True, 'data_train_dataset_instance_oversampling': 0.0, 'data_train_dataset_place_around_existing': False, 'data_train_dataset_point_per_cut': 0, 'data_train_dataset_max_cut_region': 0, 'data_train_dataset_flip_in_center': False, 'data_train_dataset_noise_rate': 0, 'data_train_dataset_resample_points': 0, 'data_train_dataset_add_unlabeled_pc': False, 'data_train_dataset_cropping': False, 'data_train_dataset_cropping_args_min_points': 30000, 'data_train_dataset_cropping_args_aspect': 0.8, 'data_train_dataset_cropping_args_min_crop': 0.5, 'data_train_dataset_cropping_args_max_crop': 1.0, 'data_train_dataset_is_tta': False, 'data_train_dataset_crop_min_size': 20000, 'data_train_dataset_crop_length': 6.0, 'data_train_dataset_filter_out_classes': [0, 1], 'data_train_dataset_label_offset': 2, 'data_validation_dataset__target_': 'datasets.semseg.SemanticSegmentationDataset', 'data_validation_dataset_dataset_name': 'scannet', 'data_validation_dataset_data_dir': 'data/processed/scannet', 'data_validation_dataset_image_augmentations_path': None, 'data_validation_dataset_volume_augmentations_path': None, 'data_validation_dataset_label_db_filepath': 'data/processed/scannet/label_database.yaml', 'data_validation_dataset_color_mean_std': 'data/processed/scannet/color_mean_std.yaml', 'data_validation_dataset_data_percent': 1.0, 'data_validation_dataset_mode': 'validation', 'data_validation_dataset_ignore_label': 255, 'data_validation_dataset_num_labels': 20, 'data_validation_dataset_add_raw_coordinates': True, 'data_validation_dataset_add_colors': True, 'data_validation_dataset_add_normals': False, 'data_validation_dataset_add_instance': True, 'data_validation_dataset_cropping': False, 'data_validation_dataset_is_tta': False, 'data_validation_dataset_crop_min_size': 20000, 'data_validation_dataset_crop_length': 6.0, 'data_validation_dataset_filter_out_classes': [0, 1], 'data_validation_dataset_label_offset': 2, 'data_test_dataset__target_': 'datasets.semseg.SemanticSegmentationDataset', 'data_test_dataset_dataset_name': 'scannet', 'data_test_dataset_data_dir': 'data/processed/scannet', 'data_test_dataset_image_augmentations_path': None, 'data_test_dataset_volume_augmentations_path': None, 'data_test_dataset_label_db_filepath': 'data/processed/scannet/label_database.yaml', 'data_test_dataset_color_mean_std': 'data/processed/scannet/color_mean_std.yaml', 'data_test_dataset_data_percent': 1.0, 'data_test_dataset_mode': 'validation', 'data_test_dataset_ignore_label': 255, 'data_test_dataset_num_labels': 20, 'data_test_dataset_add_raw_coordinates': True, 'data_test_dataset_add_colors': True, 'data_test_dataset_add_normals': False, 'data_test_dataset_add_instance': True, 'data_test_dataset_cropping': False, 'data_test_dataset_is_tta': False, 'data_test_dataset_crop_min_size': 20000, 'data_test_dataset_crop_length': 6.0, 'data_test_dataset_filter_out_classes': [0, 1], 'data_test_dataset_label_offset': 2, 'data_train_collation__target_': 'datasets.utils.VoxelizeCollate', 'data_train_collation_ignore_label': 255, 'data_train_collation_voxel_size': 0.02, 'data_train_collation_mode': 'train', 'data_train_collation_small_crops': False, 'data_train_collation_very_small_crops': False, 'data_train_collation_batch_instance': False, 'data_train_collation_probing': False, 'data_train_collation_task': 'instance_segmentation', 'data_train_collation_ignore_class_threshold': 100, 'data_train_collation_filter_out_classes': [0, 1], 'data_train_collation_label_offset': 2, 'data_train_collation_num_queries': 150, 'data_validation_collation__target_': 'datasets.utils.VoxelizeCollate', 'data_validation_collation_ignore_label': 255, 'data_validation_collation_voxel_size': 0.02, 'data_validation_collation_mode': 'validation', 'data_validation_collation_batch_instance': False, 'data_validation_collation_probing': False, 'data_validation_collation_task': 'instance_segmentation', 'data_validation_collation_ignore_class_threshold': 100, 'data_validation_collation_filter_out_classes': [0, 1], 'data_validation_collation_label_offset': 2, 'data_validation_collation_num_queries': 150, 'data_test_collation__target_': 'datasets.utils.VoxelizeCollate', 'data_test_collation_ignore_label': 255, 'data_test_collation_voxel_size': 0.02, 'data_test_collation_mode': 'validation', 'data_test_collation_batch_instance': False, 'data_test_collation_probing': False, 'data_test_collation_task': 'instance_segmentation', 'data_test_collation_ignore_class_threshold': 100, 'data_test_collation_filter_out_classes': [0, 1], 'data_test_collation_label_offset': 2, 'data_test_collation_num_queries': 150, 'logging': [{'_target_': 'pytorch_lightning.loggers.WandbLogger', 'project': 'scannet', 'name': 'DEBUG_ABLATION', 'save_dir': 'saved/DEBUG_ABLATION', 'entity': 'schult', 'resume': 'allow', 'id': 'DEBUG_ABLATION'}], 'model__target_': 'models.Mask3D', 'model_hidden_dim': 128, 'model_dim_feedforward': 1024, 'model_num_queries': 150, 'model_num_heads': 8, 'model_num_decoders': 3, 'model_dropout': 0.0, 'model_pre_norm': False, 'model_use_level_embed': False, 'model_normalize_pos_enc': True, 'model_positional_encoding_type': 'fourier', 'model_gauss_scale': 1.0, 'model_hlevels': [0, 1, 2, 3], 'model_anchor_dim': 3, 'model_non_parametric_queries': False, 'model_random_query_both': False, 'model_random_normal': False, 'model_random_queries': False, 'model_use_np_features': False, 'model_query_selection': True, 'model_sample_sizes': [200, 800, 3200, 12800, 51200], 'model_max_sample_size': False, 'model_shared_decoder': True, 'model_num_classes': 19, 'model_train_on_segments': True, 'model_scatter_type': 'mean', 'model_voxel_size': 0.02, 'model_config_backbone__target_': 'models.Res16UNet34C', 'model_config_backbone_config_dialations': [1, 1, 1, 1], 'model_config_backbone_config_conv1_kernel_size': 5, 'model_config_backbone_config_bn_momentum': 0.02, 'model_config_backbone_in_channels': 3, 'model_config_backbone_out_channels': 20, 'model_config_backbone_out_fpn': True, 'metrics__target_': 'models.metrics.ConfusionMatrix', 'metrics_num_classes': 20, 'metrics_ignore_label': 255, 'optimizer__target_': 'torch.optim.AdamW', 'optimizer_lr': 0.0001, 'scheduler_scheduler__target_': 'torch.optim.lr_scheduler.OneCycleLR', 'scheduler_scheduler_max_lr': 0.0001, 'scheduler_scheduler_epochs': 1001, 'scheduler_scheduler_steps_per_epoch': -1, 'scheduler_pytorch_lightning_params_interval': 'step', 'trainer_deterministic': False, 'trainer_max_epochs': 1001, 'trainer_min_epochs': 1, 'trainer_resume_from_checkpoint': 'saved/DEBUG_ABLATION/last-epoch.ckpt', 'trainer_check_val_every_n_epoch': 50, 'trainer_num_sanity_val_steps': 2, 'callbacks': [{'_target_': 'pytorch_lightning.callbacks.ModelCheckpoint', 'monitor': 'val_mean_ap_50', 'save_last': True, 'save_top_k': 1, 'mode': 'max', 'dirpath': 'saved/DEBUG_ABLATION', 'filename': '{epoch}-{val_mean_ap_50:.3f}', 'every_n_epochs': 1}, {'_target_': 'pytorch_lightning.callbacks.LearningRateMonitor'}], 'matcher__target_': 'models.matcher.HungarianMatcher', 'matcher_cost_class': 2.0, 'matcher_cost_mask': 5.0, 'matcher_cost_dice': 2.0, 'matcher_cost_box': 1.0, 'matcher_cost_giou': 1.0, 'matcher_num_points': -1, 'loss__target_': 'models.criterion.SetCriterion', 'loss_num_classes': 19, 'loss_eos_coef': 0.1, 'loss_losses': ['labels', 'masks'], 'loss_num_points': -1, 'loss_oversample_ratio': 3.0, 'loss_importance_sample_ratio': 0.75, 'loss_class_weights': -1}
+/media/songoh/ssh3/songoh_ws/MaskDNtoBBox_GPU0/datasets/semseg.py:573: YAMLLoadWarning: calling yaml.load() without Loader=... is deprecated, as the default Loader is unsafe. Please read https://msg.pyyaml.org/load for full details.
+  file = yaml.load(f)
+Testing: 0it [00:00, ?it/s]
+
+Testing DataLoader 0:   0%|          | 0/312 [00:00<?, ?it/s]
+/media/songoh/ssh3/songoh_ws/MaskDNtoBBox_GPU0/trainer/trainer.py:524: UserWarning: __floordiv__ is deprecated, and its behavior will change in a future version of pytorch. It currently rounds toward 0 (like the 'trunc' function NOT 'floor'). This results in incorrect rounding for negative values. To keep the current behavior, use torch.div(a, b, rounding_mode='trunc'), or for actual floor division, use torch.div(a, b, rounding_mode='floor').
+
+
+Testing DataLoader 0:   1%|          | 2/312 [00:33<1:27:23, 16.91s/it]
+/media/songoh/ssh3/songoh_ws/MaskDNtoBBox_GPU0/trainer/trainer.py:524: UserWarning: __floordiv__ is deprecated, and its behavior will change in a future version of pytorch. It currently rounds toward 0 (like the 'trunc' function NOT 'floor'). This results in incorrect rounding for negative values. To keep the current behavior, use torch.div(a, b, rounding_mode='trunc'), or for actual floor division, use torch.div(a, b, rounding_mode='floor').
+  topk_indices = topk_indices // num_classes
+/media/songoh/ssh3/songoh_ws/MaskDNtoBBox_GPU0/trainer/trainer.py:524: UserWarning: __floordiv__ is deprecated, and its behavior will change in a future version of pytorch. It currently rounds toward 0 (like the 'trunc' function NOT 'floor'). This results in incorrect rounding for negative values. To keep the current behavior, use torch.div(a, b, rounding_mode='trunc'), or for actual floor division, use torch.div(a, b, rounding_mode='floor').
+
+
+Testing DataLoader 0:   1%|▏         | 4/312 [01:03<1:21:22, 15.85s/it]
+/media/songoh/ssh3/songoh_ws/MaskDNtoBBox_GPU0/trainer/trainer.py:524: UserWarning: __floordiv__ is deprecated, and its behavior will change in a future version of pytorch. It currently rounds toward 0 (like the 'trunc' function NOT 'floor'). This results in incorrect rounding for negative values. To keep the current behavior, use torch.div(a, b, rounding_mode='trunc'), or for actual floor division, use torch.div(a, b, rounding_mode='floor').
+  topk_indices = topk_indices // num_classes
+/media/songoh/ssh3/songoh_ws/MaskDNtoBBox_GPU0/trainer/trainer.py:524: UserWarning: __floordiv__ is deprecated, and its behavior will change in a future version of pytorch. It currently rounds toward 0 (like the 'trunc' function NOT 'floor'). This results in incorrect rounding for negative values. To keep the current behavior, use torch.div(a, b, rounding_mode='trunc'), or for actual floor division, use torch.div(a, b, rounding_mode='floor').
+
+
+Testing DataLoader 0:   2%|▏         | 6/312 [01:27<1:14:32, 14.61s/it]
+/media/songoh/ssh3/songoh_ws/MaskDNtoBBox_GPU0/trainer/trainer.py:524: UserWarning: __floordiv__ is deprecated, and its behavior will change in a future version of pytorch. It currently rounds toward 0 (like the 'trunc' function NOT 'floor'). This results in incorrect rounding for negative values. To keep the current behavior, use torch.div(a, b, rounding_mode='trunc'), or for actual floor division, use torch.div(a, b, rounding_mode='floor').
+  topk_indices = topk_indices // num_classes
+/media/songoh/ssh3/songoh_ws/MaskDNtoBBox_GPU0/trainer/trainer.py:524: UserWarning: __floordiv__ is deprecated, and its behavior will change in a future version of pytorch. It currently rounds toward 0 (like the 'trunc' function NOT 'floor'). This results in incorrect rounding for negative values. To keep the current behavior, use torch.div(a, b, rounding_mode='trunc'), or for actual floor division, use torch.div(a, b, rounding_mode='floor').
+
+Testing DataLoader 0:   2%|▏         | 7/312 [01:36<1:09:50, 13.74s/it]
+/media/songoh/ssh3/songoh_ws/MaskDNtoBBox_GPU0/trainer/trainer.py:524: UserWarning: __floordiv__ is deprecated, and its behavior will change in a future version of pytorch. It currently rounds toward 0 (like the 'trunc' function NOT 'floor'). This results in incorrect rounding for negative values. To keep the current behavior, use torch.div(a, b, rounding_mode='trunc'), or for actual floor division, use torch.div(a, b, rounding_mode='floor').
+
+Testing DataLoader 0:   3%|▎         | 8/312 [01:44<1:06:20, 13.09s/it]
+/media/songoh/ssh3/songoh_ws/MaskDNtoBBox_GPU0/trainer/trainer.py:524: UserWarning: __floordiv__ is deprecated, and its behavior will change in a future version of pytorch. It currently rounds toward 0 (like the 'trunc' function NOT 'floor'). This results in incorrect rounding for negative values. To keep the current behavior, use torch.div(a, b, rounding_mode='trunc'), or for actual floor division, use torch.div(a, b, rounding_mode='floor').
+
+Testing DataLoader 0:   3%|▎         | 9/312 [01:58<1:06:27, 13.16s/it]
+/media/songoh/ssh3/songoh_ws/MaskDNtoBBox_GPU0/trainer/trainer.py:524: UserWarning: __floordiv__ is deprecated, and its behavior will change in a future version of pytorch. It currently rounds toward 0 (like the 'trunc' function NOT 'floor'). This results in incorrect rounding for negative values. To keep the current behavior, use torch.div(a, b, rounding_mode='trunc'), or for actual floor division, use torch.div(a, b, rounding_mode='floor').
+
+Testing DataLoader 0:   3%|▎         | 10/312 [02:10<1:05:38, 13.04s/it]
+/media/songoh/ssh3/songoh_ws/MaskDNtoBBox_GPU0/trainer/trainer.py:524: UserWarning: __floordiv__ is deprecated, and its behavior will change in a future version of pytorch. It currently rounds toward 0 (like the 'trunc' function NOT 'floor'). This results in incorrect rounding for negative values. To keep the current behavior, use torch.div(a, b, rounding_mode='trunc'), or for actual floor division, use torch.div(a, b, rounding_mode='floor').
+
+
+Testing DataLoader 0:   4%|▍         | 12/312 [02:35<1:04:54, 12.98s/it]
+/media/songoh/ssh3/songoh_ws/MaskDNtoBBox_GPU0/trainer/trainer.py:524: UserWarning: __floordiv__ is deprecated, and its behavior will change in a future version of pytorch. It currently rounds toward 0 (like the 'trunc' function NOT 'floor'). This results in incorrect rounding for negative values. To keep the current behavior, use torch.div(a, b, rounding_mode='trunc'), or for actual floor division, use torch.div(a, b, rounding_mode='floor').
+
+Testing DataLoader 0:   4%|▍         | 13/312 [02:45<1:03:31, 12.75s/it]
+/media/songoh/ssh3/songoh_ws/MaskDNtoBBox_GPU0/trainer/trainer.py:524: UserWarning: __floordiv__ is deprecated, and its behavior will change in a future version of pytorch. It currently rounds toward 0 (like the 'trunc' function NOT 'floor'). This results in incorrect rounding for negative values. To keep the current behavior, use torch.div(a, b, rounding_mode='trunc'), or for actual floor division, use torch.div(a, b, rounding_mode='floor').
+
+Testing DataLoader 0:   4%|▍         | 14/312 [02:57<1:03:02, 12.69s/it]
+/media/songoh/ssh3/songoh_ws/MaskDNtoBBox_GPU0/trainer/trainer.py:524: UserWarning: __floordiv__ is deprecated, and its behavior will change in a future version of pytorch. It currently rounds toward 0 (like the 'trunc' function NOT 'floor'). This results in incorrect rounding for negative values. To keep the current behavior, use torch.div(a, b, rounding_mode='trunc'), or for actual floor division, use torch.div(a, b, rounding_mode='floor').
+  topk_indices = topk_indices // num_classes
+/media/songoh/ssh3/songoh_ws/MaskDNtoBBox_GPU0/trainer/trainer.py:524: UserWarning: __floordiv__ is deprecated, and its behavior will change in a future version of pytorch. It currently rounds toward 0 (like the 'trunc' function NOT 'floor'). This results in incorrect rounding for negative values. To keep the current behavior, use torch.div(a, b, rounding_mode='trunc'), or for actual floor division, use torch.div(a, b, rounding_mode='floor').
+
+Testing DataLoader 0:   5%|▍         | 15/312 [03:09<1:02:31, 12.63s/it]
+/media/songoh/ssh3/songoh_ws/MaskDNtoBBox_GPU0/trainer/trainer.py:524: UserWarning: __floordiv__ is deprecated, and its behavior will change in a future version of pytorch. It currently rounds toward 0 (like the 'trunc' function NOT 'floor'). This results in incorrect rounding for negative values. To keep the current behavior, use torch.div(a, b, rounding_mode='trunc'), or for actual floor division, use torch.div(a, b, rounding_mode='floor').
+
+Testing DataLoader 0:   5%|▌         | 16/312 [03:19<1:01:23, 12.44s/it]
+/media/songoh/ssh3/songoh_ws/MaskDNtoBBox_GPU0/trainer/trainer.py:524: UserWarning: __floordiv__ is deprecated, and its behavior will change in a future version of pytorch. It currently rounds toward 0 (like the 'trunc' function NOT 'floor'). This results in incorrect rounding for negative values. To keep the current behavior, use torch.div(a, b, rounding_mode='trunc'), or for actual floor division, use torch.div(a, b, rounding_mode='floor').
+
+Testing DataLoader 0:   5%|▌         | 17/312 [03:29<1:00:27, 12.30s/it]
+/media/songoh/ssh3/songoh_ws/MaskDNtoBBox_GPU0/trainer/trainer.py:524: UserWarning: __floordiv__ is deprecated, and its behavior will change in a future version of pytorch. It currently rounds toward 0 (like the 'trunc' function NOT 'floor'). This results in incorrect rounding for negative values. To keep the current behavior, use torch.div(a, b, rounding_mode='trunc'), or for actual floor division, use torch.div(a, b, rounding_mode='floor').
+
+Testing DataLoader 0:   6%|▌         | 18/312 [03:38<59:26, 12.13s/it]
+/media/songoh/ssh3/songoh_ws/MaskDNtoBBox_GPU0/trainer/trainer.py:524: UserWarning: __floordiv__ is deprecated, and its behavior will change in a future version of pytorch. It currently rounds toward 0 (like the 'trunc' function NOT 'floor'). This results in incorrect rounding for negative values. To keep the current behavior, use torch.div(a, b, rounding_mode='trunc'), or for actual floor division, use torch.div(a, b, rounding_mode='floor').
+
+Testing DataLoader 0:   6%|▌         | 19/312 [03:57<1:01:03, 12.50s/it]
+/media/songoh/ssh3/songoh_ws/MaskDNtoBBox_GPU0/trainer/trainer.py:524: UserWarning: __floordiv__ is deprecated, and its behavior will change in a future version of pytorch. It currently rounds toward 0 (like the 'trunc' function NOT 'floor'). This results in incorrect rounding for negative values. To keep the current behavior, use torch.div(a, b, rounding_mode='trunc'), or for actual floor division, use torch.div(a, b, rounding_mode='floor').
+
+
+Testing DataLoader 0:   7%|▋         | 21/312 [04:21<1:00:19, 12.44s/it]
+/media/songoh/ssh3/songoh_ws/MaskDNtoBBox_GPU0/trainer/trainer.py:524: UserWarning: __floordiv__ is deprecated, and its behavior will change in a future version of pytorch. It currently rounds toward 0 (like the 'trunc' function NOT 'floor'). This results in incorrect rounding for negative values. To keep the current behavior, use torch.div(a, b, rounding_mode='trunc'), or for actual floor division, use torch.div(a, b, rounding_mode='floor').
+  topk_indices = topk_indices // num_classes
+/media/songoh/ssh3/songoh_ws/MaskDNtoBBox_GPU0/trainer/trainer.py:524: UserWarning: __floordiv__ is deprecated, and its behavior will change in a future version of pytorch. It currently rounds toward 0 (like the 'trunc' function NOT 'floor'). This results in incorrect rounding for negative values. To keep the current behavior, use torch.div(a, b, rounding_mode='trunc'), or for actual floor division, use torch.div(a, b, rounding_mode='floor').
+
+
+Testing DataLoader 0:   7%|▋         | 23/312 [04:51<1:00:58, 12.66s/it]
+/media/songoh/ssh3/songoh_ws/MaskDNtoBBox_GPU0/trainer/trainer.py:524: UserWarning: __floordiv__ is deprecated, and its behavior will change in a future version of pytorch. It currently rounds toward 0 (like the 'trunc' function NOT 'floor'). This results in incorrect rounding for negative values. To keep the current behavior, use torch.div(a, b, rounding_mode='trunc'), or for actual floor division, use torch.div(a, b, rounding_mode='floor').
+  topk_indices = topk_indices // num_classes
+/media/songoh/ssh3/songoh_ws/MaskDNtoBBox_GPU0/trainer/trainer.py:524: UserWarning: __floordiv__ is deprecated, and its behavior will change in a future version of pytorch. It currently rounds toward 0 (like the 'trunc' function NOT 'floor'). This results in incorrect rounding for negative values. To keep the current behavior, use torch.div(a, b, rounding_mode='trunc'), or for actual floor division, use torch.div(a, b, rounding_mode='floor').
+
+
+Testing DataLoader 0:   8%|▊         | 25/312 [05:13<1:00:00, 12.55s/it]
+/media/songoh/ssh3/songoh_ws/MaskDNtoBBox_GPU0/trainer/trainer.py:524: UserWarning: __floordiv__ is deprecated, and its behavior will change in a future version of pytorch. It currently rounds toward 0 (like the 'trunc' function NOT 'floor'). This results in incorrect rounding for negative values. To keep the current behavior, use torch.div(a, b, rounding_mode='trunc'), or for actual floor division, use torch.div(a, b, rounding_mode='floor').
+
+Testing DataLoader 0:   8%|▊         | 26/312 [05:19<58:33, 12.29s/it]
+/media/songoh/ssh3/songoh_ws/MaskDNtoBBox_GPU0/trainer/trainer.py:524: UserWarning: __floordiv__ is deprecated, and its behavior will change in a future version of pytorch. It currently rounds toward 0 (like the 'trunc' function NOT 'floor'). This results in incorrect rounding for negative values. To keep the current behavior, use torch.div(a, b, rounding_mode='trunc'), or for actual floor division, use torch.div(a, b, rounding_mode='floor').
+  topk_indices = topk_indices // num_classes
+/media/songoh/ssh3/songoh_ws/MaskDNtoBBox_GPU0/trainer/trainer.py:524: UserWarning: __floordiv__ is deprecated, and its behavior will change in a future version of pytorch. It currently rounds toward 0 (like the 'trunc' function NOT 'floor'). This results in incorrect rounding for negative values. To keep the current behavior, use torch.div(a, b, rounding_mode='trunc'), or for actual floor division, use torch.div(a, b, rounding_mode='floor').
+
+Testing DataLoader 0:   9%|▊         | 27/312 [05:24<57:10, 12.04s/it]
+/media/songoh/ssh3/songoh_ws/MaskDNtoBBox_GPU0/trainer/trainer.py:524: UserWarning: __floordiv__ is deprecated, and its behavior will change in a future version of pytorch. It currently rounds toward 0 (like the 'trunc' function NOT 'floor'). This results in incorrect rounding for negative values. To keep the current behavior, use torch.div(a, b, rounding_mode='trunc'), or for actual floor division, use torch.div(a, b, rounding_mode='floor').
+
+
+Testing DataLoader 0:   9%|▉         | 29/312 [05:43<55:51, 11.84s/it]
+/media/songoh/ssh3/songoh_ws/MaskDNtoBBox_GPU0/trainer/trainer.py:524: UserWarning: __floordiv__ is deprecated, and its behavior will change in a future version of pytorch. It currently rounds toward 0 (like the 'trunc' function NOT 'floor'). This results in incorrect rounding for negative values. To keep the current behavior, use torch.div(a, b, rounding_mode='trunc'), or for actual floor division, use torch.div(a, b, rounding_mode='floor').
+  topk_indices = topk_indices // num_classes
+/media/songoh/ssh3/songoh_ws/MaskDNtoBBox_GPU0/trainer/trainer.py:524: UserWarning: __floordiv__ is deprecated, and its behavior will change in a future version of pytorch. It currently rounds toward 0 (like the 'trunc' function NOT 'floor'). This results in incorrect rounding for negative values. To keep the current behavior, use torch.div(a, b, rounding_mode='trunc'), or for actual floor division, use torch.div(a, b, rounding_mode='floor').
+  topk_indices = topk_indices // num_classes
+/media/songoh/ssh3/songoh_ws/MaskDNtoBBox_GPU0/trainer/trainer.py:647: RuntimeWarning: invalid value encountered in divide
+
+Testing DataLoader 0:  10%|▉         | 30/312 [05:55<55:45, 11.86s/it]
+/media/songoh/ssh3/songoh_ws/MaskDNtoBBox_GPU0/trainer/trainer.py:524: UserWarning: __floordiv__ is deprecated, and its behavior will change in a future version of pytorch. It currently rounds toward 0 (like the 'trunc' function NOT 'floor'). This results in incorrect rounding for negative values. To keep the current behavior, use torch.div(a, b, rounding_mode='trunc'), or for actual floor division, use torch.div(a, b, rounding_mode='floor').
+
+
+Testing DataLoader 0:  10%|█         | 32/312 [06:19<55:23, 11.87s/it]
+/media/songoh/ssh3/songoh_ws/MaskDNtoBBox_GPU0/trainer/trainer.py:524: UserWarning: __floordiv__ is deprecated, and its behavior will change in a future version of pytorch. It currently rounds toward 0 (like the 'trunc' function NOT 'floor'). This results in incorrect rounding for negative values. To keep the current behavior, use torch.div(a, b, rounding_mode='trunc'), or for actual floor division, use torch.div(a, b, rounding_mode='floor').
+  topk_indices = topk_indices // num_classes
+/media/songoh/ssh3/songoh_ws/MaskDNtoBBox_GPU0/trainer/trainer.py:524: UserWarning: __floordiv__ is deprecated, and its behavior will change in a future version of pytorch. It currently rounds toward 0 (like the 'trunc' function NOT 'floor'). This results in incorrect rounding for negative values. To keep the current behavior, use torch.div(a, b, rounding_mode='trunc'), or for actual floor division, use torch.div(a, b, rounding_mode='floor').
+
+Testing DataLoader 0:  11%|█         | 33/312 [06:35<55:40, 11.97s/it]
+/media/songoh/ssh3/songoh_ws/MaskDNtoBBox_GPU0/trainer/trainer.py:524: UserWarning: __floordiv__ is deprecated, and its behavior will change in a future version of pytorch. It currently rounds toward 0 (like the 'trunc' function NOT 'floor'). This results in incorrect rounding for negative values. To keep the current behavior, use torch.div(a, b, rounding_mode='trunc'), or for actual floor division, use torch.div(a, b, rounding_mode='floor').
+
+Testing DataLoader 0:  11%|█         | 34/312 [06:42<54:54, 11.85s/it]
+/media/songoh/ssh3/songoh_ws/MaskDNtoBBox_GPU0/trainer/trainer.py:524: UserWarning: __floordiv__ is deprecated, and its behavior will change in a future version of pytorch. It currently rounds toward 0 (like the 'trunc' function NOT 'floor'). This results in incorrect rounding for negative values. To keep the current behavior, use torch.div(a, b, rounding_mode='trunc'), or for actual floor division, use torch.div(a, b, rounding_mode='floor').
+
+Testing DataLoader 0:  11%|█         | 35/312 [06:56<54:52, 11.89s/it]
+/media/songoh/ssh3/songoh_ws/MaskDNtoBBox_GPU0/trainer/trainer.py:524: UserWarning: __floordiv__ is deprecated, and its behavior will change in a future version of pytorch. It currently rounds toward 0 (like the 'trunc' function NOT 'floor'). This results in incorrect rounding for negative values. To keep the current behavior, use torch.div(a, b, rounding_mode='trunc'), or for actual floor division, use torch.div(a, b, rounding_mode='floor').
+
+Testing DataLoader 0:  12%|█▏        | 36/312 [07:09<54:52, 11.93s/it]
+/media/songoh/ssh3/songoh_ws/MaskDNtoBBox_GPU0/trainer/trainer.py:524: UserWarning: __floordiv__ is deprecated, and its behavior will change in a future version of pytorch. It currently rounds toward 0 (like the 'trunc' function NOT 'floor'). This results in incorrect rounding for negative values. To keep the current behavior, use torch.div(a, b, rounding_mode='trunc'), or for actual floor division, use torch.div(a, b, rounding_mode='floor').
+
+Testing DataLoader 0:  12%|█▏        | 37/312 [07:24<55:04, 12.02s/it]
+/media/songoh/ssh3/songoh_ws/MaskDNtoBBox_GPU0/trainer/trainer.py:524: UserWarning: __floordiv__ is deprecated, and its behavior will change in a future version of pytorch. It currently rounds toward 0 (like the 'trunc' function NOT 'floor'). This results in incorrect rounding for negative values. To keep the current behavior, use torch.div(a, b, rounding_mode='trunc'), or for actual floor division, use torch.div(a, b, rounding_mode='floor').
+
+Testing DataLoader 0:  12%|█▏        | 38/312 [07:30<54:10, 11.86s/it]
+/media/songoh/ssh3/songoh_ws/MaskDNtoBBox_GPU0/trainer/trainer.py:524: UserWarning: __floordiv__ is deprecated, and its behavior will change in a future version of pytorch. It currently rounds toward 0 (like the 'trunc' function NOT 'floor'). This results in incorrect rounding for negative values. To keep the current behavior, use torch.div(a, b, rounding_mode='trunc'), or for actual floor division, use torch.div(a, b, rounding_mode='floor').
+
+Testing DataLoader 0:  12%|█▎        | 39/312 [07:36<53:14, 11.70s/it]
+/media/songoh/ssh3/songoh_ws/MaskDNtoBBox_GPU0/trainer/trainer.py:524: UserWarning: __floordiv__ is deprecated, and its behavior will change in a future version of pytorch. It currently rounds toward 0 (like the 'trunc' function NOT 'floor'). This results in incorrect rounding for negative values. To keep the current behavior, use torch.div(a, b, rounding_mode='trunc'), or for actual floor division, use torch.div(a, b, rounding_mode='floor').
+
+Testing DataLoader 0:  13%|█▎        | 40/312 [07:40<52:12, 11.52s/it]
+/media/songoh/ssh3/songoh_ws/MaskDNtoBBox_GPU0/trainer/trainer.py:524: UserWarning: __floordiv__ is deprecated, and its behavior will change in a future version of pytorch. It currently rounds toward 0 (like the 'trunc' function NOT 'floor'). This results in incorrect rounding for negative values. To keep the current behavior, use torch.div(a, b, rounding_mode='trunc'), or for actual floor division, use torch.div(a, b, rounding_mode='floor').
+
+Testing DataLoader 0:  13%|█▎        | 41/312 [07:48<51:37, 11.43s/it]
+/media/songoh/ssh3/songoh_ws/MaskDNtoBBox_GPU0/trainer/trainer.py:524: UserWarning: __floordiv__ is deprecated, and its behavior will change in a future version of pytorch. It currently rounds toward 0 (like the 'trunc' function NOT 'floor'). This results in incorrect rounding for negative values. To keep the current behavior, use torch.div(a, b, rounding_mode='trunc'), or for actual floor division, use torch.div(a, b, rounding_mode='floor').
+
+Testing DataLoader 0:  13%|█▎        | 42/312 [07:57<51:08, 11.37s/it]
+/media/songoh/ssh3/songoh_ws/MaskDNtoBBox_GPU0/trainer/trainer.py:524: UserWarning: __floordiv__ is deprecated, and its behavior will change in a future version of pytorch. It currently rounds toward 0 (like the 'trunc' function NOT 'floor'). This results in incorrect rounding for negative values. To keep the current behavior, use torch.div(a, b, rounding_mode='trunc'), or for actual floor division, use torch.div(a, b, rounding_mode='floor').
+
+
+Testing DataLoader 0:  14%|█▍        | 44/312 [08:13<50:08, 11.23s/it]
+/media/songoh/ssh3/songoh_ws/MaskDNtoBBox_GPU0/trainer/trainer.py:524: UserWarning: __floordiv__ is deprecated, and its behavior will change in a future version of pytorch. It currently rounds toward 0 (like the 'trunc' function NOT 'floor'). This results in incorrect rounding for negative values. To keep the current behavior, use torch.div(a, b, rounding_mode='trunc'), or for actual floor division, use torch.div(a, b, rounding_mode='floor').
+  topk_indices = topk_indices // num_classes
+/media/songoh/ssh3/songoh_ws/MaskDNtoBBox_GPU0/trainer/trainer.py:524: UserWarning: __floordiv__ is deprecated, and its behavior will change in a future version of pytorch. It currently rounds toward 0 (like the 'trunc' function NOT 'floor'). This results in incorrect rounding for negative values. To keep the current behavior, use torch.div(a, b, rounding_mode='trunc'), or for actual floor division, use torch.div(a, b, rounding_mode='floor').
+
+
+Testing DataLoader 0:  15%|█▍        | 46/312 [08:33<49:29, 11.16s/it]
+/media/songoh/ssh3/songoh_ws/MaskDNtoBBox_GPU0/trainer/trainer.py:524: UserWarning: __floordiv__ is deprecated, and its behavior will change in a future version of pytorch. It currently rounds toward 0 (like the 'trunc' function NOT 'floor'). This results in incorrect rounding for negative values. To keep the current behavior, use torch.div(a, b, rounding_mode='trunc'), or for actual floor division, use torch.div(a, b, rounding_mode='floor').
+
+Testing DataLoader 0:  15%|█▌        | 47/312 [08:39<48:51, 11.06s/it]
+/media/songoh/ssh3/songoh_ws/MaskDNtoBBox_GPU0/trainer/trainer.py:524: UserWarning: __floordiv__ is deprecated, and its behavior will change in a future version of pytorch. It currently rounds toward 0 (like the 'trunc' function NOT 'floor'). This results in incorrect rounding for negative values. To keep the current behavior, use torch.div(a, b, rounding_mode='trunc'), or for actual floor division, use torch.div(a, b, rounding_mode='floor').
+
+Testing DataLoader 0:  15%|█▌        | 48/312 [08:45<48:10, 10.95s/it]
+/media/songoh/ssh3/songoh_ws/MaskDNtoBBox_GPU0/trainer/trainer.py:524: UserWarning: __floordiv__ is deprecated, and its behavior will change in a future version of pytorch. It currently rounds toward 0 (like the 'trunc' function NOT 'floor'). This results in incorrect rounding for negative values. To keep the current behavior, use torch.div(a, b, rounding_mode='trunc'), or for actual floor division, use torch.div(a, b, rounding_mode='floor').
+
+Testing DataLoader 0:  16%|█▌        | 49/312 [08:51<47:34, 10.85s/it]
+/media/songoh/ssh3/songoh_ws/MaskDNtoBBox_GPU0/trainer/trainer.py:524: UserWarning: __floordiv__ is deprecated, and its behavior will change in a future version of pytorch. It currently rounds toward 0 (like the 'trunc' function NOT 'floor'). This results in incorrect rounding for negative values. To keep the current behavior, use torch.div(a, b, rounding_mode='trunc'), or for actual floor division, use torch.div(a, b, rounding_mode='floor').
+
+Testing DataLoader 0:  16%|█▌        | 50/312 [09:03<47:30, 10.88s/it]
+/media/songoh/ssh3/songoh_ws/MaskDNtoBBox_GPU0/trainer/trainer.py:524: UserWarning: __floordiv__ is deprecated, and its behavior will change in a future version of pytorch. It currently rounds toward 0 (like the 'trunc' function NOT 'floor'). This results in incorrect rounding for negative values. To keep the current behavior, use torch.div(a, b, rounding_mode='trunc'), or for actual floor division, use torch.div(a, b, rounding_mode='floor').
+
+Testing DataLoader 0:  16%|█▋        | 51/312 [09:09<46:53, 10.78s/it]
+/media/songoh/ssh3/songoh_ws/MaskDNtoBBox_GPU0/trainer/trainer.py:524: UserWarning: __floordiv__ is deprecated, and its behavior will change in a future version of pytorch. It currently rounds toward 0 (like the 'trunc' function NOT 'floor'). This results in incorrect rounding for negative values. To keep the current behavior, use torch.div(a, b, rounding_mode='trunc'), or for actual floor division, use torch.div(a, b, rounding_mode='floor').
+  topk_indices = topk_indices // num_classes
+/media/songoh/ssh3/songoh_ws/MaskDNtoBBox_GPU0/trainer/trainer.py:524: UserWarning: __floordiv__ is deprecated, and its behavior will change in a future version of pytorch. It currently rounds toward 0 (like the 'trunc' function NOT 'floor'). This results in incorrect rounding for negative values. To keep the current behavior, use torch.div(a, b, rounding_mode='trunc'), or for actual floor division, use torch.div(a, b, rounding_mode='floor').
+
+Testing DataLoader 0:  17%|█▋        | 52/312 [09:14<46:13, 10.67s/it]
+/media/songoh/ssh3/songoh_ws/MaskDNtoBBox_GPU0/trainer/trainer.py:524: UserWarning: __floordiv__ is deprecated, and its behavior will change in a future version of pytorch. It currently rounds toward 0 (like the 'trunc' function NOT 'floor'). This results in incorrect rounding for negative values. To keep the current behavior, use torch.div(a, b, rounding_mode='trunc'), or for actual floor division, use torch.div(a, b, rounding_mode='floor').
+
+Testing DataLoader 0:  17%|█▋        | 53/312 [09:20<45:38, 10.57s/it]
+/media/songoh/ssh3/songoh_ws/MaskDNtoBBox_GPU0/trainer/trainer.py:524: UserWarning: __floordiv__ is deprecated, and its behavior will change in a future version of pytorch. It currently rounds toward 0 (like the 'trunc' function NOT 'floor'). This results in incorrect rounding for negative values. To keep the current behavior, use torch.div(a, b, rounding_mode='trunc'), or for actual floor division, use torch.div(a, b, rounding_mode='floor').
+
+
+Testing DataLoader 0:  18%|█▊        | 55/312 [09:33<44:41, 10.44s/it]
+/media/songoh/ssh3/songoh_ws/MaskDNtoBBox_GPU0/trainer/trainer.py:524: UserWarning: __floordiv__ is deprecated, and its behavior will change in a future version of pytorch. It currently rounds toward 0 (like the 'trunc' function NOT 'floor'). This results in incorrect rounding for negative values. To keep the current behavior, use torch.div(a, b, rounding_mode='trunc'), or for actual floor division, use torch.div(a, b, rounding_mode='floor').
+
+Testing DataLoader 0:  18%|█▊        | 56/312 [09:39<44:11, 10.36s/it]
+/media/songoh/ssh3/songoh_ws/MaskDNtoBBox_GPU0/trainer/trainer.py:524: UserWarning: __floordiv__ is deprecated, and its behavior will change in a future version of pytorch. It currently rounds toward 0 (like the 'trunc' function NOT 'floor'). This results in incorrect rounding for negative values. To keep the current behavior, use torch.div(a, b, rounding_mode='trunc'), or for actual floor division, use torch.div(a, b, rounding_mode='floor').
+  topk_indices = topk_indices // num_classes
+/media/songoh/ssh3/songoh_ws/MaskDNtoBBox_GPU0/trainer/trainer.py:524: UserWarning: __floordiv__ is deprecated, and its behavior will change in a future version of pytorch. It currently rounds toward 0 (like the 'trunc' function NOT 'floor'). This results in incorrect rounding for negative values. To keep the current behavior, use torch.div(a, b, rounding_mode='trunc'), or for actual floor division, use torch.div(a, b, rounding_mode='floor').
+
+Testing DataLoader 0:  18%|█▊        | 57/312 [09:55<44:25, 10.45s/it]
+/media/songoh/ssh3/songoh_ws/MaskDNtoBBox_GPU0/trainer/trainer.py:524: UserWarning: __floordiv__ is deprecated, and its behavior will change in a future version of pytorch. It currently rounds toward 0 (like the 'trunc' function NOT 'floor'). This results in incorrect rounding for negative values. To keep the current behavior, use torch.div(a, b, rounding_mode='trunc'), or for actual floor division, use torch.div(a, b, rounding_mode='floor').
+
+Testing DataLoader 0:  19%|█▊        | 58/312 [10:08<44:25, 10.49s/it]
+/media/songoh/ssh3/songoh_ws/MaskDNtoBBox_GPU0/trainer/trainer.py:524: UserWarning: __floordiv__ is deprecated, and its behavior will change in a future version of pytorch. It currently rounds toward 0 (like the 'trunc' function NOT 'floor'). This results in incorrect rounding for negative values. To keep the current behavior, use torch.div(a, b, rounding_mode='trunc'), or for actual floor division, use torch.div(a, b, rounding_mode='floor').
+
+Testing DataLoader 0:  19%|█▉        | 59/312 [10:28<44:53, 10.65s/it]
+/media/songoh/ssh3/songoh_ws/MaskDNtoBBox_GPU0/trainer/trainer.py:524: UserWarning: __floordiv__ is deprecated, and its behavior will change in a future version of pytorch. It currently rounds toward 0 (like the 'trunc' function NOT 'floor'). This results in incorrect rounding for negative values. To keep the current behavior, use torch.div(a, b, rounding_mode='trunc'), or for actual floor division, use torch.div(a, b, rounding_mode='floor').
+
+Testing DataLoader 0:  19%|█▉        | 60/312 [10:39<44:46, 10.66s/it]
+/media/songoh/ssh3/songoh_ws/MaskDNtoBBox_GPU0/trainer/trainer.py:524: UserWarning: __floordiv__ is deprecated, and its behavior will change in a future version of pytorch. It currently rounds toward 0 (like the 'trunc' function NOT 'floor'). This results in incorrect rounding for negative values. To keep the current behavior, use torch.div(a, b, rounding_mode='trunc'), or for actual floor division, use torch.div(a, b, rounding_mode='floor').
+
+Testing DataLoader 0:  20%|█▉        | 61/312 [10:49<44:32, 10.65s/it]
+/media/songoh/ssh3/songoh_ws/MaskDNtoBBox_GPU0/trainer/trainer.py:524: UserWarning: __floordiv__ is deprecated, and its behavior will change in a future version of pytorch. It currently rounds toward 0 (like the 'trunc' function NOT 'floor'). This results in incorrect rounding for negative values. To keep the current behavior, use torch.div(a, b, rounding_mode='trunc'), or for actual floor division, use torch.div(a, b, rounding_mode='floor').
+
+Testing DataLoader 0:  20%|█▉        | 62/312 [11:01<44:25, 10.66s/it]
+/media/songoh/ssh3/songoh_ws/MaskDNtoBBox_GPU0/trainer/trainer.py:524: UserWarning: __floordiv__ is deprecated, and its behavior will change in a future version of pytorch. It currently rounds toward 0 (like the 'trunc' function NOT 'floor'). This results in incorrect rounding for negative values. To keep the current behavior, use torch.div(a, b, rounding_mode='trunc'), or for actual floor division, use torch.div(a, b, rounding_mode='floor').
+
+Testing DataLoader 0:  20%|██        | 63/312 [11:11<44:13, 10.66s/it]
+/media/songoh/ssh3/songoh_ws/MaskDNtoBBox_GPU0/trainer/trainer.py:524: UserWarning: __floordiv__ is deprecated, and its behavior will change in a future version of pytorch. It currently rounds toward 0 (like the 'trunc' function NOT 'floor'). This results in incorrect rounding for negative values. To keep the current behavior, use torch.div(a, b, rounding_mode='trunc'), or for actual floor division, use torch.div(a, b, rounding_mode='floor').
+
+Testing DataLoader 0:  21%|██        | 64/312 [11:21<44:01, 10.65s/it]
+/media/songoh/ssh3/songoh_ws/MaskDNtoBBox_GPU0/trainer/trainer.py:524: UserWarning: __floordiv__ is deprecated, and its behavior will change in a future version of pytorch. It currently rounds toward 0 (like the 'trunc' function NOT 'floor'). This results in incorrect rounding for negative values. To keep the current behavior, use torch.div(a, b, rounding_mode='trunc'), or for actual floor division, use torch.div(a, b, rounding_mode='floor').
+
+Testing DataLoader 0:  21%|██        | 65/312 [11:33<43:55, 10.67s/it]
+/media/songoh/ssh3/songoh_ws/MaskDNtoBBox_GPU0/trainer/trainer.py:524: UserWarning: __floordiv__ is deprecated, and its behavior will change in a future version of pytorch. It currently rounds toward 0 (like the 'trunc' function NOT 'floor'). This results in incorrect rounding for negative values. To keep the current behavior, use torch.div(a, b, rounding_mode='trunc'), or for actual floor division, use torch.div(a, b, rounding_mode='floor').
+
+Testing DataLoader 0:  21%|██        | 66/312 [11:47<43:58, 10.73s/it]
+/media/songoh/ssh3/songoh_ws/MaskDNtoBBox_GPU0/trainer/trainer.py:524: UserWarning: __floordiv__ is deprecated, and its behavior will change in a future version of pytorch. It currently rounds toward 0 (like the 'trunc' function NOT 'floor'). This results in incorrect rounding for negative values. To keep the current behavior, use torch.div(a, b, rounding_mode='trunc'), or for actual floor division, use torch.div(a, b, rounding_mode='floor').
+
+Testing DataLoader 0:  21%|██▏       | 67/312 [11:58<43:47, 10.72s/it]
+/media/songoh/ssh3/songoh_ws/MaskDNtoBBox_GPU0/trainer/trainer.py:524: UserWarning: __floordiv__ is deprecated, and its behavior will change in a future version of pytorch. It currently rounds toward 0 (like the 'trunc' function NOT 'floor'). This results in incorrect rounding for negative values. To keep the current behavior, use torch.div(a, b, rounding_mode='trunc'), or for actual floor division, use torch.div(a, b, rounding_mode='floor').
+
+Testing DataLoader 0:  22%|██▏       | 68/312 [12:09<43:36, 10.72s/it]
+/media/songoh/ssh3/songoh_ws/MaskDNtoBBox_GPU0/trainer/trainer.py:524: UserWarning: __floordiv__ is deprecated, and its behavior will change in a future version of pytorch. It currently rounds toward 0 (like the 'trunc' function NOT 'floor'). This results in incorrect rounding for negative values. To keep the current behavior, use torch.div(a, b, rounding_mode='trunc'), or for actual floor division, use torch.div(a, b, rounding_mode='floor').
+
+Testing DataLoader 0:  22%|██▏       | 69/312 [12:21<43:32, 10.75s/it]
+/media/songoh/ssh3/songoh_ws/MaskDNtoBBox_GPU0/trainer/trainer.py:524: UserWarning: __floordiv__ is deprecated, and its behavior will change in a future version of pytorch. It currently rounds toward 0 (like the 'trunc' function NOT 'floor'). This results in incorrect rounding for negative values. To keep the current behavior, use torch.div(a, b, rounding_mode='trunc'), or for actual floor division, use torch.div(a, b, rounding_mode='floor').
+
+Testing DataLoader 0:  22%|██▏       | 70/312 [12:47<44:11, 10.96s/it]
+/media/songoh/ssh3/songoh_ws/MaskDNtoBBox_GPU0/trainer/trainer.py:524: UserWarning: __floordiv__ is deprecated, and its behavior will change in a future version of pytorch. It currently rounds toward 0 (like the 'trunc' function NOT 'floor'). This results in incorrect rounding for negative values. To keep the current behavior, use torch.div(a, b, rounding_mode='trunc'), or for actual floor division, use torch.div(a, b, rounding_mode='floor').
+
+Testing DataLoader 0:  23%|██▎       | 71/312 [12:57<44:00, 10.96s/it]
+/media/songoh/ssh3/songoh_ws/MaskDNtoBBox_GPU0/trainer/trainer.py:524: UserWarning: __floordiv__ is deprecated, and its behavior will change in a future version of pytorch. It currently rounds toward 0 (like the 'trunc' function NOT 'floor'). This results in incorrect rounding for negative values. To keep the current behavior, use torch.div(a, b, rounding_mode='trunc'), or for actual floor division, use torch.div(a, b, rounding_mode='floor').
+
+Testing DataLoader 0:  23%|██▎       | 72/312 [13:06<43:40, 10.92s/it]
+/media/songoh/ssh3/songoh_ws/MaskDNtoBBox_GPU0/trainer/trainer.py:524: UserWarning: __floordiv__ is deprecated, and its behavior will change in a future version of pytorch. It currently rounds toward 0 (like the 'trunc' function NOT 'floor'). This results in incorrect rounding for negative values. To keep the current behavior, use torch.div(a, b, rounding_mode='trunc'), or for actual floor division, use torch.div(a, b, rounding_mode='floor').
+
+Testing DataLoader 0:  23%|██▎       | 73/312 [13:14<43:22, 10.89s/it]
+/media/songoh/ssh3/songoh_ws/MaskDNtoBBox_GPU0/trainer/trainer.py:524: UserWarning: __floordiv__ is deprecated, and its behavior will change in a future version of pytorch. It currently rounds toward 0 (like the 'trunc' function NOT 'floor'). This results in incorrect rounding for negative values. To keep the current behavior, use torch.div(a, b, rounding_mode='trunc'), or for actual floor division, use torch.div(a, b, rounding_mode='floor').
+
+Testing DataLoader 0:  24%|██▎       | 74/312 [13:26<43:13, 10.90s/it]
+/media/songoh/ssh3/songoh_ws/MaskDNtoBBox_GPU0/trainer/trainer.py:524: UserWarning: __floordiv__ is deprecated, and its behavior will change in a future version of pytorch. It currently rounds toward 0 (like the 'trunc' function NOT 'floor'). This results in incorrect rounding for negative values. To keep the current behavior, use torch.div(a, b, rounding_mode='trunc'), or for actual floor division, use torch.div(a, b, rounding_mode='floor').
+
+Testing DataLoader 0:  24%|██▍       | 75/312 [13:39<43:09, 10.92s/it]
+/media/songoh/ssh3/songoh_ws/MaskDNtoBBox_GPU0/trainer/trainer.py:524: UserWarning: __floordiv__ is deprecated, and its behavior will change in a future version of pytorch. It currently rounds toward 0 (like the 'trunc' function NOT 'floor'). This results in incorrect rounding for negative values. To keep the current behavior, use torch.div(a, b, rounding_mode='trunc'), or for actual floor division, use torch.div(a, b, rounding_mode='floor').
+
+Testing DataLoader 0:  24%|██▍       | 76/312 [14:05<43:43, 11.12s/it]
+/media/songoh/ssh3/songoh_ws/MaskDNtoBBox_GPU0/trainer/trainer.py:524: UserWarning: __floordiv__ is deprecated, and its behavior will change in a future version of pytorch. It currently rounds toward 0 (like the 'trunc' function NOT 'floor'). This results in incorrect rounding for negative values. To keep the current behavior, use torch.div(a, b, rounding_mode='trunc'), or for actual floor division, use torch.div(a, b, rounding_mode='floor').
+
+Testing DataLoader 0:  25%|██▍       | 77/312 [14:22<43:52, 11.20s/it]
+/media/songoh/ssh3/songoh_ws/MaskDNtoBBox_GPU0/trainer/trainer.py:524: UserWarning: __floordiv__ is deprecated, and its behavior will change in a future version of pytorch. It currently rounds toward 0 (like the 'trunc' function NOT 'floor'). This results in incorrect rounding for negative values. To keep the current behavior, use torch.div(a, b, rounding_mode='trunc'), or for actual floor division, use torch.div(a, b, rounding_mode='floor').
+
+Testing DataLoader 0:  25%|██▌       | 78/312 [14:34<43:44, 11.22s/it]
+/media/songoh/ssh3/songoh_ws/MaskDNtoBBox_GPU0/trainer/trainer.py:524: UserWarning: __floordiv__ is deprecated, and its behavior will change in a future version of pytorch. It currently rounds toward 0 (like the 'trunc' function NOT 'floor'). This results in incorrect rounding for negative values. To keep the current behavior, use torch.div(a, b, rounding_mode='trunc'), or for actual floor division, use torch.div(a, b, rounding_mode='floor').
+
+Testing DataLoader 0:  25%|██▌       | 79/312 [14:49<43:42, 11.25s/it]
+/media/songoh/ssh3/songoh_ws/MaskDNtoBBox_GPU0/trainer/trainer.py:524: UserWarning: __floordiv__ is deprecated, and its behavior will change in a future version of pytorch. It currently rounds toward 0 (like the 'trunc' function NOT 'floor'). This results in incorrect rounding for negative values. To keep the current behavior, use torch.div(a, b, rounding_mode='trunc'), or for actual floor division, use torch.div(a, b, rounding_mode='floor').
+
+Testing DataLoader 0:  26%|██▌       | 80/312 [15:00<43:31, 11.26s/it]
+/media/songoh/ssh3/songoh_ws/MaskDNtoBBox_GPU0/trainer/trainer.py:524: UserWarning: __floordiv__ is deprecated, and its behavior will change in a future version of pytorch. It currently rounds toward 0 (like the 'trunc' function NOT 'floor'). This results in incorrect rounding for negative values. To keep the current behavior, use torch.div(a, b, rounding_mode='trunc'), or for actual floor division, use torch.div(a, b, rounding_mode='floor').
+
+Testing DataLoader 0:  26%|██▌       | 81/312 [15:18<43:38, 11.34s/it]
+/media/songoh/ssh3/songoh_ws/MaskDNtoBBox_GPU0/trainer/trainer.py:647: RuntimeWarning: invalid value encountered in divide
+  norm_overlaps = pairwise_overlap / normalization
+/media/songoh/ssh3/songoh_ws/MaskDNtoBBox_GPU0/trainer/trainer.py:524: UserWarning: __floordiv__ is deprecated, and its behavior will change in a future version of pytorch. It currently rounds toward 0 (like the 'trunc' function NOT 'floor'). This results in incorrect rounding for negative values. To keep the current behavior, use torch.div(a, b, rounding_mode='trunc'), or for actual floor division, use torch.div(a, b, rounding_mode='floor').
+
+Testing DataLoader 0:  26%|██▋       | 82/312 [15:26<43:19, 11.30s/it]
+/media/songoh/ssh3/songoh_ws/MaskDNtoBBox_GPU0/trainer/trainer.py:524: UserWarning: __floordiv__ is deprecated, and its behavior will change in a future version of pytorch. It currently rounds toward 0 (like the 'trunc' function NOT 'floor'). This results in incorrect rounding for negative values. To keep the current behavior, use torch.div(a, b, rounding_mode='trunc'), or for actual floor division, use torch.div(a, b, rounding_mode='floor').
+
+Testing DataLoader 0:  27%|██▋       | 83/312 [15:37<43:07, 11.30s/it]
+/media/songoh/ssh3/songoh_ws/MaskDNtoBBox_GPU0/trainer/trainer.py:524: UserWarning: __floordiv__ is deprecated, and its behavior will change in a future version of pytorch. It currently rounds toward 0 (like the 'trunc' function NOT 'floor'). This results in incorrect rounding for negative values. To keep the current behavior, use torch.div(a, b, rounding_mode='trunc'), or for actual floor division, use torch.div(a, b, rounding_mode='floor').
+
+Testing DataLoader 0:  27%|██▋       | 84/312 [15:46<42:49, 11.27s/it]
+/media/songoh/ssh3/songoh_ws/MaskDNtoBBox_GPU0/trainer/trainer.py:524: UserWarning: __floordiv__ is deprecated, and its behavior will change in a future version of pytorch. It currently rounds toward 0 (like the 'trunc' function NOT 'floor'). This results in incorrect rounding for negative values. To keep the current behavior, use torch.div(a, b, rounding_mode='trunc'), or for actual floor division, use torch.div(a, b, rounding_mode='floor').
+
+Testing DataLoader 0:  27%|██▋       | 85/312 [15:55<42:32, 11.24s/it]
+/media/songoh/ssh3/songoh_ws/MaskDNtoBBox_GPU0/trainer/trainer.py:524: UserWarning: __floordiv__ is deprecated, and its behavior will change in a future version of pytorch. It currently rounds toward 0 (like the 'trunc' function NOT 'floor'). This results in incorrect rounding for negative values. To keep the current behavior, use torch.div(a, b, rounding_mode='trunc'), or for actual floor division, use torch.div(a, b, rounding_mode='floor').
+
+
+Testing DataLoader 0:  28%|██▊       | 87/312 [16:14<42:00, 11.20s/it]
+/media/songoh/ssh3/songoh_ws/MaskDNtoBBox_GPU0/trainer/trainer.py:524: UserWarning: __floordiv__ is deprecated, and its behavior will change in a future version of pytorch. It currently rounds toward 0 (like the 'trunc' function NOT 'floor'). This results in incorrect rounding for negative values. To keep the current behavior, use torch.div(a, b, rounding_mode='trunc'), or for actual floor division, use torch.div(a, b, rounding_mode='floor').
+  topk_indices = topk_indices // num_classes
+/media/songoh/ssh3/songoh_ws/MaskDNtoBBox_GPU0/trainer/trainer.py:524: UserWarning: __floordiv__ is deprecated, and its behavior will change in a future version of pytorch. It currently rounds toward 0 (like the 'trunc' function NOT 'floor'). This results in incorrect rounding for negative values. To keep the current behavior, use torch.div(a, b, rounding_mode='trunc'), or for actual floor division, use torch.div(a, b, rounding_mode='floor').
+
+Testing DataLoader 0:  28%|██▊       | 88/312 [16:25<41:49, 11.20s/it]
+/media/songoh/ssh3/songoh_ws/MaskDNtoBBox_GPU0/trainer/trainer.py:647: RuntimeWarning: invalid value encountered in divide
+  norm_overlaps = pairwise_overlap / normalization
+/media/songoh/ssh3/songoh_ws/MaskDNtoBBox_GPU0/trainer/trainer.py:524: UserWarning: __floordiv__ is deprecated, and its behavior will change in a future version of pytorch. It currently rounds toward 0 (like the 'trunc' function NOT 'floor'). This results in incorrect rounding for negative values. To keep the current behavior, use torch.div(a, b, rounding_mode='trunc'), or for actual floor division, use torch.div(a, b, rounding_mode='floor').
+
+Testing DataLoader 0:  29%|██▊       | 89/312 [16:33<41:28, 11.16s/it]
+/media/songoh/ssh3/songoh_ws/MaskDNtoBBox_GPU0/trainer/trainer.py:524: UserWarning: __floordiv__ is deprecated, and its behavior will change in a future version of pytorch. It currently rounds toward 0 (like the 'trunc' function NOT 'floor'). This results in incorrect rounding for negative values. To keep the current behavior, use torch.div(a, b, rounding_mode='trunc'), or for actual floor division, use torch.div(a, b, rounding_mode='floor').
+
+Testing DataLoader 0:  29%|██▉       | 90/312 [16:41<41:10, 11.13s/it]
+/media/songoh/ssh3/songoh_ws/MaskDNtoBBox_GPU0/trainer/trainer.py:524: UserWarning: __floordiv__ is deprecated, and its behavior will change in a future version of pytorch. It currently rounds toward 0 (like the 'trunc' function NOT 'floor'). This results in incorrect rounding for negative values. To keep the current behavior, use torch.div(a, b, rounding_mode='trunc'), or for actual floor division, use torch.div(a, b, rounding_mode='floor').
+
+Testing DataLoader 0:  29%|██▉       | 91/312 [16:51<40:57, 11.12s/it]
+/media/songoh/ssh3/songoh_ws/MaskDNtoBBox_GPU0/trainer/trainer.py:524: UserWarning: __floordiv__ is deprecated, and its behavior will change in a future version of pytorch. It currently rounds toward 0 (like the 'trunc' function NOT 'floor'). This results in incorrect rounding for negative values. To keep the current behavior, use torch.div(a, b, rounding_mode='trunc'), or for actual floor division, use torch.div(a, b, rounding_mode='floor').
+
+Testing DataLoader 0:  29%|██▉       | 92/312 [17:00<40:39, 11.09s/it]
+/media/songoh/ssh3/songoh_ws/MaskDNtoBBox_GPU0/trainer/trainer.py:524: UserWarning: __floordiv__ is deprecated, and its behavior will change in a future version of pytorch. It currently rounds toward 0 (like the 'trunc' function NOT 'floor'). This results in incorrect rounding for negative values. To keep the current behavior, use torch.div(a, b, rounding_mode='trunc'), or for actual floor division, use torch.div(a, b, rounding_mode='floor').
+
+Testing DataLoader 0:  30%|██▉       | 93/312 [17:26<41:03, 11.25s/it]
+/media/songoh/ssh3/songoh_ws/MaskDNtoBBox_GPU0/trainer/trainer.py:524: UserWarning: __floordiv__ is deprecated, and its behavior will change in a future version of pytorch. It currently rounds toward 0 (like the 'trunc' function NOT 'floor'). This results in incorrect rounding for negative values. To keep the current behavior, use torch.div(a, b, rounding_mode='trunc'), or for actual floor division, use torch.div(a, b, rounding_mode='floor').
+
+Testing DataLoader 0:  30%|███       | 94/312 [17:40<40:59, 11.28s/it]
+/media/songoh/ssh3/songoh_ws/MaskDNtoBBox_GPU0/trainer/trainer.py:524: UserWarning: __floordiv__ is deprecated, and its behavior will change in a future version of pytorch. It currently rounds toward 0 (like the 'trunc' function NOT 'floor'). This results in incorrect rounding for negative values. To keep the current behavior, use torch.div(a, b, rounding_mode='trunc'), or for actual floor division, use torch.div(a, b, rounding_mode='floor').
+
+Testing DataLoader 0:  30%|███       | 95/312 [17:54<40:55, 11.31s/it]
+/media/songoh/ssh3/songoh_ws/MaskDNtoBBox_GPU0/trainer/trainer.py:524: UserWarning: __floordiv__ is deprecated, and its behavior will change in a future version of pytorch. It currently rounds toward 0 (like the 'trunc' function NOT 'floor'). This results in incorrect rounding for negative values. To keep the current behavior, use torch.div(a, b, rounding_mode='trunc'), or for actual floor division, use torch.div(a, b, rounding_mode='floor').
+
+Testing DataLoader 0:  31%|███       | 96/312 [18:15<41:04, 11.41s/it]
+/media/songoh/ssh3/songoh_ws/MaskDNtoBBox_GPU0/trainer/trainer.py:524: UserWarning: __floordiv__ is deprecated, and its behavior will change in a future version of pytorch. It currently rounds toward 0 (like the 'trunc' function NOT 'floor'). This results in incorrect rounding for negative values. To keep the current behavior, use torch.div(a, b, rounding_mode='trunc'), or for actual floor division, use torch.div(a, b, rounding_mode='floor').
+
+Testing DataLoader 0:  31%|███       | 97/312 [18:23<40:46, 11.38s/it]
+/media/songoh/ssh3/songoh_ws/MaskDNtoBBox_GPU0/trainer/trainer.py:524: UserWarning: __floordiv__ is deprecated, and its behavior will change in a future version of pytorch. It currently rounds toward 0 (like the 'trunc' function NOT 'floor'). This results in incorrect rounding for negative values. To keep the current behavior, use torch.div(a, b, rounding_mode='trunc'), or for actual floor division, use torch.div(a, b, rounding_mode='floor').
+
+
+Testing DataLoader 0:  32%|███▏      | 99/312 [18:40<40:11, 11.32s/it]
+/media/songoh/ssh3/songoh_ws/MaskDNtoBBox_GPU0/trainer/trainer.py:524: UserWarning: __floordiv__ is deprecated, and its behavior will change in a future version of pytorch. It currently rounds toward 0 (like the 'trunc' function NOT 'floor'). This results in incorrect rounding for negative values. To keep the current behavior, use torch.div(a, b, rounding_mode='trunc'), or for actual floor division, use torch.div(a, b, rounding_mode='floor').
+  topk_indices = topk_indices // num_classes
+/media/songoh/ssh3/songoh_ws/MaskDNtoBBox_GPU0/trainer/trainer.py:524: UserWarning: __floordiv__ is deprecated, and its behavior will change in a future version of pytorch. It currently rounds toward 0 (like the 'trunc' function NOT 'floor'). This results in incorrect rounding for negative values. To keep the current behavior, use torch.div(a, b, rounding_mode='trunc'), or for actual floor division, use torch.div(a, b, rounding_mode='floor').
+
+Testing DataLoader 0:  32%|███▏      | 100/312 [18:52<40:00, 11.32s/it]
+/media/songoh/ssh3/songoh_ws/MaskDNtoBBox_GPU0/trainer/trainer.py:524: UserWarning: __floordiv__ is deprecated, and its behavior will change in a future version of pytorch. It currently rounds toward 0 (like the 'trunc' function NOT 'floor'). This results in incorrect rounding for negative values. To keep the current behavior, use torch.div(a, b, rounding_mode='trunc'), or for actual floor division, use torch.div(a, b, rounding_mode='floor').
+
+Testing DataLoader 0:  32%|███▏      | 101/312 [19:08<39:58, 11.37s/it]
+/media/songoh/ssh3/songoh_ws/MaskDNtoBBox_GPU0/trainer/trainer.py:524: UserWarning: __floordiv__ is deprecated, and its behavior will change in a future version of pytorch. It currently rounds toward 0 (like the 'trunc' function NOT 'floor'). This results in incorrect rounding for negative values. To keep the current behavior, use torch.div(a, b, rounding_mode='trunc'), or for actual floor division, use torch.div(a, b, rounding_mode='floor').
+
+Testing DataLoader 0:  33%|███▎      | 102/312 [19:24<39:56, 11.41s/it]
+/media/songoh/ssh3/songoh_ws/MaskDNtoBBox_GPU0/trainer/trainer.py:524: UserWarning: __floordiv__ is deprecated, and its behavior will change in a future version of pytorch. It currently rounds toward 0 (like the 'trunc' function NOT 'floor'). This results in incorrect rounding for negative values. To keep the current behavior, use torch.div(a, b, rounding_mode='trunc'), or for actual floor division, use torch.div(a, b, rounding_mode='floor').
+
+Testing DataLoader 0:  33%|███▎      | 103/312 [20:05<40:45, 11.70s/it]
+/media/songoh/ssh3/songoh_ws/MaskDNtoBBox_GPU0/trainer/trainer.py:524: UserWarning: __floordiv__ is deprecated, and its behavior will change in a future version of pytorch. It currently rounds toward 0 (like the 'trunc' function NOT 'floor'). This results in incorrect rounding for negative values. To keep the current behavior, use torch.div(a, b, rounding_mode='trunc'), or for actual floor division, use torch.div(a, b, rounding_mode='floor').
+
+Testing DataLoader 0:  33%|███▎      | 104/312 [20:34<41:08, 11.87s/it]
+/media/songoh/ssh3/songoh_ws/MaskDNtoBBox_GPU0/trainer/trainer.py:524: UserWarning: __floordiv__ is deprecated, and its behavior will change in a future version of pytorch. It currently rounds toward 0 (like the 'trunc' function NOT 'floor'). This results in incorrect rounding for negative values. To keep the current behavior, use torch.div(a, b, rounding_mode='trunc'), or for actual floor division, use torch.div(a, b, rounding_mode='floor').
+
+
+Testing DataLoader 0:  34%|███▍      | 106/312 [21:44<42:15, 12.31s/it]
+/media/songoh/ssh3/songoh_ws/MaskDNtoBBox_GPU0/trainer/trainer.py:524: UserWarning: __floordiv__ is deprecated, and its behavior will change in a future version of pytorch. It currently rounds toward 0 (like the 'trunc' function NOT 'floor'). This results in incorrect rounding for negative values. To keep the current behavior, use torch.div(a, b, rounding_mode='trunc'), or for actual floor division, use torch.div(a, b, rounding_mode='floor').
+  topk_indices = topk_indices // num_classes
+/media/songoh/ssh3/songoh_ws/MaskDNtoBBox_GPU0/trainer/trainer.py:524: UserWarning: __floordiv__ is deprecated, and its behavior will change in a future version of pytorch. It currently rounds toward 0 (like the 'trunc' function NOT 'floor'). This results in incorrect rounding for negative values. To keep the current behavior, use torch.div(a, b, rounding_mode='trunc'), or for actual floor division, use torch.div(a, b, rounding_mode='floor').
+
+
+Testing DataLoader 0:  35%|███▍      | 108/312 [22:04<41:41, 12.26s/it]
+/media/songoh/ssh3/songoh_ws/MaskDNtoBBox_GPU0/trainer/trainer.py:524: UserWarning: __floordiv__ is deprecated, and its behavior will change in a future version of pytorch. It currently rounds toward 0 (like the 'trunc' function NOT 'floor'). This results in incorrect rounding for negative values. To keep the current behavior, use torch.div(a, b, rounding_mode='trunc'), or for actual floor division, use torch.div(a, b, rounding_mode='floor').
+  topk_indices = topk_indices // num_classes
+/media/songoh/ssh3/songoh_ws/MaskDNtoBBox_GPU0/trainer/trainer.py:524: UserWarning: __floordiv__ is deprecated, and its behavior will change in a future version of pytorch. It currently rounds toward 0 (like the 'trunc' function NOT 'floor'). This results in incorrect rounding for negative values. To keep the current behavior, use torch.div(a, b, rounding_mode='trunc'), or for actual floor division, use torch.div(a, b, rounding_mode='floor').
+
+Testing DataLoader 0:  35%|███▍      | 109/312 [22:11<41:19, 12.21s/it]
+/media/songoh/ssh3/songoh_ws/MaskDNtoBBox_GPU0/trainer/trainer.py:524: UserWarning: __floordiv__ is deprecated, and its behavior will change in a future version of pytorch. It currently rounds toward 0 (like the 'trunc' function NOT 'floor'). This results in incorrect rounding for negative values. To keep the current behavior, use torch.div(a, b, rounding_mode='trunc'), or for actual floor division, use torch.div(a, b, rounding_mode='floor').
+
+Testing DataLoader 0:  35%|███▌      | 110/312 [22:24<41:09, 12.22s/it]
+/media/songoh/ssh3/songoh_ws/MaskDNtoBBox_GPU0/trainer/trainer.py:524: UserWarning: __floordiv__ is deprecated, and its behavior will change in a future version of pytorch. It currently rounds toward 0 (like the 'trunc' function NOT 'floor'). This results in incorrect rounding for negative values. To keep the current behavior, use torch.div(a, b, rounding_mode='trunc'), or for actual floor division, use torch.div(a, b, rounding_mode='floor').
+
+Testing DataLoader 0:  36%|███▌      | 111/312 [22:35<40:55, 12.22s/it]
+/media/songoh/ssh3/songoh_ws/MaskDNtoBBox_GPU0/trainer/trainer.py:524: UserWarning: __floordiv__ is deprecated, and its behavior will change in a future version of pytorch. It currently rounds toward 0 (like the 'trunc' function NOT 'floor'). This results in incorrect rounding for negative values. To keep the current behavior, use torch.div(a, b, rounding_mode='trunc'), or for actual floor division, use torch.div(a, b, rounding_mode='floor').
+
+Testing DataLoader 0:  36%|███▌      | 112/312 [22:47<40:42, 12.21s/it]
+/media/songoh/ssh3/songoh_ws/MaskDNtoBBox_GPU0/trainer/trainer.py:524: UserWarning: __floordiv__ is deprecated, and its behavior will change in a future version of pytorch. It currently rounds toward 0 (like the 'trunc' function NOT 'floor'). This results in incorrect rounding for negative values. To keep the current behavior, use torch.div(a, b, rounding_mode='trunc'), or for actual floor division, use torch.div(a, b, rounding_mode='floor').
+
+Testing DataLoader 0:  36%|███▌      | 113/312 [22:56<40:23, 12.18s/it]
+/media/songoh/ssh3/songoh_ws/MaskDNtoBBox_GPU0/trainer/trainer.py:524: UserWarning: __floordiv__ is deprecated, and its behavior will change in a future version of pytorch. It currently rounds toward 0 (like the 'trunc' function NOT 'floor'). This results in incorrect rounding for negative values. To keep the current behavior, use torch.div(a, b, rounding_mode='trunc'), or for actual floor division, use torch.div(a, b, rounding_mode='floor').
+
+Testing DataLoader 0:  37%|███▋      | 114/312 [23:04<40:04, 12.14s/it]
+/media/songoh/ssh3/songoh_ws/MaskDNtoBBox_GPU0/trainer/trainer.py:524: UserWarning: __floordiv__ is deprecated, and its behavior will change in a future version of pytorch. It currently rounds toward 0 (like the 'trunc' function NOT 'floor'). This results in incorrect rounding for negative values. To keep the current behavior, use torch.div(a, b, rounding_mode='trunc'), or for actual floor division, use torch.div(a, b, rounding_mode='floor').
+
+Testing DataLoader 0:  37%|███▋      | 115/312 [23:13<39:46, 12.12s/it]
+/media/songoh/ssh3/songoh_ws/MaskDNtoBBox_GPU0/trainer/trainer.py:524: UserWarning: __floordiv__ is deprecated, and its behavior will change in a future version of pytorch. It currently rounds toward 0 (like the 'trunc' function NOT 'floor'). This results in incorrect rounding for negative values. To keep the current behavior, use torch.div(a, b, rounding_mode='trunc'), or for actual floor division, use torch.div(a, b, rounding_mode='floor').
+
+Testing DataLoader 0:  37%|███▋      | 116/312 [23:25<39:35, 12.12s/it]
+/media/songoh/ssh3/songoh_ws/MaskDNtoBBox_GPU0/trainer/trainer.py:524: UserWarning: __floordiv__ is deprecated, and its behavior will change in a future version of pytorch. It currently rounds toward 0 (like the 'trunc' function NOT 'floor'). This results in incorrect rounding for negative values. To keep the current behavior, use torch.div(a, b, rounding_mode='trunc'), or for actual floor division, use torch.div(a, b, rounding_mode='floor').
+
+Testing DataLoader 0:  38%|███▊      | 117/312 [23:56<39:53, 12.28s/it]
+/media/songoh/ssh3/songoh_ws/MaskDNtoBBox_GPU0/trainer/trainer.py:524: UserWarning: __floordiv__ is deprecated, and its behavior will change in a future version of pytorch. It currently rounds toward 0 (like the 'trunc' function NOT 'floor'). This results in incorrect rounding for negative values. To keep the current behavior, use torch.div(a, b, rounding_mode='trunc'), or for actual floor division, use torch.div(a, b, rounding_mode='floor').
+
+Testing DataLoader 0:  38%|███▊      | 118/312 [24:05<39:37, 12.25s/it]
+/media/songoh/ssh3/songoh_ws/MaskDNtoBBox_GPU0/trainer/trainer.py:524: UserWarning: __floordiv__ is deprecated, and its behavior will change in a future version of pytorch. It currently rounds toward 0 (like the 'trunc' function NOT 'floor'). This results in incorrect rounding for negative values. To keep the current behavior, use torch.div(a, b, rounding_mode='trunc'), or for actual floor division, use torch.div(a, b, rounding_mode='floor').
+
+Testing DataLoader 0:  38%|███▊      | 119/312 [24:13<39:17, 12.22s/it]
+/media/songoh/ssh3/songoh_ws/MaskDNtoBBox_GPU0/trainer/trainer.py:524: UserWarning: __floordiv__ is deprecated, and its behavior will change in a future version of pytorch. It currently rounds toward 0 (like the 'trunc' function NOT 'floor'). This results in incorrect rounding for negative values. To keep the current behavior, use torch.div(a, b, rounding_mode='trunc'), or for actual floor division, use torch.div(a, b, rounding_mode='floor').
+
+Testing DataLoader 0:  38%|███▊      | 120/312 [24:21<38:57, 12.18s/it]
+/media/songoh/ssh3/songoh_ws/MaskDNtoBBox_GPU0/trainer/trainer.py:524: UserWarning: __floordiv__ is deprecated, and its behavior will change in a future version of pytorch. It currently rounds toward 0 (like the 'trunc' function NOT 'floor'). This results in incorrect rounding for negative values. To keep the current behavior, use torch.div(a, b, rounding_mode='trunc'), or for actual floor division, use torch.div(a, b, rounding_mode='floor').
+
+Testing DataLoader 0:  39%|███▉      | 121/312 [24:28<38:37, 12.14s/it]
+/media/songoh/ssh3/songoh_ws/MaskDNtoBBox_GPU0/trainer/trainer.py:524: UserWarning: __floordiv__ is deprecated, and its behavior will change in a future version of pytorch. It currently rounds toward 0 (like the 'trunc' function NOT 'floor'). This results in incorrect rounding for negative values. To keep the current behavior, use torch.div(a, b, rounding_mode='trunc'), or for actual floor division, use torch.div(a, b, rounding_mode='floor').
+
+Testing DataLoader 0:  39%|███▉      | 122/312 [24:52<38:44, 12.23s/it]
+/media/songoh/ssh3/songoh_ws/MaskDNtoBBox_GPU0/trainer/trainer.py:524: UserWarning: __floordiv__ is deprecated, and its behavior will change in a future version of pytorch. It currently rounds toward 0 (like the 'trunc' function NOT 'floor'). This results in incorrect rounding for negative values. To keep the current behavior, use torch.div(a, b, rounding_mode='trunc'), or for actual floor division, use torch.div(a, b, rounding_mode='floor').
+
+Testing DataLoader 0:  39%|███▉      | 123/312 [25:17<38:52, 12.34s/it]
+/media/songoh/ssh3/songoh_ws/MaskDNtoBBox_GPU0/trainer/trainer.py:524: UserWarning: __floordiv__ is deprecated, and its behavior will change in a future version of pytorch. It currently rounds toward 0 (like the 'trunc' function NOT 'floor'). This results in incorrect rounding for negative values. To keep the current behavior, use torch.div(a, b, rounding_mode='trunc'), or for actual floor division, use torch.div(a, b, rounding_mode='floor').
+
+Testing DataLoader 0:  40%|███▉      | 124/312 [25:28<38:37, 12.33s/it]
+/media/songoh/ssh3/songoh_ws/MaskDNtoBBox_GPU0/trainer/trainer.py:524: UserWarning: __floordiv__ is deprecated, and its behavior will change in a future version of pytorch. It currently rounds toward 0 (like the 'trunc' function NOT 'floor'). This results in incorrect rounding for negative values. To keep the current behavior, use torch.div(a, b, rounding_mode='trunc'), or for actual floor division, use torch.div(a, b, rounding_mode='floor').
+
+Testing DataLoader 0:  40%|████      | 125/312 [25:37<38:19, 12.30s/it]
+/media/songoh/ssh3/songoh_ws/MaskDNtoBBox_GPU0/trainer/trainer.py:524: UserWarning: __floordiv__ is deprecated, and its behavior will change in a future version of pytorch. It currently rounds toward 0 (like the 'trunc' function NOT 'floor'). This results in incorrect rounding for negative values. To keep the current behavior, use torch.div(a, b, rounding_mode='trunc'), or for actual floor division, use torch.div(a, b, rounding_mode='floor').
+
+Testing DataLoader 0:  40%|████      | 126/312 [25:45<38:01, 12.26s/it]
+/media/songoh/ssh3/songoh_ws/MaskDNtoBBox_GPU0/trainer/trainer.py:524: UserWarning: __floordiv__ is deprecated, and its behavior will change in a future version of pytorch. It currently rounds toward 0 (like the 'trunc' function NOT 'floor'). This results in incorrect rounding for negative values. To keep the current behavior, use torch.div(a, b, rounding_mode='trunc'), or for actual floor division, use torch.div(a, b, rounding_mode='floor').
+
+Testing DataLoader 0:  41%|████      | 127/312 [25:53<37:43, 12.24s/it]
+/media/songoh/ssh3/songoh_ws/MaskDNtoBBox_GPU0/trainer/trainer.py:524: UserWarning: __floordiv__ is deprecated, and its behavior will change in a future version of pytorch. It currently rounds toward 0 (like the 'trunc' function NOT 'floor'). This results in incorrect rounding for negative values. To keep the current behavior, use torch.div(a, b, rounding_mode='trunc'), or for actual floor division, use torch.div(a, b, rounding_mode='floor').
+
+Testing DataLoader 0:  41%|████      | 128/312 [26:08<37:34, 12.25s/it]
+/media/songoh/ssh3/songoh_ws/MaskDNtoBBox_GPU0/trainer/trainer.py:524: UserWarning: __floordiv__ is deprecated, and its behavior will change in a future version of pytorch. It currently rounds toward 0 (like the 'trunc' function NOT 'floor'). This results in incorrect rounding for negative values. To keep the current behavior, use torch.div(a, b, rounding_mode='trunc'), or for actual floor division, use torch.div(a, b, rounding_mode='floor').
+
+Testing DataLoader 0:  41%|████▏     | 129/312 [26:17<37:17, 12.23s/it]
+/media/songoh/ssh3/songoh_ws/MaskDNtoBBox_GPU0/trainer/trainer.py:524: UserWarning: __floordiv__ is deprecated, and its behavior will change in a future version of pytorch. It currently rounds toward 0 (like the 'trunc' function NOT 'floor'). This results in incorrect rounding for negative values. To keep the current behavior, use torch.div(a, b, rounding_mode='trunc'), or for actual floor division, use torch.div(a, b, rounding_mode='floor').
+
+Testing DataLoader 0:  42%|████▏     | 130/312 [26:27<37:03, 12.21s/it]
+/media/songoh/ssh3/songoh_ws/MaskDNtoBBox_GPU0/trainer/trainer.py:524: UserWarning: __floordiv__ is deprecated, and its behavior will change in a future version of pytorch. It currently rounds toward 0 (like the 'trunc' function NOT 'floor'). This results in incorrect rounding for negative values. To keep the current behavior, use torch.div(a, b, rounding_mode='trunc'), or for actual floor division, use torch.div(a, b, rounding_mode='floor').
+
+Testing DataLoader 0:  42%|████▏     | 131/312 [26:37<36:47, 12.20s/it]
+/media/songoh/ssh3/songoh_ws/MaskDNtoBBox_GPU0/trainer/trainer.py:524: UserWarning: __floordiv__ is deprecated, and its behavior will change in a future version of pytorch. It currently rounds toward 0 (like the 'trunc' function NOT 'floor'). This results in incorrect rounding for negative values. To keep the current behavior, use torch.div(a, b, rounding_mode='trunc'), or for actual floor division, use torch.div(a, b, rounding_mode='floor').
+
+
+Testing DataLoader 0:  43%|████▎     | 133/312 [26:53<36:11, 12.13s/it]
+/media/songoh/ssh3/songoh_ws/MaskDNtoBBox_GPU0/trainer/trainer.py:524: UserWarning: __floordiv__ is deprecated, and its behavior will change in a future version of pytorch. It currently rounds toward 0 (like the 'trunc' function NOT 'floor'). This results in incorrect rounding for negative values. To keep the current behavior, use torch.div(a, b, rounding_mode='trunc'), or for actual floor division, use torch.div(a, b, rounding_mode='floor').
+  topk_indices = topk_indices // num_classes
+/media/songoh/ssh3/songoh_ws/MaskDNtoBBox_GPU0/trainer/trainer.py:524: UserWarning: __floordiv__ is deprecated, and its behavior will change in a future version of pytorch. It currently rounds toward 0 (like the 'trunc' function NOT 'floor'). This results in incorrect rounding for negative values. To keep the current behavior, use torch.div(a, b, rounding_mode='trunc'), or for actual floor division, use torch.div(a, b, rounding_mode='floor').
+
+
+Testing DataLoader 0:  43%|████▎     | 135/312 [27:03<35:27, 12.02s/it]
+/media/songoh/ssh3/songoh_ws/MaskDNtoBBox_GPU0/trainer/trainer.py:524: UserWarning: __floordiv__ is deprecated, and its behavior will change in a future version of pytorch. It currently rounds toward 0 (like the 'trunc' function NOT 'floor'). This results in incorrect rounding for negative values. To keep the current behavior, use torch.div(a, b, rounding_mode='trunc'), or for actual floor division, use torch.div(a, b, rounding_mode='floor').
+  topk_indices = topk_indices // num_classes
+/media/songoh/ssh3/songoh_ws/MaskDNtoBBox_GPU0/trainer/trainer.py:524: UserWarning: __floordiv__ is deprecated, and its behavior will change in a future version of pytorch. It currently rounds toward 0 (like the 'trunc' function NOT 'floor'). This results in incorrect rounding for negative values. To keep the current behavior, use torch.div(a, b, rounding_mode='trunc'), or for actual floor division, use torch.div(a, b, rounding_mode='floor').
+
+Testing DataLoader 0:  44%|████▎     | 136/312 [27:13<35:13, 12.01s/it]
+/media/songoh/ssh3/songoh_ws/MaskDNtoBBox_GPU0/trainer/trainer.py:524: UserWarning: __floordiv__ is deprecated, and its behavior will change in a future version of pytorch. It currently rounds toward 0 (like the 'trunc' function NOT 'floor'). This results in incorrect rounding for negative values. To keep the current behavior, use torch.div(a, b, rounding_mode='trunc'), or for actual floor division, use torch.div(a, b, rounding_mode='floor').
+
+Testing DataLoader 0:  44%|████▍     | 137/312 [27:22<34:58, 11.99s/it]
+/media/songoh/ssh3/songoh_ws/MaskDNtoBBox_GPU0/trainer/trainer.py:524: UserWarning: __floordiv__ is deprecated, and its behavior will change in a future version of pytorch. It currently rounds toward 0 (like the 'trunc' function NOT 'floor'). This results in incorrect rounding for negative values. To keep the current behavior, use torch.div(a, b, rounding_mode='trunc'), or for actual floor division, use torch.div(a, b, rounding_mode='floor').
+
+
+Testing DataLoader 0:  45%|████▍     | 139/312 [27:39<34:24, 11.94s/it]
+/media/songoh/ssh3/songoh_ws/MaskDNtoBBox_GPU0/trainer/trainer.py:524: UserWarning: __floordiv__ is deprecated, and its behavior will change in a future version of pytorch. It currently rounds toward 0 (like the 'trunc' function NOT 'floor'). This results in incorrect rounding for negative values. To keep the current behavior, use torch.div(a, b, rounding_mode='trunc'), or for actual floor division, use torch.div(a, b, rounding_mode='floor').
+
+Testing DataLoader 0:  45%|████▍     | 140/312 [27:45<34:05, 11.89s/it]
+/media/songoh/ssh3/songoh_ws/MaskDNtoBBox_GPU0/trainer/trainer.py:524: UserWarning: __floordiv__ is deprecated, and its behavior will change in a future version of pytorch. It currently rounds toward 0 (like the 'trunc' function NOT 'floor'). This results in incorrect rounding for negative values. To keep the current behavior, use torch.div(a, b, rounding_mode='trunc'), or for actual floor division, use torch.div(a, b, rounding_mode='floor').
+  topk_indices = topk_indices // num_classes
+/media/songoh/ssh3/songoh_ws/MaskDNtoBBox_GPU0/trainer/trainer.py:524: UserWarning: __floordiv__ is deprecated, and its behavior will change in a future version of pytorch. It currently rounds toward 0 (like the 'trunc' function NOT 'floor'). This results in incorrect rounding for negative values. To keep the current behavior, use torch.div(a, b, rounding_mode='trunc'), or for actual floor division, use torch.div(a, b, rounding_mode='floor').
+
+Testing DataLoader 0:  45%|████▌     | 141/312 [27:52<33:47, 11.86s/it]
+/media/songoh/ssh3/songoh_ws/MaskDNtoBBox_GPU0/trainer/trainer.py:524: UserWarning: __floordiv__ is deprecated, and its behavior will change in a future version of pytorch. It currently rounds toward 0 (like the 'trunc' function NOT 'floor'). This results in incorrect rounding for negative values. To keep the current behavior, use torch.div(a, b, rounding_mode='trunc'), or for actual floor division, use torch.div(a, b, rounding_mode='floor').
+
+
+Testing DataLoader 0:  46%|████▌     | 143/312 [28:09<33:16, 11.81s/it]
+/media/songoh/ssh3/songoh_ws/MaskDNtoBBox_GPU0/trainer/trainer.py:524: UserWarning: __floordiv__ is deprecated, and its behavior will change in a future version of pytorch. It currently rounds toward 0 (like the 'trunc' function NOT 'floor'). This results in incorrect rounding for negative values. To keep the current behavior, use torch.div(a, b, rounding_mode='trunc'), or for actual floor division, use torch.div(a, b, rounding_mode='floor').
+  topk_indices = topk_indices // num_classes
+/media/songoh/ssh3/songoh_ws/MaskDNtoBBox_GPU0/trainer/trainer.py:524: UserWarning: __floordiv__ is deprecated, and its behavior will change in a future version of pytorch. It currently rounds toward 0 (like the 'trunc' function NOT 'floor'). This results in incorrect rounding for negative values. To keep the current behavior, use torch.div(a, b, rounding_mode='trunc'), or for actual floor division, use torch.div(a, b, rounding_mode='floor').
+
+Testing DataLoader 0:  46%|████▌     | 144/312 [28:16<32:59, 11.78s/it]
+/media/songoh/ssh3/songoh_ws/MaskDNtoBBox_GPU0/trainer/trainer.py:524: UserWarning: __floordiv__ is deprecated, and its behavior will change in a future version of pytorch. It currently rounds toward 0 (like the 'trunc' function NOT 'floor'). This results in incorrect rounding for negative values. To keep the current behavior, use torch.div(a, b, rounding_mode='trunc'), or for actual floor division, use torch.div(a, b, rounding_mode='floor').
+
+
+Testing DataLoader 0:  47%|████▋     | 146/312 [28:31<32:25, 11.72s/it]
+/media/songoh/ssh3/songoh_ws/MaskDNtoBBox_GPU0/trainer/trainer.py:524: UserWarning: __floordiv__ is deprecated, and its behavior will change in a future version of pytorch. It currently rounds toward 0 (like the 'trunc' function NOT 'floor'). This results in incorrect rounding for negative values. To keep the current behavior, use torch.div(a, b, rounding_mode='trunc'), or for actual floor division, use torch.div(a, b, rounding_mode='floor').
+  topk_indices = topk_indices // num_classes
+/media/songoh/ssh3/songoh_ws/MaskDNtoBBox_GPU0/trainer/trainer.py:524: UserWarning: __floordiv__ is deprecated, and its behavior will change in a future version of pytorch. It currently rounds toward 0 (like the 'trunc' function NOT 'floor'). This results in incorrect rounding for negative values. To keep the current behavior, use torch.div(a, b, rounding_mode='trunc'), or for actual floor division, use torch.div(a, b, rounding_mode='floor').
+
+Testing DataLoader 0:  47%|████▋     | 147/312 [28:43<32:14, 11.72s/it]
+/media/songoh/ssh3/songoh_ws/MaskDNtoBBox_GPU0/trainer/trainer.py:524: UserWarning: __floordiv__ is deprecated, and its behavior will change in a future version of pytorch. It currently rounds toward 0 (like the 'trunc' function NOT 'floor'). This results in incorrect rounding for negative values. To keep the current behavior, use torch.div(a, b, rounding_mode='trunc'), or for actual floor division, use torch.div(a, b, rounding_mode='floor').
+
+Testing DataLoader 0:  47%|████▋     | 148/312 [28:57<32:04, 11.74s/it]
+/media/songoh/ssh3/songoh_ws/MaskDNtoBBox_GPU0/trainer/trainer.py:524: UserWarning: __floordiv__ is deprecated, and its behavior will change in a future version of pytorch. It currently rounds toward 0 (like the 'trunc' function NOT 'floor'). This results in incorrect rounding for negative values. To keep the current behavior, use torch.div(a, b, rounding_mode='trunc'), or for actual floor division, use torch.div(a, b, rounding_mode='floor').
+
+Testing DataLoader 0:  48%|████▊     | 149/312 [29:04<31:48, 11.71s/it]
+/media/songoh/ssh3/songoh_ws/MaskDNtoBBox_GPU0/trainer/trainer.py:524: UserWarning: __floordiv__ is deprecated, and its behavior will change in a future version of pytorch. It currently rounds toward 0 (like the 'trunc' function NOT 'floor'). This results in incorrect rounding for negative values. To keep the current behavior, use torch.div(a, b, rounding_mode='trunc'), or for actual floor division, use torch.div(a, b, rounding_mode='floor').
+
+Testing DataLoader 0:  48%|████▊     | 150/312 [29:12<31:32, 11.68s/it]
+/media/songoh/ssh3/songoh_ws/MaskDNtoBBox_GPU0/trainer/trainer.py:524: UserWarning: __floordiv__ is deprecated, and its behavior will change in a future version of pytorch. It currently rounds toward 0 (like the 'trunc' function NOT 'floor'). This results in incorrect rounding for negative values. To keep the current behavior, use torch.div(a, b, rounding_mode='trunc'), or for actual floor division, use torch.div(a, b, rounding_mode='floor').
+
+Testing DataLoader 0:  48%|████▊     | 151/312 [29:21<31:18, 11.67s/it]
+/media/songoh/ssh3/songoh_ws/MaskDNtoBBox_GPU0/trainer/trainer.py:524: UserWarning: __floordiv__ is deprecated, and its behavior will change in a future version of pytorch. It currently rounds toward 0 (like the 'trunc' function NOT 'floor'). This results in incorrect rounding for negative values. To keep the current behavior, use torch.div(a, b, rounding_mode='trunc'), or for actual floor division, use torch.div(a, b, rounding_mode='floor').
+
+Testing DataLoader 0:  49%|████▊     | 152/312 [29:31<31:04, 11.65s/it]
+/media/songoh/ssh3/songoh_ws/MaskDNtoBBox_GPU0/trainer/trainer.py:524: UserWarning: __floordiv__ is deprecated, and its behavior will change in a future version of pytorch. It currently rounds toward 0 (like the 'trunc' function NOT 'floor'). This results in incorrect rounding for negative values. To keep the current behavior, use torch.div(a, b, rounding_mode='trunc'), or for actual floor division, use torch.div(a, b, rounding_mode='floor').
+
+Testing DataLoader 0:  49%|████▉     | 153/312 [29:41<30:51, 11.65s/it]
+/media/songoh/ssh3/songoh_ws/MaskDNtoBBox_GPU0/trainer/trainer.py:524: UserWarning: __floordiv__ is deprecated, and its behavior will change in a future version of pytorch. It currently rounds toward 0 (like the 'trunc' function NOT 'floor'). This results in incorrect rounding for negative values. To keep the current behavior, use torch.div(a, b, rounding_mode='trunc'), or for actual floor division, use torch.div(a, b, rounding_mode='floor').
+
+Testing DataLoader 0:  49%|████▉     | 154/312 [29:52<30:39, 11.64s/it]
+/media/songoh/ssh3/songoh_ws/MaskDNtoBBox_GPU0/trainer/trainer.py:524: UserWarning: __floordiv__ is deprecated, and its behavior will change in a future version of pytorch. It currently rounds toward 0 (like the 'trunc' function NOT 'floor'). This results in incorrect rounding for negative values. To keep the current behavior, use torch.div(a, b, rounding_mode='trunc'), or for actual floor division, use torch.div(a, b, rounding_mode='floor').
+
+Testing DataLoader 0:  50%|████▉     | 155/312 [30:04<30:27, 11.64s/it]
+/media/songoh/ssh3/songoh_ws/MaskDNtoBBox_GPU0/trainer/trainer.py:524: UserWarning: __floordiv__ is deprecated, and its behavior will change in a future version of pytorch. It currently rounds toward 0 (like the 'trunc' function NOT 'floor'). This results in incorrect rounding for negative values. To keep the current behavior, use torch.div(a, b, rounding_mode='trunc'), or for actual floor division, use torch.div(a, b, rounding_mode='floor').
+
+Testing DataLoader 0:  50%|█████     | 156/312 [30:10<30:10, 11.61s/it]
+/media/songoh/ssh3/songoh_ws/MaskDNtoBBox_GPU0/trainer/trainer.py:524: UserWarning: __floordiv__ is deprecated, and its behavior will change in a future version of pytorch. It currently rounds toward 0 (like the 'trunc' function NOT 'floor'). This results in incorrect rounding for negative values. To keep the current behavior, use torch.div(a, b, rounding_mode='trunc'), or for actual floor division, use torch.div(a, b, rounding_mode='floor').
+
+
+Testing DataLoader 0:  51%|█████     | 158/312 [30:27<29:41, 11.57s/it]
+/media/songoh/ssh3/songoh_ws/MaskDNtoBBox_GPU0/trainer/trainer.py:524: UserWarning: __floordiv__ is deprecated, and its behavior will change in a future version of pytorch. It currently rounds toward 0 (like the 'trunc' function NOT 'floor'). This results in incorrect rounding for negative values. To keep the current behavior, use torch.div(a, b, rounding_mode='trunc'), or for actual floor division, use torch.div(a, b, rounding_mode='floor').
+  topk_indices = topk_indices // num_classes
+/media/songoh/ssh3/songoh_ws/MaskDNtoBBox_GPU0/trainer/trainer.py:524: UserWarning: __floordiv__ is deprecated, and its behavior will change in a future version of pytorch. It currently rounds toward 0 (like the 'trunc' function NOT 'floor'). This results in incorrect rounding for negative values. To keep the current behavior, use torch.div(a, b, rounding_mode='trunc'), or for actual floor division, use torch.div(a, b, rounding_mode='floor').
+
+Testing DataLoader 0:  51%|█████     | 159/312 [31:01<29:51, 11.71s/it]
+/media/songoh/ssh3/songoh_ws/MaskDNtoBBox_GPU0/trainer/trainer.py:524: UserWarning: __floordiv__ is deprecated, and its behavior will change in a future version of pytorch. It currently rounds toward 0 (like the 'trunc' function NOT 'floor'). This results in incorrect rounding for negative values. To keep the current behavior, use torch.div(a, b, rounding_mode='trunc'), or for actual floor division, use torch.div(a, b, rounding_mode='floor').
+
+Testing DataLoader 0:  51%|█████▏    | 160/312 [31:10<29:36, 11.69s/it]
+/media/songoh/ssh3/songoh_ws/MaskDNtoBBox_GPU0/trainer/trainer.py:524: UserWarning: __floordiv__ is deprecated, and its behavior will change in a future version of pytorch. It currently rounds toward 0 (like the 'trunc' function NOT 'floor'). This results in incorrect rounding for negative values. To keep the current behavior, use torch.div(a, b, rounding_mode='trunc'), or for actual floor division, use torch.div(a, b, rounding_mode='floor').
+
+Testing DataLoader 0:  52%|█████▏    | 161/312 [31:19<29:23, 11.68s/it]
+/media/songoh/ssh3/songoh_ws/MaskDNtoBBox_GPU0/trainer/trainer.py:524: UserWarning: __floordiv__ is deprecated, and its behavior will change in a future version of pytorch. It currently rounds toward 0 (like the 'trunc' function NOT 'floor'). This results in incorrect rounding for negative values. To keep the current behavior, use torch.div(a, b, rounding_mode='trunc'), or for actual floor division, use torch.div(a, b, rounding_mode='floor').
+
+Testing DataLoader 0:  52%|█████▏    | 162/312 [31:33<29:13, 11.69s/it]
+/media/songoh/ssh3/songoh_ws/MaskDNtoBBox_GPU0/trainer/trainer.py:524: UserWarning: __floordiv__ is deprecated, and its behavior will change in a future version of pytorch. It currently rounds toward 0 (like the 'trunc' function NOT 'floor'). This results in incorrect rounding for negative values. To keep the current behavior, use torch.div(a, b, rounding_mode='trunc'), or for actual floor division, use torch.div(a, b, rounding_mode='floor').
+
+Testing DataLoader 0:  52%|█████▏    | 163/312 [31:43<29:00, 11.68s/it]
+/media/songoh/ssh3/songoh_ws/MaskDNtoBBox_GPU0/trainer/trainer.py:524: UserWarning: __floordiv__ is deprecated, and its behavior will change in a future version of pytorch. It currently rounds toward 0 (like the 'trunc' function NOT 'floor'). This results in incorrect rounding for negative values. To keep the current behavior, use torch.div(a, b, rounding_mode='trunc'), or for actual floor division, use torch.div(a, b, rounding_mode='floor').
+
+Testing DataLoader 0:  53%|█████▎    | 164/312 [31:51<28:44, 11.65s/it]
+/media/songoh/ssh3/songoh_ws/MaskDNtoBBox_GPU0/trainer/trainer.py:524: UserWarning: __floordiv__ is deprecated, and its behavior will change in a future version of pytorch. It currently rounds toward 0 (like the 'trunc' function NOT 'floor'). This results in incorrect rounding for negative values. To keep the current behavior, use torch.div(a, b, rounding_mode='trunc'), or for actual floor division, use torch.div(a, b, rounding_mode='floor').
+
+Testing DataLoader 0:  53%|█████▎    | 165/312 [31:57<28:27, 11.62s/it]
+/media/songoh/ssh3/songoh_ws/MaskDNtoBBox_GPU0/trainer/trainer.py:524: UserWarning: __floordiv__ is deprecated, and its behavior will change in a future version of pytorch. It currently rounds toward 0 (like the 'trunc' function NOT 'floor'). This results in incorrect rounding for negative values. To keep the current behavior, use torch.div(a, b, rounding_mode='trunc'), or for actual floor division, use torch.div(a, b, rounding_mode='floor').
+
+Testing DataLoader 0:  53%|█████▎    | 166/312 [32:09<28:16, 11.62s/it]
+/media/songoh/ssh3/songoh_ws/MaskDNtoBBox_GPU0/trainer/trainer.py:524: UserWarning: __floordiv__ is deprecated, and its behavior will change in a future version of pytorch. It currently rounds toward 0 (like the 'trunc' function NOT 'floor'). This results in incorrect rounding for negative values. To keep the current behavior, use torch.div(a, b, rounding_mode='trunc'), or for actual floor division, use torch.div(a, b, rounding_mode='floor').
+
+Testing DataLoader 0:  54%|█████▎    | 167/312 [32:20<28:04, 11.62s/it]
+/media/songoh/ssh3/songoh_ws/MaskDNtoBBox_GPU0/trainer/trainer.py:524: UserWarning: __floordiv__ is deprecated, and its behavior will change in a future version of pytorch. It currently rounds toward 0 (like the 'trunc' function NOT 'floor'). This results in incorrect rounding for negative values. To keep the current behavior, use torch.div(a, b, rounding_mode='trunc'), or for actual floor division, use torch.div(a, b, rounding_mode='floor').
+
+Testing DataLoader 0:  54%|█████▍    | 168/312 [32:37<27:57, 11.65s/it]
+/media/songoh/ssh3/songoh_ws/MaskDNtoBBox_GPU0/trainer/trainer.py:524: UserWarning: __floordiv__ is deprecated, and its behavior will change in a future version of pytorch. It currently rounds toward 0 (like the 'trunc' function NOT 'floor'). This results in incorrect rounding for negative values. To keep the current behavior, use torch.div(a, b, rounding_mode='trunc'), or for actual floor division, use torch.div(a, b, rounding_mode='floor').
+
+Testing DataLoader 0:  54%|█████▍    | 169/312 [32:47<27:44, 11.64s/it]
+/media/songoh/ssh3/songoh_ws/MaskDNtoBBox_GPU0/trainer/trainer.py:524: UserWarning: __floordiv__ is deprecated, and its behavior will change in a future version of pytorch. It currently rounds toward 0 (like the 'trunc' function NOT 'floor'). This results in incorrect rounding for negative values. To keep the current behavior, use torch.div(a, b, rounding_mode='trunc'), or for actual floor division, use torch.div(a, b, rounding_mode='floor').
+
+Testing DataLoader 0:  54%|█████▍    | 170/312 [33:00<27:33, 11.65s/it]
+/media/songoh/ssh3/songoh_ws/MaskDNtoBBox_GPU0/trainer/trainer.py:524: UserWarning: __floordiv__ is deprecated, and its behavior will change in a future version of pytorch. It currently rounds toward 0 (like the 'trunc' function NOT 'floor'). This results in incorrect rounding for negative values. To keep the current behavior, use torch.div(a, b, rounding_mode='trunc'), or for actual floor division, use torch.div(a, b, rounding_mode='floor').
+
+Testing DataLoader 0:  55%|█████▍    | 171/312 [33:16<27:25, 11.67s/it]
+/media/songoh/ssh3/songoh_ws/MaskDNtoBBox_GPU0/trainer/trainer.py:524: UserWarning: __floordiv__ is deprecated, and its behavior will change in a future version of pytorch. It currently rounds toward 0 (like the 'trunc' function NOT 'floor'). This results in incorrect rounding for negative values. To keep the current behavior, use torch.div(a, b, rounding_mode='trunc'), or for actual floor division, use torch.div(a, b, rounding_mode='floor').
+
+Testing DataLoader 0:  55%|█████▌    | 172/312 [33:28<27:14, 11.68s/it]
+/media/songoh/ssh3/songoh_ws/MaskDNtoBBox_GPU0/trainer/trainer.py:524: UserWarning: __floordiv__ is deprecated, and its behavior will change in a future version of pytorch. It currently rounds toward 0 (like the 'trunc' function NOT 'floor'). This results in incorrect rounding for negative values. To keep the current behavior, use torch.div(a, b, rounding_mode='trunc'), or for actual floor division, use torch.div(a, b, rounding_mode='floor').
+
+Testing DataLoader 0:  55%|█████▌    | 173/312 [33:36<27:00, 11.66s/it]
+/media/songoh/ssh3/songoh_ws/MaskDNtoBBox_GPU0/trainer/trainer.py:524: UserWarning: __floordiv__ is deprecated, and its behavior will change in a future version of pytorch. It currently rounds toward 0 (like the 'trunc' function NOT 'floor'). This results in incorrect rounding for negative values. To keep the current behavior, use torch.div(a, b, rounding_mode='trunc'), or for actual floor division, use torch.div(a, b, rounding_mode='floor').
+
+
+Testing DataLoader 0:  56%|█████▌    | 175/312 [33:51<26:30, 11.61s/it]
+/media/songoh/ssh3/songoh_ws/MaskDNtoBBox_GPU0/trainer/trainer.py:524: UserWarning: __floordiv__ is deprecated, and its behavior will change in a future version of pytorch. It currently rounds toward 0 (like the 'trunc' function NOT 'floor'). This results in incorrect rounding for negative values. To keep the current behavior, use torch.div(a, b, rounding_mode='trunc'), or for actual floor division, use torch.div(a, b, rounding_mode='floor').
+  topk_indices = topk_indices // num_classes
+/media/songoh/ssh3/songoh_ws/MaskDNtoBBox_GPU0/trainer/trainer.py:524: UserWarning: __floordiv__ is deprecated, and its behavior will change in a future version of pytorch. It currently rounds toward 0 (like the 'trunc' function NOT 'floor'). This results in incorrect rounding for negative values. To keep the current behavior, use torch.div(a, b, rounding_mode='trunc'), or for actual floor division, use torch.div(a, b, rounding_mode='floor').
+
+Testing DataLoader 0:  56%|█████▋    | 176/312 [34:00<26:16, 11.59s/it]
+/media/songoh/ssh3/songoh_ws/MaskDNtoBBox_GPU0/trainer/trainer.py:524: UserWarning: __floordiv__ is deprecated, and its behavior will change in a future version of pytorch. It currently rounds toward 0 (like the 'trunc' function NOT 'floor'). This results in incorrect rounding for negative values. To keep the current behavior, use torch.div(a, b, rounding_mode='trunc'), or for actual floor division, use torch.div(a, b, rounding_mode='floor').
+
+Testing DataLoader 0:  57%|█████▋    | 177/312 [34:16<26:08, 11.62s/it]
+/media/songoh/ssh3/songoh_ws/MaskDNtoBBox_GPU0/trainer/trainer.py:524: UserWarning: __floordiv__ is deprecated, and its behavior will change in a future version of pytorch. It currently rounds toward 0 (like the 'trunc' function NOT 'floor'). This results in incorrect rounding for negative values. To keep the current behavior, use torch.div(a, b, rounding_mode='trunc'), or for actual floor division, use torch.div(a, b, rounding_mode='floor').
+
+
+Testing DataLoader 0:  57%|█████▋    | 179/312 [34:39<25:44, 11.62s/it]
+/media/songoh/ssh3/songoh_ws/MaskDNtoBBox_GPU0/trainer/trainer.py:524: UserWarning: __floordiv__ is deprecated, and its behavior will change in a future version of pytorch. It currently rounds toward 0 (like the 'trunc' function NOT 'floor'). This results in incorrect rounding for negative values. To keep the current behavior, use torch.div(a, b, rounding_mode='trunc'), or for actual floor division, use torch.div(a, b, rounding_mode='floor').
+  topk_indices = topk_indices // num_classes
+/media/songoh/ssh3/songoh_ws/MaskDNtoBBox_GPU0/trainer/trainer.py:524: UserWarning: __floordiv__ is deprecated, and its behavior will change in a future version of pytorch. It currently rounds toward 0 (like the 'trunc' function NOT 'floor'). This results in incorrect rounding for negative values. To keep the current behavior, use torch.div(a, b, rounding_mode='trunc'), or for actual floor division, use torch.div(a, b, rounding_mode='floor').
+
+Testing DataLoader 0:  58%|█████▊    | 180/312 [34:48<25:31, 11.60s/it]
+/media/songoh/ssh3/songoh_ws/MaskDNtoBBox_GPU0/trainer/trainer.py:524: UserWarning: __floordiv__ is deprecated, and its behavior will change in a future version of pytorch. It currently rounds toward 0 (like the 'trunc' function NOT 'floor'). This results in incorrect rounding for negative values. To keep the current behavior, use torch.div(a, b, rounding_mode='trunc'), or for actual floor division, use torch.div(a, b, rounding_mode='floor').
+
+Testing DataLoader 0:  58%|█████▊    | 181/312 [34:54<25:16, 11.57s/it]
+/media/songoh/ssh3/songoh_ws/MaskDNtoBBox_GPU0/trainer/trainer.py:524: UserWarning: __floordiv__ is deprecated, and its behavior will change in a future version of pytorch. It currently rounds toward 0 (like the 'trunc' function NOT 'floor'). This results in incorrect rounding for negative values. To keep the current behavior, use torch.div(a, b, rounding_mode='trunc'), or for actual floor division, use torch.div(a, b, rounding_mode='floor').
+
+
+Testing DataLoader 0:  59%|█████▊    | 183/312 [35:07<24:45, 11.51s/it]
+/media/songoh/ssh3/songoh_ws/MaskDNtoBBox_GPU0/trainer/trainer.py:524: UserWarning: __floordiv__ is deprecated, and its behavior will change in a future version of pytorch. It currently rounds toward 0 (like the 'trunc' function NOT 'floor'). This results in incorrect rounding for negative values. To keep the current behavior, use torch.div(a, b, rounding_mode='trunc'), or for actual floor division, use torch.div(a, b, rounding_mode='floor').
+
+Testing DataLoader 0:  59%|█████▉    | 184/312 [35:13<24:30, 11.49s/it]
+/media/songoh/ssh3/songoh_ws/MaskDNtoBBox_GPU0/trainer/trainer.py:524: UserWarning: __floordiv__ is deprecated, and its behavior will change in a future version of pytorch. It currently rounds toward 0 (like the 'trunc' function NOT 'floor'). This results in incorrect rounding for negative values. To keep the current behavior, use torch.div(a, b, rounding_mode='trunc'), or for actual floor division, use torch.div(a, b, rounding_mode='floor').
+
+Testing DataLoader 0:  59%|█████▉    | 185/312 [35:21<24:16, 11.47s/it]
+/media/songoh/ssh3/songoh_ws/MaskDNtoBBox_GPU0/trainer/trainer.py:524: UserWarning: __floordiv__ is deprecated, and its behavior will change in a future version of pytorch. It currently rounds toward 0 (like the 'trunc' function NOT 'floor'). This results in incorrect rounding for negative values. To keep the current behavior, use torch.div(a, b, rounding_mode='trunc'), or for actual floor division, use torch.div(a, b, rounding_mode='floor').
+  topk_indices = topk_indices // num_classes
+/media/songoh/ssh3/songoh_ws/MaskDNtoBBox_GPU0/trainer/trainer.py:524: UserWarning: __floordiv__ is deprecated, and its behavior will change in a future version of pytorch. It currently rounds toward 0 (like the 'trunc' function NOT 'floor'). This results in incorrect rounding for negative values. To keep the current behavior, use torch.div(a, b, rounding_mode='trunc'), or for actual floor division, use torch.div(a, b, rounding_mode='floor').
+
+
+Testing DataLoader 0:  60%|█████▉    | 187/312 [35:37<23:48, 11.43s/it]
+/media/songoh/ssh3/songoh_ws/MaskDNtoBBox_GPU0/trainer/trainer.py:524: UserWarning: __floordiv__ is deprecated, and its behavior will change in a future version of pytorch. It currently rounds toward 0 (like the 'trunc' function NOT 'floor'). This results in incorrect rounding for negative values. To keep the current behavior, use torch.div(a, b, rounding_mode='trunc'), or for actual floor division, use torch.div(a, b, rounding_mode='floor').
+  topk_indices = topk_indices // num_classes
+/media/songoh/ssh3/songoh_ws/MaskDNtoBBox_GPU0/trainer/trainer.py:524: UserWarning: __floordiv__ is deprecated, and its behavior will change in a future version of pytorch. It currently rounds toward 0 (like the 'trunc' function NOT 'floor'). This results in incorrect rounding for negative values. To keep the current behavior, use torch.div(a, b, rounding_mode='trunc'), or for actual floor division, use torch.div(a, b, rounding_mode='floor').
+
+
+Testing DataLoader 0:  61%|██████    | 189/312 [35:53<23:21, 11.40s/it]
+/media/songoh/ssh3/songoh_ws/MaskDNtoBBox_GPU0/trainer/trainer.py:524: UserWarning: __floordiv__ is deprecated, and its behavior will change in a future version of pytorch. It currently rounds toward 0 (like the 'trunc' function NOT 'floor'). This results in incorrect rounding for negative values. To keep the current behavior, use torch.div(a, b, rounding_mode='trunc'), or for actual floor division, use torch.div(a, b, rounding_mode='floor').
+  topk_indices = topk_indices // num_classes
+/media/songoh/ssh3/songoh_ws/MaskDNtoBBox_GPU0/trainer/trainer.py:524: UserWarning: __floordiv__ is deprecated, and its behavior will change in a future version of pytorch. It currently rounds toward 0 (like the 'trunc' function NOT 'floor'). This results in incorrect rounding for negative values. To keep the current behavior, use torch.div(a, b, rounding_mode='trunc'), or for actual floor division, use torch.div(a, b, rounding_mode='floor').
+
+Testing DataLoader 0:  61%|██████    | 190/312 [36:04<23:10, 11.39s/it]
+/media/songoh/ssh3/songoh_ws/MaskDNtoBBox_GPU0/trainer/trainer.py:524: UserWarning: __floordiv__ is deprecated, and its behavior will change in a future version of pytorch. It currently rounds toward 0 (like the 'trunc' function NOT 'floor'). This results in incorrect rounding for negative values. To keep the current behavior, use torch.div(a, b, rounding_mode='trunc'), or for actual floor division, use torch.div(a, b, rounding_mode='floor').
+
+Testing DataLoader 0:  61%|██████    | 191/312 [36:14<22:57, 11.38s/it]
+/media/songoh/ssh3/songoh_ws/MaskDNtoBBox_GPU0/trainer/trainer.py:524: UserWarning: __floordiv__ is deprecated, and its behavior will change in a future version of pytorch. It currently rounds toward 0 (like the 'trunc' function NOT 'floor'). This results in incorrect rounding for negative values. To keep the current behavior, use torch.div(a, b, rounding_mode='trunc'), or for actual floor division, use torch.div(a, b, rounding_mode='floor').
+
+Testing DataLoader 0:  62%|██████▏   | 192/312 [36:24<22:45, 11.38s/it]
+/media/songoh/ssh3/songoh_ws/MaskDNtoBBox_GPU0/trainer/trainer.py:524: UserWarning: __floordiv__ is deprecated, and its behavior will change in a future version of pytorch. It currently rounds toward 0 (like the 'trunc' function NOT 'floor'). This results in incorrect rounding for negative values. To keep the current behavior, use torch.div(a, b, rounding_mode='trunc'), or for actual floor division, use torch.div(a, b, rounding_mode='floor').
+
+Testing DataLoader 0:  62%|██████▏   | 193/312 [36:33<22:32, 11.37s/it]
+/media/songoh/ssh3/songoh_ws/MaskDNtoBBox_GPU0/trainer/trainer.py:524: UserWarning: __floordiv__ is deprecated, and its behavior will change in a future version of pytorch. It currently rounds toward 0 (like the 'trunc' function NOT 'floor'). This results in incorrect rounding for negative values. To keep the current behavior, use torch.div(a, b, rounding_mode='trunc'), or for actual floor division, use torch.div(a, b, rounding_mode='floor').
+
+
+Testing DataLoader 0:  62%|██████▎   | 195/312 [36:43<22:01, 11.30s/it]
+/media/songoh/ssh3/songoh_ws/MaskDNtoBBox_GPU0/trainer/trainer.py:524: UserWarning: __floordiv__ is deprecated, and its behavior will change in a future version of pytorch. It currently rounds toward 0 (like the 'trunc' function NOT 'floor'). This results in incorrect rounding for negative values. To keep the current behavior, use torch.div(a, b, rounding_mode='trunc'), or for actual floor division, use torch.div(a, b, rounding_mode='floor').
+  topk_indices = topk_indices // num_classes
+/media/songoh/ssh3/songoh_ws/MaskDNtoBBox_GPU0/trainer/trainer.py:524: UserWarning: __floordiv__ is deprecated, and its behavior will change in a future version of pytorch. It currently rounds toward 0 (like the 'trunc' function NOT 'floor'). This results in incorrect rounding for negative values. To keep the current behavior, use torch.div(a, b, rounding_mode='trunc'), or for actual floor division, use torch.div(a, b, rounding_mode='floor').
+
+
+Testing DataLoader 0:  63%|██████▎   | 197/312 [37:05<21:39, 11.30s/it]
+/media/songoh/ssh3/songoh_ws/MaskDNtoBBox_GPU0/trainer/trainer.py:524: UserWarning: __floordiv__ is deprecated, and its behavior will change in a future version of pytorch. It currently rounds toward 0 (like the 'trunc' function NOT 'floor'). This results in incorrect rounding for negative values. To keep the current behavior, use torch.div(a, b, rounding_mode='trunc'), or for actual floor division, use torch.div(a, b, rounding_mode='floor').
+  topk_indices = topk_indices // num_classes
+/media/songoh/ssh3/songoh_ws/MaskDNtoBBox_GPU0/trainer/trainer.py:524: UserWarning: __floordiv__ is deprecated, and its behavior will change in a future version of pytorch. It currently rounds toward 0 (like the 'trunc' function NOT 'floor'). This results in incorrect rounding for negative values. To keep the current behavior, use torch.div(a, b, rounding_mode='trunc'), or for actual floor division, use torch.div(a, b, rounding_mode='floor').
+
+Testing DataLoader 0:  63%|██████▎   | 198/312 [37:22<21:31, 11.32s/it]
+/media/songoh/ssh3/songoh_ws/MaskDNtoBBox_GPU0/trainer/trainer.py:524: UserWarning: __floordiv__ is deprecated, and its behavior will change in a future version of pytorch. It currently rounds toward 0 (like the 'trunc' function NOT 'floor'). This results in incorrect rounding for negative values. To keep the current behavior, use torch.div(a, b, rounding_mode='trunc'), or for actual floor division, use torch.div(a, b, rounding_mode='floor').
+
+Testing DataLoader 0:  64%|██████▍   | 199/312 [37:42<21:24, 11.37s/it]
+/media/songoh/ssh3/songoh_ws/MaskDNtoBBox_GPU0/trainer/trainer.py:524: UserWarning: __floordiv__ is deprecated, and its behavior will change in a future version of pytorch. It currently rounds toward 0 (like the 'trunc' function NOT 'floor'). This results in incorrect rounding for negative values. To keep the current behavior, use torch.div(a, b, rounding_mode='trunc'), or for actual floor division, use torch.div(a, b, rounding_mode='floor').
+
+
+Testing DataLoader 0:  64%|██████▍   | 201/312 [37:59<20:59, 11.34s/it]
+/media/songoh/ssh3/songoh_ws/MaskDNtoBBox_GPU0/trainer/trainer.py:524: UserWarning: __floordiv__ is deprecated, and its behavior will change in a future version of pytorch. It currently rounds toward 0 (like the 'trunc' function NOT 'floor'). This results in incorrect rounding for negative values. To keep the current behavior, use torch.div(a, b, rounding_mode='trunc'), or for actual floor division, use torch.div(a, b, rounding_mode='floor').
+
+Testing DataLoader 0:  65%|██████▍   | 202/312 [38:07<20:45, 11.33s/it]
+/media/songoh/ssh3/songoh_ws/MaskDNtoBBox_GPU0/trainer/trainer.py:524: UserWarning: __floordiv__ is deprecated, and its behavior will change in a future version of pytorch. It currently rounds toward 0 (like the 'trunc' function NOT 'floor'). This results in incorrect rounding for negative values. To keep the current behavior, use torch.div(a, b, rounding_mode='trunc'), or for actual floor division, use torch.div(a, b, rounding_mode='floor').
+  topk_indices = topk_indices // num_classes
+/media/songoh/ssh3/songoh_ws/MaskDNtoBBox_GPU0/trainer/trainer.py:524: UserWarning: __floordiv__ is deprecated, and its behavior will change in a future version of pytorch. It currently rounds toward 0 (like the 'trunc' function NOT 'floor'). This results in incorrect rounding for negative values. To keep the current behavior, use torch.div(a, b, rounding_mode='trunc'), or for actual floor division, use torch.div(a, b, rounding_mode='floor').
+
+Testing DataLoader 0:  65%|██████▌   | 203/312 [38:18<20:34, 11.32s/it]
+/media/songoh/ssh3/songoh_ws/MaskDNtoBBox_GPU0/trainer/trainer.py:524: UserWarning: __floordiv__ is deprecated, and its behavior will change in a future version of pytorch. It currently rounds toward 0 (like the 'trunc' function NOT 'floor'). This results in incorrect rounding for negative values. To keep the current behavior, use torch.div(a, b, rounding_mode='trunc'), or for actual floor division, use torch.div(a, b, rounding_mode='floor').
+
+Testing DataLoader 0:  65%|██████▌   | 204/312 [38:32<20:24, 11.33s/it]
+/media/songoh/ssh3/songoh_ws/MaskDNtoBBox_GPU0/trainer/trainer.py:524: UserWarning: __floordiv__ is deprecated, and its behavior will change in a future version of pytorch. It currently rounds toward 0 (like the 'trunc' function NOT 'floor'). This results in incorrect rounding for negative values. To keep the current behavior, use torch.div(a, b, rounding_mode='trunc'), or for actual floor division, use torch.div(a, b, rounding_mode='floor').
+
+Testing DataLoader 0:  66%|██████▌   | 205/312 [38:40<20:11, 11.32s/it]
+/media/songoh/ssh3/songoh_ws/MaskDNtoBBox_GPU0/trainer/trainer.py:524: UserWarning: __floordiv__ is deprecated, and its behavior will change in a future version of pytorch. It currently rounds toward 0 (like the 'trunc' function NOT 'floor'). This results in incorrect rounding for negative values. To keep the current behavior, use torch.div(a, b, rounding_mode='trunc'), or for actual floor division, use torch.div(a, b, rounding_mode='floor').
+
+Testing DataLoader 0:  66%|██████▌   | 206/312 [38:48<19:58, 11.30s/it]
+/media/songoh/ssh3/songoh_ws/MaskDNtoBBox_GPU0/trainer/trainer.py:524: UserWarning: __floordiv__ is deprecated, and its behavior will change in a future version of pytorch. It currently rounds toward 0 (like the 'trunc' function NOT 'floor'). This results in incorrect rounding for negative values. To keep the current behavior, use torch.div(a, b, rounding_mode='trunc'), or for actual floor division, use torch.div(a, b, rounding_mode='floor').
+
+Testing DataLoader 0:  66%|██████▋   | 207/312 [38:55<19:44, 11.28s/it]
+/media/songoh/ssh3/songoh_ws/MaskDNtoBBox_GPU0/trainer/trainer.py:524: UserWarning: __floordiv__ is deprecated, and its behavior will change in a future version of pytorch. It currently rounds toward 0 (like the 'trunc' function NOT 'floor'). This results in incorrect rounding for negative values. To keep the current behavior, use torch.div(a, b, rounding_mode='trunc'), or for actual floor division, use torch.div(a, b, rounding_mode='floor').
+
+Testing DataLoader 0:  67%|██████▋   | 208/312 [39:02<19:31, 11.26s/it]
+/media/songoh/ssh3/songoh_ws/MaskDNtoBBox_GPU0/trainer/trainer.py:524: UserWarning: __floordiv__ is deprecated, and its behavior will change in a future version of pytorch. It currently rounds toward 0 (like the 'trunc' function NOT 'floor'). This results in incorrect rounding for negative values. To keep the current behavior, use torch.div(a, b, rounding_mode='trunc'), or for actual floor division, use torch.div(a, b, rounding_mode='floor').
+
+
+Testing DataLoader 0:  67%|██████▋   | 210/312 [39:20<19:06, 11.24s/it]
+/media/songoh/ssh3/songoh_ws/MaskDNtoBBox_GPU0/trainer/trainer.py:524: UserWarning: __floordiv__ is deprecated, and its behavior will change in a future version of pytorch. It currently rounds toward 0 (like the 'trunc' function NOT 'floor'). This results in incorrect rounding for negative values. To keep the current behavior, use torch.div(a, b, rounding_mode='trunc'), or for actual floor division, use torch.div(a, b, rounding_mode='floor').
+
+Testing DataLoader 0:  68%|██████▊   | 211/312 [40:48<19:31, 11.60s/it]
+/media/songoh/ssh3/songoh_ws/MaskDNtoBBox_GPU0/trainer/trainer.py:524: UserWarning: __floordiv__ is deprecated, and its behavior will change in a future version of pytorch. It currently rounds toward 0 (like the 'trunc' function NOT 'floor'). This results in incorrect rounding for negative values. To keep the current behavior, use torch.div(a, b, rounding_mode='trunc'), or for actual floor division, use torch.div(a, b, rounding_mode='floor').
+  topk_indices = topk_indices // num_classes
+/media/songoh/ssh3/songoh_ws/MaskDNtoBBox_GPU0/trainer/trainer.py:524: UserWarning: __floordiv__ is deprecated, and its behavior will change in a future version of pytorch. It currently rounds toward 0 (like the 'trunc' function NOT 'floor'). This results in incorrect rounding for negative values. To keep the current behavior, use torch.div(a, b, rounding_mode='trunc'), or for actual floor division, use torch.div(a, b, rounding_mode='floor').
+
+Testing DataLoader 0:  68%|██████▊   | 212/312 [41:21<19:30, 11.70s/it]
+/media/songoh/ssh3/songoh_ws/MaskDNtoBBox_GPU0/trainer/trainer.py:524: UserWarning: __floordiv__ is deprecated, and its behavior will change in a future version of pytorch. It currently rounds toward 0 (like the 'trunc' function NOT 'floor'). This results in incorrect rounding for negative values. To keep the current behavior, use torch.div(a, b, rounding_mode='trunc'), or for actual floor division, use torch.div(a, b, rounding_mode='floor').
+
+Testing DataLoader 0:  68%|██████▊   | 213/312 [41:42<19:23, 11.75s/it]
+/media/songoh/ssh3/songoh_ws/MaskDNtoBBox_GPU0/trainer/trainer.py:524: UserWarning: __floordiv__ is deprecated, and its behavior will change in a future version of pytorch. It currently rounds toward 0 (like the 'trunc' function NOT 'floor'). This results in incorrect rounding for negative values. To keep the current behavior, use torch.div(a, b, rounding_mode='trunc'), or for actual floor division, use torch.div(a, b, rounding_mode='floor').
+
+Testing DataLoader 0:  69%|██████▊   | 214/312 [41:57<19:12, 11.77s/it]
+/media/songoh/ssh3/songoh_ws/MaskDNtoBBox_GPU0/trainer/trainer.py:524: UserWarning: __floordiv__ is deprecated, and its behavior will change in a future version of pytorch. It currently rounds toward 0 (like the 'trunc' function NOT 'floor'). This results in incorrect rounding for negative values. To keep the current behavior, use torch.div(a, b, rounding_mode='trunc'), or for actual floor division, use torch.div(a, b, rounding_mode='floor').
+
+Testing DataLoader 0:  69%|██████▉   | 215/312 [42:12<19:02, 11.78s/it]
+/media/songoh/ssh3/songoh_ws/MaskDNtoBBox_GPU0/trainer/trainer.py:524: UserWarning: __floordiv__ is deprecated, and its behavior will change in a future version of pytorch. It currently rounds toward 0 (like the 'trunc' function NOT 'floor'). This results in incorrect rounding for negative values. To keep the current behavior, use torch.div(a, b, rounding_mode='trunc'), or for actual floor division, use torch.div(a, b, rounding_mode='floor').
+
+Testing DataLoader 0:  69%|██████▉   | 216/312 [42:21<18:49, 11.77s/it]
+/media/songoh/ssh3/songoh_ws/MaskDNtoBBox_GPU0/trainer/trainer.py:524: UserWarning: __floordiv__ is deprecated, and its behavior will change in a future version of pytorch. It currently rounds toward 0 (like the 'trunc' function NOT 'floor'). This results in incorrect rounding for negative values. To keep the current behavior, use torch.div(a, b, rounding_mode='trunc'), or for actual floor division, use torch.div(a, b, rounding_mode='floor').
+
+Testing DataLoader 0:  70%|██████▉   | 217/312 [42:31<18:36, 11.76s/it]
+/media/songoh/ssh3/songoh_ws/MaskDNtoBBox_GPU0/trainer/trainer.py:524: UserWarning: __floordiv__ is deprecated, and its behavior will change in a future version of pytorch. It currently rounds toward 0 (like the 'trunc' function NOT 'floor'). This results in incorrect rounding for negative values. To keep the current behavior, use torch.div(a, b, rounding_mode='trunc'), or for actual floor division, use torch.div(a, b, rounding_mode='floor').
+
+
+Testing DataLoader 0:  70%|███████   | 219/312 [42:50<18:11, 11.74s/it]
+/media/songoh/ssh3/songoh_ws/MaskDNtoBBox_GPU0/trainer/trainer.py:524: UserWarning: __floordiv__ is deprecated, and its behavior will change in a future version of pytorch. It currently rounds toward 0 (like the 'trunc' function NOT 'floor'). This results in incorrect rounding for negative values. To keep the current behavior, use torch.div(a, b, rounding_mode='trunc'), or for actual floor division, use torch.div(a, b, rounding_mode='floor').
+  topk_indices = topk_indices // num_classes
+/media/songoh/ssh3/songoh_ws/MaskDNtoBBox_GPU0/trainer/trainer.py:524: UserWarning: __floordiv__ is deprecated, and its behavior will change in a future version of pytorch. It currently rounds toward 0 (like the 'trunc' function NOT 'floor'). This results in incorrect rounding for negative values. To keep the current behavior, use torch.div(a, b, rounding_mode='trunc'), or for actual floor division, use torch.div(a, b, rounding_mode='floor').
+
+Testing DataLoader 0:  71%|███████   | 220/312 [42:59<17:58, 11.73s/it]
+/media/songoh/ssh3/songoh_ws/MaskDNtoBBox_GPU0/trainer/trainer.py:524: UserWarning: __floordiv__ is deprecated, and its behavior will change in a future version of pytorch. It currently rounds toward 0 (like the 'trunc' function NOT 'floor'). This results in incorrect rounding for negative values. To keep the current behavior, use torch.div(a, b, rounding_mode='trunc'), or for actual floor division, use torch.div(a, b, rounding_mode='floor').
+
+
+Testing DataLoader 0:  71%|███████   | 222/312 [43:16<17:32, 11.70s/it]
+/media/songoh/ssh3/songoh_ws/MaskDNtoBBox_GPU0/trainer/trainer.py:524: UserWarning: __floordiv__ is deprecated, and its behavior will change in a future version of pytorch. It currently rounds toward 0 (like the 'trunc' function NOT 'floor'). This results in incorrect rounding for negative values. To keep the current behavior, use torch.div(a, b, rounding_mode='trunc'), or for actual floor division, use torch.div(a, b, rounding_mode='floor').
+  topk_indices = topk_indices // num_classes
+/media/songoh/ssh3/songoh_ws/MaskDNtoBBox_GPU0/trainer/trainer.py:524: UserWarning: __floordiv__ is deprecated, and its behavior will change in a future version of pytorch. It currently rounds toward 0 (like the 'trunc' function NOT 'floor'). This results in incorrect rounding for negative values. To keep the current behavior, use torch.div(a, b, rounding_mode='trunc'), or for actual floor division, use torch.div(a, b, rounding_mode='floor').
+
+Testing DataLoader 0:  71%|███████▏  | 223/312 [43:28<17:21, 11.70s/it]
+/media/songoh/ssh3/songoh_ws/MaskDNtoBBox_GPU0/trainer/trainer.py:524: UserWarning: __floordiv__ is deprecated, and its behavior will change in a future version of pytorch. It currently rounds toward 0 (like the 'trunc' function NOT 'floor'). This results in incorrect rounding for negative values. To keep the current behavior, use torch.div(a, b, rounding_mode='trunc'), or for actual floor division, use torch.div(a, b, rounding_mode='floor').
+
+Testing DataLoader 0:  72%|███████▏  | 224/312 [43:35<17:07, 11.68s/it]
+/media/songoh/ssh3/songoh_ws/MaskDNtoBBox_GPU0/trainer/trainer.py:524: UserWarning: __floordiv__ is deprecated, and its behavior will change in a future version of pytorch. It currently rounds toward 0 (like the 'trunc' function NOT 'floor'). This results in incorrect rounding for negative values. To keep the current behavior, use torch.div(a, b, rounding_mode='trunc'), or for actual floor division, use torch.div(a, b, rounding_mode='floor').
+
+Testing DataLoader 0:  72%|███████▏  | 225/312 [43:47<16:56, 11.68s/it]
+/media/songoh/ssh3/songoh_ws/MaskDNtoBBox_GPU0/trainer/trainer.py:524: UserWarning: __floordiv__ is deprecated, and its behavior will change in a future version of pytorch. It currently rounds toward 0 (like the 'trunc' function NOT 'floor'). This results in incorrect rounding for negative values. To keep the current behavior, use torch.div(a, b, rounding_mode='trunc'), or for actual floor division, use torch.div(a, b, rounding_mode='floor').
+
+Testing DataLoader 0:  72%|███████▏  | 226/312 [44:01<16:45, 11.69s/it]
+/media/songoh/ssh3/songoh_ws/MaskDNtoBBox_GPU0/trainer/trainer.py:524: UserWarning: __floordiv__ is deprecated, and its behavior will change in a future version of pytorch. It currently rounds toward 0 (like the 'trunc' function NOT 'floor'). This results in incorrect rounding for negative values. To keep the current behavior, use torch.div(a, b, rounding_mode='trunc'), or for actual floor division, use torch.div(a, b, rounding_mode='floor').
+
+Testing DataLoader 0:  73%|███████▎  | 227/312 [44:13<16:33, 11.69s/it]
+/media/songoh/ssh3/songoh_ws/MaskDNtoBBox_GPU0/trainer/trainer.py:524: UserWarning: __floordiv__ is deprecated, and its behavior will change in a future version of pytorch. It currently rounds toward 0 (like the 'trunc' function NOT 'floor'). This results in incorrect rounding for negative values. To keep the current behavior, use torch.div(a, b, rounding_mode='trunc'), or for actual floor division, use torch.div(a, b, rounding_mode='floor').
+
+Testing DataLoader 0:  73%|███████▎  | 228/312 [44:23<16:21, 11.68s/it]
+/media/songoh/ssh3/songoh_ws/MaskDNtoBBox_GPU0/trainer/trainer.py:524: UserWarning: __floordiv__ is deprecated, and its behavior will change in a future version of pytorch. It currently rounds toward 0 (like the 'trunc' function NOT 'floor'). This results in incorrect rounding for negative values. To keep the current behavior, use torch.div(a, b, rounding_mode='trunc'), or for actual floor division, use torch.div(a, b, rounding_mode='floor').
+
+Testing DataLoader 0:  73%|███████▎  | 229/312 [44:39<16:11, 11.70s/it]
+/media/songoh/ssh3/songoh_ws/MaskDNtoBBox_GPU0/trainer/trainer.py:524: UserWarning: __floordiv__ is deprecated, and its behavior will change in a future version of pytorch. It currently rounds toward 0 (like the 'trunc' function NOT 'floor'). This results in incorrect rounding for negative values. To keep the current behavior, use torch.div(a, b, rounding_mode='trunc'), or for actual floor division, use torch.div(a, b, rounding_mode='floor').
+
+Testing DataLoader 0:  74%|███████▎  | 230/312 [44:49<15:59, 11.70s/it]
+/media/songoh/ssh3/songoh_ws/MaskDNtoBBox_GPU0/trainer/trainer.py:524: UserWarning: __floordiv__ is deprecated, and its behavior will change in a future version of pytorch. It currently rounds toward 0 (like the 'trunc' function NOT 'floor'). This results in incorrect rounding for negative values. To keep the current behavior, use torch.div(a, b, rounding_mode='trunc'), or for actual floor division, use torch.div(a, b, rounding_mode='floor').
+
+Testing DataLoader 0:  74%|███████▍  | 231/312 [44:57<15:45, 11.68s/it]
+/media/songoh/ssh3/songoh_ws/MaskDNtoBBox_GPU0/trainer/trainer.py:524: UserWarning: __floordiv__ is deprecated, and its behavior will change in a future version of pytorch. It currently rounds toward 0 (like the 'trunc' function NOT 'floor'). This results in incorrect rounding for negative values. To keep the current behavior, use torch.div(a, b, rounding_mode='trunc'), or for actual floor division, use torch.div(a, b, rounding_mode='floor').
+
+Testing DataLoader 0:  74%|███████▍  | 232/312 [45:51<15:48, 11.86s/it]
+/media/songoh/ssh3/songoh_ws/MaskDNtoBBox_GPU0/trainer/trainer.py:524: UserWarning: __floordiv__ is deprecated, and its behavior will change in a future version of pytorch. It currently rounds toward 0 (like the 'trunc' function NOT 'floor'). This results in incorrect rounding for negative values. To keep the current behavior, use torch.div(a, b, rounding_mode='trunc'), or for actual floor division, use torch.div(a, b, rounding_mode='floor').
+
+Testing DataLoader 0:  75%|███████▍  | 233/312 [46:25<15:44, 11.95s/it]
+/media/songoh/ssh3/songoh_ws/MaskDNtoBBox_GPU0/trainer/trainer.py:524: UserWarning: __floordiv__ is deprecated, and its behavior will change in a future version of pytorch. It currently rounds toward 0 (like the 'trunc' function NOT 'floor'). This results in incorrect rounding for negative values. To keep the current behavior, use torch.div(a, b, rounding_mode='trunc'), or for actual floor division, use torch.div(a, b, rounding_mode='floor').
+
+Testing DataLoader 0:  75%|███████▌  | 234/312 [46:36<15:32, 11.95s/it]
+/media/songoh/ssh3/songoh_ws/MaskDNtoBBox_GPU0/trainer/trainer.py:524: UserWarning: __floordiv__ is deprecated, and its behavior will change in a future version of pytorch. It currently rounds toward 0 (like the 'trunc' function NOT 'floor'). This results in incorrect rounding for negative values. To keep the current behavior, use torch.div(a, b, rounding_mode='trunc'), or for actual floor division, use torch.div(a, b, rounding_mode='floor').
+
+Testing DataLoader 0:  75%|███████▌  | 235/312 [46:48<15:20, 11.95s/it]
+/media/songoh/ssh3/songoh_ws/MaskDNtoBBox_GPU0/trainer/trainer.py:524: UserWarning: __floordiv__ is deprecated, and its behavior will change in a future version of pytorch. It currently rounds toward 0 (like the 'trunc' function NOT 'floor'). This results in incorrect rounding for negative values. To keep the current behavior, use torch.div(a, b, rounding_mode='trunc'), or for actual floor division, use torch.div(a, b, rounding_mode='floor').
+
+Testing DataLoader 0:  76%|███████▌  | 236/312 [47:13<15:12, 12.01s/it]
+/media/songoh/ssh3/songoh_ws/MaskDNtoBBox_GPU0/trainer/trainer.py:524: UserWarning: __floordiv__ is deprecated, and its behavior will change in a future version of pytorch. It currently rounds toward 0 (like the 'trunc' function NOT 'floor'). This results in incorrect rounding for negative values. To keep the current behavior, use torch.div(a, b, rounding_mode='trunc'), or for actual floor division, use torch.div(a, b, rounding_mode='floor').
+
+Testing DataLoader 0:  76%|███████▌  | 237/312 [47:29<15:01, 12.03s/it]
+/media/songoh/ssh3/songoh_ws/MaskDNtoBBox_GPU0/trainer/trainer.py:524: UserWarning: __floordiv__ is deprecated, and its behavior will change in a future version of pytorch. It currently rounds toward 0 (like the 'trunc' function NOT 'floor'). This results in incorrect rounding for negative values. To keep the current behavior, use torch.div(a, b, rounding_mode='trunc'), or for actual floor division, use torch.div(a, b, rounding_mode='floor').
+
+Testing DataLoader 0:  76%|███████▋  | 238/312 [47:48<14:52, 12.05s/it]
+/media/songoh/ssh3/songoh_ws/MaskDNtoBBox_GPU0/trainer/trainer.py:524: UserWarning: __floordiv__ is deprecated, and its behavior will change in a future version of pytorch. It currently rounds toward 0 (like the 'trunc' function NOT 'floor'). This results in incorrect rounding for negative values. To keep the current behavior, use torch.div(a, b, rounding_mode='trunc'), or for actual floor division, use torch.div(a, b, rounding_mode='floor').
+
+Testing DataLoader 0:  77%|███████▋  | 239/312 [48:01<14:40, 12.06s/it]
+/media/songoh/ssh3/songoh_ws/MaskDNtoBBox_GPU0/trainer/trainer.py:524: UserWarning: __floordiv__ is deprecated, and its behavior will change in a future version of pytorch. It currently rounds toward 0 (like the 'trunc' function NOT 'floor'). This results in incorrect rounding for negative values. To keep the current behavior, use torch.div(a, b, rounding_mode='trunc'), or for actual floor division, use torch.div(a, b, rounding_mode='floor').
+
+Testing DataLoader 0:  77%|███████▋  | 240/312 [48:12<14:27, 12.05s/it]
+/media/songoh/ssh3/songoh_ws/MaskDNtoBBox_GPU0/trainer/trainer.py:524: UserWarning: __floordiv__ is deprecated, and its behavior will change in a future version of pytorch. It currently rounds toward 0 (like the 'trunc' function NOT 'floor'). This results in incorrect rounding for negative values. To keep the current behavior, use torch.div(a, b, rounding_mode='trunc'), or for actual floor division, use torch.div(a, b, rounding_mode='floor').
+
+Testing DataLoader 0:  77%|███████▋  | 241/312 [48:21<14:14, 12.04s/it]
+/media/songoh/ssh3/songoh_ws/MaskDNtoBBox_GPU0/trainer/trainer.py:524: UserWarning: __floordiv__ is deprecated, and its behavior will change in a future version of pytorch. It currently rounds toward 0 (like the 'trunc' function NOT 'floor'). This results in incorrect rounding for negative values. To keep the current behavior, use torch.div(a, b, rounding_mode='trunc'), or for actual floor division, use torch.div(a, b, rounding_mode='floor').
+
+Testing DataLoader 0:  78%|███████▊  | 242/312 [48:36<14:03, 12.05s/it]
+/media/songoh/ssh3/songoh_ws/MaskDNtoBBox_GPU0/trainer/trainer.py:524: UserWarning: __floordiv__ is deprecated, and its behavior will change in a future version of pytorch. It currently rounds toward 0 (like the 'trunc' function NOT 'floor'). This results in incorrect rounding for negative values. To keep the current behavior, use torch.div(a, b, rounding_mode='trunc'), or for actual floor division, use torch.div(a, b, rounding_mode='floor').
+
+Testing DataLoader 0:  78%|███████▊  | 243/312 [48:46<13:51, 12.04s/it]
+/media/songoh/ssh3/songoh_ws/MaskDNtoBBox_GPU0/trainer/trainer.py:524: UserWarning: __floordiv__ is deprecated, and its behavior will change in a future version of pytorch. It currently rounds toward 0 (like the 'trunc' function NOT 'floor'). This results in incorrect rounding for negative values. To keep the current behavior, use torch.div(a, b, rounding_mode='trunc'), or for actual floor division, use torch.div(a, b, rounding_mode='floor').
+
+Testing DataLoader 0:  78%|███████▊  | 244/312 [48:56<13:38, 12.04s/it]
+/media/songoh/ssh3/songoh_ws/MaskDNtoBBox_GPU0/trainer/trainer.py:524: UserWarning: __floordiv__ is deprecated, and its behavior will change in a future version of pytorch. It currently rounds toward 0 (like the 'trunc' function NOT 'floor'). This results in incorrect rounding for negative values. To keep the current behavior, use torch.div(a, b, rounding_mode='trunc'), or for actual floor division, use torch.div(a, b, rounding_mode='floor').
+
+Testing DataLoader 0:  79%|███████▊  | 245/312 [49:06<13:25, 12.03s/it]
+/media/songoh/ssh3/songoh_ws/MaskDNtoBBox_GPU0/trainer/trainer.py:524: UserWarning: __floordiv__ is deprecated, and its behavior will change in a future version of pytorch. It currently rounds toward 0 (like the 'trunc' function NOT 'floor'). This results in incorrect rounding for negative values. To keep the current behavior, use torch.div(a, b, rounding_mode='trunc'), or for actual floor division, use torch.div(a, b, rounding_mode='floor').
+
+Testing DataLoader 0:  79%|███████▉  | 246/312 [49:27<13:16, 12.06s/it]
+/media/songoh/ssh3/songoh_ws/MaskDNtoBBox_GPU0/trainer/trainer.py:524: UserWarning: __floordiv__ is deprecated, and its behavior will change in a future version of pytorch. It currently rounds toward 0 (like the 'trunc' function NOT 'floor'). This results in incorrect rounding for negative values. To keep the current behavior, use torch.div(a, b, rounding_mode='trunc'), or for actual floor division, use torch.div(a, b, rounding_mode='floor').
+
+Testing DataLoader 0:  79%|███████▉  | 247/312 [49:40<13:04, 12.07s/it]
+/media/songoh/ssh3/songoh_ws/MaskDNtoBBox_GPU0/trainer/trainer.py:524: UserWarning: __floordiv__ is deprecated, and its behavior will change in a future version of pytorch. It currently rounds toward 0 (like the 'trunc' function NOT 'floor'). This results in incorrect rounding for negative values. To keep the current behavior, use torch.div(a, b, rounding_mode='trunc'), or for actual floor division, use torch.div(a, b, rounding_mode='floor').
+
+Testing DataLoader 0:  79%|███████▉  | 248/312 [49:48<12:51, 12.05s/it]
+/media/songoh/ssh3/songoh_ws/MaskDNtoBBox_GPU0/trainer/trainer.py:524: UserWarning: __floordiv__ is deprecated, and its behavior will change in a future version of pytorch. It currently rounds toward 0 (like the 'trunc' function NOT 'floor'). This results in incorrect rounding for negative values. To keep the current behavior, use torch.div(a, b, rounding_mode='trunc'), or for actual floor division, use torch.div(a, b, rounding_mode='floor').
+
+Testing DataLoader 0:  80%|███████▉  | 249/312 [49:55<12:38, 12.03s/it]
+/media/songoh/ssh3/songoh_ws/MaskDNtoBBox_GPU0/trainer/trainer.py:524: UserWarning: __floordiv__ is deprecated, and its behavior will change in a future version of pytorch. It currently rounds toward 0 (like the 'trunc' function NOT 'floor'). This results in incorrect rounding for negative values. To keep the current behavior, use torch.div(a, b, rounding_mode='trunc'), or for actual floor division, use torch.div(a, b, rounding_mode='floor').
+
+
+Testing DataLoader 0:  80%|████████  | 251/312 [50:08<12:11, 11.99s/it]
+/media/songoh/ssh3/songoh_ws/MaskDNtoBBox_GPU0/trainer/trainer.py:524: UserWarning: __floordiv__ is deprecated, and its behavior will change in a future version of pytorch. It currently rounds toward 0 (like the 'trunc' function NOT 'floor'). This results in incorrect rounding for negative values. To keep the current behavior, use torch.div(a, b, rounding_mode='trunc'), or for actual floor division, use torch.div(a, b, rounding_mode='floor').
+
+Testing DataLoader 0:  81%|████████  | 252/312 [50:14<11:57, 11.96s/it]
+/media/songoh/ssh3/songoh_ws/MaskDNtoBBox_GPU0/trainer/trainer.py:524: UserWarning: __floordiv__ is deprecated, and its behavior will change in a future version of pytorch. It currently rounds toward 0 (like the 'trunc' function NOT 'floor'). This results in incorrect rounding for negative values. To keep the current behavior, use torch.div(a, b, rounding_mode='trunc'), or for actual floor division, use torch.div(a, b, rounding_mode='floor').
+
+Testing DataLoader 0:  81%|████████  | 253/312 [50:24<11:45, 11.95s/it]
+/media/songoh/ssh3/songoh_ws/MaskDNtoBBox_GPU0/trainer/trainer.py:524: UserWarning: __floordiv__ is deprecated, and its behavior will change in a future version of pytorch. It currently rounds toward 0 (like the 'trunc' function NOT 'floor'). This results in incorrect rounding for negative values. To keep the current behavior, use torch.div(a, b, rounding_mode='trunc'), or for actual floor division, use torch.div(a, b, rounding_mode='floor').
+  topk_indices = topk_indices // num_classes
+/media/songoh/ssh3/songoh_ws/MaskDNtoBBox_GPU0/trainer/trainer.py:524: UserWarning: __floordiv__ is deprecated, and its behavior will change in a future version of pytorch. It currently rounds toward 0 (like the 'trunc' function NOT 'floor'). This results in incorrect rounding for negative values. To keep the current behavior, use torch.div(a, b, rounding_mode='trunc'), or for actual floor division, use torch.div(a, b, rounding_mode='floor').
+  topk_indices = topk_indices // num_classes
+/media/songoh/ssh3/songoh_ws/MaskDNtoBBox_GPU0/trainer/trainer.py:647: RuntimeWarning: invalid value encountered in divide
+
+Testing DataLoader 0:  81%|████████▏ | 254/312 [50:33<11:32, 11.94s/it]
+/media/songoh/ssh3/songoh_ws/MaskDNtoBBox_GPU0/trainer/trainer.py:524: UserWarning: __floordiv__ is deprecated, and its behavior will change in a future version of pytorch. It currently rounds toward 0 (like the 'trunc' function NOT 'floor'). This results in incorrect rounding for negative values. To keep the current behavior, use torch.div(a, b, rounding_mode='trunc'), or for actual floor division, use torch.div(a, b, rounding_mode='floor').
+
+Testing DataLoader 0:  82%|████████▏ | 255/312 [50:42<11:20, 11.93s/it]
+/media/songoh/ssh3/songoh_ws/MaskDNtoBBox_GPU0/trainer/trainer.py:524: UserWarning: __floordiv__ is deprecated, and its behavior will change in a future version of pytorch. It currently rounds toward 0 (like the 'trunc' function NOT 'floor'). This results in incorrect rounding for negative values. To keep the current behavior, use torch.div(a, b, rounding_mode='trunc'), or for actual floor division, use torch.div(a, b, rounding_mode='floor').
+
+
+Testing DataLoader 0:  82%|████████▏ | 257/312 [51:10<10:57, 11.95s/it]
+/media/songoh/ssh3/songoh_ws/MaskDNtoBBox_GPU0/trainer/trainer.py:524: UserWarning: __floordiv__ is deprecated, and its behavior will change in a future version of pytorch. It currently rounds toward 0 (like the 'trunc' function NOT 'floor'). This results in incorrect rounding for negative values. To keep the current behavior, use torch.div(a, b, rounding_mode='trunc'), or for actual floor division, use torch.div(a, b, rounding_mode='floor').
+  topk_indices = topk_indices // num_classes
+/media/songoh/ssh3/songoh_ws/MaskDNtoBBox_GPU0/trainer/trainer.py:524: UserWarning: __floordiv__ is deprecated, and its behavior will change in a future version of pytorch. It currently rounds toward 0 (like the 'trunc' function NOT 'floor'). This results in incorrect rounding for negative values. To keep the current behavior, use torch.div(a, b, rounding_mode='trunc'), or for actual floor division, use torch.div(a, b, rounding_mode='floor').
+
+Testing DataLoader 0:  83%|████████▎ | 258/312 [51:31<10:47, 11.98s/it]
+/media/songoh/ssh3/songoh_ws/MaskDNtoBBox_GPU0/trainer/trainer.py:524: UserWarning: __floordiv__ is deprecated, and its behavior will change in a future version of pytorch. It currently rounds toward 0 (like the 'trunc' function NOT 'floor'). This results in incorrect rounding for negative values. To keep the current behavior, use torch.div(a, b, rounding_mode='trunc'), or for actual floor division, use torch.div(a, b, rounding_mode='floor').
+
+Testing DataLoader 0:  83%|████████▎ | 259/312 [51:40<10:34, 11.97s/it]
+/media/songoh/ssh3/songoh_ws/MaskDNtoBBox_GPU0/trainer/trainer.py:524: UserWarning: __floordiv__ is deprecated, and its behavior will change in a future version of pytorch. It currently rounds toward 0 (like the 'trunc' function NOT 'floor'). This results in incorrect rounding for negative values. To keep the current behavior, use torch.div(a, b, rounding_mode='trunc'), or for actual floor division, use torch.div(a, b, rounding_mode='floor').
+
+Testing DataLoader 0:  83%|████████▎ | 260/312 [51:53<10:22, 11.98s/it]
+/media/songoh/ssh3/songoh_ws/MaskDNtoBBox_GPU0/trainer/trainer.py:524: UserWarning: __floordiv__ is deprecated, and its behavior will change in a future version of pytorch. It currently rounds toward 0 (like the 'trunc' function NOT 'floor'). This results in incorrect rounding for negative values. To keep the current behavior, use torch.div(a, b, rounding_mode='trunc'), or for actual floor division, use torch.div(a, b, rounding_mode='floor').
+
+Testing DataLoader 0:  84%|████████▎ | 261/312 [52:02<10:10, 11.96s/it]
+/media/songoh/ssh3/songoh_ws/MaskDNtoBBox_GPU0/trainer/trainer.py:524: UserWarning: __floordiv__ is deprecated, and its behavior will change in a future version of pytorch. It currently rounds toward 0 (like the 'trunc' function NOT 'floor'). This results in incorrect rounding for negative values. To keep the current behavior, use torch.div(a, b, rounding_mode='trunc'), or for actual floor division, use torch.div(a, b, rounding_mode='floor').
+
+Testing DataLoader 0:  84%|████████▍ | 262/312 [52:18<09:58, 11.98s/it]
+/media/songoh/ssh3/songoh_ws/MaskDNtoBBox_GPU0/trainer/trainer.py:524: UserWarning: __floordiv__ is deprecated, and its behavior will change in a future version of pytorch. It currently rounds toward 0 (like the 'trunc' function NOT 'floor'). This results in incorrect rounding for negative values. To keep the current behavior, use torch.div(a, b, rounding_mode='trunc'), or for actual floor division, use torch.div(a, b, rounding_mode='floor').
+
+Testing DataLoader 0:  84%|████████▍ | 263/312 [52:23<09:45, 11.95s/it]
+/media/songoh/ssh3/songoh_ws/MaskDNtoBBox_GPU0/trainer/trainer.py:524: UserWarning: __floordiv__ is deprecated, and its behavior will change in a future version of pytorch. It currently rounds toward 0 (like the 'trunc' function NOT 'floor'). This results in incorrect rounding for negative values. To keep the current behavior, use torch.div(a, b, rounding_mode='trunc'), or for actual floor division, use torch.div(a, b, rounding_mode='floor').
+
+
+Testing DataLoader 0:  85%|████████▍ | 265/312 [52:32<09:19, 11.90s/it]
+/media/songoh/ssh3/songoh_ws/MaskDNtoBBox_GPU0/trainer/trainer.py:524: UserWarning: __floordiv__ is deprecated, and its behavior will change in a future version of pytorch. It currently rounds toward 0 (like the 'trunc' function NOT 'floor'). This results in incorrect rounding for negative values. To keep the current behavior, use torch.div(a, b, rounding_mode='trunc'), or for actual floor division, use torch.div(a, b, rounding_mode='floor').
+  topk_indices = topk_indices // num_classes
+/media/songoh/ssh3/songoh_ws/MaskDNtoBBox_GPU0/trainer/trainer.py:524: UserWarning: __floordiv__ is deprecated, and its behavior will change in a future version of pytorch. It currently rounds toward 0 (like the 'trunc' function NOT 'floor'). This results in incorrect rounding for negative values. To keep the current behavior, use torch.div(a, b, rounding_mode='trunc'), or for actual floor division, use torch.div(a, b, rounding_mode='floor').
+
+Testing DataLoader 0:  85%|████████▌ | 266/312 [52:37<09:06, 11.87s/it]
+/media/songoh/ssh3/songoh_ws/MaskDNtoBBox_GPU0/trainer/trainer.py:524: UserWarning: __floordiv__ is deprecated, and its behavior will change in a future version of pytorch. It currently rounds toward 0 (like the 'trunc' function NOT 'floor'). This results in incorrect rounding for negative values. To keep the current behavior, use torch.div(a, b, rounding_mode='trunc'), or for actual floor division, use torch.div(a, b, rounding_mode='floor').
+
+Testing DataLoader 0:  86%|████████▌ | 267/312 [52:47<08:53, 11.86s/it]
+/media/songoh/ssh3/songoh_ws/MaskDNtoBBox_GPU0/trainer/trainer.py:524: UserWarning: __floordiv__ is deprecated, and its behavior will change in a future version of pytorch. It currently rounds toward 0 (like the 'trunc' function NOT 'floor'). This results in incorrect rounding for negative values. To keep the current behavior, use torch.div(a, b, rounding_mode='trunc'), or for actual floor division, use torch.div(a, b, rounding_mode='floor').
+
+Testing DataLoader 0:  86%|████████▌ | 268/312 [52:59<08:42, 11.86s/it]
+/media/songoh/ssh3/songoh_ws/MaskDNtoBBox_GPU0/trainer/trainer.py:524: UserWarning: __floordiv__ is deprecated, and its behavior will change in a future version of pytorch. It currently rounds toward 0 (like the 'trunc' function NOT 'floor'). This results in incorrect rounding for negative values. To keep the current behavior, use torch.div(a, b, rounding_mode='trunc'), or for actual floor division, use torch.div(a, b, rounding_mode='floor').
+
+Testing DataLoader 0:  86%|████████▌ | 269/312 [53:11<08:30, 11.86s/it]
+/media/songoh/ssh3/songoh_ws/MaskDNtoBBox_GPU0/trainer/trainer.py:524: UserWarning: __floordiv__ is deprecated, and its behavior will change in a future version of pytorch. It currently rounds toward 0 (like the 'trunc' function NOT 'floor'). This results in incorrect rounding for negative values. To keep the current behavior, use torch.div(a, b, rounding_mode='trunc'), or for actual floor division, use torch.div(a, b, rounding_mode='floor').
+
+Testing DataLoader 0:  87%|████████▋ | 270/312 [53:22<08:18, 11.86s/it]
+/media/songoh/ssh3/songoh_ws/MaskDNtoBBox_GPU0/trainer/trainer.py:524: UserWarning: __floordiv__ is deprecated, and its behavior will change in a future version of pytorch. It currently rounds toward 0 (like the 'trunc' function NOT 'floor'). This results in incorrect rounding for negative values. To keep the current behavior, use torch.div(a, b, rounding_mode='trunc'), or for actual floor division, use torch.div(a, b, rounding_mode='floor').
+
+Testing DataLoader 0:  87%|████████▋ | 271/312 [53:32<08:05, 11.85s/it]
+/media/songoh/ssh3/songoh_ws/MaskDNtoBBox_GPU0/trainer/trainer.py:524: UserWarning: __floordiv__ is deprecated, and its behavior will change in a future version of pytorch. It currently rounds toward 0 (like the 'trunc' function NOT 'floor'). This results in incorrect rounding for negative values. To keep the current behavior, use torch.div(a, b, rounding_mode='trunc'), or for actual floor division, use torch.div(a, b, rounding_mode='floor').
+
+Testing DataLoader 0:  87%|████████▋ | 272/312 [53:38<07:53, 11.83s/it]
+/media/songoh/ssh3/songoh_ws/MaskDNtoBBox_GPU0/trainer/trainer.py:524: UserWarning: __floordiv__ is deprecated, and its behavior will change in a future version of pytorch. It currently rounds toward 0 (like the 'trunc' function NOT 'floor'). This results in incorrect rounding for negative values. To keep the current behavior, use torch.div(a, b, rounding_mode='trunc'), or for actual floor division, use torch.div(a, b, rounding_mode='floor').
+
+Testing DataLoader 0:  88%|████████▊ | 273/312 [54:07<07:43, 11.89s/it]
+/media/songoh/ssh3/songoh_ws/MaskDNtoBBox_GPU0/trainer/trainer.py:524: UserWarning: __floordiv__ is deprecated, and its behavior will change in a future version of pytorch. It currently rounds toward 0 (like the 'trunc' function NOT 'floor'). This results in incorrect rounding for negative values. To keep the current behavior, use torch.div(a, b, rounding_mode='trunc'), or for actual floor division, use torch.div(a, b, rounding_mode='floor').
+
+Testing DataLoader 0:  88%|████████▊ | 274/312 [54:40<07:34, 11.97s/it]
+/media/songoh/ssh3/songoh_ws/MaskDNtoBBox_GPU0/trainer/trainer.py:647: RuntimeWarning: invalid value encountered in divide
+  norm_overlaps = pairwise_overlap / normalization
+/media/songoh/ssh3/songoh_ws/MaskDNtoBBox_GPU0/trainer/trainer.py:524: UserWarning: __floordiv__ is deprecated, and its behavior will change in a future version of pytorch. It currently rounds toward 0 (like the 'trunc' function NOT 'floor'). This results in incorrect rounding for negative values. To keep the current behavior, use torch.div(a, b, rounding_mode='trunc'), or for actual floor division, use torch.div(a, b, rounding_mode='floor').
+
+
+Testing DataLoader 0:  88%|████████▊ | 276/312 [55:07<07:11, 11.98s/it]
+/media/songoh/ssh3/songoh_ws/MaskDNtoBBox_GPU0/trainer/trainer.py:524: UserWarning: __floordiv__ is deprecated, and its behavior will change in a future version of pytorch. It currently rounds toward 0 (like the 'trunc' function NOT 'floor'). This results in incorrect rounding for negative values. To keep the current behavior, use torch.div(a, b, rounding_mode='trunc'), or for actual floor division, use torch.div(a, b, rounding_mode='floor').
+  topk_indices = topk_indices // num_classes
+/media/songoh/ssh3/songoh_ws/MaskDNtoBBox_GPU0/trainer/trainer.py:524: UserWarning: __floordiv__ is deprecated, and its behavior will change in a future version of pytorch. It currently rounds toward 0 (like the 'trunc' function NOT 'floor'). This results in incorrect rounding for negative values. To keep the current behavior, use torch.div(a, b, rounding_mode='trunc'), or for actual floor division, use torch.div(a, b, rounding_mode='floor').
+
+Testing DataLoader 0:  89%|████████▉ | 277/312 [55:11<06:58, 11.96s/it]
+/media/songoh/ssh3/songoh_ws/MaskDNtoBBox_GPU0/trainer/trainer.py:524: UserWarning: __floordiv__ is deprecated, and its behavior will change in a future version of pytorch. It currently rounds toward 0 (like the 'trunc' function NOT 'floor'). This results in incorrect rounding for negative values. To keep the current behavior, use torch.div(a, b, rounding_mode='trunc'), or for actual floor division, use torch.div(a, b, rounding_mode='floor').
+
+Testing DataLoader 0:  89%|████████▉ | 278/312 [55:27<06:46, 11.97s/it]
+/media/songoh/ssh3/songoh_ws/MaskDNtoBBox_GPU0/trainer/trainer.py:524: UserWarning: __floordiv__ is deprecated, and its behavior will change in a future version of pytorch. It currently rounds toward 0 (like the 'trunc' function NOT 'floor'). This results in incorrect rounding for negative values. To keep the current behavior, use torch.div(a, b, rounding_mode='trunc'), or for actual floor division, use torch.div(a, b, rounding_mode='floor').
+
+Testing DataLoader 0:  89%|████████▉ | 279/312 [55:45<06:35, 11.99s/it]
+/media/songoh/ssh3/songoh_ws/MaskDNtoBBox_GPU0/trainer/trainer.py:524: UserWarning: __floordiv__ is deprecated, and its behavior will change in a future version of pytorch. It currently rounds toward 0 (like the 'trunc' function NOT 'floor'). This results in incorrect rounding for negative values. To keep the current behavior, use torch.div(a, b, rounding_mode='trunc'), or for actual floor division, use torch.div(a, b, rounding_mode='floor').
+
+
+Testing DataLoader 0:  90%|█████████ | 281/312 [56:30<06:14, 12.07s/it]
+/media/songoh/ssh3/songoh_ws/MaskDNtoBBox_GPU0/trainer/trainer.py:524: UserWarning: __floordiv__ is deprecated, and its behavior will change in a future version of pytorch. It currently rounds toward 0 (like the 'trunc' function NOT 'floor'). This results in incorrect rounding for negative values. To keep the current behavior, use torch.div(a, b, rounding_mode='trunc'), or for actual floor division, use torch.div(a, b, rounding_mode='floor').
+  topk_indices = topk_indices // num_classes
+/media/songoh/ssh3/songoh_ws/MaskDNtoBBox_GPU0/trainer/trainer.py:524: UserWarning: __floordiv__ is deprecated, and its behavior will change in a future version of pytorch. It currently rounds toward 0 (like the 'trunc' function NOT 'floor'). This results in incorrect rounding for negative values. To keep the current behavior, use torch.div(a, b, rounding_mode='trunc'), or for actual floor division, use torch.div(a, b, rounding_mode='floor').
+
+
+Testing DataLoader 0:  91%|█████████ | 283/312 [56:53<05:49, 12.06s/it]
+/media/songoh/ssh3/songoh_ws/MaskDNtoBBox_GPU0/trainer/trainer.py:524: UserWarning: __floordiv__ is deprecated, and its behavior will change in a future version of pytorch. It currently rounds toward 0 (like the 'trunc' function NOT 'floor'). This results in incorrect rounding for negative values. To keep the current behavior, use torch.div(a, b, rounding_mode='trunc'), or for actual floor division, use torch.div(a, b, rounding_mode='floor').
+  topk_indices = topk_indices // num_classes
+/media/songoh/ssh3/songoh_ws/MaskDNtoBBox_GPU0/trainer/trainer.py:524: UserWarning: __floordiv__ is deprecated, and its behavior will change in a future version of pytorch. It currently rounds toward 0 (like the 'trunc' function NOT 'floor'). This results in incorrect rounding for negative values. To keep the current behavior, use torch.div(a, b, rounding_mode='trunc'), or for actual floor division, use torch.div(a, b, rounding_mode='floor').
+
+Testing DataLoader 0:  91%|█████████ | 284/312 [57:03<05:37, 12.06s/it]
+/media/songoh/ssh3/songoh_ws/MaskDNtoBBox_GPU0/trainer/trainer.py:524: UserWarning: __floordiv__ is deprecated, and its behavior will change in a future version of pytorch. It currently rounds toward 0 (like the 'trunc' function NOT 'floor'). This results in incorrect rounding for negative values. To keep the current behavior, use torch.div(a, b, rounding_mode='trunc'), or for actual floor division, use torch.div(a, b, rounding_mode='floor').
+
+Testing DataLoader 0:  91%|█████████▏| 285/312 [57:43<05:28, 12.15s/it]
+/media/songoh/ssh3/songoh_ws/MaskDNtoBBox_GPU0/trainer/trainer.py:524: UserWarning: __floordiv__ is deprecated, and its behavior will change in a future version of pytorch. It currently rounds toward 0 (like the 'trunc' function NOT 'floor'). This results in incorrect rounding for negative values. To keep the current behavior, use torch.div(a, b, rounding_mode='trunc'), or for actual floor division, use torch.div(a, b, rounding_mode='floor').
+
+
+Testing DataLoader 0:  92%|█████████▏| 287/312 [58:04<05:03, 12.14s/it]
+/media/songoh/ssh3/songoh_ws/MaskDNtoBBox_GPU0/trainer/trainer.py:524: UserWarning: __floordiv__ is deprecated, and its behavior will change in a future version of pytorch. It currently rounds toward 0 (like the 'trunc' function NOT 'floor'). This results in incorrect rounding for negative values. To keep the current behavior, use torch.div(a, b, rounding_mode='trunc'), or for actual floor division, use torch.div(a, b, rounding_mode='floor').
+  topk_indices = topk_indices // num_classes
+/media/songoh/ssh3/songoh_ws/MaskDNtoBBox_GPU0/trainer/trainer.py:524: UserWarning: __floordiv__ is deprecated, and its behavior will change in a future version of pytorch. It currently rounds toward 0 (like the 'trunc' function NOT 'floor'). This results in incorrect rounding for negative values. To keep the current behavior, use torch.div(a, b, rounding_mode='trunc'), or for actual floor division, use torch.div(a, b, rounding_mode='floor').
+
+Testing DataLoader 0:  92%|█████████▏| 288/312 [58:10<04:50, 12.12s/it]
+/media/songoh/ssh3/songoh_ws/MaskDNtoBBox_GPU0/trainer/trainer.py:524: UserWarning: __floordiv__ is deprecated, and its behavior will change in a future version of pytorch. It currently rounds toward 0 (like the 'trunc' function NOT 'floor'). This results in incorrect rounding for negative values. To keep the current behavior, use torch.div(a, b, rounding_mode='trunc'), or for actual floor division, use torch.div(a, b, rounding_mode='floor').
+
+Testing DataLoader 0:  93%|█████████▎| 289/312 [58:16<04:38, 12.10s/it]
+/media/songoh/ssh3/songoh_ws/MaskDNtoBBox_GPU0/trainer/trainer.py:524: UserWarning: __floordiv__ is deprecated, and its behavior will change in a future version of pytorch. It currently rounds toward 0 (like the 'trunc' function NOT 'floor'). This results in incorrect rounding for negative values. To keep the current behavior, use torch.div(a, b, rounding_mode='trunc'), or for actual floor division, use torch.div(a, b, rounding_mode='floor').
+
+Testing DataLoader 0:  93%|█████████▎| 290/312 [58:23<04:25, 12.08s/it]
+/media/songoh/ssh3/songoh_ws/MaskDNtoBBox_GPU0/trainer/trainer.py:524: UserWarning: __floordiv__ is deprecated, and its behavior will change in a future version of pytorch. It currently rounds toward 0 (like the 'trunc' function NOT 'floor'). This results in incorrect rounding for negative values. To keep the current behavior, use torch.div(a, b, rounding_mode='trunc'), or for actual floor division, use torch.div(a, b, rounding_mode='floor').
+
+Testing DataLoader 0:  93%|█████████▎| 291/312 [58:31<04:13, 12.07s/it]
+/media/songoh/ssh3/songoh_ws/MaskDNtoBBox_GPU0/trainer/trainer.py:524: UserWarning: __floordiv__ is deprecated, and its behavior will change in a future version of pytorch. It currently rounds toward 0 (like the 'trunc' function NOT 'floor'). This results in incorrect rounding for negative values. To keep the current behavior, use torch.div(a, b, rounding_mode='trunc'), or for actual floor division, use torch.div(a, b, rounding_mode='floor').
+
+Testing DataLoader 0:  94%|█████████▎| 292/312 [58:39<04:01, 12.05s/it]
+/media/songoh/ssh3/songoh_ws/MaskDNtoBBox_GPU0/trainer/trainer.py:524: UserWarning: __floordiv__ is deprecated, and its behavior will change in a future version of pytorch. It currently rounds toward 0 (like the 'trunc' function NOT 'floor'). This results in incorrect rounding for negative values. To keep the current behavior, use torch.div(a, b, rounding_mode='trunc'), or for actual floor division, use torch.div(a, b, rounding_mode='floor').
+
+Testing DataLoader 0:  94%|█████████▍| 293/312 [58:51<03:48, 12.05s/it]
+/media/songoh/ssh3/songoh_ws/MaskDNtoBBox_GPU0/trainer/trainer.py:524: UserWarning: __floordiv__ is deprecated, and its behavior will change in a future version of pytorch. It currently rounds toward 0 (like the 'trunc' function NOT 'floor'). This results in incorrect rounding for negative values. To keep the current behavior, use torch.div(a, b, rounding_mode='trunc'), or for actual floor division, use torch.div(a, b, rounding_mode='floor').
+
+Testing DataLoader 0:  94%|█████████▍| 294/312 [59:16<03:37, 12.10s/it]
+/media/songoh/ssh3/songoh_ws/MaskDNtoBBox_GPU0/trainer/trainer.py:524: UserWarning: __floordiv__ is deprecated, and its behavior will change in a future version of pytorch. It currently rounds toward 0 (like the 'trunc' function NOT 'floor'). This results in incorrect rounding for negative values. To keep the current behavior, use torch.div(a, b, rounding_mode='trunc'), or for actual floor division, use torch.div(a, b, rounding_mode='floor').
+
+Testing DataLoader 0:  95%|█████████▍| 295/312 [59:33<03:25, 12.11s/it]
+/media/songoh/ssh3/songoh_ws/MaskDNtoBBox_GPU0/trainer/trainer.py:524: UserWarning: __floordiv__ is deprecated, and its behavior will change in a future version of pytorch. It currently rounds toward 0 (like the 'trunc' function NOT 'floor'). This results in incorrect rounding for negative values. To keep the current behavior, use torch.div(a, b, rounding_mode='trunc'), or for actual floor division, use torch.div(a, b, rounding_mode='floor').
+
+
+Testing DataLoader 0:  95%|█████████▌| 297/312 [59:59<03:01, 12.12s/it]
+/media/songoh/ssh3/songoh_ws/MaskDNtoBBox_GPU0/trainer/trainer.py:524: UserWarning: __floordiv__ is deprecated, and its behavior will change in a future version of pytorch. It currently rounds toward 0 (like the 'trunc' function NOT 'floor'). This results in incorrect rounding for negative values. To keep the current behavior, use torch.div(a, b, rounding_mode='trunc'), or for actual floor division, use torch.div(a, b, rounding_mode='floor').
+  topk_indices = topk_indices // num_classes
+/media/songoh/ssh3/songoh_ws/MaskDNtoBBox_GPU0/trainer/trainer.py:524: UserWarning: __floordiv__ is deprecated, and its behavior will change in a future version of pytorch. It currently rounds toward 0 (like the 'trunc' function NOT 'floor'). This results in incorrect rounding for negative values. To keep the current behavior, use torch.div(a, b, rounding_mode='trunc'), or for actual floor division, use torch.div(a, b, rounding_mode='floor').
+
+Testing DataLoader 0:  96%|█████████▌| 298/312 [1:00:09<02:49, 12.11s/it]
+/media/songoh/ssh3/songoh_ws/MaskDNtoBBox_GPU0/trainer/trainer.py:524: UserWarning: __floordiv__ is deprecated, and its behavior will change in a future version of pytorch. It currently rounds toward 0 (like the 'trunc' function NOT 'floor'). This results in incorrect rounding for negative values. To keep the current behavior, use torch.div(a, b, rounding_mode='trunc'), or for actual floor division, use torch.div(a, b, rounding_mode='floor').
+
+Testing DataLoader 0:  96%|█████████▌| 299/312 [1:00:20<02:37, 12.11s/it]
+/media/songoh/ssh3/songoh_ws/MaskDNtoBBox_GPU0/trainer/trainer.py:524: UserWarning: __floordiv__ is deprecated, and its behavior will change in a future version of pytorch. It currently rounds toward 0 (like the 'trunc' function NOT 'floor'). This results in incorrect rounding for negative values. To keep the current behavior, use torch.div(a, b, rounding_mode='trunc'), or for actual floor division, use torch.div(a, b, rounding_mode='floor').
+
+Testing DataLoader 0:  96%|█████████▌| 300/312 [1:00:31<02:25, 12.11s/it]
+/media/songoh/ssh3/songoh_ws/MaskDNtoBBox_GPU0/trainer/trainer.py:524: UserWarning: __floordiv__ is deprecated, and its behavior will change in a future version of pytorch. It currently rounds toward 0 (like the 'trunc' function NOT 'floor'). This results in incorrect rounding for negative values. To keep the current behavior, use torch.div(a, b, rounding_mode='trunc'), or for actual floor division, use torch.div(a, b, rounding_mode='floor').
+
+Testing DataLoader 0:  96%|█████████▋| 301/312 [1:00:39<02:12, 12.09s/it]
+/media/songoh/ssh3/songoh_ws/MaskDNtoBBox_GPU0/trainer/trainer.py:524: UserWarning: __floordiv__ is deprecated, and its behavior will change in a future version of pytorch. It currently rounds toward 0 (like the 'trunc' function NOT 'floor'). This results in incorrect rounding for negative values. To keep the current behavior, use torch.div(a, b, rounding_mode='trunc'), or for actual floor division, use torch.div(a, b, rounding_mode='floor').
+
+Testing DataLoader 0:  97%|█████████▋| 302/312 [1:00:53<02:00, 12.10s/it]
+/media/songoh/ssh3/songoh_ws/MaskDNtoBBox_GPU0/trainer/trainer.py:524: UserWarning: __floordiv__ is deprecated, and its behavior will change in a future version of pytorch. It currently rounds toward 0 (like the 'trunc' function NOT 'floor'). This results in incorrect rounding for negative values. To keep the current behavior, use torch.div(a, b, rounding_mode='trunc'), or for actual floor division, use torch.div(a, b, rounding_mode='floor').
+
+Testing DataLoader 0:  97%|█████████▋| 303/312 [1:01:04<01:48, 12.09s/it]
+/media/songoh/ssh3/songoh_ws/MaskDNtoBBox_GPU0/trainer/trainer.py:524: UserWarning: __floordiv__ is deprecated, and its behavior will change in a future version of pytorch. It currently rounds toward 0 (like the 'trunc' function NOT 'floor'). This results in incorrect rounding for negative values. To keep the current behavior, use torch.div(a, b, rounding_mode='trunc'), or for actual floor division, use torch.div(a, b, rounding_mode='floor').
+
+Testing DataLoader 0:  97%|█████████▋| 304/312 [1:01:16<01:36, 12.09s/it]
+/media/songoh/ssh3/songoh_ws/MaskDNtoBBox_GPU0/trainer/trainer.py:524: UserWarning: __floordiv__ is deprecated, and its behavior will change in a future version of pytorch. It currently rounds toward 0 (like the 'trunc' function NOT 'floor'). This results in incorrect rounding for negative values. To keep the current behavior, use torch.div(a, b, rounding_mode='trunc'), or for actual floor division, use torch.div(a, b, rounding_mode='floor').
+
+Testing DataLoader 0:  98%|█████████▊| 305/312 [1:01:32<01:24, 12.11s/it]
+/media/songoh/ssh3/songoh_ws/MaskDNtoBBox_GPU0/trainer/trainer.py:524: UserWarning: __floordiv__ is deprecated, and its behavior will change in a future version of pytorch. It currently rounds toward 0 (like the 'trunc' function NOT 'floor'). This results in incorrect rounding for negative values. To keep the current behavior, use torch.div(a, b, rounding_mode='trunc'), or for actual floor division, use torch.div(a, b, rounding_mode='floor').
+
+
+Testing DataLoader 0:  98%|█████████▊| 307/312 [1:02:11<01:00, 12.16s/it]
+/media/songoh/ssh3/songoh_ws/MaskDNtoBBox_GPU0/trainer/trainer.py:524: UserWarning: __floordiv__ is deprecated, and its behavior will change in a future version of pytorch. It currently rounds toward 0 (like the 'trunc' function NOT 'floor'). This results in incorrect rounding for negative values. To keep the current behavior, use torch.div(a, b, rounding_mode='trunc'), or for actual floor division, use torch.div(a, b, rounding_mode='floor').
+  topk_indices = topk_indices // num_classes
+/media/songoh/ssh3/songoh_ws/MaskDNtoBBox_GPU0/trainer/trainer.py:524: UserWarning: __floordiv__ is deprecated, and its behavior will change in a future version of pytorch. It currently rounds toward 0 (like the 'trunc' function NOT 'floor'). This results in incorrect rounding for negative values. To keep the current behavior, use torch.div(a, b, rounding_mode='trunc'), or for actual floor division, use torch.div(a, b, rounding_mode='floor').
+
+
+Testing DataLoader 0:  99%|█████████▉| 309/312 [1:02:23<00:36, 12.11s/it]
+/media/songoh/ssh3/songoh_ws/MaskDNtoBBox_GPU0/trainer/trainer.py:524: UserWarning: __floordiv__ is deprecated, and its behavior will change in a future version of pytorch. It currently rounds toward 0 (like the 'trunc' function NOT 'floor'). This results in incorrect rounding for negative values. To keep the current behavior, use torch.div(a, b, rounding_mode='trunc'), or for actual floor division, use torch.div(a, b, rounding_mode='floor').
+
+Testing DataLoader 0:  99%|█████████▉| 310/312 [1:02:27<00:24, 12.09s/it]
+/media/songoh/ssh3/songoh_ws/MaskDNtoBBox_GPU0/trainer/trainer.py:524: UserWarning: __floordiv__ is deprecated, and its behavior will change in a future version of pytorch. It currently rounds toward 0 (like the 'trunc' function NOT 'floor'). This results in incorrect rounding for negative values. To keep the current behavior, use torch.div(a, b, rounding_mode='trunc'), or for actual floor division, use torch.div(a, b, rounding_mode='floor').
+  topk_indices = topk_indices // num_classes
+/media/songoh/ssh3/songoh_ws/MaskDNtoBBox_GPU0/trainer/trainer.py:524: UserWarning: __floordiv__ is deprecated, and its behavior will change in a future version of pytorch. It currently rounds toward 0 (like the 'trunc' function NOT 'floor'). This results in incorrect rounding for negative values. To keep the current behavior, use torch.div(a, b, rounding_mode='trunc'), or for actual floor division, use torch.div(a, b, rounding_mode='floor').
+
+
+Testing DataLoader 0: 100%|██████████| 312/312 [1:02:51<00:00, 12.09s/it]Computing AP for class:  5
+/media/songoh/ssh3/songoh_ws/MaskDNtoBBox_GPU0/trainer/trainer.py:524: UserWarning: __floordiv__ is deprecated, and its behavior will change in a future version of pytorch. It currently rounds toward 0 (like the 'trunc' function NOT 'floor'). This results in incorrect rounding for negative values. To keep the current behavior, use torch.div(a, b, rounding_mode='trunc'), or for actual floor division, use torch.div(a, b, rounding_mode='floor').
+  topk_indices = topk_indices // num_classes
+5 0.7502294792342123
+Computing AP for class:  39
+39 0.46546747883537065
+Computing AP for class:  34
+34 0.5822929078957662
+Computing AP for class:  8
+8 0.404733784811003
+Computing AP for class:  12
+12 0.42071166714392894
+Computing AP for class:  3
+3 0.33484699538476714
+Computing AP for class:  7
+7 0.5829767175527778
+Computing AP for class:  9
+9 0.31533159458888416
+Computing AP for class:  24
+24 0.3716271878375536
+Computing AP for class:  6
+6 0.5199847082300354
+Computing AP for class:  10
+10 0.27753393026656403
+Computing AP for class:  14
+14 0.3926835191620489
+Computing AP for class:  36
+36 0.8564396061794606
+Computing AP for class:  11
+11 0.24595839600151245
+Computing AP for class:  28
+28 0.20711580086580086
+Computing AP for class:  4
+4 0.7028056851156267
+Computing AP for class:  33
+33 0.9289037586232802
+Computing AP for class:  16
+16 0.4975910449617939
+Computing AP for class:  5
+5 0.8570040055622337
+Computing AP for class:  39
+39 0.522601528489877
+Computing AP for class:  34
+34 0.7460387781018869
+Computing AP for class:  8
+8 0.4932083333070969
+Computing AP for class:  12
+12 0.6598354757886498
+Computing AP for class:  3
+3 0.47116798472599647
+Computing AP for class:  7
+7 0.670539336135785
+Computing AP for class:  9
+9 0.4779472007287592
+Computing AP for class:  24
+24 0.48974600408210855
+Computing AP for class:  6
+6 0.7405374764090906
+Computing AP for class:  10
+10 0.3122003408787014
+Computing AP for class:  14
+14 0.6001084348198515
+Computing AP for class:  36
+36 0.8564396061794606
+Computing AP for class:  11
+11 0.2993531192096738
+Computing AP for class:  28
+28 0.5776184463684465
+Computing AP for class:  4
+4 0.7806910978552769
+Computing AP for class:  33
+33 1.0
+Computing AP for class:  16
+16 0.6880719219444152
+evaluating 312 scans...
+
+
+
+
+
+
+scans processed: 312
+################################################################
+what           :             AP         AP_50%         AP_25%
+################################################################
+cabinet        :          0.362          0.532          0.641
+bed            :          0.502          0.736          0.773
+chair          :          0.744          0.881          0.915
+sofa           :          0.374          0.539          0.782
+table          :          0.552          0.711          0.753
+door           :          0.468          0.643          0.721
+window         :          0.325          0.517          0.655
+bookshelf      :          0.261          0.442          0.548
+picture        :          0.358          0.439          0.515
+counter        :          0.333          0.554          0.714
+desk           :          0.260          0.464          0.635
+curtain        :          0.421          0.634          0.798
+refrigerator   :          0.432          0.504          0.504
+shower curtain :          0.475          0.693          0.780
+toilet         :          0.949          1.000          1.000
+sink           :          0.543          0.726          0.885
+bathtub        :          0.742          0.871          0.871
+otherfurniture :          0.529          0.622          0.666
+----------------------------------------------------------------
+average        :          0.480          0.639          0.731
+Testing DataLoader 0: 100%|██████████| 312/312 [1:03:06<00:00, 12.14s/it]
+────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────
+          Test metric                     DataLoader 0
+────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────
+       val_bathtub_val_ap              0.7421690225601196
+     val_bathtub_val_ap_25             0.8709677457809448
+     val_bathtub_val_ap_50             0.8709677457809448
+   val_bathtub_val_box_ap_25           0.8564396061794606
+   val_bathtub_val_box_ap_50           0.8564396061794606
+         val_bed_val_ap                0.5023084282875061
+       val_bed_val_ap_25               0.7733945846557617
+       val_bed_val_ap_50               0.7360382080078125
+     val_bed_val_box_ap_25             0.7806910978552769
+     val_bed_val_box_ap_50             0.7028056851156267
+      val_bookshelf_val_ap             0.2610834240913391
+    val_bookshelf_val_ap_25            0.5475677251815796
+    val_bookshelf_val_ap_50           0.44249069690704346
+  val_bookshelf_val_box_ap_25          0.3122003408787014
+  val_bookshelf_val_box_ap_50         0.27753393026656403
+       val_cabinet_val_ap             0.36249926686286926
+     val_cabinet_val_ap_25             0.6412633657455444
+     val_cabinet_val_ap_50             0.5322562456130981
+   val_cabinet_val_box_ap_25          0.47116798472599647
+   val_cabinet_val_box_ap_50          0.33484699538476714
+        val_chair_val_ap               0.7443614602088928
+      val_chair_val_ap_25              0.9149953126907349
+      val_chair_val_ap_50              0.8807000517845154
+    val_chair_val_box_ap_25            0.8570040055622337
+    val_chair_val_box_ap_50            0.7502294792342123
+       val_counter_val_ap             0.33286353945732117
+     val_counter_val_ap_25             0.714320719242096
+     val_counter_val_ap_50             0.5542725920677185
+   val_counter_val_box_ap_25           0.6598354757886498
+   val_counter_val_box_ap_50          0.42071166714392894
+       val_curtain_val_ap              0.4209391176700592
+     val_curtain_val_ap_25             0.797565758228302
+     val_curtain_val_ap_50             0.6344373822212219
+   val_curtain_val_box_ap_25           0.6880719219444152
+   val_curtain_val_box_ap_50           0.4975910449617939
+        val_desk_val_ap               0.26033151149749756
+       val_desk_val_ap_25              0.6352920532226562
+       val_desk_val_ap_50             0.46425431966781616
+     val_desk_val_box_ap_25            0.6001084348198515
+     val_desk_val_box_ap_50            0.3926835191620489
+        val_door_val_ap               0.46770647168159485
+       val_door_val_ap_25              0.7214028239250183
+       val_door_val_ap_50              0.6430805325508118
+     val_door_val_box_ap_25            0.4932083333070969
+     val_door_val_box_ap_50            0.404733784811003
+          val_loss_ce                  0.956573486328125
+         val_loss_ce_0                 1.0202221870422363
+         val_loss_ce_1                 1.0202221870422363
+         val_loss_ce_10                0.9501198530197144
+         val_loss_ce_11                0.9299639463424683
+         val_loss_ce_2                 0.9602678418159485
+         val_loss_ce_3                 0.9251461029052734
+         val_loss_ce_4                 0.9372363090515137
+         val_loss_ce_5                 0.939491868019104
+         val_loss_ce_6                 0.9512637257575989
+         val_loss_ce_7                 0.9430514574050903
+         val_loss_ce_8                 0.9466391801834106
+         val_loss_ce_9                 0.9474470615386963
+         val_loss_dice                0.36118754744529724
+        val_loss_dice_0                0.5141089558601379
+        val_loss_dice_1                0.5141089558601379
+        val_loss_dice_10                0.36655393242836
+        val_loss_dice_11               0.3677167594432831
+        val_loss_dice_2                0.477463036775589
+        val_loss_dice_3               0.43493807315826416
+        val_loss_dice_4                0.4091089069843292
+        val_loss_dice_5               0.38182568550109863
+        val_loss_dice_6               0.38035181164741516
+        val_loss_dice_7                0.3780307471752167
+        val_loss_dice_8               0.37610605359077454
+        val_loss_dice_9                0.3655555248260498
+         val_loss_mask                 0.1720196157693863
+        val_loss_mask_0                0.1914004534482956
+        val_loss_mask_1                0.1914004534482956
+        val_loss_mask_10              0.17347688972949982
+        val_loss_mask_11              0.17468369007110596
+        val_loss_mask_2                0.1867317408323288
+        val_loss_mask_3               0.17798161506652832
+        val_loss_mask_4                0.1753809005022049
+        val_loss_mask_5               0.17099866271018982
+        val_loss_mask_6                0.1719485968351364
+        val_loss_mask_7                0.172865092754364
+        val_loss_mask_8               0.17571677267551422
+        val_loss_mask_9                0.1707538366317749
+          val_mean_ap                 0.47951406240463257
+         val_mean_ap_25                0.7309466600418091
+         val_mean_ap_50                0.6393674612045288
+       val_mean_box_ap_25              0.624617171699295
+       val_mean_box_ap_50             0.49206857014946603
+        val_mean_loss_ce               0.9559726715087891
+       val_mean_loss_dice              0.4097735285758972
+       val_mean_loss_mask             0.17733526229858398
+   val_otherfurniture_val_ap           0.5291562080383301
+  val_otherfurniture_val_ap_25         0.6661529541015625
+  val_otherfurniture_val_ap_50         0.6220048069953918
+val_otherfurniture_val_box_ap_25       0.522601528489877
+val_otherfurniture_val_box_ap_50      0.46546747883537065
+       val_picture_val_ap             0.35807955265045166
+     val_picture_val_ap_25             0.5152745246887207
+     val_picture_val_ap_50             0.4385937750339508
+   val_picture_val_box_ap_25           0.2993531192096738
+   val_picture_val_box_ap_50          0.24595839600151245
+val_refridgerator_val_box_ap_25       0.48974600408210855
+val_refridgerator_val_box_ap_50        0.3716271878375536
+    val_refrigerator_val_ap           0.43166524171829224
+   val_refrigerator_val_ap_25          0.5038493871688843
+   val_refrigerator_val_ap_50          0.5038493871688843
+   val_shower curtain_val_ap          0.47517499327659607
+  val_shower curtain_val_ap_25         0.7803168892860413
+  val_shower curtain_val_ap_50         0.6927253007888794
+val_shower_curtain_val_box_ap_25       0.5776184463684465
+val_shower_curtain_val_box_ap_50      0.20711580086580086
+        val_sink_val_ap                0.5432098507881165
+       val_sink_val_ap_25              0.8846737146377563
+       val_sink_val_ap_50              0.7255969643592834
+     val_sink_val_box_ap_25            0.7460387781018869
+     val_sink_val_box_ap_50            0.5822929078957662
+        val_sofa_val_ap               0.37356680631637573
+       val_sofa_val_ap_25              0.7819751501083374
+       val_sofa_val_ap_50              0.5394325256347656
+     val_sofa_val_box_ap_25            0.7405374764090906
+     val_sofa_val_box_ap_50            0.5199847082300354
+        val_table_val_ap               0.5522323250770569
+      val_table_val_ap_25              0.753021776676178
+      val_table_val_ap_50              0.711345374584198
+    val_table_val_box_ap_25            0.670539336135785
+    val_table_val_box_ap_50            0.5829767175527778
+       val_toilet_val_ap               0.9489494562149048
+      val_toilet_val_ap_25                    1.0
+      val_toilet_val_ap_50                    1.0
+    val_toilet_val_box_ap_25                  1.0
+    val_toilet_val_box_ap_50           0.9289037586232802
+       val_window_val_ap               0.324956476688385
+      val_window_val_ap_25             0.655005156993866
+      val_window_val_ap_50             0.5165679454803467
+    val_window_val_box_ap_25           0.4779472007287592
+    val_window_val_box_ap_50          0.31533159458888416
+────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────

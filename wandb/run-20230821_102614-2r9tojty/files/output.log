@@ -1,0 +1,857 @@
+/home/songoh/miniconda3/envs/mask/lib/python3.10/site-packages/MinkowskiEngine/__init__.py:36: UserWarning: The environment variable `OMP_NUM_THREADS` not set. MinkowskiEngine will automatically set `OMP_NUM_THREADS=16`. If you want to set `OMP_NUM_THREADS` manually, please export it on the command line before running a python script. e.g. `export OMP_NUM_THREADS=12; python your_program.py`. It is recommended to set it below 24.
+  warnings.warn(
+/home/songoh/miniconda3/envs/mask/lib/python3.10/site-packages/pytorch_lightning/utilities/seed.py:55: UserWarning: No seed found, seed set to 1160893714
+  rank_zero_warn(f"No seed found, seed set to {seed}")
+Global seed set to 1160893714
+/home/songoh/miniconda3/envs/mask/lib/python3.10/site-packages/pytorch_lightning/loggers/wandb.py:352: UserWarning: There is a wandb run already in progress and newly created instances of `WandbLogger` will reuse this run. If this is not desired, call `wandb.finish()` before instantiating `WandbLogger`.
+  rank_zero_warn(
+EXPERIMENT ALREADY EXIST
+{'_target_': 'pytorch_lightning.loggers.WandbLogger', 'project': '${general.project_name}', 'name': '${general.experiment_name}', 'save_dir': '${general.save_dir}', 'entity': 'schult', 'resume': 'allow', 'id': '${general.experiment_name}'}
+/home/songoh/miniconda3/envs/mask/lib/python3.10/site-packages/pytorch_lightning/trainer/connectors/accelerator_connector.py:446: LightningDeprecationWarning: Setting `Trainer(gpus=1)` is deprecated in v1.7 and will be removed in v2.0. Please use `Trainer(accelerator='gpu', devices=1)` instead.
+  rank_zero_deprecation(
+/home/songoh/miniconda3/envs/mask/lib/python3.10/site-packages/pytorch_lightning/trainer/connectors/checkpoint_connector.py:52: LightningDeprecationWarning: Setting `Trainer(resume_from_checkpoint=)` is deprecated in v1.5 and will be removed in v1.7. Please pass `Trainer.fit(ckpt_path=)` directly instead.
+  rank_zero_deprecation(
+/home/songoh/miniconda3/envs/mask/lib/python3.10/site-packages/pytorch_lightning/trainer/connectors/callback_connector.py:57: LightningDeprecationWarning: Setting `Trainer(weights_save_path=)` has been deprecated in v1.6 and will be removed in v1.8. Please pass ``dirpath`` directly to the `ModelCheckpoint` callback
+  rank_zero_deprecation(
+GPU available: True (cuda), used: True
+TPU available: False, using: 0 TPU cores
+IPU available: False, using: 0 IPUs
+HPU available: False, using: 0 HPUs
+[2023-08-21 10:26:25,225][__main__][INFO] - {'general_train_mode': False, 'general_task': 'instance_segmentation', 'general_seed': None, 'general_checkpoint': 'saved/Query_selection_test_noise_0.2/last-epoch.ckpt', 'general_backbone_checkpoint': None, 'general_freeze_backbone': False, 'general_linear_probing_backbone': False, 'general_train_on_segments': True, 'general_eval_on_segments': True, 'general_filter_out_instances': True, 'general_save_visualizations': True, 'general_visualization_point_size': 20, 'general_decoder_id': -1, 'general_export': False, 'general_use_dbscan': True, 'general_ignore_class_threshold': 100, 'general_project_name': 'scannet', 'general_workspace': 'jonasschult', 'general_experiment_name': 'DEBUG_ABLATION', 'general_num_targets': 19, 'general_add_instance': True, 'general_dbscan_eps': 0.95, 'general_dbscan_min_points': 1, 'general_export_threshold': 0.0001, 'general_reps_per_epoch': 1, 'general_on_crops': False, 'general_scores_threshold': 0.8, 'general_iou_threshold': 1.0, 'general_area': 5, 'general_eval_inner_core': -1, 'general_topk_per_image': -1, 'general_ignore_mask_idx': [], 'general_max_batch_size': 99999999, 'general_save_dir': 'saved/DEBUG_ABLATION', 'general_gpus': 1, 'data_train_mode': 'train', 'data_validation_mode': 'validation', 'data_test_mode': 'validation', 'data_ignore_label': 255, 'data_add_raw_coordinates': True, 'data_add_colors': True, 'data_add_normals': False, 'data_in_channels': 3, 'data_num_labels': 20, 'data_add_instance': True, 'data_task': 'instance_segmentation', 'data_pin_memory': False, 'data_num_workers': 4, 'data_batch_size': 3, 'data_test_batch_size': 1, 'data_cache_data': False, 'data_voxel_size': 0.02, 'data_reps_per_epoch': 1, 'data_cropping': False, 'data_cropping_args_min_points': 30000, 'data_cropping_args_aspect': 0.8, 'data_cropping_args_min_crop': 0.5, 'data_cropping_args_max_crop': 1.0, 'data_crop_min_size': 20000, 'data_crop_length': 6.0, 'data_cropping_v1': True, 'data_train_dataloader__target_': 'torch.utils.data.DataLoader', 'data_train_dataloader_shuffle': True, 'data_train_dataloader_pin_memory': False, 'data_train_dataloader_num_workers': 4, 'data_train_dataloader_batch_size': 3, 'data_validation_dataloader__target_': 'torch.utils.data.DataLoader', 'data_validation_dataloader_shuffle': False, 'data_validation_dataloader_pin_memory': False, 'data_validation_dataloader_num_workers': 4, 'data_validation_dataloader_batch_size': 1, 'data_test_dataloader__target_': 'torch.utils.data.DataLoader', 'data_test_dataloader_shuffle': False, 'data_test_dataloader_pin_memory': False, 'data_test_dataloader_num_workers': 4, 'data_test_dataloader_batch_size': 1, 'data_train_dataset__target_': 'datasets.semseg.SemanticSegmentationDataset', 'data_train_dataset_dataset_name': 'scannet', 'data_train_dataset_data_dir': 'data/processed/scannet', 'data_train_dataset_image_augmentations_path': 'conf/augmentation/albumentations_aug.yaml', 'data_train_dataset_volume_augmentations_path': 'conf/augmentation/volumentations_aug.yaml', 'data_train_dataset_label_db_filepath': 'data/processed/scannet/label_database.yaml', 'data_train_dataset_color_mean_std': 'data/processed/scannet/color_mean_std.yaml', 'data_train_dataset_data_percent': 1.0, 'data_train_dataset_mode': 'train', 'data_train_dataset_ignore_label': 255, 'data_train_dataset_num_labels': 20, 'data_train_dataset_add_raw_coordinates': True, 'data_train_dataset_add_colors': True, 'data_train_dataset_add_normals': False, 'data_train_dataset_add_instance': True, 'data_train_dataset_instance_oversampling': 0.0, 'data_train_dataset_place_around_existing': False, 'data_train_dataset_point_per_cut': 0, 'data_train_dataset_max_cut_region': 0, 'data_train_dataset_flip_in_center': False, 'data_train_dataset_noise_rate': 0, 'data_train_dataset_resample_points': 0, 'data_train_dataset_add_unlabeled_pc': False, 'data_train_dataset_cropping': False, 'data_train_dataset_cropping_args_min_points': 30000, 'data_train_dataset_cropping_args_aspect': 0.8, 'data_train_dataset_cropping_args_min_crop': 0.5, 'data_train_dataset_cropping_args_max_crop': 1.0, 'data_train_dataset_is_tta': False, 'data_train_dataset_crop_min_size': 20000, 'data_train_dataset_crop_length': 6.0, 'data_train_dataset_filter_out_classes': [0, 1], 'data_train_dataset_label_offset': 2, 'data_validation_dataset__target_': 'datasets.semseg.SemanticSegmentationDataset', 'data_validation_dataset_dataset_name': 'scannet', 'data_validation_dataset_data_dir': 'data/processed/scannet', 'data_validation_dataset_image_augmentations_path': None, 'data_validation_dataset_volume_augmentations_path': None, 'data_validation_dataset_label_db_filepath': 'data/processed/scannet/label_database.yaml', 'data_validation_dataset_color_mean_std': 'data/processed/scannet/color_mean_std.yaml', 'data_validation_dataset_data_percent': 1.0, 'data_validation_dataset_mode': 'validation', 'data_validation_dataset_ignore_label': 255, 'data_validation_dataset_num_labels': 20, 'data_validation_dataset_add_raw_coordinates': True, 'data_validation_dataset_add_colors': True, 'data_validation_dataset_add_normals': False, 'data_validation_dataset_add_instance': True, 'data_validation_dataset_cropping': False, 'data_validation_dataset_is_tta': False, 'data_validation_dataset_crop_min_size': 20000, 'data_validation_dataset_crop_length': 6.0, 'data_validation_dataset_filter_out_classes': [0, 1], 'data_validation_dataset_label_offset': 2, 'data_test_dataset__target_': 'datasets.semseg.SemanticSegmentationDataset', 'data_test_dataset_dataset_name': 'scannet', 'data_test_dataset_data_dir': 'data/processed/scannet', 'data_test_dataset_image_augmentations_path': None, 'data_test_dataset_volume_augmentations_path': None, 'data_test_dataset_label_db_filepath': 'data/processed/scannet/label_database.yaml', 'data_test_dataset_color_mean_std': 'data/processed/scannet/color_mean_std.yaml', 'data_test_dataset_data_percent': 1.0, 'data_test_dataset_mode': 'validation', 'data_test_dataset_ignore_label': 255, 'data_test_dataset_num_labels': 20, 'data_test_dataset_add_raw_coordinates': True, 'data_test_dataset_add_colors': True, 'data_test_dataset_add_normals': False, 'data_test_dataset_add_instance': True, 'data_test_dataset_cropping': False, 'data_test_dataset_is_tta': False, 'data_test_dataset_crop_min_size': 20000, 'data_test_dataset_crop_length': 6.0, 'data_test_dataset_filter_out_classes': [0, 1], 'data_test_dataset_label_offset': 2, 'data_train_collation__target_': 'datasets.utils.VoxelizeCollate', 'data_train_collation_ignore_label': 255, 'data_train_collation_voxel_size': 0.02, 'data_train_collation_mode': 'train', 'data_train_collation_small_crops': False, 'data_train_collation_very_small_crops': False, 'data_train_collation_batch_instance': False, 'data_train_collation_probing': False, 'data_train_collation_task': 'instance_segmentation', 'data_train_collation_ignore_class_threshold': 100, 'data_train_collation_filter_out_classes': [0, 1], 'data_train_collation_label_offset': 2, 'data_train_collation_num_queries': 150, 'data_validation_collation__target_': 'datasets.utils.VoxelizeCollate', 'data_validation_collation_ignore_label': 255, 'data_validation_collation_voxel_size': 0.02, 'data_validation_collation_mode': 'validation', 'data_validation_collation_batch_instance': False, 'data_validation_collation_probing': False, 'data_validation_collation_task': 'instance_segmentation', 'data_validation_collation_ignore_class_threshold': 100, 'data_validation_collation_filter_out_classes': [0, 1], 'data_validation_collation_label_offset': 2, 'data_validation_collation_num_queries': 150, 'data_test_collation__target_': 'datasets.utils.VoxelizeCollate', 'data_test_collation_ignore_label': 255, 'data_test_collation_voxel_size': 0.02, 'data_test_collation_mode': 'validation', 'data_test_collation_batch_instance': False, 'data_test_collation_probing': False, 'data_test_collation_task': 'instance_segmentation', 'data_test_collation_ignore_class_threshold': 100, 'data_test_collation_filter_out_classes': [0, 1], 'data_test_collation_label_offset': 2, 'data_test_collation_num_queries': 150, 'logging': [{'_target_': 'pytorch_lightning.loggers.WandbLogger', 'project': 'scannet', 'name': 'DEBUG_ABLATION', 'save_dir': 'saved/DEBUG_ABLATION', 'entity': 'schult', 'resume': 'allow', 'id': 'DEBUG_ABLATION'}], 'model__target_': 'models.Mask3D', 'model_hidden_dim': 128, 'model_dim_feedforward': 1024, 'model_num_queries': 150, 'model_num_heads': 8, 'model_num_decoders': 3, 'model_dropout': 0.0, 'model_pre_norm': False, 'model_use_level_embed': False, 'model_normalize_pos_enc': True, 'model_positional_encoding_type': 'fourier', 'model_gauss_scale': 1.0, 'model_hlevels': [0, 1, 2, 3, 4], 'model_anchor_dim': 6, 'model_non_parametric_queries': False, 'model_random_query_both': False, 'model_random_normal': False, 'model_random_queries': False, 'model_use_np_features': False, 'model_query_selection': True, 'model_sample_sizes': [200, 800, 3200, 12800, 51200], 'model_max_sample_size': False, 'model_shared_decoder': True, 'model_num_classes': 19, 'model_train_on_segments': True, 'model_scatter_type': 'mean', 'model_voxel_size': 0.02, 'model_config_backbone__target_': 'models.Res16UNet34C', 'model_config_backbone_config_dialations': [1, 1, 1, 1], 'model_config_backbone_config_conv1_kernel_size': 5, 'model_config_backbone_config_bn_momentum': 0.02, 'model_config_backbone_in_channels': 3, 'model_config_backbone_out_channels': 20, 'model_config_backbone_out_fpn': True, 'metrics__target_': 'models.metrics.ConfusionMatrix', 'metrics_num_classes': 20, 'metrics_ignore_label': 255, 'optimizer__target_': 'torch.optim.AdamW', 'optimizer_lr': 0.0001, 'scheduler_scheduler__target_': 'torch.optim.lr_scheduler.OneCycleLR', 'scheduler_scheduler_max_lr': 0.0001, 'scheduler_scheduler_epochs': 1001, 'scheduler_scheduler_steps_per_epoch': -1, 'scheduler_pytorch_lightning_params_interval': 'step', 'trainer_deterministic': False, 'trainer_max_epochs': 1001, 'trainer_min_epochs': 1, 'trainer_resume_from_checkpoint': 'saved/DEBUG_ABLATION/last-epoch.ckpt', 'trainer_check_val_every_n_epoch': 50, 'trainer_num_sanity_val_steps': 2, 'callbacks': [{'_target_': 'pytorch_lightning.callbacks.ModelCheckpoint', 'monitor': 'val_mean_ap_50', 'save_last': True, 'save_top_k': 1, 'mode': 'max', 'dirpath': 'saved/DEBUG_ABLATION', 'filename': '{epoch}-{val_mean_ap_50:.3f}', 'every_n_epochs': 1}, {'_target_': 'pytorch_lightning.callbacks.LearningRateMonitor'}], 'matcher__target_': 'models.matcher.HungarianMatcher', 'matcher_cost_class': 2.0, 'matcher_cost_mask': 5.0, 'matcher_cost_dice': 2.0, 'matcher_num_points': -1, 'loss__target_': 'models.criterion.SetCriterion', 'loss_num_classes': 19, 'loss_eos_coef': 0.1, 'loss_losses': ['labels', 'masks'], 'loss_num_points': -1, 'loss_oversample_ratio': 3.0, 'loss_importance_sample_ratio': 0.75, 'loss_class_weights': -1}
+/media/songoh/ssh3/songoh_ws/Mask CDN-main1/datasets/semseg.py:573: YAMLLoadWarning: calling yaml.load() without Loader=... is deprecated, as the default Loader is unsafe. Please read https://msg.pyyaml.org/load for full details.
+  file = yaml.load(f)
+Testing: 0it [00:00, ?it/s]
+
+Testing DataLoader 0:   0%|          | 0/312 [00:00<?, ?it/s]
+/media/songoh/ssh3/songoh_ws/Mask CDN-main1/models/mask3d.py:282: UserWarning: __floordiv__ is deprecated, and its behavior will change in a future version of pytorch. It currently rounds toward 0 (like the 'trunc' function NOT 'floor'). This results in incorrect rounding for negative values. To keep the current behavior, use torch.div(a, b, rounding_mode='trunc'), or for actual floor division, use torch.div(a, b, rounding_mode='floor').
+  dim_t = 10000 ** (2 * (dim_t // 2) / 128)
+************************************************************************
+1) Start local server:
+    cd /media/songoh/ssh3/songoh_ws/Mask CDN-main1/saved/DEBUG_ABLATION/visualizations/scene0011_00; python -m http.server 6008
+2) Open in browser:
+    http://0.0.0.0:6008
+************************************************************************
+Testing DataLoader 0:   0%|          | 1/312 [00:17<1:31:42, 17.69s/it]
+/media/songoh/ssh3/songoh_ws/Mask CDN-main1/trainer/trainer.py:502: UserWarning: __floordiv__ is deprecated, and its behavior will change in a future version of pytorch. It currently rounds toward 0 (like the 'trunc' function NOT 'floor'). This results in incorrect rounding for negative values. To keep the current behavior, use torch.div(a, b, rounding_mode='trunc'), or for actual floor division, use torch.div(a, b, rounding_mode='floor').
+  topk_indices = topk_indices // num_classes
+/media/songoh/ssh3/songoh_ws/Mask CDN-main1/models/mask3d.py:282: UserWarning: __floordiv__ is deprecated, and its behavior will change in a future version of pytorch. It currently rounds toward 0 (like the 'trunc' function NOT 'floor'). This results in incorrect rounding for negative values. To keep the current behavior, use torch.div(a, b, rounding_mode='trunc'), or for actual floor division, use torch.div(a, b, rounding_mode='floor').
+  dim_t = 10000 ** (2 * (dim_t // 2) / 128)
+/media/songoh/ssh3/songoh_ws/Mask CDN-main1/trainer/trainer.py:502: UserWarning: __floordiv__ is deprecated, and its behavior will change in a future version of pytorch. It currently rounds toward 0 (like the 'trunc' function NOT 'floor'). This results in incorrect rounding for negative values. To keep the current behavior, use torch.div(a, b, rounding_mode='trunc'), or for actual floor division, use torch.div(a, b, rounding_mode='floor').
+  topk_indices = topk_indices // num_classes
+************************************************************************
+1) Start local server:
+    cd /media/songoh/ssh3/songoh_ws/Mask CDN-main1/saved/DEBUG_ABLATION/visualizations/scene0011_01; python -m http.server 6008
+2) Open in browser:
+    http://0.0.0.0:6008
+************************************************************************
+Testing DataLoader 0:   1%|          | 2/312 [00:37<1:35:37, 18.51s/it]
+/media/songoh/ssh3/songoh_ws/Mask CDN-main1/models/mask3d.py:282: UserWarning: __floordiv__ is deprecated, and its behavior will change in a future version of pytorch. It currently rounds toward 0 (like the 'trunc' function NOT 'floor'). This results in incorrect rounding for negative values. To keep the current behavior, use torch.div(a, b, rounding_mode='trunc'), or for actual floor division, use torch.div(a, b, rounding_mode='floor').
+  dim_t = 10000 ** (2 * (dim_t // 2) / 128)
+************************************************************************
+1) Start local server:
+    cd /media/songoh/ssh3/songoh_ws/Mask CDN-main1/saved/DEBUG_ABLATION/visualizations/scene0015_00; python -m http.server 6008
+2) Open in browser:
+    http://0.0.0.0:6008
+************************************************************************
+Testing DataLoader 0:   1%|          | 3/312 [00:49<1:25:22, 16.58s/it]
+/media/songoh/ssh3/songoh_ws/Mask CDN-main1/trainer/trainer.py:502: UserWarning: __floordiv__ is deprecated, and its behavior will change in a future version of pytorch. It currently rounds toward 0 (like the 'trunc' function NOT 'floor'). This results in incorrect rounding for negative values. To keep the current behavior, use torch.div(a, b, rounding_mode='trunc'), or for actual floor division, use torch.div(a, b, rounding_mode='floor').
+  topk_indices = topk_indices // num_classes
+/media/songoh/ssh3/songoh_ws/Mask CDN-main1/models/mask3d.py:282: UserWarning: __floordiv__ is deprecated, and its behavior will change in a future version of pytorch. It currently rounds toward 0 (like the 'trunc' function NOT 'floor'). This results in incorrect rounding for negative values. To keep the current behavior, use torch.div(a, b, rounding_mode='trunc'), or for actual floor division, use torch.div(a, b, rounding_mode='floor').
+  dim_t = 10000 ** (2 * (dim_t // 2) / 128)
+/media/songoh/ssh3/songoh_ws/Mask CDN-main1/trainer/trainer.py:502: UserWarning: __floordiv__ is deprecated, and its behavior will change in a future version of pytorch. It currently rounds toward 0 (like the 'trunc' function NOT 'floor'). This results in incorrect rounding for negative values. To keep the current behavior, use torch.div(a, b, rounding_mode='trunc'), or for actual floor division, use torch.div(a, b, rounding_mode='floor').
+  topk_indices = topk_indices // num_classes
+/media/songoh/ssh3/songoh_ws/Mask CDN-main1/models/mask3d.py:282: UserWarning: __floordiv__ is deprecated, and its behavior will change in a future version of pytorch. It currently rounds toward 0 (like the 'trunc' function NOT 'floor'). This results in incorrect rounding for negative values. To keep the current behavior, use torch.div(a, b, rounding_mode='trunc'), or for actual floor division, use torch.div(a, b, rounding_mode='floor').
+  dim_t = 10000 ** (2 * (dim_t // 2) / 128)
+************************************************************************
+1) Start local server:
+    cd /media/songoh/ssh3/songoh_ws/Mask CDN-main1/saved/DEBUG_ABLATION/visualizations/scene0019_00; python -m http.server 6008
+2) Open in browser:
+    http://0.0.0.0:6008
+************************************************************************
+Testing DataLoader 0:   1%|▏         | 4/312 [01:09<1:29:43, 17.48s/it]
+/media/songoh/ssh3/songoh_ws/Mask CDN-main1/trainer/trainer.py:502: UserWarning: __floordiv__ is deprecated, and its behavior will change in a future version of pytorch. It currently rounds toward 0 (like the 'trunc' function NOT 'floor'). This results in incorrect rounding for negative values. To keep the current behavior, use torch.div(a, b, rounding_mode='trunc'), or for actual floor division, use torch.div(a, b, rounding_mode='floor').
+  topk_indices = topk_indices // num_classes
+/media/songoh/ssh3/songoh_ws/Mask CDN-main1/models/mask3d.py:282: UserWarning: __floordiv__ is deprecated, and its behavior will change in a future version of pytorch. It currently rounds toward 0 (like the 'trunc' function NOT 'floor'). This results in incorrect rounding for negative values. To keep the current behavior, use torch.div(a, b, rounding_mode='trunc'), or for actual floor division, use torch.div(a, b, rounding_mode='floor').
+  dim_t = 10000 ** (2 * (dim_t // 2) / 128)
+************************************************************************
+1) Start local server:
+    cd /media/songoh/ssh3/songoh_ws/Mask CDN-main1/saved/DEBUG_ABLATION/visualizations/scene0019_01; python -m http.server 6008
+2) Open in browser:
+    http://0.0.0.0:6008
+************************************************************************
+Testing DataLoader 0:   2%|▏         | 5/312 [01:33<1:36:09, 18.79s/it]
+/media/songoh/ssh3/songoh_ws/Mask CDN-main1/trainer/trainer.py:502: UserWarning: __floordiv__ is deprecated, and its behavior will change in a future version of pytorch. It currently rounds toward 0 (like the 'trunc' function NOT 'floor'). This results in incorrect rounding for negative values. To keep the current behavior, use torch.div(a, b, rounding_mode='trunc'), or for actual floor division, use torch.div(a, b, rounding_mode='floor').
+  topk_indices = topk_indices // num_classes
+************************************************************************
+1) Start local server:
+    cd /media/songoh/ssh3/songoh_ws/Mask CDN-main1/saved/DEBUG_ABLATION/visualizations/scene0025_00; python -m http.server 6008
+2) Open in browser:
+    http://0.0.0.0:6008
+************************************************************************
+Testing DataLoader 0:   2%|▏         | 6/312 [01:47<1:31:02, 17.85s/it]
+/media/songoh/ssh3/songoh_ws/Mask CDN-main1/models/mask3d.py:282: UserWarning: __floordiv__ is deprecated, and its behavior will change in a future version of pytorch. It currently rounds toward 0 (like the 'trunc' function NOT 'floor'). This results in incorrect rounding for negative values. To keep the current behavior, use torch.div(a, b, rounding_mode='trunc'), or for actual floor division, use torch.div(a, b, rounding_mode='floor').
+  dim_t = 10000 ** (2 * (dim_t // 2) / 128)
+/media/songoh/ssh3/songoh_ws/Mask CDN-main1/trainer/trainer.py:502: UserWarning: __floordiv__ is deprecated, and its behavior will change in a future version of pytorch. It currently rounds toward 0 (like the 'trunc' function NOT 'floor'). This results in incorrect rounding for negative values. To keep the current behavior, use torch.div(a, b, rounding_mode='trunc'), or for actual floor division, use torch.div(a, b, rounding_mode='floor').
+  topk_indices = topk_indices // num_classes
+************************************************************************
+1) Start local server:
+    cd /media/songoh/ssh3/songoh_ws/Mask CDN-main1/saved/DEBUG_ABLATION/visualizations/scene0025_01; python -m http.server 6008
+2) Open in browser:
+    http://0.0.0.0:6008
+************************************************************************
+Testing DataLoader 0:   2%|▏         | 7/312 [02:00<1:27:34, 17.23s/it]
+/media/songoh/ssh3/songoh_ws/Mask CDN-main1/models/mask3d.py:282: UserWarning: __floordiv__ is deprecated, and its behavior will change in a future version of pytorch. It currently rounds toward 0 (like the 'trunc' function NOT 'floor'). This results in incorrect rounding for negative values. To keep the current behavior, use torch.div(a, b, rounding_mode='trunc'), or for actual floor division, use torch.div(a, b, rounding_mode='floor').
+  dim_t = 10000 ** (2 * (dim_t // 2) / 128)
+/media/songoh/ssh3/songoh_ws/Mask CDN-main1/trainer/trainer.py:502: UserWarning: __floordiv__ is deprecated, and its behavior will change in a future version of pytorch. It currently rounds toward 0 (like the 'trunc' function NOT 'floor'). This results in incorrect rounding for negative values. To keep the current behavior, use torch.div(a, b, rounding_mode='trunc'), or for actual floor division, use torch.div(a, b, rounding_mode='floor').
+  topk_indices = topk_indices // num_classes
+************************************************************************
+1) Start local server:
+    cd /media/songoh/ssh3/songoh_ws/Mask CDN-main1/saved/DEBUG_ABLATION/visualizations/scene0025_02; python -m http.server 6008
+2) Open in browser:
+    http://0.0.0.0:6008
+************************************************************************
+Testing DataLoader 0:   3%|▎         | 8/312 [02:16<1:26:37, 17.10s/it]
+/media/songoh/ssh3/songoh_ws/Mask CDN-main1/models/mask3d.py:282: UserWarning: __floordiv__ is deprecated, and its behavior will change in a future version of pytorch. It currently rounds toward 0 (like the 'trunc' function NOT 'floor'). This results in incorrect rounding for negative values. To keep the current behavior, use torch.div(a, b, rounding_mode='trunc'), or for actual floor division, use torch.div(a, b, rounding_mode='floor').
+  dim_t = 10000 ** (2 * (dim_t // 2) / 128)
+/media/songoh/ssh3/songoh_ws/Mask CDN-main1/trainer/trainer.py:502: UserWarning: __floordiv__ is deprecated, and its behavior will change in a future version of pytorch. It currently rounds toward 0 (like the 'trunc' function NOT 'floor'). This results in incorrect rounding for negative values. To keep the current behavior, use torch.div(a, b, rounding_mode='trunc'), or for actual floor division, use torch.div(a, b, rounding_mode='floor').
+  topk_indices = topk_indices // num_classes
+/media/songoh/ssh3/songoh_ws/Mask CDN-main1/models/mask3d.py:282: UserWarning: __floordiv__ is deprecated, and its behavior will change in a future version of pytorch. It currently rounds toward 0 (like the 'trunc' function NOT 'floor'). This results in incorrect rounding for negative values. To keep the current behavior, use torch.div(a, b, rounding_mode='trunc'), or for actual floor division, use torch.div(a, b, rounding_mode='floor').
+  dim_t = 10000 ** (2 * (dim_t // 2) / 128)
+************************************************************************
+1) Start local server:
+    cd /media/songoh/ssh3/songoh_ws/Mask CDN-main1/saved/DEBUG_ABLATION/visualizations/scene0030_00; python -m http.server 6008
+2) Open in browser:
+    http://0.0.0.0:6008
+************************************************************************
+Testing DataLoader 0:   3%|▎         | 9/312 [02:32<1:25:19, 16.90s/it]
+/media/songoh/ssh3/songoh_ws/Mask CDN-main1/trainer/trainer.py:502: UserWarning: __floordiv__ is deprecated, and its behavior will change in a future version of pytorch. It currently rounds toward 0 (like the 'trunc' function NOT 'floor'). This results in incorrect rounding for negative values. To keep the current behavior, use torch.div(a, b, rounding_mode='trunc'), or for actual floor division, use torch.div(a, b, rounding_mode='floor').
+  topk_indices = topk_indices // num_classes
+************************************************************************
+1) Start local server:
+    cd /media/songoh/ssh3/songoh_ws/Mask CDN-main1/saved/DEBUG_ABLATION/visualizations/scene0030_01; python -m http.server 6008
+2) Open in browser:
+    http://0.0.0.0:6008
+************************************************************************
+Testing DataLoader 0:   3%|▎         | 10/312 [02:48<1:24:40, 16.82s/it]
+/media/songoh/ssh3/songoh_ws/Mask CDN-main1/models/mask3d.py:282: UserWarning: __floordiv__ is deprecated, and its behavior will change in a future version of pytorch. It currently rounds toward 0 (like the 'trunc' function NOT 'floor'). This results in incorrect rounding for negative values. To keep the current behavior, use torch.div(a, b, rounding_mode='trunc'), or for actual floor division, use torch.div(a, b, rounding_mode='floor').
+  dim_t = 10000 ** (2 * (dim_t // 2) / 128)
+/media/songoh/ssh3/songoh_ws/Mask CDN-main1/trainer/trainer.py:502: UserWarning: __floordiv__ is deprecated, and its behavior will change in a future version of pytorch. It currently rounds toward 0 (like the 'trunc' function NOT 'floor'). This results in incorrect rounding for negative values. To keep the current behavior, use torch.div(a, b, rounding_mode='trunc'), or for actual floor division, use torch.div(a, b, rounding_mode='floor').
+  topk_indices = topk_indices // num_classes
+************************************************************************
+1) Start local server:
+    cd /media/songoh/ssh3/songoh_ws/Mask CDN-main1/saved/DEBUG_ABLATION/visualizations/scene0030_02; python -m http.server 6008
+2) Open in browser:
+    http://0.0.0.0:6008
+************************************************************************
+Testing DataLoader 0:   4%|▎         | 11/312 [03:03<1:23:48, 16.71s/it]
+/media/songoh/ssh3/songoh_ws/Mask CDN-main1/models/mask3d.py:282: UserWarning: __floordiv__ is deprecated, and its behavior will change in a future version of pytorch. It currently rounds toward 0 (like the 'trunc' function NOT 'floor'). This results in incorrect rounding for negative values. To keep the current behavior, use torch.div(a, b, rounding_mode='trunc'), or for actual floor division, use torch.div(a, b, rounding_mode='floor').
+  dim_t = 10000 ** (2 * (dim_t // 2) / 128)
+/media/songoh/ssh3/songoh_ws/Mask CDN-main1/trainer/trainer.py:502: UserWarning: __floordiv__ is deprecated, and its behavior will change in a future version of pytorch. It currently rounds toward 0 (like the 'trunc' function NOT 'floor'). This results in incorrect rounding for negative values. To keep the current behavior, use torch.div(a, b, rounding_mode='trunc'), or for actual floor division, use torch.div(a, b, rounding_mode='floor').
+  topk_indices = topk_indices // num_classes
+************************************************************************
+1) Start local server:
+    cd /media/songoh/ssh3/songoh_ws/Mask CDN-main1/saved/DEBUG_ABLATION/visualizations/scene0046_00; python -m http.server 6008
+2) Open in browser:
+    http://0.0.0.0:6008
+************************************************************************
+Testing DataLoader 0:   4%|▍         | 12/312 [03:15<1:21:19, 16.27s/it]
+/media/songoh/ssh3/songoh_ws/Mask CDN-main1/models/mask3d.py:282: UserWarning: __floordiv__ is deprecated, and its behavior will change in a future version of pytorch. It currently rounds toward 0 (like the 'trunc' function NOT 'floor'). This results in incorrect rounding for negative values. To keep the current behavior, use torch.div(a, b, rounding_mode='trunc'), or for actual floor division, use torch.div(a, b, rounding_mode='floor').
+  dim_t = 10000 ** (2 * (dim_t // 2) / 128)
+/media/songoh/ssh3/songoh_ws/Mask CDN-main1/trainer/trainer.py:502: UserWarning: __floordiv__ is deprecated, and its behavior will change in a future version of pytorch. It currently rounds toward 0 (like the 'trunc' function NOT 'floor'). This results in incorrect rounding for negative values. To keep the current behavior, use torch.div(a, b, rounding_mode='trunc'), or for actual floor division, use torch.div(a, b, rounding_mode='floor').
+  topk_indices = topk_indices // num_classes
+************************************************************************
+1) Start local server:
+    cd /media/songoh/ssh3/songoh_ws/Mask CDN-main1/saved/DEBUG_ABLATION/visualizations/scene0046_01; python -m http.server 6008
+2) Open in browser:
+    http://0.0.0.0:6008
+************************************************************************
+Testing DataLoader 0:   4%|▍         | 13/312 [03:27<1:19:26, 15.94s/it]
+/media/songoh/ssh3/songoh_ws/Mask CDN-main1/models/mask3d.py:282: UserWarning: __floordiv__ is deprecated, and its behavior will change in a future version of pytorch. It currently rounds toward 0 (like the 'trunc' function NOT 'floor'). This results in incorrect rounding for negative values. To keep the current behavior, use torch.div(a, b, rounding_mode='trunc'), or for actual floor division, use torch.div(a, b, rounding_mode='floor').
+  dim_t = 10000 ** (2 * (dim_t // 2) / 128)
+/media/songoh/ssh3/songoh_ws/Mask CDN-main1/trainer/trainer.py:502: UserWarning: __floordiv__ is deprecated, and its behavior will change in a future version of pytorch. It currently rounds toward 0 (like the 'trunc' function NOT 'floor'). This results in incorrect rounding for negative values. To keep the current behavior, use torch.div(a, b, rounding_mode='trunc'), or for actual floor division, use torch.div(a, b, rounding_mode='floor').
+  topk_indices = topk_indices // num_classes
+************************************************************************
+1) Start local server:
+    cd /media/songoh/ssh3/songoh_ws/Mask CDN-main1/saved/DEBUG_ABLATION/visualizations/scene0046_02; python -m http.server 6008
+2) Open in browser:
+    http://0.0.0.0:6008
+************************************************************************
+Testing DataLoader 0:   4%|▍         | 14/312 [03:38<1:17:29, 15.60s/it]
+/media/songoh/ssh3/songoh_ws/Mask CDN-main1/models/mask3d.py:282: UserWarning: __floordiv__ is deprecated, and its behavior will change in a future version of pytorch. It currently rounds toward 0 (like the 'trunc' function NOT 'floor'). This results in incorrect rounding for negative values. To keep the current behavior, use torch.div(a, b, rounding_mode='trunc'), or for actual floor division, use torch.div(a, b, rounding_mode='floor').
+  dim_t = 10000 ** (2 * (dim_t // 2) / 128)
+/media/songoh/ssh3/songoh_ws/Mask CDN-main1/trainer/trainer.py:502: UserWarning: __floordiv__ is deprecated, and its behavior will change in a future version of pytorch. It currently rounds toward 0 (like the 'trunc' function NOT 'floor'). This results in incorrect rounding for negative values. To keep the current behavior, use torch.div(a, b, rounding_mode='trunc'), or for actual floor division, use torch.div(a, b, rounding_mode='floor').
+1) Start local server:  4%|▍         | 14/312 [03:38<1:17:29, 15.60s/it]
+************************************************************************
+1) Start local server:  4%|▍         | 14/312 [03:38<1:17:29, 15.60s/it]
+    cd /media/songoh/ssh3/songoh_ws/Mask CDN-main1/saved/DEBUG_ABLATION/visualizations/scene0050_00; python -m http.server 6008
+2) Open in browser:
+    http://0.0.0.0:6008
+************************************************************************
+Testing DataLoader 0:   5%|▍         | 15/312 [03:57<1:18:17, 15.82s/it]
+/media/songoh/ssh3/songoh_ws/Mask CDN-main1/models/mask3d.py:282: UserWarning: __floordiv__ is deprecated, and its behavior will change in a future version of pytorch. It currently rounds toward 0 (like the 'trunc' function NOT 'floor'). This results in incorrect rounding for negative values. To keep the current behavior, use torch.div(a, b, rounding_mode='trunc'), or for actual floor division, use torch.div(a, b, rounding_mode='floor').
+Testing DataLoader 0:   5%|▌         | 16/312 [04:11<1:17:33, 15.72s/it]
+************************************************************************
+1) Start local server:
+    cd /media/songoh/ssh3/songoh_ws/Mask CDN-main1/saved/DEBUG_ABLATION/visualizations/scene0050_01; python -m http.server 6008
+2) Open in browser:
+    http://0.0.0.0:6008
+************************************************************************
+Testing DataLoader 0:   5%|▌         | 16/312 [04:11<1:17:33, 15.72s/it]
+/media/songoh/ssh3/songoh_ws/Mask CDN-main1/trainer/trainer.py:502: UserWarning: __floordiv__ is deprecated, and its behavior will change in a future version of pytorch. It currently rounds toward 0 (like the 'trunc' function NOT 'floor'). This results in incorrect rounding for negative values. To keep the current behavior, use torch.div(a, b, rounding_mode='trunc'), or for actual floor division, use torch.div(a, b, rounding_mode='floor').
+  topk_indices = topk_indices // num_classes
+/media/songoh/ssh3/songoh_ws/Mask CDN-main1/models/mask3d.py:282: UserWarning: __floordiv__ is deprecated, and its behavior will change in a future version of pytorch. It currently rounds toward 0 (like the 'trunc' function NOT 'floor'). This results in incorrect rounding for negative values. To keep the current behavior, use torch.div(a, b, rounding_mode='trunc'), or for actual floor division, use torch.div(a, b, rounding_mode='floor').
+  dim_t = 10000 ** (2 * (dim_t // 2) / 128)
+/media/songoh/ssh3/songoh_ws/Mask CDN-main1/trainer/trainer.py:502: UserWarning: __floordiv__ is deprecated, and its behavior will change in a future version of pytorch. It currently rounds toward 0 (like the 'trunc' function NOT 'floor'). This results in incorrect rounding for negative values. To keep the current behavior, use torch.div(a, b, rounding_mode='trunc'), or for actual floor division, use torch.div(a, b, rounding_mode='floor').
+Testing DataLoader 0:   5%|▌         | 17/312 [04:31<1:18:32, 15.97s/it]
+************************************************************************
+1) Start local server:
+    cd /media/songoh/ssh3/songoh_ws/Mask CDN-main1/saved/DEBUG_ABLATION/visualizations/scene0050_02; python -m http.server 6008
+2) Open in browser:
+    http://0.0.0.0:6008
+************************************************************************
+Testing DataLoader 0:   5%|▌         | 17/312 [04:31<1:18:32, 15.97s/it]
+/media/songoh/ssh3/songoh_ws/Mask CDN-main1/models/mask3d.py:282: UserWarning: __floordiv__ is deprecated, and its behavior will change in a future version of pytorch. It currently rounds toward 0 (like the 'trunc' function NOT 'floor'). This results in incorrect rounding for negative values. To keep the current behavior, use torch.div(a, b, rounding_mode='trunc'), or for actual floor division, use torch.div(a, b, rounding_mode='floor').
+Testing DataLoader 0:   6%|▌         | 18/312 [04:42<1:16:47, 15.67s/it]
+************************************************************************
+1) Start local server:
+    cd /media/songoh/ssh3/songoh_ws/Mask CDN-main1/saved/DEBUG_ABLATION/visualizations/scene0063_00; python -m http.server 6008
+2) Open in browser:
+    http://0.0.0.0:6008
+************************************************************************
+Testing DataLoader 0:   6%|▌         | 18/312 [04:42<1:16:47, 15.67s/it]
+/media/songoh/ssh3/songoh_ws/Mask CDN-main1/trainer/trainer.py:502: UserWarning: __floordiv__ is deprecated, and its behavior will change in a future version of pytorch. It currently rounds toward 0 (like the 'trunc' function NOT 'floor'). This results in incorrect rounding for negative values. To keep the current behavior, use torch.div(a, b, rounding_mode='trunc'), or for actual floor division, use torch.div(a, b, rounding_mode='floor').
+  topk_indices = topk_indices // num_classes
+/media/songoh/ssh3/songoh_ws/Mask CDN-main1/models/mask3d.py:282: UserWarning: __floordiv__ is deprecated, and its behavior will change in a future version of pytorch. It currently rounds toward 0 (like the 'trunc' function NOT 'floor'). This results in incorrect rounding for negative values. To keep the current behavior, use torch.div(a, b, rounding_mode='trunc'), or for actual floor division, use torch.div(a, b, rounding_mode='floor').
+  dim_t = 10000 ** (2 * (dim_t // 2) / 128)
+/media/songoh/ssh3/songoh_ws/Mask CDN-main1/trainer/trainer.py:502: UserWarning: __floordiv__ is deprecated, and its behavior will change in a future version of pytorch. It currently rounds toward 0 (like the 'trunc' function NOT 'floor'). This results in incorrect rounding for negative values. To keep the current behavior, use torch.div(a, b, rounding_mode='trunc'), or for actual floor division, use torch.div(a, b, rounding_mode='floor').
+Testing DataLoader 0:   6%|▌         | 19/312 [05:02<1:17:50, 15.94s/it]
+************************************************************************
+1) Start local server:
+    cd /media/songoh/ssh3/songoh_ws/Mask CDN-main1/saved/DEBUG_ABLATION/visualizations/scene0064_00; python -m http.server 6008
+2) Open in browser:
+    http://0.0.0.0:6008
+************************************************************************
+Testing DataLoader 0:   6%|▌         | 19/312 [05:02<1:17:50, 15.94s/it]
+/media/songoh/ssh3/songoh_ws/Mask CDN-main1/models/mask3d.py:282: UserWarning: __floordiv__ is deprecated, and its behavior will change in a future version of pytorch. It currently rounds toward 0 (like the 'trunc' function NOT 'floor'). This results in incorrect rounding for negative values. To keep the current behavior, use torch.div(a, b, rounding_mode='trunc'), or for actual floor division, use torch.div(a, b, rounding_mode='floor').
+  dim_t = 10000 ** (2 * (dim_t // 2) / 128)
+/media/songoh/ssh3/songoh_ws/Mask CDN-main1/trainer/trainer.py:502: UserWarning: __floordiv__ is deprecated, and its behavior will change in a future version of pytorch. It currently rounds toward 0 (like the 'trunc' function NOT 'floor'). This results in incorrect rounding for negative values. To keep the current behavior, use torch.div(a, b, rounding_mode='trunc'), or for actual floor division, use torch.div(a, b, rounding_mode='floor').
+Testing DataLoader 0:   6%|▋         | 20/312 [05:25<1:19:07, 16.26s/it]
+************************************************************************
+1) Start local server:
+    cd /media/songoh/ssh3/songoh_ws/Mask CDN-main1/saved/DEBUG_ABLATION/visualizations/scene0064_01; python -m http.server 6008
+2) Open in browser:
+    http://0.0.0.0:6008
+************************************************************************
+Testing DataLoader 0:   6%|▋         | 20/312 [05:25<1:19:07, 16.26s/it]
+/media/songoh/ssh3/songoh_ws/Mask CDN-main1/models/mask3d.py:282: UserWarning: __floordiv__ is deprecated, and its behavior will change in a future version of pytorch. It currently rounds toward 0 (like the 'trunc' function NOT 'floor'). This results in incorrect rounding for negative values. To keep the current behavior, use torch.div(a, b, rounding_mode='trunc'), or for actual floor division, use torch.div(a, b, rounding_mode='floor').
+  dim_t = 10000 ** (2 * (dim_t // 2) / 128)
+/media/songoh/ssh3/songoh_ws/Mask CDN-main1/trainer/trainer.py:502: UserWarning: __floordiv__ is deprecated, and its behavior will change in a future version of pytorch. It currently rounds toward 0 (like the 'trunc' function NOT 'floor'). This results in incorrect rounding for negative values. To keep the current behavior, use torch.div(a, b, rounding_mode='trunc'), or for actual floor division, use torch.div(a, b, rounding_mode='floor').
+  topk_indices = topk_indices // num_classes
+/media/songoh/ssh3/songoh_ws/Mask CDN-main1/trainer/trainer.py:625: RuntimeWarning: invalid value encountered in divide
+Testing DataLoader 0:   7%|▋         | 21/312 [05:42<1:19:09, 16.32s/it]
+************************************************************************
+1) Start local server:
+    cd /media/songoh/ssh3/songoh_ws/Mask CDN-main1/saved/DEBUG_ABLATION/visualizations/scene0077_00; python -m http.server 6008
+2) Open in browser:
+    http://0.0.0.0:6008
+************************************************************************
+Testing DataLoader 0:   7%|▋         | 21/312 [05:42<1:19:09, 16.32s/it]
+/media/songoh/ssh3/songoh_ws/Mask CDN-main1/models/mask3d.py:282: UserWarning: __floordiv__ is deprecated, and its behavior will change in a future version of pytorch. It currently rounds toward 0 (like the 'trunc' function NOT 'floor'). This results in incorrect rounding for negative values. To keep the current behavior, use torch.div(a, b, rounding_mode='trunc'), or for actual floor division, use torch.div(a, b, rounding_mode='floor').
+  dim_t = 10000 ** (2 * (dim_t // 2) / 128)
+/media/songoh/ssh3/songoh_ws/Mask CDN-main1/trainer/trainer.py:502: UserWarning: __floordiv__ is deprecated, and its behavior will change in a future version of pytorch. It currently rounds toward 0 (like the 'trunc' function NOT 'floor'). This results in incorrect rounding for negative values. To keep the current behavior, use torch.div(a, b, rounding_mode='trunc'), or for actual floor division, use torch.div(a, b, rounding_mode='floor').
+Testing DataLoader 0:   7%|▋         | 22/312 [06:01<1:19:20, 16.42s/it]
+************************************************************************
+1) Start local server:
+    cd /media/songoh/ssh3/songoh_ws/Mask CDN-main1/saved/DEBUG_ABLATION/visualizations/scene0077_01; python -m http.server 6008
+2) Open in browser:
+    http://0.0.0.0:6008
+************************************************************************
+Testing DataLoader 0:   7%|▋         | 22/312 [06:01<1:19:20, 16.42s/it]
+/media/songoh/ssh3/songoh_ws/Mask CDN-main1/models/mask3d.py:282: UserWarning: __floordiv__ is deprecated, and its behavior will change in a future version of pytorch. It currently rounds toward 0 (like the 'trunc' function NOT 'floor'). This results in incorrect rounding for negative values. To keep the current behavior, use torch.div(a, b, rounding_mode='trunc'), or for actual floor division, use torch.div(a, b, rounding_mode='floor').
+Testing DataLoader 0:   7%|▋         | 23/312 [06:21<1:19:54, 16.59s/it]
+************************************************************************
+1) Start local server:
+    cd /media/songoh/ssh3/songoh_ws/Mask CDN-main1/saved/DEBUG_ABLATION/visualizations/scene0081_00; python -m http.server 6008
+2) Open in browser:
+    http://0.0.0.0:6008
+************************************************************************
+Testing DataLoader 0:   7%|▋         | 23/312 [06:21<1:19:54, 16.59s/it]
+/media/songoh/ssh3/songoh_ws/Mask CDN-main1/trainer/trainer.py:502: UserWarning: __floordiv__ is deprecated, and its behavior will change in a future version of pytorch. It currently rounds toward 0 (like the 'trunc' function NOT 'floor'). This results in incorrect rounding for negative values. To keep the current behavior, use torch.div(a, b, rounding_mode='trunc'), or for actual floor division, use torch.div(a, b, rounding_mode='floor').
+  topk_indices = topk_indices // num_classes
+/media/songoh/ssh3/songoh_ws/Mask CDN-main1/models/mask3d.py:282: UserWarning: __floordiv__ is deprecated, and its behavior will change in a future version of pytorch. It currently rounds toward 0 (like the 'trunc' function NOT 'floor'). This results in incorrect rounding for negative values. To keep the current behavior, use torch.div(a, b, rounding_mode='trunc'), or for actual floor division, use torch.div(a, b, rounding_mode='floor').
+  dim_t = 10000 ** (2 * (dim_t // 2) / 128)
+/media/songoh/ssh3/songoh_ws/Mask CDN-main1/trainer/trainer.py:502: UserWarning: __floordiv__ is deprecated, and its behavior will change in a future version of pytorch. It currently rounds toward 0 (like the 'trunc' function NOT 'floor'). This results in incorrect rounding for negative values. To keep the current behavior, use torch.div(a, b, rounding_mode='trunc'), or for actual floor division, use torch.div(a, b, rounding_mode='floor').
+Testing DataLoader 0:   8%|▊         | 24/312 [06:33<1:18:42, 16.40s/it]
+************************************************************************
+1) Start local server:
+    cd /media/songoh/ssh3/songoh_ws/Mask CDN-main1/saved/DEBUG_ABLATION/visualizations/scene0081_01; python -m http.server 6008
+2) Open in browser:
+    http://0.0.0.0:6008
+************************************************************************
+Testing DataLoader 0:   8%|▊         | 24/312 [06:33<1:18:42, 16.40s/it]
+/media/songoh/ssh3/songoh_ws/Mask CDN-main1/models/mask3d.py:282: UserWarning: __floordiv__ is deprecated, and its behavior will change in a future version of pytorch. It currently rounds toward 0 (like the 'trunc' function NOT 'floor'). This results in incorrect rounding for negative values. To keep the current behavior, use torch.div(a, b, rounding_mode='trunc'), or for actual floor division, use torch.div(a, b, rounding_mode='floor').
+  dim_t = 10000 ** (2 * (dim_t // 2) / 128)
+/media/songoh/ssh3/songoh_ws/Mask CDN-main1/trainer/trainer.py:502: UserWarning: __floordiv__ is deprecated, and its behavior will change in a future version of pytorch. It currently rounds toward 0 (like the 'trunc' function NOT 'floor'). This results in incorrect rounding for negative values. To keep the current behavior, use torch.div(a, b, rounding_mode='trunc'), or for actual floor division, use torch.div(a, b, rounding_mode='floor').
+  topk_indices = topk_indices // num_classes
+/media/songoh/ssh3/songoh_ws/Mask CDN-main1/models/mask3d.py:282: UserWarning: __floordiv__ is deprecated, and its behavior will change in a future version of pytorch. It currently rounds toward 0 (like the 'trunc' function NOT 'floor'). This results in incorrect rounding for negative values. To keep the current behavior, use torch.div(a, b, rounding_mode='trunc'), or for actual floor division, use torch.div(a, b, rounding_mode='floor').
+Testing DataLoader 0:   8%|▊         | 25/312 [06:42<1:17:02, 16.11s/it]
+************************************************************************
+1) Start local server:
+    cd /media/songoh/ssh3/songoh_ws/Mask CDN-main1/saved/DEBUG_ABLATION/visualizations/scene0081_02; python -m http.server 6008
+2) Open in browser:
+    http://0.0.0.0:6008
+************************************************************************
+Testing DataLoader 0:   8%|▊         | 26/312 [06:50<1:15:10, 15.77s/it]
+************************************************************************
+1) Start local server:
+    cd /media/songoh/ssh3/songoh_ws/Mask CDN-main1/saved/DEBUG_ABLATION/visualizations/scene0084_00; python -m http.server 6008
+2) Open in browser:
+    http://0.0.0.0:6008
+************************************************************************
+Testing DataLoader 0:   8%|▊         | 26/312 [06:50<1:15:10, 15.77s/it]
+/media/songoh/ssh3/songoh_ws/Mask CDN-main1/trainer/trainer.py:502: UserWarning: __floordiv__ is deprecated, and its behavior will change in a future version of pytorch. It currently rounds toward 0 (like the 'trunc' function NOT 'floor'). This results in incorrect rounding for negative values. To keep the current behavior, use torch.div(a, b, rounding_mode='trunc'), or for actual floor division, use torch.div(a, b, rounding_mode='floor').
+  topk_indices = topk_indices // num_classes
+/media/songoh/ssh3/songoh_ws/Mask CDN-main1/models/mask3d.py:282: UserWarning: __floordiv__ is deprecated, and its behavior will change in a future version of pytorch. It currently rounds toward 0 (like the 'trunc' function NOT 'floor'). This results in incorrect rounding for negative values. To keep the current behavior, use torch.div(a, b, rounding_mode='trunc'), or for actual floor division, use torch.div(a, b, rounding_mode='floor').
+Testing DataLoader 0:   9%|▊         | 27/312 [06:58<1:13:34, 15.49s/it]
+************************************************************************
+1) Start local server:
+    cd /media/songoh/ssh3/songoh_ws/Mask CDN-main1/saved/DEBUG_ABLATION/visualizations/scene0084_01; python -m http.server 6008
+2) Open in browser:
+    http://0.0.0.0:6008
+************************************************************************
+Testing DataLoader 0:   9%|▊         | 27/312 [06:58<1:13:34, 15.49s/it]
+/media/songoh/ssh3/songoh_ws/Mask CDN-main1/trainer/trainer.py:502: UserWarning: __floordiv__ is deprecated, and its behavior will change in a future version of pytorch. It currently rounds toward 0 (like the 'trunc' function NOT 'floor'). This results in incorrect rounding for negative values. To keep the current behavior, use torch.div(a, b, rounding_mode='trunc'), or for actual floor division, use torch.div(a, b, rounding_mode='floor').
+  topk_indices = topk_indices // num_classes
+/media/songoh/ssh3/songoh_ws/Mask CDN-main1/trainer/trainer.py:625: RuntimeWarning: invalid value encountered in divide
+  norm_overlaps = pairwise_overlap / normalization
+/media/songoh/ssh3/songoh_ws/Mask CDN-main1/models/mask3d.py:282: UserWarning: __floordiv__ is deprecated, and its behavior will change in a future version of pytorch. It currently rounds toward 0 (like the 'trunc' function NOT 'floor'). This results in incorrect rounding for negative values. To keep the current behavior, use torch.div(a, b, rounding_mode='trunc'), or for actual floor division, use torch.div(a, b, rounding_mode='floor').
+Testing DataLoader 0:   9%|▉         | 28/312 [07:08<1:12:22, 15.29s/it]
+************************************************************************
+1) Start local server:
+    cd /media/songoh/ssh3/songoh_ws/Mask CDN-main1/saved/DEBUG_ABLATION/visualizations/scene0084_02; python -m http.server 6008
+2) Open in browser:
+    http://0.0.0.0:6008
+************************************************************************
+Testing DataLoader 0:   9%|▉         | 28/312 [07:08<1:12:22, 15.29s/it]
+/media/songoh/ssh3/songoh_ws/Mask CDN-main1/trainer/trainer.py:502: UserWarning: __floordiv__ is deprecated, and its behavior will change in a future version of pytorch. It currently rounds toward 0 (like the 'trunc' function NOT 'floor'). This results in incorrect rounding for negative values. To keep the current behavior, use torch.div(a, b, rounding_mode='trunc'), or for actual floor division, use torch.div(a, b, rounding_mode='floor').
+  topk_indices = topk_indices // num_classes
+/media/songoh/ssh3/songoh_ws/Mask CDN-main1/models/mask3d.py:282: UserWarning: __floordiv__ is deprecated, and its behavior will change in a future version of pytorch. It currently rounds toward 0 (like the 'trunc' function NOT 'floor'). This results in incorrect rounding for negative values. To keep the current behavior, use torch.div(a, b, rounding_mode='trunc'), or for actual floor division, use torch.div(a, b, rounding_mode='floor').
+  dim_t = 10000 ** (2 * (dim_t // 2) / 128)
+/media/songoh/ssh3/songoh_ws/Mask CDN-main1/trainer/trainer.py:502: UserWarning: __floordiv__ is deprecated, and its behavior will change in a future version of pytorch. It currently rounds toward 0 (like the 'trunc' function NOT 'floor'). This results in incorrect rounding for negative values. To keep the current behavior, use torch.div(a, b, rounding_mode='trunc'), or for actual floor division, use torch.div(a, b, rounding_mode='floor').
+Testing DataLoader 0:   9%|▉         | 29/312 [07:19<1:11:25, 15.14s/it]
+************************************************************************
+1) Start local server:
+    cd /media/songoh/ssh3/songoh_ws/Mask CDN-main1/saved/DEBUG_ABLATION/visualizations/scene0086_00; python -m http.server 6008
+2) Open in browser:
+    http://0.0.0.0:6008
+************************************************************************
+Testing DataLoader 0:   9%|▉         | 29/312 [07:19<1:11:25, 15.14s/it]
+/media/songoh/ssh3/songoh_ws/Mask CDN-main1/models/mask3d.py:282: UserWarning: __floordiv__ is deprecated, and its behavior will change in a future version of pytorch. It currently rounds toward 0 (like the 'trunc' function NOT 'floor'). This results in incorrect rounding for negative values. To keep the current behavior, use torch.div(a, b, rounding_mode='trunc'), or for actual floor division, use torch.div(a, b, rounding_mode='floor').
+  dim_t = 10000 ** (2 * (dim_t // 2) / 128)
+/media/songoh/ssh3/songoh_ws/Mask CDN-main1/trainer/trainer.py:502: UserWarning: __floordiv__ is deprecated, and its behavior will change in a future version of pytorch. It currently rounds toward 0 (like the 'trunc' function NOT 'floor'). This results in incorrect rounding for negative values. To keep the current behavior, use torch.div(a, b, rounding_mode='trunc'), or for actual floor division, use torch.div(a, b, rounding_mode='floor').
+  topk_indices = topk_indices // num_classes
+/media/songoh/ssh3/songoh_ws/Mask CDN-main1/models/mask3d.py:282: UserWarning: __floordiv__ is deprecated, and its behavior will change in a future version of pytorch. It currently rounds toward 0 (like the 'trunc' function NOT 'floor'). This results in incorrect rounding for negative values. To keep the current behavior, use torch.div(a, b, rounding_mode='trunc'), or for actual floor division, use torch.div(a, b, rounding_mode='floor').
+Testing DataLoader 0:  10%|▉         | 30/312 [07:30<1:10:34, 15.02s/it]
+************************************************************************
+1) Start local server:
+    cd /media/songoh/ssh3/songoh_ws/Mask CDN-main1/saved/DEBUG_ABLATION/visualizations/scene0086_01; python -m http.server 6008
+2) Open in browser:
+    http://0.0.0.0:6008
+************************************************************************
+Testing DataLoader 0:  10%|▉         | 30/312 [07:30<1:10:34, 15.02s/it]
+/media/songoh/ssh3/songoh_ws/Mask CDN-main1/trainer/trainer.py:502: UserWarning: __floordiv__ is deprecated, and its behavior will change in a future version of pytorch. It currently rounds toward 0 (like the 'trunc' function NOT 'floor'). This results in incorrect rounding for negative values. To keep the current behavior, use torch.div(a, b, rounding_mode='trunc'), or for actual floor division, use torch.div(a, b, rounding_mode='floor').
+  topk_indices = topk_indices // num_classes
+/media/songoh/ssh3/songoh_ws/Mask CDN-main1/models/mask3d.py:282: UserWarning: __floordiv__ is deprecated, and its behavior will change in a future version of pytorch. It currently rounds toward 0 (like the 'trunc' function NOT 'floor'). This results in incorrect rounding for negative values. To keep the current behavior, use torch.div(a, b, rounding_mode='trunc'), or for actual floor division, use torch.div(a, b, rounding_mode='floor').
+Testing DataLoader 0:  10%|▉         | 31/312 [07:39<1:09:28, 14.83s/it]
+************************************************************************
+1) Start local server:
+    cd /media/songoh/ssh3/songoh_ws/Mask CDN-main1/saved/DEBUG_ABLATION/visualizations/scene0086_02; python -m http.server 6008
+2) Open in browser:
+    http://0.0.0.0:6008
+************************************************************************
+Testing DataLoader 0:  10%|▉         | 31/312 [07:39<1:09:28, 14.83s/it]
+/media/songoh/ssh3/songoh_ws/Mask CDN-main1/trainer/trainer.py:502: UserWarning: __floordiv__ is deprecated, and its behavior will change in a future version of pytorch. It currently rounds toward 0 (like the 'trunc' function NOT 'floor'). This results in incorrect rounding for negative values. To keep the current behavior, use torch.div(a, b, rounding_mode='trunc'), or for actual floor division, use torch.div(a, b, rounding_mode='floor').
+Testing DataLoader 0:  10%|█         | 32/312 [07:49<1:08:28, 14.67s/it]
+************************************************************************
+1) Start local server:
+    cd /media/songoh/ssh3/songoh_ws/Mask CDN-main1/saved/DEBUG_ABLATION/visualizations/scene0088_00; python -m http.server 6008
+2) Open in browser:
+    http://0.0.0.0:6008
+************************************************************************
+Testing DataLoader 0:  10%|█         | 32/312 [07:49<1:08:28, 14.67s/it]
+/media/songoh/ssh3/songoh_ws/Mask CDN-main1/models/mask3d.py:282: UserWarning: __floordiv__ is deprecated, and its behavior will change in a future version of pytorch. It currently rounds toward 0 (like the 'trunc' function NOT 'floor'). This results in incorrect rounding for negative values. To keep the current behavior, use torch.div(a, b, rounding_mode='trunc'), or for actual floor division, use torch.div(a, b, rounding_mode='floor').
+  dim_t = 10000 ** (2 * (dim_t // 2) / 128)
+/media/songoh/ssh3/songoh_ws/Mask CDN-main1/trainer/trainer.py:502: UserWarning: __floordiv__ is deprecated, and its behavior will change in a future version of pytorch. It currently rounds toward 0 (like the 'trunc' function NOT 'floor'). This results in incorrect rounding for negative values. To keep the current behavior, use torch.div(a, b, rounding_mode='trunc'), or for actual floor division, use torch.div(a, b, rounding_mode='floor').
+  topk_indices = topk_indices // num_classes
+/media/songoh/ssh3/songoh_ws/Mask CDN-main1/models/mask3d.py:282: UserWarning: __floordiv__ is deprecated, and its behavior will change in a future version of pytorch. It currently rounds toward 0 (like the 'trunc' function NOT 'floor'). This results in incorrect rounding for negative values. To keep the current behavior, use torch.div(a, b, rounding_mode='trunc'), or for actual floor division, use torch.div(a, b, rounding_mode='floor').
+Testing DataLoader 0:  11%|█         | 33/312 [08:02<1:07:56, 14.61s/it]
+************************************************************************
+1) Start local server:
+    cd /media/songoh/ssh3/songoh_ws/Mask CDN-main1/saved/DEBUG_ABLATION/visualizations/scene0088_01; python -m http.server 6008
+2) Open in browser:
+    http://0.0.0.0:6008
+************************************************************************
+Testing DataLoader 0:  11%|█         | 33/312 [08:02<1:07:56, 14.61s/it]
+/media/songoh/ssh3/songoh_ws/Mask CDN-main1/trainer/trainer.py:502: UserWarning: __floordiv__ is deprecated, and its behavior will change in a future version of pytorch. It currently rounds toward 0 (like the 'trunc' function NOT 'floor'). This results in incorrect rounding for negative values. To keep the current behavior, use torch.div(a, b, rounding_mode='trunc'), or for actual floor division, use torch.div(a, b, rounding_mode='floor').
+  topk_indices = topk_indices // num_classes
+/media/songoh/ssh3/songoh_ws/Mask CDN-main1/models/mask3d.py:282: UserWarning: __floordiv__ is deprecated, and its behavior will change in a future version of pytorch. It currently rounds toward 0 (like the 'trunc' function NOT 'floor'). This results in incorrect rounding for negative values. To keep the current behavior, use torch.div(a, b, rounding_mode='trunc'), or for actual floor division, use torch.div(a, b, rounding_mode='floor').
+Testing DataLoader 0:  11%|█         | 34/312 [08:12<1:07:07, 14.49s/it]
+************************************************************************
+1) Start local server:
+    cd /media/songoh/ssh3/songoh_ws/Mask CDN-main1/saved/DEBUG_ABLATION/visualizations/scene0088_02; python -m http.server 6008
+2) Open in browser:
+    http://0.0.0.0:6008
+************************************************************************
+Testing DataLoader 0:  11%|█         | 34/312 [08:12<1:07:07, 14.49s/it]
+/media/songoh/ssh3/songoh_ws/Mask CDN-main1/trainer/trainer.py:502: UserWarning: __floordiv__ is deprecated, and its behavior will change in a future version of pytorch. It currently rounds toward 0 (like the 'trunc' function NOT 'floor'). This results in incorrect rounding for negative values. To keep the current behavior, use torch.div(a, b, rounding_mode='trunc'), or for actual floor division, use torch.div(a, b, rounding_mode='floor').
+  topk_indices = topk_indices // num_classes
+/media/songoh/ssh3/songoh_ws/Mask CDN-main1/models/mask3d.py:282: UserWarning: __floordiv__ is deprecated, and its behavior will change in a future version of pytorch. It currently rounds toward 0 (like the 'trunc' function NOT 'floor'). This results in incorrect rounding for negative values. To keep the current behavior, use torch.div(a, b, rounding_mode='trunc'), or for actual floor division, use torch.div(a, b, rounding_mode='floor').
+Testing DataLoader 0:  11%|█         | 35/312 [08:24<1:06:30, 14.41s/it]
+************************************************************************
+1) Start local server:
+    cd /media/songoh/ssh3/songoh_ws/Mask CDN-main1/saved/DEBUG_ABLATION/visualizations/scene0088_03; python -m http.server 6008
+2) Open in browser:
+    http://0.0.0.0:6008
+************************************************************************
+Testing DataLoader 0:  11%|█         | 35/312 [08:24<1:06:30, 14.41s/it]
+/media/songoh/ssh3/songoh_ws/Mask CDN-main1/trainer/trainer.py:502: UserWarning: __floordiv__ is deprecated, and its behavior will change in a future version of pytorch. It currently rounds toward 0 (like the 'trunc' function NOT 'floor'). This results in incorrect rounding for negative values. To keep the current behavior, use torch.div(a, b, rounding_mode='trunc'), or for actual floor division, use torch.div(a, b, rounding_mode='floor').
+Testing DataLoader 0:  12%|█▏        | 36/312 [08:43<1:06:50, 14.53s/it]
+************************************************************************
+1) Start local server:
+    cd /media/songoh/ssh3/songoh_ws/Mask CDN-main1/saved/DEBUG_ABLATION/visualizations/scene0095_00; python -m http.server 6008
+2) Open in browser:
+    http://0.0.0.0:6008
+************************************************************************
+Testing DataLoader 0:  12%|█▏        | 36/312 [08:43<1:06:50, 14.53s/it]
+/media/songoh/ssh3/songoh_ws/Mask CDN-main1/models/mask3d.py:282: UserWarning: __floordiv__ is deprecated, and its behavior will change in a future version of pytorch. It currently rounds toward 0 (like the 'trunc' function NOT 'floor'). This results in incorrect rounding for negative values. To keep the current behavior, use torch.div(a, b, rounding_mode='trunc'), or for actual floor division, use torch.div(a, b, rounding_mode='floor').
+  dim_t = 10000 ** (2 * (dim_t // 2) / 128)
+/media/songoh/ssh3/songoh_ws/Mask CDN-main1/trainer/trainer.py:502: UserWarning: __floordiv__ is deprecated, and its behavior will change in a future version of pytorch. It currently rounds toward 0 (like the 'trunc' function NOT 'floor'). This results in incorrect rounding for negative values. To keep the current behavior, use torch.div(a, b, rounding_mode='trunc'), or for actual floor division, use torch.div(a, b, rounding_mode='floor').
+  topk_indices = topk_indices // num_classes
+/media/songoh/ssh3/songoh_ws/Mask CDN-main1/models/mask3d.py:282: UserWarning: __floordiv__ is deprecated, and its behavior will change in a future version of pytorch. It currently rounds toward 0 (like the 'trunc' function NOT 'floor'). This results in incorrect rounding for negative values. To keep the current behavior, use torch.div(a, b, rounding_mode='trunc'), or for actual floor division, use torch.div(a, b, rounding_mode='floor').
+Testing DataLoader 0:  12%|█▏        | 37/312 [09:10<1:08:09, 14.87s/it]
+************************************************************************
+1) Start local server:
+    cd /media/songoh/ssh3/songoh_ws/Mask CDN-main1/saved/DEBUG_ABLATION/visualizations/scene0095_01; python -m http.server 6008
+2) Open in browser:
+    http://0.0.0.0:6008
+************************************************************************
+Testing DataLoader 0:  12%|█▏        | 37/312 [09:10<1:08:09, 14.87s/it]
+/media/songoh/ssh3/songoh_ws/Mask CDN-main1/trainer/trainer.py:502: UserWarning: __floordiv__ is deprecated, and its behavior will change in a future version of pytorch. It currently rounds toward 0 (like the 'trunc' function NOT 'floor'). This results in incorrect rounding for negative values. To keep the current behavior, use torch.div(a, b, rounding_mode='trunc'), or for actual floor division, use torch.div(a, b, rounding_mode='floor').
+Testing DataLoader 0:  12%|█▏        | 38/312 [09:16<1:06:56, 14.66s/it]
+************************************************************************
+1) Start local server:
+    cd /media/songoh/ssh3/songoh_ws/Mask CDN-main1/saved/DEBUG_ABLATION/visualizations/scene0100_00; python -m http.server 6008
+2) Open in browser:
+    http://0.0.0.0:6008
+************************************************************************
+Testing DataLoader 0:  12%|█▏        | 38/312 [09:16<1:06:56, 14.66s/it]
+/media/songoh/ssh3/songoh_ws/Mask CDN-main1/models/mask3d.py:282: UserWarning: __floordiv__ is deprecated, and its behavior will change in a future version of pytorch. It currently rounds toward 0 (like the 'trunc' function NOT 'floor'). This results in incorrect rounding for negative values. To keep the current behavior, use torch.div(a, b, rounding_mode='trunc'), or for actual floor division, use torch.div(a, b, rounding_mode='floor').
+Testing DataLoader 0:  12%|█▎        | 39/312 [09:23<1:05:46, 14.46s/it]
+************************************************************************
+1) Start local server:
+    cd /media/songoh/ssh3/songoh_ws/Mask CDN-main1/saved/DEBUG_ABLATION/visualizations/scene0100_01; python -m http.server 6008
+2) Open in browser:
+    http://0.0.0.0:6008
+************************************************************************
+Testing DataLoader 0:  12%|█▎        | 39/312 [09:23<1:05:46, 14.46s/it]
+/media/songoh/ssh3/songoh_ws/Mask CDN-main1/trainer/trainer.py:502: UserWarning: __floordiv__ is deprecated, and its behavior will change in a future version of pytorch. It currently rounds toward 0 (like the 'trunc' function NOT 'floor'). This results in incorrect rounding for negative values. To keep the current behavior, use torch.div(a, b, rounding_mode='trunc'), or for actual floor division, use torch.div(a, b, rounding_mode='floor').
+  topk_indices = topk_indices // num_classes
+/media/songoh/ssh3/songoh_ws/Mask CDN-main1/models/mask3d.py:282: UserWarning: __floordiv__ is deprecated, and its behavior will change in a future version of pytorch. It currently rounds toward 0 (like the 'trunc' function NOT 'floor'). This results in incorrect rounding for negative values. To keep the current behavior, use torch.div(a, b, rounding_mode='trunc'), or for actual floor division, use torch.div(a, b, rounding_mode='floor').
+  dim_t = 10000 ** (2 * (dim_t // 2) / 128)
+/media/songoh/ssh3/songoh_ws/Mask CDN-main1/trainer/trainer.py:502: UserWarning: __floordiv__ is deprecated, and its behavior will change in a future version of pytorch. It currently rounds toward 0 (like the 'trunc' function NOT 'floor'). This results in incorrect rounding for negative values. To keep the current behavior, use torch.div(a, b, rounding_mode='trunc'), or for actual floor division, use torch.div(a, b, rounding_mode='floor').
+  topk_indices = topk_indices // num_classes
+/media/songoh/ssh3/songoh_ws/Mask CDN-main1/models/mask3d.py:282: UserWarning: __floordiv__ is deprecated, and its behavior will change in a future version of pytorch. It currently rounds toward 0 (like the 'trunc' function NOT 'floor'). This results in incorrect rounding for negative values. To keep the current behavior, use torch.div(a, b, rounding_mode='trunc'), or for actual floor division, use torch.div(a, b, rounding_mode='floor').
+Testing DataLoader 0:  13%|█▎        | 40/312 [09:30<1:04:39, 14.26s/it]
+************************************************************************
+1) Start local server:
+    cd /media/songoh/ssh3/songoh_ws/Mask CDN-main1/saved/DEBUG_ABLATION/visualizations/scene0100_02; python -m http.server 6008
+2) Open in browser:
+    http://0.0.0.0:6008
+************************************************************************
+Testing DataLoader 0:  13%|█▎        | 40/312 [09:30<1:04:39, 14.26s/it]
+/media/songoh/ssh3/songoh_ws/Mask CDN-main1/trainer/trainer.py:502: UserWarning: __floordiv__ is deprecated, and its behavior will change in a future version of pytorch. It currently rounds toward 0 (like the 'trunc' function NOT 'floor'). This results in incorrect rounding for negative values. To keep the current behavior, use torch.div(a, b, rounding_mode='trunc'), or for actual floor division, use torch.div(a, b, rounding_mode='floor').
+Testing DataLoader 0:  13%|█▎        | 41/312 [09:37<1:03:36, 14.08s/it]
+************************************************************************
+1) Start local server:
+    cd /media/songoh/ssh3/songoh_ws/Mask CDN-main1/saved/DEBUG_ABLATION/visualizations/scene0131_00; python -m http.server 6008
+2) Open in browser:
+    http://0.0.0.0:6008
+************************************************************************
+Testing DataLoader 0:  13%|█▎        | 41/312 [09:37<1:03:36, 14.08s/it]
+/media/songoh/ssh3/songoh_ws/Mask CDN-main1/models/mask3d.py:282: UserWarning: __floordiv__ is deprecated, and its behavior will change in a future version of pytorch. It currently rounds toward 0 (like the 'trunc' function NOT 'floor'). This results in incorrect rounding for negative values. To keep the current behavior, use torch.div(a, b, rounding_mode='trunc'), or for actual floor division, use torch.div(a, b, rounding_mode='floor').
+  dim_t = 10000 ** (2 * (dim_t // 2) / 128)
+/media/songoh/ssh3/songoh_ws/Mask CDN-main1/trainer/trainer.py:502: UserWarning: __floordiv__ is deprecated, and its behavior will change in a future version of pytorch. It currently rounds toward 0 (like the 'trunc' function NOT 'floor'). This results in incorrect rounding for negative values. To keep the current behavior, use torch.div(a, b, rounding_mode='trunc'), or for actual floor division, use torch.div(a, b, rounding_mode='floor').
+Testing DataLoader 0:  13%|█▎        | 42/312 [09:51<1:03:19, 14.07s/it]
+************************************************************************
+1) Start local server:
+    cd /media/songoh/ssh3/songoh_ws/Mask CDN-main1/saved/DEBUG_ABLATION/visualizations/scene0131_01; python -m http.server 6008
+2) Open in browser:
+    http://0.0.0.0:6008
+************************************************************************
+Testing DataLoader 0:  13%|█▎        | 42/312 [09:51<1:03:19, 14.07s/it]
+/media/songoh/ssh3/songoh_ws/Mask CDN-main1/models/mask3d.py:282: UserWarning: __floordiv__ is deprecated, and its behavior will change in a future version of pytorch. It currently rounds toward 0 (like the 'trunc' function NOT 'floor'). This results in incorrect rounding for negative values. To keep the current behavior, use torch.div(a, b, rounding_mode='trunc'), or for actual floor division, use torch.div(a, b, rounding_mode='floor').
+  dim_t = 10000 ** (2 * (dim_t // 2) / 128)
+/media/songoh/ssh3/songoh_ws/Mask CDN-main1/trainer/trainer.py:502: UserWarning: __floordiv__ is deprecated, and its behavior will change in a future version of pytorch. It currently rounds toward 0 (like the 'trunc' function NOT 'floor'). This results in incorrect rounding for negative values. To keep the current behavior, use torch.div(a, b, rounding_mode='trunc'), or for actual floor division, use torch.div(a, b, rounding_mode='floor').
+  topk_indices = topk_indices // num_classes
+/media/songoh/ssh3/songoh_ws/Mask CDN-main1/models/mask3d.py:282: UserWarning: __floordiv__ is deprecated, and its behavior will change in a future version of pytorch. It currently rounds toward 0 (like the 'trunc' function NOT 'floor'). This results in incorrect rounding for negative values. To keep the current behavior, use torch.div(a, b, rounding_mode='trunc'), or for actual floor division, use torch.div(a, b, rounding_mode='floor').
+Testing DataLoader 0:  14%|█▍        | 43/312 [10:00<1:02:39, 13.98s/it]
+************************************************************************
+1) Start local server:
+    cd /media/songoh/ssh3/songoh_ws/Mask CDN-main1/saved/DEBUG_ABLATION/visualizations/scene0131_02; python -m http.server 6008
+2) Open in browser:
+    http://0.0.0.0:6008
+************************************************************************
+Testing DataLoader 0:  14%|█▍        | 43/312 [10:00<1:02:39, 13.98s/it]
+/media/songoh/ssh3/songoh_ws/Mask CDN-main1/trainer/trainer.py:502: UserWarning: __floordiv__ is deprecated, and its behavior will change in a future version of pytorch. It currently rounds toward 0 (like the 'trunc' function NOT 'floor'). This results in incorrect rounding for negative values. To keep the current behavior, use torch.div(a, b, rounding_mode='trunc'), or for actual floor division, use torch.div(a, b, rounding_mode='floor').
+  topk_indices = topk_indices // num_classes
+/media/songoh/ssh3/songoh_ws/Mask CDN-main1/models/mask3d.py:282: UserWarning: __floordiv__ is deprecated, and its behavior will change in a future version of pytorch. It currently rounds toward 0 (like the 'trunc' function NOT 'floor'). This results in incorrect rounding for negative values. To keep the current behavior, use torch.div(a, b, rounding_mode='trunc'), or for actual floor division, use torch.div(a, b, rounding_mode='floor').
+Testing DataLoader 0:  14%|█▍        | 44/312 [10:10<1:02:00, 13.88s/it]
+************************************************************************
+1) Start local server:
+    cd /media/songoh/ssh3/songoh_ws/Mask CDN-main1/saved/DEBUG_ABLATION/visualizations/scene0139_00; python -m http.server 6008
+2) Open in browser:
+    http://0.0.0.0:6008
+************************************************************************
+Testing DataLoader 0:  14%|█▍        | 44/312 [10:10<1:02:00, 13.88s/it]
+/media/songoh/ssh3/songoh_ws/Mask CDN-main1/trainer/trainer.py:502: UserWarning: __floordiv__ is deprecated, and its behavior will change in a future version of pytorch. It currently rounds toward 0 (like the 'trunc' function NOT 'floor'). This results in incorrect rounding for negative values. To keep the current behavior, use torch.div(a, b, rounding_mode='trunc'), or for actual floor division, use torch.div(a, b, rounding_mode='floor').
+  topk_indices = topk_indices // num_classes
+/media/songoh/ssh3/songoh_ws/Mask CDN-main1/models/mask3d.py:282: UserWarning: __floordiv__ is deprecated, and its behavior will change in a future version of pytorch. It currently rounds toward 0 (like the 'trunc' function NOT 'floor'). This results in incorrect rounding for negative values. To keep the current behavior, use torch.div(a, b, rounding_mode='trunc'), or for actual floor division, use torch.div(a, b, rounding_mode='floor').
+Testing DataLoader 0:  14%|█▍        | 45/312 [10:20<1:01:24, 13.80s/it]
+************************************************************************
+1) Start local server:
+    cd /media/songoh/ssh3/songoh_ws/Mask CDN-main1/saved/DEBUG_ABLATION/visualizations/scene0144_00; python -m http.server 6008
+2) Open in browser:
+    http://0.0.0.0:6008
+************************************************************************
+Testing DataLoader 0:  15%|█▍        | 46/312 [10:29<1:00:42, 13.69s/it]
+************************************************************************
+1) Start local server:
+    cd /media/songoh/ssh3/songoh_ws/Mask CDN-main1/saved/DEBUG_ABLATION/visualizations/scene0144_01; python -m http.server 6008
+2) Open in browser:
+    http://0.0.0.0:6008
+************************************************************************
+Testing DataLoader 0:  15%|█▍        | 46/312 [10:29<1:00:42, 13.69s/it]
+/media/songoh/ssh3/songoh_ws/Mask CDN-main1/trainer/trainer.py:502: UserWarning: __floordiv__ is deprecated, and its behavior will change in a future version of pytorch. It currently rounds toward 0 (like the 'trunc' function NOT 'floor'). This results in incorrect rounding for negative values. To keep the current behavior, use torch.div(a, b, rounding_mode='trunc'), or for actual floor division, use torch.div(a, b, rounding_mode='floor').
+  topk_indices = topk_indices // num_classes
+/media/songoh/ssh3/songoh_ws/Mask CDN-main1/models/mask3d.py:282: UserWarning: __floordiv__ is deprecated, and its behavior will change in a future version of pytorch. It currently rounds toward 0 (like the 'trunc' function NOT 'floor'). This results in incorrect rounding for negative values. To keep the current behavior, use torch.div(a, b, rounding_mode='trunc'), or for actual floor division, use torch.div(a, b, rounding_mode='floor').
+Testing DataLoader 0:  15%|█▌        | 47/312 [10:37<59:55, 13.57s/it]
+************************************************************************
+1) Start local server:
+    cd /media/songoh/ssh3/songoh_ws/Mask CDN-main1/saved/DEBUG_ABLATION/visualizations/scene0146_00; python -m http.server 6008
+2) Open in browser:
+    http://0.0.0.0:6008
+************************************************************************
+Testing DataLoader 0:  15%|█▌        | 47/312 [10:37<59:55, 13.57s/it]
+/media/songoh/ssh3/songoh_ws/Mask CDN-main1/trainer/trainer.py:502: UserWarning: __floordiv__ is deprecated, and its behavior will change in a future version of pytorch. It currently rounds toward 0 (like the 'trunc' function NOT 'floor'). This results in incorrect rounding for negative values. To keep the current behavior, use torch.div(a, b, rounding_mode='trunc'), or for actual floor division, use torch.div(a, b, rounding_mode='floor').
+  topk_indices = topk_indices // num_classes
+/media/songoh/ssh3/songoh_ws/Mask CDN-main1/models/mask3d.py:282: UserWarning: __floordiv__ is deprecated, and its behavior will change in a future version of pytorch. It currently rounds toward 0 (like the 'trunc' function NOT 'floor'). This results in incorrect rounding for negative values. To keep the current behavior, use torch.div(a, b, rounding_mode='trunc'), or for actual floor division, use torch.div(a, b, rounding_mode='floor').
+Testing DataLoader 0:  15%|█▌        | 48/312 [10:44<59:02, 13.42s/it]
+************************************************************************
+1) Start local server:
+    cd /media/songoh/ssh3/songoh_ws/Mask CDN-main1/saved/DEBUG_ABLATION/visualizations/scene0146_01; python -m http.server 6008
+2) Open in browser:
+    http://0.0.0.0:6008
+************************************************************************
+Testing DataLoader 0:  15%|█▌        | 48/312 [10:44<59:02, 13.42s/it]
+/media/songoh/ssh3/songoh_ws/Mask CDN-main1/trainer/trainer.py:502: UserWarning: __floordiv__ is deprecated, and its behavior will change in a future version of pytorch. It currently rounds toward 0 (like the 'trunc' function NOT 'floor'). This results in incorrect rounding for negative values. To keep the current behavior, use torch.div(a, b, rounding_mode='trunc'), or for actual floor division, use torch.div(a, b, rounding_mode='floor').
+  topk_indices = topk_indices // num_classes
+/media/songoh/ssh3/songoh_ws/Mask CDN-main1/models/mask3d.py:282: UserWarning: __floordiv__ is deprecated, and its behavior will change in a future version of pytorch. It currently rounds toward 0 (like the 'trunc' function NOT 'floor'). This results in incorrect rounding for negative values. To keep the current behavior, use torch.div(a, b, rounding_mode='trunc'), or for actual floor division, use torch.div(a, b, rounding_mode='floor').
+Testing DataLoader 0:  16%|█▌        | 49/312 [10:51<58:17, 13.30s/it]
+************************************************************************
+1) Start local server:
+    cd /media/songoh/ssh3/songoh_ws/Mask CDN-main1/saved/DEBUG_ABLATION/visualizations/scene0146_02; python -m http.server 6008
+2) Open in browser:
+    http://0.0.0.0:6008
+************************************************************************
+Testing DataLoader 0:  16%|█▌        | 49/312 [10:51<58:17, 13.30s/it]
+/media/songoh/ssh3/songoh_ws/Mask CDN-main1/trainer/trainer.py:502: UserWarning: __floordiv__ is deprecated, and its behavior will change in a future version of pytorch. It currently rounds toward 0 (like the 'trunc' function NOT 'floor'). This results in incorrect rounding for negative values. To keep the current behavior, use torch.div(a, b, rounding_mode='trunc'), or for actual floor division, use torch.div(a, b, rounding_mode='floor').
+  topk_indices = topk_indices // num_classes
+/media/songoh/ssh3/songoh_ws/Mask CDN-main1/models/mask3d.py:282: UserWarning: __floordiv__ is deprecated, and its behavior will change in a future version of pytorch. It currently rounds toward 0 (like the 'trunc' function NOT 'floor'). This results in incorrect rounding for negative values. To keep the current behavior, use torch.div(a, b, rounding_mode='trunc'), or for actual floor division, use torch.div(a, b, rounding_mode='floor').
+  dim_t = 10000 ** (2 * (dim_t // 2) / 128)
+/media/songoh/ssh3/songoh_ws/Mask CDN-main1/trainer/trainer.py:502: UserWarning: __floordiv__ is deprecated, and its behavior will change in a future version of pytorch. It currently rounds toward 0 (like the 'trunc' function NOT 'floor'). This results in incorrect rounding for negative values. To keep the current behavior, use torch.div(a, b, rounding_mode='trunc'), or for actual floor division, use torch.div(a, b, rounding_mode='floor').
+  topk_indices = topk_indices // num_classes
+/media/songoh/ssh3/songoh_ws/Mask CDN-main1/models/mask3d.py:282: UserWarning: __floordiv__ is deprecated, and its behavior will change in a future version of pytorch. It currently rounds toward 0 (like the 'trunc' function NOT 'floor'). This results in incorrect rounding for negative values. To keep the current behavior, use torch.div(a, b, rounding_mode='trunc'), or for actual floor division, use torch.div(a, b, rounding_mode='floor').
+Testing DataLoader 0:  16%|█▌        | 50/312 [11:02<57:51, 13.25s/it]
+************************************************************************
+1) Start local server:
+    cd /media/songoh/ssh3/songoh_ws/Mask CDN-main1/saved/DEBUG_ABLATION/visualizations/scene0149_00; python -m http.server 6008
+2) Open in browser:
+    http://0.0.0.0:6008
+************************************************************************
+Testing DataLoader 0:  16%|█▋        | 51/312 [11:09<57:06, 13.13s/it]
+************************************************************************
+1) Start local server:
+    cd /media/songoh/ssh3/songoh_ws/Mask CDN-main1/saved/DEBUG_ABLATION/visualizations/scene0153_00; python -m http.server 6008
+2) Open in browser:
+    http://0.0.0.0:6008
+************************************************************************
+Testing DataLoader 0:  16%|█▋        | 51/312 [11:09<57:06, 13.13s/it]
+/media/songoh/ssh3/songoh_ws/Mask CDN-main1/trainer/trainer.py:502: UserWarning: __floordiv__ is deprecated, and its behavior will change in a future version of pytorch. It currently rounds toward 0 (like the 'trunc' function NOT 'floor'). This results in incorrect rounding for negative values. To keep the current behavior, use torch.div(a, b, rounding_mode='trunc'), or for actual floor division, use torch.div(a, b, rounding_mode='floor').
+  topk_indices = topk_indices // num_classes
+/media/songoh/ssh3/songoh_ws/Mask CDN-main1/models/mask3d.py:282: UserWarning: __floordiv__ is deprecated, and its behavior will change in a future version of pytorch. It currently rounds toward 0 (like the 'trunc' function NOT 'floor'). This results in incorrect rounding for negative values. To keep the current behavior, use torch.div(a, b, rounding_mode='trunc'), or for actual floor division, use torch.div(a, b, rounding_mode='floor').
+  dim_t = 10000 ** (2 * (dim_t // 2) / 128)
+/media/songoh/ssh3/songoh_ws/Mask CDN-main1/trainer/trainer.py:502: UserWarning: __floordiv__ is deprecated, and its behavior will change in a future version of pytorch. It currently rounds toward 0 (like the 'trunc' function NOT 'floor'). This results in incorrect rounding for negative values. To keep the current behavior, use torch.div(a, b, rounding_mode='trunc'), or for actual floor division, use torch.div(a, b, rounding_mode='floor').
+  topk_indices = topk_indices // num_classes
+/media/songoh/ssh3/songoh_ws/Mask CDN-main1/models/mask3d.py:282: UserWarning: __floordiv__ is deprecated, and its behavior will change in a future version of pytorch. It currently rounds toward 0 (like the 'trunc' function NOT 'floor'). This results in incorrect rounding for negative values. To keep the current behavior, use torch.div(a, b, rounding_mode='trunc'), or for actual floor division, use torch.div(a, b, rounding_mode='floor').
+Testing DataLoader 0:  17%|█▋        | 52/312 [11:16<56:23, 13.01s/it]
+************************************************************************
+1) Start local server:
+    cd /media/songoh/ssh3/songoh_ws/Mask CDN-main1/saved/DEBUG_ABLATION/visualizations/scene0153_01; python -m http.server 6008
+2) Open in browser:
+    http://0.0.0.0:6008
+************************************************************************
+Testing DataLoader 0:  17%|█▋        | 52/312 [11:16<56:23, 13.01s/it]
+/media/songoh/ssh3/songoh_ws/Mask CDN-main1/trainer/trainer.py:502: UserWarning: __floordiv__ is deprecated, and its behavior will change in a future version of pytorch. It currently rounds toward 0 (like the 'trunc' function NOT 'floor'). This results in incorrect rounding for negative values. To keep the current behavior, use torch.div(a, b, rounding_mode='trunc'), or for actual floor division, use torch.div(a, b, rounding_mode='floor').
+  topk_indices = topk_indices // num_classes
+/media/songoh/ssh3/songoh_ws/Mask CDN-main1/models/mask3d.py:282: UserWarning: __floordiv__ is deprecated, and its behavior will change in a future version of pytorch. It currently rounds toward 0 (like the 'trunc' function NOT 'floor'). This results in incorrect rounding for negative values. To keep the current behavior, use torch.div(a, b, rounding_mode='trunc'), or for actual floor division, use torch.div(a, b, rounding_mode='floor').
+Testing DataLoader 0:  17%|█▋        | 53/312 [11:24<55:45, 12.92s/it]
+************************************************************************
+1) Start local server:
+    cd /media/songoh/ssh3/songoh_ws/Mask CDN-main1/saved/DEBUG_ABLATION/visualizations/scene0164_00; python -m http.server 6008
+2) Open in browser:
+    http://0.0.0.0:6008
+************************************************************************
+Testing DataLoader 0:  17%|█▋        | 53/312 [11:24<55:45, 12.92s/it]
+/media/songoh/ssh3/songoh_ws/Mask CDN-main1/trainer/trainer.py:502: UserWarning: __floordiv__ is deprecated, and its behavior will change in a future version of pytorch. It currently rounds toward 0 (like the 'trunc' function NOT 'floor'). This results in incorrect rounding for negative values. To keep the current behavior, use torch.div(a, b, rounding_mode='trunc'), or for actual floor division, use torch.div(a, b, rounding_mode='floor').
+  topk_indices = topk_indices // num_classes
+/media/songoh/ssh3/songoh_ws/Mask CDN-main1/models/mask3d.py:282: UserWarning: __floordiv__ is deprecated, and its behavior will change in a future version of pytorch. It currently rounds toward 0 (like the 'trunc' function NOT 'floor'). This results in incorrect rounding for negative values. To keep the current behavior, use torch.div(a, b, rounding_mode='trunc'), or for actual floor division, use torch.div(a, b, rounding_mode='floor').
+Testing DataLoader 0:  17%|█▋        | 54/312 [11:32<55:07, 12.82s/it]
+************************************************************************
+1) Start local server:
+    cd /media/songoh/ssh3/songoh_ws/Mask CDN-main1/saved/DEBUG_ABLATION/visualizations/scene0164_01; python -m http.server 6008
+2) Open in browser:
+    http://0.0.0.0:6008
+************************************************************************
+Testing DataLoader 0:  17%|█▋        | 54/312 [11:32<55:07, 12.82s/it]
+/media/songoh/ssh3/songoh_ws/Mask CDN-main1/trainer/trainer.py:502: UserWarning: __floordiv__ is deprecated, and its behavior will change in a future version of pytorch. It currently rounds toward 0 (like the 'trunc' function NOT 'floor'). This results in incorrect rounding for negative values. To keep the current behavior, use torch.div(a, b, rounding_mode='trunc'), or for actual floor division, use torch.div(a, b, rounding_mode='floor').
+Testing DataLoader 0:  18%|█▊        | 55/312 [11:41<54:36, 12.75s/it]
+************************************************************************
+1) Start local server:
+    cd /media/songoh/ssh3/songoh_ws/Mask CDN-main1/saved/DEBUG_ABLATION/visualizations/scene0164_02; python -m http.server 6008
+2) Open in browser:
+    http://0.0.0.0:6008
+************************************************************************
+Testing DataLoader 0:  18%|█▊        | 55/312 [11:41<54:36, 12.75s/it]
+/media/songoh/ssh3/songoh_ws/Mask CDN-main1/models/mask3d.py:282: UserWarning: __floordiv__ is deprecated, and its behavior will change in a future version of pytorch. It currently rounds toward 0 (like the 'trunc' function NOT 'floor'). This results in incorrect rounding for negative values. To keep the current behavior, use torch.div(a, b, rounding_mode='trunc'), or for actual floor division, use torch.div(a, b, rounding_mode='floor').
+  dim_t = 10000 ** (2 * (dim_t // 2) / 128)
+/media/songoh/ssh3/songoh_ws/Mask CDN-main1/trainer/trainer.py:502: UserWarning: __floordiv__ is deprecated, and its behavior will change in a future version of pytorch. It currently rounds toward 0 (like the 'trunc' function NOT 'floor'). This results in incorrect rounding for negative values. To keep the current behavior, use torch.div(a, b, rounding_mode='trunc'), or for actual floor division, use torch.div(a, b, rounding_mode='floor').
+  topk_indices = topk_indices // num_classes
+/media/songoh/ssh3/songoh_ws/Mask CDN-main1/models/mask3d.py:282: UserWarning: __floordiv__ is deprecated, and its behavior will change in a future version of pytorch. It currently rounds toward 0 (like the 'trunc' function NOT 'floor'). This results in incorrect rounding for negative values. To keep the current behavior, use torch.div(a, b, rounding_mode='trunc'), or for actual floor division, use torch.div(a, b, rounding_mode='floor').
+Testing DataLoader 0:  18%|█▊        | 56/312 [11:48<53:59, 12.66s/it]
+************************************************************************
+1) Start local server:
+    cd /media/songoh/ssh3/songoh_ws/Mask CDN-main1/saved/DEBUG_ABLATION/visualizations/scene0164_03; python -m http.server 6008
+2) Open in browser:
+    http://0.0.0.0:6008
+************************************************************************
+Testing DataLoader 0:  18%|█▊        | 56/312 [11:48<53:59, 12.66s/it]
+/media/songoh/ssh3/songoh_ws/Mask CDN-main1/trainer/trainer.py:502: UserWarning: __floordiv__ is deprecated, and its behavior will change in a future version of pytorch. It currently rounds toward 0 (like the 'trunc' function NOT 'floor'). This results in incorrect rounding for negative values. To keep the current behavior, use torch.div(a, b, rounding_mode='trunc'), or for actual floor division, use torch.div(a, b, rounding_mode='floor').
+Testing DataLoader 0:  18%|█▊        | 57/312 [12:03<53:55, 12.69s/it]
+************************************************************************
+1) Start local server:
+    cd /media/songoh/ssh3/songoh_ws/Mask CDN-main1/saved/DEBUG_ABLATION/visualizations/scene0169_00; python -m http.server 6008
+2) Open in browser:
+    http://0.0.0.0:6008
+************************************************************************
+Testing DataLoader 0:  18%|█▊        | 57/312 [12:03<53:55, 12.69s/it]
+/media/songoh/ssh3/songoh_ws/Mask CDN-main1/models/mask3d.py:282: UserWarning: __floordiv__ is deprecated, and its behavior will change in a future version of pytorch. It currently rounds toward 0 (like the 'trunc' function NOT 'floor'). This results in incorrect rounding for negative values. To keep the current behavior, use torch.div(a, b, rounding_mode='trunc'), or for actual floor division, use torch.div(a, b, rounding_mode='floor').
+  dim_t = 10000 ** (2 * (dim_t // 2) / 128)
+/media/songoh/ssh3/songoh_ws/Mask CDN-main1/trainer/trainer.py:502: UserWarning: __floordiv__ is deprecated, and its behavior will change in a future version of pytorch. It currently rounds toward 0 (like the 'trunc' function NOT 'floor'). This results in incorrect rounding for negative values. To keep the current behavior, use torch.div(a, b, rounding_mode='trunc'), or for actual floor division, use torch.div(a, b, rounding_mode='floor').
+Testing DataLoader 0:  19%|█▊        | 58/312 [12:19<53:58, 12.75s/it]
+************************************************************************
+1) Start local server:
+    cd /media/songoh/ssh3/songoh_ws/Mask CDN-main1/saved/DEBUG_ABLATION/visualizations/scene0169_01; python -m http.server 6008
+2) Open in browser:
+    http://0.0.0.0:6008
+************************************************************************
+Testing DataLoader 0:  19%|█▊        | 58/312 [12:19<53:58, 12.75s/it]
+/media/songoh/ssh3/songoh_ws/Mask CDN-main1/models/mask3d.py:282: UserWarning: __floordiv__ is deprecated, and its behavior will change in a future version of pytorch. It currently rounds toward 0 (like the 'trunc' function NOT 'floor'). This results in incorrect rounding for negative values. To keep the current behavior, use torch.div(a, b, rounding_mode='trunc'), or for actual floor division, use torch.div(a, b, rounding_mode='floor').
+  dim_t = 10000 ** (2 * (dim_t // 2) / 128)
+/media/songoh/ssh3/songoh_ws/Mask CDN-main1/trainer/trainer.py:502: UserWarning: __floordiv__ is deprecated, and its behavior will change in a future version of pytorch. It currently rounds toward 0 (like the 'trunc' function NOT 'floor'). This results in incorrect rounding for negative values. To keep the current behavior, use torch.div(a, b, rounding_mode='trunc'), or for actual floor division, use torch.div(a, b, rounding_mode='floor').
+Testing DataLoader 0:  19%|█▉        | 59/312 [12:39<54:17, 12.88s/it]
+************************************************************************
+1) Start local server:
+    cd /media/songoh/ssh3/songoh_ws/Mask CDN-main1/saved/DEBUG_ABLATION/visualizations/scene0187_00; python -m http.server 6008
+2) Open in browser:
+    http://0.0.0.0:6008
+************************************************************************
+Testing DataLoader 0:  19%|█▉        | 59/312 [12:39<54:17, 12.88s/it]
+/media/songoh/ssh3/songoh_ws/Mask CDN-main1/models/mask3d.py:282: UserWarning: __floordiv__ is deprecated, and its behavior will change in a future version of pytorch. It currently rounds toward 0 (like the 'trunc' function NOT 'floor'). This results in incorrect rounding for negative values. To keep the current behavior, use torch.div(a, b, rounding_mode='trunc'), or for actual floor division, use torch.div(a, b, rounding_mode='floor').
+  dim_t = 10000 ** (2 * (dim_t // 2) / 128)
+/media/songoh/ssh3/songoh_ws/Mask CDN-main1/trainer/trainer.py:502: UserWarning: __floordiv__ is deprecated, and its behavior will change in a future version of pytorch. It currently rounds toward 0 (like the 'trunc' function NOT 'floor'). This results in incorrect rounding for negative values. To keep the current behavior, use torch.div(a, b, rounding_mode='trunc'), or for actual floor division, use torch.div(a, b, rounding_mode='floor').
+Testing DataLoader 0:  19%|█▉        | 60/312 [12:54<54:10, 12.90s/it]
+************************************************************************
+1) Start local server:
+    cd /media/songoh/ssh3/songoh_ws/Mask CDN-main1/saved/DEBUG_ABLATION/visualizations/scene0187_01; python -m http.server 6008
+2) Open in browser:
+    http://0.0.0.0:6008
+************************************************************************
+Testing DataLoader 0:  19%|█▉        | 60/312 [12:54<54:10, 12.90s/it]
+/media/songoh/ssh3/songoh_ws/Mask CDN-main1/models/mask3d.py:282: UserWarning: __floordiv__ is deprecated, and its behavior will change in a future version of pytorch. It currently rounds toward 0 (like the 'trunc' function NOT 'floor'). This results in incorrect rounding for negative values. To keep the current behavior, use torch.div(a, b, rounding_mode='trunc'), or for actual floor division, use torch.div(a, b, rounding_mode='floor').
+  dim_t = 10000 ** (2 * (dim_t // 2) / 128)
+/media/songoh/ssh3/songoh_ws/Mask CDN-main1/trainer/trainer.py:502: UserWarning: __floordiv__ is deprecated, and its behavior will change in a future version of pytorch. It currently rounds toward 0 (like the 'trunc' function NOT 'floor'). This results in incorrect rounding for negative values. To keep the current behavior, use torch.div(a, b, rounding_mode='trunc'), or for actual floor division, use torch.div(a, b, rounding_mode='floor').
+  topk_indices = topk_indices // num_classes
+/media/songoh/ssh3/songoh_ws/Mask CDN-main1/models/mask3d.py:282: UserWarning: __floordiv__ is deprecated, and its behavior will change in a future version of pytorch. It currently rounds toward 0 (like the 'trunc' function NOT 'floor'). This results in incorrect rounding for negative values. To keep the current behavior, use torch.div(a, b, rounding_mode='trunc'), or for actual floor division, use torch.div(a, b, rounding_mode='floor').
+Testing DataLoader 0:  20%|█▉        | 61/312 [13:08<54:03, 12.92s/it]
+************************************************************************
+1) Start local server:
+    cd /media/songoh/ssh3/songoh_ws/Mask CDN-main1/saved/DEBUG_ABLATION/visualizations/scene0193_00; python -m http.server 6008
+2) Open in browser:
+    http://0.0.0.0:6008
+************************************************************************
+Testing DataLoader 0:  20%|█▉        | 61/312 [13:08<54:03, 12.92s/it]
+/media/songoh/ssh3/songoh_ws/Mask CDN-main1/trainer/trainer.py:502: UserWarning: __floordiv__ is deprecated, and its behavior will change in a future version of pytorch. It currently rounds toward 0 (like the 'trunc' function NOT 'floor'). This results in incorrect rounding for negative values. To keep the current behavior, use torch.div(a, b, rounding_mode='trunc'), or for actual floor division, use torch.div(a, b, rounding_mode='floor').
+Testing DataLoader 0:  20%|█▉        | 62/312 [13:25<54:08, 12.99s/it]
+************************************************************************
+1) Start local server:
+    cd /media/songoh/ssh3/songoh_ws/Mask CDN-main1/saved/DEBUG_ABLATION/visualizations/scene0193_01; python -m http.server 6008
+2) Open in browser:
+    http://0.0.0.0:6008
+************************************************************************
+Testing DataLoader 0:  20%|█▉        | 62/312 [13:25<54:08, 12.99s/it]
+/media/songoh/ssh3/songoh_ws/Mask CDN-main1/models/mask3d.py:282: UserWarning: __floordiv__ is deprecated, and its behavior will change in a future version of pytorch. It currently rounds toward 0 (like the 'trunc' function NOT 'floor'). This results in incorrect rounding for negative values. To keep the current behavior, use torch.div(a, b, rounding_mode='trunc'), or for actual floor division, use torch.div(a, b, rounding_mode='floor').
+  dim_t = 10000 ** (2 * (dim_t // 2) / 128)
+/media/songoh/ssh3/songoh_ws/Mask CDN-main1/trainer/trainer.py:502: UserWarning: __floordiv__ is deprecated, and its behavior will change in a future version of pytorch. It currently rounds toward 0 (like the 'trunc' function NOT 'floor'). This results in incorrect rounding for negative values. To keep the current behavior, use torch.div(a, b, rounding_mode='trunc'), or for actual floor division, use torch.div(a, b, rounding_mode='floor').
+  topk_indices = topk_indices // num_classes
+/media/songoh/ssh3/songoh_ws/Mask CDN-main1/models/mask3d.py:282: UserWarning: __floordiv__ is deprecated, and its behavior will change in a future version of pytorch. It currently rounds toward 0 (like the 'trunc' function NOT 'floor'). This results in incorrect rounding for negative values. To keep the current behavior, use torch.div(a, b, rounding_mode='trunc'), or for actual floor division, use torch.div(a, b, rounding_mode='floor').
+Testing DataLoader 0:  20%|██        | 63/312 [13:39<53:57, 13.00s/it]
+************************************************************************
+1) Start local server:
+    cd /media/songoh/ssh3/songoh_ws/Mask CDN-main1/saved/DEBUG_ABLATION/visualizations/scene0196_00; python -m http.server 6008
+2) Open in browser:
+    http://0.0.0.0:6008
+************************************************************************
+Testing DataLoader 0:  20%|██        | 63/312 [13:39<53:57, 13.00s/it]
+/media/songoh/ssh3/songoh_ws/Mask CDN-main1/trainer/trainer.py:502: UserWarning: __floordiv__ is deprecated, and its behavior will change in a future version of pytorch. It currently rounds toward 0 (like the 'trunc' function NOT 'floor'). This results in incorrect rounding for negative values. To keep the current behavior, use torch.div(a, b, rounding_mode='trunc'), or for actual floor division, use torch.div(a, b, rounding_mode='floor').
+Testing DataLoader 0:  21%|██        | 64/312 [13:51<53:43, 13.00s/it]
+************************************************************************
+1) Start local server:
+    cd /media/songoh/ssh3/songoh_ws/Mask CDN-main1/saved/DEBUG_ABLATION/visualizations/scene0203_00; python -m http.server 6008
+2) Open in browser:
+    http://0.0.0.0:6008
+************************************************************************
+Testing DataLoader 0:  21%|██        | 64/312 [13:51<53:43, 13.00s/it]
+/media/songoh/ssh3/songoh_ws/Mask CDN-main1/models/mask3d.py:282: UserWarning: __floordiv__ is deprecated, and its behavior will change in a future version of pytorch. It currently rounds toward 0 (like the 'trunc' function NOT 'floor'). This results in incorrect rounding for negative values. To keep the current behavior, use torch.div(a, b, rounding_mode='trunc'), or for actual floor division, use torch.div(a, b, rounding_mode='floor').
+  dim_t = 10000 ** (2 * (dim_t // 2) / 128)
+/media/songoh/ssh3/songoh_ws/Mask CDN-main1/trainer/trainer.py:502: UserWarning: __floordiv__ is deprecated, and its behavior will change in a future version of pytorch. It currently rounds toward 0 (like the 'trunc' function NOT 'floor'). This results in incorrect rounding for negative values. To keep the current behavior, use torch.div(a, b, rounding_mode='trunc'), or for actual floor division, use torch.div(a, b, rounding_mode='floor').
+Testing DataLoader 0:  21%|██        | 65/312 [14:05<53:34, 13.01s/it]
+************************************************************************
+1) Start local server:
+    cd /media/songoh/ssh3/songoh_ws/Mask CDN-main1/saved/DEBUG_ABLATION/visualizations/scene0203_01; python -m http.server 6008
+2) Open in browser:
+    http://0.0.0.0:6008
+************************************************************************
+Testing DataLoader 0:  21%|██        | 65/312 [14:05<53:34, 13.01s/it]
+/media/songoh/ssh3/songoh_ws/Mask CDN-main1/models/mask3d.py:282: UserWarning: __floordiv__ is deprecated, and its behavior will change in a future version of pytorch. It currently rounds toward 0 (like the 'trunc' function NOT 'floor'). This results in incorrect rounding for negative values. To keep the current behavior, use torch.div(a, b, rounding_mode='trunc'), or for actual floor division, use torch.div(a, b, rounding_mode='floor').
+  dim_t = 10000 ** (2 * (dim_t // 2) / 128)
+/media/songoh/ssh3/songoh_ws/Mask CDN-main1/trainer/trainer.py:502: UserWarning: __floordiv__ is deprecated, and its behavior will change in a future version of pytorch. It currently rounds toward 0 (like the 'trunc' function NOT 'floor'). This results in incorrect rounding for negative values. To keep the current behavior, use torch.div(a, b, rounding_mode='trunc'), or for actual floor division, use torch.div(a, b, rounding_mode='floor').
+  topk_indices = topk_indices // num_classes
+************************************************************************
+1) Start local server:
+    cd /media/songoh/ssh3/songoh_ws/Mask CDN-main1/saved/DEBUG_ABLATION/visualizations/scene0203_02; python -m http.server 6008
+2) Open in browser:
+    http://0.0.0.0:6008
+************************************************************************
+Testing DataLoader 0:  21%|██        | 65/312 [14:05<53:34, 13.01s/it]
+/media/songoh/ssh3/songoh_ws/Mask CDN-main1/models/mask3d.py:282: UserWarning: __floordiv__ is deprecated, and its behavior will change in a future version of pytorch. It currently rounds toward 0 (like the 'trunc' function NOT 'floor'). This results in incorrect rounding for negative values. To keep the current behavior, use torch.div(a, b, rounding_mode='trunc'), or for actual floor division, use torch.div(a, b, rounding_mode='floor').
+Testing DataLoader 0:  21%|██        | 66/312 [14:24<53:41, 13.10s/it]
+Testing DataLoader 0:  21%|██        | 66/312 [14:24<53:41, 13.10s/it]
+/media/songoh/ssh3/songoh_ws/Mask CDN-main1/trainer/trainer.py:502: UserWarning: __floordiv__ is deprecated, and its behavior will change in a future version of pytorch. It currently rounds toward 0 (like the 'trunc' function NOT 'floor'). This results in incorrect rounding for negative values. To keep the current behavior, use torch.div(a, b, rounding_mode='trunc'), or for actual floor division, use torch.div(a, b, rounding_mode='floor').
+  topk_indices = topk_indices // num_classes
+/media/songoh/ssh3/songoh_ws/Mask CDN-main1/models/mask3d.py:282: UserWarning: __floordiv__ is deprecated, and its behavior will change in a future version of pytorch. It currently rounds toward 0 (like the 'trunc' function NOT 'floor'). This results in incorrect rounding for negative values. To keep the current behavior, use torch.div(a, b, rounding_mode='trunc'), or for actual floor division, use torch.div(a, b, rounding_mode='floor').
+Testing DataLoader 0:  21%|██▏       | 67/312 [14:38<53:33, 13.12s/it]
+Testing DataLoader 0:  21%|██▏       | 67/312 [14:38<53:33, 13.12s/it]
+/media/songoh/ssh3/songoh_ws/Mask CDN-main1/trainer/trainer.py:502: UserWarning: __floordiv__ is deprecated, and its behavior will change in a future version of pytorch. It currently rounds toward 0 (like the 'trunc' function NOT 'floor'). This results in incorrect rounding for negative values. To keep the current behavior, use torch.div(a, b, rounding_mode='trunc'), or for actual floor division, use torch.div(a, b, rounding_mode='floor').
+  topk_indices = topk_indices // num_classes
+/media/songoh/ssh3/songoh_ws/Mask CDN-main1/models/mask3d.py:282: UserWarning: __floordiv__ is deprecated, and its behavior will change in a future version of pytorch. It currently rounds toward 0 (like the 'trunc' function NOT 'floor'). This results in incorrect rounding for negative values. To keep the current behavior, use torch.div(a, b, rounding_mode='trunc'), or for actual floor division, use torch.div(a, b, rounding_mode='floor').
+Testing DataLoader 0:  22%|██▏       | 68/312 [14:50<53:16, 13.10s/it]
+Testing DataLoader 0:  22%|██▏       | 68/312 [14:50<53:16, 13.10s/it]
+/media/songoh/ssh3/songoh_ws/Mask CDN-main1/trainer/trainer.py:502: UserWarning: __floordiv__ is deprecated, and its behavior will change in a future version of pytorch. It currently rounds toward 0 (like the 'trunc' function NOT 'floor'). This results in incorrect rounding for negative values. To keep the current behavior, use torch.div(a, b, rounding_mode='trunc'), or for actual floor division, use torch.div(a, b, rounding_mode='floor').
+  topk_indices = topk_indices // num_classes
+/media/songoh/ssh3/songoh_ws/Mask CDN-main1/models/mask3d.py:282: UserWarning: __floordiv__ is deprecated, and its behavior will change in a future version of pytorch. It currently rounds toward 0 (like the 'trunc' function NOT 'floor'). This results in incorrect rounding for negative values. To keep the current behavior, use torch.div(a, b, rounding_mode='trunc'), or for actual floor division, use torch.div(a, b, rounding_mode='floor').
+Testing DataLoader 0:  22%|██▏       | 69/312 [15:06<53:13, 13.14s/it]
+Testing DataLoader 0:  22%|██▏       | 69/312 [15:06<53:13, 13.14s/it]
+/media/songoh/ssh3/songoh_ws/Mask CDN-main1/trainer/trainer.py:502: UserWarning: __floordiv__ is deprecated, and its behavior will change in a future version of pytorch. It currently rounds toward 0 (like the 'trunc' function NOT 'floor'). This results in incorrect rounding for negative values. To keep the current behavior, use torch.div(a, b, rounding_mode='trunc'), or for actual floor division, use torch.div(a, b, rounding_mode='floor').
+  topk_indices = topk_indices // num_classes
+/media/songoh/ssh3/songoh_ws/Mask CDN-main1/models/mask3d.py:282: UserWarning: __floordiv__ is deprecated, and its behavior will change in a future version of pytorch. It currently rounds toward 0 (like the 'trunc' function NOT 'floor'). This results in incorrect rounding for negative values. To keep the current behavior, use torch.div(a, b, rounding_mode='trunc'), or for actual floor division, use torch.div(a, b, rounding_mode='floor').
+Testing DataLoader 0:  22%|██▏       | 70/312 [15:39<54:06, 13.41s/it]
+Testing DataLoader 0:  22%|██▏       | 70/312 [15:39<54:06, 13.41s/it]
+/media/songoh/ssh3/songoh_ws/Mask CDN-main1/trainer/trainer.py:502: UserWarning: __floordiv__ is deprecated, and its behavior will change in a future version of pytorch. It currently rounds toward 0 (like the 'trunc' function NOT 'floor'). This results in incorrect rounding for negative values. To keep the current behavior, use torch.div(a, b, rounding_mode='trunc'), or for actual floor division, use torch.div(a, b, rounding_mode='floor').
+Testing DataLoader 0:  23%|██▎       | 71/312 [15:50<53:45, 13.38s/it]
+Testing DataLoader 0:  23%|██▎       | 71/312 [15:50<53:45, 13.38s/it]
+/media/songoh/ssh3/songoh_ws/Mask CDN-main1/models/mask3d.py:282: UserWarning: __floordiv__ is deprecated, and its behavior will change in a future version of pytorch. It currently rounds toward 0 (like the 'trunc' function NOT 'floor'). This results in incorrect rounding for negative values. To keep the current behavior, use torch.div(a, b, rounding_mode='trunc'), or for actual floor division, use torch.div(a, b, rounding_mode='floor').
+  dim_t = 10000 ** (2 * (dim_t // 2) / 128)
+/media/songoh/ssh3/songoh_ws/Mask CDN-main1/trainer/trainer.py:502: UserWarning: __floordiv__ is deprecated, and its behavior will change in a future version of pytorch. It currently rounds toward 0 (like the 'trunc' function NOT 'floor'). This results in incorrect rounding for negative values. To keep the current behavior, use torch.div(a, b, rounding_mode='trunc'), or for actual floor division, use torch.div(a, b, rounding_mode='floor').
+  topk_indices = topk_indices // num_classes
+/media/songoh/ssh3/songoh_ws/Mask CDN-main1/models/mask3d.py:282: UserWarning: __floordiv__ is deprecated, and its behavior will change in a future version of pytorch. It currently rounds toward 0 (like the 'trunc' function NOT 'floor'). This results in incorrect rounding for negative values. To keep the current behavior, use torch.div(a, b, rounding_mode='trunc'), or for actual floor division, use torch.div(a, b, rounding_mode='floor').
+Testing DataLoader 0:  23%|██▎       | 72/312 [16:01<53:24, 13.35s/it]
+Testing DataLoader 0:  23%|██▎       | 72/312 [16:01<53:24, 13.35s/it]
+/media/songoh/ssh3/songoh_ws/Mask CDN-main1/trainer/trainer.py:502: UserWarning: __floordiv__ is deprecated, and its behavior will change in a future version of pytorch. It currently rounds toward 0 (like the 'trunc' function NOT 'floor'). This results in incorrect rounding for negative values. To keep the current behavior, use torch.div(a, b, rounding_mode='trunc'), or for actual floor division, use torch.div(a, b, rounding_mode='floor').
+Testing DataLoader 0:  23%|██▎       | 73/312 [16:11<53:02, 13.31s/it]
+Testing DataLoader 0:  23%|██▎       | 73/312 [16:11<53:02, 13.31s/it]
+/media/songoh/ssh3/songoh_ws/Mask CDN-main1/models/mask3d.py:282: UserWarning: __floordiv__ is deprecated, and its behavior will change in a future version of pytorch. It currently rounds toward 0 (like the 'trunc' function NOT 'floor'). This results in incorrect rounding for negative values. To keep the current behavior, use torch.div(a, b, rounding_mode='trunc'), or for actual floor division, use torch.div(a, b, rounding_mode='floor').
+  dim_t = 10000 ** (2 * (dim_t // 2) / 128)
+/media/songoh/ssh3/songoh_ws/Mask CDN-main1/trainer/trainer.py:502: UserWarning: __floordiv__ is deprecated, and its behavior will change in a future version of pytorch. It currently rounds toward 0 (like the 'trunc' function NOT 'floor'). This results in incorrect rounding for negative values. To keep the current behavior, use torch.div(a, b, rounding_mode='trunc'), or for actual floor division, use torch.div(a, b, rounding_mode='floor').
+  topk_indices = topk_indices // num_classes
+/media/songoh/ssh3/songoh_ws/Mask CDN-main1/models/mask3d.py:282: UserWarning: __floordiv__ is deprecated, and its behavior will change in a future version of pytorch. It currently rounds toward 0 (like the 'trunc' function NOT 'floor'). This results in incorrect rounding for negative values. To keep the current behavior, use torch.div(a, b, rounding_mode='trunc'), or for actual floor division, use torch.div(a, b, rounding_mode='floor').
+Testing DataLoader 0:  24%|██▎       | 74/312 [16:23<52:42, 13.29s/it]
+Testing DataLoader 0:  24%|██▎       | 74/312 [16:23<52:42, 13.29s/it]
+/media/songoh/ssh3/songoh_ws/Mask CDN-main1/trainer/trainer.py:502: UserWarning: __floordiv__ is deprecated, and its behavior will change in a future version of pytorch. It currently rounds toward 0 (like the 'trunc' function NOT 'floor'). This results in incorrect rounding for negative values. To keep the current behavior, use torch.div(a, b, rounding_mode='trunc'), or for actual floor division, use torch.div(a, b, rounding_mode='floor').
+  topk_indices = topk_indices // num_classes
+/media/songoh/ssh3/songoh_ws/Mask CDN-main1/models/mask3d.py:282: UserWarning: __floordiv__ is deprecated, and its behavior will change in a future version of pytorch. It currently rounds toward 0 (like the 'trunc' function NOT 'floor'). This results in incorrect rounding for negative values. To keep the current behavior, use torch.div(a, b, rounding_mode='trunc'), or for actual floor division, use torch.div(a, b, rounding_mode='floor').
+Testing DataLoader 0:  24%|██▍       | 75/312 [16:37<52:31, 13.30s/it]
+Testing DataLoader 0:  24%|██▍       | 75/312 [16:37<52:31, 13.30s/it]
+/media/songoh/ssh3/songoh_ws/Mask CDN-main1/trainer/trainer.py:502: UserWarning: __floordiv__ is deprecated, and its behavior will change in a future version of pytorch. It currently rounds toward 0 (like the 'trunc' function NOT 'floor'). This results in incorrect rounding for negative values. To keep the current behavior, use torch.div(a, b, rounding_mode='trunc'), or for actual floor division, use torch.div(a, b, rounding_mode='floor').
+Testing DataLoader 0:  24%|██▍       | 76/312 [16:58<52:41, 13.40s/it]
+Testing DataLoader 0:  24%|██▍       | 76/312 [16:58<52:41, 13.40s/it]
+/media/songoh/ssh3/songoh_ws/Mask CDN-main1/models/mask3d.py:282: UserWarning: __floordiv__ is deprecated, and its behavior will change in a future version of pytorch. It currently rounds toward 0 (like the 'trunc' function NOT 'floor'). This results in incorrect rounding for negative values. To keep the current behavior, use torch.div(a, b, rounding_mode='trunc'), or for actual floor division, use torch.div(a, b, rounding_mode='floor').
+  dim_t = 10000 ** (2 * (dim_t // 2) / 128)
+/media/songoh/ssh3/songoh_ws/Mask CDN-main1/trainer/trainer.py:502: UserWarning: __floordiv__ is deprecated, and its behavior will change in a future version of pytorch. It currently rounds toward 0 (like the 'trunc' function NOT 'floor'). This results in incorrect rounding for negative values. To keep the current behavior, use torch.div(a, b, rounding_mode='trunc'), or for actual floor division, use torch.div(a, b, rounding_mode='floor').
+Testing DataLoader 0:  25%|██▍       | 77/312 [17:21<52:58, 13.53s/it]
+Testing DataLoader 0:  25%|██▍       | 77/312 [17:21<52:58, 13.53s/it]
+/media/songoh/ssh3/songoh_ws/Mask CDN-main1/models/mask3d.py:282: UserWarning: __floordiv__ is deprecated, and its behavior will change in a future version of pytorch. It currently rounds toward 0 (like the 'trunc' function NOT 'floor'). This results in incorrect rounding for negative values. To keep the current behavior, use torch.div(a, b, rounding_mode='trunc'), or for actual floor division, use torch.div(a, b, rounding_mode='floor').
+  dim_t = 10000 ** (2 * (dim_t // 2) / 128)
+/media/songoh/ssh3/songoh_ws/Mask CDN-main1/trainer/trainer.py:502: UserWarning: __floordiv__ is deprecated, and its behavior will change in a future version of pytorch. It currently rounds toward 0 (like the 'trunc' function NOT 'floor'). This results in incorrect rounding for negative values. To keep the current behavior, use torch.div(a, b, rounding_mode='trunc'), or for actual floor division, use torch.div(a, b, rounding_mode='floor').
+  topk_indices = topk_indices // num_classes
+/media/songoh/ssh3/songoh_ws/Mask CDN-main1/models/mask3d.py:282: UserWarning: __floordiv__ is deprecated, and its behavior will change in a future version of pytorch. It currently rounds toward 0 (like the 'trunc' function NOT 'floor'). This results in incorrect rounding for negative values. To keep the current behavior, use torch.div(a, b, rounding_mode='trunc'), or for actual floor division, use torch.div(a, b, rounding_mode='floor').
+Testing DataLoader 0:  25%|██▌       | 78/312 [17:39<52:58, 13.58s/it]
+Testing DataLoader 0:  25%|██▌       | 78/312 [17:39<52:58, 13.58s/it]
+/media/songoh/ssh3/songoh_ws/Mask CDN-main1/trainer/trainer.py:502: UserWarning: __floordiv__ is deprecated, and its behavior will change in a future version of pytorch. It currently rounds toward 0 (like the 'trunc' function NOT 'floor'). This results in incorrect rounding for negative values. To keep the current behavior, use torch.div(a, b, rounding_mode='trunc'), or for actual floor division, use torch.div(a, b, rounding_mode='floor').
+  topk_indices = topk_indices // num_classes
+/media/songoh/ssh3/songoh_ws/Mask CDN-main1/models/mask3d.py:282: UserWarning: __floordiv__ is deprecated, and its behavior will change in a future version of pytorch. It currently rounds toward 0 (like the 'trunc' function NOT 'floor'). This results in incorrect rounding for negative values. To keep the current behavior, use torch.div(a, b, rounding_mode='trunc'), or for actual floor division, use torch.div(a, b, rounding_mode='floor').
+Testing DataLoader 0:  25%|██▌       | 79/312 [17:51<52:40, 13.56s/it]
+Testing DataLoader 0:  25%|██▌       | 79/312 [17:51<52:40, 13.56s/it]
+/media/songoh/ssh3/songoh_ws/Mask CDN-main1/trainer/trainer.py:502: UserWarning: __floordiv__ is deprecated, and its behavior will change in a future version of pytorch. It currently rounds toward 0 (like the 'trunc' function NOT 'floor'). This results in incorrect rounding for negative values. To keep the current behavior, use torch.div(a, b, rounding_mode='trunc'), or for actual floor division, use torch.div(a, b, rounding_mode='floor').
+  topk_indices = topk_indices // num_classes
+/media/songoh/ssh3/songoh_ws/Mask CDN-main1/models/mask3d.py:282: UserWarning: __floordiv__ is deprecated, and its behavior will change in a future version of pytorch. It currently rounds toward 0 (like the 'trunc' function NOT 'floor'). This results in incorrect rounding for negative values. To keep the current behavior, use torch.div(a, b, rounding_mode='trunc'), or for actual floor division, use torch.div(a, b, rounding_mode='floor').
+Testing DataLoader 0:  26%|██▌       | 80/312 [18:05<52:28, 13.57s/it]
+Testing DataLoader 0:  26%|██▌       | 80/312 [18:05<52:28, 13.57s/it]
+/media/songoh/ssh3/songoh_ws/Mask CDN-main1/trainer/trainer.py:502: UserWarning: __floordiv__ is deprecated, and its behavior will change in a future version of pytorch. It currently rounds toward 0 (like the 'trunc' function NOT 'floor'). This results in incorrect rounding for negative values. To keep the current behavior, use torch.div(a, b, rounding_mode='trunc'), or for actual floor division, use torch.div(a, b, rounding_mode='floor').
+Testing DataLoader 0:  26%|██▌       | 81/312 [18:18<52:12, 13.56s/it]
+Testing DataLoader 0:  26%|██▌       | 81/312 [18:18<52:12, 13.56s/it]
+/media/songoh/ssh3/songoh_ws/Mask CDN-main1/models/mask3d.py:282: UserWarning: __floordiv__ is deprecated, and its behavior will change in a future version of pytorch. It currently rounds toward 0 (like the 'trunc' function NOT 'floor'). This results in incorrect rounding for negative values. To keep the current behavior, use torch.div(a, b, rounding_mode='trunc'), or for actual floor division, use torch.div(a, b, rounding_mode='floor').
+Testing DataLoader 0:  26%|██▋       | 82/312 [18:30<51:54, 13.54s/it]
+Testing DataLoader 0:  26%|██▋       | 82/312 [18:30<51:54, 13.54s/it]
+/media/songoh/ssh3/songoh_ws/Mask CDN-main1/trainer/trainer.py:502: UserWarning: __floordiv__ is deprecated, and its behavior will change in a future version of pytorch. It currently rounds toward 0 (like the 'trunc' function NOT 'floor'). This results in incorrect rounding for negative values. To keep the current behavior, use torch.div(a, b, rounding_mode='trunc'), or for actual floor division, use torch.div(a, b, rounding_mode='floor').
+  topk_indices = topk_indices // num_classes
+/media/songoh/ssh3/songoh_ws/Mask CDN-main1/models/mask3d.py:282: UserWarning: __floordiv__ is deprecated, and its behavior will change in a future version of pytorch. It currently rounds toward 0 (like the 'trunc' function NOT 'floor'). This results in incorrect rounding for negative values. To keep the current behavior, use torch.div(a, b, rounding_mode='trunc'), or for actual floor division, use torch.div(a, b, rounding_mode='floor').
+  dim_t = 10000 ** (2 * (dim_t // 2) / 128)
+/media/songoh/ssh3/songoh_ws/Mask CDN-main1/trainer/trainer.py:502: UserWarning: __floordiv__ is deprecated, and its behavior will change in a future version of pytorch. It currently rounds toward 0 (like the 'trunc' function NOT 'floor'). This results in incorrect rounding for negative values. To keep the current behavior, use torch.div(a, b, rounding_mode='trunc'), or for actual floor division, use torch.div(a, b, rounding_mode='floor').
+  topk_indices = topk_indices // num_classes
+/media/songoh/ssh3/songoh_ws/Mask CDN-main1/models/mask3d.py:282: UserWarning: __floordiv__ is deprecated, and its behavior will change in a future version of pytorch. It currently rounds toward 0 (like the 'trunc' function NOT 'floor'). This results in incorrect rounding for negative values. To keep the current behavior, use torch.div(a, b, rounding_mode='trunc'), or for actual floor division, use torch.div(a, b, rounding_mode='floor').
+Testing DataLoader 0:  27%|██▋       | 83/312 [18:41<51:34, 13.51s/it]
+Testing DataLoader 0:  27%|██▋       | 83/312 [18:41<51:34, 13.51s/it]
+/media/songoh/ssh3/songoh_ws/Mask CDN-main1/trainer/trainer.py:502: UserWarning: __floordiv__ is deprecated, and its behavior will change in a future version of pytorch. It currently rounds toward 0 (like the 'trunc' function NOT 'floor'). This results in incorrect rounding for negative values. To keep the current behavior, use torch.div(a, b, rounding_mode='trunc'), or for actual floor division, use torch.div(a, b, rounding_mode='floor').
+Testing DataLoader 0:  27%|██▋       | 84/312 [18:51<51:12, 13.47s/it]
+Testing DataLoader 0:  27%|██▋       | 84/312 [18:51<51:12, 13.47s/it]
+/media/songoh/ssh3/songoh_ws/Mask CDN-main1/models/mask3d.py:282: UserWarning: __floordiv__ is deprecated, and its behavior will change in a future version of pytorch. It currently rounds toward 0 (like the 'trunc' function NOT 'floor'). This results in incorrect rounding for negative values. To keep the current behavior, use torch.div(a, b, rounding_mode='trunc'), or for actual floor division, use torch.div(a, b, rounding_mode='floor').
+  dim_t = 10000 ** (2 * (dim_t // 2) / 128)
+/media/songoh/ssh3/songoh_ws/Mask CDN-main1/trainer/trainer.py:502: UserWarning: __floordiv__ is deprecated, and its behavior will change in a future version of pytorch. It currently rounds toward 0 (like the 'trunc' function NOT 'floor'). This results in incorrect rounding for negative values. To keep the current behavior, use torch.div(a, b, rounding_mode='trunc'), or for actual floor division, use torch.div(a, b, rounding_mode='floor').
+Testing DataLoader 0:  27%|██▋       | 85/312 [19:00<50:45, 13.41s/it]
+Testing DataLoader 0:  27%|██▋       | 85/312 [19:00<50:45, 13.41s/it]
+/media/songoh/ssh3/songoh_ws/Mask CDN-main1/models/mask3d.py:282: UserWarning: __floordiv__ is deprecated, and its behavior will change in a future version of pytorch. It currently rounds toward 0 (like the 'trunc' function NOT 'floor'). This results in incorrect rounding for negative values. To keep the current behavior, use torch.div(a, b, rounding_mode='trunc'), or for actual floor division, use torch.div(a, b, rounding_mode='floor').
+  dim_t = 10000 ** (2 * (dim_t // 2) / 128)
+/media/songoh/ssh3/songoh_ws/Mask CDN-main1/trainer/trainer.py:502: UserWarning: __floordiv__ is deprecated, and its behavior will change in a future version of pytorch. It currently rounds toward 0 (like the 'trunc' function NOT 'floor'). This results in incorrect rounding for negative values. To keep the current behavior, use torch.div(a, b, rounding_mode='trunc'), or for actual floor division, use torch.div(a, b, rounding_mode='floor').
+  topk_indices = topk_indices // num_classes
+/media/songoh/ssh3/songoh_ws/Mask CDN-main1/models/mask3d.py:282: UserWarning: __floordiv__ is deprecated, and its behavior will change in a future version of pytorch. It currently rounds toward 0 (like the 'trunc' function NOT 'floor'). This results in incorrect rounding for negative values. To keep the current behavior, use torch.div(a, b, rounding_mode='trunc'), or for actual floor division, use torch.div(a, b, rounding_mode='floor').
+Testing DataLoader 0:  28%|██▊       | 86/312 [19:10<50:24, 13.38s/it]

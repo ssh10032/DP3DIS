@@ -1,0 +1,71 @@
+/home/songoh/miniconda3/envs/mask/lib/python3.10/site-packages/MinkowskiEngine/__init__.py:36: UserWarning: The environment variable `OMP_NUM_THREADS` not set. MinkowskiEngine will automatically set `OMP_NUM_THREADS=16`. If you want to set `OMP_NUM_THREADS` manually, please export it on the command line before running a python script. e.g. `export OMP_NUM_THREADS=12; python your_program.py`. It is recommended to set it below 24.
+  warnings.warn(
+Traceback (most recent call last):
+  File "/media/songoh/ssh3/songoh_ws/Mask 3 DINO/main_instance_segmentation.py", line 128, in <module>
+    main()
+  File "/home/songoh/miniconda3/envs/mask/lib/python3.10/site-packages/hydra/main.py", line 32, in decorated_main
+    _run_hydra(
+  File "/home/songoh/miniconda3/envs/mask/lib/python3.10/site-packages/hydra/_internal/utils.py", line 346, in _run_hydra
+    run_and_report(
+  File "/home/songoh/miniconda3/envs/mask/lib/python3.10/site-packages/hydra/_internal/utils.py", line 198, in run_and_report
+    return func()
+  File "/home/songoh/miniconda3/envs/mask/lib/python3.10/site-packages/hydra/_internal/utils.py", line 347, in <lambda>
+    lambda: hydra.run(
+  File "/home/songoh/miniconda3/envs/mask/lib/python3.10/site-packages/hydra/_internal/hydra.py", line 107, in run
+    return run_job(
+  File "/home/songoh/miniconda3/envs/mask/lib/python3.10/site-packages/hydra/core/utils.py", line 101, in run_job
+    hydra_cfg = OmegaConf.masked_copy(task_cfg, "hydra")
+  File "/home/songoh/miniconda3/envs/mask/lib/python3.10/site-packages/omegaconf/omegaconf.py", line 427, in masked_copy
+    return DictConfig(content=content)
+  File "/home/songoh/miniconda3/envs/mask/lib/python3.10/site-packages/omegaconf/dictconfig.py", line 81, in __init__
+    self._set_value(content)
+  File "/home/songoh/miniconda3/envs/mask/lib/python3.10/site-packages/omegaconf/dictconfig.py", line 554, in _set_value
+    self.__setitem__(k, v)
+  File "/home/songoh/miniconda3/envs/mask/lib/python3.10/site-packages/omegaconf/dictconfig.py", line 256, in __setitem__
+    self.__set_impl(key=key, value=value)
+  File "/home/songoh/miniconda3/envs/mask/lib/python3.10/site-packages/omegaconf/dictconfig.py", line 266, in __set_impl
+    self._set_item_impl(key, value)
+  File "/home/songoh/miniconda3/envs/mask/lib/python3.10/site-packages/omegaconf/basecontainer.py", line 475, in _set_item_impl
+    assign(key, value)
+  File "/home/songoh/miniconda3/envs/mask/lib/python3.10/site-packages/omegaconf/basecontainer.py", line 452, in assign
+    v = copy.deepcopy(value_to_assign)
+  File "/home/songoh/miniconda3/envs/mask/lib/python3.10/copy.py", line 153, in deepcopy
+    y = copier(memo)
+  File "/home/songoh/miniconda3/envs/mask/lib/python3.10/site-packages/omegaconf/dictconfig.py", line 93, in __deepcopy__
+    res.__dict__[k] = copy.deepcopy(v, memo=memo)
+  File "/home/songoh/miniconda3/envs/mask/lib/python3.10/copy.py", line 153, in deepcopy
+    y = copier(memo)
+  File "/home/songoh/miniconda3/envs/mask/lib/python3.10/site-packages/omegaconf/dictconfig.py", line 93, in __deepcopy__
+    res.__dict__[k] = copy.deepcopy(v, memo=memo)
+  File "/home/songoh/miniconda3/envs/mask/lib/python3.10/copy.py", line 146, in deepcopy
+    y = copier(x, memo)
+  File "/home/songoh/miniconda3/envs/mask/lib/python3.10/copy.py", line 231, in _deepcopy_dict
+    y[deepcopy(key, memo)] = deepcopy(value, memo)
+  File "/home/songoh/miniconda3/envs/mask/lib/python3.10/copy.py", line 153, in deepcopy
+    y = copier(memo)
+  File "/home/songoh/miniconda3/envs/mask/lib/python3.10/site-packages/omegaconf/dictconfig.py", line 93, in __deepcopy__
+    res.__dict__[k] = copy.deepcopy(v, memo=memo)
+  File "/home/songoh/miniconda3/envs/mask/lib/python3.10/copy.py", line 146, in deepcopy
+    y = copier(x, memo)
+  File "/home/songoh/miniconda3/envs/mask/lib/python3.10/copy.py", line 231, in _deepcopy_dict
+    y[deepcopy(key, memo)] = deepcopy(value, memo)
+  File "/home/songoh/miniconda3/envs/mask/lib/python3.10/copy.py", line 153, in deepcopy
+    y = copier(memo)
+  File "/home/songoh/miniconda3/envs/mask/lib/python3.10/site-packages/omegaconf/nodes.py", line 159, in __deepcopy__
+    self._deepcopy_impl(res, memo)
+  File "/home/songoh/miniconda3/envs/mask/lib/python3.10/site-packages/omegaconf/nodes.py", line 76, in _deepcopy_impl
+    res.__dict__ = copy.deepcopy(self.__dict__, memo=memo)
+  File "/home/songoh/miniconda3/envs/mask/lib/python3.10/copy.py", line 146, in deepcopy
+    y = copier(x, memo)
+  File "/home/songoh/miniconda3/envs/mask/lib/python3.10/copy.py", line 231, in _deepcopy_dict
+    y[deepcopy(key, memo)] = deepcopy(value, memo)
+  File "/home/songoh/miniconda3/envs/mask/lib/python3.10/copy.py", line 172, in deepcopy
+    y = _reconstruct(x, memo, *rv)
+  File "/home/songoh/miniconda3/envs/mask/lib/python3.10/copy.py", line 271, in _reconstruct
+    state = deepcopy(state, memo)
+  File "/home/songoh/miniconda3/envs/mask/lib/python3.10/copy.py", line 146, in deepcopy
+    y = copier(x, memo)
+  File "/home/songoh/miniconda3/envs/mask/lib/python3.10/copy.py", line 231, in _deepcopy_dict
+    y[deepcopy(key, memo)] = deepcopy(value, memo)
+  File "/home/songoh/miniconda3/envs/mask/lib/python3.10/copy.py", line 138, in deepcopy
+    y = memo.get(d, _nil)

@@ -1,0 +1,18 @@
+{
+    "os": "Linux-4.15.0-213-generic-x86_64-with-glibc2.27",
+    "python": "3.10.6",
+    "heartbeatAt": "2023-07-31T13:49:07.887176",
+    "startedAt": "2023-07-31T13:49:07.079679",
+    "docker": null,
+    "gpu": "NVIDIA GeForce RTX 3090",
+    "gpu_count": 2,
+    "cpu_count": 28,
+    "cuda": null,
+    "args": [],
+    "state": "running",
+    "program": "/media/songoh/ssh3/songoh_ws/Mask 3 DINO/main_instance_segmentation.py",
+    "codePath": "main_instance_segmentation.py",
+    "host": "songoh-X299X-DESIGNARE-10G",
+    "username": "songoh",
+    "executable": "/home/songoh/miniconda3/envs/mask/bin/python"
+}

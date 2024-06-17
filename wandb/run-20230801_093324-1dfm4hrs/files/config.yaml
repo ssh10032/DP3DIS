@@ -1,0 +1,1617 @@
+wandb_version: 1
+
+_wandb:
+  desc: null
+  value:
+    cli_version: 0.13.2
+    framework: lightning
+    is_jupyter_run: false
+    is_kaggle_kernel: true
+    python_version: 3.10.6
+    start_time: 1690850004.456496
+    t:
+      1:
+      - 55
+      2:
+      - 1
+      - 5
+      - 9
+      - 41
+      - 43
+      - 50
+      - 53
+      - 55
+      - 80
+      3:
+      - 23
+      4: 3.10.6
+      5: 0.13.2
+      8:
+      - 2
+      - 5
+callbacks:
+  desc: null
+  value:
+  - _target_: pytorch_lightning.callbacks.ModelCheckpoint
+    dirpath: saved/Mask3DINO
+    every_n_epochs: 1
+    filename: '{epoch}-{val_mean_ap_50:.3f}'
+    mode: max
+    monitor: val_mean_ap_50
+    save_last: true
+    save_top_k: 1
+  - _target_: pytorch_lightning.callbacks.LearningRateMonitor
+config/callbacks:
+  desc: null
+  value:
+  - '{''_target_'': ''pytorch_lightning.callbacks.ModelCheckpoint'', ''monitor'':
+    ''val_mean_ap_50'', ''save_last'': True, ''save_top_k'': 1, ''mode'': ''max'',
+    ''dirpath'': ''${general.save_dir}'', ''filename'': ''{epoch}-{val_mean_ap_50:.3f}'',
+    ''every_n_epochs'': 1}'
+  - '{''_target_'': ''pytorch_lightning.callbacks.LearningRateMonitor''}'
+config/data/add_colors:
+  desc: null
+  value: true
+config/data/add_instance:
+  desc: null
+  value: true
+config/data/add_normals:
+  desc: null
+  value: false
+config/data/add_raw_coordinates:
+  desc: null
+  value: true
+config/data/batch_size:
+  desc: null
+  value: 3
+config/data/cache_data:
+  desc: null
+  value: false
+config/data/crop_length:
+  desc: null
+  value: 6.0
+config/data/crop_min_size:
+  desc: null
+  value: 20000
+config/data/cropping:
+  desc: null
+  value: false
+config/data/cropping_args/aspect:
+  desc: null
+  value: 0.8
+config/data/cropping_args/max_crop:
+  desc: null
+  value: 1.0
+config/data/cropping_args/min_crop:
+  desc: null
+  value: 0.5
+config/data/cropping_args/min_points:
+  desc: null
+  value: 30000
+config/data/cropping_v1:
+  desc: null
+  value: true
+config/data/ignore_label:
+  desc: null
+  value: 255
+config/data/in_channels:
+  desc: null
+  value: 3
+config/data/num_labels:
+  desc: null
+  value: 20
+config/data/num_workers:
+  desc: null
+  value: 4
+config/data/pin_memory:
+  desc: null
+  value: false
+config/data/reps_per_epoch:
+  desc: null
+  value: 1
+config/data/task:
+  desc: null
+  value: instance_segmentation
+config/data/test_batch_size:
+  desc: null
+  value: 1
+config/data/test_collation/_target_:
+  desc: null
+  value: datasets.utils.VoxelizeCollate
+config/data/test_collation/batch_instance:
+  desc: null
+  value: false
+config/data/test_collation/filter_out_classes:
+  desc: null
+  value:
+  - 0
+  - 1
+config/data/test_collation/ignore_class_threshold:
+  desc: null
+  value: 100
+config/data/test_collation/ignore_label:
+  desc: null
+  value: 255
+config/data/test_collation/label_offset:
+  desc: null
+  value: 2
+config/data/test_collation/mode:
+  desc: null
+  value: validation
+config/data/test_collation/num_queries:
+  desc: null
+  value: 150
+config/data/test_collation/probing:
+  desc: null
+  value: false
+config/data/test_collation/task:
+  desc: null
+  value: instance_segmentation
+config/data/test_collation/voxel_size:
+  desc: null
+  value: 0.02
+config/data/test_dataloader/_target_:
+  desc: null
+  value: torch.utils.data.DataLoader
+config/data/test_dataloader/batch_size:
+  desc: null
+  value: 1
+config/data/test_dataloader/num_workers:
+  desc: null
+  value: 4
+config/data/test_dataloader/pin_memory:
+  desc: null
+  value: false
+config/data/test_dataloader/shuffle:
+  desc: null
+  value: false
+config/data/test_dataset/_target_:
+  desc: null
+  value: datasets.semseg.SemanticSegmentationDataset
+config/data/test_dataset/add_colors:
+  desc: null
+  value: true
+config/data/test_dataset/add_instance:
+  desc: null
+  value: true
+config/data/test_dataset/add_normals:
+  desc: null
+  value: false
+config/data/test_dataset/add_raw_coordinates:
+  desc: null
+  value: true
+config/data/test_dataset/color_mean_std:
+  desc: null
+  value: data/processed/scannet/color_mean_std.yaml
+config/data/test_dataset/crop_length:
+  desc: null
+  value: 6.0
+config/data/test_dataset/crop_min_size:
+  desc: null
+  value: 20000
+config/data/test_dataset/cropping:
+  desc: null
+  value: false
+config/data/test_dataset/data_dir:
+  desc: null
+  value: data/processed/scannet
+config/data/test_dataset/data_percent:
+  desc: null
+  value: 1.0
+config/data/test_dataset/dataset_name:
+  desc: null
+  value: scannet
+config/data/test_dataset/filter_out_classes:
+  desc: null
+  value:
+  - 0
+  - 1
+config/data/test_dataset/ignore_label:
+  desc: null
+  value: 255
+config/data/test_dataset/image_augmentations_path:
+  desc: null
+  value: None
+config/data/test_dataset/is_tta:
+  desc: null
+  value: false
+config/data/test_dataset/label_db_filepath:
+  desc: null
+  value: data/processed/scannet/label_database.yaml
+config/data/test_dataset/label_offset:
+  desc: null
+  value: 2
+config/data/test_dataset/mode:
+  desc: null
+  value: validation
+config/data/test_dataset/num_labels:
+  desc: null
+  value: 20
+config/data/test_dataset/volume_augmentations_path:
+  desc: null
+  value: None
+config/data/test_mode:
+  desc: null
+  value: validation
+config/data/train_collation/_target_:
+  desc: null
+  value: datasets.utils.VoxelizeCollate
+config/data/train_collation/batch_instance:
+  desc: null
+  value: false
+config/data/train_collation/filter_out_classes:
+  desc: null
+  value:
+  - 0
+  - 1
+config/data/train_collation/ignore_class_threshold:
+  desc: null
+  value: 100
+config/data/train_collation/ignore_label:
+  desc: null
+  value: 255
+config/data/train_collation/label_offset:
+  desc: null
+  value: 2
+config/data/train_collation/mode:
+  desc: null
+  value: train
+config/data/train_collation/num_queries:
+  desc: null
+  value: 150
+config/data/train_collation/probing:
+  desc: null
+  value: false
+config/data/train_collation/small_crops:
+  desc: null
+  value: false
+config/data/train_collation/task:
+  desc: null
+  value: instance_segmentation
+config/data/train_collation/very_small_crops:
+  desc: null
+  value: false
+config/data/train_collation/voxel_size:
+  desc: null
+  value: 0.02
+config/data/train_dataloader/_target_:
+  desc: null
+  value: torch.utils.data.DataLoader
+config/data/train_dataloader/batch_size:
+  desc: null
+  value: 3
+config/data/train_dataloader/num_workers:
+  desc: null
+  value: 4
+config/data/train_dataloader/pin_memory:
+  desc: null
+  value: false
+config/data/train_dataloader/shuffle:
+  desc: null
+  value: true
+config/data/train_dataset/_target_:
+  desc: null
+  value: datasets.semseg.SemanticSegmentationDataset
+config/data/train_dataset/add_colors:
+  desc: null
+  value: true
+config/data/train_dataset/add_instance:
+  desc: null
+  value: true
+config/data/train_dataset/add_normals:
+  desc: null
+  value: false
+config/data/train_dataset/add_raw_coordinates:
+  desc: null
+  value: true
+config/data/train_dataset/add_unlabeled_pc:
+  desc: null
+  value: false
+config/data/train_dataset/color_mean_std:
+  desc: null
+  value: data/processed/scannet/color_mean_std.yaml
+config/data/train_dataset/crop_length:
+  desc: null
+  value: 6.0
+config/data/train_dataset/crop_min_size:
+  desc: null
+  value: 20000
+config/data/train_dataset/cropping:
+  desc: null
+  value: false
+config/data/train_dataset/cropping_args/aspect:
+  desc: null
+  value: 0.8
+config/data/train_dataset/cropping_args/max_crop:
+  desc: null
+  value: 1.0
+config/data/train_dataset/cropping_args/min_crop:
+  desc: null
+  value: 0.5
+config/data/train_dataset/cropping_args/min_points:
+  desc: null
+  value: 30000
+config/data/train_dataset/data_dir:
+  desc: null
+  value: data/processed/scannet
+config/data/train_dataset/data_percent:
+  desc: null
+  value: 1.0
+config/data/train_dataset/dataset_name:
+  desc: null
+  value: scannet
+config/data/train_dataset/filter_out_classes:
+  desc: null
+  value:
+  - 0
+  - 1
+config/data/train_dataset/flip_in_center:
+  desc: null
+  value: false
+config/data/train_dataset/ignore_label:
+  desc: null
+  value: 255
+config/data/train_dataset/image_augmentations_path:
+  desc: null
+  value: conf/augmentation/albumentations_aug.yaml
+config/data/train_dataset/instance_oversampling:
+  desc: null
+  value: 0.0
+config/data/train_dataset/is_tta:
+  desc: null
+  value: false
+config/data/train_dataset/label_db_filepath:
+  desc: null
+  value: data/processed/scannet/label_database.yaml
+config/data/train_dataset/label_offset:
+  desc: null
+  value: 2
+config/data/train_dataset/max_cut_region:
+  desc: null
+  value: 0
+config/data/train_dataset/mode:
+  desc: null
+  value: train
+config/data/train_dataset/noise_rate:
+  desc: null
+  value: 0
+config/data/train_dataset/num_labels:
+  desc: null
+  value: 20
+config/data/train_dataset/place_around_existing:
+  desc: null
+  value: false
+config/data/train_dataset/point_per_cut:
+  desc: null
+  value: 0
+config/data/train_dataset/resample_points:
+  desc: null
+  value: 0
+config/data/train_dataset/volume_augmentations_path:
+  desc: null
+  value: conf/augmentation/volumentations_aug.yaml
+config/data/train_mode:
+  desc: null
+  value: train
+config/data/validation_collation/_target_:
+  desc: null
+  value: datasets.utils.VoxelizeCollate
+config/data/validation_collation/batch_instance:
+  desc: null
+  value: false
+config/data/validation_collation/filter_out_classes:
+  desc: null
+  value:
+  - 0
+  - 1
+config/data/validation_collation/ignore_class_threshold:
+  desc: null
+  value: 100
+config/data/validation_collation/ignore_label:
+  desc: null
+  value: 255
+config/data/validation_collation/label_offset:
+  desc: null
+  value: 2
+config/data/validation_collation/mode:
+  desc: null
+  value: validation
+config/data/validation_collation/num_queries:
+  desc: null
+  value: 150
+config/data/validation_collation/probing:
+  desc: null
+  value: false
+config/data/validation_collation/task:
+  desc: null
+  value: instance_segmentation
+config/data/validation_collation/voxel_size:
+  desc: null
+  value: 0.02
+config/data/validation_dataloader/_target_:
+  desc: null
+  value: torch.utils.data.DataLoader
+config/data/validation_dataloader/batch_size:
+  desc: null
+  value: 1
+config/data/validation_dataloader/num_workers:
+  desc: null
+  value: 4
+config/data/validation_dataloader/pin_memory:
+  desc: null
+  value: false
+config/data/validation_dataloader/shuffle:
+  desc: null
+  value: false
+config/data/validation_dataset/_target_:
+  desc: null
+  value: datasets.semseg.SemanticSegmentationDataset
+config/data/validation_dataset/add_colors:
+  desc: null
+  value: true
+config/data/validation_dataset/add_instance:
+  desc: null
+  value: true
+config/data/validation_dataset/add_normals:
+  desc: null
+  value: false
+config/data/validation_dataset/add_raw_coordinates:
+  desc: null
+  value: true
+config/data/validation_dataset/color_mean_std:
+  desc: null
+  value: data/processed/scannet/color_mean_std.yaml
+config/data/validation_dataset/crop_length:
+  desc: null
+  value: 6.0
+config/data/validation_dataset/crop_min_size:
+  desc: null
+  value: 20000
+config/data/validation_dataset/cropping:
+  desc: null
+  value: false
+config/data/validation_dataset/data_dir:
+  desc: null
+  value: data/processed/scannet
+config/data/validation_dataset/data_percent:
+  desc: null
+  value: 1.0
+config/data/validation_dataset/dataset_name:
+  desc: null
+  value: scannet
+config/data/validation_dataset/filter_out_classes:
+  desc: null
+  value:
+  - 0
+  - 1
+config/data/validation_dataset/ignore_label:
+  desc: null
+  value: 255
+config/data/validation_dataset/image_augmentations_path:
+  desc: null
+  value: None
+config/data/validation_dataset/is_tta:
+  desc: null
+  value: false
+config/data/validation_dataset/label_db_filepath:
+  desc: null
+  value: data/processed/scannet/label_database.yaml
+config/data/validation_dataset/label_offset:
+  desc: null
+  value: 2
+config/data/validation_dataset/mode:
+  desc: null
+  value: validation
+config/data/validation_dataset/num_labels:
+  desc: null
+  value: 20
+config/data/validation_dataset/volume_augmentations_path:
+  desc: null
+  value: None
+config/data/validation_mode:
+  desc: null
+  value: validation
+config/data/voxel_size:
+  desc: null
+  value: 0.02
+config/general/add_instance:
+  desc: null
+  value: true
+config/general/area:
+  desc: null
+  value: 5
+config/general/backbone_checkpoint:
+  desc: null
+  value: None
+config/general/checkpoint:
+  desc: null
+  value: None
+config/general/dbscan_eps:
+  desc: null
+  value: 0.95
+config/general/dbscan_min_points:
+  desc: null
+  value: 1
+config/general/decoder_id:
+  desc: null
+  value: -1
+config/general/eval_inner_core:
+  desc: null
+  value: -1
+config/general/eval_on_segments:
+  desc: null
+  value: true
+config/general/experiment_name:
+  desc: null
+  value: Mask3DINO
+config/general/export:
+  desc: null
+  value: false
+config/general/export_threshold:
+  desc: null
+  value: 0.0001
+config/general/filter_out_instances:
+  desc: null
+  value: false
+config/general/freeze_backbone:
+  desc: null
+  value: false
+config/general/gpus:
+  desc: null
+  value: 1
+config/general/ignore_class_threshold:
+  desc: null
+  value: 100
+config/general/ignore_mask_idx:
+  desc: null
+  value: []
+config/general/iou_threshold:
+  desc: null
+  value: 1.0
+config/general/linear_probing_backbone:
+  desc: null
+  value: false
+config/general/max_batch_size:
+  desc: null
+  value: 99999999
+config/general/num_targets:
+  desc: null
+  value: 19
+config/general/on_crops:
+  desc: null
+  value: false
+config/general/project_name:
+  desc: null
+  value: scannet
+config/general/reps_per_epoch:
+  desc: null
+  value: 1
+config/general/save_dir:
+  desc: null
+  value: saved/Mask3DINO
+config/general/save_visualizations:
+  desc: null
+  value: false
+config/general/scores_threshold:
+  desc: null
+  value: 0.0
+config/general/seed:
+  desc: null
+  value: None
+config/general/task:
+  desc: null
+  value: instance_segmentation
+config/general/topk_per_image:
+  desc: null
+  value: 100
+config/general/train_mode:
+  desc: null
+  value: true
+config/general/train_on_segments:
+  desc: null
+  value: true
+config/general/use_dbscan:
+  desc: null
+  value: false
+config/general/visualization_point_size:
+  desc: null
+  value: 20
+config/general/workspace:
+  desc: null
+  value: jonasschult
+config/logging:
+  desc: null
+  value:
+  - '{''_target_'': ''pytorch_lightning.loggers.WandbLogger'', ''project'': ''${general.project_name}'',
+    ''name'': ''${general.experiment_name}'', ''save_dir'': ''${general.save_dir}'',
+    ''entity'': ''schult'', ''resume'': ''allow'', ''id'': ''${general.experiment_name}''}'
+config/loss/_target_:
+  desc: null
+  value: models.criterion.SetCriterion
+config/loss/class_weights:
+  desc: null
+  value: -1
+config/loss/eos_coef:
+  desc: null
+  value: 0.1
+config/loss/importance_sample_ratio:
+  desc: null
+  value: 0.75
+config/loss/losses:
+  desc: null
+  value:
+  - labels
+  - masks
+config/loss/num_classes:
+  desc: null
+  value: 19
+config/loss/num_points:
+  desc: null
+  value: -1
+config/loss/oversample_ratio:
+  desc: null
+  value: 3.0
+config/matcher/_target_:
+  desc: null
+  value: models.matcher.HungarianMatcher
+config/matcher/cost_class:
+  desc: null
+  value: 2.0
+config/matcher/cost_dice:
+  desc: null
+  value: 2.0
+config/matcher/cost_mask:
+  desc: null
+  value: 5.0
+config/matcher/num_points:
+  desc: null
+  value: -1
+config/metrics/_target_:
+  desc: null
+  value: models.metrics.ConfusionMatrix
+config/metrics/ignore_label:
+  desc: null
+  value: 255
+config/metrics/num_classes:
+  desc: null
+  value: 20
+config/model/_target_:
+  desc: null
+  value: models.Mask3D
+config/model/anchor_dim:
+  desc: null
+  value: 6
+config/model/config/backbone/_target_:
+  desc: null
+  value: models.Res16UNet34C
+config/model/config/backbone/config/bn_momentum:
+  desc: null
+  value: 0.02
+config/model/config/backbone/config/conv1_kernel_size:
+  desc: null
+  value: 5
+config/model/config/backbone/config/dialations:
+  desc: null
+  value:
+  - 1
+  - 1
+  - 1
+  - 1
+config/model/config/backbone/in_channels:
+  desc: null
+  value: 3
+config/model/config/backbone/out_channels:
+  desc: null
+  value: 20
+config/model/config/backbone/out_fpn:
+  desc: null
+  value: true
+config/model/dim_feedforward:
+  desc: null
+  value: 1024
+config/model/dropout:
+  desc: null
+  value: 0.0
+config/model/gauss_scale:
+  desc: null
+  value: 1.0
+config/model/hidden_dim:
+  desc: null
+  value: 128
+config/model/hlevels:
+  desc: null
+  value:
+  - 0
+  - 1
+  - 2
+  - 3
+  - 4
+config/model/max_sample_size:
+  desc: null
+  value: false
+config/model/non_parametric_queries:
+  desc: null
+  value: false
+config/model/normalize_pos_enc:
+  desc: null
+  value: true
+config/model/num_classes:
+  desc: null
+  value: 19
+config/model/num_decoders:
+  desc: null
+  value: 3
+config/model/num_heads:
+  desc: null
+  value: 8
+config/model/num_queries:
+  desc: null
+  value: 150
+config/model/positional_encoding_type:
+  desc: null
+  value: fourier
+config/model/pre_norm:
+  desc: null
+  value: false
+config/model/query_selection:
+  desc: null
+  value: true
+config/model/random_normal:
+  desc: null
+  value: false
+config/model/random_queries:
+  desc: null
+  value: false
+config/model/random_query_both:
+  desc: null
+  value: false
+config/model/sample_sizes:
+  desc: null
+  value:
+  - 200
+  - 800
+  - 3200
+  - 12800
+  - 51200
+config/model/scatter_type:
+  desc: null
+  value: mean
+config/model/shared_decoder:
+  desc: null
+  value: true
+config/model/train_on_segments:
+  desc: null
+  value: true
+config/model/use_level_embed:
+  desc: null
+  value: false
+config/model/use_np_features:
+  desc: null
+  value: false
+config/model/voxel_size:
+  desc: null
+  value: 0.02
+config/optimizer/_target_:
+  desc: null
+  value: torch.optim.AdamW
+config/optimizer/lr:
+  desc: null
+  value: 0.0001
+config/scheduler/pytorch_lightning_params/interval:
+  desc: null
+  value: step
+config/scheduler/scheduler/_target_:
+  desc: null
+  value: torch.optim.lr_scheduler.OneCycleLR
+config/scheduler/scheduler/epochs:
+  desc: null
+  value: 601
+config/scheduler/scheduler/max_lr:
+  desc: null
+  value: 0.0001
+config/scheduler/scheduler/steps_per_epoch:
+  desc: null
+  value: -1
+config/trainer/check_val_every_n_epoch:
+  desc: null
+  value: 50
+config/trainer/deterministic:
+  desc: null
+  value: false
+config/trainer/max_epochs:
+  desc: null
+  value: 601
+config/trainer/min_epochs:
+  desc: null
+  value: 1
+config/trainer/num_sanity_val_steps:
+  desc: null
+  value: 2
+config/trainer/resume_from_checkpoint:
+  desc: null
+  value: None
+data_add_colors:
+  desc: null
+  value: true
+data_add_instance:
+  desc: null
+  value: true
+data_add_normals:
+  desc: null
+  value: false
+data_add_raw_coordinates:
+  desc: null
+  value: true
+data_batch_size:
+  desc: null
+  value: 3
+data_cache_data:
+  desc: null
+  value: false
+data_crop_length:
+  desc: null
+  value: 6.0
+data_crop_min_size:
+  desc: null
+  value: 20000
+data_cropping:
+  desc: null
+  value: false
+data_cropping_args_aspect:
+  desc: null
+  value: 0.8
+data_cropping_args_max_crop:
+  desc: null
+  value: 1.0
+data_cropping_args_min_crop:
+  desc: null
+  value: 0.5
+data_cropping_args_min_points:
+  desc: null
+  value: 30000
+data_cropping_v1:
+  desc: null
+  value: true
+data_ignore_label:
+  desc: null
+  value: 255
+data_in_channels:
+  desc: null
+  value: 3
+data_num_labels:
+  desc: null
+  value: 20
+data_num_workers:
+  desc: null
+  value: 4
+data_pin_memory:
+  desc: null
+  value: false
+data_reps_per_epoch:
+  desc: null
+  value: 1
+data_task:
+  desc: null
+  value: instance_segmentation
+data_test_batch_size:
+  desc: null
+  value: 1
+data_test_collation__target_:
+  desc: null
+  value: datasets.utils.VoxelizeCollate
+data_test_collation_batch_instance:
+  desc: null
+  value: false
+data_test_collation_filter_out_classes:
+  desc: null
+  value:
+  - 0
+  - 1
+data_test_collation_ignore_class_threshold:
+  desc: null
+  value: 100
+data_test_collation_ignore_label:
+  desc: null
+  value: 255
+data_test_collation_label_offset:
+  desc: null
+  value: 2
+data_test_collation_mode:
+  desc: null
+  value: validation
+data_test_collation_num_queries:
+  desc: null
+  value: 150
+data_test_collation_probing:
+  desc: null
+  value: false
+data_test_collation_task:
+  desc: null
+  value: instance_segmentation
+data_test_collation_voxel_size:
+  desc: null
+  value: 0.02
+data_test_dataloader__target_:
+  desc: null
+  value: torch.utils.data.DataLoader
+data_test_dataloader_batch_size:
+  desc: null
+  value: 1
+data_test_dataloader_num_workers:
+  desc: null
+  value: 4
+data_test_dataloader_pin_memory:
+  desc: null
+  value: false
+data_test_dataloader_shuffle:
+  desc: null
+  value: false
+data_test_dataset__target_:
+  desc: null
+  value: datasets.semseg.SemanticSegmentationDataset
+data_test_dataset_add_colors:
+  desc: null
+  value: true
+data_test_dataset_add_instance:
+  desc: null
+  value: true
+data_test_dataset_add_normals:
+  desc: null
+  value: false
+data_test_dataset_add_raw_coordinates:
+  desc: null
+  value: true
+data_test_dataset_color_mean_std:
+  desc: null
+  value: data/processed/scannet/color_mean_std.yaml
+data_test_dataset_crop_length:
+  desc: null
+  value: 6.0
+data_test_dataset_crop_min_size:
+  desc: null
+  value: 20000
+data_test_dataset_cropping:
+  desc: null
+  value: false
+data_test_dataset_data_dir:
+  desc: null
+  value: data/processed/scannet
+data_test_dataset_data_percent:
+  desc: null
+  value: 1.0
+data_test_dataset_dataset_name:
+  desc: null
+  value: scannet
+data_test_dataset_filter_out_classes:
+  desc: null
+  value:
+  - 0
+  - 1
+data_test_dataset_ignore_label:
+  desc: null
+  value: 255
+data_test_dataset_image_augmentations_path:
+  desc: null
+  value: None
+data_test_dataset_is_tta:
+  desc: null
+  value: false
+data_test_dataset_label_db_filepath:
+  desc: null
+  value: data/processed/scannet/label_database.yaml
+data_test_dataset_label_offset:
+  desc: null
+  value: 2
+data_test_dataset_mode:
+  desc: null
+  value: validation
+data_test_dataset_num_labels:
+  desc: null
+  value: 20
+data_test_dataset_volume_augmentations_path:
+  desc: null
+  value: None
+data_test_mode:
+  desc: null
+  value: validation
+data_train_collation__target_:
+  desc: null
+  value: datasets.utils.VoxelizeCollate
+data_train_collation_batch_instance:
+  desc: null
+  value: false
+data_train_collation_filter_out_classes:
+  desc: null
+  value:
+  - 0
+  - 1
+data_train_collation_ignore_class_threshold:
+  desc: null
+  value: 100
+data_train_collation_ignore_label:
+  desc: null
+  value: 255
+data_train_collation_label_offset:
+  desc: null
+  value: 2
+data_train_collation_mode:
+  desc: null
+  value: train
+data_train_collation_num_queries:
+  desc: null
+  value: 150
+data_train_collation_probing:
+  desc: null
+  value: false
+data_train_collation_small_crops:
+  desc: null
+  value: false
+data_train_collation_task:
+  desc: null
+  value: instance_segmentation
+data_train_collation_very_small_crops:
+  desc: null
+  value: false
+data_train_collation_voxel_size:
+  desc: null
+  value: 0.02
+data_train_dataloader__target_:
+  desc: null
+  value: torch.utils.data.DataLoader
+data_train_dataloader_batch_size:
+  desc: null
+  value: 3
+data_train_dataloader_num_workers:
+  desc: null
+  value: 4
+data_train_dataloader_pin_memory:
+  desc: null
+  value: false
+data_train_dataloader_shuffle:
+  desc: null
+  value: true
+data_train_dataset__target_:
+  desc: null
+  value: datasets.semseg.SemanticSegmentationDataset
+data_train_dataset_add_colors:
+  desc: null
+  value: true
+data_train_dataset_add_instance:
+  desc: null
+  value: true
+data_train_dataset_add_normals:
+  desc: null
+  value: false
+data_train_dataset_add_raw_coordinates:
+  desc: null
+  value: true
+data_train_dataset_add_unlabeled_pc:
+  desc: null
+  value: false
+data_train_dataset_color_mean_std:
+  desc: null
+  value: data/processed/scannet/color_mean_std.yaml
+data_train_dataset_crop_length:
+  desc: null
+  value: 6.0
+data_train_dataset_crop_min_size:
+  desc: null
+  value: 20000
+data_train_dataset_cropping:
+  desc: null
+  value: false
+data_train_dataset_cropping_args_aspect:
+  desc: null
+  value: 0.8
+data_train_dataset_cropping_args_max_crop:
+  desc: null
+  value: 1.0
+data_train_dataset_cropping_args_min_crop:
+  desc: null
+  value: 0.5
+data_train_dataset_cropping_args_min_points:
+  desc: null
+  value: 30000
+data_train_dataset_data_dir:
+  desc: null
+  value: data/processed/scannet
+data_train_dataset_data_percent:
+  desc: null
+  value: 1.0
+data_train_dataset_dataset_name:
+  desc: null
+  value: scannet
+data_train_dataset_filter_out_classes:
+  desc: null
+  value:
+  - 0
+  - 1
+data_train_dataset_flip_in_center:
+  desc: null
+  value: false
+data_train_dataset_ignore_label:
+  desc: null
+  value: 255
+data_train_dataset_image_augmentations_path:
+  desc: null
+  value: conf/augmentation/albumentations_aug.yaml
+data_train_dataset_instance_oversampling:
+  desc: null
+  value: 0.0
+data_train_dataset_is_tta:
+  desc: null
+  value: false
+data_train_dataset_label_db_filepath:
+  desc: null
+  value: data/processed/scannet/label_database.yaml
+data_train_dataset_label_offset:
+  desc: null
+  value: 2
+data_train_dataset_max_cut_region:
+  desc: null
+  value: 0
+data_train_dataset_mode:
+  desc: null
+  value: train
+data_train_dataset_noise_rate:
+  desc: null
+  value: 0
+data_train_dataset_num_labels:
+  desc: null
+  value: 20
+data_train_dataset_place_around_existing:
+  desc: null
+  value: false
+data_train_dataset_point_per_cut:
+  desc: null
+  value: 0
+data_train_dataset_resample_points:
+  desc: null
+  value: 0
+data_train_dataset_volume_augmentations_path:
+  desc: null
+  value: conf/augmentation/volumentations_aug.yaml
+data_train_mode:
+  desc: null
+  value: train
+data_validation_collation__target_:
+  desc: null
+  value: datasets.utils.VoxelizeCollate
+data_validation_collation_batch_instance:
+  desc: null
+  value: false
+data_validation_collation_filter_out_classes:
+  desc: null
+  value:
+  - 0
+  - 1
+data_validation_collation_ignore_class_threshold:
+  desc: null
+  value: 100
+data_validation_collation_ignore_label:
+  desc: null
+  value: 255
+data_validation_collation_label_offset:
+  desc: null
+  value: 2
+data_validation_collation_mode:
+  desc: null
+  value: validation
+data_validation_collation_num_queries:
+  desc: null
+  value: 150
+data_validation_collation_probing:
+  desc: null
+  value: false
+data_validation_collation_task:
+  desc: null
+  value: instance_segmentation
+data_validation_collation_voxel_size:
+  desc: null
+  value: 0.02
+data_validation_dataloader__target_:
+  desc: null
+  value: torch.utils.data.DataLoader
+data_validation_dataloader_batch_size:
+  desc: null
+  value: 1
+data_validation_dataloader_num_workers:
+  desc: null
+  value: 4
+data_validation_dataloader_pin_memory:
+  desc: null
+  value: false
+data_validation_dataloader_shuffle:
+  desc: null
+  value: false
+data_validation_dataset__target_:
+  desc: null
+  value: datasets.semseg.SemanticSegmentationDataset
+data_validation_dataset_add_colors:
+  desc: null
+  value: true
+data_validation_dataset_add_instance:
+  desc: null
+  value: true
+data_validation_dataset_add_normals:
+  desc: null
+  value: false
+data_validation_dataset_add_raw_coordinates:
+  desc: null
+  value: true
+data_validation_dataset_color_mean_std:
+  desc: null
+  value: data/processed/scannet/color_mean_std.yaml
+data_validation_dataset_crop_length:
+  desc: null
+  value: 6.0
+data_validation_dataset_crop_min_size:
+  desc: null
+  value: 20000
+data_validation_dataset_cropping:
+  desc: null
+  value: false
+data_validation_dataset_data_dir:
+  desc: null
+  value: data/processed/scannet
+data_validation_dataset_data_percent:
+  desc: null
+  value: 1.0
+data_validation_dataset_dataset_name:
+  desc: null
+  value: scannet
+data_validation_dataset_filter_out_classes:
+  desc: null
+  value:
+  - 0
+  - 1
+data_validation_dataset_ignore_label:
+  desc: null
+  value: 255
+data_validation_dataset_image_augmentations_path:
+  desc: null
+  value: None
+data_validation_dataset_is_tta:
+  desc: null
+  value: false
+data_validation_dataset_label_db_filepath:
+  desc: null
+  value: data/processed/scannet/label_database.yaml
+data_validation_dataset_label_offset:
+  desc: null
+  value: 2
+data_validation_dataset_mode:
+  desc: null
+  value: validation
+data_validation_dataset_num_labels:
+  desc: null
+  value: 20
+data_validation_dataset_volume_augmentations_path:
+  desc: null
+  value: None
+data_validation_mode:
+  desc: null
+  value: validation
+data_voxel_size:
+  desc: null
+  value: 0.02
+general_add_instance:
+  desc: null
+  value: true
+general_area:
+  desc: null
+  value: 5
+general_backbone_checkpoint:
+  desc: null
+  value: None
+general_checkpoint:
+  desc: null
+  value: None
+general_dbscan_eps:
+  desc: null
+  value: 0.95
+general_dbscan_min_points:
+  desc: null
+  value: 1
+general_decoder_id:
+  desc: null
+  value: -1
+general_eval_inner_core:
+  desc: null
+  value: -1
+general_eval_on_segments:
+  desc: null
+  value: true
+general_experiment_name:
+  desc: null
+  value: Mask3DINO
+general_export:
+  desc: null
+  value: false
+general_export_threshold:
+  desc: null
+  value: 0.0001
+general_filter_out_instances:
+  desc: null
+  value: false
+general_freeze_backbone:
+  desc: null
+  value: false
+general_gpus:
+  desc: null
+  value: 1
+general_ignore_class_threshold:
+  desc: null
+  value: 100
+general_ignore_mask_idx:
+  desc: null
+  value: []
+general_iou_threshold:
+  desc: null
+  value: 1.0
+general_linear_probing_backbone:
+  desc: null
+  value: false
+general_max_batch_size:
+  desc: null
+  value: 99999999
+general_num_targets:
+  desc: null
+  value: 19
+general_on_crops:
+  desc: null
+  value: false
+general_project_name:
+  desc: null
+  value: scannet
+general_reps_per_epoch:
+  desc: null
+  value: 1
+general_save_dir:
+  desc: null
+  value: saved/Mask3DINO
+general_save_visualizations:
+  desc: null
+  value: false
+general_scores_threshold:
+  desc: null
+  value: 0.0
+general_seed:
+  desc: null
+  value: None
+general_task:
+  desc: null
+  value: instance_segmentation
+general_topk_per_image:
+  desc: null
+  value: 100
+general_train_mode:
+  desc: null
+  value: true
+general_train_on_segments:
+  desc: null
+  value: true
+general_use_dbscan:
+  desc: null
+  value: false
+general_visualization_point_size:
+  desc: null
+  value: 20
+general_workspace:
+  desc: null
+  value: jonasschult
+logging:
+  desc: null
+  value:
+  - _target_: pytorch_lightning.loggers.WandbLogger
+    entity: schult
+    id: Mask3DINO
+    name: Mask3DINO
+    project: scannet
+    resume: allow
+    save_dir: saved/Mask3DINO
+loss__target_:
+  desc: null
+  value: models.criterion.SetCriterion
+loss_class_weights:
+  desc: null
+  value: -1
+loss_eos_coef:
+  desc: null
+  value: 0.1
+loss_importance_sample_ratio:
+  desc: null
+  value: 0.75
+loss_losses:
+  desc: null
+  value:
+  - labels
+  - masks
+loss_num_classes:
+  desc: null
+  value: 19
+loss_num_points:
+  desc: null
+  value: -1
+loss_oversample_ratio:
+  desc: null
+  value: 3.0
+matcher__target_:
+  desc: null
+  value: models.matcher.HungarianMatcher
+matcher_cost_class:
+  desc: null
+  value: 2.0
+matcher_cost_dice:
+  desc: null
+  value: 2.0
+matcher_cost_mask:
+  desc: null
+  value: 5.0
+matcher_num_points:
+  desc: null
+  value: -1
+metrics__target_:
+  desc: null
+  value: models.metrics.ConfusionMatrix
+metrics_ignore_label:
+  desc: null
+  value: 255
+metrics_num_classes:
+  desc: null
+  value: 20
+model__target_:
+  desc: null
+  value: models.Mask3D
+model_anchor_dim:
+  desc: null
+  value: 6
+model_config_backbone__target_:
+  desc: null
+  value: models.Res16UNet34C
+model_config_backbone_config_bn_momentum:
+  desc: null
+  value: 0.02
+model_config_backbone_config_conv1_kernel_size:
+  desc: null
+  value: 5
+model_config_backbone_config_dialations:
+  desc: null
+  value:
+  - 1
+  - 1
+  - 1
+  - 1
+model_config_backbone_in_channels:
+  desc: null
+  value: 3
+model_config_backbone_out_channels:
+  desc: null
+  value: 20
+model_config_backbone_out_fpn:
+  desc: null
+  value: true
+model_dim_feedforward:
+  desc: null
+  value: 1024
+model_dropout:
+  desc: null
+  value: 0.0
+model_gauss_scale:
+  desc: null
+  value: 1.0
+model_hidden_dim:
+  desc: null
+  value: 128
+model_hlevels:
+  desc: null
+  value:
+  - 0
+  - 1
+  - 2
+  - 3
+  - 4
+model_max_sample_size:
+  desc: null
+  value: false
+model_non_parametric_queries:
+  desc: null
+  value: false
+model_normalize_pos_enc:
+  desc: null
+  value: true
+model_num_classes:
+  desc: null
+  value: 19
+model_num_decoders:
+  desc: null
+  value: 3
+model_num_heads:
+  desc: null
+  value: 8
+model_num_queries:
+  desc: null
+  value: 150
+model_positional_encoding_type:
+  desc: null
+  value: fourier
+model_pre_norm:
+  desc: null
+  value: false
+model_query_selection:
+  desc: null
+  value: true
+model_random_normal:
+  desc: null
+  value: false
+model_random_queries:
+  desc: null
+  value: false
+model_random_query_both:
+  desc: null
+  value: false
+model_sample_sizes:
+  desc: null
+  value:
+  - 200
+  - 800
+  - 3200
+  - 12800
+  - 51200
+model_scatter_type:
+  desc: null
+  value: mean
+model_shared_decoder:
+  desc: null
+  value: true
+model_train_on_segments:
+  desc: null
+  value: true
+model_use_level_embed:
+  desc: null
+  value: false
+model_use_np_features:
+  desc: null
+  value: false
+model_voxel_size:
+  desc: null
+  value: 0.02
+optimizer__target_:
+  desc: null
+  value: torch.optim.AdamW
+optimizer_lr:
+  desc: null
+  value: 0.0001
+scheduler_pytorch_lightning_params_interval:
+  desc: null
+  value: step
+scheduler_scheduler__target_:
+  desc: null
+  value: torch.optim.lr_scheduler.OneCycleLR
+scheduler_scheduler_epochs:
+  desc: null
+  value: 601
+scheduler_scheduler_max_lr:
+  desc: null
+  value: 0.0001
+scheduler_scheduler_steps_per_epoch:
+  desc: null
+  value: -1
+trainer_check_val_every_n_epoch:
+  desc: null
+  value: 50
+trainer_deterministic:
+  desc: null
+  value: false
+trainer_max_epochs:
+  desc: null
+  value: 601
+trainer_min_epochs:
+  desc: null
+  value: 1
+trainer_num_sanity_val_steps:
+  desc: null
+  value: 2
+trainer_resume_from_checkpoint:
+  desc: null
+  value: None

@@ -1,0 +1,46 @@
+/home/songoh/miniconda3/envs/mask/lib/python3.10/site-packages/MinkowskiEngine/__init__.py:36: UserWarning: The environment variable `OMP_NUM_THREADS` not set. MinkowskiEngine will automatically set `OMP_NUM_THREADS=16`. If you want to set `OMP_NUM_THREADS` manually, please export it on the command line before running a python script. e.g. `export OMP_NUM_THREADS=12; python your_program.py`. It is recommended to set it below 24.
+  warnings.warn(
+/home/songoh/miniconda3/envs/mask/lib/python3.10/site-packages/pytorch_lightning/utilities/seed.py:55: UserWarning: No seed found, seed set to 490096386
+  rank_zero_warn(f"No seed found, seed set to {seed}")
+Global seed set to 490096386
+/home/songoh/miniconda3/envs/mask/lib/python3.10/site-packages/pytorch_lightning/loggers/wandb.py:352: UserWarning: There is a wandb run already in progress and newly created instances of `WandbLogger` will reuse this run. If this is not desired, call `wandb.finish()` before instantiating `WandbLogger`.
+  rank_zero_warn(
+EXPERIMENT ALREADY EXIST
+{'_target_': 'pytorch_lightning.loggers.WandbLogger', 'project': '${general.project_name}', 'name': '${general.experiment_name}', 'save_dir': '${general.save_dir}', 'entity': 'schult', 'resume': 'allow', 'id': '${general.experiment_name}'}
+Traceback (most recent call last):
+  File "/home/songoh/miniconda3/envs/mask/lib/python3.10/site-packages/hydra/_internal/utils.py", line 198, in run_and_report
+    return func()
+  File "/home/songoh/miniconda3/envs/mask/lib/python3.10/site-packages/hydra/_internal/utils.py", line 347, in <lambda>
+    lambda: hydra.run(
+  File "/home/songoh/miniconda3/envs/mask/lib/python3.10/site-packages/hydra/_internal/hydra.py", line 107, in run
+    return run_job(
+  File "/home/songoh/miniconda3/envs/mask/lib/python3.10/site-packages/hydra/core/utils.py", line 128, in run_job
+    ret.return_value = task_function(task_cfg)
+  File "/media/songoh/ssh3/songoh_ws/DAB Mask3D-main/main_instance_segmentation.py", line 123, in main
+    test(cfg)
+  File "/home/songoh/miniconda3/envs/mask/lib/python3.10/site-packages/hydra/main.py", line 27, in decorated_main
+    return task_function(cfg_passthrough)
+  File "/media/songoh/ssh3/songoh_ws/DAB Mask3D-main/main_instance_segmentation.py", line 87, in test
+    cfg, model, loggers = get_parameters(cfg)
+  File "/media/songoh/ssh3/songoh_ws/DAB Mask3D-main/main_instance_segmentation.py", line 57, in get_parameters
+    cfg, model = load_checkpoint_with_missing_or_exsessive_keys(cfg, model)
+  File "/media/songoh/ssh3/songoh_ws/DAB Mask3D-main/utils/utils.py", line 78, in load_checkpoint_with_missing_or_exsessive_keys
+    state_dict = torch.load(cfg.general.checkpoint)["state_dict"]
+  File "/home/songoh/miniconda3/envs/mask/lib/python3.10/site-packages/torch/serialization.py", line 699, in load
+    with _open_file_like(f, 'rb') as opened_file:
+  File "/home/songoh/miniconda3/envs/mask/lib/python3.10/site-packages/torch/serialization.py", line 230, in _open_file_like
+    return _open_file(name_or_buffer, mode)
+  File "/home/songoh/miniconda3/envs/mask/lib/python3.10/site-packages/torch/serialization.py", line 211, in __init__
+    super(_open_file, self).__init__(open(name, mode))
+FileNotFoundError: [Errno 2] No such file or directory: 'saved/DAB_Mask_Q150/epoch=449-val_mean_ap_50=0.708.ckpt'
+During handling of the above exception, another exception occurred:
+Traceback (most recent call last):
+  File "/media/songoh/ssh3/songoh_ws/DAB Mask3D-main/main_instance_segmentation.py", line 128, in <module>
+    main()
+  File "/home/songoh/miniconda3/envs/mask/lib/python3.10/site-packages/hydra/main.py", line 32, in decorated_main
+    _run_hydra(
+  File "/home/songoh/miniconda3/envs/mask/lib/python3.10/site-packages/hydra/_internal/utils.py", line 346, in _run_hydra
+    run_and_report(
+  File "/home/songoh/miniconda3/envs/mask/lib/python3.10/site-packages/hydra/_internal/utils.py", line 267, in run_and_report
+    print_exception(etype=None, value=ex, tb=final_tb)  # type: ignore
+TypeError: print_exception() got an unexpected keyword argument 'etype'

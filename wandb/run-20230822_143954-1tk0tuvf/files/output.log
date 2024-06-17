@@ -1,0 +1,40 @@
+Traceback (most recent call last):
+  File "/media/songoh/ssh3/songoh_ws/MaskDNtoBBox_GPU0/main_instance_segmentation.py", line 12, in <module>
+    from trainer.trainer import InstanceSegmentation, RegularCheckpointing
+  File "/media/songoh/ssh3/songoh_ws/MaskDNtoBBox_GPU0/trainer/trainer.py", line 9, in <module>
+    from torch_scatter import scatter_mean
+  File "/home/songoh/miniconda3/envs/mask/lib/python3.10/site-packages/torch_scatter/__init__.py", line 5, in <module>
+    import torch
+  File "<frozen importlib._bootstrap>", line 1027, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 1006, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 672, in _load_unlocked
+  File "<frozen importlib._bootstrap>", line 632, in _load_backward_compatible
+  File "/home/songoh/miniconda3/envs/mask/lib/python3.10/site-packages/wandb/sdk/lib/import_hooks.py", line 195, in load_module
+    module = self.loader.load_module(fullname)
+  File "/home/songoh/miniconda3/envs/mask/lib/python3.10/site-packages/torch/__init__.py", line 811, in <module>
+    from .functional import *  # noqa: F403
+  File "/home/songoh/miniconda3/envs/mask/lib/python3.10/site-packages/torch/functional.py", line 7, in <module>
+    import torch.nn.functional as F
+  File "/home/songoh/miniconda3/envs/mask/lib/python3.10/site-packages/torch/nn/__init__.py", line 1, in <module>
+    from .modules import *  # noqa: F403
+  File "/home/songoh/miniconda3/envs/mask/lib/python3.10/site-packages/torch/nn/modules/__init__.py", line 27, in <module>
+    from .rnn import RNNBase, RNN, LSTM, GRU, \
+  File "/home/songoh/miniconda3/envs/mask/lib/python3.10/site-packages/torch/nn/modules/rnn.py", line 787, in <module>
+    class GRU(RNNBase):
+  File "/home/songoh/miniconda3/envs/mask/lib/python3.10/site-packages/torch/nn/modules/rnn.py", line 904, in GRU
+    def forward(self, input: Tensor, hx: Optional[Tensor] = None) -> Tuple[Tensor, Tensor]:  # noqa: F811
+  File "/home/songoh/miniconda3/envs/mask/lib/python3.10/site-packages/torch/_jit_internal.py", line 815, in _overload_method
+    _check_overload_body(func)
+  File "/home/songoh/miniconda3/envs/mask/lib/python3.10/site-packages/torch/_jit_internal.py", line 747, in _check_overload_body
+    parsed_def = parse_def(func)
+  File "/home/songoh/miniconda3/envs/mask/lib/python3.10/site-packages/torch/_sources.py", line 96, in parse_def
+    sourcelines, file_lineno, filename = get_source_lines_and_file(fn, ErrorReport.call_stack())
+  File "/home/songoh/miniconda3/envs/mask/lib/python3.10/site-packages/torch/_sources.py", line 21, in get_source_lines_and_file
+    sourcelines, file_lineno = inspect.getsourcelines(obj)
+  File "/home/songoh/miniconda3/envs/mask/lib/python3.10/inspect.py", line 1139, in getsourcelines
+    return getblock(lines[lnum:]), lnum + 1
+  File "/home/songoh/miniconda3/envs/mask/lib/python3.10/inspect.py", line 1114, in getblock
+    for _token in tokens:
+  File "/home/songoh/miniconda3/envs/mask/lib/python3.10/tokenize.py", line 600, in _tokenize
+    yield TokenInfo(OP, token, spos, epos, line)
+  File "<string>", line 1, in <lambda>

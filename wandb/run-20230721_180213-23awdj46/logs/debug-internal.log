@@ -1,0 +1,436 @@
+2023-07-21 18:02:13,734 INFO    StreamThr :10101 [internal.py:wandb_internal():90] W&B internal server running at pid: 10101, started at: 2023-07-21 18:02:13.734421
+2023-07-21 18:02:13,737 DEBUG   HandlerThread:10101 [handler.py:handle_request():141] handle_request: status
+2023-07-21 18:02:13,739 DEBUG   SenderThread:10101 [sender.py:send_request():316] send_request: status
+2023-07-21 18:02:13,742 INFO    WriterThread:10101 [datastore.py:open_for_write():75] open: /media/songoh/ssh3/songoh_ws/DAB Mask3D-main/wandb/run-20230721_180213-23awdj46/run-23awdj46.wandb
+2023-07-21 18:02:13,742 DEBUG   SenderThread:10101 [sender.py:send():302] send: header
+2023-07-21 18:02:13,742 DEBUG   SenderThread:10101 [sender.py:send():302] send: run
+2023-07-21 18:02:14,767 DEBUG   HandlerThread:10101 [handler.py:handle_request():141] handle_request: check_version
+2023-07-21 18:02:14,776 INFO    SenderThread:10101 [dir_watcher.py:__init__():216] watching files in: /media/songoh/ssh3/songoh_ws/DAB Mask3D-main/wandb/run-20230721_180213-23awdj46/files
+2023-07-21 18:02:14,777 INFO    SenderThread:10101 [sender.py:_start_run_threads():913] run started: 23awdj46 with start time 1689930133.680323
+2023-07-21 18:02:14,777 DEBUG   SenderThread:10101 [sender.py:send():302] send: summary
+2023-07-21 18:02:14,777 INFO    SenderThread:10101 [sender.py:_save_file():1156] saving file wandb-summary.json with policy end
+2023-07-21 18:02:14,778 DEBUG   SenderThread:10101 [sender.py:send_request():316] send_request: check_version
+2023-07-21 18:02:14,858 DEBUG   HandlerThread:10101 [handler.py:handle_request():141] handle_request: run_start
+2023-07-21 18:02:14,871 DEBUG   HandlerThread:10101 [meta.py:__init__():35] meta init
+2023-07-21 18:02:14,871 DEBUG   HandlerThread:10101 [meta.py:__init__():50] meta init done
+2023-07-21 18:02:14,871 DEBUG   HandlerThread:10101 [meta.py:probe():216] probe
+2023-07-21 18:02:14,878 DEBUG   HandlerThread:10101 [git.py:repo():40] git repository is invalid
+2023-07-21 18:02:14,878 DEBUG   HandlerThread:10101 [meta.py:_save_pip():54] save pip
+2023-07-21 18:02:14,879 DEBUG   HandlerThread:10101 [meta.py:_save_pip():68] save pip done
+2023-07-21 18:02:14,879 DEBUG   HandlerThread:10101 [meta.py:_save_conda():75] save conda
+2023-07-21 18:02:15,780 INFO    Thread-12 :10101 [dir_watcher.py:_on_file_created():275] file/dir created: /media/songoh/ssh3/songoh_ws/DAB Mask3D-main/wandb/run-20230721_180213-23awdj46/files/requirements.txt
+2023-07-21 18:02:15,780 INFO    Thread-12 :10101 [dir_watcher.py:_on_file_created():275] file/dir created: /media/songoh/ssh3/songoh_ws/DAB Mask3D-main/wandb/run-20230721_180213-23awdj46/files/conda-environment.yaml
+2023-07-21 18:02:15,780 INFO    Thread-12 :10101 [dir_watcher.py:_on_file_created():275] file/dir created: /media/songoh/ssh3/songoh_ws/DAB Mask3D-main/wandb/run-20230721_180213-23awdj46/files/wandb-summary.json
+2023-07-21 18:02:17,778 INFO    Thread-12 :10101 [dir_watcher.py:_on_file_modified():292] file/dir modified: /media/songoh/ssh3/songoh_ws/DAB Mask3D-main/wandb/run-20230721_180213-23awdj46/files/conda-environment.yaml
+2023-07-21 18:02:17,928 DEBUG   HandlerThread:10101 [meta.py:_save_conda():85] save conda done
+2023-07-21 18:02:17,929 DEBUG   HandlerThread:10101 [meta.py:probe():254] probe done
+2023-07-21 18:02:18,017 DEBUG   SenderThread:10101 [sender.py:send():302] send: files
+2023-07-21 18:02:18,018 INFO    SenderThread:10101 [sender.py:_save_file():1156] saving file wandb-metadata.json with policy now
+2023-07-21 18:02:18,027 DEBUG   HandlerThread:10101 [handler.py:handle_request():141] handle_request: stop_status
+2023-07-21 18:02:18,027 DEBUG   SenderThread:10101 [sender.py:send_request():316] send_request: stop_status
+2023-07-21 18:02:18,266 DEBUG   SenderThread:10101 [sender.py:send():302] send: telemetry
+2023-07-21 18:02:18,266 DEBUG   SenderThread:10101 [sender.py:send():302] send: telemetry
+2023-07-21 18:02:18,669 INFO    Thread-16 :10101 [upload_job.py:push():138] Uploaded file /tmp/tmp1267hdtbwandb/122zp0oc-wandb-metadata.json
+2023-07-21 18:02:18,727 DEBUG   SenderThread:10101 [sender.py:send():302] send: telemetry
+2023-07-21 18:02:18,778 INFO    Thread-12 :10101 [dir_watcher.py:_on_file_created():275] file/dir created: /media/songoh/ssh3/songoh_ws/DAB Mask3D-main/wandb/run-20230721_180213-23awdj46/files/wandb-metadata.json
+2023-07-21 18:02:19,267 DEBUG   SenderThread:10101 [sender.py:send():302] send: telemetry
+2023-07-21 18:02:19,275 DEBUG   SenderThread:10101 [sender.py:send():302] send: telemetry
+2023-07-21 18:02:19,779 INFO    Thread-12 :10101 [dir_watcher.py:_on_file_created():275] file/dir created: /media/songoh/ssh3/songoh_ws/DAB Mask3D-main/wandb/run-20230721_180213-23awdj46/files/output.log
+2023-07-21 18:02:19,950 DEBUG   SenderThread:10101 [sender.py:send():302] send: telemetry
+2023-07-21 18:02:20,425 DEBUG   SenderThread:10101 [sender.py:send():302] send: telemetry
+2023-07-21 18:02:21,004 DEBUG   SenderThread:10101 [sender.py:send():302] send: config
+2023-07-21 18:02:21,780 INFO    Thread-12 :10101 [dir_watcher.py:_on_file_modified():292] file/dir modified: /media/songoh/ssh3/songoh_ws/DAB Mask3D-main/wandb/run-20230721_180213-23awdj46/files/output.log
+2023-07-21 18:02:21,811 DEBUG   SenderThread:10101 [sender.py:send():302] send: telemetry
+2023-07-21 18:02:23,781 INFO    Thread-12 :10101 [dir_watcher.py:_on_file_modified():292] file/dir modified: /media/songoh/ssh3/songoh_ws/DAB Mask3D-main/wandb/run-20230721_180213-23awdj46/files/output.log
+2023-07-21 18:02:24,723 DEBUG   SenderThread:10101 [sender.py:send():302] send: telemetry
+2023-07-21 18:02:25,782 INFO    Thread-12 :10101 [dir_watcher.py:_on_file_modified():292] file/dir modified: /media/songoh/ssh3/songoh_ws/DAB Mask3D-main/wandb/run-20230721_180213-23awdj46/files/output.log
+2023-07-21 18:02:28,358 DEBUG   SenderThread:10101 [sender.py:send():302] send: config
+2023-07-21 18:02:29,783 INFO    Thread-12 :10101 [dir_watcher.py:_on_file_modified():292] file/dir modified: /media/songoh/ssh3/songoh_ws/DAB Mask3D-main/wandb/run-20230721_180213-23awdj46/files/output.log
+2023-07-21 18:02:31,785 INFO    Thread-12 :10101 [dir_watcher.py:_on_file_modified():292] file/dir modified: /media/songoh/ssh3/songoh_ws/DAB Mask3D-main/wandb/run-20230721_180213-23awdj46/files/output.log
+2023-07-21 18:02:33,422 DEBUG   HandlerThread:10101 [handler.py:handle_request():141] handle_request: stop_status
+2023-07-21 18:02:33,423 DEBUG   SenderThread:10101 [sender.py:send_request():316] send_request: stop_status
+2023-07-21 18:02:33,785 INFO    Thread-12 :10101 [dir_watcher.py:_on_file_modified():292] file/dir modified: /media/songoh/ssh3/songoh_ws/DAB Mask3D-main/wandb/run-20230721_180213-23awdj46/files/output.log
+2023-07-21 18:02:43,468 DEBUG   SenderThread:10101 [sender.py:send():302] send: stats
+2023-07-21 18:02:45,790 INFO    Thread-12 :10101 [dir_watcher.py:_on_file_modified():292] file/dir modified: /media/songoh/ssh3/songoh_ws/DAB Mask3D-main/wandb/run-20230721_180213-23awdj46/files/config.yaml
+2023-07-21 18:02:47,791 INFO    Thread-12 :10101 [dir_watcher.py:_on_file_modified():292] file/dir modified: /media/songoh/ssh3/songoh_ws/DAB Mask3D-main/wandb/run-20230721_180213-23awdj46/files/output.log
+2023-07-21 18:02:48,669 DEBUG   HandlerThread:10101 [handler.py:handle_request():141] handle_request: stop_status
+2023-07-21 18:02:48,669 DEBUG   SenderThread:10101 [sender.py:send_request():316] send_request: stop_status
+2023-07-21 18:02:59,796 INFO    Thread-12 :10101 [dir_watcher.py:_on_file_modified():292] file/dir modified: /media/songoh/ssh3/songoh_ws/DAB Mask3D-main/wandb/run-20230721_180213-23awdj46/files/output.log
+2023-07-21 18:03:03,926 DEBUG   HandlerThread:10101 [handler.py:handle_request():141] handle_request: stop_status
+2023-07-21 18:03:03,927 DEBUG   SenderThread:10101 [sender.py:send_request():316] send_request: stop_status
+2023-07-21 18:03:09,800 INFO    Thread-12 :10101 [dir_watcher.py:_on_file_modified():292] file/dir modified: /media/songoh/ssh3/songoh_ws/DAB Mask3D-main/wandb/run-20230721_180213-23awdj46/files/output.log
+2023-07-21 18:03:14,024 DEBUG   SenderThread:10101 [sender.py:send():302] send: stats
+2023-07-21 18:03:19,192 DEBUG   HandlerThread:10101 [handler.py:handle_request():141] handle_request: stop_status
+2023-07-21 18:03:19,193 DEBUG   SenderThread:10101 [sender.py:send_request():316] send_request: stop_status
+2023-07-21 18:03:33,810 INFO    Thread-12 :10101 [dir_watcher.py:_on_file_modified():292] file/dir modified: /media/songoh/ssh3/songoh_ws/DAB Mask3D-main/wandb/run-20230721_180213-23awdj46/files/output.log
+2023-07-21 18:03:34,542 DEBUG   HandlerThread:10101 [handler.py:handle_request():141] handle_request: stop_status
+2023-07-21 18:03:34,542 DEBUG   SenderThread:10101 [sender.py:send_request():316] send_request: stop_status
+2023-07-21 18:03:44,725 DEBUG   SenderThread:10101 [sender.py:send():302] send: stats
+2023-07-21 18:03:49,780 DEBUG   HandlerThread:10101 [handler.py:handle_request():141] handle_request: stop_status
+2023-07-21 18:03:49,780 DEBUG   SenderThread:10101 [sender.py:send_request():316] send_request: stop_status
+2023-07-21 18:03:57,818 INFO    Thread-12 :10101 [dir_watcher.py:_on_file_modified():292] file/dir modified: /media/songoh/ssh3/songoh_ws/DAB Mask3D-main/wandb/run-20230721_180213-23awdj46/files/output.log
+2023-07-21 18:04:05,244 DEBUG   HandlerThread:10101 [handler.py:handle_request():141] handle_request: stop_status
+2023-07-21 18:04:05,244 DEBUG   SenderThread:10101 [sender.py:send_request():316] send_request: stop_status
+2023-07-21 18:04:05,822 INFO    Thread-12 :10101 [dir_watcher.py:_on_file_modified():292] file/dir modified: /media/songoh/ssh3/songoh_ws/DAB Mask3D-main/wandb/run-20230721_180213-23awdj46/files/output.log
+2023-07-21 18:04:11,824 INFO    Thread-12 :10101 [dir_watcher.py:_on_file_modified():292] file/dir modified: /media/songoh/ssh3/songoh_ws/DAB Mask3D-main/wandb/run-20230721_180213-23awdj46/files/output.log
+2023-07-21 18:04:15,322 DEBUG   SenderThread:10101 [sender.py:send():302] send: stats
+2023-07-21 18:04:19,828 INFO    Thread-12 :10101 [dir_watcher.py:_on_file_modified():292] file/dir modified: /media/songoh/ssh3/songoh_ws/DAB Mask3D-main/wandb/run-20230721_180213-23awdj46/files/output.log
+2023-07-21 18:04:20,515 DEBUG   HandlerThread:10101 [handler.py:handle_request():141] handle_request: stop_status
+2023-07-21 18:04:20,516 DEBUG   SenderThread:10101 [sender.py:send_request():316] send_request: stop_status
+2023-07-21 18:04:31,833 INFO    Thread-12 :10101 [dir_watcher.py:_on_file_modified():292] file/dir modified: /media/songoh/ssh3/songoh_ws/DAB Mask3D-main/wandb/run-20230721_180213-23awdj46/files/output.log
+2023-07-21 18:04:33,834 INFO    Thread-12 :10101 [dir_watcher.py:_on_file_modified():292] file/dir modified: /media/songoh/ssh3/songoh_ws/DAB Mask3D-main/wandb/run-20230721_180213-23awdj46/files/output.log
+2023-07-21 18:04:35,845 DEBUG   HandlerThread:10101 [handler.py:handle_request():141] handle_request: stop_status
+2023-07-21 18:04:35,845 DEBUG   SenderThread:10101 [sender.py:send_request():316] send_request: stop_status
+2023-07-21 18:04:45,841 INFO    Thread-12 :10101 [dir_watcher.py:_on_file_modified():292] file/dir modified: /media/songoh/ssh3/songoh_ws/DAB Mask3D-main/wandb/run-20230721_180213-23awdj46/files/output.log
+2023-07-21 18:04:45,955 DEBUG   SenderThread:10101 [sender.py:send():302] send: stats
+2023-07-21 18:04:47,842 INFO    Thread-12 :10101 [dir_watcher.py:_on_file_modified():292] file/dir modified: /media/songoh/ssh3/songoh_ws/DAB Mask3D-main/wandb/run-20230721_180213-23awdj46/files/output.log
+2023-07-21 18:04:51,069 DEBUG   HandlerThread:10101 [handler.py:handle_request():141] handle_request: stop_status
+2023-07-21 18:04:51,069 DEBUG   SenderThread:10101 [sender.py:send_request():316] send_request: stop_status
+2023-07-21 18:04:55,845 INFO    Thread-12 :10101 [dir_watcher.py:_on_file_modified():292] file/dir modified: /media/songoh/ssh3/songoh_ws/DAB Mask3D-main/wandb/run-20230721_180213-23awdj46/files/output.log
+2023-07-21 18:04:57,846 INFO    Thread-12 :10101 [dir_watcher.py:_on_file_modified():292] file/dir modified: /media/songoh/ssh3/songoh_ws/DAB Mask3D-main/wandb/run-20230721_180213-23awdj46/files/output.log
+2023-07-21 18:05:03,848 INFO    Thread-12 :10101 [dir_watcher.py:_on_file_modified():292] file/dir modified: /media/songoh/ssh3/songoh_ws/DAB Mask3D-main/wandb/run-20230721_180213-23awdj46/files/output.log
+2023-07-21 18:05:05,850 INFO    Thread-12 :10101 [dir_watcher.py:_on_file_modified():292] file/dir modified: /media/songoh/ssh3/songoh_ws/DAB Mask3D-main/wandb/run-20230721_180213-23awdj46/files/output.log
+2023-07-21 18:05:06,408 DEBUG   HandlerThread:10101 [handler.py:handle_request():141] handle_request: stop_status
+2023-07-21 18:05:06,408 DEBUG   SenderThread:10101 [sender.py:send_request():316] send_request: stop_status
+2023-07-21 18:05:13,853 INFO    Thread-12 :10101 [dir_watcher.py:_on_file_modified():292] file/dir modified: /media/songoh/ssh3/songoh_ws/DAB Mask3D-main/wandb/run-20230721_180213-23awdj46/files/output.log
+2023-07-21 18:05:14,854 INFO    Thread-12 :10101 [dir_watcher.py:_on_file_modified():292] file/dir modified: /media/songoh/ssh3/songoh_ws/DAB Mask3D-main/wandb/run-20230721_180213-23awdj46/files/output.log
+2023-07-21 18:05:16,687 DEBUG   SenderThread:10101 [sender.py:send():302] send: stats
+2023-07-21 18:05:21,644 DEBUG   HandlerThread:10101 [handler.py:handle_request():141] handle_request: stop_status
+2023-07-21 18:05:21,644 DEBUG   SenderThread:10101 [sender.py:send_request():316] send_request: stop_status
+2023-07-21 18:05:21,857 INFO    Thread-12 :10101 [dir_watcher.py:_on_file_modified():292] file/dir modified: /media/songoh/ssh3/songoh_ws/DAB Mask3D-main/wandb/run-20230721_180213-23awdj46/files/output.log
+2023-07-21 18:05:22,857 INFO    Thread-12 :10101 [dir_watcher.py:_on_file_modified():292] file/dir modified: /media/songoh/ssh3/songoh_ws/DAB Mask3D-main/wandb/run-20230721_180213-23awdj46/files/output.log
+2023-07-21 18:05:30,861 INFO    Thread-12 :10101 [dir_watcher.py:_on_file_modified():292] file/dir modified: /media/songoh/ssh3/songoh_ws/DAB Mask3D-main/wandb/run-20230721_180213-23awdj46/files/output.log
+2023-07-21 18:05:31,861 INFO    Thread-12 :10101 [dir_watcher.py:_on_file_modified():292] file/dir modified: /media/songoh/ssh3/songoh_ws/DAB Mask3D-main/wandb/run-20230721_180213-23awdj46/files/output.log
+2023-07-21 18:05:36,915 DEBUG   HandlerThread:10101 [handler.py:handle_request():141] handle_request: stop_status
+2023-07-21 18:05:36,915 DEBUG   SenderThread:10101 [sender.py:send_request():316] send_request: stop_status
+2023-07-21 18:05:38,864 INFO    Thread-12 :10101 [dir_watcher.py:_on_file_modified():292] file/dir modified: /media/songoh/ssh3/songoh_ws/DAB Mask3D-main/wandb/run-20230721_180213-23awdj46/files/output.log
+2023-07-21 18:05:39,865 INFO    Thread-12 :10101 [dir_watcher.py:_on_file_modified():292] file/dir modified: /media/songoh/ssh3/songoh_ws/DAB Mask3D-main/wandb/run-20230721_180213-23awdj46/files/output.log
+2023-07-21 18:05:40,865 INFO    Thread-12 :10101 [dir_watcher.py:_on_file_modified():292] file/dir modified: /media/songoh/ssh3/songoh_ws/DAB Mask3D-main/wandb/run-20230721_180213-23awdj46/files/output.log
+2023-07-21 18:05:46,868 INFO    Thread-12 :10101 [dir_watcher.py:_on_file_modified():292] file/dir modified: /media/songoh/ssh3/songoh_ws/DAB Mask3D-main/wandb/run-20230721_180213-23awdj46/files/output.log
+2023-07-21 18:05:47,307 DEBUG   SenderThread:10101 [sender.py:send():302] send: stats
+2023-07-21 18:05:47,869 INFO    Thread-12 :10101 [dir_watcher.py:_on_file_modified():292] file/dir modified: /media/songoh/ssh3/songoh_ws/DAB Mask3D-main/wandb/run-20230721_180213-23awdj46/files/output.log
+2023-07-21 18:05:48,869 INFO    Thread-12 :10101 [dir_watcher.py:_on_file_modified():292] file/dir modified: /media/songoh/ssh3/songoh_ws/DAB Mask3D-main/wandb/run-20230721_180213-23awdj46/files/output.log
+2023-07-21 18:05:52,188 DEBUG   HandlerThread:10101 [handler.py:handle_request():141] handle_request: stop_status
+2023-07-21 18:05:52,189 DEBUG   SenderThread:10101 [sender.py:send_request():316] send_request: stop_status
+2023-07-21 18:05:53,871 INFO    Thread-12 :10101 [dir_watcher.py:_on_file_modified():292] file/dir modified: /media/songoh/ssh3/songoh_ws/DAB Mask3D-main/wandb/run-20230721_180213-23awdj46/files/output.log
+2023-07-21 18:05:54,872 INFO    Thread-12 :10101 [dir_watcher.py:_on_file_modified():292] file/dir modified: /media/songoh/ssh3/songoh_ws/DAB Mask3D-main/wandb/run-20230721_180213-23awdj46/files/output.log
+2023-07-21 18:06:05,877 INFO    Thread-12 :10101 [dir_watcher.py:_on_file_modified():292] file/dir modified: /media/songoh/ssh3/songoh_ws/DAB Mask3D-main/wandb/run-20230721_180213-23awdj46/files/output.log
+2023-07-21 18:06:06,877 INFO    Thread-12 :10101 [dir_watcher.py:_on_file_modified():292] file/dir modified: /media/songoh/ssh3/songoh_ws/DAB Mask3D-main/wandb/run-20230721_180213-23awdj46/files/output.log
+2023-07-21 18:06:07,447 DEBUG   HandlerThread:10101 [handler.py:handle_request():141] handle_request: stop_status
+2023-07-21 18:06:07,447 DEBUG   SenderThread:10101 [sender.py:send_request():316] send_request: stop_status
+2023-07-21 18:06:14,881 INFO    Thread-12 :10101 [dir_watcher.py:_on_file_modified():292] file/dir modified: /media/songoh/ssh3/songoh_ws/DAB Mask3D-main/wandb/run-20230721_180213-23awdj46/files/output.log
+2023-07-21 18:06:15,881 INFO    Thread-12 :10101 [dir_watcher.py:_on_file_modified():292] file/dir modified: /media/songoh/ssh3/songoh_ws/DAB Mask3D-main/wandb/run-20230721_180213-23awdj46/files/output.log
+2023-07-21 18:06:16,882 INFO    Thread-12 :10101 [dir_watcher.py:_on_file_modified():292] file/dir modified: /media/songoh/ssh3/songoh_ws/DAB Mask3D-main/wandb/run-20230721_180213-23awdj46/files/output.log
+2023-07-21 18:06:17,902 DEBUG   SenderThread:10101 [sender.py:send():302] send: stats
+2023-07-21 18:06:22,698 DEBUG   HandlerThread:10101 [handler.py:handle_request():141] handle_request: stop_status
+2023-07-21 18:06:22,698 DEBUG   SenderThread:10101 [sender.py:send_request():316] send_request: stop_status
+2023-07-21 18:06:23,885 INFO    Thread-12 :10101 [dir_watcher.py:_on_file_modified():292] file/dir modified: /media/songoh/ssh3/songoh_ws/DAB Mask3D-main/wandb/run-20230721_180213-23awdj46/files/output.log
+2023-07-21 18:06:24,886 INFO    Thread-12 :10101 [dir_watcher.py:_on_file_modified():292] file/dir modified: /media/songoh/ssh3/songoh_ws/DAB Mask3D-main/wandb/run-20230721_180213-23awdj46/files/output.log
+2023-07-21 18:06:33,889 INFO    Thread-12 :10101 [dir_watcher.py:_on_file_modified():292] file/dir modified: /media/songoh/ssh3/songoh_ws/DAB Mask3D-main/wandb/run-20230721_180213-23awdj46/files/output.log
+2023-07-21 18:06:34,890 INFO    Thread-12 :10101 [dir_watcher.py:_on_file_modified():292] file/dir modified: /media/songoh/ssh3/songoh_ws/DAB Mask3D-main/wandb/run-20230721_180213-23awdj46/files/output.log
+2023-07-21 18:06:38,125 DEBUG   HandlerThread:10101 [handler.py:handle_request():141] handle_request: stop_status
+2023-07-21 18:06:38,126 DEBUG   SenderThread:10101 [sender.py:send_request():316] send_request: stop_status
+2023-07-21 18:06:43,894 INFO    Thread-12 :10101 [dir_watcher.py:_on_file_modified():292] file/dir modified: /media/songoh/ssh3/songoh_ws/DAB Mask3D-main/wandb/run-20230721_180213-23awdj46/files/output.log
+2023-07-21 18:06:44,895 INFO    Thread-12 :10101 [dir_watcher.py:_on_file_modified():292] file/dir modified: /media/songoh/ssh3/songoh_ws/DAB Mask3D-main/wandb/run-20230721_180213-23awdj46/files/output.log
+2023-07-21 18:06:48,500 DEBUG   SenderThread:10101 [sender.py:send():302] send: stats
+2023-07-21 18:06:52,898 INFO    Thread-12 :10101 [dir_watcher.py:_on_file_modified():292] file/dir modified: /media/songoh/ssh3/songoh_ws/DAB Mask3D-main/wandb/run-20230721_180213-23awdj46/files/output.log
+2023-07-21 18:06:53,385 DEBUG   HandlerThread:10101 [handler.py:handle_request():141] handle_request: stop_status
+2023-07-21 18:06:53,386 DEBUG   SenderThread:10101 [sender.py:send_request():316] send_request: stop_status
+2023-07-21 18:06:53,898 INFO    Thread-12 :10101 [dir_watcher.py:_on_file_modified():292] file/dir modified: /media/songoh/ssh3/songoh_ws/DAB Mask3D-main/wandb/run-20230721_180213-23awdj46/files/output.log
+2023-07-21 18:06:54,899 INFO    Thread-12 :10101 [dir_watcher.py:_on_file_modified():292] file/dir modified: /media/songoh/ssh3/songoh_ws/DAB Mask3D-main/wandb/run-20230721_180213-23awdj46/files/output.log
+2023-07-21 18:07:00,901 INFO    Thread-12 :10101 [dir_watcher.py:_on_file_modified():292] file/dir modified: /media/songoh/ssh3/songoh_ws/DAB Mask3D-main/wandb/run-20230721_180213-23awdj46/files/output.log
+2023-07-21 18:07:01,902 INFO    Thread-12 :10101 [dir_watcher.py:_on_file_modified():292] file/dir modified: /media/songoh/ssh3/songoh_ws/DAB Mask3D-main/wandb/run-20230721_180213-23awdj46/files/output.log
+2023-07-21 18:07:05,904 INFO    Thread-12 :10101 [dir_watcher.py:_on_file_modified():292] file/dir modified: /media/songoh/ssh3/songoh_ws/DAB Mask3D-main/wandb/run-20230721_180213-23awdj46/files/output.log
+2023-07-21 18:07:06,904 INFO    Thread-12 :10101 [dir_watcher.py:_on_file_modified():292] file/dir modified: /media/songoh/ssh3/songoh_ws/DAB Mask3D-main/wandb/run-20230721_180213-23awdj46/files/output.log
+2023-07-21 18:07:08,650 DEBUG   HandlerThread:10101 [handler.py:handle_request():141] handle_request: stop_status
+2023-07-21 18:07:08,650 DEBUG   SenderThread:10101 [sender.py:send_request():316] send_request: stop_status
+2023-07-21 18:07:12,907 INFO    Thread-12 :10101 [dir_watcher.py:_on_file_modified():292] file/dir modified: /media/songoh/ssh3/songoh_ws/DAB Mask3D-main/wandb/run-20230721_180213-23awdj46/files/output.log
+2023-07-21 18:07:13,907 INFO    Thread-12 :10101 [dir_watcher.py:_on_file_modified():292] file/dir modified: /media/songoh/ssh3/songoh_ws/DAB Mask3D-main/wandb/run-20230721_180213-23awdj46/files/output.log
+2023-07-21 18:07:17,909 INFO    Thread-12 :10101 [dir_watcher.py:_on_file_modified():292] file/dir modified: /media/songoh/ssh3/songoh_ws/DAB Mask3D-main/wandb/run-20230721_180213-23awdj46/files/output.log
+2023-07-21 18:07:18,909 INFO    Thread-12 :10101 [dir_watcher.py:_on_file_modified():292] file/dir modified: /media/songoh/ssh3/songoh_ws/DAB Mask3D-main/wandb/run-20230721_180213-23awdj46/files/output.log
+2023-07-21 18:07:19,088 DEBUG   SenderThread:10101 [sender.py:send():302] send: stats
+2023-07-21 18:07:23,878 DEBUG   HandlerThread:10101 [handler.py:handle_request():141] handle_request: stop_status
+2023-07-21 18:07:23,878 DEBUG   SenderThread:10101 [sender.py:send_request():316] send_request: stop_status
+2023-07-21 18:07:30,914 INFO    Thread-12 :10101 [dir_watcher.py:_on_file_modified():292] file/dir modified: /media/songoh/ssh3/songoh_ws/DAB Mask3D-main/wandb/run-20230721_180213-23awdj46/files/output.log
+2023-07-21 18:07:31,915 INFO    Thread-12 :10101 [dir_watcher.py:_on_file_modified():292] file/dir modified: /media/songoh/ssh3/songoh_ws/DAB Mask3D-main/wandb/run-20230721_180213-23awdj46/files/output.log
+2023-07-21 18:07:32,915 INFO    Thread-12 :10101 [dir_watcher.py:_on_file_modified():292] file/dir modified: /media/songoh/ssh3/songoh_ws/DAB Mask3D-main/wandb/run-20230721_180213-23awdj46/files/output.log
+2023-07-21 18:07:39,197 DEBUG   HandlerThread:10101 [handler.py:handle_request():141] handle_request: stop_status
+2023-07-21 18:07:39,197 DEBUG   SenderThread:10101 [sender.py:send_request():316] send_request: stop_status
+2023-07-21 18:07:43,919 INFO    Thread-12 :10101 [dir_watcher.py:_on_file_modified():292] file/dir modified: /media/songoh/ssh3/songoh_ws/DAB Mask3D-main/wandb/run-20230721_180213-23awdj46/files/output.log
+2023-07-21 18:07:44,920 INFO    Thread-12 :10101 [dir_watcher.py:_on_file_modified():292] file/dir modified: /media/songoh/ssh3/songoh_ws/DAB Mask3D-main/wandb/run-20230721_180213-23awdj46/files/output.log
+2023-07-21 18:07:49,716 DEBUG   SenderThread:10101 [sender.py:send():302] send: stats
+2023-07-21 18:07:54,533 DEBUG   HandlerThread:10101 [handler.py:handle_request():141] handle_request: stop_status
+2023-07-21 18:07:54,533 DEBUG   SenderThread:10101 [sender.py:send_request():316] send_request: stop_status
+2023-07-21 18:07:56,924 INFO    Thread-12 :10101 [dir_watcher.py:_on_file_modified():292] file/dir modified: /media/songoh/ssh3/songoh_ws/DAB Mask3D-main/wandb/run-20230721_180213-23awdj46/files/output.log
+2023-07-21 18:07:57,925 INFO    Thread-12 :10101 [dir_watcher.py:_on_file_modified():292] file/dir modified: /media/songoh/ssh3/songoh_ws/DAB Mask3D-main/wandb/run-20230721_180213-23awdj46/files/output.log
+2023-07-21 18:07:58,925 INFO    Thread-12 :10101 [dir_watcher.py:_on_file_modified():292] file/dir modified: /media/songoh/ssh3/songoh_ws/DAB Mask3D-main/wandb/run-20230721_180213-23awdj46/files/output.log
+2023-07-21 18:08:07,929 INFO    Thread-12 :10101 [dir_watcher.py:_on_file_modified():292] file/dir modified: /media/songoh/ssh3/songoh_ws/DAB Mask3D-main/wandb/run-20230721_180213-23awdj46/files/output.log
+2023-07-21 18:08:08,929 INFO    Thread-12 :10101 [dir_watcher.py:_on_file_modified():292] file/dir modified: /media/songoh/ssh3/songoh_ws/DAB Mask3D-main/wandb/run-20230721_180213-23awdj46/files/output.log
+2023-07-21 18:08:09,757 DEBUG   HandlerThread:10101 [handler.py:handle_request():141] handle_request: stop_status
+2023-07-21 18:08:09,757 DEBUG   SenderThread:10101 [sender.py:send_request():316] send_request: stop_status
+2023-07-21 18:08:19,933 INFO    Thread-12 :10101 [dir_watcher.py:_on_file_modified():292] file/dir modified: /media/songoh/ssh3/songoh_ws/DAB Mask3D-main/wandb/run-20230721_180213-23awdj46/files/output.log
+2023-07-21 18:08:20,310 DEBUG   SenderThread:10101 [sender.py:send():302] send: stats
+2023-07-21 18:08:20,934 INFO    Thread-12 :10101 [dir_watcher.py:_on_file_modified():292] file/dir modified: /media/songoh/ssh3/songoh_ws/DAB Mask3D-main/wandb/run-20230721_180213-23awdj46/files/output.log
+2023-07-21 18:08:24,999 DEBUG   HandlerThread:10101 [handler.py:handle_request():141] handle_request: stop_status
+2023-07-21 18:08:24,999 DEBUG   SenderThread:10101 [sender.py:send_request():316] send_request: stop_status
+2023-07-21 18:08:28,938 INFO    Thread-12 :10101 [dir_watcher.py:_on_file_modified():292] file/dir modified: /media/songoh/ssh3/songoh_ws/DAB Mask3D-main/wandb/run-20230721_180213-23awdj46/files/output.log
+2023-07-21 18:08:29,938 INFO    Thread-12 :10101 [dir_watcher.py:_on_file_modified():292] file/dir modified: /media/songoh/ssh3/songoh_ws/DAB Mask3D-main/wandb/run-20230721_180213-23awdj46/files/output.log
+2023-07-21 18:08:35,941 INFO    Thread-12 :10101 [dir_watcher.py:_on_file_modified():292] file/dir modified: /media/songoh/ssh3/songoh_ws/DAB Mask3D-main/wandb/run-20230721_180213-23awdj46/files/output.log
+2023-07-21 18:08:36,942 INFO    Thread-12 :10101 [dir_watcher.py:_on_file_modified():292] file/dir modified: /media/songoh/ssh3/songoh_ws/DAB Mask3D-main/wandb/run-20230721_180213-23awdj46/files/output.log
+2023-07-21 18:08:40,242 DEBUG   HandlerThread:10101 [handler.py:handle_request():141] handle_request: stop_status
+2023-07-21 18:08:40,242 DEBUG   SenderThread:10101 [sender.py:send_request():316] send_request: stop_status
+2023-07-21 18:08:45,945 INFO    Thread-12 :10101 [dir_watcher.py:_on_file_modified():292] file/dir modified: /media/songoh/ssh3/songoh_ws/DAB Mask3D-main/wandb/run-20230721_180213-23awdj46/files/output.log
+2023-07-21 18:08:46,946 INFO    Thread-12 :10101 [dir_watcher.py:_on_file_modified():292] file/dir modified: /media/songoh/ssh3/songoh_ws/DAB Mask3D-main/wandb/run-20230721_180213-23awdj46/files/output.log
+2023-07-21 18:08:50,916 DEBUG   SenderThread:10101 [sender.py:send():302] send: stats
+2023-07-21 18:08:55,510 DEBUG   HandlerThread:10101 [handler.py:handle_request():141] handle_request: stop_status
+2023-07-21 18:08:55,510 DEBUG   SenderThread:10101 [sender.py:send_request():316] send_request: stop_status
+2023-07-21 18:08:58,950 INFO    Thread-12 :10101 [dir_watcher.py:_on_file_modified():292] file/dir modified: /media/songoh/ssh3/songoh_ws/DAB Mask3D-main/wandb/run-20230721_180213-23awdj46/files/output.log
+2023-07-21 18:08:59,951 INFO    Thread-12 :10101 [dir_watcher.py:_on_file_modified():292] file/dir modified: /media/songoh/ssh3/songoh_ws/DAB Mask3D-main/wandb/run-20230721_180213-23awdj46/files/output.log
+2023-07-21 18:09:00,951 INFO    Thread-12 :10101 [dir_watcher.py:_on_file_modified():292] file/dir modified: /media/songoh/ssh3/songoh_ws/DAB Mask3D-main/wandb/run-20230721_180213-23awdj46/files/output.log
+2023-07-21 18:09:04,953 INFO    Thread-12 :10101 [dir_watcher.py:_on_file_modified():292] file/dir modified: /media/songoh/ssh3/songoh_ws/DAB Mask3D-main/wandb/run-20230721_180213-23awdj46/files/output.log
+2023-07-21 18:09:05,954 INFO    Thread-12 :10101 [dir_watcher.py:_on_file_modified():292] file/dir modified: /media/songoh/ssh3/songoh_ws/DAB Mask3D-main/wandb/run-20230721_180213-23awdj46/files/output.log
+2023-07-21 18:09:06,954 INFO    Thread-12 :10101 [dir_watcher.py:_on_file_modified():292] file/dir modified: /media/songoh/ssh3/songoh_ws/DAB Mask3D-main/wandb/run-20230721_180213-23awdj46/files/output.log
+2023-07-21 18:09:09,956 INFO    Thread-12 :10101 [dir_watcher.py:_on_file_modified():292] file/dir modified: /media/songoh/ssh3/songoh_ws/DAB Mask3D-main/wandb/run-20230721_180213-23awdj46/files/output.log
+2023-07-21 18:09:10,948 DEBUG   HandlerThread:10101 [handler.py:handle_request():141] handle_request: stop_status
+2023-07-21 18:09:10,949 DEBUG   SenderThread:10101 [sender.py:send_request():316] send_request: stop_status
+2023-07-21 18:09:10,956 INFO    Thread-12 :10101 [dir_watcher.py:_on_file_modified():292] file/dir modified: /media/songoh/ssh3/songoh_ws/DAB Mask3D-main/wandb/run-20230721_180213-23awdj46/files/output.log
+2023-07-21 18:09:15,958 INFO    Thread-12 :10101 [dir_watcher.py:_on_file_modified():292] file/dir modified: /media/songoh/ssh3/songoh_ws/DAB Mask3D-main/wandb/run-20230721_180213-23awdj46/files/output.log
+2023-07-21 18:09:16,959 INFO    Thread-12 :10101 [dir_watcher.py:_on_file_modified():292] file/dir modified: /media/songoh/ssh3/songoh_ws/DAB Mask3D-main/wandb/run-20230721_180213-23awdj46/files/output.log
+2023-07-21 18:09:21,520 DEBUG   SenderThread:10101 [sender.py:send():302] send: stats
+2023-07-21 18:09:21,961 INFO    Thread-12 :10101 [dir_watcher.py:_on_file_modified():292] file/dir modified: /media/songoh/ssh3/songoh_ws/DAB Mask3D-main/wandb/run-20230721_180213-23awdj46/files/output.log
+2023-07-21 18:09:22,961 INFO    Thread-12 :10101 [dir_watcher.py:_on_file_modified():292] file/dir modified: /media/songoh/ssh3/songoh_ws/DAB Mask3D-main/wandb/run-20230721_180213-23awdj46/files/output.log
+2023-07-21 18:09:26,184 DEBUG   HandlerThread:10101 [handler.py:handle_request():141] handle_request: stop_status
+2023-07-21 18:09:26,184 DEBUG   SenderThread:10101 [sender.py:send_request():316] send_request: stop_status
+2023-07-21 18:09:28,964 INFO    Thread-12 :10101 [dir_watcher.py:_on_file_modified():292] file/dir modified: /media/songoh/ssh3/songoh_ws/DAB Mask3D-main/wandb/run-20230721_180213-23awdj46/files/output.log
+2023-07-21 18:09:29,965 INFO    Thread-12 :10101 [dir_watcher.py:_on_file_modified():292] file/dir modified: /media/songoh/ssh3/songoh_ws/DAB Mask3D-main/wandb/run-20230721_180213-23awdj46/files/output.log
+2023-07-21 18:09:30,965 INFO    Thread-12 :10101 [dir_watcher.py:_on_file_modified():292] file/dir modified: /media/songoh/ssh3/songoh_ws/DAB Mask3D-main/wandb/run-20230721_180213-23awdj46/files/output.log
+2023-07-21 18:09:35,967 INFO    Thread-12 :10101 [dir_watcher.py:_on_file_modified():292] file/dir modified: /media/songoh/ssh3/songoh_ws/DAB Mask3D-main/wandb/run-20230721_180213-23awdj46/files/output.log
+2023-07-21 18:09:36,967 INFO    Thread-12 :10101 [dir_watcher.py:_on_file_modified():292] file/dir modified: /media/songoh/ssh3/songoh_ws/DAB Mask3D-main/wandb/run-20230721_180213-23awdj46/files/output.log
+2023-07-21 18:09:41,467 DEBUG   HandlerThread:10101 [handler.py:handle_request():141] handle_request: stop_status
+2023-07-21 18:09:41,467 DEBUG   SenderThread:10101 [sender.py:send_request():316] send_request: stop_status
+2023-07-21 18:09:42,970 INFO    Thread-12 :10101 [dir_watcher.py:_on_file_modified():292] file/dir modified: /media/songoh/ssh3/songoh_ws/DAB Mask3D-main/wandb/run-20230721_180213-23awdj46/files/output.log
+2023-07-21 18:09:43,970 INFO    Thread-12 :10101 [dir_watcher.py:_on_file_modified():292] file/dir modified: /media/songoh/ssh3/songoh_ws/DAB Mask3D-main/wandb/run-20230721_180213-23awdj46/files/output.log
+2023-07-21 18:09:49,973 INFO    Thread-12 :10101 [dir_watcher.py:_on_file_modified():292] file/dir modified: /media/songoh/ssh3/songoh_ws/DAB Mask3D-main/wandb/run-20230721_180213-23awdj46/files/output.log
+2023-07-21 18:09:50,973 INFO    Thread-12 :10101 [dir_watcher.py:_on_file_modified():292] file/dir modified: /media/songoh/ssh3/songoh_ws/DAB Mask3D-main/wandb/run-20230721_180213-23awdj46/files/output.log
+2023-07-21 18:09:52,166 DEBUG   SenderThread:10101 [sender.py:send():302] send: stats
+2023-07-21 18:09:55,975 INFO    Thread-12 :10101 [dir_watcher.py:_on_file_modified():292] file/dir modified: /media/songoh/ssh3/songoh_ws/DAB Mask3D-main/wandb/run-20230721_180213-23awdj46/files/output.log
+2023-07-21 18:09:56,705 DEBUG   HandlerThread:10101 [handler.py:handle_request():141] handle_request: stop_status
+2023-07-21 18:09:56,706 DEBUG   SenderThread:10101 [sender.py:send_request():316] send_request: stop_status
+2023-07-21 18:09:56,976 INFO    Thread-12 :10101 [dir_watcher.py:_on_file_modified():292] file/dir modified: /media/songoh/ssh3/songoh_ws/DAB Mask3D-main/wandb/run-20230721_180213-23awdj46/files/output.log
+2023-07-21 18:10:02,978 INFO    Thread-12 :10101 [dir_watcher.py:_on_file_modified():292] file/dir modified: /media/songoh/ssh3/songoh_ws/DAB Mask3D-main/wandb/run-20230721_180213-23awdj46/files/output.log
+2023-07-21 18:10:03,978 INFO    Thread-12 :10101 [dir_watcher.py:_on_file_modified():292] file/dir modified: /media/songoh/ssh3/songoh_ws/DAB Mask3D-main/wandb/run-20230721_180213-23awdj46/files/output.log
+2023-07-21 18:10:07,981 INFO    Thread-12 :10101 [dir_watcher.py:_on_file_modified():292] file/dir modified: /media/songoh/ssh3/songoh_ws/DAB Mask3D-main/wandb/run-20230721_180213-23awdj46/files/output.log
+2023-07-21 18:10:08,981 INFO    Thread-12 :10101 [dir_watcher.py:_on_file_modified():292] file/dir modified: /media/songoh/ssh3/songoh_ws/DAB Mask3D-main/wandb/run-20230721_180213-23awdj46/files/output.log
+2023-07-21 18:10:11,935 DEBUG   HandlerThread:10101 [handler.py:handle_request():141] handle_request: stop_status
+2023-07-21 18:10:11,936 DEBUG   SenderThread:10101 [sender.py:send_request():316] send_request: stop_status
+2023-07-21 18:10:13,983 INFO    Thread-12 :10101 [dir_watcher.py:_on_file_modified():292] file/dir modified: /media/songoh/ssh3/songoh_ws/DAB Mask3D-main/wandb/run-20230721_180213-23awdj46/files/output.log
+2023-07-21 18:10:14,984 INFO    Thread-12 :10101 [dir_watcher.py:_on_file_modified():292] file/dir modified: /media/songoh/ssh3/songoh_ws/DAB Mask3D-main/wandb/run-20230721_180213-23awdj46/files/output.log
+2023-07-21 18:10:20,986 INFO    Thread-12 :10101 [dir_watcher.py:_on_file_modified():292] file/dir modified: /media/songoh/ssh3/songoh_ws/DAB Mask3D-main/wandb/run-20230721_180213-23awdj46/files/output.log
+2023-07-21 18:10:21,987 INFO    Thread-12 :10101 [dir_watcher.py:_on_file_modified():292] file/dir modified: /media/songoh/ssh3/songoh_ws/DAB Mask3D-main/wandb/run-20230721_180213-23awdj46/files/output.log
+2023-07-21 18:10:22,805 DEBUG   SenderThread:10101 [sender.py:send():302] send: stats
+2023-07-21 18:10:22,987 INFO    Thread-12 :10101 [dir_watcher.py:_on_file_modified():292] file/dir modified: /media/songoh/ssh3/songoh_ws/DAB Mask3D-main/wandb/run-20230721_180213-23awdj46/files/output.log
+2023-07-21 18:10:26,989 INFO    Thread-12 :10101 [dir_watcher.py:_on_file_modified():292] file/dir modified: /media/songoh/ssh3/songoh_ws/DAB Mask3D-main/wandb/run-20230721_180213-23awdj46/files/output.log
+2023-07-21 18:10:27,190 DEBUG   HandlerThread:10101 [handler.py:handle_request():141] handle_request: stop_status
+2023-07-21 18:10:27,191 DEBUG   SenderThread:10101 [sender.py:send_request():316] send_request: stop_status
+2023-07-21 18:10:27,989 INFO    Thread-12 :10101 [dir_watcher.py:_on_file_modified():292] file/dir modified: /media/songoh/ssh3/songoh_ws/DAB Mask3D-main/wandb/run-20230721_180213-23awdj46/files/output.log
+2023-07-21 18:10:28,990 INFO    Thread-12 :10101 [dir_watcher.py:_on_file_modified():292] file/dir modified: /media/songoh/ssh3/songoh_ws/DAB Mask3D-main/wandb/run-20230721_180213-23awdj46/files/output.log
+2023-07-21 18:10:32,991 INFO    Thread-12 :10101 [dir_watcher.py:_on_file_modified():292] file/dir modified: /media/songoh/ssh3/songoh_ws/DAB Mask3D-main/wandb/run-20230721_180213-23awdj46/files/output.log
+2023-07-21 18:10:33,992 INFO    Thread-12 :10101 [dir_watcher.py:_on_file_modified():292] file/dir modified: /media/songoh/ssh3/songoh_ws/DAB Mask3D-main/wandb/run-20230721_180213-23awdj46/files/output.log
+2023-07-21 18:10:38,995 INFO    Thread-12 :10101 [dir_watcher.py:_on_file_modified():292] file/dir modified: /media/songoh/ssh3/songoh_ws/DAB Mask3D-main/wandb/run-20230721_180213-23awdj46/files/output.log
+2023-07-21 18:10:39,995 INFO    Thread-12 :10101 [dir_watcher.py:_on_file_modified():292] file/dir modified: /media/songoh/ssh3/songoh_ws/DAB Mask3D-main/wandb/run-20230721_180213-23awdj46/files/output.log
+2023-07-21 18:10:42,434 DEBUG   HandlerThread:10101 [handler.py:handle_request():141] handle_request: stop_status
+2023-07-21 18:10:42,435 DEBUG   SenderThread:10101 [sender.py:send_request():316] send_request: stop_status
+2023-07-21 18:10:42,996 INFO    Thread-12 :10101 [dir_watcher.py:_on_file_modified():292] file/dir modified: /media/songoh/ssh3/songoh_ws/DAB Mask3D-main/wandb/run-20230721_180213-23awdj46/files/output.log
+2023-07-21 18:10:43,997 INFO    Thread-12 :10101 [dir_watcher.py:_on_file_modified():292] file/dir modified: /media/songoh/ssh3/songoh_ws/DAB Mask3D-main/wandb/run-20230721_180213-23awdj46/files/output.log
+2023-07-21 18:10:44,997 INFO    Thread-12 :10101 [dir_watcher.py:_on_file_modified():292] file/dir modified: /media/songoh/ssh3/songoh_ws/DAB Mask3D-main/wandb/run-20230721_180213-23awdj46/files/output.log
+2023-07-21 18:10:48,999 INFO    Thread-12 :10101 [dir_watcher.py:_on_file_modified():292] file/dir modified: /media/songoh/ssh3/songoh_ws/DAB Mask3D-main/wandb/run-20230721_180213-23awdj46/files/output.log
+2023-07-21 18:10:49,999 INFO    Thread-12 :10101 [dir_watcher.py:_on_file_modified():292] file/dir modified: /media/songoh/ssh3/songoh_ws/DAB Mask3D-main/wandb/run-20230721_180213-23awdj46/files/output.log
+2023-07-21 18:10:53,430 DEBUG   SenderThread:10101 [sender.py:send():302] send: stats
+2023-07-21 18:10:54,001 INFO    Thread-12 :10101 [dir_watcher.py:_on_file_modified():292] file/dir modified: /media/songoh/ssh3/songoh_ws/DAB Mask3D-main/wandb/run-20230721_180213-23awdj46/files/output.log
+2023-07-21 18:10:55,002 INFO    Thread-12 :10101 [dir_watcher.py:_on_file_modified():292] file/dir modified: /media/songoh/ssh3/songoh_ws/DAB Mask3D-main/wandb/run-20230721_180213-23awdj46/files/output.log
+2023-07-21 18:10:57,677 DEBUG   HandlerThread:10101 [handler.py:handle_request():141] handle_request: stop_status
+2023-07-21 18:10:57,678 DEBUG   SenderThread:10101 [sender.py:send_request():316] send_request: stop_status
+2023-07-21 18:11:03,005 INFO    Thread-12 :10101 [dir_watcher.py:_on_file_modified():292] file/dir modified: /media/songoh/ssh3/songoh_ws/DAB Mask3D-main/wandb/run-20230721_180213-23awdj46/files/output.log
+2023-07-21 18:11:04,006 INFO    Thread-12 :10101 [dir_watcher.py:_on_file_modified():292] file/dir modified: /media/songoh/ssh3/songoh_ws/DAB Mask3D-main/wandb/run-20230721_180213-23awdj46/files/output.log
+2023-07-21 18:11:05,006 INFO    Thread-12 :10101 [dir_watcher.py:_on_file_modified():292] file/dir modified: /media/songoh/ssh3/songoh_ws/DAB Mask3D-main/wandb/run-20230721_180213-23awdj46/files/output.log
+2023-07-21 18:11:12,914 DEBUG   HandlerThread:10101 [handler.py:handle_request():141] handle_request: stop_status
+2023-07-21 18:11:12,915 DEBUG   SenderThread:10101 [sender.py:send_request():316] send_request: stop_status
+2023-07-21 18:11:13,010 INFO    Thread-12 :10101 [dir_watcher.py:_on_file_modified():292] file/dir modified: /media/songoh/ssh3/songoh_ws/DAB Mask3D-main/wandb/run-20230721_180213-23awdj46/files/output.log
+2023-07-21 18:11:14,010 INFO    Thread-12 :10101 [dir_watcher.py:_on_file_modified():292] file/dir modified: /media/songoh/ssh3/songoh_ws/DAB Mask3D-main/wandb/run-20230721_180213-23awdj46/files/output.log
+2023-07-21 18:11:15,011 INFO    Thread-12 :10101 [dir_watcher.py:_on_file_modified():292] file/dir modified: /media/songoh/ssh3/songoh_ws/DAB Mask3D-main/wandb/run-20230721_180213-23awdj46/files/output.log
+2023-07-21 18:11:24,024 DEBUG   SenderThread:10101 [sender.py:send():302] send: stats
+2023-07-21 18:11:28,016 INFO    Thread-12 :10101 [dir_watcher.py:_on_file_modified():292] file/dir modified: /media/songoh/ssh3/songoh_ws/DAB Mask3D-main/wandb/run-20230721_180213-23awdj46/files/output.log
+2023-07-21 18:11:28,294 DEBUG   HandlerThread:10101 [handler.py:handle_request():141] handle_request: stop_status
+2023-07-21 18:11:28,294 DEBUG   SenderThread:10101 [sender.py:send_request():316] send_request: stop_status
+2023-07-21 18:11:29,017 INFO    Thread-12 :10101 [dir_watcher.py:_on_file_modified():292] file/dir modified: /media/songoh/ssh3/songoh_ws/DAB Mask3D-main/wandb/run-20230721_180213-23awdj46/files/output.log
+2023-07-21 18:11:43,022 INFO    Thread-12 :10101 [dir_watcher.py:_on_file_modified():292] file/dir modified: /media/songoh/ssh3/songoh_ws/DAB Mask3D-main/wandb/run-20230721_180213-23awdj46/files/output.log
+2023-07-21 18:11:43,623 DEBUG   HandlerThread:10101 [handler.py:handle_request():141] handle_request: stop_status
+2023-07-21 18:11:43,624 DEBUG   SenderThread:10101 [sender.py:send_request():316] send_request: stop_status
+2023-07-21 18:11:44,023 INFO    Thread-12 :10101 [dir_watcher.py:_on_file_modified():292] file/dir modified: /media/songoh/ssh3/songoh_ws/DAB Mask3D-main/wandb/run-20230721_180213-23awdj46/files/output.log
+2023-07-21 18:11:54,601 DEBUG   SenderThread:10101 [sender.py:send():302] send: stats
+2023-07-21 18:11:55,027 INFO    Thread-12 :10101 [dir_watcher.py:_on_file_modified():292] file/dir modified: /media/songoh/ssh3/songoh_ws/DAB Mask3D-main/wandb/run-20230721_180213-23awdj46/files/output.log
+2023-07-21 18:11:56,027 INFO    Thread-12 :10101 [dir_watcher.py:_on_file_modified():292] file/dir modified: /media/songoh/ssh3/songoh_ws/DAB Mask3D-main/wandb/run-20230721_180213-23awdj46/files/output.log
+2023-07-21 18:11:59,002 DEBUG   HandlerThread:10101 [handler.py:handle_request():141] handle_request: stop_status
+2023-07-21 18:11:59,002 DEBUG   SenderThread:10101 [sender.py:send_request():316] send_request: stop_status
+2023-07-21 18:12:09,032 INFO    Thread-12 :10101 [dir_watcher.py:_on_file_modified():292] file/dir modified: /media/songoh/ssh3/songoh_ws/DAB Mask3D-main/wandb/run-20230721_180213-23awdj46/files/output.log
+2023-07-21 18:12:10,032 INFO    Thread-12 :10101 [dir_watcher.py:_on_file_modified():292] file/dir modified: /media/songoh/ssh3/songoh_ws/DAB Mask3D-main/wandb/run-20230721_180213-23awdj46/files/output.log
+2023-07-21 18:12:14,266 DEBUG   HandlerThread:10101 [handler.py:handle_request():141] handle_request: stop_status
+2023-07-21 18:12:14,266 DEBUG   SenderThread:10101 [sender.py:send_request():316] send_request: stop_status
+2023-07-21 18:12:20,036 INFO    Thread-12 :10101 [dir_watcher.py:_on_file_modified():292] file/dir modified: /media/songoh/ssh3/songoh_ws/DAB Mask3D-main/wandb/run-20230721_180213-23awdj46/files/output.log
+2023-07-21 18:12:21,037 INFO    Thread-12 :10101 [dir_watcher.py:_on_file_modified():292] file/dir modified: /media/songoh/ssh3/songoh_ws/DAB Mask3D-main/wandb/run-20230721_180213-23awdj46/files/output.log
+2023-07-21 18:12:25,228 DEBUG   SenderThread:10101 [sender.py:send():302] send: stats
+2023-07-21 18:12:29,508 DEBUG   HandlerThread:10101 [handler.py:handle_request():141] handle_request: stop_status
+2023-07-21 18:12:29,508 DEBUG   SenderThread:10101 [sender.py:send_request():316] send_request: stop_status
+2023-07-21 18:12:31,041 INFO    Thread-12 :10101 [dir_watcher.py:_on_file_modified():292] file/dir modified: /media/songoh/ssh3/songoh_ws/DAB Mask3D-main/wandb/run-20230721_180213-23awdj46/files/output.log
+2023-07-21 18:12:32,041 INFO    Thread-12 :10101 [dir_watcher.py:_on_file_modified():292] file/dir modified: /media/songoh/ssh3/songoh_ws/DAB Mask3D-main/wandb/run-20230721_180213-23awdj46/files/output.log
+2023-07-21 18:12:33,042 INFO    Thread-12 :10101 [dir_watcher.py:_on_file_modified():292] file/dir modified: /media/songoh/ssh3/songoh_ws/DAB Mask3D-main/wandb/run-20230721_180213-23awdj46/files/output.log
+2023-07-21 18:12:43,046 INFO    Thread-12 :10101 [dir_watcher.py:_on_file_modified():292] file/dir modified: /media/songoh/ssh3/songoh_ws/DAB Mask3D-main/wandb/run-20230721_180213-23awdj46/files/output.log
+2023-07-21 18:12:44,046 INFO    Thread-12 :10101 [dir_watcher.py:_on_file_modified():292] file/dir modified: /media/songoh/ssh3/songoh_ws/DAB Mask3D-main/wandb/run-20230721_180213-23awdj46/files/output.log
+2023-07-21 18:12:44,833 DEBUG   HandlerThread:10101 [handler.py:handle_request():141] handle_request: stop_status
+2023-07-21 18:12:44,833 DEBUG   SenderThread:10101 [sender.py:send_request():316] send_request: stop_status
+2023-07-21 18:12:53,050 INFO    Thread-12 :10101 [dir_watcher.py:_on_file_modified():292] file/dir modified: /media/songoh/ssh3/songoh_ws/DAB Mask3D-main/wandb/run-20230721_180213-23awdj46/files/output.log
+2023-07-21 18:12:54,050 INFO    Thread-12 :10101 [dir_watcher.py:_on_file_modified():292] file/dir modified: /media/songoh/ssh3/songoh_ws/DAB Mask3D-main/wandb/run-20230721_180213-23awdj46/files/output.log
+2023-07-21 18:12:55,051 INFO    Thread-12 :10101 [dir_watcher.py:_on_file_modified():292] file/dir modified: /media/songoh/ssh3/songoh_ws/DAB Mask3D-main/wandb/run-20230721_180213-23awdj46/files/output.log
+2023-07-21 18:12:55,897 DEBUG   SenderThread:10101 [sender.py:send():302] send: stats
+2023-07-21 18:13:00,117 DEBUG   HandlerThread:10101 [handler.py:handle_request():141] handle_request: stop_status
+2023-07-21 18:13:00,117 DEBUG   SenderThread:10101 [sender.py:send_request():316] send_request: stop_status
+2023-07-21 18:13:01,053 INFO    Thread-12 :10101 [dir_watcher.py:_on_file_modified():292] file/dir modified: /media/songoh/ssh3/songoh_ws/DAB Mask3D-main/wandb/run-20230721_180213-23awdj46/files/output.log
+2023-07-21 18:13:02,054 INFO    Thread-12 :10101 [dir_watcher.py:_on_file_modified():292] file/dir modified: /media/songoh/ssh3/songoh_ws/DAB Mask3D-main/wandb/run-20230721_180213-23awdj46/files/output.log
+2023-07-21 18:13:03,055 INFO    Thread-12 :10101 [dir_watcher.py:_on_file_modified():292] file/dir modified: /media/songoh/ssh3/songoh_ws/DAB Mask3D-main/wandb/run-20230721_180213-23awdj46/files/output.log
+2023-07-21 18:13:09,057 INFO    Thread-12 :10101 [dir_watcher.py:_on_file_modified():292] file/dir modified: /media/songoh/ssh3/songoh_ws/DAB Mask3D-main/wandb/run-20230721_180213-23awdj46/files/output.log
+2023-07-21 18:13:10,058 INFO    Thread-12 :10101 [dir_watcher.py:_on_file_modified():292] file/dir modified: /media/songoh/ssh3/songoh_ws/DAB Mask3D-main/wandb/run-20230721_180213-23awdj46/files/output.log
+2023-07-21 18:13:11,058 INFO    Thread-12 :10101 [dir_watcher.py:_on_file_modified():292] file/dir modified: /media/songoh/ssh3/songoh_ws/DAB Mask3D-main/wandb/run-20230721_180213-23awdj46/files/output.log
+2023-07-21 18:13:15,419 DEBUG   HandlerThread:10101 [handler.py:handle_request():141] handle_request: stop_status
+2023-07-21 18:13:15,419 DEBUG   SenderThread:10101 [sender.py:send_request():316] send_request: stop_status
+2023-07-21 18:13:17,061 INFO    Thread-12 :10101 [dir_watcher.py:_on_file_modified():292] file/dir modified: /media/songoh/ssh3/songoh_ws/DAB Mask3D-main/wandb/run-20230721_180213-23awdj46/files/output.log
+2023-07-21 18:13:18,098 DEBUG   SenderThread:10101 [sender.py:send():302] send: exit
+2023-07-21 18:13:18,099 DEBUG   HandlerThread:10101 [handler.py:handle_request():141] handle_request: poll_exit
+2023-07-21 18:13:18,100 INFO    SenderThread:10101 [sender.py:send_exit():438] handling exit code: 1
+2023-07-21 18:13:18,100 INFO    SenderThread:10101 [sender.py:send_exit():440] handling runtime: 663
+2023-07-21 18:13:18,101 INFO    SenderThread:10101 [sender.py:_save_file():1156] saving file wandb-summary.json with policy end
+2023-07-21 18:13:18,101 INFO    SenderThread:10101 [sender.py:send_exit():446] send defer
+2023-07-21 18:13:18,101 DEBUG   SenderThread:10101 [sender.py:send_request():316] send_request: poll_exit
+2023-07-21 18:13:18,102 DEBUG   HandlerThread:10101 [handler.py:handle_request():141] handle_request: defer
+2023-07-21 18:13:18,102 INFO    HandlerThread:10101 [handler.py:handle_request_defer():164] handle defer: 0
+2023-07-21 18:13:18,103 DEBUG   SenderThread:10101 [sender.py:send_request():316] send_request: defer
+2023-07-21 18:13:18,103 INFO    SenderThread:10101 [sender.py:send_request_defer():455] handle sender defer: 0
+2023-07-21 18:13:18,103 INFO    SenderThread:10101 [sender.py:transition_state():459] send defer: 1
+2023-07-21 18:13:18,103 DEBUG   HandlerThread:10101 [handler.py:handle_request():141] handle_request: defer
+2023-07-21 18:13:18,103 INFO    HandlerThread:10101 [handler.py:handle_request_defer():164] handle defer: 1
+2023-07-21 18:13:18,216 DEBUG   SenderThread:10101 [sender.py:send_request():316] send_request: defer
+2023-07-21 18:13:18,216 INFO    SenderThread:10101 [sender.py:send_request_defer():455] handle sender defer: 1
+2023-07-21 18:13:18,216 DEBUG   HandlerThread:10101 [handler.py:handle_request():141] handle_request: poll_exit
+2023-07-21 18:13:18,217 INFO    SenderThread:10101 [sender.py:transition_state():459] send defer: 2
+2023-07-21 18:13:18,217 DEBUG   SenderThread:10101 [sender.py:send_request():316] send_request: poll_exit
+2023-07-21 18:13:18,218 DEBUG   SenderThread:10101 [sender.py:send():302] send: stats
+2023-07-21 18:13:18,218 DEBUG   HandlerThread:10101 [handler.py:handle_request():141] handle_request: defer
+2023-07-21 18:13:18,219 INFO    HandlerThread:10101 [handler.py:handle_request_defer():164] handle defer: 2
+2023-07-21 18:13:18,219 DEBUG   SenderThread:10101 [sender.py:send_request():316] send_request: defer
+2023-07-21 18:13:18,219 INFO    SenderThread:10101 [sender.py:send_request_defer():455] handle sender defer: 2
+2023-07-21 18:13:18,220 INFO    SenderThread:10101 [sender.py:transition_state():459] send defer: 3
+2023-07-21 18:13:18,220 DEBUG   HandlerThread:10101 [handler.py:handle_request():141] handle_request: defer
+2023-07-21 18:13:18,220 INFO    HandlerThread:10101 [handler.py:handle_request_defer():164] handle defer: 3
+2023-07-21 18:13:18,220 DEBUG   SenderThread:10101 [sender.py:send_request():316] send_request: defer
+2023-07-21 18:13:18,220 INFO    SenderThread:10101 [sender.py:send_request_defer():455] handle sender defer: 3
+2023-07-21 18:13:18,220 INFO    SenderThread:10101 [sender.py:transition_state():459] send defer: 4
+2023-07-21 18:13:18,221 DEBUG   HandlerThread:10101 [handler.py:handle_request():141] handle_request: defer
+2023-07-21 18:13:18,221 INFO    HandlerThread:10101 [handler.py:handle_request_defer():164] handle defer: 4
+2023-07-21 18:13:18,221 DEBUG   SenderThread:10101 [sender.py:send():302] send: summary
+2023-07-21 18:13:18,222 INFO    SenderThread:10101 [sender.py:_save_file():1156] saving file wandb-summary.json with policy end
+2023-07-21 18:13:18,222 DEBUG   SenderThread:10101 [sender.py:send_request():316] send_request: defer
+2023-07-21 18:13:18,222 INFO    SenderThread:10101 [sender.py:send_request_defer():455] handle sender defer: 4
+2023-07-21 18:13:18,222 INFO    SenderThread:10101 [sender.py:transition_state():459] send defer: 5
+2023-07-21 18:13:18,223 DEBUG   HandlerThread:10101 [handler.py:handle_request():141] handle_request: defer
+2023-07-21 18:13:18,223 INFO    HandlerThread:10101 [handler.py:handle_request_defer():164] handle defer: 5
+2023-07-21 18:13:18,223 DEBUG   SenderThread:10101 [sender.py:send_request():316] send_request: defer
+2023-07-21 18:13:18,223 INFO    SenderThread:10101 [sender.py:send_request_defer():455] handle sender defer: 5
+2023-07-21 18:13:18,223 INFO    SenderThread:10101 [sender.py:transition_state():459] send defer: 6
+2023-07-21 18:13:18,223 DEBUG   HandlerThread:10101 [handler.py:handle_request():141] handle_request: defer
+2023-07-21 18:13:18,224 INFO    HandlerThread:10101 [handler.py:handle_request_defer():164] handle defer: 6
+2023-07-21 18:13:18,224 DEBUG   SenderThread:10101 [sender.py:send_request():316] send_request: defer
+2023-07-21 18:13:18,224 INFO    SenderThread:10101 [sender.py:send_request_defer():455] handle sender defer: 6
+2023-07-21 18:13:18,320 DEBUG   HandlerThread:10101 [handler.py:handle_request():141] handle_request: poll_exit
+2023-07-21 18:13:19,062 INFO    Thread-12 :10101 [dir_watcher.py:_on_file_modified():292] file/dir modified: /media/songoh/ssh3/songoh_ws/DAB Mask3D-main/wandb/run-20230721_180213-23awdj46/files/output.log
+2023-07-21 18:13:19,062 INFO    Thread-12 :10101 [dir_watcher.py:_on_file_modified():292] file/dir modified: /media/songoh/ssh3/songoh_ws/DAB Mask3D-main/wandb/run-20230721_180213-23awdj46/files/wandb-summary.json
+2023-07-21 18:13:19,646 INFO    SenderThread:10101 [sender.py:transition_state():459] send defer: 7
+2023-07-21 18:13:19,646 DEBUG   SenderThread:10101 [sender.py:send_request():316] send_request: poll_exit
+2023-07-21 18:13:19,647 DEBUG   HandlerThread:10101 [handler.py:handle_request():141] handle_request: defer
+2023-07-21 18:13:19,648 INFO    HandlerThread:10101 [handler.py:handle_request_defer():164] handle defer: 7
+2023-07-21 18:13:19,648 DEBUG   SenderThread:10101 [sender.py:send_request():316] send_request: defer
+2023-07-21 18:13:19,648 INFO    SenderThread:10101 [sender.py:send_request_defer():455] handle sender defer: 7
+2023-07-21 18:13:19,649 INFO    SenderThread:10101 [dir_watcher.py:finish():362] shutting down directory watcher
+2023-07-21 18:13:19,749 DEBUG   HandlerThread:10101 [handler.py:handle_request():141] handle_request: poll_exit
+2023-07-21 18:13:20,063 INFO    Thread-12 :10101 [dir_watcher.py:_on_file_modified():292] file/dir modified: /media/songoh/ssh3/songoh_ws/DAB Mask3D-main/wandb/run-20230721_180213-23awdj46/files/output.log
+2023-07-21 18:13:20,064 INFO    SenderThread:10101 [dir_watcher.py:finish():392] scan: /media/songoh/ssh3/songoh_ws/DAB Mask3D-main/wandb/run-20230721_180213-23awdj46/files
+2023-07-21 18:13:20,064 INFO    SenderThread:10101 [dir_watcher.py:finish():406] scan save: /media/songoh/ssh3/songoh_ws/DAB Mask3D-main/wandb/run-20230721_180213-23awdj46/files/config.yaml config.yaml
+2023-07-21 18:13:20,064 INFO    SenderThread:10101 [dir_watcher.py:finish():406] scan save: /media/songoh/ssh3/songoh_ws/DAB Mask3D-main/wandb/run-20230721_180213-23awdj46/files/wandb-metadata.json wandb-metadata.json
+2023-07-21 18:13:20,065 INFO    SenderThread:10101 [dir_watcher.py:finish():406] scan save: /media/songoh/ssh3/songoh_ws/DAB Mask3D-main/wandb/run-20230721_180213-23awdj46/files/requirements.txt requirements.txt
+2023-07-21 18:13:20,065 INFO    SenderThread:10101 [dir_watcher.py:finish():406] scan save: /media/songoh/ssh3/songoh_ws/DAB Mask3D-main/wandb/run-20230721_180213-23awdj46/files/output.log output.log
+2023-07-21 18:13:20,077 INFO    SenderThread:10101 [dir_watcher.py:finish():406] scan save: /media/songoh/ssh3/songoh_ws/DAB Mask3D-main/wandb/run-20230721_180213-23awdj46/files/wandb-summary.json wandb-summary.json
+2023-07-21 18:13:20,085 INFO    SenderThread:10101 [dir_watcher.py:finish():406] scan save: /media/songoh/ssh3/songoh_ws/DAB Mask3D-main/wandb/run-20230721_180213-23awdj46/files/conda-environment.yaml conda-environment.yaml
+2023-07-21 18:13:20,092 INFO    SenderThread:10101 [sender.py:transition_state():459] send defer: 8
+2023-07-21 18:13:20,093 DEBUG   SenderThread:10101 [sender.py:send_request():316] send_request: poll_exit
+2023-07-21 18:13:20,095 DEBUG   HandlerThread:10101 [handler.py:handle_request():141] handle_request: defer
+2023-07-21 18:13:20,100 INFO    HandlerThread:10101 [handler.py:handle_request_defer():164] handle defer: 8
+2023-07-21 18:13:20,101 DEBUG   SenderThread:10101 [sender.py:send_request():316] send_request: defer
+2023-07-21 18:13:20,101 INFO    SenderThread:10101 [sender.py:send_request_defer():455] handle sender defer: 8
+2023-07-21 18:13:20,102 INFO    SenderThread:10101 [file_pusher.py:finish():171] shutting down file pusher
+2023-07-21 18:13:20,202 DEBUG   HandlerThread:10101 [handler.py:handle_request():141] handle_request: poll_exit
+2023-07-21 18:13:20,203 DEBUG   SenderThread:10101 [sender.py:send_request():316] send_request: poll_exit
+2023-07-21 18:13:20,305 DEBUG   HandlerThread:10101 [handler.py:handle_request():141] handle_request: poll_exit
+2023-07-21 18:13:20,305 DEBUG   SenderThread:10101 [sender.py:send_request():316] send_request: poll_exit
+2023-07-21 18:13:20,407 DEBUG   HandlerThread:10101 [handler.py:handle_request():141] handle_request: poll_exit
+2023-07-21 18:13:20,408 DEBUG   SenderThread:10101 [sender.py:send_request():316] send_request: poll_exit
+2023-07-21 18:13:20,510 DEBUG   HandlerThread:10101 [handler.py:handle_request():141] handle_request: poll_exit
+2023-07-21 18:13:20,510 DEBUG   SenderThread:10101 [sender.py:send_request():316] send_request: poll_exit
+2023-07-21 18:13:20,612 DEBUG   HandlerThread:10101 [handler.py:handle_request():141] handle_request: poll_exit
+2023-07-21 18:13:20,613 DEBUG   SenderThread:10101 [sender.py:send_request():316] send_request: poll_exit
+2023-07-21 18:13:20,714 DEBUG   HandlerThread:10101 [handler.py:handle_request():141] handle_request: poll_exit
+2023-07-21 18:13:20,715 DEBUG   SenderThread:10101 [sender.py:send_request():316] send_request: poll_exit
+2023-07-21 18:13:20,724 INFO    Thread-18 :10101 [upload_job.py:push():138] Uploaded file /media/songoh/ssh3/songoh_ws/DAB Mask3D-main/wandb/run-20230721_180213-23awdj46/files/requirements.txt
+2023-07-21 18:13:20,727 INFO    Thread-20 :10101 [upload_job.py:push():138] Uploaded file /media/songoh/ssh3/songoh_ws/DAB Mask3D-main/wandb/run-20230721_180213-23awdj46/files/wandb-summary.json
+2023-07-21 18:13:20,730 INFO    Thread-21 :10101 [upload_job.py:push():138] Uploaded file /media/songoh/ssh3/songoh_ws/DAB Mask3D-main/wandb/run-20230721_180213-23awdj46/files/conda-environment.yaml
+2023-07-21 18:13:20,734 INFO    Thread-17 :10101 [upload_job.py:push():138] Uploaded file /media/songoh/ssh3/songoh_ws/DAB Mask3D-main/wandb/run-20230721_180213-23awdj46/files/config.yaml
+2023-07-21 18:13:20,817 DEBUG   HandlerThread:10101 [handler.py:handle_request():141] handle_request: poll_exit
+2023-07-21 18:13:20,817 DEBUG   SenderThread:10101 [sender.py:send_request():316] send_request: poll_exit
+2023-07-21 18:13:20,919 DEBUG   HandlerThread:10101 [handler.py:handle_request():141] handle_request: poll_exit
+2023-07-21 18:13:20,919 DEBUG   SenderThread:10101 [sender.py:send_request():316] send_request: poll_exit
+2023-07-21 18:13:20,935 INFO    Thread-19 :10101 [upload_job.py:push():138] Uploaded file /media/songoh/ssh3/songoh_ws/DAB Mask3D-main/wandb/run-20230721_180213-23awdj46/files/output.log
+2023-07-21 18:13:21,021 DEBUG   HandlerThread:10101 [handler.py:handle_request():141] handle_request: poll_exit
+2023-07-21 18:13:21,022 DEBUG   SenderThread:10101 [sender.py:send_request():316] send_request: poll_exit
+2023-07-21 18:13:21,124 DEBUG   HandlerThread:10101 [handler.py:handle_request():141] handle_request: poll_exit
+2023-07-21 18:13:21,124 DEBUG   SenderThread:10101 [sender.py:send_request():316] send_request: poll_exit
+2023-07-21 18:13:21,136 INFO    Thread-11 (_thread_body):10101 [sender.py:transition_state():459] send defer: 9
+2023-07-21 18:13:21,137 DEBUG   HandlerThread:10101 [handler.py:handle_request():141] handle_request: defer
+2023-07-21 18:13:21,137 INFO    HandlerThread:10101 [handler.py:handle_request_defer():164] handle defer: 9
+2023-07-21 18:13:21,137 DEBUG   SenderThread:10101 [sender.py:send_request():316] send_request: defer
+2023-07-21 18:13:21,137 INFO    SenderThread:10101 [sender.py:send_request_defer():455] handle sender defer: 9
+2023-07-21 18:13:21,226 DEBUG   HandlerThread:10101 [handler.py:handle_request():141] handle_request: poll_exit
+2023-07-21 18:13:22,127 INFO    SenderThread:10101 [sender.py:transition_state():459] send defer: 10
+2023-07-21 18:13:22,128 DEBUG   SenderThread:10101 [sender.py:send_request():316] send_request: poll_exit
+2023-07-21 18:13:22,128 DEBUG   HandlerThread:10101 [handler.py:handle_request():141] handle_request: defer
+2023-07-21 18:13:22,136 INFO    HandlerThread:10101 [handler.py:handle_request_defer():164] handle defer: 10
+2023-07-21 18:13:22,137 DEBUG   SenderThread:10101 [sender.py:send_request():316] send_request: defer
+2023-07-21 18:13:22,137 INFO    SenderThread:10101 [sender.py:send_request_defer():455] handle sender defer: 10
+2023-07-21 18:13:22,137 INFO    SenderThread:10101 [sender.py:transition_state():459] send defer: 11
+2023-07-21 18:13:22,138 DEBUG   SenderThread:10101 [sender.py:send():302] send: final
+2023-07-21 18:13:22,139 DEBUG   HandlerThread:10101 [handler.py:handle_request():141] handle_request: defer
+2023-07-21 18:13:22,139 DEBUG   SenderThread:10101 [sender.py:send():302] send: footer
+2023-07-21 18:13:22,139 INFO    HandlerThread:10101 [handler.py:handle_request_defer():164] handle defer: 11
+2023-07-21 18:13:22,139 DEBUG   SenderThread:10101 [sender.py:send_request():316] send_request: defer
+2023-07-21 18:13:22,140 INFO    SenderThread:10101 [sender.py:send_request_defer():455] handle sender defer: 11
+2023-07-21 18:13:22,238 DEBUG   HandlerThread:10101 [handler.py:handle_request():141] handle_request: poll_exit
+2023-07-21 18:13:22,239 DEBUG   SenderThread:10101 [sender.py:send_request():316] send_request: poll_exit
+2023-07-21 18:13:22,239 INFO    SenderThread:10101 [file_pusher.py:join():176] waiting for file pusher
+2023-07-21 18:13:22,794 DEBUG   HandlerThread:10101 [handler.py:handle_request():141] handle_request: sampled_history
+2023-07-21 18:13:22,795 DEBUG   HandlerThread:10101 [handler.py:handle_request():141] handle_request: get_summary
+2023-07-21 18:13:22,796 INFO    MainThread:10101 [wandb_run.py:_footer_history_summary_info():3305] rendering history
+2023-07-21 18:13:22,796 INFO    MainThread:10101 [wandb_run.py:_footer_history_summary_info():3337] rendering summary
+2023-07-21 18:13:22,796 INFO    MainThread:10101 [wandb_run.py:_footer_sync_info():3261] logging synced files
+2023-07-21 18:13:22,797 DEBUG   HandlerThread:10101 [handler.py:handle_request():141] handle_request: shutdown
+2023-07-21 18:13:22,798 INFO    HandlerThread:10101 [handler.py:finish():810] shutting down handler
+2023-07-21 18:13:23,139 INFO    WriterThread:10101 [datastore.py:close():279] close: /media/songoh/ssh3/songoh_ws/DAB Mask3D-main/wandb/run-20230721_180213-23awdj46/run-23awdj46.wandb
+2023-07-21 18:13:23,692 INFO    SenderThread:10101 [sender.py:finish():1312] shutting down sender
+2023-07-21 18:13:23,692 INFO    SenderThread:10101 [file_pusher.py:finish():171] shutting down file pusher
+2023-07-21 18:13:23,692 INFO    SenderThread:10101 [file_pusher.py:join():176] waiting for file pusher
+2023-07-21 18:13:23,801 INFO    MainThread:10101 [internal.py:handle_exit():80] Internal process exited

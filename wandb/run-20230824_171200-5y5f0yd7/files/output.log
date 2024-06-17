@@ -1,0 +1,13 @@
+/home/songoh/miniconda3/envs/mask/lib/python3.10/site-packages/MinkowskiEngine/__init__.py:36: UserWarning: The environment variable `OMP_NUM_THREADS` not set. MinkowskiEngine will automatically set `OMP_NUM_THREADS=16`. If you want to set `OMP_NUM_THREADS` manually, please export it on the command line before running a python script. e.g. `export OMP_NUM_THREADS=12; python your_program.py`. It is recommended to set it below 24.
+  warnings.warn(
+Traceback (most recent call last):
+  File "/media/songoh/ssh3/songoh_ws/MaskDNtoBBox_GPU0/main_instance_segmentation.py", line 12, in <module>
+    from trainer.trainer import InstanceSegmentation, RegularCheckpointing
+  File "/media/songoh/ssh3/songoh_ws/MaskDNtoBBox_GPU0/trainer/trainer.py", line 22, in <module>
+    from models.metrics import IoU
+  File "/media/songoh/ssh3/songoh_ws/MaskDNtoBBox_GPU0/models/__init__.py", line 4, in <module>
+    from models.mask3d import Mask3D
+  File "/media/songoh/ssh3/songoh_ws/MaskDNtoBBox_GPU0/models/mask3d.py", line 740
+    mask_xyzwhd_list.append(proposal_group[i][j][, :3])
+                                                 ^
+SyntaxError: invalid syntax

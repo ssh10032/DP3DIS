@@ -1,0 +1,43 @@
+/home/songoh/miniconda3/envs/mask/lib/python3.10/site-packages/MinkowskiEngine/__init__.py:36: UserWarning: The environment variable `OMP_NUM_THREADS` not set. MinkowskiEngine will automatically set `OMP_NUM_THREADS=16`. If you want to set `OMP_NUM_THREADS` manually, please export it on the command line before running a python script. e.g. `export OMP_NUM_THREADS=12; python your_program.py`. It is recommended to set it below 24.
+  warnings.warn(
+/home/songoh/miniconda3/envs/mask/lib/python3.10/site-packages/pytorch_lightning/utilities/seed.py:55: UserWarning: No seed found, seed set to 3506506935
+  rank_zero_warn(f"No seed found, seed set to {seed}")
+Global seed set to 3506506935
+{'_target_': 'pytorch_lightning.loggers.WandbLogger', 'project': '${general.project_name}', 'name': '${general.experiment_name}', 'save_dir': '${general.save_dir}', 'entity': 'schult', 'resume': 'allow', 'id': '${general.experiment_name}'}
+/home/songoh/miniconda3/envs/mask/lib/python3.10/site-packages/pytorch_lightning/loggers/wandb.py:352: UserWarning: There is a wandb run already in progress and newly created instances of `WandbLogger` will reuse this run. If this is not desired, call `wandb.finish()` before instantiating `WandbLogger`.
+  rank_zero_warn(
+Traceback (most recent call last):
+  File "/home/songoh/miniconda3/envs/mask/lib/python3.10/site-packages/hydra/utils.py", line 63, in call
+    return _instantiate_class(type_or_callable, config, *args, **kwargs)
+  File "/home/songoh/miniconda3/envs/mask/lib/python3.10/site-packages/hydra/_internal/utils.py", line 500, in _instantiate_class
+    return clazz(*args, **final_kwargs)
+TypeError: Mask3D.__init__() missing 1 required positional argument: 'anchor_dim'
+The above exception was the direct cause of the following exception:
+Traceback (most recent call last):
+  File "/home/songoh/miniconda3/envs/mask/lib/python3.10/site-packages/hydra/_internal/utils.py", line 198, in run_and_report
+    return func()
+  File "/home/songoh/miniconda3/envs/mask/lib/python3.10/site-packages/hydra/_internal/utils.py", line 347, in <lambda>
+    lambda: hydra.run(
+  File "/home/songoh/miniconda3/envs/mask/lib/python3.10/site-packages/hydra/_internal/hydra.py", line 107, in run
+    return run_job(
+  File "/home/songoh/miniconda3/envs/mask/lib/python3.10/site-packages/hydra/core/utils.py", line 128, in run_job
+    ret.return_value = task_function(task_cfg)
+  File "/media/songoh/ssh3/songoh_ws/DAB Mask3D-main/main_instance_segmentation.py", line 99, in main
+    train(cfg)
+  File "/home/songoh/miniconda3/envs/mask/lib/python3.10/site-packages/hydra/main.py", line 27, in decorated_main
+    return task_function(cfg_passthrough)
+  File "/media/songoh/ssh3/songoh_ws/DAB Mask3D-main/main_instance_segmentation.py", line 66, in train
+    cfg, model, loggers = get_parameters(cfg)
+  File "/media/songoh/ssh3/songoh_ws/DAB Mask3D-main/main_instance_segmentation.py", line 53, in get_parameters
+    model = InstanceSegmentation(cfg)
+  File "/media/songoh/ssh3/songoh_ws/DAB Mask3D-main/trainer/trainer.py", line 58, in __init__
+    self.model = hydra.utils.instantiate(config.model)
+  File "/home/songoh/miniconda3/envs/mask/lib/python3.10/site-packages/hydra/utils.py", line 70, in call
+    raise HydraException(f"Error calling '{cls}' : {e}") from e
+hydra.errors.HydraException: Error calling 'models.Mask3D' : Mask3D.__init__() missing 1 required positional argument: 'anchor_dim'
+During handling of the above exception, another exception occurred:
+Traceback (most recent call last):
+  File "/home/songoh/miniconda3/envs/mask/lib/python3.10/site-packages/hydra/_internal/utils.py", line 346, in _run_hydra
+    run_and_report(
+  File "/home/songoh/miniconda3/envs/mask/lib/python3.10/site-packages/hydra/_internal/utils.py", line 267, in run_and_report
+    print_exception(etype=None, value=ex, tb=final_tb)  # type: ignore

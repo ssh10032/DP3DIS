@@ -1,0 +1,77 @@
+2023-08-01 09:23:04,836 INFO    StreamThr :21145 [internal.py:wandb_internal():90] W&B internal server running at pid: 21145, started at: 2023-08-01 09:23:04.835569
+2023-08-01 09:23:04,839 DEBUG   HandlerThread:21145 [handler.py:handle_request():141] handle_request: status
+2023-08-01 09:23:04,842 DEBUG   SenderThread:21145 [sender.py:send_request():316] send_request: status
+2023-08-01 09:23:04,845 INFO    WriterThread:21145 [datastore.py:open_for_write():75] open: /media/songoh/ssh3/songoh_ws/Mask 3 DINO/wandb/run-20230801_092304-3ijbr80t/run-3ijbr80t.wandb
+2023-08-01 09:23:04,846 DEBUG   SenderThread:21145 [sender.py:send():302] send: header
+2023-08-01 09:23:04,846 DEBUG   SenderThread:21145 [sender.py:send():302] send: run
+2023-08-01 09:23:05,385 DEBUG   HandlerThread:21145 [handler.py:handle_request():141] handle_request: check_version
+2023-08-01 09:23:05,393 INFO    SenderThread:21145 [dir_watcher.py:__init__():216] watching files in: /media/songoh/ssh3/songoh_ws/Mask 3 DINO/wandb/run-20230801_092304-3ijbr80t/files
+2023-08-01 09:23:05,393 INFO    SenderThread:21145 [sender.py:_start_run_threads():913] run started: 3ijbr80t with start time 1690849384.820363
+2023-08-01 09:23:05,393 DEBUG   SenderThread:21145 [sender.py:send():302] send: summary
+2023-08-01 09:23:05,394 INFO    SenderThread:21145 [sender.py:_save_file():1156] saving file wandb-summary.json with policy end
+2023-08-01 09:23:05,394 DEBUG   SenderThread:21145 [sender.py:send_request():316] send_request: check_version
+2023-08-01 09:23:05,485 DEBUG   HandlerThread:21145 [handler.py:handle_request():141] handle_request: run_start
+2023-08-01 09:23:05,499 DEBUG   HandlerThread:21145 [meta.py:__init__():35] meta init
+2023-08-01 09:23:05,499 DEBUG   HandlerThread:21145 [meta.py:__init__():50] meta init done
+2023-08-01 09:23:05,499 DEBUG   HandlerThread:21145 [meta.py:probe():216] probe
+2023-08-01 09:23:05,505 DEBUG   HandlerThread:21145 [git.py:repo():40] git repository is invalid
+2023-08-01 09:23:05,505 DEBUG   HandlerThread:21145 [meta.py:_save_pip():54] save pip
+2023-08-01 09:23:05,506 DEBUG   HandlerThread:21145 [meta.py:_save_pip():68] save pip done
+2023-08-01 09:23:05,506 DEBUG   HandlerThread:21145 [meta.py:_save_conda():75] save conda
+2023-08-01 09:23:06,396 INFO    Thread-12 :21145 [dir_watcher.py:_on_file_created():275] file/dir created: /media/songoh/ssh3/songoh_ws/Mask 3 DINO/wandb/run-20230801_092304-3ijbr80t/files/wandb-summary.json
+2023-08-01 09:23:06,396 INFO    Thread-12 :21145 [dir_watcher.py:_on_file_created():275] file/dir created: /media/songoh/ssh3/songoh_ws/Mask 3 DINO/wandb/run-20230801_092304-3ijbr80t/files/conda-environment.yaml
+2023-08-01 09:23:06,397 INFO    Thread-12 :21145 [dir_watcher.py:_on_file_created():275] file/dir created: /media/songoh/ssh3/songoh_ws/Mask 3 DINO/wandb/run-20230801_092304-3ijbr80t/files/requirements.txt
+2023-08-01 09:23:08,394 INFO    Thread-12 :21145 [dir_watcher.py:_on_file_modified():292] file/dir modified: /media/songoh/ssh3/songoh_ws/Mask 3 DINO/wandb/run-20230801_092304-3ijbr80t/files/conda-environment.yaml
+2023-08-01 09:23:08,545 DEBUG   HandlerThread:21145 [meta.py:_save_conda():85] save conda done
+2023-08-01 09:23:08,545 DEBUG   HandlerThread:21145 [meta.py:probe():254] probe done
+2023-08-01 09:23:08,590 DEBUG   SenderThread:21145 [sender.py:send():302] send: files
+2023-08-01 09:23:08,590 INFO    SenderThread:21145 [sender.py:_save_file():1156] saving file wandb-metadata.json with policy now
+2023-08-01 09:23:08,602 DEBUG   HandlerThread:21145 [handler.py:handle_request():141] handle_request: stop_status
+2023-08-01 09:23:08,602 DEBUG   SenderThread:21145 [sender.py:send_request():316] send_request: stop_status
+2023-08-01 09:23:08,866 DEBUG   SenderThread:21145 [sender.py:send():302] send: telemetry
+2023-08-01 09:23:08,867 DEBUG   SenderThread:21145 [sender.py:send():302] send: telemetry
+2023-08-01 09:23:09,229 INFO    Thread-16 :21145 [upload_job.py:push():138] Uploaded file /tmp/tmpjqc9xn8mwandb/1dlxb3lk-wandb-metadata.json
+2023-08-01 09:23:09,394 DEBUG   SenderThread:21145 [sender.py:send():302] send: telemetry
+2023-08-01 09:23:09,395 INFO    Thread-12 :21145 [dir_watcher.py:_on_file_created():275] file/dir created: /media/songoh/ssh3/songoh_ws/Mask 3 DINO/wandb/run-20230801_092304-3ijbr80t/files/wandb-metadata.json
+2023-08-01 09:23:09,874 DEBUG   SenderThread:21145 [sender.py:send():302] send: telemetry
+2023-08-01 09:23:09,883 DEBUG   SenderThread:21145 [sender.py:send():302] send: telemetry
+2023-08-01 09:23:10,395 INFO    Thread-12 :21145 [dir_watcher.py:_on_file_created():275] file/dir created: /media/songoh/ssh3/songoh_ws/Mask 3 DINO/wandb/run-20230801_092304-3ijbr80t/files/output.log
+2023-08-01 09:23:10,647 DEBUG   SenderThread:21145 [sender.py:send():302] send: telemetry
+2023-08-01 09:23:11,435 DEBUG   SenderThread:21145 [sender.py:send():302] send: telemetry
+2023-08-01 09:23:12,396 INFO    Thread-12 :21145 [dir_watcher.py:_on_file_modified():292] file/dir modified: /media/songoh/ssh3/songoh_ws/Mask 3 DINO/wandb/run-20230801_092304-3ijbr80t/files/output.log
+2023-08-01 09:23:14,139 DEBUG   SenderThread:21145 [sender.py:send():302] send: config
+2023-08-01 09:23:14,397 INFO    Thread-12 :21145 [dir_watcher.py:_on_file_modified():292] file/dir modified: /media/songoh/ssh3/songoh_ws/Mask 3 DINO/wandb/run-20230801_092304-3ijbr80t/files/output.log
+2023-08-01 09:23:15,398 INFO    Thread-12 :21145 [dir_watcher.py:_on_file_modified():292] file/dir modified: /media/songoh/ssh3/songoh_ws/Mask 3 DINO/wandb/run-20230801_092304-3ijbr80t/files/output.log
+2023-08-01 09:23:16,399 INFO    Thread-12 :21145 [dir_watcher.py:_on_file_modified():292] file/dir modified: /media/songoh/ssh3/songoh_ws/Mask 3 DINO/wandb/run-20230801_092304-3ijbr80t/files/output.log
+2023-08-01 09:23:16,818 DEBUG   SenderThread:21145 [sender.py:send():302] send: telemetry
+2023-08-01 09:23:19,400 INFO    Thread-12 :21145 [dir_watcher.py:_on_file_modified():292] file/dir modified: /media/songoh/ssh3/songoh_ws/Mask 3 DINO/wandb/run-20230801_092304-3ijbr80t/files/output.log
+2023-08-01 09:23:20,401 INFO    Thread-12 :21145 [dir_watcher.py:_on_file_modified():292] file/dir modified: /media/songoh/ssh3/songoh_ws/Mask 3 DINO/wandb/run-20230801_092304-3ijbr80t/files/output.log
+2023-08-01 09:23:20,712 DEBUG   SenderThread:21145 [sender.py:send():302] send: telemetry
+2023-08-01 09:23:22,402 INFO    Thread-12 :21145 [dir_watcher.py:_on_file_modified():292] file/dir modified: /media/songoh/ssh3/songoh_ws/Mask 3 DINO/wandb/run-20230801_092304-3ijbr80t/files/output.log
+2023-08-01 09:23:24,049 DEBUG   HandlerThread:21145 [handler.py:handle_request():141] handle_request: stop_status
+2023-08-01 09:23:24,050 DEBUG   SenderThread:21145 [sender.py:send_request():316] send_request: stop_status
+2023-08-01 09:23:34,045 DEBUG   SenderThread:21145 [sender.py:send():302] send: stats
+2023-08-01 09:23:38,431 INFO    Thread-12 :21145 [dir_watcher.py:_on_file_modified():292] file/dir modified: /media/songoh/ssh3/songoh_ws/Mask 3 DINO/wandb/run-20230801_092304-3ijbr80t/files/config.yaml
+2023-08-01 09:23:38,431 INFO    Thread-12 :21145 [dir_watcher.py:_on_file_modified():292] file/dir modified: /media/songoh/ssh3/songoh_ws/Mask 3 DINO/wandb/run-20230801_092304-3ijbr80t/files/output.log
+2023-08-01 09:23:38,793 DEBUG   SenderThread:21145 [sender.py:send():302] send: config
+2023-08-01 09:23:39,525 DEBUG   HandlerThread:21145 [handler.py:handle_request():141] handle_request: stop_status
+2023-08-01 09:23:39,526 DEBUG   SenderThread:21145 [sender.py:send_request():316] send_request: stop_status
+2023-08-01 09:23:40,432 INFO    Thread-12 :21145 [dir_watcher.py:_on_file_modified():292] file/dir modified: /media/songoh/ssh3/songoh_ws/Mask 3 DINO/wandb/run-20230801_092304-3ijbr80t/files/output.log
+2023-08-01 09:23:42,433 INFO    Thread-12 :21145 [dir_watcher.py:_on_file_modified():292] file/dir modified: /media/songoh/ssh3/songoh_ws/Mask 3 DINO/wandb/run-20230801_092304-3ijbr80t/files/output.log
+2023-08-01 09:23:46,435 INFO    Thread-12 :21145 [dir_watcher.py:_on_file_modified():292] file/dir modified: /media/songoh/ssh3/songoh_ws/Mask 3 DINO/wandb/run-20230801_092304-3ijbr80t/files/output.log
+2023-08-01 09:23:54,903 DEBUG   HandlerThread:21145 [handler.py:handle_request():141] handle_request: stop_status
+2023-08-01 09:23:54,904 DEBUG   SenderThread:21145 [sender.py:send_request():316] send_request: stop_status
+2023-08-01 09:24:04,648 DEBUG   SenderThread:21145 [sender.py:send():302] send: stats
+2023-08-01 09:24:09,446 INFO    Thread-12 :21145 [dir_watcher.py:_on_file_modified():292] file/dir modified: /media/songoh/ssh3/songoh_ws/Mask 3 DINO/wandb/run-20230801_092304-3ijbr80t/files/config.yaml
+2023-08-01 09:24:10,161 DEBUG   HandlerThread:21145 [handler.py:handle_request():141] handle_request: stop_status
+2023-08-01 09:24:10,161 DEBUG   SenderThread:21145 [sender.py:send_request():316] send_request: stop_status
+2023-08-01 09:24:25,416 DEBUG   HandlerThread:21145 [handler.py:handle_request():141] handle_request: stop_status
+2023-08-01 09:24:25,416 DEBUG   SenderThread:21145 [sender.py:send_request():316] send_request: stop_status
+2023-08-01 09:24:35,251 DEBUG   SenderThread:21145 [sender.py:send():302] send: stats
+2023-08-01 09:24:40,708 DEBUG   HandlerThread:21145 [handler.py:handle_request():141] handle_request: stop_status
+2023-08-01 09:24:40,708 DEBUG   SenderThread:21145 [sender.py:send_request():316] send_request: stop_status
+2023-08-01 09:24:56,001 DEBUG   HandlerThread:21145 [handler.py:handle_request():141] handle_request: stop_status
+2023-08-01 09:24:56,001 DEBUG   SenderThread:21145 [sender.py:send_request():316] send_request: stop_status
+2023-08-01 09:25:05,875 DEBUG   SenderThread:21145 [sender.py:send():302] send: stats
+2023-08-01 09:25:11,310 DEBUG   HandlerThread:21145 [handler.py:handle_request():141] handle_request: stop_status
+2023-08-01 09:25:11,311 DEBUG   SenderThread:21145 [sender.py:send_request():316] send_request: stop_status
