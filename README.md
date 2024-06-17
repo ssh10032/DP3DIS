@@ -47,3 +47,29 @@ python setup.py install
 cd ../../
 pip3 install pytorch-lightning==1.7.2
 ```
+### 데이터 전처리 :hammer:
+After installing the dependencies, we preprocess the datasets.
+
+#### ScanNet / ScanNet200
+First, we apply Felzenswalb and Huttenlocher's Graph Based Image Segmentation algorithm to the test scenes using the default parameters.
+Please refer to the [original repository](https://github.com/ScanNet/ScanNet/tree/master/Segmentator) for details.
+Put the resulting segmentations in `./data/raw/scannet_test_segments`.
+```
+python -m datasets.preprocessing.scannet_preprocessing preprocess \
+--data_dir="PATH_TO_RAW_SCANNET_DATASET" \
+--save_dir="data/processed/scannet" \
+--git_repo="PATH_TO_SCANNET_GIT_REPO" \
+--scannet200=false/true
+```
+### 학습 및 평가 :train2:
+Train DP3DIS on the ScanNet dataset:
+```bash
+python main_instance_segmentation.py
+```
+Please refer to the [config scripts](https://github.com/JonasSchult/Mask3D/tree/main/scripts) (for example [here](https://github.com/JonasSchult/Mask3D/blob/main/scripts/scannet/scannet_val.sh#L15)) for detailed instructions how to reproduce our results.
+In the simplest case the inference command looks as follows:
+```bash
+python main_instance_segmentation.py \
+general.checkpoint='PATH_TO_CHECKPOINT.ckpt' \
+general.train_mode=false
+```
