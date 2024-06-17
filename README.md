@@ -1,6 +1,10 @@
 ## Instance Position Encoding and Dual Denoising Tasks for Efficient 3D Instance Segmentation
 ## 효율적인 3차원 개체 분할을 위한 개체 위치 인코딩과 이중 노이즈 제거 작업들
 
+## 논문 링크
+- Version 1 : <a href="https://www.dbpia.co.kr/pdf/pdfView.do?nodeId=NODE11621139&googleIPSandBox=false&mark=0&ipRange=false&b2cLoginYN=false&aiChatView=B&readTime=15-20&isPDFSizeAllowed=true&accessgl=Y&language=ko_KR&hasTopBanner=true">제어로봇시스템학회 논문지 T3DIS</a>
+- Version 2 : <a href="https://www.dbpia.co.kr/pdf/pdfView.do?nodeId=NODE11758934&googleIPSandBox=false&mark=0&ipRange=false&b2cLoginYN=false&aiChatView=B&readTime=15-20&isPDFSizeAllowed=true&accessgl=Y&language=ko_KR&hasTopBanner=true">멀티미디어학회 논문지 DP3DIS</a>
+
 
 ## 개발 환경
 - <a href="https://pytorch.org/get-started/locally/"><img alt="PyTorch" src="https://img.shields.io/badge/PyTorch-ee4c2c?logo=pytorch&logoColor=white"></a> <a href="https://pytorchlightning.ai/"><img alt="Lightning" src="https://img.shields.io/badge/-Lightning-792ee5?logo=pytorchlightning&logoColor=white"></a>
