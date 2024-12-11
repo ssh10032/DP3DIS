@@ -76,6 +76,7 @@ general.checkpoint='PATH_TO_CHECKPOINT.ckpt' \
 general.train_mode=false
 ```
 
+
 ### 사전 학습된 모델 가중치
 ### ScanNet v2
 
