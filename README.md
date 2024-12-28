@@ -52,6 +52,7 @@ pip3 install pytorch-lightning==1.7.2
 ### 데이터 전처리 :hammer:
 After installing the dependencies, we preprocess the datasets.
 
+
 #### ScanNet / ScanNet200
 First, we apply Felzenswalb and Huttenlocher's Graph Based Image Segmentation algorithm to the test scenes using the default parameters.
 Please refer to the [original repository](https://github.com/ScanNet/ScanNet/tree/master/Segmentator) for details.
