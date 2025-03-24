@@ -50,13 +50,10 @@ cd ../../
 pip3 install pytorch-lightning==1.7.2
 ```
 ### 데이터 전처리 :hammer:
-After installing the dependencies, we preprocess the datasets.
 
 
 #### ScanNet / ScanNet200
-First, we apply Felzenswalb and Huttenlocher's Graph Based Image Segmentation algorithm to the test scenes using the default parameters.
-Please refer to the [original repository](https://github.com/ScanNet/ScanNet/tree/master/Segmentator) for details.
-Put the resulting segmentations in `./data/raw/scannet_test_segments`.
+세부 사항 참고: [original repository](https://github.com/ScanNet/ScanNet/tree/master/Segmentator)
 ```
 python -m datasets.preprocessing.scannet_preprocessing preprocess \
 --data_dir="PATH_TO_RAW_SCANNET_DATASET" \
@@ -65,23 +62,13 @@ python -m datasets.preprocessing.scannet_preprocessing preprocess \
 --scannet200=false/true
 ```
 ### 학습 및 평가 :train2:
-Train DP3DIS on the ScanNet dataset:
+학습
 ```bash
 python main_instance_segmentation.py
 ```
-Please refer to the [config scripts](https://github.com/JonasSchult/Mask3D/tree/main/scripts) (for example [here](https://github.com/JonasSchult/Mask3D/blob/main/scripts/scannet/scannet_val.sh#L15)) for detailed instructions how to reproduce our results.
-In the simplest case the inference command looks as follows:
+추론 및 평가
 ```bash
 python main_instance_segmentation.py \
 general.checkpoint='PATH_TO_CHECKPOINT.ckpt' \
 general.train_mode=false
 ```
-
-
-### 사전 학습된 모델 가중치
-### ScanNet v2
-
-| Dataset | AP | AP_50 | AP_25 | Config | Checkpoint :floppy_disk: | Scores :chart_with_upwards_trend: | Visualizations :telescope:
-|:-:|:-:|:-:|:-:|:-:|:-:|:-:|:-:|
-| ScanNet val  | 53.5 | 72.5 | 82.4 | [config](scripts/scannet/scannet_val.sh) | [checkpoint](https://omnomnom.vision.rwth-aachen.de/data/mask3d/checkpoints/scannet/scannet_val.ckpt) | [scores](./docs/detailed_scores/scannet_val.txt) | [visualizations](https://omnomnom.vision.rwth-aachen.de/data/mask3d/visualizations/scannet/val/)
-| ScanNet test | 56.6 | 78.0 | 87.0 | [config](scripts/scannet/scannet_benchmark.sh) | [checkpoint](https://omnomnom.vision.rwth-aachen.de/data/mask3d/checkpoints/scannet/scannet_benchmark.ckpt) | [scores](http://kaldir.vc.in.tum.de/scannet_benchmark/result_details?id=1081) | [visualizations](https://omnomnom.vision.rwth-aachen.de/data/mask3d/visualizations/scannet/test/)
