@@ -69,6 +69,6 @@ python main_instance_segmentation.py
 추론 및 평가
 ```bash
 python main_instance_segmentation.py \
-general.checkpoint='PATH_TO_CHECKPOINT.ckpt' \
+general.checkpoint='가중치_이름.ckpt' \
 general.train_mode=false
 ```
